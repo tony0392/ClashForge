@@ -32,850 +32,531 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- name: VMESS-未知>美国-NF解锁香港地区非自制剧-ChatGPT-TikTok-YouTube-104.17.221.248:80
-  type: vmess
-  server: 104.17.221.248
+- name: 美国 006
+  type: vless
+  network: ws
+  server: 167.82.65.80
   port: 80
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  alterId: 0
-  cipher: auto
-  network: ws
-  servername: 100-49-141-209.s1.db-link02.top
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-  ws-opts:
-    path: /dabai.in104.17.169.115
-    headers:
-      HOST: 100-49-141-209.s1.db-link02.top
-- name: VMESS-未知>美国-ChatGPT-TikTok-YouTube-104.19.48.236:8080
-  type: vmess
-  server: 104.19.48.236
-  port: 8080
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  alterId: 0
-  cipher: auto
-  network: ws
-  servername: 100-150-171-114.s4.cn-db.top
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-  ws-opts:
-    path: /dabai.in104.20.244.251
-    headers:
-      HOST: 100-150-171-114.s4.cn-db.top
-- name: VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.17.213.241:2086
-  type: vmess
-  server: 104.17.213.241
-  port: 2086
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  alterId: 0
-  cipher: auto
-  network: ws
-  servername: 100-171-104-238.s2.db-link02.top
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-  ws-opts:
-    path: /dabai.in172.64.43.14
-    headers:
-      HOST: 100-171-104-238.s2.db-link02.top
-- name: VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.19.48.236:2086
-  type: vmess
-  server: 104.19.48.236
-  port: 2086
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  alterId: 0
-  cipher: auto
-  network: ws
-  servername: 100-171-104-238.s2.db-link02.top
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-  ws-opts:
-    path: /dabai.in172.64.43.14
-    headers:
-      HOST: 100-171-104-238.s2.db-link02.top
-- name: SS-法国>荷兰-NF解锁荷兰自制剧-ChatGPT-YouTube-45.158.171.151:8080
-  type: ss
-  server: 45.158.171.151
-  port: 8080
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  cipher: chacha20-ietf-poly1305
-- name: SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.175.96.74:16899
-  type: ss
-  server: 107.175.96.74
-  port: 16899
-  password: Yc2CtrIz8L
-  cipher: aes-128-gcm
-- name: SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-38.121.43.154:4444
-  type: ss
-  server: 38.121.43.154
-  port: 4444
-  password: pKEW8JPByTVTLtM
-  cipher: aes-256-gcm
-- name: SSR-瑞士-NF解锁瑞士自制剧-ChatGPT-TikTok-YouTube-84.17.53.160:989
-  type: ssr
-  server: 84.17.53.160
-  port: 989
-  password: f8f7aCzcPKbsF8p3
-  cipher: aes-256-cfb
-  protocol: origin
-  obfs: plain
-- name: SSR-美国>塞舌尔-NF解锁自制剧-ChatGPT-TikTok-YouTube-137.175.113.192:8388
-  type: ssr
-  server: 137.175.113.192
-  port: 8388
-  password: asd123456
-  cipher: chacha20-ietf
-  protocol: origin
-  obfs: plain
-- name: SS-美国-NF解锁荷兰地区非自制剧-ChatGPT-TikTok-YouTube-150.241.102.95:21771
-  type: ss
-  server: 150.241.102.95
-  port: 21771
-  password: SkUmZvOscCy99rPKKXqrmK
-  cipher: chacha20-ietf-poly1305
-- name: SS-英国-NF解锁英国自制剧-ChatGPT-TikTok-YouTube-109.120.186.231:11329
-  type: ss
-  server: 109.120.186.231
-  port: 11329
-  password: AIsvzXnT1Z6NFoeadqyDCq
-  cipher: chacha20-ietf-poly1305
-- name: SS-挪威-NF解锁挪威自制剧-ChatGPT-TikTok-YouTube-51.13.182.236:6870
-  type: ss
-  server: 51.13.182.236
-  port: 6870
-  password: M7x1mGNOwhPiRB9jSxZJNy
-  cipher: chacha20-ietf-poly1305
-- name: SSR-丹麦-NF解锁丹麦自制剧-ChatGPT-TikTok-YouTube-185.186.79.53:989
-  type: ssr
-  server: 185.186.79.53
-  port: 989
-  password: f8f7aCzcPKbsF8p3
-  cipher: aes-256-cfb
-  protocol: origin
-  obfs: plain
-- name: 美国1
-  server: usport1-cdn-route.couldflare-cdn.com
-  port: 443
-  type: http
-  tls: true
-  skip-cert-verify: false
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-  password: exaxgqkKkd0TAMrCxeonWg==
-- name: 美国2
-  server: usgp1-cdn-route.couldflare-cdn.com
-  port: 443
-  type: http
-  tls: true
-  skip-cert-verify: false
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-  password: exaxgqkKkd0TAMrCxeonWg==
-- name: 美国3
-  server: usgp3-cdn-route.couldflare-cdn.com
-  port: 443
-  type: http
-  tls: true
-  skip-cert-verify: false
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-  password: exaxgqkKkd0TAMrCxeonWg==
-- name: 美国4
-  server: ustx004-cdn-route.couldflare-cdn.com
-  port: 443
-  type: http
-  tls: true
-  skip-cert-verify: false
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-  password: exaxgqkKkd0TAMrCxeonWg==
-- name: 美国5
-  server: usgp2-cdn-route.couldflare-cdn.com
-  port: 443
-  type: http
-  tls: true
-  skip-cert-verify: false
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-  password: exaxgqkKkd0TAMrCxeonWg==
-- name: 🇹🇼1
-  server: taiwan.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: 🇹🇼2
-  server: taiwan-2.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: 🇯🇵1
-  server: japan.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: 🇯🇵2
-  server: japan-2.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: 🇯🇵3
-  server: japan-3.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: 🇯🇵4
-  server: japan-4.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: 🇯🇵5
-  server: japan-5.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: 🇯🇵6
-  server: japan-6.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: 🇰🇷1
-  server: south-korea.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: 🇰🇷2
-  server: south-korea-2.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: 🇸🇬1
-  server: singapore.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: 🇸🇬2
-  server: singapore-2.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: 🇸🇬3
-  server: singapore-3.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: 🇸🇬5
-  server: singapore-5.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: 🇸🇬6
-  server: singapore-6.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: 🇸🇬7
-  server: singapore-7.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: hk2
-  server: hong-kong.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: hk3
-  server: hong-kong-2.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: hk4
-  server: hong-kong-3.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: hk5
-  server: hong-kong-4.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: hk6
-  server: hong-kong-5.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: hk7
-  server: hong-kong-6.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: 美国01
-  server: us-boardman-oregon-2.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: 美国02
-  server: us-ashburn-virginia-3.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: 美国03
-  server: us-ashburn-virginia-2.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: 美国04
-  server: us-ashburn-virginia.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: 美国05
-  server: us-boardman-oregon.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: 🇯🇵 免费-日本1-Ver.6
-  server: c2nnc-g01.jp03-7d22-vm0.entry.fr0307a.art
-  port: 21583
-  type: vmess
-  uuid: 8e555d33-4ce4-395e-93cd-670297aeeb0f
-  alterId: 99999
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  udp: true
-- name: 🇯🇵 免费-日本2-Ver.7
-  server: l4pwe-g03.jp02-9a99-vm0.entry.fr0307a.art
-  port: 11775
-  type: vmess
-  uuid: 8e555d33-4ce4-395e-93cd-670297aeeb0f
-  alterId: 99999
-  cipher: auto
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  servername: edge.validbv3528.ir
   tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇯🇵 免费-日本3-Ver.6
-  server: zleja-g03.jp03-7d22-vm0.entry.fr0307a.art
-  port: 21583
-  type: vmess
-  uuid: 8e555d33-4ce4-395e-93cd-670297aeeb0f
-  alterId: 99999
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  udp: true
-- name: 🇯🇵 免费-日本4-Ver.7
-  server: 4sq5c-g03.jp04-3771-vm0.entry.fr0307a.art
-  port: 446
-  type: vmess
-  uuid: 8e555d33-4ce4-395e-93cd-670297aeeb0f
-  alterId: 99999
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇯🇵 免费-日本5-Ver.8
-  server: 555h7-g03.jp05-6786-vm0.entry.fr0307a.art
-  port: 46484
-  type: vmess
-  uuid: 8e555d33-4ce4-395e-93cd-670297aeeb0f
-  alterId: 99999
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇯🇵 免费-日本6-Ver.7
-  server: lstqj-g03.jp06-7c5a-vm0.entry.fr0307a.art
-  port: 28785
-  type: vmess
-  uuid: 8e555d33-4ce4-395e-93cd-670297aeeb0f
-  alterId: 99999
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  udp: true
-- name: 🇯🇵 免费-日本7-Ver.1
-  server: pksjy-g03.jp07-1f28-vm0.entry.fr0307a.art
-  port: 28785
-  type: vmess
-  uuid: 8e555d33-4ce4-395e-93cd-670297aeeb0f
-  alterId: 99999
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: CA_f5c88_0001
-  server: t34.emoyes.top
-  port: 661
-  type: trojan
-  password: c9d1e9e4-2812-4a50-a113-a6c914e9c832
-  sni: www.python.org
-  skip-cert-verify: true
-  udp: true
-- name: DE_f5c88_0027
-  server: 193.122.58.158
-  port: 443
+  delay: 982
+  ws-opts:
+    headers:
+      Host: edge.validbv3528.ir
+    path: /vless-ws/
+- name: 美国 009
   type: vless
-  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
-  tls: true
-  skip-cert-verify: false
-  servername: mmdserver.us.kg
   network: ws
+  server: 167.82.70.214
+  port: 80
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  servername: edge.validbv3528.ir
+  tls: false
+  delay: 994
   ws-opts:
-    path: /?ed=2048
     headers:
-      Host: mmdserver.us.kg
-  udp: true
-- name: ES_f5c88_0029
-  server: 94.250.246.200
-  port: 8080
+      Host: edge.validbv3528.ir
+    path: /vless-ws/
+- name: 美国 010
   type: vless
+  network: ws
+  server: 167.82.65.71
+  port: 80
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  servername: edge.validbv3528.ir
+  tls: false
+  delay: 1009
+  ws-opts:
+    headers:
+      Host: edge.validbv3528.ir
+    path: /vless-ws/
+- name: 美国 011
+  type: vless
+  network: ws
+  server: 167.82.72.38
+  port: 80
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  servername: edge.validbv3528.ir
+  tls: false
+  delay: 1182
+  ws-opts:
+    headers:
+      Host: edge.validbv3528.ir
+    path: /
+- name: 美国 017
+  type: vless
+  network: ws
+  server: 167.82.69.101
+  port: 80
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  servername: edge.validbv3528.ir
+  tls: false
+  delay: 933
+  ws-opts:
+    headers:
+      Host: edge.validbv3528.ir
+    path: /vless-ws/
+- name: 美国 026
+  type: vless
+  network: ws
+  server: 167.82.0.9
+  port: 80
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  servername: edge.validbv3528.ir
+  skip-cert-verify: false
+  tls: false
+  ws-opts:
+    headers:
+      Host: edge.validbv3528.ir
+    path: /vless-ws/
+- name: 美国 030
+  type: vless
+  network: ws
+  server: 167.82.71.3
+  port: 80
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  servername: edge.validbv3528.ir
+  skip-cert-verify: false
+  tls: false
+  ws-opts:
+    headers:
+      Host: edge.validbv3528.ir
+    path: /vless-ws/
+- name: 加拿大 019
+  type: vless
+  network: ws
+  server: 198.41.216.118
+  port: 80
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  skip-cert-verify: false
   servername: a.mifeng.us.kg
+  skip-cert-verify: false
+  tls: false
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048
+- name: 美国 035
+  type: vless
   network: ws
+  server: 167.82.66.165
+  port: 80
+  uuid: 253ef561-9e57-4336-befd-878ddd30df01
+  servername: teleirani.ir
+  skip-cert-verify: false
+  tls: false
+  ws-opts:
+    headers:
+      Host: teleirani.ir
+    path: /vless-ws/
+- name: 加拿大 012
+  type: vless
+  network: ws
+  server: 173.245.49.53
+  port: 80
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  servername: a.mifeng.us.kg
+  tls: false
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048
+- name: 美国 016
+  type: vless
+  network: ws
+  server: 167.82.1.121
+  port: 80
+  uuid: 253ef561-9e57-4336-befd-878ddd30df01
+  servername: teleirani.ir
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: teleirani.ir
+    path: /vless-ws/
+- name: 美国 020
+  type: vless
+  network: ws
+  server: 167.82.101.43
+  port: 80
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  skip-cert-verify: false
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: edge.validbv3528.ir
+    path: /vless-ws/
+- name: 加拿大 020
+  type: vless
+  network: ws
+  server: 104.21.30.21
+  port: 80
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  skip-cert-verify: false
+  tls: false
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048
+- name: 美国 024
+  type: vless
+  network: ws
+  server: 167.82.72.131
+  port: 80
+  uuid: 253ef561-9e57-4336-befd-878ddd30df01
+  servername: teleirani.ir
+  tls: false
+  ws-opts:
+    headers:
+      Host: teleirani.ir
+    path: /
+- name: 加拿大 029
+  type: trojan
+  network: ws
+  server: 104.19.107.190
+  port: 2096
+  password: Aimer
+  skip-cert-verify: true
+  udp: true
+  sni: ameqo.esslh.filegear-sg.me
+  ws-opts:
+    headers:
+      Host: ameqo.esslh.filegear-sg.me
+    path: /?ed=2560
+- name: 加拿大 030
+  type: trojan
+  network: ws
+  server: 104.19.57.183
+  port: 2096
+  password: Aimer
+  skip-cert-verify: true
+  udp: true
+  sni: ameqo.esslh.filegear-sg.me
+  ws-opts:
+    headers:
+      Host: ameqo.esslh.filegear-sg.me
+    path: /?ed=2560
+- name: 美国 053
+  type: trojan
+  network: ws
+  server: 209.94.90.87
+  port: 2087
+  password: Aimer
+  skip-cert-verify: true
+  udp: true
+  sni: ameqo.esslh.filegear-sg.me
+  ws-opts:
+    headers:
+      Host: ameqo.esslh.filegear-sg.me
+    path: /?ed=2560
+- name: 印度 001
+  type: trojan
+  network: ws
+  server: 108.165.152.104
+  port: 2053
+  password: Aimer
+  skip-cert-verify: true
+  udp: true
+  sni: ameqo.esslh.filegear-sg.me
+  ws-opts:
+    headers:
+      Host: ameqo.esslh.filegear-sg.me
+    path: /?ed=2560
+- name: 美国 054
+  type: trojan
+  network: ws
+  server: 206.238.236.134
+  port: 443
+  password: Aimer
+  skip-cert-verify: true
+  udp: true
+  sni: ameqo.esslh.filegear-sg.me
+  ws-opts:
+    headers:
+      Host: ameqo.esslh.filegear-sg.me
+    path: /?ed=2560
+- name: 美国 056
+  type: trojan
+  network: ws
+  server: 66.81.247.88
+  port: 2083
+  password: Aimer
+  skip-cert-verify: true
+  udp: true
+  sni: ameqo.esslh.filegear-sg.me
+  ws-opts:
+    headers:
+      Host: ameqo.esslh.filegear-sg.me
+    path: /?ed=2560
+- name: 捷克 001
+  type: trojan
+  network: ws
+  server: 188.164.159.91
+  port: 2083
+  password: Aimer
+  skip-cert-verify: true
+  udp: true
+  sni: ameqo.esslh.filegear-sg.me
+  ws-opts:
+    headers:
+      Host: ameqo.esslh.filegear-sg.me
+    path: /?ed=2560
+- name: 印度 002
+  type: trojan
+  network: ws
+  server: 108.165.152.80
+  port: 2083
+  password: Aimer
+  skip-cert-verify: true
+  udp: true
+  sni: ameqo.esslh.filegear-sg.me
+  ws-opts:
+    headers:
+      Host: ameqo.esslh.filegear-sg.me
+    path: /?ed=2560
+- name: 美国 078
+  type: vless
+  network: ws
+  server: 104.21.30.5
+  port: 80
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  servername: a.mifeng.us.kg
+  tls: false
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /?ed=2048
+- type: vless
+  name: 🇺🇸_美国_4-5OTk
+  server: 154.17.21.134
+  port: 18446
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: dsg.ylks.us.kg
   ws-opts:
     path: /?ed=2560
     headers:
-      Host: a.mifeng.us.kg
-  udp: true
-- name: FR_f5c88_0031
-  server: 91.134.66.127
-  port: 22671
-  type: vless
-  uuid: ebc5660f-bb9b-415c-94ab-d3630189ceb9
-  tls: false
-  skip-cert-verify: false
-  servername: telewebion.com
-  network: http
-  http-opts:
-    method: GET
-    path:
-    - /
-    headers:
-      Host:
-      - telewebion.com
-  udp: true
-- name: HK_f5c88_0033
-  server: 212.192.12.70
-  port: 17926
-  type: vmess
-  uuid: dae301f8-eeda-473f-aa6c-306b5061c48d
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  udp: true
-- name: IN_f5c88_0034
-  server: 5.8.35.208
+      host: dsg.ylks.us.kg
+- type: vless
+  name: 🇺🇸_美国_145
+  server: arvind.ns.cloudflare.com
   port: 443
-  type: trojan
-  password: '3648425794742788096'
-  sni: loving-boa.treefrog761.one
-  skip-cert-verify: false
+  uuid: 807b2717-e1ac-4209-933b-b04076cddde9
+  skip-cert-verify: true
   udp: true
-- name: JP_f5c88_0035
-  server: 54.95.11.184
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: KR_f5c88_0037
-  server: 121.170.203.147
-  port: 37041
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-  udp: true
-- name: KR_f5c88_0038
-  server: 218.50.149.114
-  port: 34847
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-  udp: true
-- name: KR_f5c88_0039
-  server: 218.38.103.150
-  port: 28902
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-  udp: true
-- name: MD_f5c88_0045
-  server: 45.140.146.223
-  port: 8388
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: YjJiYzBj
-  udp: true
-- name: NL_f5c88_0047
-  server: 152.70.49.115
-  port: 443
-  type: vless
-  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
   tls: true
-  skip-cert-verify: false
-  servername: mmdserver.us.kg
   network: ws
+  servername: amedo.ambercc.filegear-sg.me
   ws-opts:
-    path: /?ed=2048
+    path: /?ed=2560
     headers:
-      Host: mmdserver.us.kg
-  udp: true
-- name: NL_f5c88_0048
-  server: 185.204.109.190
-  port: 8443
-  type: trojan
-  password: Aimer
-  sni: ameqo.esslh.filegear-sg.me
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ameqo.esslh.filegear-sg.me
-  udp: true
-- name: PT_f5c88_0050
-  server: 185.231.233.173
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-  udp: true
-- name: SC_f5c88_0053
-  server: 154.197.64.189
-  port: 2087
-  type: trojan
-  password: Aimer
-  sni: ameqo.esslh.filegear-sg.me
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ameqo.esslh.filegear-sg.me
-  udp: true
-- name: SC_f5c88_0054
-  server: 154.197.64.166
+      host: amedo.ambercc.filegear-sg.me
+- type: vless
+  name: 🇩🇪_德国_6
+  server: 47.254.171.15
   port: 2053
-  type: trojan
-  password: Aimer
-  sni: ameqo.esslh.filegear-sg.me
-  skip-cert-verify: false
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  skip-cert-verify: true
+  udp: true
+  tls: true
   network: ws
+  servername: dsg.ylks.us.kg
+  ws-opts:
+    path: /?ed=2560&proxyip=proxyip.oracle.fxxk.dedyn.io
+    headers:
+      host: dsg.ylks.us.kg
+- type: vless
+  name: 🇺🇸_美国_147
+  server: 129.213.136.180
+  port: 443
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: dsg.ylks.us.kg
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: dsg.ylks.us.kg
+- type: vless
+  name: 🇩🇪_德国_8
+  server: 47.254.171.15
+  port: 8443
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: dsg.ylks.us.kg
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: dsg.ylks.us.kg
+- type: vless
+  name: 🇺🇦_乌克兰_10
+  server: 45.67.215.98
+  port: 443
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: dsg.ylks.us.kg
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: dsg.ylks.us.kg
+- type: vless
+  name: 🇺🇸_美国_149
+  server: lynn.ns.cloudflare.com
+  port: 443
+  uuid: 807b2717-e1ac-4209-933b-b04076cddde9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: amedo.ambercc.filegear-sg.me
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: amedo.ambercc.filegear-sg.me
+- type: vless
+  name: 🇺🇸_美国_151
+  server: 47.253.129.190
+  port: 443
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: dsg.ylks.us.kg
+  ws-opts:
+    path: /?ed=2560&proxyip=47.253.129.190:443
+    headers:
+      host: dsg.ylks.us.kg
+- type: vless
+  name: 🇺🇸_美国_155
+  server: 206.238.236.253
+  port: 8443
+  uuid: 807b2717-e1ac-4209-933b-b04076cddde9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: amedo.ambercc.filegear-sg.me
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: amedo.ambercc.filegear-sg.me
+- type: vless
+  name: 🇺🇸_美国_157
+  server: 150.230.146.170
+  port: 2053
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: dsg.ylks.us.kg
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: dsg.ylks.us.kg
+- type: vless
+  name: 🇸🇪_瑞典_2
+  server: 141.147.61.116
+  port: 8443
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: dsg.ylks.us.kg
+  ws-opts:
+    path: /?ed=2560&proxyip=proxyip.oracle.fxxk.dedyn.io
+    headers:
+      host: dsg.ylks.us.kg
+- type: vless
+  name: 🇳🇱_荷兰_18
+  server: 185.133.35.182
+  port: 443
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: dsg.ylks.us.kg
+  ws-opts:
+    path: /?ed=2560&proxyip=185.133.35.182:443
+    headers:
+      host: dsg.ylks.us.kg
+- type: vless
+  name: 🇩🇪_德国_10
+  server: 130.61.83.37
+  port: 8443
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: dsg.ylks.us.kg
+  ws-opts:
+    path: /?ed=2560&proxyip=proxyip.oracle.fxxk.dedyn.io
+    headers:
+      host: dsg.ylks.us.kg
+- type: vmess
+  name: 🇷🇺_俄罗斯_45
   ws-opts:
     path: /
-    headers:
-      Host: ameqo.esslh.filegear-sg.me
-  udp: true
-- name: SC_f5c88_0055
-  server: 154.197.64.67
-  port: 443
-  type: trojan
-  password: Aimer
-  sni: ameqo.esslh.filegear-sg.me
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ameqo.esslh.filegear-sg.me
-  udp: true
-- name: SI_f5c88_0068
-  server: 92.53.190.161
-  port: 2087
-  type: trojan
-  password: Aimer
-  sni: ameqo.esslh.filegear-sg.me
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ameqo.esslh.filegear-sg.me
-  udp: true
-- name: US_f5c88_0072
-  server: 167.82.105.140
-  port: 80
-  type: vless
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
-  tls: false
-  skip-cert-verify: false
-  servername: edge.validbv3528.ir
-  network: ws
-  ws-opts:
-    path: /vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560
-    headers:
-      Host: edge.validbv3528.ir
-  udp: true
-- name: US_f5c88_0095
-  server: organic-hare.boa152.lol
-  port: 443
-  type: trojan
-  password: '3723507166611775488'
-  sni: organic-hare.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: US_f5c88_0099
-  server: t37.emoyes.top
-  port: 657
-  type: trojan
-  password: c9d1e9e4-2812-4a50-a113-a6c914e9c832
-  sni: www.python.org
-  skip-cert-verify: true
-  udp: true
-- name: US_f5c88_0102
-  server: 5.8.93.173
-  port: 443
-  type: trojan
-  password: '3723507166611775488'
-  sni: nearby-hedgehog.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: US_f5c88_0103
-  server: 166.1.227.184
-  port: 443
-  type: trojan
-  password: '3723507166611775488'
-  sni: organic-hare.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: US_f5c88_0104
-  server: nearby-hedgehog.boa152.lol
-  port: 443
-  type: trojan
-  password: '3723507166611775488'
-  sni: nearby-hedgehog.boa152.lol
-  skip-cert-verify: false
-  udp: true
-- name: 🇺🇸US-5.8.93.173-078
-  server: nearby-hedgehog.boa152.lol
-  port: 443
-  type: trojan
-  password: 3723507166611775488
-  sni: nearby-hedgehog.boa152.lol
-  skip-cert-verify: true
-- name: 🇺🇸US-166.1.227.184-079
-  server: organic-hare.boa152.lol
-  port: 443
-  type: trojan
-  password: 3723507166611775488
-  sni: organic-hare.boa152.lol
-  skip-cert-verify: true
-- name: 🇺🇸US-5.8.93.173-080
-  server: 5.8.93.173
-  port: 443
-  type: trojan
-  password: 3723507166611775488
-  sni: nearby-hedgehog.boa152.lol
-  skip-cert-verify: true
-- name: 🇺🇸US-166.1.227.184-081
-  server: 166.1.227.184
-  port: 443
-  type: trojan
-  password: 3723507166611775488
-  sni: organic-hare.boa152.lol
-  skip-cert-verify: true
-- name: 🇮🇳IN-5.8.35.208-120
-  server: 5.8.35.208
-  port: 443
-  type: trojan
-  password: 3648425794742788096
-  sni: loving-boa.treefrog761.one
-  skip-cert-verify: true
-- name: 🇦🇺AU-20.213.20.185-396
-  server: 20.213.20.185
-  port: 17718
-  type: vmess
-  uuid: c206e022-34c6-4fe3-a232-b9c07ba3165d
-  alterId: 0
+  server: 195.58.49.42
+  port: '17926'
+  uuid: 1cc59a3a-9625-40f7-b0e6-e233286ae82d
+  alterId: '0'
   cipher: auto
-  skip-cert-verify: true
-  network: tcp
-  ws-path: /
-  tls: false
-  ws-headers:
-    Host: 20.213.20.185
-- name: '@MxlShare 英国 | GBR 14'
-  server: dddoyg.naisicloud.xyz
-  port: 35600
-  type: hysteria2
-  password: 841482e3-55fe-4fdd-8dcd-53ee934dbbcd
-  auth: 841482e3-55fe-4fdd-8dcd-53ee934dbbcd
-  sni: dddoyg.naisicloud.xyz
-  skip-cert-verify: true
-- name: '@MxlShare 韩国 | KOR 5'
-  server: 221.150.109.89
-  port: 61238
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-  udp: true
-- name: '@MxlShare 美国 | USA 18'
-  server: fffwkl.naisicloud.xyz
-  port: 35600
-  type: hysteria2
-  password: c3e4e7d3-26ea-4aab-83c3-e899b77233fb
-  auth: c3e4e7d3-26ea-4aab-83c3-e899b77233fb
-  sni: fffwkl.naisicloud.xyz
-  skip-cert-verify: true
-- name: '@MxlShare 美国 | USA 33'
-  server: 54.218.237.217
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: '@MxlShare 美国 | USA 37'
-  server: 18.176.215.63
-  port: 2377
-  type: ss
+  network: ws
+- type: ss
+  name: 香港_Telegram@kxswa_5
+  server: 154.90.63.193
+  port: 990
   cipher: chacha20-ietf-poly1305
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    mode: tls
-    host: (TG @WangCai2)80b6690:72938
-- name: '@MxlShare 美国 | USA 38'
-  server: 52.11.79.56
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: '@MxlShare 美国 | USA 41'
-  server: 108.162.195.215
-  port: 80
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: false
-  servername: a.mifeng.us.kg
-  network: ws
-  ws-opts:
-    path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048
-    headers:
-      Host: a.mifeng.us.kg
-- name: '@MxlShare 美国 | USA 46'
-  server: 188.114.96.189
-  port: 80
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: false
-  servername: a.mifeng.us.kg
-  network: ws
-  ws-opts:
-    path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048
-    headers:
-      Host: a.mifeng.us.kg
-- name: '@MxlShare 美国 | USA 49'
-  server: vip3.pmy666.xyz
-  port: 8080
-  type: vmess
-  uuid: 20666f30-0add-4da4-bba0-28f985426978
-  alterId: 0
+  password: f8f7aCzcPKbsF8p3
+- type: vmess
+  name: 美国_Telegram@kxswa
+  server: 20.213.20.185
+  port: '17718'
+  uuid: c206e022-34c6-4fe3-a232-b9c07ba3165d
+  alterId: '0'
   cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: domg.pmy666.xyz
-- down: '100'
-  name: PL_Warsaw_OVH SAS_OpenAI_Claude1
-  password: 54185b6e-851a-4109-b6a9-7beb86f41c05
-  port: 18383
-  server: pl.ktmurl.club
-  type: hysteria2
-  up: '100'
-- cipher: aes-128-gcm
-  name: CH-156.146.62.161-0458 | 5.363MB
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.161
-  type: ss
-- cipher: aes-128-gcm
-  name: CH-156.146.62.162-0448 | 4.026MB
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.162
-  type: ss
-- cipher: aes-128-gcm
-  name: CH-156.146.62.163-0447 | 3.439MB
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.163
-  type: ss
-- cipher: aes-128-gcm
-  name: CH-156.146.62.164-0455 | 4.558MB
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.164
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: CZ-195.181.160.6-0449 | 3.281MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 195.181.160.6
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: HU-91.219.237.102-5788 | 1.578MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 91.219.237.102
-  type: ss
+  network: tcp
+- type: ss
+  name: 荷兰_Telegram@kxswa_1
+  server: beesyar.org
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: 4a2rfixophdjffa8KVA4Aa
+- type: ss
+  name: 荷兰_Telegram@kxswa_2
+  server: beesyar.org
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: cvII85TrW6n0OGyfpHVS1u
+- type: ss
+  name: 荷兰_Telegram@kxswa_3
+  server: beesyar.org
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+- type: ss
+  name: 荷兰_Telegram@kxswa_4
+  server: beesyar.org
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: QCXDxuDlTTMD7jtgHUjIoj
 - cipher: chacha20-ietf-poly1305
   name: MD-103.106.1.92-0526 | 1.68MB
   password: yMX9WGPgUEcRZmlaa0YHHC
@@ -888,6 +569,385 @@ proxies:
   port: 14255
   server: 86.104.74.243
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: NO-51.13.183.76-0512 | 2.259MB
+  password: 07LkDtx6AwrmkLMbehrIAh
+  port: 6454
+  server: 51.13.183.76
+  type: ss
+- cipher: aes-256-cfb
+  name: RS-194.71.126.31-0462 | 1.4MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 194.71.126.31
+  type: ss
+- cipher: aes-256-cfb
+  name: SE-121.127.46.147-0464 | 1.319MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 121.127.46.147
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: SE-46.246.98.155-5847 | 2.813MB
+  password: UDcjYQ6Z6AIWxViZpqyOmO
+  port: 44013
+  server: 46.246.98.155
+  type: ss
+- cipher: aes-256-gcm
+  name: TR-62.60.233.72-6316 | 1.211MB
+  password: AYbFL39bn4EfDXfDbueamN
+  port: 33155
+  server: 62.60.233.72
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-142.4.216.225-0498 | 1.157MB
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: ca225.vpnbook.com
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇨🇦CA-149.22.95.183-0386 | 27.028MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.95.183
+  type: ss
+- name: 🇩🇪DE-165.22.74.230-6353 | 6.668MB
+  password: 4732adfa16c6450bbef87264e41332db
+  port: 443
+  server: nextstepcareer.online
+  skip-cert-verify: false
+  type: trojan
+- cipher: aes-256-cfb
+  name: 🇫🇷FR-195.154.169.198-0453 | 15.833MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 195.154.169.198
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇫🇷FR-195.154.185.174-0443 | 13.822MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 195.154.185.174
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇫🇷FR-45.158.171.66-5987 | 9.574MB
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.158.171.66
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇫🇷FR-51.15.27.48-0427 | 18.384MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.27.48
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇫🇷FR-51.159.111.208-0445 | 12.371MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.159.111.208
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-141.98.101.178-0452 | 10.004MB
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-141.98.101.179-0466 | 6.178MB
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.179
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-141.98.101.180-0463 | 11.712MB
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.180
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-141.98.101.182-0469 | 5.539MB
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.182
+  type: ss
+- cipher: rc4-md5
+  name: 🇬🇧GB-146.70.61.18-0438 | 21.528MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 146.70.61.18
+  type: ss
+- cipher: rc4-md5
+  name: 🇬🇧GB-169.150.210.233-6126 | 7.057MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 169.150.210.233
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-18.134.93.183-0418 | 12.174MB
+  password: W74XFALLLuw6m5IA
+  port: 443
+  server: series-a1.samanehha.co
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-18.134.93.183-0425 | 23.746MB
+  password: mps3FwmDjLrWaOVg
+  port: 443
+  server: series-a2.samanehha.co
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.193-0416 | 23.993MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.193
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.194-0187 | 18.779MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.194
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.195-0414 | 25.043MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.195
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.196-0423 | 24.607MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.196
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.197-0424 | 18.636MB
+  password: shadowsocks
+  port: 443
+  server: uk-dc1.yangon.club
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.198-0411 | 20.81MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.198
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.78-0412 | 25.212MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.78
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.79-0417 | 21.404MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.79
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.80-0422 | 20.105MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.80
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.81-0421 | 24.937MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.81
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.240-0471 | 1.098MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.240
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.241-0470 | 1.101MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.241
+  type: ss
+- cipher: aes-128-cfb
+  name: 🇳🇱NL-109.201.152.181-0426 | 23.273MB
+  password: shadowsocks
+  port: 443
+  server: 109.201.152.181
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇳🇱NL-149.34.244.68-0433 | 11.043MB
+  password: shadowsocks
+  port: 443
+  server: 149.34.244.68
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇳🇱NL-149.34.244.77-0430 | 12.272MB
+  password: shadowsocks
+  port: 443
+  server: 149.34.244.77
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇳🇱NL-149.34.244.82-0431 | 13.082MB
+  password: shadowsocks
+  port: 443
+  server: 149.34.244.82
+  type: ss
+- cipher: rc4-md5
+  name: 🇺🇸US-107.155.57.11-0389 | 31.342MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 107.155.57.11
+  type: ss
+- cipher: rc4-md5
+  name: 🇺🇸US-107.155.57.51-0390 | 27.608MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 107.155.57.51
+  type: ss
+- cipher: chacha20-ietf
+  name: 🇺🇸US-137.175.113.192-0403 | 29.392MB
+  password: asd123456
+  port: 8388
+  server: 137.175.113.192
+  type: ss
+- cipher: rc4-md5
+  name: 🇺🇸US-138.199.42.68-6135 | 50.053MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 138.199.42.68
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-154.3.8.151-5990 | 44.271MB
+  password: iUB0923RBA
+  port: 30067
+  server: 154.3.8.151
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-156.146.38.167-0379 | 58.785MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.167
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-156.146.38.168-0375 | 72.729MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.168
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-156.146.38.169-0381 | 65.729MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.169
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-156.146.38.170-0378 | 70.023MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.170
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-173.244.56.6-0387 | 49.296MB
+  password: shadowsocks
+  port: 443
+  server: 173.244.56.6
+  type: ss
+- name: 🇭🇰 香港 | HKG 136
+  server: 212.192.12.70
+  port: 32902
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 765e8b25-5574-416d-9edd-93e1e24f4f88
+  auth: 765e8b25-5574-416d-9edd-93e1e24f4f88
+  up: 15
+  down: 15
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: YzcwOTNlODc4NDIzMWMyMg==
+  udp: true
+- name: 🇯🇵 日本 | JPN 14
+  server: oracle-amd-tokyo1.lanmaoyun.icu
+  port: 30001
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 5ed9de20-da8e-45c0-b59b-a3b6759e2a36
+  auth: 5ed9de20-da8e-45c0-b59b-a3b6759e2a36
+  sni: tokyo.nodes.lanmaoyun.icu
+  up: 100
+  down: 1000
+  skip-cert-verify: true
+  udp: true
+- name: 🇯🇵 日本 | JPN 24
+  server: jpzl2.stardad.lol
+  port: 48512
+  client-fingerprint: chrome
+  type: hysteria2
+  password: e8943201-9023-4a37-9c62-589ff450b27f
+  auth: e8943201-9023-4a37-9c62-589ff450b27f
+  sni: https://bing.com
+  up: 1024
+  down: 1024
+  skip-cert-verify: true
+  udp: true
+- name: 🇯🇵 日本 | JPN 29
+  server: jpzl2.stardad.lol
+  port: 48512
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 153248fc-273c-4020-9ce9-1aea972652db
+  auth: 153248fc-273c-4020-9ce9-1aea972652db
+  sni: https://bing.com
+  up: 1024
+  down: 1024
+  skip-cert-verify: true
+  udp: true
+- name: 🇯🇵 日本 | JPN 32
+  server: jpzl2.stardad.lol
+  port: 48512
+  client-fingerprint: chrome
+  type: hysteria2
+  password: feff3b28-0611-46bc-abec-a99af6d26bb9
+  auth: feff3b28-0611-46bc-abec-a99af6d26bb9
+  sni: https://bing.com
+  up: 1024
+  down: 1024
+  skip-cert-verify: true
+  udp: true
+- name: 🇯🇵 日本 | JPN 33
+  server: oracle-amd-osaka1.lanmaoyun.icu
+  port: 30001
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 5ed9de20-da8e-45c0-b59b-a3b6759e2a36
+  auth: 5ed9de20-da8e-45c0-b59b-a3b6759e2a36
+  sni: osaka.nodes.lanmaoyun.icu
+  up: 100
+  down: 1000
+  skip-cert-verify: true
+  udp: true
+- name: 🇯🇵 日本 | JPN 34
+  server: jpzl2.stardad.lol
+  port: 48512
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 86229c1a-288b-4ff6-81ae-3ca0d77fd842
+  auth: 86229c1a-288b-4ff6-81ae-3ca0d77fd842
+  sni: https://bing.com
+  up: 1024
+  down: 1024
+  skip-cert-verify: true
+  udp: true
+- name: 🇰🇷 韩国 | KOR 2
+  server: oracle-arm-chuncheon1.lanmaoyun.icu
+  port: 30001
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 5ed9de20-da8e-45c0-b59b-a3b6759e2a36
+  auth: 5ed9de20-da8e-45c0-b59b-a3b6759e2a36
+  sni: korea.nodes.lanmaoyun.icu
+  up: 100
+  down: 1000
+  skip-cert-verify: true
+  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -900,106 +960,106 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - US_f5c88_0102
-  - US_f5c88_0104
-  - 🇺🇸US-5.8.93.173-080
-  - US_f5c88_0103
-  - 🇺🇸US-166.1.227.184-081
-  - US_f5c88_0095
-  - '@MxlShare 美国 | USA 46'
-  - '@MxlShare 美国 | USA 41'
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-38.121.43.154:4444
-  - SI_f5c88_0068
-  - 🇺🇸US-5.8.93.173-078
-  - US_f5c88_0072
-  - SC_f5c88_0054
-  - 美国03
-  - 美国02
-  - 🇺🇸US-166.1.227.184-079
-  - VMESS-未知>美国-ChatGPT-TikTok-YouTube-104.19.48.236:8080
-  - US_f5c88_0099
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.175.96.74:16899
-  - SC_f5c88_0055
-  - 美国04
-  - SC_f5c88_0053
-  - SSR-美国>塞舌尔-NF解锁自制剧-ChatGPT-TikTok-YouTube-137.175.113.192:8388
+  - 🇺🇸US-107.155.57.11-0389 | 31.342MB
+  - 🇺🇸US-107.155.57.51-0390 | 27.608MB
+  - 🇺🇸US-137.175.113.192-0403 | 29.392MB
+  - 加拿大 012
+  - 美国 078
+  - 🇺🇸US-154.3.8.151-5990 | 44.271MB
+  - 加拿大 019
+  - 印度 001
+  - 加拿大 030
+  - 美国 056
+  - 印度 002
+  - 🇳🇱_荷兰_18
+  - 加拿大 029
+  - 🇺🇸_美国_155
+  - 捷克 001
+  - 加拿大 020
+  - 美国 054
+  - 🇺🇦_乌克兰_10
+  - 美国 053
+  - 🇺🇸US-173.244.56.6-0387 | 49.296MB
+  - 美国 020
+  - 🇺🇸_美国_4-5OTk
+  - 🇺🇸US-156.146.38.168-0375 | 72.729MB
+  - 🇺🇸US-156.146.38.167-0379 | 58.785MB
+  - 🇺🇸US-156.146.38.170-0378 | 70.023MB
+  - 🇨🇦CA-149.22.95.183-0386 | 27.028MB
+  - 🇺🇸US-156.146.38.169-0381 | 65.729MB
+  - 🇺🇸_美国_145
+  - 美国 010
+  - 美国 026
+  - 美国 006
+  - 美国 017
+  - 美国 009
+  - 🇺🇸_美国_149
+  - 美国 035
+  - 🇺🇸US-138.199.42.68-6135 | 50.053MB
+  - 美国 024
+  - 美国 030
+  - 🇺🇸_美国_147
+  - 🇯🇵JP-149.22.87.240-0471 | 1.098MB
+  - 美国 011
+  - 🇺🇸_美国_151
+  - 🇯🇵JP-149.22.87.241-0470 | 1.101MB
+  - 🇬🇧GB-212.102.53.78-0412 | 25.212MB
+  - 🇬🇧GB-212.102.53.194-0187 | 18.779MB
+  - 🇬🇧GB-212.102.53.196-0423 | 24.607MB
+  - 🇬🇧GB-212.102.53.193-0416 | 23.993MB
+  - 🇬🇧GB-212.102.53.81-0421 | 24.937MB
+  - 🇬🇧GB-212.102.53.80-0422 | 20.105MB
+  - 🇬🇧GB-212.102.53.198-0411 | 20.81MB
+  - 🇬🇧GB-212.102.53.79-0417 | 21.404MB
+  - 🇬🇧GB-212.102.53.195-0414 | 25.043MB
+  - 🇨🇦CA-142.4.216.225-0498 | 1.157MB
+  - 🇳🇱NL-149.34.244.68-0433 | 11.043MB
+  - 🇳🇱NL-109.201.152.181-0426 | 23.273MB
+  - 🇳🇱NL-149.34.244.77-0430 | 12.272MB
+  - 🇳🇱NL-149.34.244.82-0431 | 13.082MB
+  - 🇫🇷FR-51.159.111.208-0445 | 12.371MB
   - MD-86.104.74.243-5833 | 12.302MB
-  - VMESS-未知>美国-NF解锁香港地区非自制剧-ChatGPT-TikTok-YouTube-104.17.221.248:80
-  - '@MxlShare 美国 | USA 33'
-  - CA_f5c88_0001
-  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.17.213.241:2086
+  - 🇫🇷FR-45.158.171.66-5987 | 9.574MB
   - MD-103.106.1.92-0526 | 1.68MB
-  - SS-法国>荷兰-NF解锁荷兰自制剧-ChatGPT-YouTube-45.158.171.151:8080
-  - CH-156.146.62.163-0447 | 3.439MB
-  - CH-156.146.62.162-0448 | 4.026MB
-  - CH-156.146.62.161-0458 | 5.363MB
-  - SS-美国-NF解锁荷兰地区非自制剧-ChatGPT-TikTok-YouTube-150.241.102.95:21771
-  - CH-156.146.62.164-0455 | 4.558MB
-  - '@MxlShare 美国 | USA 38'
-  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.19.48.236:2086
-  - 美国4
-  - SSR-瑞士-NF解锁瑞士自制剧-ChatGPT-TikTok-YouTube-84.17.53.160:989
-  - SS-英国-NF解锁英国自制剧-ChatGPT-TikTok-YouTube-109.120.186.231:11329
-  - SS-挪威-NF解锁挪威自制剧-ChatGPT-TikTok-YouTube-51.13.182.236:6870
-  - HU-91.219.237.102-5788 | 1.578MB
-  - NL_f5c88_0047
-  - DE_f5c88_0027
-  - 美国01
-  - '@MxlShare 美国 | USA 18'
-  - 美国3
-  - 美国05
-  - 美国5
-  - ES_f5c88_0029
-  - CZ-195.181.160.6-0449 | 3.281MB
-  - NL_f5c88_0048
-  - 美国2
-  - SSR-丹麦-NF解锁丹麦自制剧-ChatGPT-TikTok-YouTube-185.186.79.53:989
-  - '@MxlShare 英国 | GBR 14'
-  - '@MxlShare 美国 | USA 37'
-  - JP_f5c88_0035
-  - '@MxlShare 美国 | USA 49'
-  - MD_f5c88_0045
-  - PT_f5c88_0050
-  - 美国1
-  - 🇯🇵 免费-日本7-Ver.1
-  - 🇦🇺AU-20.213.20.185-396
-  - 🇯🇵 免费-日本4-Ver.7
-  - 🇯🇵5
-  - PL_Warsaw_OVH SAS_OpenAI_Claude1
-  - 🇯🇵 免费-日本5-Ver.8
-  - 🇹🇼2
-  - 🇯🇵3
-  - 🇯🇵6
-  - 🇯🇵2
-  - 🇯🇵1
-  - 🇯🇵4
-  - 🇯🇵 免费-日本2-Ver.7
-  - KR_f5c88_0038
-  - KR_f5c88_0037
-  - KR_f5c88_0039
-  - hk5
-  - hk3
-  - FR_f5c88_0031
-  - hk4
-  - 🇸🇬3
-  - hk7
-  - 🇸🇬7
-  - IN_f5c88_0034
-  - 🇹🇼1
-  - 🇸🇬2
-  - 🇮🇳IN-5.8.35.208-120
-  - 🇸🇬5
-  - hk2
-  - 🇯🇵 免费-日本6-Ver.7
-  - hk6
-  - 🇯🇵 免费-日本3-Ver.6
-  - 🇯🇵 免费-日本1-Ver.6
-  - 🇸🇬6
-  - 🇸🇬1
-  - HK_f5c88_0033
-  - 🇰🇷1
-  - '@MxlShare 韩国 | KOR 5'
-  - 🇰🇷2
+  - 🇫🇷FR-195.154.169.198-0453 | 15.833MB
+  - 美国_Telegram@kxswa
+  - SE-46.246.98.155-5847 | 2.813MB
+  - 美国 016
+  - NO-51.13.183.76-0512 | 2.259MB
+  - SE-121.127.46.147-0464 | 1.319MB
+  - 🇬🇧GB-141.98.101.182-0469 | 5.539MB
+  - 🇬🇧GB-141.98.101.180-0463 | 11.712MB
+  - 🇬🇧GB-141.98.101.179-0466 | 6.178MB
+  - 🇬🇧GB-141.98.101.178-0452 | 10.004MB
+  - 荷兰_Telegram@kxswa_4
+  - 荷兰_Telegram@kxswa_3
+  - 🇫🇷FR-51.15.27.48-0427 | 18.384MB
+  - 🇬🇧GB-212.102.53.197-0424 | 18.636MB
+  - 🇬🇧GB-146.70.61.18-0438 | 21.528MB
+  - 🇬🇧GB-18.134.93.183-0418 | 12.174MB
+  - 🇬🇧GB-18.134.93.183-0425 | 23.746MB
+  - 荷兰_Telegram@kxswa_2
+  - 🇬🇧GB-169.150.210.233-6126 | 7.057MB
+  - 🇫🇷FR-195.154.185.174-0443 | 13.822MB
+  - 🇭🇰 香港 | HKG 136
+  - 荷兰_Telegram@kxswa_1
+  - 🇩🇪_德国_10
+  - 🇺🇸_美国_157
+  - 🇩🇪_德国_6
+  - 🇩🇪_德国_8
+  - TR-62.60.233.72-6316 | 1.211MB
+  - RS-194.71.126.31-0462 | 1.4MB
+  - 🇷🇺_俄罗斯_45
+  - 🇩🇪DE-165.22.74.230-6353 | 6.668MB
+  - 🇯🇵 日本 | JPN 14
+  - 香港_Telegram@kxswa_5
+  - 🇯🇵 日本 | JPN 32
+  - 🇯🇵 日本 | JPN 33
+  - 🇯🇵 日本 | JPN 34
+  - 🇯🇵 日本 | JPN 24
+  - 🇯🇵 日本 | JPN 29
+  - 🇸🇪_瑞典_2
+  - 🇰🇷 韩国 | KOR 2
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
@@ -1007,211 +1067,211 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - US_f5c88_0102
-  - US_f5c88_0104
-  - 🇺🇸US-5.8.93.173-080
-  - US_f5c88_0103
-  - 🇺🇸US-166.1.227.184-081
-  - US_f5c88_0095
-  - '@MxlShare 美国 | USA 46'
-  - '@MxlShare 美国 | USA 41'
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-38.121.43.154:4444
-  - SI_f5c88_0068
-  - 🇺🇸US-5.8.93.173-078
-  - US_f5c88_0072
-  - SC_f5c88_0054
-  - 美国03
-  - 美国02
-  - 🇺🇸US-166.1.227.184-079
-  - VMESS-未知>美国-ChatGPT-TikTok-YouTube-104.19.48.236:8080
-  - US_f5c88_0099
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.175.96.74:16899
-  - SC_f5c88_0055
-  - 美国04
-  - SC_f5c88_0053
-  - SSR-美国>塞舌尔-NF解锁自制剧-ChatGPT-TikTok-YouTube-137.175.113.192:8388
+  - 🇺🇸US-107.155.57.11-0389 | 31.342MB
+  - 🇺🇸US-107.155.57.51-0390 | 27.608MB
+  - 🇺🇸US-137.175.113.192-0403 | 29.392MB
+  - 加拿大 012
+  - 美国 078
+  - 🇺🇸US-154.3.8.151-5990 | 44.271MB
+  - 加拿大 019
+  - 印度 001
+  - 加拿大 030
+  - 美国 056
+  - 印度 002
+  - 🇳🇱_荷兰_18
+  - 加拿大 029
+  - 🇺🇸_美国_155
+  - 捷克 001
+  - 加拿大 020
+  - 美国 054
+  - 🇺🇦_乌克兰_10
+  - 美国 053
+  - 🇺🇸US-173.244.56.6-0387 | 49.296MB
+  - 美国 020
+  - 🇺🇸_美国_4-5OTk
+  - 🇺🇸US-156.146.38.168-0375 | 72.729MB
+  - 🇺🇸US-156.146.38.167-0379 | 58.785MB
+  - 🇺🇸US-156.146.38.170-0378 | 70.023MB
+  - 🇨🇦CA-149.22.95.183-0386 | 27.028MB
+  - 🇺🇸US-156.146.38.169-0381 | 65.729MB
+  - 🇺🇸_美国_145
+  - 美国 010
+  - 美国 026
+  - 美国 006
+  - 美国 017
+  - 美国 009
+  - 🇺🇸_美国_149
+  - 美国 035
+  - 🇺🇸US-138.199.42.68-6135 | 50.053MB
+  - 美国 024
+  - 美国 030
+  - 🇺🇸_美国_147
+  - 🇯🇵JP-149.22.87.240-0471 | 1.098MB
+  - 美国 011
+  - 🇺🇸_美国_151
+  - 🇯🇵JP-149.22.87.241-0470 | 1.101MB
+  - 🇬🇧GB-212.102.53.78-0412 | 25.212MB
+  - 🇬🇧GB-212.102.53.194-0187 | 18.779MB
+  - 🇬🇧GB-212.102.53.196-0423 | 24.607MB
+  - 🇬🇧GB-212.102.53.193-0416 | 23.993MB
+  - 🇬🇧GB-212.102.53.81-0421 | 24.937MB
+  - 🇬🇧GB-212.102.53.80-0422 | 20.105MB
+  - 🇬🇧GB-212.102.53.198-0411 | 20.81MB
+  - 🇬🇧GB-212.102.53.79-0417 | 21.404MB
+  - 🇬🇧GB-212.102.53.195-0414 | 25.043MB
+  - 🇨🇦CA-142.4.216.225-0498 | 1.157MB
+  - 🇳🇱NL-149.34.244.68-0433 | 11.043MB
+  - 🇳🇱NL-109.201.152.181-0426 | 23.273MB
+  - 🇳🇱NL-149.34.244.77-0430 | 12.272MB
+  - 🇳🇱NL-149.34.244.82-0431 | 13.082MB
+  - 🇫🇷FR-51.159.111.208-0445 | 12.371MB
   - MD-86.104.74.243-5833 | 12.302MB
-  - VMESS-未知>美国-NF解锁香港地区非自制剧-ChatGPT-TikTok-YouTube-104.17.221.248:80
-  - '@MxlShare 美国 | USA 33'
-  - CA_f5c88_0001
-  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.17.213.241:2086
+  - 🇫🇷FR-45.158.171.66-5987 | 9.574MB
   - MD-103.106.1.92-0526 | 1.68MB
-  - SS-法国>荷兰-NF解锁荷兰自制剧-ChatGPT-YouTube-45.158.171.151:8080
-  - CH-156.146.62.163-0447 | 3.439MB
-  - CH-156.146.62.162-0448 | 4.026MB
-  - CH-156.146.62.161-0458 | 5.363MB
-  - SS-美国-NF解锁荷兰地区非自制剧-ChatGPT-TikTok-YouTube-150.241.102.95:21771
-  - CH-156.146.62.164-0455 | 4.558MB
-  - '@MxlShare 美国 | USA 38'
-  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.19.48.236:2086
-  - 美国4
-  - SSR-瑞士-NF解锁瑞士自制剧-ChatGPT-TikTok-YouTube-84.17.53.160:989
-  - SS-英国-NF解锁英国自制剧-ChatGPT-TikTok-YouTube-109.120.186.231:11329
-  - SS-挪威-NF解锁挪威自制剧-ChatGPT-TikTok-YouTube-51.13.182.236:6870
-  - HU-91.219.237.102-5788 | 1.578MB
-  - NL_f5c88_0047
-  - DE_f5c88_0027
-  - 美国01
-  - '@MxlShare 美国 | USA 18'
-  - 美国3
-  - 美国05
-  - 美国5
-  - ES_f5c88_0029
-  - CZ-195.181.160.6-0449 | 3.281MB
-  - NL_f5c88_0048
-  - 美国2
-  - SSR-丹麦-NF解锁丹麦自制剧-ChatGPT-TikTok-YouTube-185.186.79.53:989
-  - '@MxlShare 英国 | GBR 14'
-  - '@MxlShare 美国 | USA 37'
-  - JP_f5c88_0035
-  - '@MxlShare 美国 | USA 49'
-  - MD_f5c88_0045
-  - PT_f5c88_0050
-  - 美国1
-  - 🇯🇵 免费-日本7-Ver.1
-  - 🇦🇺AU-20.213.20.185-396
-  - 🇯🇵 免费-日本4-Ver.7
-  - 🇯🇵5
-  - PL_Warsaw_OVH SAS_OpenAI_Claude1
-  - 🇯🇵 免费-日本5-Ver.8
-  - 🇹🇼2
-  - 🇯🇵3
-  - 🇯🇵6
-  - 🇯🇵2
-  - 🇯🇵1
-  - 🇯🇵4
-  - 🇯🇵 免费-日本2-Ver.7
-  - KR_f5c88_0038
-  - KR_f5c88_0037
-  - KR_f5c88_0039
-  - hk5
-  - hk3
-  - FR_f5c88_0031
-  - hk4
-  - 🇸🇬3
-  - hk7
-  - 🇸🇬7
-  - IN_f5c88_0034
-  - 🇹🇼1
-  - 🇸🇬2
-  - 🇮🇳IN-5.8.35.208-120
-  - 🇸🇬5
-  - hk2
-  - 🇯🇵 免费-日本6-Ver.7
-  - hk6
-  - 🇯🇵 免费-日本3-Ver.6
-  - 🇯🇵 免费-日本1-Ver.6
-  - 🇸🇬6
-  - 🇸🇬1
-  - HK_f5c88_0033
-  - 🇰🇷1
-  - '@MxlShare 韩国 | KOR 5'
-  - 🇰🇷2
+  - 🇫🇷FR-195.154.169.198-0453 | 15.833MB
+  - 美国_Telegram@kxswa
+  - SE-46.246.98.155-5847 | 2.813MB
+  - 美国 016
+  - NO-51.13.183.76-0512 | 2.259MB
+  - SE-121.127.46.147-0464 | 1.319MB
+  - 🇬🇧GB-141.98.101.182-0469 | 5.539MB
+  - 🇬🇧GB-141.98.101.180-0463 | 11.712MB
+  - 🇬🇧GB-141.98.101.179-0466 | 6.178MB
+  - 🇬🇧GB-141.98.101.178-0452 | 10.004MB
+  - 荷兰_Telegram@kxswa_4
+  - 荷兰_Telegram@kxswa_3
+  - 🇫🇷FR-51.15.27.48-0427 | 18.384MB
+  - 🇬🇧GB-212.102.53.197-0424 | 18.636MB
+  - 🇬🇧GB-146.70.61.18-0438 | 21.528MB
+  - 🇬🇧GB-18.134.93.183-0418 | 12.174MB
+  - 🇬🇧GB-18.134.93.183-0425 | 23.746MB
+  - 荷兰_Telegram@kxswa_2
+  - 🇬🇧GB-169.150.210.233-6126 | 7.057MB
+  - 🇫🇷FR-195.154.185.174-0443 | 13.822MB
+  - 🇭🇰 香港 | HKG 136
+  - 荷兰_Telegram@kxswa_1
+  - 🇩🇪_德国_10
+  - 🇺🇸_美国_157
+  - 🇩🇪_德国_6
+  - 🇩🇪_德国_8
+  - TR-62.60.233.72-6316 | 1.211MB
+  - RS-194.71.126.31-0462 | 1.4MB
+  - 🇷🇺_俄罗斯_45
+  - 🇩🇪DE-165.22.74.230-6353 | 6.668MB
+  - 🇯🇵 日本 | JPN 14
+  - 香港_Telegram@kxswa_5
+  - 🇯🇵 日本 | JPN 32
+  - 🇯🇵 日本 | JPN 33
+  - 🇯🇵 日本 | JPN 34
+  - 🇯🇵 日本 | JPN 24
+  - 🇯🇵 日本 | JPN 29
+  - 🇸🇪_瑞典_2
+  - 🇰🇷 韩国 | KOR 2
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - US_f5c88_0102
-  - US_f5c88_0104
-  - 🇺🇸US-5.8.93.173-080
-  - US_f5c88_0103
-  - 🇺🇸US-166.1.227.184-081
-  - US_f5c88_0095
-  - '@MxlShare 美国 | USA 46'
-  - '@MxlShare 美国 | USA 41'
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-38.121.43.154:4444
-  - SI_f5c88_0068
-  - 🇺🇸US-5.8.93.173-078
-  - US_f5c88_0072
-  - SC_f5c88_0054
-  - 美国03
-  - 美国02
-  - 🇺🇸US-166.1.227.184-079
-  - VMESS-未知>美国-ChatGPT-TikTok-YouTube-104.19.48.236:8080
-  - US_f5c88_0099
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.175.96.74:16899
-  - SC_f5c88_0055
-  - 美国04
-  - SC_f5c88_0053
-  - SSR-美国>塞舌尔-NF解锁自制剧-ChatGPT-TikTok-YouTube-137.175.113.192:8388
+  - 🇺🇸US-107.155.57.11-0389 | 31.342MB
+  - 🇺🇸US-107.155.57.51-0390 | 27.608MB
+  - 🇺🇸US-137.175.113.192-0403 | 29.392MB
+  - 加拿大 012
+  - 美国 078
+  - 🇺🇸US-154.3.8.151-5990 | 44.271MB
+  - 加拿大 019
+  - 印度 001
+  - 加拿大 030
+  - 美国 056
+  - 印度 002
+  - 🇳🇱_荷兰_18
+  - 加拿大 029
+  - 🇺🇸_美国_155
+  - 捷克 001
+  - 加拿大 020
+  - 美国 054
+  - 🇺🇦_乌克兰_10
+  - 美国 053
+  - 🇺🇸US-173.244.56.6-0387 | 49.296MB
+  - 美国 020
+  - 🇺🇸_美国_4-5OTk
+  - 🇺🇸US-156.146.38.168-0375 | 72.729MB
+  - 🇺🇸US-156.146.38.167-0379 | 58.785MB
+  - 🇺🇸US-156.146.38.170-0378 | 70.023MB
+  - 🇨🇦CA-149.22.95.183-0386 | 27.028MB
+  - 🇺🇸US-156.146.38.169-0381 | 65.729MB
+  - 🇺🇸_美国_145
+  - 美国 010
+  - 美国 026
+  - 美国 006
+  - 美国 017
+  - 美国 009
+  - 🇺🇸_美国_149
+  - 美国 035
+  - 🇺🇸US-138.199.42.68-6135 | 50.053MB
+  - 美国 024
+  - 美国 030
+  - 🇺🇸_美国_147
+  - 🇯🇵JP-149.22.87.240-0471 | 1.098MB
+  - 美国 011
+  - 🇺🇸_美国_151
+  - 🇯🇵JP-149.22.87.241-0470 | 1.101MB
+  - 🇬🇧GB-212.102.53.78-0412 | 25.212MB
+  - 🇬🇧GB-212.102.53.194-0187 | 18.779MB
+  - 🇬🇧GB-212.102.53.196-0423 | 24.607MB
+  - 🇬🇧GB-212.102.53.193-0416 | 23.993MB
+  - 🇬🇧GB-212.102.53.81-0421 | 24.937MB
+  - 🇬🇧GB-212.102.53.80-0422 | 20.105MB
+  - 🇬🇧GB-212.102.53.198-0411 | 20.81MB
+  - 🇬🇧GB-212.102.53.79-0417 | 21.404MB
+  - 🇬🇧GB-212.102.53.195-0414 | 25.043MB
+  - 🇨🇦CA-142.4.216.225-0498 | 1.157MB
+  - 🇳🇱NL-149.34.244.68-0433 | 11.043MB
+  - 🇳🇱NL-109.201.152.181-0426 | 23.273MB
+  - 🇳🇱NL-149.34.244.77-0430 | 12.272MB
+  - 🇳🇱NL-149.34.244.82-0431 | 13.082MB
+  - 🇫🇷FR-51.159.111.208-0445 | 12.371MB
   - MD-86.104.74.243-5833 | 12.302MB
-  - VMESS-未知>美国-NF解锁香港地区非自制剧-ChatGPT-TikTok-YouTube-104.17.221.248:80
-  - '@MxlShare 美国 | USA 33'
-  - CA_f5c88_0001
-  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.17.213.241:2086
+  - 🇫🇷FR-45.158.171.66-5987 | 9.574MB
   - MD-103.106.1.92-0526 | 1.68MB
-  - SS-法国>荷兰-NF解锁荷兰自制剧-ChatGPT-YouTube-45.158.171.151:8080
-  - CH-156.146.62.163-0447 | 3.439MB
-  - CH-156.146.62.162-0448 | 4.026MB
-  - CH-156.146.62.161-0458 | 5.363MB
-  - SS-美国-NF解锁荷兰地区非自制剧-ChatGPT-TikTok-YouTube-150.241.102.95:21771
-  - CH-156.146.62.164-0455 | 4.558MB
-  - '@MxlShare 美国 | USA 38'
-  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.19.48.236:2086
-  - 美国4
-  - SSR-瑞士-NF解锁瑞士自制剧-ChatGPT-TikTok-YouTube-84.17.53.160:989
-  - SS-英国-NF解锁英国自制剧-ChatGPT-TikTok-YouTube-109.120.186.231:11329
-  - SS-挪威-NF解锁挪威自制剧-ChatGPT-TikTok-YouTube-51.13.182.236:6870
-  - HU-91.219.237.102-5788 | 1.578MB
-  - NL_f5c88_0047
-  - DE_f5c88_0027
-  - 美国01
-  - '@MxlShare 美国 | USA 18'
-  - 美国3
-  - 美国05
-  - 美国5
-  - ES_f5c88_0029
-  - CZ-195.181.160.6-0449 | 3.281MB
-  - NL_f5c88_0048
-  - 美国2
-  - SSR-丹麦-NF解锁丹麦自制剧-ChatGPT-TikTok-YouTube-185.186.79.53:989
-  - '@MxlShare 英国 | GBR 14'
-  - '@MxlShare 美国 | USA 37'
-  - JP_f5c88_0035
-  - '@MxlShare 美国 | USA 49'
-  - MD_f5c88_0045
-  - PT_f5c88_0050
-  - 美国1
-  - 🇯🇵 免费-日本7-Ver.1
-  - 🇦🇺AU-20.213.20.185-396
-  - 🇯🇵 免费-日本4-Ver.7
-  - 🇯🇵5
-  - PL_Warsaw_OVH SAS_OpenAI_Claude1
-  - 🇯🇵 免费-日本5-Ver.8
-  - 🇹🇼2
-  - 🇯🇵3
-  - 🇯🇵6
-  - 🇯🇵2
-  - 🇯🇵1
-  - 🇯🇵4
-  - 🇯🇵 免费-日本2-Ver.7
-  - KR_f5c88_0038
-  - KR_f5c88_0037
-  - KR_f5c88_0039
-  - hk5
-  - hk3
-  - FR_f5c88_0031
-  - hk4
-  - 🇸🇬3
-  - hk7
-  - 🇸🇬7
-  - IN_f5c88_0034
-  - 🇹🇼1
-  - 🇸🇬2
-  - 🇮🇳IN-5.8.35.208-120
-  - 🇸🇬5
-  - hk2
-  - 🇯🇵 免费-日本6-Ver.7
-  - hk6
-  - 🇯🇵 免费-日本3-Ver.6
-  - 🇯🇵 免费-日本1-Ver.6
-  - 🇸🇬6
-  - 🇸🇬1
-  - HK_f5c88_0033
-  - 🇰🇷1
-  - '@MxlShare 韩国 | KOR 5'
-  - 🇰🇷2
+  - 🇫🇷FR-195.154.169.198-0453 | 15.833MB
+  - 美国_Telegram@kxswa
+  - SE-46.246.98.155-5847 | 2.813MB
+  - 美国 016
+  - NO-51.13.183.76-0512 | 2.259MB
+  - SE-121.127.46.147-0464 | 1.319MB
+  - 🇬🇧GB-141.98.101.182-0469 | 5.539MB
+  - 🇬🇧GB-141.98.101.180-0463 | 11.712MB
+  - 🇬🇧GB-141.98.101.179-0466 | 6.178MB
+  - 🇬🇧GB-141.98.101.178-0452 | 10.004MB
+  - 荷兰_Telegram@kxswa_4
+  - 荷兰_Telegram@kxswa_3
+  - 🇫🇷FR-51.15.27.48-0427 | 18.384MB
+  - 🇬🇧GB-212.102.53.197-0424 | 18.636MB
+  - 🇬🇧GB-146.70.61.18-0438 | 21.528MB
+  - 🇬🇧GB-18.134.93.183-0418 | 12.174MB
+  - 🇬🇧GB-18.134.93.183-0425 | 23.746MB
+  - 荷兰_Telegram@kxswa_2
+  - 🇬🇧GB-169.150.210.233-6126 | 7.057MB
+  - 🇫🇷FR-195.154.185.174-0443 | 13.822MB
+  - 🇭🇰 香港 | HKG 136
+  - 荷兰_Telegram@kxswa_1
+  - 🇩🇪_德国_10
+  - 🇺🇸_美国_157
+  - 🇩🇪_德国_6
+  - 🇩🇪_德国_8
+  - TR-62.60.233.72-6316 | 1.211MB
+  - RS-194.71.126.31-0462 | 1.4MB
+  - 🇷🇺_俄罗斯_45
+  - 🇩🇪DE-165.22.74.230-6353 | 6.668MB
+  - 🇯🇵 日本 | JPN 14
+  - 香港_Telegram@kxswa_5
+  - 🇯🇵 日本 | JPN 32
+  - 🇯🇵 日本 | JPN 33
+  - 🇯🇵 日本 | JPN 34
+  - 🇯🇵 日本 | JPN 24
+  - 🇯🇵 日本 | JPN 29
+  - 🇸🇪_瑞典_2
+  - 🇰🇷 韩国 | KOR 2
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
