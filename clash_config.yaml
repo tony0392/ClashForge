@@ -32,30 +32,1204 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- name: 🇲🇾 马来西亚[03]
-  server: pop.4b470bd6-cc42-4520-9fe6-d7d53a67b022.heima360.cc
-  port: 443
-  client-fingerprint: chrome
-  type: trojan
-  password: 2401ce96-c8cb-4c77-90b5-04318e0868ad
-  sni: pop.4b470bd6-cc42-4520-9fe6-d7d53a67b022.heima360.cc
+- name: VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.17.213.241:2086
+  type: vmess
+  server: 104.17.213.241
+  port: 2086
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  alterId: 0
+  cipher: auto
+  network: ws
+  servername: 100-171-104-238.s2.db-link02.top
+  http-opts: {}
+  h2-opts: {}
+  skip-cert-verify: true
+  ws-opts:
+    path: /dabai.in172.64.43.14
+    headers:
+      HOST: 100-171-104-238.s2.db-link02.top
+- name: VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.19.48.236:2086
+  type: vmess
+  server: 104.19.48.236
+  port: 2086
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  alterId: 0
+  cipher: auto
+  network: ws
+  servername: 100-171-104-238.s2.db-link02.top
+  http-opts: {}
+  h2-opts: {}
+  skip-cert-verify: true
+  ws-opts:
+    path: /dabai.in172.64.43.14
+    headers:
+      HOST: 100-171-104-238.s2.db-link02.top
+- name: SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.175.96.74:16899
+  type: ss
+  server: 107.175.96.74
+  port: 16899
+  password: Yc2CtrIz8L
+  cipher: aes-128-gcm
+- name: SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-38.121.43.154:4444
+  type: ss
+  server: 38.121.43.154
+  port: 4444
+  password: pKEW8JPByTVTLtM
+  cipher: aes-256-gcm
+- name: SSR-瑞士-NF解锁瑞士自制剧-ChatGPT-TikTok-YouTube-84.17.53.160:989
+  type: ssr
+  server: 84.17.53.160
+  port: 989
+  password: f8f7aCzcPKbsF8p3
+  cipher: aes-256-cfb
+  protocol: origin
+  obfs: plain
+- name: SSR-美国>塞舌尔-NF解锁自制剧-ChatGPT-TikTok-YouTube-137.175.113.192:8388
+  type: ssr
+  server: 137.175.113.192
+  port: 8388
+  password: asd123456
+  cipher: chacha20-ietf
+  protocol: origin
+  obfs: plain
+- name: SS-美国-NF解锁荷兰地区非自制剧-ChatGPT-TikTok-YouTube-150.241.102.95:21771
+  type: ss
+  server: 150.241.102.95
+  port: 21771
+  password: SkUmZvOscCy99rPKKXqrmK
+  cipher: chacha20-ietf-poly1305
+- name: SS-英国-NF解锁英国自制剧-ChatGPT-TikTok-YouTube-109.120.186.231:11329
+  type: ss
+  server: 109.120.186.231
+  port: 11329
+  password: AIsvzXnT1Z6NFoeadqyDCq
+  cipher: chacha20-ietf-poly1305
+- name: SS-挪威-NF解锁挪威自制剧-ChatGPT-TikTok-YouTube-51.13.182.236:6870
+  type: ss
+  server: 51.13.182.236
+  port: 6870
+  password: M7x1mGNOwhPiRB9jSxZJNy
+  cipher: chacha20-ietf-poly1305
+- name: SS-加拿大-NF解锁自制剧-64.74.163.130:990
+  type: ss
+  server: 64.74.163.130
+  port: 990
+  password: f8f7aCzcPKbsF8p3
+  cipher: chacha20-ietf-poly1305
+- name: US_speednode_0096
+  server: 38.147.160.151
+  port: 54735
+  type: vmess
+  uuid: 0785c6af-4aac-49a0-9533-95d41d990384
+  alterId: 0
+  cipher: auto
+  tls: false
   skip-cert-verify: false
-- name: 🇦🇺 澳大利亚[01]
-  server: pop.25cbab93-4c08-4a3c-8521-3f3d8c4b36ae.heima360.cc
-  port: 443
-  client-fingerprint: chrome
-  type: trojan
-  password: 2401ce96-c8cb-4c77-90b5-04318e0868ad
-  sni: pop.25cbab93-4c08-4a3c-8521-3f3d8c4b36ae.heima360.cc
+  udp: true
+- name: US_speednode_0097
+  server: s2.db-link01.top
+  port: 8880
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  alterId: 0
+  cipher: auto
+  tls: false
   skip-cert-verify: false
-- name: 🇸🇬 新加坡[02]
-  server: pop.09d21837-9b89-4490-92bf-eabf449e3321.heima360.cc
-  port: 443
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /dabai.in172.64.0.32
+    headers:
+      Host: 100-14-147-154.s2.db-link01.top
+  udp: true
+- name: US_speednode_0099
+  server: t37.emoyes.top
+  port: 657
   type: trojan
-  password: 2401ce96-c8cb-4c77-90b5-04318e0868ad
-  sni: pop.09d21837-9b89-4490-92bf-eabf449e3321.heima360.cc
+  password: c9d1e9e4-2812-4a50-a113-a6c914e9c832
+  sni: www.python.org
+  skip-cert-verify: true
+  udp: true
+- name: US_speednode_0100
+  server: s4.db-link01.top
+  port: 80
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  alterId: 0
+  cipher: auto
+  tls: false
   skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /dabai.in172.64.44.14
+    headers:
+      Host: 100-157-232-164.s4.db-link01.top
+  udp: true
+- name: US_speednode_0101
+  server: t36.emoyes.top
+  port: 257
+  type: trojan
+  password: c9d1e9e4-2812-4a50-a113-a6c914e9c832
+  sni: www.python.org
+  skip-cert-verify: true
+  udp: true
+- name: US_speednode_0102
+  server: 5.8.93.173
+  port: 443
+  type: trojan
+  password: '3723507166611775488'
+  sni: nearby-hedgehog.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: US_speednode_0103
+  server: 166.1.227.184
+  port: 443
+  type: trojan
+  password: '3723507166611775488'
+  sni: organic-hare.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: US_speednode_0104
+  server: nearby-hedgehog.boa152.lol
+  port: 443
+  type: trojan
+  password: '3723507166611775488'
+  sni: nearby-hedgehog.boa152.lol
+  skip-cert-verify: false
+  udp: true
+- name: US_speednode_0105
+  server: 198.62.62.192
+  port: 2083
+  type: trojan
+  password: Aimer
+  sni: ameqo.esslh.filegear-sg.me
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ameqo.esslh.filegear-sg.me
+  udp: true
+- name: US_speednode_0106
+  server: 141.148.187.195
+  port: 443
+  type: vless
+  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
+  tls: true
+  skip-cert-verify: false
+  servername: mmdserver.us.kg
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: mmdserver.us.kg
+  udp: true
+- name: US_speednode_0107
+  server: 154.23.240.232
+  port: 443
+  type: vless
+  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
+  tls: true
+  skip-cert-verify: false
+  servername: mmdserver.us.kg
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: mmdserver.us.kg
+  udp: true
+- name: US_speednode_0108
+  server: 138.2.227.164
+  port: 443
+  type: vless
+  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
+  tls: true
+  skip-cert-verify: false
+  servername: mmdserver.us.kg
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: mmdserver.us.kg
+  udp: true
+- name: US_speednode_0109
+  server: 129.146.46.164
+  port: 443
+  type: vless
+  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
+  tls: true
+  skip-cert-verify: false
+  servername: mmdserver.us.kg
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: mmdserver.us.kg
+  udp: true
+- name: US_speednode_0110
+  server: 142.4.108.141
+  port: 38007
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /path/1723457615032
+    headers:
+      Host: www.66827194.xyz
+  udp: true
+- name: 0|--23
+  type: ss
+  server: 107.151.182.253
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+  udp: true
+- name: 0|--28
+  type: ss
+  server: 27.255.82.23
+  port: 5412
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+  udp: true
+- name: 0|--30
+  type: ss
+  server: 51.13.182.231
+  port: 3089
+  cipher: chacha20-ietf-poly1305
+  password: J0lgxy4mb52CIJ8UUcEgts
+  udp: true
+- name: 0|--32
+  type: ss
+  server: 13.125.6.123
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 0|--35
+  type: ss
+  server: 221.168.44.72
+  port: 27973
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+  udp: true
+- name: 0|--39
+  type: ss
+  server: 218.237.185.230
+  port: 31066
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+  udp: true
+- name: 13|🇯🇵-LR9O
+  type: ss
+  server: 3.34.189.113
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 13|🇬🇧
+  type: ss
+  server: 78.129.140.11
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: 9VToB0AWmiQD10bUER9ShQ
+  udp: true
+- name: 美国 CloudFlare节点
+  type: vmess
+  server: s1.cn-db.top
+  port: 2082
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: false
+  sni: ''
+  ws-opts:
+    path: /dabai.in172.64.27.73
+    headers:
+      Host: 100-150-51-99.s1.cn-db.top
+- name: 瑞典+V2CROSS.COM
+  type: ss
+  server: 167.88.63.21
+  port: 8118
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+  udp: true
+- name: 美国 CloudFlare节点-ttxz
+  type: vmess
+  server: s1.db-link02.top
+  port: 2082
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: false
+  sni: ''
+  ws-opts:
+    path: /dabai.in104.20.8.162
+    headers:
+      Host: 100-6-81-226.s1.db-link02.top
+- name: 美国 CloudFlare节点-cMIi
+  type: vmess
+  server: s1.cn-db.top
+  port: 2052
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: false
+  sni: ''
+  ws-opts:
+    path: /dabai.in172.64.9.180
+    headers:
+      Host: 100-185-39-111.s1.cn-db.top
+- name: 瑞典+V2CROSS.COM-RzCt
+  type: ss
+  server: 167.88.63.21
+  port: 8881
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+  udp: true
+- name: 瑞典+V2CROSS.COM-zjv3
+  type: ss
+  server: 167.88.63.21
+  port: 5601
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 美国 CloudFlare节点-FZm8
+  type: vmess
+  server: ff.kncc2.top
+  port: 8443
+  uuid: 89c344f2-096c-445c-b629-9b15152f38e7
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  sni: ''
+  ws-opts:
+    path: /89c344f2
+    headers:
+      Host: ''
+- name: Alvin1
+  server: 104.21.238.38
+  port: 2086
+  type: vmess
+  uuid: ee420fda-efb7-48a8-9249-8987e36ebd9e
+  alterId: 0
+  cipher: auto
+  udp: false
+  network: ws
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip16.9447609.xyz
+- name: Alvin2
+  server: 104.21.238.37
+  port: 2086
+  type: vmess
+  uuid: ee420fda-efb7-48a8-9249-8987e36ebd9e
+  alterId: 0
+  cipher: auto
+  udp: false
+  network: ws
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip16.9447609.xyz
+- name: Alvin3
+  server: 104.21.238.36
+  port: 2086
+  type: vmess
+  uuid: ee420fda-efb7-48a8-9249-8987e36ebd9e
+  alterId: 0
+  cipher: auto
+  udp: false
+  network: ws
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip16.9447609.xyz
+- name: CA_0001
+  server: 23.162.200.227
+  port: 443
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /linkvws
+  udp: true
+- name: 美国 006
+  type: vless
+  network: ws
+  server: 167.82.65.80
+  port: 80
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  servername: edge.validbv3528.ir
+  tls: false
+  delay: 982
+  ws-opts:
+    headers:
+      Host: edge.validbv3528.ir
+    path: /vless-ws/
+- name: 美国 009
+  type: vless
+  network: ws
+  server: 167.82.70.214
+  port: 80
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  servername: edge.validbv3528.ir
+  tls: false
+  delay: 994
+  ws-opts:
+    headers:
+      Host: edge.validbv3528.ir
+    path: /vless-ws/
+- name: 美国 010
+  type: vless
+  network: ws
+  server: 167.82.65.71
+  port: 80
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  servername: edge.validbv3528.ir
+  tls: false
+  delay: 1009
+  ws-opts:
+    headers:
+      Host: edge.validbv3528.ir
+    path: /vless-ws/
+- name: 美国 011
+  type: vless
+  network: ws
+  server: 167.82.72.38
+  port: 80
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  servername: edge.validbv3528.ir
+  tls: false
+  delay: 1182
+  ws-opts:
+    headers:
+      Host: edge.validbv3528.ir
+    path: /
+- name: 美国 017
+  type: vless
+  network: ws
+  server: 167.82.69.101
+  port: 80
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  servername: edge.validbv3528.ir
+  tls: false
+  delay: 933
+  ws-opts:
+    headers:
+      Host: edge.validbv3528.ir
+    path: /vless-ws/
+- name: 美国 026
+  type: vless
+  network: ws
+  server: 167.82.0.9
+  port: 80
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  servername: edge.validbv3528.ir
+  skip-cert-verify: false
+  tls: false
+  ws-opts:
+    headers:
+      Host: edge.validbv3528.ir
+    path: /vless-ws/
+- name: 美国 030
+  type: vless
+  network: ws
+  server: 167.82.71.3
+  port: 80
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  servername: edge.validbv3528.ir
+  skip-cert-verify: false
+  tls: false
+  ws-opts:
+    headers:
+      Host: edge.validbv3528.ir
+    path: /vless-ws/
+- name: 加拿大 019
+  type: vless
+  network: ws
+  server: 198.41.216.118
+  port: 80
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  servername: a.mifeng.us.kg
+  skip-cert-verify: false
+  tls: false
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048
+- name: 美国 035
+  type: vless
+  network: ws
+  server: 167.82.66.165
+  port: 80
+  uuid: 253ef561-9e57-4336-befd-878ddd30df01
+  servername: teleirani.ir
+  skip-cert-verify: false
+  tls: false
+  ws-opts:
+    headers:
+      Host: teleirani.ir
+    path: /vless-ws/
+- name: 加拿大 012
+  type: vless
+  network: ws
+  server: 173.245.49.53
+  port: 80
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  servername: a.mifeng.us.kg
+  tls: false
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048
+- name: 美国 016
+  type: vless
+  network: ws
+  server: 167.82.1.121
+  port: 80
+  uuid: 253ef561-9e57-4336-befd-878ddd30df01
+  servername: teleirani.ir
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: teleirani.ir
+    path: /vless-ws/
+- name: 美国 020
+  type: vless
+  network: ws
+  server: 167.82.101.43
+  port: 80
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  skip-cert-verify: false
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: edge.validbv3528.ir
+    path: /vless-ws/
+- name: 加拿大 020
+  type: vless
+  network: ws
+  server: 104.21.30.21
+  port: 80
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  skip-cert-verify: false
+  tls: false
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048
+- name: 美国 024
+  type: vless
+  network: ws
+  server: 167.82.72.131
+  port: 80
+  uuid: 253ef561-9e57-4336-befd-878ddd30df01
+  servername: teleirani.ir
+  tls: false
+  ws-opts:
+    headers:
+      Host: teleirani.ir
+    path: /
+- name: 加拿大 029
+  type: trojan
+  network: ws
+  server: 104.19.107.190
+  port: 2096
+  password: Aimer
+  skip-cert-verify: true
+  udp: true
+  sni: ameqo.esslh.filegear-sg.me
+  ws-opts:
+    headers:
+      Host: ameqo.esslh.filegear-sg.me
+    path: /?ed=2560
+- name: 加拿大 030
+  type: trojan
+  network: ws
+  server: 104.19.57.183
+  port: 2096
+  password: Aimer
+  skip-cert-verify: true
+  udp: true
+  sni: ameqo.esslh.filegear-sg.me
+  ws-opts:
+    headers:
+      Host: ameqo.esslh.filegear-sg.me
+    path: /?ed=2560
+- name: 埃及 001
+  type: trojan
+  network: ws
+  server: 45.136.199.132
+  port: 443
+  password: Aimer
+  skip-cert-verify: true
+  udp: true
+  sni: ameqo.esslh.filegear-sg.me
+  ws-opts:
+    headers:
+      Host: ameqo.esslh.filegear-sg.me
+    path: /?ed=2560
+- name: 美国 053
+  type: trojan
+  network: ws
+  server: 209.94.90.87
+  port: 2087
+  password: Aimer
+  skip-cert-verify: true
+  udp: true
+  sni: ameqo.esslh.filegear-sg.me
+  ws-opts:
+    headers:
+      Host: ameqo.esslh.filegear-sg.me
+    path: /?ed=2560
+- name: 印度 001
+  type: trojan
+  network: ws
+  server: 108.165.152.104
+  port: 2053
+  password: Aimer
+  skip-cert-verify: true
+  udp: true
+  sni: ameqo.esslh.filegear-sg.me
+  ws-opts:
+    headers:
+      Host: ameqo.esslh.filegear-sg.me
+    path: /?ed=2560
+- name: 美国 054
+  type: trojan
+  network: ws
+  server: 206.238.236.134
+  port: 443
+  password: Aimer
+  skip-cert-verify: true
+  udp: true
+  sni: ameqo.esslh.filegear-sg.me
+  ws-opts:
+    headers:
+      Host: ameqo.esslh.filegear-sg.me
+    path: /?ed=2560
+- name: 美国 056
+  type: trojan
+  network: ws
+  server: 66.81.247.88
+  port: 2083
+  password: Aimer
+  skip-cert-verify: true
+  udp: true
+  sni: ameqo.esslh.filegear-sg.me
+  ws-opts:
+    headers:
+      Host: ameqo.esslh.filegear-sg.me
+    path: /?ed=2560
+- name: 捷克 001
+  type: trojan
+  network: ws
+  server: 188.164.159.91
+  port: 2083
+  password: Aimer
+  skip-cert-verify: true
+  udp: true
+  sni: ameqo.esslh.filegear-sg.me
+  ws-opts:
+    headers:
+      Host: ameqo.esslh.filegear-sg.me
+    path: /?ed=2560
+- name: 印度 002
+  type: trojan
+  network: ws
+  server: 108.165.152.80
+  port: 2083
+  password: Aimer
+  skip-cert-verify: true
+  udp: true
+  sni: ameqo.esslh.filegear-sg.me
+  ws-opts:
+    headers:
+      Host: ameqo.esslh.filegear-sg.me
+    path: /?ed=2560
+- name: 美国 064
+  type: trojan
+  network: ws
+  server: 88.218.78.95
+  port: 8443
+  password: Aimer
+  skip-cert-verify: true
+  udp: true
+  sni: ameqo.esslh.filegear-sg.me
+  ws-opts:
+    headers:
+      Host: ameqo.esslh.filegear-sg.me
+    path: /?ed=2560
+- name: 美国 078
+  type: vless
+  network: ws
+  server: 104.21.30.5
+  port: 80
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  servername: a.mifeng.us.kg
+  tls: false
+  ws-opts:
+    headers:
+      Host: a.mifeng.us.kg
+    path: /?ed=2048
+- type: vless
+  name: 🇸🇬_新加坡
+  server: 139.180.191.96
+  port: 31001
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: dsg.ylks.us.kg
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: dsg.ylks.us.kg
+- type: vless
+  name: 🇺🇸_美国_1-T1Pw
+  server: 18.163.116.232
+  port: 8888
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: dsg.ylks.us.kg
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: dsg.ylks.us.kg
+- type: vless
+  name: 🇺🇸_美国_4-TOoZ
+  server: 154.17.21.134
+  port: 18446
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: dsg.ylks.us.kg
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: dsg.ylks.us.kg
+- type: vless
+  name: 🇺🇸_美国_9
+  server: 192.9.180.162
+  port: 443
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: dsg.ylks.us.kg
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: dsg.ylks.us.kg
+- type: vless
+  name: 🇺🇸_美国_15
+  server: 47.89.244.253
+  port: 443
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: dsg.ylks.us.kg
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: dsg.ylks.us.kg
+- type: vless
+  name: 🇺🇸_美国_22
+  server: 156.230.12.71
+  port: 443
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: dsg.ylks.us.kg
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: dsg.ylks.us.kg
+- type: vless
+  name: 🇺🇸_美国_24
+  server: 192.200.160.114
+  port: 443
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: dsg.ylks.us.kg
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: dsg.ylks.us.kg
+- type: vless
+  name: 🇺🇸_美国_25
+  server: kip.ns.cloudflare.com
+  port: 443
+  uuid: 807b2717-e1ac-4209-933b-b04076cddde9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: amedo.ambercc.filegear-sg.me
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: amedo.ambercc.filegear-sg.me
+- type: vless
+  name: 🇺🇸_美国_26
+  server: 63.141.128.172
+  port: 443
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: dsg.ylks.us.kg
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: dsg.ylks.us.kg
+- type: vless
+  name: 🇦🇹_奥地利_1
+  server: 212.183.88.24
+  port: 443
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: dsg.ylks.us.kg
+  ws-opts:
+    path: /?ed=2560&proxyip=212.183.88.24:443
+    headers:
+      host: dsg.ylks.us.kg
+- type: vless
+  name: 🇺🇸_美国_33
+  server: pranab.ns.cloudflare.com
+  port: 443
+  uuid: 807b2717-e1ac-4209-933b-b04076cddde9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: amedo.ambercc.filegear-sg.me
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: amedo.ambercc.filegear-sg.me
+- type: vless
+  name: 🇺🇸_美国_35
+  server: 206.238.236.101
+  port: 443
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: dsg.ylks.us.kg
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: dsg.ylks.us.kg
+- type: vless
+  name: 🇯🇵_日本_7
+  server: 103.116.7.189
+  port: 443
+  uuid: 807b2717-e1ac-4209-933b-b04076cddde9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: amedo.ambercc.filegear-sg.me
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: amedo.ambercc.filegear-sg.me
+- type: vless
+  name: 🇺🇸_美国_37
+  server: 63.141.128.208
+  port: 443
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: dsg.ylks.us.kg
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: dsg.ylks.us.kg
+- type: vless
+  name: 🇬🇧_英国_1
+  server: 217.163.76.168
+  port: 443
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: dsg.ylks.us.kg
+  ws-opts:
+    path: /?ed=2560&proxyip=217.163.76.168:443
+    headers:
+      host: dsg.ylks.us.kg
+- type: vless
+  name: 🇩🇪_德国_3
+  server: 185.16.110.103
+  port: 443
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: dsg.ylks.us.kg
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: dsg.ylks.us.kg
+- type: vless
+  name: 🇺🇸_美国_38
+  server: 135.84.76.105
+  port: 443
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: dsg.ylks.us.kg
+  ws-opts:
+    path: /?ed=2560&proxyip=135.84.76.105:443
+    headers:
+      host: dsg.ylks.us.kg
+- type: vless
+  name: 🇺🇦_乌克兰_1-HRiA
+  server: 45.67.215.109
+  port: 443
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: dsg.ylks.us.kg
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: dsg.ylks.us.kg
+- type: vless
+  name: 🇳🇱_荷兰_4
+  server: 185.133.35.195
+  port: 443
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: dsg.ylks.us.kg
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: dsg.ylks.us.kg
+- type: vless
+  name: 🇺🇸_美国_43
+  server: 108.165.152.78
+  port: 2083
+  uuid: 807b2717-e1ac-4209-933b-b04076cddde9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: amedo.ambercc.filegear-sg.me
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: amedo.ambercc.filegear-sg.me
+- type: vless
+  name: 🇯🇵_日本_8
+  server: 103.116.7.133
+  port: 2083
+  uuid: 807b2717-e1ac-4209-933b-b04076cddde9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: amedo.ambercc.filegear-sg.me
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: amedo.ambercc.filegear-sg.me
+- type: vless
+  name: 🇺🇸_美国_52
+  server: 198.62.62.9
+  port: 443
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: dsg.ylks.us.kg
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: dsg.ylks.us.kg
+- type: vless
+  name: 🇷🇺_俄罗斯_10
+  server: 194.76.18.99
+  port: 443
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: dsg.ylks.us.kg
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: dsg.ylks.us.kg
+- type: vless
+  name: 🇺🇸_美国_53
+  server: 192.0.54.132
+  port: 443
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: dsg.ylks.us.kg
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: dsg.ylks.us.kg
+- type: vless
+  name: 🇺🇸_美国_54
+  server: damien.ns.cloudflare.com
+  port: 443
+  uuid: 807b2717-e1ac-4209-933b-b04076cddde9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: amedo.ambercc.filegear-sg.me
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: amedo.ambercc.filegear-sg.me
+- type: vless
+  name: 🇷🇺_俄罗斯_11
+  server: 92.243.75.49
+  port: 2087
+  uuid: 807b2717-e1ac-4209-933b-b04076cddde9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: amedo.ambercc.filegear-sg.me
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: amedo.ambercc.filegear-sg.me
+- type: vless
+  name: 🇳🇱_荷兰_5
+  server: 45.154.98.211
+  port: 4001
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: dsg.ylks.us.kg
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: dsg.ylks.us.kg
+- type: vless
+  name: 🇺🇸_美国_56
+  server: 63.141.128.58
+  port: 443
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: dsg.ylks.us.kg
+  ws-opts:
+    path: /?ed=2560&proxyip=63.141.128.58:443
+    headers:
+      host: dsg.ylks.us.kg
+- type: vless
+  name: 🇺🇸_美国_60
+  server: sage.ns.cloudflare.com
+  port: 443
+  uuid: 807b2717-e1ac-4209-933b-b04076cddde9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: amedo.ambercc.filegear-sg.me
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: amedo.ambercc.filegear-sg.me
+- type: vless
+  name: 🇩🇪_德国_10
+  server: 130.61.83.37
+  port: 8443
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: dsg.ylks.us.kg
+  ws-opts:
+    path: /?ed=2560&proxyip=proxyip.oracle.fxxk.dedyn.io
+    headers:
+      host: dsg.ylks.us.kg
+- name: _197
+  type: vmess
+  server: 142.0.134.241
+  port: 45017
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  cipher: auto
+  network: ''
+  tls: false
+  sni: ''
+  ws-opts: {}
+- name: 🇭🇰 香港 | HKG 149
+  server: 212.192.12.70
+  port: 32902
+  client-fingerprint: chrome
+  type: hysteria2
+  password: b159ac71-2038-423f-b79a-8c6ab5a9b684
+  auth: b159ac71-2038-423f-b79a-8c6ab5a9b684
+  up: 2
+  down: 2
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: YzcwOTNlODc4NDIzMWMyMg==
+  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -68,9 +1242,106 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 🇦🇺 澳大利亚[01]
-  - 🇸🇬 新加坡[02]
-  - 🇲🇾 马来西亚[03]
+  - 加拿大 012
+  - 🇦🇹_奥地利_1
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-38.121.43.154:4444
+  - 瑞典+V2CROSS.COM-RzCt
+  - 加拿大 019
+  - 🇺🇦_乌克兰_1-HRiA
+  - US_speednode_0102
+  - 🇬🇧_英国_1
+  - 🇷🇺_俄罗斯_10
+  - 🇳🇱_荷兰_4
+  - 加拿大 020
+  - 🇺🇸_美国_24
+  - 🇺🇸_美国_35
+  - 瑞典+V2CROSS.COM
+  - 🇺🇸_美国_26
+  - 瑞典+V2CROSS.COM-zjv3
+  - 美国 024
+  - 美国 078
+  - 🇺🇸_美国_53
+  - US_speednode_0103
+  - 🇺🇸_美国_52
+  - 加拿大 029
+  - CA_0001
+  - SS-加拿大-NF解锁自制剧-64.74.163.130:990
+  - 🇷🇺_俄罗斯_11
+  - 🇯🇵_日本_7
+  - 捷克 001
+  - 美国 017
+  - 🇺🇸_美国_38
+  - 美国 056
+  - 🇺🇸_美国_60
+  - 🇺🇸_美国_54
+  - 🇺🇸_美国_56
+  - 🇩🇪_德国_3
+  - 🇺🇸_美国_37
+  - 美国 020
+  - 🇯🇵_日本_8
+  - 美国 053
+  - 美国 030
+  - 美国 011
+  - 印度 002
+  - US_speednode_0105
+  - 🇺🇸_美国_33
+  - 美国 054
+  - 印度 001
+  - US_speednode_0104
+  - 美国 035
+  - 加拿大 030
+  - 美国 009
+  - 美国 026
+  - SSR-美国>塞舌尔-NF解锁自制剧-ChatGPT-TikTok-YouTube-137.175.113.192:8388
+  - 🇺🇸_美国_43
+  - 🇺🇸_美国_25
+  - 13|🇬🇧
+  - 美国 016
+  - US_speednode_0096
+  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.19.48.236:2086
+  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.17.213.241:2086
+  - _197
+  - 🇺🇸_美国_15
+  - SS-美国-NF解锁荷兰地区非自制剧-ChatGPT-TikTok-YouTube-150.241.102.95:21771
+  - SSR-瑞士-NF解锁瑞士自制剧-ChatGPT-TikTok-YouTube-84.17.53.160:989
+  - Alvin2
+  - Alvin1
+  - Alvin3
+  - SS-英国-NF解锁英国自制剧-ChatGPT-TikTok-YouTube-109.120.186.231:11329
+  - 0|--30
+  - US_speednode_0108
+  - SS-挪威-NF解锁挪威自制剧-ChatGPT-TikTok-YouTube-51.13.182.236:6870
+  - US_speednode_0107
+  - 🇩🇪_德国_10
+  - 🇳🇱_荷兰_5
+  - US_speednode_0109
+  - 美国 CloudFlare节点-FZm8
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.175.96.74:16899
+  - 0|--23
+  - US_speednode_0106
+  - US_speednode_0100
+  - 🇺🇸_美国_4-TOoZ
+  - 美国 064
+  - 美国 010
+  - US_speednode_0097
+  - 美国 CloudFlare节点
+  - 美国 CloudFlare节点-cMIi
+  - 美国 CloudFlare节点-ttxz
+  - US_speednode_0099
+  - US_speednode_0101
+  - 美国 006
+  - 埃及 001
+  - 0|--35
+  - US_speednode_0110
+  - 13|🇯🇵-LR9O
+  - 🇺🇸_美国_1-T1Pw
+  - 0|--28
+  - 🇺🇸_美国_9
+  - 🇺🇸_美国_22
+  - 🇸🇬_新加坡
+  - 0|--32
+  - 0|--39
+  - 🇭🇰 香港 | HKG 149
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
@@ -78,17 +1349,211 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 🇦🇺 澳大利亚[01]
-  - 🇸🇬 新加坡[02]
-  - 🇲🇾 马来西亚[03]
+  - 加拿大 012
+  - 🇦🇹_奥地利_1
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-38.121.43.154:4444
+  - 瑞典+V2CROSS.COM-RzCt
+  - 加拿大 019
+  - 🇺🇦_乌克兰_1-HRiA
+  - US_speednode_0102
+  - 🇬🇧_英国_1
+  - 🇷🇺_俄罗斯_10
+  - 🇳🇱_荷兰_4
+  - 加拿大 020
+  - 🇺🇸_美国_24
+  - 🇺🇸_美国_35
+  - 瑞典+V2CROSS.COM
+  - 🇺🇸_美国_26
+  - 瑞典+V2CROSS.COM-zjv3
+  - 美国 024
+  - 美国 078
+  - 🇺🇸_美国_53
+  - US_speednode_0103
+  - 🇺🇸_美国_52
+  - 加拿大 029
+  - CA_0001
+  - SS-加拿大-NF解锁自制剧-64.74.163.130:990
+  - 🇷🇺_俄罗斯_11
+  - 🇯🇵_日本_7
+  - 捷克 001
+  - 美国 017
+  - 🇺🇸_美国_38
+  - 美国 056
+  - 🇺🇸_美国_60
+  - 🇺🇸_美国_54
+  - 🇺🇸_美国_56
+  - 🇩🇪_德国_3
+  - 🇺🇸_美国_37
+  - 美国 020
+  - 🇯🇵_日本_8
+  - 美国 053
+  - 美国 030
+  - 美国 011
+  - 印度 002
+  - US_speednode_0105
+  - 🇺🇸_美国_33
+  - 美国 054
+  - 印度 001
+  - US_speednode_0104
+  - 美国 035
+  - 加拿大 030
+  - 美国 009
+  - 美国 026
+  - SSR-美国>塞舌尔-NF解锁自制剧-ChatGPT-TikTok-YouTube-137.175.113.192:8388
+  - 🇺🇸_美国_43
+  - 🇺🇸_美国_25
+  - 13|🇬🇧
+  - 美国 016
+  - US_speednode_0096
+  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.19.48.236:2086
+  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.17.213.241:2086
+  - _197
+  - 🇺🇸_美国_15
+  - SS-美国-NF解锁荷兰地区非自制剧-ChatGPT-TikTok-YouTube-150.241.102.95:21771
+  - SSR-瑞士-NF解锁瑞士自制剧-ChatGPT-TikTok-YouTube-84.17.53.160:989
+  - Alvin2
+  - Alvin1
+  - Alvin3
+  - SS-英国-NF解锁英国自制剧-ChatGPT-TikTok-YouTube-109.120.186.231:11329
+  - 0|--30
+  - US_speednode_0108
+  - SS-挪威-NF解锁挪威自制剧-ChatGPT-TikTok-YouTube-51.13.182.236:6870
+  - US_speednode_0107
+  - 🇩🇪_德国_10
+  - 🇳🇱_荷兰_5
+  - US_speednode_0109
+  - 美国 CloudFlare节点-FZm8
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.175.96.74:16899
+  - 0|--23
+  - US_speednode_0106
+  - US_speednode_0100
+  - 🇺🇸_美国_4-TOoZ
+  - 美国 064
+  - 美国 010
+  - US_speednode_0097
+  - 美国 CloudFlare节点
+  - 美国 CloudFlare节点-cMIi
+  - 美国 CloudFlare节点-ttxz
+  - US_speednode_0099
+  - US_speednode_0101
+  - 美国 006
+  - 埃及 001
+  - 0|--35
+  - US_speednode_0110
+  - 13|🇯🇵-LR9O
+  - 🇺🇸_美国_1-T1Pw
+  - 0|--28
+  - 🇺🇸_美国_9
+  - 🇺🇸_美国_22
+  - 🇸🇬_新加坡
+  - 0|--32
+  - 0|--39
+  - 🇭🇰 香港 | HKG 149
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 🇦🇺 澳大利亚[01]
-  - 🇸🇬 新加坡[02]
-  - 🇲🇾 马来西亚[03]
+  - 加拿大 012
+  - 🇦🇹_奥地利_1
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-38.121.43.154:4444
+  - 瑞典+V2CROSS.COM-RzCt
+  - 加拿大 019
+  - 🇺🇦_乌克兰_1-HRiA
+  - US_speednode_0102
+  - 🇬🇧_英国_1
+  - 🇷🇺_俄罗斯_10
+  - 🇳🇱_荷兰_4
+  - 加拿大 020
+  - 🇺🇸_美国_24
+  - 🇺🇸_美国_35
+  - 瑞典+V2CROSS.COM
+  - 🇺🇸_美国_26
+  - 瑞典+V2CROSS.COM-zjv3
+  - 美国 024
+  - 美国 078
+  - 🇺🇸_美国_53
+  - US_speednode_0103
+  - 🇺🇸_美国_52
+  - 加拿大 029
+  - CA_0001
+  - SS-加拿大-NF解锁自制剧-64.74.163.130:990
+  - 🇷🇺_俄罗斯_11
+  - 🇯🇵_日本_7
+  - 捷克 001
+  - 美国 017
+  - 🇺🇸_美国_38
+  - 美国 056
+  - 🇺🇸_美国_60
+  - 🇺🇸_美国_54
+  - 🇺🇸_美国_56
+  - 🇩🇪_德国_3
+  - 🇺🇸_美国_37
+  - 美国 020
+  - 🇯🇵_日本_8
+  - 美国 053
+  - 美国 030
+  - 美国 011
+  - 印度 002
+  - US_speednode_0105
+  - 🇺🇸_美国_33
+  - 美国 054
+  - 印度 001
+  - US_speednode_0104
+  - 美国 035
+  - 加拿大 030
+  - 美国 009
+  - 美国 026
+  - SSR-美国>塞舌尔-NF解锁自制剧-ChatGPT-TikTok-YouTube-137.175.113.192:8388
+  - 🇺🇸_美国_43
+  - 🇺🇸_美国_25
+  - 13|🇬🇧
+  - 美国 016
+  - US_speednode_0096
+  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.19.48.236:2086
+  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.17.213.241:2086
+  - _197
+  - 🇺🇸_美国_15
+  - SS-美国-NF解锁荷兰地区非自制剧-ChatGPT-TikTok-YouTube-150.241.102.95:21771
+  - SSR-瑞士-NF解锁瑞士自制剧-ChatGPT-TikTok-YouTube-84.17.53.160:989
+  - Alvin2
+  - Alvin1
+  - Alvin3
+  - SS-英国-NF解锁英国自制剧-ChatGPT-TikTok-YouTube-109.120.186.231:11329
+  - 0|--30
+  - US_speednode_0108
+  - SS-挪威-NF解锁挪威自制剧-ChatGPT-TikTok-YouTube-51.13.182.236:6870
+  - US_speednode_0107
+  - 🇩🇪_德国_10
+  - 🇳🇱_荷兰_5
+  - US_speednode_0109
+  - 美国 CloudFlare节点-FZm8
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.175.96.74:16899
+  - 0|--23
+  - US_speednode_0106
+  - US_speednode_0100
+  - 🇺🇸_美国_4-TOoZ
+  - 美国 064
+  - 美国 010
+  - US_speednode_0097
+  - 美国 CloudFlare节点
+  - 美国 CloudFlare节点-cMIi
+  - 美国 CloudFlare节点-ttxz
+  - US_speednode_0099
+  - US_speednode_0101
+  - 美国 006
+  - 埃及 001
+  - 0|--35
+  - US_speednode_0110
+  - 13|🇯🇵-LR9O
+  - 🇺🇸_美国_1-T1Pw
+  - 0|--28
+  - 🇺🇸_美国_9
+  - 🇺🇸_美国_22
+  - 🇸🇬_新加坡
+  - 0|--32
+  - 0|--39
+  - 🇭🇰 香港 | HKG 149
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
