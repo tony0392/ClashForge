@@ -2294,7 +2294,7 @@ def resolve_template_url(template_url):
 
     return resolved_url
 
-def work(links,check=True,allowed_types=["ss","vmess","trojan"],only_check=False):
+def work(links,check=True,allowed_types=["ss","vmess","trojan"],only_check=True):
     try:
         if not only_check:
             load_nodes = read_yaml_files(folder_path=INPUT)
