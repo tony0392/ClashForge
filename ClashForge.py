@@ -1536,7 +1536,7 @@ def filter_by_types_alt(nodes):
     Args:
     - nodes (list): 所有的节点信息
     """
-    allowed_types = ['ss','vmess', 'trojan']
+    allowed_types = ['vmess', 'trojan']
     # 进行过滤
     return [x for x in nodes if x.get('type') in allowed_types]
 
