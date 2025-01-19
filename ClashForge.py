@@ -31,7 +31,7 @@ warnings.filterwarnings('ignore')
 from requests_html import HTMLSession
 
 # TEST_URL = "http://www.gstatic.com/generate_204"
-TEST_URL = "http://www.pinterest.com"
+TEST_URL = "http://i.ytimg.com/generate_204"
 CLASH_API_PORTS = [9090]
 CLASH_API_HOST = "127.0.0.1"
 CLASH_API_SECRET = ""
@@ -40,7 +40,6 @@ MAX_CONCURRENT_TESTS = 100
 LIMIT = 10000 # 最多保留LIMIT个节点
 CONFIG_FILE = 'clash_config.yaml'
 INPUT = "input" # 从文件中加载代理节点，支持yaml/yml、txt(每条代理链接占一行)
-ALLOWED_TYPES=["ss","vmess","trojan"]
 BAN = ["中国", "China", "CN", "电信", "移动", "移动", "联通"]
 headers = {
     'Accept-Charset': 'utf-8',
@@ -105,7 +104,7 @@ clash_config_template = {
             "exclude-filter": "(?i)中国|China|CN|电信|移动|联通",
             "proxies": [],
             # "url": "http://www.gstatic.com/generate_204",
-            "url": "http://www.pinterest.com",
+            "url": "http://i.ytimg.com/generate_204",
             "interval": 300,
             "tolerance": 50
         },
@@ -114,7 +113,7 @@ clash_config_template = {
             "type": "fallback",
             "exclude-filter": "(?i)中国|China|CN|电信|移动|联通",
             "proxies": [],
-            "url": "http://www.gstatic.com/generate_204",
+            "url": "http://i.ytimg.com/generate_204",
             "interval": 300
         },
         {
@@ -1532,7 +1531,7 @@ def read_yaml_files(folder_path):
 # 进行type过滤
 def filter_by_types_alt(allowed_types,nodes):
     # 进行过滤
-    return [x for x in nodes if x.get('type') in allowed_types]
+    return [x for x in nodes if x.get('ss') in allowed_types]
 
 # 合并links列表
 def merge_lists(*lists):
