@@ -1529,16 +1529,11 @@ def read_yaml_files(folder_path):
     return load_nodes
 
 # 进行type过滤
-def filter_by_types_alt(nodes, allowed_types):
-    allowed_types = ['ss', 'vmess', 'trojan']
-    nodes = [
-    {'type': 'ss', 'data': 'example1'},
-    {'type': 'http', 'data': 'example2'},
-    {'type': 'vmess', 'data': 'example3'},
-    {'type': 'trojan', 'data': 'example4'},
-]
+def filter_by_types_alt(nodes, allowed_types=None):
+    if allowed_types is None:
+        allowed_types = ['ss', 'vmess', 'trojan']
     # 进行过滤
-    return [x for x in nodes if x.get('type') in allowed_types]
+    return [node for node in nodes if node.get('type') in allowed_types]
 
 # 合并links列表
 def merge_lists(*lists):
