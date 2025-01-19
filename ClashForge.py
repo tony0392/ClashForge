@@ -1529,9 +1529,9 @@ def read_yaml_files(folder_path):
     return load_nodes
 
 # 进行type过滤
-def filter_by_types_alt(allowed_types=["ss","vmess","trojan"],nodes):
+def filter_by_types_alt(allowed_types=["ss","vmess","trojan"]):
     # 进行过滤
-    return [x for x in nodes if x.get('type') in allowed_types=["ss","vmess","trojan"]]
+    return [x for x in nodes if x.get('type') in allowed_types]
 
 # 合并links列表
 def merge_lists(*lists):
