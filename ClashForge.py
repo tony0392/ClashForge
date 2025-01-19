@@ -31,16 +31,16 @@ warnings.filterwarnings('ignore')
 from requests_html import HTMLSession
 
 # TEST_URL = "http://www.gstatic.com/generate_204"
-TEST_URL = "https://i.ytimg.com/generate_204"
+TEST_URL = "http://www.pinterest.com"
 CLASH_API_PORTS = [9090]
 CLASH_API_HOST = "127.0.0.1"
 CLASH_API_SECRET = ""
 TIMEOUT = 1
 MAX_CONCURRENT_TESTS = 100
-LIMIT = 100 # 最多保留LIMIT个节点
+LIMIT = 10000 # 最多保留LIMIT个节点
 CONFIG_FILE = 'clash_config.yaml'
 INPUT = "input" # 从文件中加载代理节点，支持yaml/yml、txt(每条代理链接占一行)
-BAN = ["中国", "China", "CN", "电信",  "联通"]
+BAN = ["中国", "China", "CN", "电信", "移动", "联通"]
 headers = {
     'Accept-Charset': 'utf-8',
     'Accept': 'text/html,application/x-yaml,*/*',
@@ -57,7 +57,7 @@ clash_config_template = {
     "log-level": "info",
     "external-controller": "127.0.0.1:9090",
     "geodata-mode": True,
-    'geox-url': {'geoip': 'https://ghfast.top/https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip.dat', 'mmdb': 'https://ghfast.top/https://raw.githubusercontent.com/Loyalsoldier/geoip/release/GeoLite2-Country.mmdb'},
+    'geox-url': {'geoip': 'https://gitdl.cn/https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip.dat', 'mmdb': 'https://gitdl.cn/https://raw.githubusercontent.com/Loyalsoldier/geoip/release/GeoLite2-Country.mmdb'},
     "dns": {
         "enable": True,
         "ipv6": False,
@@ -1221,30 +1221,6 @@ clash_config_template = {
     ]
 }
 
-# 解析 Hysteria2 链接
-def parse_hysteria2_link(link):
-    link = link[14:]
-    parts = link.split('@')
-    uuid = parts[0]
-    server_info = parts[1].split('?')
-    server = server_info[0].split(':')[0]
-    port = int(server_info[0].split(':')[1].split('/')[0].strip())
-    query_params = urllib.parse.parse_qs(server_info[1] if len(server_info) > 1 else '')
-    insecure = '1' in query_params.get('insecure', ['0'])
-    sni = query_params.get('sni', [''])[0]
-    name = urllib.parse.unquote(link.split('#')[-1].strip())
-
-    return {
-        "name": f"{name}",
-        "server": server,
-        "port": port,
-        "type": "hysteria2",
-        "password": uuid,
-        "auth": uuid,
-        "sni": sni,
-        "skip-cert-verify": not insecure,
-        "client-fingerprint": "chrome"
-    }
 
 # 解析 Shadowsocks 链接
 def parse_ss_link(link):
@@ -1288,34 +1264,6 @@ def parse_trojan_link(link):
         "skip-cert-verify": urllib.parse.parse_qs(query).get("skip-cert-verify", ["false"])[0] == "true"
     }
 
-# 解析 VLESS 链接
-def parse_vless_link(link):
-    link = link[8:]
-    config_part, name = link.split('#')
-    user_info, host_info = config_part.split('@')
-    uuid = user_info
-    host, query = host_info.split('?', 1) if '?' in host_info else (host_info, "")
-    port = host.split(':')[-1] if ':' in host else ""
-    host = host.split(':')[0] if ':' in host else ""
-
-    return {
-        "name": urllib.parse.unquote(name),
-        "type": "vless",
-        "server": host,
-        "port": int(port),
-        "uuid": uuid,
-        "security": urllib.parse.parse_qs(query).get("security", ["none"])[0],
-        "tls": urllib.parse.parse_qs(query).get("security", ["none"])[0] == "tls",
-        "sni": urllib.parse.parse_qs(query).get("sni", [""])[0],
-        "skip-cert-verify": urllib.parse.parse_qs(query).get("skip-cert-verify", ["false"])[0] == "true",
-        "network": urllib.parse.parse_qs(query).get("type", ["tcp"])[0],
-        "ws-opts": {
-            "path": urllib.parse.parse_qs(query).get("path", [""])[0],
-            "headers": {
-                "Host": urllib.parse.parse_qs(query).get("host", [""])[0]
-            }
-        } if urllib.parse.parse_qs(query).get("type", ["tcp"])[0] == "ws" else {}
-    }
 
 # 解析 VMESS 链接
 def parse_vmess_link(link):
@@ -1541,7 +1489,7 @@ def merge_lists(*lists):
 def handle_links(new_links,resolve_name_conflicts):
     try:
         for new_link in new_links:
-            if new_link.startswith(("trojan://", "ss://",  "vmess://")):
+            if new_link.startswith(("hysteria2://", "hy2://", "trojan://", "ss://", "vless://", "vmess://")):
                 node = parse_proxy_link(new_link)
                 if node:
                     resolve_name_conflicts(node)
@@ -1575,7 +1523,7 @@ def generate_clash_config(links,load_nodes):
 
 
     for link in links:
-        if link.startswith(("trojan://", "ss://", "vmess://")):
+        if link.startswith(("hysteria2://", "hy2://","trojan://", "ss://", "vless://", "vmess://")):
             node = parse_proxy_link(link)
             resolve_name_conflicts(node)
         else:
@@ -2331,4 +2279,4 @@ def work(links,check=False,allowed_types=[],only_check=False):
 
 if __name__ == '__main__':
     links = []
-    work(links, check=True, only_check=False, allowed_types=["ss","vmess","trojan"])
+    work(links, check=True, only_check=False, allowed_types=["ss","hysteria2","hy2","vless","vmess","trojan"])
