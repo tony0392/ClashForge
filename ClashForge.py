@@ -1529,7 +1529,13 @@ def read_yaml_files(folder_path):
     return load_nodes
 
 # 进行type过滤
-def filter_by_types_alt(allowed_types,nodes):
+def filter_by_types_alt(nodes):
+    """
+    过滤节点，只保留 vmess 和 trojan 类型的节点
+    
+    Args:
+    - nodes (list): 所有的节点信息
+    """
     allowed_types = ['ss','vmess', 'trojan']
     # 进行过滤
     return [x for x in nodes if x.get('type') in allowed_types]
