@@ -1530,6 +1530,7 @@ def read_yaml_files(folder_path):
 
 # 进行type过滤
 def filter_by_types_alt(allowed_types,nodes):
+    allowed_types = ['ss','vmess', 'trojan']
     # 进行过滤
     return [x for x in nodes if x.get('type') in allowed_types]
 
