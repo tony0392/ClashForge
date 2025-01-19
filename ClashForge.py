@@ -40,7 +40,7 @@ MAX_CONCURRENT_TESTS = 100
 LIMIT = 10000 # 最多保留LIMIT个节点
 CONFIG_FILE = 'clash_config.yaml'
 INPUT = "input" # 从文件中加载代理节点，支持yaml/yml、txt(每条代理链接占一行)
-BAN = ["中国", "China", "CN", "电信", "移动", "联通"]
+BAN = ["中国", "China", "CN", "电信", "vless","hysteria2","hy2", "移动", "移动", "联通"]
 headers = {
     'Accept-Charset': 'utf-8',
     'Accept': 'text/html,application/x-yaml,*/*',
@@ -1221,6 +1221,30 @@ clash_config_template = {
     ]
 }
 
+# 解析 Hysteria2 链接
+def parse_hysteria2_link(link):
+    link = link[14:]
+    parts = link.split('@')
+    uuid = parts[0]
+    server_info = parts[1].split('?')
+    server = server_info[0].split(':')[0]
+    port = int(server_info[0].split(':')[1].split('/')[0].strip())
+    query_params = urllib.parse.parse_qs(server_info[1] if len(server_info) > 1 else '')
+    insecure = '1' in query_params.get('insecure', ['0'])
+    sni = query_params.get('sni', [''])[0]
+    name = urllib.parse.unquote(link.split('#')[-1].strip())
+
+    return {
+        "name": f"{name}",
+        "server": server,
+        "port": port,
+        "type": "hysteria2",
+        "password": uuid,
+        "auth": uuid,
+        "sni": sni,
+        "skip-cert-verify": not insecure,
+        "client-fingerprint": "chrome"
+    }
 
 # 解析 Shadowsocks 链接
 def parse_ss_link(link):
@@ -1264,6 +1288,34 @@ def parse_trojan_link(link):
         "skip-cert-verify": urllib.parse.parse_qs(query).get("skip-cert-verify", ["false"])[0] == "true"
     }
 
+# 解析 VLESS 链接
+def parse_vless_link(link):
+    link = link[8:]
+    config_part, name = link.split('#')
+    user_info, host_info = config_part.split('@')
+    uuid = user_info
+    host, query = host_info.split('?', 1) if '?' in host_info else (host_info, "")
+    port = host.split(':')[-1] if ':' in host else ""
+    host = host.split(':')[0] if ':' in host else ""
+
+    return {
+        "name": urllib.parse.unquote(name),
+        "type": "vless",
+        "server": host,
+        "port": int(port),
+        "uuid": uuid,
+        "security": urllib.parse.parse_qs(query).get("security", ["none"])[0],
+        "tls": urllib.parse.parse_qs(query).get("security", ["none"])[0] == "tls",
+        "sni": urllib.parse.parse_qs(query).get("sni", [""])[0],
+        "skip-cert-verify": urllib.parse.parse_qs(query).get("skip-cert-verify", ["false"])[0] == "true",
+        "network": urllib.parse.parse_qs(query).get("type", ["tcp"])[0],
+        "ws-opts": {
+            "path": urllib.parse.parse_qs(query).get("path", [""])[0],
+            "headers": {
+                "Host": urllib.parse.parse_qs(query).get("host", [""])[0]
+            }
+        } if urllib.parse.parse_qs(query).get("type", ["tcp"])[0] == "ws" else {}
+    }
 
 # 解析 VMESS 链接
 def parse_vmess_link(link):
