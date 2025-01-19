@@ -2331,4 +2331,4 @@ def work(links,check=True,allowed_types=["ss","vmess","trojan"],only_check=False
 
 if __name__ == '__main__':
     links = []
-    work(links, check=True, only_check=True, allowed_types=["ss","vmess","trojan"])
+    work(links, check=True, only_check=False, allowed_types=["ss","vmess","trojan"])
