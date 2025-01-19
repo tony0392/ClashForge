@@ -32,13 +32,6 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- name: 🇷🇺_RU_俄罗斯_1
-  port: 989
-  server: 185.231.233.173
-  type: ss
-  udp: true
-  password: f8f7aCzcPKbsF8p3
-  cipher: aes-256-cfb
 - name: 🇨🇭_CH_瑞士
   port: 989
   server: 84.17.53.160
@@ -46,13 +39,6 @@ proxies:
   udp: true
   password: f8f7aCzcPKbsF8p3
   cipher: aes-256-cfb
-- name: 🇷🇺_RU_俄罗斯_2
-  port: 8388
-  server: 89.221.224.166
-  type: ss
-  udp: true
-  password: MDZhNTAz
-  cipher: chacha20-ietf-poly1305
 - cipher: aes-256-gcm
   name: 🇺🇸_US_美国
   password: lGqs95QkFHo2NV
@@ -60,28 +46,34 @@ proxies:
   server: 23.157.40.5
   type: ss
 - cipher: aes-256-gcm
-  name: 🇺🇸_US_美国_1-zhNJ
+  name: 🇺🇸_US_美国_1-do0y
   password: Y6R9pAtvxxzmGC
   port: 5001
   server: 23.157.40.5
   type: ss
 - cipher: aes-256-gcm
-  name: 🇺🇸_US_美国_2-4YXp
-  password: TEzjfAYq2IjtuoS
-  port: 6679
+  name: 🇺🇸_US_美国_3
+  password: FoOiGlkAA9yPEGP
+  port: 7306
   server: 23.157.40.5
   type: ss
 - cipher: aes-256-gcm
-  name: 🇺🇸_US_美国_4
-  password: TEzjfAYq2IjtuoS
-  port: 6697
-  server: 23.157.40.87
+  name: 🇺🇸_US_美国_5
+  password: e4FCWrgpkji3QY
+  port: 9102
+  server: 23.157.40.5
   type: ss
 - cipher: rc4-md5
   name: 🇺🇸_US_美国_6
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 23.251.121.242
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸_US_美国_7
+  password: zDNVedRFPQexG9v
+  port: 6379
+  server: 23.157.40.87
   type: ss
 - cipher: aes-256-gcm
   name: 🇺🇸_US_美国_8
@@ -96,7 +88,7 @@ proxies:
   server: 217.30.10.18
   type: ss
 - cipher: aes-256-cfb
-  name: 🇷🇺_RU_俄罗斯_1-aOwH
+  name: 🇷🇺_RU_俄罗斯_1-urP3
   password: S7KwUu7yBy58S3Ga
   port: 9042
   server: 217.30.10.18
@@ -114,6 +106,12 @@ proxies:
   skip-cert-verify: false
   sni: ample-cockatoo.boa152.lol
   type: trojan
+- cipher: aes-256-gcm
+  name: 🇺🇸_US_美国_10
+  password: Y6R9pAtvxxzmGC
+  port: 5601
+  server: 23.157.40.5
+  type: ss
 - cipher: aes-256-cfb
   name: 🇷🇺_RU_俄罗斯_4
   password: KnJGad3FqTvjqbaX
@@ -125,12 +123,6 @@ proxies:
   password: RexnBgU7EV5ADxG
   port: 7002
   server: 23.157.40.87
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇨🇦_CA_加拿大
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 23.154.136.247
   type: ss
 - cipher: aes-256-cfb
   name: 🇷🇺_RU_俄罗斯_5
@@ -163,6 +155,14 @@ proxies:
   udp: true
   password: 243eab52-9ac1-405c-887c-eb112c0985b8
   skip-cert-verify: true
+- name: 🇧🇪_比利时_1
+  port: 443
+  server: tw01.trojanyyds.xyz
+  type: trojan
+  udp: true
+  sni: tw01.trojanyyds.xyz
+  password: 243eab52-9ac1-405c-887c-eb112c0985b8
+  skip-cert-verify: true
 - name: 🇺🇸_美国_3
   port: 443
   server: in01.trojanyyds.xyz
@@ -179,16 +179,6 @@ proxies:
   sni: sg02.trojanyyds.xyz
   password: 243eab52-9ac1-405c-887c-eb112c0985b8
   skip-cert-verify: true
-- type: vmess
-  name: xiaoer886_GB_15
-  ws-opts:
-    path: /
-  server: 5.39.254.196
-  port: '23985'
-  uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81
-  alterId: '0'
-  cipher: auto
-  network: ws
 - type: vless
   name: xiaoer886_US_5
   server: 15.204.165.202
@@ -211,6 +201,16 @@ proxies:
   alterId: '0'
   cipher: auto
   network: ws
+- type: vless
+  name: xiaoer886_US_29
+  server: 15.204.151.113
+  port: 443
+  uuid: ea286109-d20f-415e-849e-4af20ab04b65
+  skip-cert-verify: true
+  network: tcp
+  servername: 147135001195.sec22org.com
+  tls: true
+  udp: true
 - type: vless
   name: xiaoer886_GB_2
   server: 144.24.90.107
@@ -239,19 +239,6 @@ proxies:
     path: /
     headers:
       host: a.xn--i-sx6a60i.us.kg
-- type: vmess
-  name: xiaoer886_FR_7
-  ws-opts:
-    path: /linkws
-    headers:
-      host: beyonddbc.sbs
-  server: 194.9.172.65
-  port: '443'
-  uuid: 8d90c129-4156-4d6c-9115-24df25f26a02
-  alterId: '0'
-  cipher: auto
-  network: ws
-  tls: true
 - type: vless
   name: xiaoer886_US_39
   server: 138.2.227.164
@@ -280,6 +267,16 @@ proxies:
     path: /
     headers:
       host: a.xn--i-sx6a60i.us.kg
+- type: vless
+  name: xiaoer886_US_45
+  server: 51.81.36.199
+  port: 443
+  uuid: ea286109-d20f-415e-849e-4af20ab04b65
+  skip-cert-verify: true
+  network: tcp
+  servername: 147135001195.sec22org.com
+  tls: true
+  udp: true
 - type: vless
   name: xiaoer886_US_30
   server: 104.21.7.41
@@ -403,16 +400,6 @@ proxies:
   cipher: auto
   network: ws
 - type: vless
-  name: xiaoer886_UA_1
-  server: 5.188.6.73
-  port: 443
-  uuid: 7582e721-8c32-4fb1-8669-b3fae590f3eb
-  skip-cert-verify: true
-  network: tcp
-  servername: 005188006073.sec1org.com
-  tls: true
-  udp: true
-- type: vless
   name: xiaoer886_US_54
   server: 172.67.172.56
   port: 443
@@ -525,15 +512,6 @@ proxies:
     headers:
       host: bEAt.MIRaclETaxbiTS.Top.
 - type: vless
-  name: xiaoer886_UA_3
-  server: 46.202.140.41
-  port: 11247
-  uuid: 54bbf92b-4d56-4bbe-b519-ad405aa6895d
-  skip-cert-verify: true
-  network: tcp
-  tls: false
-  udp: true
-- type: vless
   name: xiaoer886_US_120
   server: 135.148.195.57
   port: 443
@@ -595,6 +573,16 @@ proxies:
     path: /?ed=2048
     headers:
       host: mmdserver.us.kg
+- type: vless
+  name: xiaoer886_US_66
+  server: 15.204.145.84
+  port: 443
+  uuid: ea286109-d20f-415e-849e-4af20ab04b65
+  skip-cert-verify: true
+  network: tcp
+  servername: 147135001195.sec22org.com
+  tls: true
+  udp: true
 - type: vless
   name: xiaoer886_US_93
   server: 104.18.43.169
@@ -772,20 +760,6 @@ proxies:
     path: /@Yuv2ray
     headers:
       host: f1b953bd-round-bush-dba2.steep-lion9627.workers.dev
-- type: vless
-  name: xiaoer886_US_87
-  server: 94.131.111.195
-  port: 443
-  uuid: 2d7c7aa5-364a-4dbb-937a-f8e4f5f73007
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: de4.connecton.surf
-  ws-opts:
-    path: /vless
-    headers:
-      host: de4.connecton.surf
 - type: vless
   name: xiaoer886_US_125
   server: 199.34.228.48
@@ -1483,6 +1457,15 @@ proxies:
   skip-cert-verify: true
   sni: organic-hare.boa152.lol
   network: tcp
+- type: trojan
+  name: xiaoer886_LT
+  server: 86.38.247.109
+  port: 2083
+  password: u201424980
+  udp: true
+  skip-cert-verify: true
+  sni: fast.com
+  network: tcp
 - type: vless
   name: xiaoer886_US_287
   server: 51.81.37.82
@@ -1525,6 +1508,15 @@ proxies:
     path: /
     headers:
       host: a.xn--i-sx6a60i.us.kg
+- type: trojan
+  name: xiaoer886_FR_14
+  server: 5.189.203.39
+  port: 443
+  password: '3723507166611775488'
+  udp: true
+  skip-cert-verify: true
+  sni: lucky-grouper.boa152.lol
+  network: tcp
 - type: vless
   name: xiaoer886_US_294
   server: 152.70.49.115
@@ -1844,23 +1836,6 @@ proxies:
     path: /dabai.in172.67.71.198
     headers:
       HOST: 100-41-36-35.s2.db-link01.top
-- name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hms19.best-tizi.top:443
-  type: vmess
-  server: hms19.best-tizi.top
-  port: 443
-  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
-  alterId: 0
-  cipher: auto
-  network: ws
-  servername: hms19.best-tizi.top
-  http-opts: {}
-  h2-opts: {}
-  tls: true
-  skip-cert-verify: true
-  ws-opts:
-    path: /linkws
-    headers:
-      HOST: hms19.best-tizi.top
 - name: SS-挪威-NF解锁挪威地区非自制剧-ChatGPT-TikTok-109.205.9.7:52952
   type: ss
   server: 109.205.9.7
@@ -1934,6 +1909,14 @@ proxies:
   port: 4444
   password: pKEW8JPByTVTLtM
   cipher: aes-256-gcm
+- name: SSR-瑞士-NF解锁瑞士自制剧-ChatGPT-TikTok-YouTube-84.17.53.160:989
+  type: ssr
+  server: 84.17.53.160
+  port: 989
+  password: f8f7aCzcPKbsF8p3
+  cipher: aes-256-cfb
+  protocol: origin
+  obfs: plain
 - name: SSR-美国>塞舌尔-NF解锁自制剧-ChatGPT-TikTok-YouTube-137.175.113.192:8388
   type: ssr
   server: 137.175.113.192
@@ -1978,6 +1961,12 @@ proxies:
   cipher: aes-256-cfb
   protocol: origin
   obfs: plain
+- name: SS-加拿大-NF解锁自制剧-64.74.163.130:990
+  type: ss
+  server: 64.74.163.130
+  port: 990
+  password: f8f7aCzcPKbsF8p3
+  cipher: chacha20-ietf-poly1305
 - name: SS-瑞典-NF解锁瑞典自制剧-ChatGPT-TikTok-YouTube-46.246.98.155:44013
   type: ss
   server: 46.246.98.155
@@ -1992,6 +1981,22 @@ proxies:
   cipher: aes-256-cfb
   protocol: origin
   obfs: plain
+- name: VMESS-未知>美国-NF解锁香港地区非自制剧-ChatGPT-TikTok-YouTube-104.16.155.10:2082
+  type: vmess
+  server: 104.16.155.10
+  port: 2082
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  alterId: 0
+  cipher: auto
+  network: ws
+  servername: 100-38-62-25.s5.db-link02.top
+  http-opts: {}
+  h2-opts: {}
+  skip-cert-verify: true
+  ws-opts:
+    path: /dabai.in104.18.42.172
+    headers:
+      HOST: 100-38-62-25.s5.db-link02.top
 - name: VMESS-未知>巴西-NF解锁巴西地区非自制剧-ChatGPT-TikTok-YouTube-c1.v2raybrasil.xyz:2082
   type: vmess
   server: c1.v2raybrasil.xyz
@@ -2120,6 +2125,13 @@ proxies:
   skip-cert-verify: false
   username: mrwdfNTD8M79LCukCieldrqZWqs=
   password: exaxgqkKkd0TAMrCxeonWg==
+- name: 🇹🇼1
+  server: taiwan.keenvpn.me
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  udp: true
 - name: 🇹🇼2
   server: taiwan-2.keenvpn.me
   port: 443
@@ -2190,6 +2202,13 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 2afbc97400ca71c8f3306f9843a6e1c2
   udp: true
+- name: 🇰🇷3
+  server: south-korea-3.keenvpn.me
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  udp: true
 - name: 🇸🇬1
   server: singapore.keenvpn.me
   port: 443
@@ -2199,6 +2218,20 @@ proxies:
   udp: true
 - name: 🇸🇬2
   server: singapore-2.keenvpn.me
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  udp: true
+- name: 🇸🇬3
+  server: singapore-3.keenvpn.me
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  udp: true
+- name: 🇸🇬4
+  server: singapore-4.keenvpn.me
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
@@ -2387,19 +2420,26 @@ proxies:
   sni: loving-boa.treefrog761.one
   skip-cert-verify: false
   udp: true
-- name: KR_bb060_0044
-  server: 132.145.94.80
+- name: JP_bb060_0035
+  server: 54.95.11.184
   port: 443
-  type: vless
-  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
-  tls: true
-  skip-cert-verify: false
-  servername: mmdserver.us.kg
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: mmdserver.us.kg
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: KR_bb060_0037
+  server: 121.170.203.147
+  port: 37041
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+  udp: true
+- name: KR_bb060_0038
+  server: 218.50.149.114
+  port: 34847
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
   udp: true
 - name: NL_bb060_0048
   server: 185.204.109.190
@@ -2574,20 +2614,6 @@ proxies:
     headers:
       Host: ameqo.esslh.filegear-sg.me
   udp: true
-- name: US_bb060_0106
-  server: 141.148.187.195
-  port: 443
-  type: vless
-  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
-  tls: true
-  skip-cert-verify: false
-  servername: mmdserver.us.kg
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: mmdserver.us.kg
-  udp: true
 - name: US_bb060_0107
   server: 154.23.240.232
   port: 443
@@ -2656,7 +2682,7 @@ proxies:
     path: /
     headers:
       Host: tw02.xn--io0a7iw0ab67b.xyz
-- name: 🇷🇴_RO_罗马尼亚-eeET
+- name: 🇷🇴_RO_罗马尼亚-9wMZ
   type: ss
   server: 194.5.215.59
   port: 8080
@@ -2669,9 +2695,9 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: J0lgxy4mb52CIJ8UUcEgts
   udp: true
-- name: 0|--13
+- name: 0|--7
   type: ss
-  server: 54.199.222.156
+  server: 13.125.6.123
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
@@ -2711,21 +2737,14 @@ proxies:
   password: 243eab52-9ac1-405c-887c-eb112c0985b8
   sni: tw02.trojanyyds.xyz
   skip-cert-verify: false
-- name: 13|🇯🇵-Waco
+- name: 13|🇯🇵-w0dZ
   type: ss
   server: 18.136.200.60
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: 13|🇸🇬-TdDP
-  type: ss
-  server: 13.231.234.231
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 13|🇰🇷-JHTl
+- name: 13|🇰🇷-whVB
   type: ss
   server: 3.112.254.144
   port: 443
@@ -2753,7 +2772,7 @@ proxies:
   cipher: aes-256-gcm
   password: cdBIDV42DCwnfIN
   udp: true
-- name: 美国 CloudFlare节点-4CKT
+- name: 美国 CloudFlare节点-uy0i
   type: vmess
   server: s1.db-link02.top
   port: 2082
@@ -2767,7 +2786,7 @@ proxies:
     path: /dabai.in104.20.8.162
     headers:
       Host: 100-6-81-226.s1.db-link02.top
-- name: 美国 CloudFlare节点-qh1R
+- name: 美国 CloudFlare节点-vLVQ
   type: vmess
   server: 104.17.221.248
   port: 80
@@ -2781,7 +2800,7 @@ proxies:
     path: /dabai.in104.17.169.115
     headers:
       Host: 100-49-141-209.s1.db-link02.top
-- name: 美国 CloudFlare节点-thhv
+- name: 美国 CloudFlare节点-p31n
   type: vmess
   server: s1.cn-db.top
   port: 2052
@@ -2795,14 +2814,14 @@ proxies:
     path: /dabai.in172.64.9.180
     headers:
       Host: 100-185-39-111.s1.cn-db.top
-- name: 瑞典+V2CROSS.COM-4VOG
+- name: 瑞典+V2CROSS.COM-oZq6
   type: ss
   server: 167.88.63.21
   port: 8881
   cipher: aes-256-gcm
   password: kDWvXYZoTBcGkC4
   udp: true
-- name: 瑞典+V2CROSS.COM-GqvH
+- name: 瑞典+V2CROSS.COM-W8ee
   type: ss
   server: 167.88.63.21
   port: 5601
@@ -2861,16 +2880,6 @@ proxies:
   ws-opts:
     path: /linkvws
   udp: true
-- name: 8|@V2ray1_Ng
-  obfs: salamander
-  obfs-password: de8287cd33b05fa3
-  password: 22f2c759db51b3d0
-  port: 12122
-  server: 109.120.135.123
-  skip-cert-verify: true
-  sni: www.google.com
-  tls: false
-  type: hysteria2
 - name: 美国 006
   type: vless
   network: ws
@@ -2906,6 +2915,19 @@ proxies:
   servername: edge.validbv3528.ir
   tls: false
   delay: 981
+  ws-opts:
+    headers:
+      Host: edge.validbv3528.ir
+    path: /vless-ws/
+- name: 美国 009
+  type: vless
+  network: ws
+  server: 167.82.70.214
+  port: 80
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  servername: edge.validbv3528.ir
+  tls: false
+  delay: 994
   ws-opts:
     headers:
       Host: edge.validbv3528.ir
@@ -3268,6 +3290,19 @@ proxies:
     headers:
       Host: ameqo.esslh.filegear-sg.me
     path: /?ed=2560
+- name: 印度 001
+  type: trojan
+  network: ws
+  server: 108.165.152.104
+  port: 2053
+  password: Aimer
+  skip-cert-verify: true
+  udp: true
+  sni: ameqo.esslh.filegear-sg.me
+  ws-opts:
+    headers:
+      Host: ameqo.esslh.filegear-sg.me
+    path: /?ed=2560
 - name: 美国 054
   type: trojan
   network: ws
@@ -3418,18 +3453,6 @@ proxies:
     headers:
       Host: a.mifeng.us.kg
     path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed
-- name: 美国 078
-  type: vless
-  network: ws
-  server: 104.21.30.5
-  port: 80
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  servername: a.mifeng.us.kg
-  tls: false
-  ws-opts:
-    headers:
-      Host: a.mifeng.us.kg
-    path: /?ed=2048
 - name: 美国 082
   type: vless
   network: ws
@@ -3469,7 +3492,7 @@ proxies:
   network: ws
   tls: true
 - type: vmess
-  name: 🇺🇸_美国_4-UpiD
+  name: 🇺🇸_美国_4-Xrgx
   ws-opts:
     path: /path/1737280757504
     headers:
@@ -3689,19 +3712,6 @@ proxies:
   cipher: auto
   network: ws
   tls: true
-- type: vmess
-  name: 🇺🇸_美国_146
-  ws-opts:
-    path: /path/1737285757504
-    headers:
-      host: www.35743578.xyz
-  server: 199.180.103.26
-  port: '37007'
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: '64'
-  cipher: auto
-  network: ws
-  tls: true
 - type: vless
   name: 🇺🇦_乌克兰_1
   server: 95.164.51.24
@@ -3724,6 +3734,12 @@ proxies:
   password: qwerREWQ@@
 - name: 🇰🇷KR-221.168.44.72-055
   server: 221.168.44.72
+  port: 27973
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷KR-221.168.44.72-057
+  server: p196.panda001.net
   port: 27973
   type: ss
   cipher: aes-256-cfb
@@ -4045,22 +4061,6 @@ proxies:
   skip-cert-verify: true
   ports: 20000-55000
   udp: true
-- name: '@MxlShare 新加坡 | SGP 4'
-  server: meiyou-sg.jiumaojiu.org
-  port: 20537
-  type: hysteria2
-  password: 887f95d6-3ed1-4fbd-891c-e65e15087e1f
-  auth: 887f95d6-3ed1-4fbd-891c-e65e15087e1f
-  sni: meiyou-sg.jiumaojiu.org
-  skip-cert-verify: true
-- name: '@MxlShare 新加坡 | SGP 5'
-  server: meiyou-sg.jiumaojiu.org
-  port: 20549
-  type: hysteria2
-  password: 332604ec-44d3-4d5b-a01f-784ad9709f7d
-  auth: 332604ec-44d3-4d5b-a01f-784ad9709f7d
-  sni: meiyou-sg.jiumaojiu.org
-  skip-cert-verify: true
 - name: '@MxlShare 新加坡 | SGP 10'
   server: 13.213.58.54
   port: 443
@@ -4215,27 +4215,6 @@ proxies:
   server: pl.ktmurl.club
   type: hysteria2
   up: '100'
-- down: '100'
-  name: SG_Singapore_Amazon Technologies Inc._OpenAI_Claude2
-  password: 54185b6e-851a-4109-b6a9-7beb86f41c05
-  port: 18383
-  server: sg.ktmurl.club
-  type: hysteria2
-  up: '100'
-- down: '100'
-  name: SG_Singapore_Amazon Technologies Inc_OpenAI_Claude1
-  password: 54185b6e-851a-4109-b6a9-7beb86f41c05
-  port: 18383
-  server: sg2.ktmurl.club
-  type: hysteria2
-  up: '100'
-- down: '100'
-  name: 🇮🇳IN印度-Oracle
-  password: 54185b6e-851a-4109-b6a9-7beb86f41c05
-  port: 18383
-  server: in.ktmurl.club
-  type: hysteria2
-  up: '100'
 - cipher: aes-256-cfb
   name: AR-190.103.176.29-5721 | 14.127MB
   password: f8f7aCzcPKbsF8p3
@@ -4279,6 +4258,12 @@ proxies:
   server: 195.181.160.6
   type: ss
 - cipher: aes-256-cfb
+  name: KZ-213.156.137.67-5639 | 18.874MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 213.156.137.67
+  type: ss
+- cipher: aes-256-cfb
   name: LV-46.183.217.232-0564 | 20.206MB
   password: f8f7aCzcPKbsF8p3
   port: 989
@@ -4289,12 +4274,6 @@ proxies:
   password: yMX9WGPgUEcRZmlaa0YHHC
   port: 23492
   server: 103.106.1.92
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: MD-86.104.74.243-0477 | 17.052MB
-  password: fDDmH4QefmWqMJ8UURZrGh
-  port: 14255
-  server: 86.104.74.243
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: NO-51.13.183.76-0536 | 21.726MB
@@ -4336,6 +4315,12 @@ proxies:
     headers:
       Host: chunchuan.kejixiaoqi666.store
     path: /
+- cipher: aes-256-cfb
+  name: RS-194.71.126.31-0546 | 21.008MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 194.71.126.31
+  type: ss
 - cipher: aes-256-cfb
   name: SE-121.127.46.147-0548 | 21.508MB
   password: f8f7aCzcPKbsF8p3
@@ -4619,6 +4604,12 @@ proxies:
   server: 149.34.244.82
   type: ss
 - cipher: chacha20-ietf-poly1305
+  name: 🇳🇱NL-5.35.47.122-0472 | 20.801MB
+  password: CLphyEMQT8nbG8EImX0A2D
+  port: 45635
+  server: 5.35.47.122
+  type: ss
+- cipher: chacha20-ietf-poly1305
   name: 🇳🇱NL-89.23.103.125-0553 | 13.427MB
   password: uQS5ntVqC00sSKkeNzUiD3
   port: 42090
@@ -4629,6 +4620,12 @@ proxies:
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 92.118.205.228
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇷🇺RU-45.151.62.54-0557 | 16.161MB
+  password: 0zyDRZ1XmNXaaCAN7KEA8a
+  port: 28825
+  server: 45.151.62.54
   type: ss
 - cipher: rc4-md5
   name: 🇸🇬SG-128.199.172.224-6356 | 19.387MB
@@ -4758,6 +4755,12 @@ proxies:
   server: 216.39.248.133
   type: ss
 - cipher: aes-256-gcm
+  name: 🇺🇸US-23.154.136.176-6126 | 5.663MB
+  password: cdBIDV42DCwnfIN
+  port: 8118
+  server: 23.154.136.176
+  type: ss
+- cipher: aes-256-gcm
   name: 🇺🇸US-23.157.40.101-6067 | 5.806MB
   password: FoOiGlkAA9yPEGP
   port: 7307
@@ -4800,28 +4803,28 @@ proxies:
   server: 23.157.40.5
   type: ss
 - cipher: aes-256-gcm
-  name: 🇺🇸US-23.157.40.5-6368 | 8.144MB
-  password: KixLvKzwjekG00rm
-  port: 8080
+  name: 🇺🇸US-23.157.40.5-6375 | 9.503MB
+  password: pKEW8JPByTVTLtM
+  port: 443
   server: 23.157.40.5
   type: ss
 - cipher: aes-256-gcm
-  name: 🇺🇸US-23.157.40.87-6004 | 5.577MB
-  password: zDNVedRFPQexG9v
-  port: 445
-  server: 23.157.40.87
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸US-23.157.40.87-6094 | 7.737MB
+  name: 🇺🇸US-23.157.40.85-0524 | 16.762MB
   password: TEzjfAYq2IjtuoS
-  port: 6679
-  server: 23.157.40.87
+  port: 6697
+  server: 23.157.40.85
   type: ss
 - cipher: aes-256-gcm
   name: 🇺🇸US-23.157.40.95-6118 | 7.321MB
   password: PCnnH6SQSnfoS27
   port: 8090
   server: 23.157.40.95
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-37.19.198.160-0373 | 112.432MB
+  password: shadowsocks
+  port: 443
+  server: 37.19.198.160
   type: ss
 - cipher: aes-128-gcm
   name: 🇺🇸US-37.19.198.236-0376 | 124.327MB
@@ -4889,17 +4892,11 @@ proxies:
   port: 14293
   server: 45.55.2.232
   type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸US-69.50.92.72-5896 | 15.415MB
-  password: kDWvXYZoTBcGkC4
-  port: 8882
-  server: 69.50.92.72
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸US-69.50.92.72-5903 | 14.111MB
-  password: TEzjfAYq2IjtuoS
-  port: 6679
-  server: 69.50.92.72
+- cipher: aes-256-cfb
+  name: 🇺🇸US-54.218.237.217-0468 | 55.157MB
+  password: amazonskr05
+  port: 443
+  server: 54.218.237.217
   type: ss
 - cipher: aes-256-gcm
   name: 🇺🇸US-69.50.92.72-5904 | 13.921MB
@@ -4913,17 +4910,17 @@ proxies:
   port: 8090
   server: 69.50.92.72
   type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸US-69.50.93.86-6237 | 5.314MB
-  password: Y6R9pAtvxxzmGC
-  port: 8888
-  server: 69.50.93.86
-  type: ss
 - cipher: rc4-md5
   name: 🇺🇸US-79.110.53.169-0400 | 56.614MB
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 79.110.53.169
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸US-92.118.112.111-0535 | 88.022MB
+  password: gmYDzSG6K35s8b19oY4fGz
+  port: 18622
+  server: 92.118.112.111
   type: ss
 - name: _203
   type: trojan
@@ -4939,11 +4936,11 @@ proxies:
   password: 3240d72a-1373-4566-9c6c-68524e4b13fc
   sni: ''
   skip-cert-verify: false
-- name: _207
+- name: _206
   type: trojan
-  server: us-full.privateip.net
+  server: ca-full.privateip.net
   port: 443
-  password: 87ec85ad-8e8e-40a0-9b23-1fa8217c9647
+  password: acfef609-b3c7-4e52-b292-8921d5fca90d
   sni: ''
   skip-cert-verify: false
 - name: _208
@@ -4951,6 +4948,13 @@ proxies:
   server: de2-full.privateip.net
   port: 443
   password: 665c944d-047d-4659-80d5-3eaac70241a9
+  sni: ''
+  skip-cert-verify: false
+- name: 🇦🇺AU_209
+  type: trojan
+  server: au-full.privateip.net
+  port: 443
+  password: 882f187b-feb1-4be7-8678-32460f1ecfe6
   sni: ''
   skip-cert-verify: false
 - name: 🇫🇷FR_290
@@ -4995,11 +4999,11 @@ proxies:
   password: a906625d-446c-468f-9e26-1d15981fa0e9
   sni: ''
   skip-cert-verify: false
-- name: 🇷🇺RU_373
+- name: 🇸🇬SG_377
   type: trojan
-  server: hk-full.privateip.net
+  server: sg2-full.privateip.net
   port: 443
-  password: e299faed-cb72-4c62-bb2e-f0a218aed72a
+  password: c3d6d2e4-05a5-4a48-b91a-070b5e9fcdfb
   sni: ''
   skip-cert-verify: false
 - name: 🇺🇸US_581
@@ -5070,20 +5074,6 @@ proxies:
     path: /
     headers:
       Host: frankfurt03.zgjok.com
-- name: 🇫🇷 FR_246
-  type: vmess
-  server: 194.9.172.65
-  port: 443
-  uuid: 8d90c129-4156-4d6c-9115-24df25f26a02
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  sni: ''
-  ws-opts:
-    path: /linkws
-    headers:
-      Host: beyonddbc.sbs
 - name: 🇭🇰 HK_318
   type: vmess
   server: 118.193.33.237
@@ -5095,20 +5085,6 @@ proxies:
   tls: false
   sni: ''
   ws-opts: {}
-- name: 🇯🇵 JP_321
-  type: vmess
-  server: tls.11.node-for-bigairport.win
-  port: 22443
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  sni: ''
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
 - name: 🇷🇴 RO_362
   type: vmess
   server: 193.29.107.234
@@ -5175,20 +5151,6 @@ proxies:
   tls: false
   sni: ''
   ws-opts: {}
-- name: 🇺🇸 US_434
-  type: vmess
-  server: 192.74.247.140
-  port: 37002
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
-  network: ws
-  tls: true
-  sni: ''
-  ws-opts:
-    path: /path/1736674613025
-    headers:
-      Host: www.13480033.xyz
 - name: 🇺🇸US_578
   type: vmess
   server: 50.114.243.61
@@ -5211,30 +5173,6 @@ proxies:
   tls: false
   sni: ''
   ws-opts: {}
-- name: 🇩🇪 德国 | DEU 2
-  server: oracle-arm-frankfurt1.lanmaoyun.icu
-  port: 30001
-  client-fingerprint: chrome
-  type: hysteria2
-  password: feb9dd07-3669-480e-987f-27f68d83b933
-  auth: feb9dd07-3669-480e-987f-27f68d83b933
-  sni: frankfurt1.nodes.lanmaoyun.icu
-  up: 100
-  down: 1000
-  skip-cert-verify: true
-  udp: true
-- name: 🇬🇧 英国 | GBR
-  server: oracle-arm-london1.lanmaoyun.icu
-  port: 30001
-  client-fingerprint: chrome
-  type: hysteria2
-  password: feb9dd07-3669-480e-987f-27f68d83b933
-  auth: feb9dd07-3669-480e-987f-27f68d83b933
-  sni: london1.nodes.lanmaoyun.icu
-  up: 100
-  down: 1000
-  skip-cert-verify: true
-  udp: true
 - name: 🇯🇵 日本 | JPN 8
   server: jpzl2.stardad.lol
   port: 48512
@@ -5281,18 +5219,6 @@ proxies:
   sni: https://bing.com
   up: 1024
   down: 1024
-  skip-cert-verify: true
-  udp: true
-- name: 🇯🇵 日本 | JPN 18
-  server: oracle-amd-tokyo1.lanmaoyun.icu
-  port: 30001
-  client-fingerprint: chrome
-  type: hysteria2
-  password: feb9dd07-3669-480e-987f-27f68d83b933
-  auth: feb9dd07-3669-480e-987f-27f68d83b933
-  sni: tokyo.nodes.lanmaoyun.icu
-  up: 100
-  down: 1000
   skip-cert-verify: true
   udp: true
 - name: 🇯🇵 日本 | JPN 19
@@ -5343,76 +5269,28 @@ proxies:
   down: 1024
   skip-cert-verify: true
   udp: true
-- name: 🇯🇵 日本 | JPN 28
-  server: oracle-amd-osaka1.lanmaoyun.icu
-  port: 30001
-  client-fingerprint: chrome
-  type: hysteria2
-  password: feb9dd07-3669-480e-987f-27f68d83b933
-  auth: feb9dd07-3669-480e-987f-27f68d83b933
-  sni: osaka.nodes.lanmaoyun.icu
-  up: 100
-  down: 1000
-  skip-cert-verify: true
-  udp: true
-- name: 🇰🇷 韩国 | KOR
-  server: oracle-arm-seoul1.lanmaoyun.icu
-  port: 30001
-  client-fingerprint: chrome
-  type: hysteria2
-  password: feb9dd07-3669-480e-987f-27f68d83b933
-  auth: feb9dd07-3669-480e-987f-27f68d83b933
-  sni: korea.nodes.lanmaoyun.icu
-  up: 100
-  down: 1000
-  skip-cert-verify: true
-  udp: true
-- name: 🇰🇷 韩国 | KOR 3
+- name: 🇰🇷 韩国 | KOR 9
   server: kr.stardad.lol
   port: 23656
   client-fingerprint: chrome
   type: hysteria2
-  password: 86229c1a-288b-4ff6-81ae-3ca0d77fd842
-  auth: 86229c1a-288b-4ff6-81ae-3ca0d77fd842
+  password: e8943201-9023-4a37-9c62-589ff450b27f
+  auth: e8943201-9023-4a37-9c62-589ff450b27f
   sni: https://bing.com
   up: 1024
   down: 1024
   skip-cert-verify: true
   udp: true
-- name: 🇰🇷 韩国 | KOR 6
+- name: 🇰🇷 韩国 | KOR 11
   server: kr.stardad.lol
   port: 23656
   client-fingerprint: chrome
   type: hysteria2
-  password: feff3b28-0611-46bc-abec-a99af6d26bb9
-  auth: feff3b28-0611-46bc-abec-a99af6d26bb9
+  password: 19e53491-3841-4cbf-827d-8640f17c4dab
+  auth: 19e53491-3841-4cbf-827d-8640f17c4dab
   sni: https://bing.com
   up: 1024
   down: 1024
-  skip-cert-verify: true
-  udp: true
-- name: 🇰🇷 韩国 | KOR 7
-  server: oracle-arm-chuncheon2.lanmaoyun.icu
-  port: 30001
-  client-fingerprint: chrome
-  type: hysteria2
-  password: feb9dd07-3669-480e-987f-27f68d83b933
-  auth: feb9dd07-3669-480e-987f-27f68d83b933
-  sni: korea.nodes.lanmaoyun.icu
-  up: 100
-  down: 1000
-  skip-cert-verify: true
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 51
-  server: oracle-amd-singapore1.lanmaoyun.icu
-  port: 30001
-  client-fingerprint: chrome
-  type: hysteria2
-  password: feb9dd07-3669-480e-987f-27f68d83b933
-  auth: feb9dd07-3669-480e-987f-27f68d83b933
-  sni: main.nodes.lanmaoyun.icu
-  up: 100
-  down: 1000
   skip-cert-verify: true
   udp: true
 proxy-groups:
@@ -5428,556 +5306,551 @@ proxy-groups:
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
   - 🇺🇸_US_美国_6
-  - 🇺🇸US-107.155.57.51-0424 | 57.273MB
   - 🇺🇸US-107.155.57.11-0406 | 73.328MB
+  - 🇺🇸US-137.175.113.192-0411 | 8.77MB
   - 🇺🇸US-45.55.2.232-0409 | 44.011MB
   - SSR-美国>塞舌尔-NF解锁自制剧-ChatGPT-TikTok-YouTube-137.175.113.192:8388
-  - 🇺🇸US-137.175.113.192-0411 | 8.77MB
-  - 加拿大 019
-  - 美国 078
-  - xiaoer886_US_97
+  - 🇺🇸US-107.155.57.51-0424 | 57.273MB
+  - '@MxlShare 美国 | USA 30'
+  - xiaoer886_US_86
+  - 加拿大 020
+  - 美国 067
   - 🇺🇸US-107.151.182.253-0813 | 38.653MB
+  - xiaoer886_US_168
   - xiaoer886_US_152
-  - xiaoer886_US_169
-  - xiaoer886_US_245
-  - xiaoer886_US_46
+  - xiaoer886_US_108
+  - xiaoer886_US_111
+  - xiaoer886_US_76
+  - xiaoer886_US_253
+  - xiaoer886_US_263
+  - 美国 076
+  - 加拿大 027
+  - xiaoer886_US_101
+  - xiaoer886_US_15
+  - xiaoer886_US_283
+  - xiaoer886_US_125
+  - 美国 077
   - 🇺🇸US-207.246.101.50-0439 | 37.069MB
   - xiaoer886_US_203
-  - xiaoer886_US_55
-  - xiaoer886_US_283
-  - xiaoer886_US_186
-  - xiaoer886_US_168
-  - xiaoer886_US_125
-  - xiaoer886_US_104
-  - 加拿大 027
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.207.155.64:1633
-  - xiaoer886_US_93
-  - xiaoer886_US_172
-  - xiaoer886_US_206
-  - xiaoer886_US_76
-  - 美国 067
-  - xiaoer886_US_50
-  - xiaoer886_US_241
-  - xiaoer886_US_30
-  - xiaoer886_US_127
-  - '@MxlShare 美国 | USA 30'
-  - xiaoer886_US_239
-  - xiaoer886_US_153
-  - xiaoer886_US_253
-  - 🇺🇸_美国_146
-  - xiaoer886_US_101
-  - 美国 076
-  - 美国 062
-  - 🇺🇸US-79.110.53.169-0400 | 56.614MB
-  - xiaoer886_US_14
-  - xiaoer886_NL_2
-  - xiaoer886_US_250
-  - xiaoer886_US_291
-  - 美国 068
   - xiaoer886_US_274
-  - xiaoer886_US_263
-  - xiaoer886_US_227
-  - xiaoer886_US_108
-  - xiaoer886_US_311
-  - xiaoer886_US_115
-  - xiaoer886_US_44
-  - xiaoer886_US_4
-  - 🇺🇸_美国_15
-  - 美国 082
-  - 美国 077
-  - xiaoer886_US_194
-  - xiaoer886_IT_1
-  - 🇺🇸_美国_26
-  - xiaoer886_US_86
-  - xiaoer886_US_209
-  - xiaoer886_US_213
-  - 美国 050
-  - xiaoer886_FR_4
-  - xiaoer886_US_107
-  - US_bb060_0110
-  - xiaoer886_US_111
-  - xiaoer886_US_15
-  - xiaoer886_US_148
-  - xiaoer886_US_171
-  - 美国 043
-  - 🇺🇸US-23.157.40.103-5992 | 5.576MB
-  - xiaoer886_US_190
-  - xiaoer886_US_141
-  - xiaoer886_US_295
-  - xiaoer886_US_2
-  - xiaoer886_US_191
-  - xiaoer886_US_276
-  - 🇺🇸_美国_8
-  - 🇺🇸US-23.157.40.101-6067 | 5.806MB
-  - xiaoer886_US_136
-  - xiaoer886_US_38
-  - xiaoer886_US_146
-  - 美国 053
-  - xiaoer886_US_278
-  - xiaoer886_US_122
-  - xiaoer886_US_290
-  - 🇺🇸US-212.102.47.131-0415 | 81.427MB
-  - 🇺🇸_美国_12
-  - 🇺🇸US-212.102.47.130-0397 | 78.235MB
-  - US_bb060_0105
-  - 🇺🇸_美国_7
-  - xiaoer886_NL_4
-  - 🇺🇸_美国_27
-  - xiaoer886_US_39
-  - xiaoer886_BR_11
-  - xiaoer886_RU_2
-  - 🇺🇸_美国_1
-  - xiaoer886_US_204
-  - xiaoer886_FR_2
-  - xiaoer886_US_150
-  - SC_bb060_0054
-  - 🇺🇸US-23.157.40.87-6004 | 5.577MB
-  - 印度 002
-  - 🇨🇦CA-149.22.95.183-0427 | 72.775MB
-  - xiaoer886_US_54
-  - 美国 054
-  - 捷克 001
-  - SC_bb060_0055
-  - SI_bb060_0068
-  - 美国 014
-  - 🇸🇪_瑞典_3
-  - US_bb060_0072
-  - 美国 008
-  - 美国 006
-  - xiaoer886_US_297
-  - 🇺🇸US-23.157.40.113-5952 | 7.643MB
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.215:8882
-  - 美国 020
-  - 🇺🇸 US_426
-  - xiaoer886_US_320
-  - 美国 007
-  - 美国 013
-  - 🇺🇸 US_427
-  - 🇺🇸_美国_10
-  - 🇺🇸 US_422
-  - 美国 011
-  - 🇨🇦_加拿大_1
-  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.19.48.236:2086
-  - xiaoer886_US_231
-  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.19.48.236:2052
-  - 加拿大 030
-  - SC_bb060_0053
-  - xiaoer886_US_69
-  - 美国 056
-  - SSR-美国-NF解锁自制剧-ChatGPT-YouTube-54.214.180.125:443
-  - 🇸🇪_瑞典_1
   - 加拿大 012
-  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.16.155.10:2095
-  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.16.155.10:2052
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:3389
-  - 美国 023
-  - 加拿大 029
-  - 美国 CloudFlare节点-qh1R
-  - 美国 021
-  - 🇺🇸US-156.146.38.167-0384 | 90.605MB
-  - 🇺🇸US-156.146.38.170-0382 | 101.09MB
-  - 🇺🇸US-156.146.38.168-0381 | 95.266MB
-  - 🇺🇸US-156.146.38.169-0383 | 133.736MB
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.215:5001
-  - 🇺🇸 US_419
-  - 🇺🇸 US_416
-  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.17.213.241:2086
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.215:8119
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:5600
-  - _200
-  - 🇺🇸_美国_11
-  - 🇺🇸US-184.170.241.194-0393 | 81.801MB
-  - 加拿大 020
-  - 🇺🇸_美国_19
-  - xiaoer886_US_147
-  - 订阅随时会失效，请加电报群防止失联
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:2375
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:5499
-  - 美国 026
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:8000
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:5500
-  - 🇺🇸_US_美国_11
-  - 🇺🇸US-173.244.56.6-0392 | 75.064MB
-  - 🇺🇸_US_美国_4
-  - US_bb060_0107
-  - 🇺🇸_美国_4-UpiD
-  - xiaoer886_US_103
-  - xiaoer886_US_81
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:8118
-  - 🇺🇸 US_434
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:6379
-  - 🇺🇸_美国_28
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:5498
-  - '@MxlShare 美国 | USA'
-  - 🇺🇸US-23.157.40.5-6360 | 6.779MB
-  - 🇺🇸US-23.157.40.5-6354 | 7.509MB
-  - 🇺🇸US-38.68.134.202-6211 | 17.549MB
-  - 🇺🇸US-38.68.134.202-6212 | 15.998MB
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:3306
-  - 🇺🇸US-38.68.134.202-5919 | 15.795MB
-  - 🇺🇸_美国_9
-  - 🇺🇸US-38.68.134.202-6210 | 11.553MB
+  - 美国 068
+  - xiaoer886_US_97
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.207.155.64:1633
+  - xiaoer886_US_50
+  - xiaoer886_US_250
+  - xiaoer886_FR_2
+  - xiaoer886_IT_1
+  - xiaoer886_US_311
+  - xiaoer886_US_213
+  - xiaoer886_US_93
+  - xiaoer886_NL_2
+  - 美国 043
+  - xiaoer886_US_241
+  - xiaoer886_US_172
+  - xiaoer886_US_245
+  - xiaoer886_US_44
+  - xiaoer886_NL_4
+  - xiaoer886_US_127
+  - xiaoer886_US_204
+  - xiaoer886_US_206
+  - xiaoer886_US_295
+  - xiaoer886_US_122
+  - xiaoer886_US_153
+  - 🇺🇸US-79.110.53.169-0400 | 56.614MB
+  - xiaoer886_US_190
+  - xiaoer886_US_148
+  - xiaoer886_US_169
+  - xiaoer886_US_30
+  - xiaoer886_US_55
+  - xiaoer886_US_104
+  - xiaoer886_FR_4
+  - xiaoer886_US_115
+  - xiaoer886_US_54
+  - xiaoer886_US_276
+  - xiaoer886_US_194
+  - 加拿大 019
+  - xiaoer886_US_46
+  - xiaoer886_US_107
+  - 🇺🇸US-23.157.40.85-0524 | 16.762MB
+  - xiaoer886_BR_11
   - xiaoer886_US_109
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:6697
-  - 🇷🇴_RO_罗马尼亚-eeET
-  - 美国 010
-  - 🇺🇸_美国_13
-  - 🇺🇸US-38.68.134.202-0558 | 18.691MB
-  - 🇺🇸US-23.157.40.5-6368 | 8.144MB
-  - 🇺🇸US-38.121.43.51-0464 | 34.048MB
-  - 美国 030
-  - 美国 019
+  - xiaoer886_US_291
+  - 🇺🇸_美国_27
+  - xiaoer886_US_4
+  - xiaoer886_US_141
+  - xiaoer886_US_38
+  - xiaoer886_US_171
+  - 加拿大 029
+  - xiaoer886_US_39
+  - xiaoer886_US_209
+  - 🇺🇸US-173.244.56.6-0392 | 75.064MB
+  - xiaoer886_US_231
+  - 美国 062
+  - US_bb060_0110
+  - 🇺🇸_美国_1
+  - xiaoer886_US_227
+  - xiaoer886_US_2
+  - xiaoer886_US_278
+  - xiaoer886_US_136
+  - xiaoer886_US_290
+  - xiaoer886_US_239
+  - 🇺🇸US-212.102.47.130-0397 | 78.235MB
+  - 美国 050
+  - xiaoer886_US_191
+  - 🇺🇸_美国_10
+  - 美国 054
+  - 🇺🇸_美国_8
+  - 美国 032
+  - 美国 053
+  - 🇺🇸_美国_12
+  - 🇺🇸_美国_26
+  - 🇺🇸_美国_21
+  - 🇺🇸_美国_7
   - 美国 005
-  - 🇺🇸US-23.157.40.5-6352 | 5.821MB
-  - 🇺🇸US-69.50.92.72-5904 | 13.921MB
-  - US_bb060_0070
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-38.121.43.154:4444
+  - xiaoer886_US_14
+  - 🇺🇸US-23.157.40.95-6118 | 7.321MB
+  - 加拿大 030
+  - xiaoer886_US_146
+  - 印度 002
+  - 🇺🇸_US_美国_11
+  - 美国 056
+  - 🇺🇸_美国_15
+  - xiaoer886_US_186
+  - 美国 009
+  - 美国 020
+  - SI_bb060_0068
+  - 🇨🇦_加拿大_1
+  - SC_bb060_0055
+  - 印度 001
+  - 🇸🇪_瑞典_3
+  - xiaoer886_US_150
+  - 🇺🇸US-212.102.47.131-0415 | 81.427MB
+  - 🇨🇦CA-149.22.95.183-0427 | 72.775MB
+  - xiaoer886_US_320
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:5500
+  - xiaoer886_RU_2
+  - xiaoer886_US_297
+  - 🇺🇸 US_427
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:5600
+  - xiaoer886_US_69
+  - SC_bb060_0054
+  - SC_bb060_0053
+  - 🇸🇪_瑞典_1
+  - 🇺🇸US-54.218.237.217-0468 | 55.157MB
+  - 🇺🇸US-23.157.40.103-5992 | 5.576MB
+  - 美国 CloudFlare节点-vLVQ
+  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.19.48.236:2052
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.215:5001
+  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.16.155.10:2095
+  - 🇺🇸US-156.146.38.168-0381 | 95.266MB
+  - 🇺🇸US-156.146.38.167-0384 | 90.605MB
+  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.16.155.10:2052
+  - 🇺🇸US-156.146.38.170-0382 | 101.09MB
+  - US_bb060_0105
+  - 🇺🇸US-156.146.38.169-0383 | 133.736MB
+  - SSR-美国-NF解锁自制剧-ChatGPT-YouTube-54.214.180.125:443
+  - 🇺🇸US-23.157.40.5-6360 | 6.779MB
+  - 捷克 001
+  - 🇺🇸US-23.157.40.5-6354 | 7.509MB
+  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.17.213.241:2086
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:2375
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:8000
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.215:8882
+  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.19.48.236:2086
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:6697
+  - 🇺🇸_美国_9
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:8118
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:5498
+  - 🇺🇸_美国_13
+  - xiaoer886_US_103
+  - 🇺🇸US-38.68.134.202-6212 | 15.998MB
+  - 🇺🇸US-38.68.134.202-6210 | 11.553MB
+  - 🇺🇸US-38.68.134.202-0558 | 18.691MB
+  - 🇺🇸_美国_11
+  - 🇺🇸_美国_19
+  - 美国 010
+  - 🇺🇸US-38.68.134.202-5919 | 15.795MB
+  - 🇺🇸_US_美国_10
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.215:8119
+  - US_bb060_0107
+  - 🇺🇸_美国_28
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:6379
+  - 🇺🇸_美国_4-Xrgx
+  - 🇺🇸US-38.68.134.202-6211 | 17.549MB
   - 🇺🇸US-23.157.40.5-6353 | 6.145MB
-  - 🇺🇸US-37.19.198.244-0372 | 109.3MB
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:3389
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:5499
+  - 🇺🇸_US_美国_8
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:3306
+  - 🇺🇸US-23.157.40.5-6375 | 9.503MB
+  - 美国 019
+  - 🇺🇸US-23.157.40.5-6352 | 5.821MB
+  - 🇺🇸 US_426
+  - 🇺🇸_US_美国_12
+  - US_bb060_0072
+  - 🇺🇸 US_422
+  - 🇺🇸US-23.157.40.101-6067 | 5.806MB
+  - '@MxlShare 美国 | USA'
+  - 🇺🇸_US_美国_9
+  - _200
+  - 🇷🇴_RO_罗马尼亚-9wMZ
+  - 瑞典+V2CROSS.COM
+  - 🇺🇸 US_419
+  - 瑞典+V2CROSS.COM-W8ee
+  - 瑞典+V2CROSS.COM-oZq6
+  - 美国 007
+  - 🇺🇸 US_416
+  - 美国 008
+  - xiaoer886_US_147
+  - 美国 015
+  - 美国 014
+  - 美国 023
+  - 🇺🇸_US_美国_5
   - 美国 028
-  - 🇺🇸US-142.202.49.84-5899 | 5.011MB
+  - 🇺🇸US-38.121.43.51-0464 | 34.048MB
+  - xiaoer886_US_81
+  - 美国 013
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-38.121.43.154:4444
+  - 美国 017
+  - 美国 030
+  - 🇺🇸US-37.19.198.244-0372 | 109.3MB
   - 🇺🇸US-37.19.198.236-0376 | 124.327MB
   - 🇺🇸US-37.19.198.243-0375 | 107.373MB
-  - 美国 032
-  - 🇺🇸_US_美国_1-zhNJ
-  - 🇺🇸US-69.50.92.72-5905 | 14.317MB
-  - 🇺🇸_US_美国_2-4YXp
-  - 🇨🇦CA-142.4.216.225-5516 | 19.278MB
-  - 🇺🇸_美国_21
-  - 🇺🇸US-69.50.92.72-5903 | 14.111MB
+  - 🇺🇸_US_美国_3
+  - 🇺🇸US-37.19.198.160-0373 | 112.432MB
+  - 🇺🇸US-142.202.49.84-5899 | 5.011MB
+  - 🇺🇸_US_美国_1-do0y
   - 🇺🇸_US_美国
-  - 🇺🇸_US_美国_9
-  - 🇺🇸US-69.50.92.72-5896 | 15.415MB
-  - 美国 035
+  - 美国 021
+  - SS-加拿大-NF解锁自制剧-64.74.163.130:990
   - 美国 034
   - US_bb060_0071
-  - 🇺🇸_US_美国_8
-  - 🇺🇸US-38.110.1.111-0473 | 23.019MB
-  - 美国 016
-  - 🇺🇸US-138.199.42.68-0390 | 101.712MB
-  - 🇺🇸US-5.8.93.173-127
-  - Alvin1
-  - Alvin3
-  - Alvin2
-  - US_bb060_0106
-  - xiaoer886_US_287
-  - xiaoer886_US_240
-  - xiaoer886_US_67
-  - xiaoer886_US_5
-  - 🇯🇵JP-149.22.87.204-6235 | 21.007MB
   - 美国 024
-  - 🇯🇵JP-149.22.87.240-0569 | 20.481MB
-  - 瑞典+V2CROSS.COM-4VOG
-  - 🇯🇵JP-149.22.87.241-0568 | 20.65MB
-  - '@MxlShare 日本 | JPN 7'
-  - 🇨🇦_CA_加拿大
-  - xiaoer886_US_217
-  - 🇺🇸US-23.157.40.87-6094 | 7.737MB
-  - 美国2
-  - 瑞典+V2CROSS.COM-GqvH
-  - 美国5
-  - xiaoer886_RU_20
-  - 🇺🇸US-5.8.93.173-125
-  - 🇺🇸US-166.1.227.184-126
-  - 🇺🇸US-166.1.227.184-124
-  - '@MxlShare 日本 | JPN 5'
-  - 美国3
-  - xiaoer886_US_377
-  - 13|🇰🇷-JHTl
   - 🇺🇸US-216.39.248.133-0556 | 14.526MB
-  - '@MxlShare 美国 | USA 7'
-  - '@MxlShare 美国 | USA 8'
-  - '@MxlShare 美国 | USA 6'
-  - '@MxlShare 美国 | USA 5'
-  - 🇬🇧GB-212.102.53.81-0437 | 27.457MB
-  - 13|🇸🇬-TdDP
-  - '@MxlShare 美国 | USA 4'
-  - 🇬🇧GB-212.102.53.79-0457 | 28.043MB
-  - 🇬🇧GB-212.102.53.197-5424 | 28.324MB
+  - 美国 016
+  - 美国 035
+  - 美国 CloudFlare节点-p31n
+  - 🇺🇸US-138.199.42.68-0390 | 101.712MB
+  - xiaoer886_US_287
+  - xiaoer886_US_5
+  - Alvin1
+  - 🇨🇦CA-142.4.216.225-5516 | 19.278MB
+  - 🇺🇸US-38.110.1.111-0473 | 23.019MB
+  - Alvin2
+  - Alvin3
+  - xiaoer886_RU_20
+  - 🇯🇵JP-149.22.87.241-0568 | 20.65MB
+  - 🇯🇵JP-149.22.87.204-6235 | 21.007MB
+  - xiaoer886_US_67
+  - 🇯🇵JP-149.22.87.240-0569 | 20.481MB
+  - '@MxlShare 美国 | USA 3'
+  - xiaoer886_US_175
+  - xiaoer886_US_240
+  - xiaoer886_US_29
+  - 13|🇰🇷-whVB
+  - '@MxlShare 日本 | JPN 5'
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.175.96.74:16899
+  - 🇺🇸US-69.50.92.72-5904 | 13.921MB
+  - 🇺🇸US-23.154.136.176-6126 | 5.663MB
+  - 🇺🇸US-92.118.112.111-0535 | 88.022MB
+  - 🇺🇸US-5.8.93.173-125
+  - '@MxlShare 日本 | JPN 7'
+  - xiaoer886_US_120
+  - 🇺🇸_US_美国_7
+  - JP_bb060_0035
+  - xiaoer886_US_217
+  - 🇺🇸US-69.50.92.72-5905 | 14.317MB
+  - 🇺🇸US-166.1.227.184-126
+  - xiaoer886_US_377
+  - 美国2
+  - 美国3
+  - 美国 CloudFlare节点-uy0i
+  - US_bb060_0104
+  - 🇺🇸US-184.170.241.194-0393 | 81.801MB
   - 🇬🇧GB-212.102.53.198-0458 | 29.475MB
+  - 🇬🇧GB-212.102.53.81-0437 | 27.457MB
+  - 🇬🇧GB-212.102.53.196-0441 | 26.979MB
   - 🇬🇧GB-77.72.5.113-0432 | 23.736MB
+  - 美国5
+  - 🇬🇧GB-212.102.53.193-0442 | 26.372MB
+  - 🇬🇧GB-212.102.53.197-5424 | 28.324MB
   - 🇬🇧GB-212.102.53.78-0434 | 26.899MB
   - 🇬🇧GB-212.102.53.195-0435 | 27.0MB
-  - 🇬🇧GB-62.100.205.48-0440 | 26.318MB
-  - 🇬🇧GB-212.102.53.196-0441 | 26.979MB
-  - 🇬🇧GB-212.102.53.193-0442 | 26.372MB
+  - 🇬🇧GB-212.102.53.79-0457 | 28.043MB
   - 🇬🇧GB-212.102.53.194-0187 | 25.719MB
-  - CA_0001
   - 🇬🇧GB-212.102.53.80-0459 | 27.965MB
   - 🇰🇷KR-218.237.185.230-053
-  - 美国 017
-  - 🇬🇧GB-146.70.61.18-0456 | 24.423MB
-  - 🇳🇱NL-149.34.244.82-0475 | 25.354MB
+  - 🇬🇧GB-62.100.205.48-0440 | 26.318MB
   - 🇫🇷FR-51.15.27.48-0463 | 23.937MB
-  - 🇺🇸US-23.157.40.95-6118 | 7.321MB
-  - MD-86.104.74.243-0477 | 17.052MB
-  - 🇳🇱NL-109.201.152.181-0453 | 23.856MB
-  - 🇺🇸_US_美国_12
-  - 🇳🇱NL-149.34.244.77-0469 | 25.388MB
+  - 🇬🇧GB-146.70.61.18-0456 | 24.423MB
+  - 🇰🇷KR-221.168.44.72-055
   - 🇳🇱NL-149.34.244.68-0488 | 23.777MB
+  - 🇳🇱NL-149.34.244.77-0469 | 25.388MB
+  - 🇳🇱NL-149.34.244.82-0475 | 25.354MB
   - 🇬🇧GB-169.150.210.233-0500 | 22.921MB
-  - 🇫🇷FR-195.154.185.174-0474 | 23.282MB
+  - 🇳🇱NL-109.201.152.181-0453 | 23.856MB
+  - '@MxlShare 美国 | USA 8'
+  - '@MxlShare 美国 | USA 7'
   - 🇫🇷FR-51.159.111.208-0476 | 23.236MB
-  - _201
-  - '@MxlShare 美国 | USA 3'
-  - 🇭🇰HK-112.213.102.228-6146 | 8.675MB
-  - BE-192.71.249.78-5722 | 10.589MB
-  - 美国02
-  - 🇩🇪DE-80.92.204.106-5750 | 11.117MB
-  - 🇨🇦CA-142.4.216.225-0562 | 17.346MB
-  - 🇫🇷FR-45.158.171.66-439
-  - 0|--16
-  - 🇸🇬SG-68.183.227.236-6165 | 19.303MB
-  - 🇸🇬SG-68.183.227.4-6349 | 19.086MB
-  - SG_bb060_0056
-  - 🇸🇬SG-128.199.172.224-6356 | 19.387MB
-  - 🇺🇸US_579
-  - xiaoer886_UA_3
-  - 🇩🇰DK-192.36.27.94-4599 | 12.385MB
-  - CH-156.146.62.164-0516 | 21.755MB
-  - CH-156.146.62.163-0522 | 22.599MB
-  - AR-190.103.176.29-5721 | 14.127MB
-  - CH-156.146.62.161-0514 | 22.212MB
-  - '@MxlShare 新加坡 | SGP 15'
-  - 🇬🇧GB-141.98.101.180-0484 | 21.517MB
-  - CH-156.146.62.162-0518 | 21.898MB
-  - '@MxlShare 新加坡 | SGP 13'
-  - SS-瑞典-NF解锁瑞典自制剧-ChatGPT-TikTok-YouTube-46.246.98.155:44013
-  - 13|🇯🇵-Waco
-  - 🇷🇺_RU_俄罗斯_6
-  - 美国 015
-  - '@MxlShare 新加坡 | SGP 12'
-  - 🇬🇧GB-141.98.101.179-0508 | 21.62MB
-  - 🇸🇬SG-54.179.76.173-071
-  - '@MxlShare 新加坡 | SGP 14'
-  - '@MxlShare 新加坡 | SGP 11'
-  - '@MxlShare 美国 | USA 33'
+  - 🇫🇷FR-195.154.185.174-0474 | 23.282MB
   - 美国01
-  - 美国03
-  - MD-103.106.1.92-0538 | 21.589MB
-  - 美国04
-  - 美国 CloudFlare节点-4CKT
-  - '@MxlShare 新加坡 | SGP 10'
-  - SS-法国>荷兰-NF解锁荷兰自制剧-ChatGPT-YouTube-45.158.171.151:8080
-  - 🇨🇭_CH_瑞士
-  - 🇺🇸US_578
-  - 🇨🇳TW-185.189.160.98-6344 | 16.766MB
-  - CZ-195.181.160.6-0525 | 22.561MB
-  - 美国1
-  - 美国05
-  - 🇷🇴 RO_362
-  - SK-156.146.40.194-0541 | 19.966MB
   - 🇬🇧GB-141.98.101.178-0489 | 18.644MB
-  - 🇷🇺_RU_俄罗斯_1
+  - 🇬🇧GB-141.98.101.182-0513 | 19.387MB
+  - 🇬🇧GB-141.98.101.179-0508 | 21.62MB
+  - _201
+  - 美国05
+  - '@MxlShare 美国 | USA 6'
+  - 订阅随时会失效，请加电报群防止失联
+  - BE-192.71.249.78-5722 | 10.589MB
+  - 🇭🇰HK-112.213.102.228-6146 | 8.675MB
+  - CA_0001
+  - 🇳🇱NL-5.35.47.122-0472 | 20.801MB
+  - 🇬🇧GB-141.98.101.180-0484 | 21.517MB
+  - 🇺🇸US_579
+  - '@MxlShare 美国 | USA 4'
+  - '@MxlShare 美国 | USA 5'
+  - 🇫🇷FR-45.158.171.66-439
+  - 🇸🇬SG-68.183.227.4-6349 | 19.086MB
+  - 🇺🇸US-23.157.40.113-5952 | 7.643MB
+  - 🇸🇬SG-128.199.172.224-6356 | 19.387MB
+  - 🇸🇬SG-68.183.227.236-6165 | 19.303MB
+  - '@MxlShare 新加坡 | SGP 12'
+  - CH-156.146.62.163-0522 | 22.599MB
+  - '@MxlShare 新加坡 | SGP 15'
+  - SG_bb060_0056
+  - CH-156.146.62.161-0514 | 22.212MB
+  - US_bb060_0097
+  - CH-156.146.62.162-0518 | 21.898MB
+  - CH-156.146.62.164-0516 | 21.755MB
+  - SS-英国-NF解锁荷兰自制剧-ChatGPT-TikTok-198.105.123.190:46902
+  - 🇸🇬SG-54.179.76.173-071
+  - '@MxlShare 新加坡 | SGP 11'
+  - 美国 006
+  - '@MxlShare 新加坡 | SGP 13'
+  - 🇩🇪DE-80.92.204.106-5752 | 7.756MB
+  - '@MxlShare 新加坡 | SGP 10'
+  - '@MxlShare 新加坡 | SGP 14'
+  - AR-190.103.176.29-5721 | 14.127MB
+  - SS-瑞典-NF解锁瑞典自制剧-ChatGPT-TikTok-YouTube-46.246.98.155:44013
+  - US_bb060_0070
+  - SSR-瑞士-NF解锁瑞士自制剧-ChatGPT-TikTok-YouTube-84.17.53.160:989
+  - SS-挪威-NF解锁挪威地区非自制剧-ChatGPT-TikTok-109.205.9.7:52952
+  - 美国03
+  - US_bb060_0095
+  - SS-英国-NF解锁英国自制剧-ChatGPT-TikTok-YouTube-109.120.186.231:11329
+  - 🇨🇭_CH_瑞士
+  - 0|--16
+  - 美国 082
+  - 13|🇯🇵-w0dZ
+  - xiaoer886_RU_9
+  - 🇷🇺_RU_俄罗斯_6
+  - VMESS-未知>美国-NF解锁香港地区非自制剧-ChatGPT-TikTok-YouTube-104.16.155.10:2082
+  - 美国 CloudFlare节点
+  - 🇷🇺_RU_俄罗斯_7
+  - 美国 011
+  - 🇨🇦CA-142.4.216.225-0562 | 17.346MB
+  - 美国04
+  - 🇺🇸US_578
+  - 🇷🇴 RO_362
+  - 美国02
+  - KR_bb060_0037
+  - VMESS-未知>美国-NF解锁台湾地区非自制剧-ChatGPT-TikTok-YouTube-104.17.221.248:8080
+  - 🇩🇪DE-80.92.204.106-5755 | 11.443MB
+  - 🇩🇪DE-80.92.204.106-5750 | 11.117MB
+  - CZ-195.181.160.6-0525 | 22.561MB
+  - 美国4
+  - PA-138.186.142.4-6209 | 15.319MB
+  - 🇵🇱PL-92.118.205.228-5747 | 17.368MB
   - SE-121.127.46.147-0548 | 21.508MB
-  - 🇷🇺_RU_俄罗斯_4
-  - 🇩🇪DE-80.92.204.106-5754 | 8.268MB
+  - SSR-丹麦-NF解锁丹麦自制剧-ChatGPT-TikTok-YouTube-185.186.79.53:989
+  - 🇩🇰DK-192.36.27.94-4599 | 12.385MB
+  - 0|--18
+  - 0|--1
+  - xiaoer886_GB_3
+  - 美国1
+  - MD-103.106.1.92-0538 | 21.589MB
+  - 🇨🇳TW-185.189.160.98-6344 | 16.766MB
+  - xiaoer886_KR_1
+  - xiaoer886_GB_2
+  - 🇯🇵 免费-日本7-Ver.1
+  - '@MxlShare 澳大利亚 | AUS'
+  - 🇯🇵 免费-日本4-Ver.7
+  - 🇺🇸US-5.8.93.173-127
+  - '@MxlShare 澳大利亚 | AUS 2'
+  - 🇯🇵 免费-日本2-Ver.7
+  - 美国 026
+  - 🇺🇸US-166.1.227.184-124
   - 🇭🇰 HK_318
   - 🇯🇵 免费-日本5-Ver.8
-  - SS-英国-NF解锁英国自制剧-ChatGPT-TikTok-YouTube-109.120.186.231:11329
-  - 🇵🇱PL-92.118.205.228-5747 | 17.368MB
-  - 🇬🇧GB-141.98.101.182-0513 | 19.387MB
-  - 🇯🇵 免费-日本2-Ver.7
-  - 🇩🇪DE-80.92.204.106-5752 | 7.756MB
-  - 🇯🇵 免费-日本7-Ver.1
-  - SS-英国-NF解锁荷兰自制剧-ChatGPT-TikTok-198.105.123.190:46902
-  - NO-51.13.183.76-0536 | 21.726MB
-  - US_bb060_0104
-  - xiaoer886_GB_3
-  - 🇷🇺_RU_俄罗斯_2
-  - KR_bb060_0044
-  - '@MxlShare 美国 | USA 13'
-  - US_bb060_0097
-  - 美国 CloudFlare节点-thhv
-  - xiaoer886_KR_1
-  - 瑞典+V2CROSS.COM
-  - '@MxlShare 澳大利亚 | AUS 2'
-  - '@MxlShare 美国 | USA 9'
-  - 🇯🇵5
-  - '@MxlShare 澳大利亚 | AUS'
-  - 🇳🇱NL-89.23.103.125-0553 | 13.427MB
-  - xiaoer886_GB_2
-  - 美国 CloudFlare节点
-  - PA-138.186.142.4-6209 | 15.319MB
-  - LV-46.183.217.232-0564 | 20.206MB
-  - _207
-  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hms19.best-tizi.top:443
   - '@MxlShare 日本 | JPN'
-  - VN-103.163.218.2-6358 | 14.374MB
-  - SSR-丹麦-NF解锁丹麦自制剧-ChatGPT-TikTok-YouTube-185.186.79.53:989
-  - 🇯🇵4
   - '@MxlShare 日本 | JPN 3'
-  - '@MxlShare 日本 | JPN 2'
-  - 🇬🇧GB-212.102.53.197-0462 | 28.875MB
-  - 🇯🇵 日本 | JPN 19
-  - 0|--1
-  - 🏁ZZ_601
-  - 🇯🇵 免费-日本4-Ver.7
-  - 🇺🇸_美国_2
-  - '@MxlShare 美国 | USA 24'
+  - LV-46.183.217.232-0564 | 20.206MB
+  - 🇯🇵7
+  - RS-194.71.126.31-0546 | 21.008MB
   - xiaoer886_FR_10
-  - SS-挪威-NF解锁挪威地区非自制剧-ChatGPT-TikTok-109.205.9.7:52952
-  - xiaoer886_US_175
-  - 美国4
+  - '@MxlShare 日本 | JPN 4'
+  - 🏁ZZ_601
+  - xiaoer886_FR_14
+  - '@MxlShare 美国 | USA 24'
+  - xiaoer886_US_66
+  - 🇩🇪DE-80.240.112.32-081
+  - 🇺🇸_美国_2
+  - 🇩🇪DE-80.240.112.32-079
+  - 🇹🇼2
+  - 🇯🇵6
+  - 🇯🇵5
+  - 0|--51
+  - _206
+  - VN-103.163.218.2-6358 | 14.374MB
+  - xiaoer886_US_45
+  - xiaoer886_RU_22
+  - 🇫🇷FR-51.15.15.82-6362 | 8.254MB
   - 🇷🇺_RU_俄罗斯_3
   - xiaoer886_DE_4
-  - 🇭🇰 香港-1C
-  - 🇫🇷FR-51.15.15.82-6362 | 8.254MB
-  - xiaoer886_GB_10
-  - '@MxlShare 韩国 | KOR 5'
-  - US_bb060_0100
+  - 🇬🇧GB-212.102.53.197-0462 | 28.875MB
+  - 🇯🇵4
+  - xiaoer886_FR_13
+  - _199
   - xiaoer886_SG_2
+  - xiaoer886_GB_10
+  - 🇰🇷3
   - xiaoer886_RU_27
-  - xiaoer886_RU_23
-  - xiaoer886_RU_25
-  - 🇯🇵3
   - xiaoer886_RU_21
-  - '@MxlShare 韩国 | KOR 3'
+  - 🇯🇵2
+  - NO-51.13.183.76-0536 | 21.726MB
+  - xiaoer886_RU_25
+  - xiaoer886_RU_23
+  - '@MxlShare 新加坡 | SGP'
+  - 🇭🇰 香港-1C
+  - 🇯🇵3
+  - 🇯🇵1
+  - xiaoer886_RU_26
+  - KR_bb060_0038
   - '@MxlShare 韩国 | KOR 2'
   - xiaoer886_US_294
-  - 美国 022
-  - xiaoer886_FR_13
-  - 🇯🇵 日本 | JPN 8
-  - 🇷🇺_RU_俄罗斯_7
-  - 🇺🇸US-69.50.93.86-6237 | 5.314MB
-  - 🇸🇬5
-  - hk2
-  - xiaoer886_US_116
-  - RELAY-104.19.48.236-0297 | 18.717MB
-  - 🇯🇵 免费-日本1-Ver.6
-  - _203
-  - 🇯🇵 免费-日本6-Ver.7
-  - xiaoer886_US_317
-  - 🇺🇦_乌克兰_1
-  - 🇯🇵 免费-日本3-Ver.6
-  - VMESS-未知>新加坡-NF解锁新加坡自制剧-ChatGPT-TikTok-YouTube-104.17.213.241:80
-  - RELAY-104.16.155.10-0296 | 18.685MB
-  - '@MxlShare 日本 | JPN 4'
-  - 🇷🇺_RU_俄罗斯
-  - US_bb060_0095
-  - '@MxlShare 巴西 | BRA'
-  - '@MxlShare 韩国 | KOR'
-  - VMESS-未知>德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-yaml777.133010.xyz:80
-  - xiaoer886_UA_1
-  - hk7
-  - hk3
+  - 🇰🇷KR-221.168.44.72-057
+  - 🇳🇱NL-89.23.103.125-0553 | 13.427MB
   - hk6
-  - VMESS-未知>日本-NF解锁日本自制剧-ChatGPT-TikTok-YouTube-jgw350m.pai50288.uk:443
-  - '@MxlShare 韩国 | KOR 4'
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.175.96.74:16899
-  - 0|--18
-  - '@MxlShare 新加坡 | SGP 2'
-  - 🇯🇵 JP_321
-  - 🇯🇵7
-  - 🇸🇬7
-  - 🇫🇷FR_294
-  - 🇷🇺_RU_俄罗斯_1-aOwH
-  - 🇫🇷FR_290
-  - xiaoer886_RU_9
-  - 🇬🇧GB_310
-  - 日本2
-  - '@MxlShare 香港 | HKG 7'
-  - 🇷🇺_RU_俄罗斯_5
-  - '@MxlShare 香港 | HKG 6'
-  - 🇺🇸_美国_4
-  - 日本1
-  - 🇯🇵 日本 | JPN 18
-  - '@MxlShare 香港 | HKG 5'
-  - 🏁ZZ_602
-  - 日本3
-  - '@MxlShare 香港 | HKG 4'
-  - 🇬🇧 英国 | GBR
-  - 🇺🇸US_581
-  - xiaoer886_RU_22
-  - '@MxlShare 香港 | HKG 3'
-  - _204
-  - xiaoer886_PL
-  - 🇫🇷FR_292
-  - _208
-  - 🇮🇳IN-5.8.35.208-116
-  - 🇩🇪DE-80.92.204.106-5755 | 11.443MB
-  - 🇰🇷KR-221.168.44.72-055
-  - xiaoer886_JP_4
-  - SG_Singapore_Amazon Technologies Inc._OpenAI_Claude2
-  - '@MxlShare 卢森堡 | LUX 4'
-  - xiaoer886_RU_26
-  - 🇯🇵 日本 | JPN 23
-  - 🇸🇬SG-139.59.119.143-6395 | 19.203MB
-  - 0|--13
-  - '@MxlShare 卢森堡 | LUX 3'
-  - 🇺🇸 美国5
-  - 0|--51
-  - 美国 064
-  - 8|@V2ray1_Ng
-  - '@MxlShare 卢森堡 | LUX 2'
-  - 🇰🇷 韩国 | KOR
-  - VMESS-未知>巴西-NF解锁巴西地区非自制剧-ChatGPT-TikTok-YouTube-104.18.7.41:2052
-  - '@MxlShare 卢森堡 | LUX'
-  - NL_bb060_0048
-  - 🇷🇺RU_373
-  - 🇯🇵 日本 | JPN 22
-  - ES_bb060_0029
-  - xiaoer886_GB_15
-  - 🇩🇪 德国 | DEU 2
-  - 🇰🇷2
-  - 🇯🇵 日本 | JPN 27
-  - xiaoer886_US_318
-  - IN_bb060_0034
-  - xiaoer886_GB_6
-  - _199
-  - 🇹🇼 台湾2全天极速优先使用|X3
-  - 🇸🇬 新加坡 | SGP 51
-  - 🇯🇵 日本 | JPN 28
-  - '@MxlShare 印度 | IND'
-  - 台湾1
-  - '@MxlShare 新加坡 | SGP 3'
-  - 🇬🇮GI_315
-  - 🇸🇬6
-  - 🇯🇵 日本 | JPN 15
-  - xiaoer886_CH_2
-  - TR-45.89.52.66-5630 | 11.329MB
-  - 🇮🇳IN印度-Oracle
-  - xiaoer886_CH_1
-  - 🇰🇷 韩国 | KOR 3
-  - 埃及 001
-  - 🇩🇪DE-80.92.204.106-5756 | 13.286MB
-  - 🇹🇼2
-  - xiaoer886_US_64
-  - xiaoer886_US_120
-  - '@MxlShare 新加坡 | SGP'
-  - 🇯🇵2
-  - 🇯🇵 日本 | JPN 10
-  - 0|--56
-  - 香港1
-  - VMESS-未知>美国-NF解锁台湾地区非自制剧-ChatGPT-TikTok-YouTube-104.17.221.248:8080
-  - 🇸🇬2
-  - xiaoer886_DE_2
-  - xiaoer886_US_87
-  - 🇺🇸_美国_3
-  - 🇩🇪 DE_232
-  - 🇯🇵 日本 | JPN 9
-  - 🇸🇬SG-13.251.189.12-6153 | 19.682MB
-  - 🇩🇪DE-80.240.112.32-081
-  - 🇩🇪DE-80.240.112.32-079
-  - 🇯🇵6
-  - '@MxlShare 新加坡 | SGP 5'
+  - 🇯🇵 免费-日本6-Ver.7
+  - hk7
+  - xiaoer886_LT
   - 🇰🇷1
-  - 🇫🇷 FR_246
-  - '@MxlShare 新加坡 | SGP 4'
-  - VMESS-未知>巴西-NF解锁巴西地区非自制剧-ChatGPT-TikTok-YouTube-c1.v2raybrasil.xyz:2082
-  - 🇸🇬1
-  - 🇳🇱NL_335
   - hk4
-  - 🇯🇵1
-  - SG_Singapore_Amazon Technologies Inc_OpenAI_Claude1
+  - '@MxlShare 韩国 | KOR 3'
+  - _203
+  - 🇸🇬5
+  - 🇸🇬6
+  - '@MxlShare 日本 | JPN 2'
+  - 🇸🇬2
+  - xiaoer886_US_116
+  - 🇸🇬7
+  - '@MxlShare 韩国 | KOR 5'
+  - 🇸🇬3
+  - '@MxlShare 美国 | USA 13'
+  - hk3
+  - 🇸🇬1
+  - xiaoer886_PL
+  - VMESS-未知>新加坡-NF解锁新加坡自制剧-ChatGPT-TikTok-YouTube-104.17.213.241:80
+  - 🇸🇬4
+  - 🇩🇪DE-80.92.204.106-5756 | 13.286MB
+  - 🇯🇵 免费-日本1-Ver.6
+  - '@MxlShare 美国 | USA 9'
+  - 🇷🇺_RU_俄罗斯_5
+  - '@MxlShare 新加坡 | SGP 2'
+  - '@MxlShare 香港 | HKG 7'
+  - US_bb060_0100
+  - VMESS-未知>德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-yaml777.133010.xyz:80
+  - SK-156.146.40.194-0541 | 19.966MB
+  - RELAY-104.16.155.10-0296 | 18.685MB
+  - RELAY-104.19.48.236-0297 | 18.717MB
+  - 🇰🇷2
+  - '@MxlShare 香港 | HKG 5'
+  - ES_bb060_0029
+  - '@MxlShare 美国 | USA 33'
+  - xiaoer886_US_317
+  - '@MxlShare 香港 | HKG 4'
+  - 🇺🇦_乌克兰_1
+  - 日本2
+  - 🇮🇳IN-5.8.35.208-116
+  - 日本1
+  - VMESS-未知>日本-NF解锁日本自制剧-ChatGPT-TikTok-YouTube-jgw350m.pai50288.uk:443
+  - 🇷🇺_RU_俄罗斯
+  - IN_bb060_0034
+  - VMESS-未知>巴西-NF解锁巴西地区非自制剧-ChatGPT-TikTok-YouTube-104.18.7.41:2052
+  - hk2
+  - 日本3
+  - xiaoer886_US_318
+  - 🇰🇷 韩国 | KOR 11
+  - 0|--56
+  - _208
+  - xiaoer886_GB_6
+  - 🇯🇵 免费-日本3-Ver.6
+  - '@MxlShare 巴西 | BRA'
+  - 🇧🇪_比利时_1
+  - NL_bb060_0048
+  - 🇦🇺AU_209
   - 0|--62
+  - '@MxlShare 韩国 | KOR'
+  - 美国 064
+  - TR-45.89.52.66-5630 | 11.329MB
+  - xiaoer886_JP_4
+  - 🇷🇺_RU_俄罗斯_4
+  - 🇸🇬SG-139.59.119.143-6395 | 19.203MB
+  - 🇺🇸 美国5
+  - 🇩🇪DE-80.92.204.106-5754 | 8.268MB
+  - 🇸🇬SG-13.251.189.12-6153 | 19.682MB
+  - xiaoer886_CH_2
+  - 美国 022
+  - 🇺🇸_美国_4
+  - xiaoer886_US_64
+  - 🇷🇺RU-45.151.62.54-0557 | 16.161MB
+  - 🇫🇷FR_294
+  - 🏁ZZ_602
+  - 台湾1
+  - 🇷🇺_RU_俄罗斯_1-urP3
+  - '@MxlShare 香港 | HKG 6'
+  - 🇫🇷FR_290
+  - 🇯🇵 日本 | JPN 19
+  - 🇺🇸US_581
+  - xiaoer886_CH_1
+  - '@MxlShare 卢森堡 | LUX'
+  - KZ-213.156.137.67-5639 | 18.874MB
+  - 🇯🇵 日本 | JPN 23
+  - 🇯🇵 日本 | JPN 15
+  - 🇬🇧GB_310
+  - 🇫🇷FR_292
+  - '@MxlShare 卢森堡 | LUX 4'
+  - '@MxlShare 卢森堡 | LUX 3'
+  - '@MxlShare 韩国 | KOR 4'
+  - '@MxlShare 卢森堡 | LUX 2'
+  - _204
+  - 🇸🇬SG_377
+  - xiaoer886_DE_2
+  - 香港1
+  - 🇯🇵 日本 | JPN 27
   - 🇩🇪DE-80.92.204.106-5751 | 12.552MB
+  - 🇳🇱NL_335
+  - 🇹🇼1
+  - '@MxlShare 香港 | HKG 3'
+  - 埃及 001
+  - '@MxlShare 印度 | IND'
+  - 🇯🇵 日本 | JPN 22
+  - 🇹🇼 台湾2全天极速优先使用|X3
+  - 🇬🇮GI_315
+  - VMESS-未知>巴西-NF解锁巴西地区非自制剧-ChatGPT-TikTok-YouTube-c1.v2raybrasil.xyz:2082
+  - 🇯🇵 日本 | JPN 10
+  - 🇯🇵 日本 | JPN 8
+  - 🇯🇵 日本 | JPN 9
   - PL_Warsaw_OVH SAS_OpenAI_Claude1
-  - 🇰🇷 韩国 | KOR 6
-  - xiaoer886_FR_7
-  - 🇰🇷 韩国 | KOR 7
+  - 🇺🇸_美国_3
   - 🇮🇳IN-159.65.149.72-5832 | 18.579MB
+  - SS-法国>荷兰-NF解锁荷兰自制剧-ChatGPT-YouTube-45.158.171.151:8080
+  - '@MxlShare 新加坡 | SGP 3'
+  - 🇩🇪 DE_232
+  - 🇰🇷 韩国 | KOR 9
   - xiaoer886_UA_4
+  - 0|--7
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
@@ -5986,1112 +5859,1102 @@ proxy-groups:
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
   - 🇺🇸_US_美国_6
-  - 🇺🇸US-107.155.57.51-0424 | 57.273MB
   - 🇺🇸US-107.155.57.11-0406 | 73.328MB
+  - 🇺🇸US-137.175.113.192-0411 | 8.77MB
   - 🇺🇸US-45.55.2.232-0409 | 44.011MB
   - SSR-美国>塞舌尔-NF解锁自制剧-ChatGPT-TikTok-YouTube-137.175.113.192:8388
-  - 🇺🇸US-137.175.113.192-0411 | 8.77MB
-  - 加拿大 019
-  - 美国 078
-  - xiaoer886_US_97
+  - 🇺🇸US-107.155.57.51-0424 | 57.273MB
+  - '@MxlShare 美国 | USA 30'
+  - xiaoer886_US_86
+  - 加拿大 020
+  - 美国 067
   - 🇺🇸US-107.151.182.253-0813 | 38.653MB
+  - xiaoer886_US_168
   - xiaoer886_US_152
-  - xiaoer886_US_169
-  - xiaoer886_US_245
-  - xiaoer886_US_46
+  - xiaoer886_US_108
+  - xiaoer886_US_111
+  - xiaoer886_US_76
+  - xiaoer886_US_253
+  - xiaoer886_US_263
+  - 美国 076
+  - 加拿大 027
+  - xiaoer886_US_101
+  - xiaoer886_US_15
+  - xiaoer886_US_283
+  - xiaoer886_US_125
+  - 美国 077
   - 🇺🇸US-207.246.101.50-0439 | 37.069MB
   - xiaoer886_US_203
-  - xiaoer886_US_55
-  - xiaoer886_US_283
-  - xiaoer886_US_186
-  - xiaoer886_US_168
-  - xiaoer886_US_125
-  - xiaoer886_US_104
-  - 加拿大 027
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.207.155.64:1633
-  - xiaoer886_US_93
-  - xiaoer886_US_172
-  - xiaoer886_US_206
-  - xiaoer886_US_76
-  - 美国 067
-  - xiaoer886_US_50
-  - xiaoer886_US_241
-  - xiaoer886_US_30
-  - xiaoer886_US_127
-  - '@MxlShare 美国 | USA 30'
-  - xiaoer886_US_239
-  - xiaoer886_US_153
-  - xiaoer886_US_253
-  - 🇺🇸_美国_146
-  - xiaoer886_US_101
-  - 美国 076
-  - 美国 062
-  - 🇺🇸US-79.110.53.169-0400 | 56.614MB
-  - xiaoer886_US_14
-  - xiaoer886_NL_2
-  - xiaoer886_US_250
-  - xiaoer886_US_291
-  - 美国 068
   - xiaoer886_US_274
-  - xiaoer886_US_263
-  - xiaoer886_US_227
-  - xiaoer886_US_108
-  - xiaoer886_US_311
-  - xiaoer886_US_115
-  - xiaoer886_US_44
-  - xiaoer886_US_4
-  - 🇺🇸_美国_15
-  - 美国 082
-  - 美国 077
-  - xiaoer886_US_194
-  - xiaoer886_IT_1
-  - 🇺🇸_美国_26
-  - xiaoer886_US_86
-  - xiaoer886_US_209
-  - xiaoer886_US_213
-  - 美国 050
-  - xiaoer886_FR_4
-  - xiaoer886_US_107
-  - US_bb060_0110
-  - xiaoer886_US_111
-  - xiaoer886_US_15
-  - xiaoer886_US_148
-  - xiaoer886_US_171
-  - 美国 043
-  - 🇺🇸US-23.157.40.103-5992 | 5.576MB
-  - xiaoer886_US_190
-  - xiaoer886_US_141
-  - xiaoer886_US_295
-  - xiaoer886_US_2
-  - xiaoer886_US_191
-  - xiaoer886_US_276
-  - 🇺🇸_美国_8
-  - 🇺🇸US-23.157.40.101-6067 | 5.806MB
-  - xiaoer886_US_136
-  - xiaoer886_US_38
-  - xiaoer886_US_146
-  - 美国 053
-  - xiaoer886_US_278
-  - xiaoer886_US_122
-  - xiaoer886_US_290
-  - 🇺🇸US-212.102.47.131-0415 | 81.427MB
-  - 🇺🇸_美国_12
-  - 🇺🇸US-212.102.47.130-0397 | 78.235MB
-  - US_bb060_0105
-  - 🇺🇸_美国_7
-  - xiaoer886_NL_4
-  - 🇺🇸_美国_27
-  - xiaoer886_US_39
-  - xiaoer886_BR_11
-  - xiaoer886_RU_2
-  - 🇺🇸_美国_1
-  - xiaoer886_US_204
-  - xiaoer886_FR_2
-  - xiaoer886_US_150
-  - SC_bb060_0054
-  - 🇺🇸US-23.157.40.87-6004 | 5.577MB
-  - 印度 002
-  - 🇨🇦CA-149.22.95.183-0427 | 72.775MB
-  - xiaoer886_US_54
-  - 美国 054
-  - 捷克 001
-  - SC_bb060_0055
-  - SI_bb060_0068
-  - 美国 014
-  - 🇸🇪_瑞典_3
-  - US_bb060_0072
-  - 美国 008
-  - 美国 006
-  - xiaoer886_US_297
-  - 🇺🇸US-23.157.40.113-5952 | 7.643MB
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.215:8882
-  - 美国 020
-  - 🇺🇸 US_426
-  - xiaoer886_US_320
-  - 美国 007
-  - 美国 013
-  - 🇺🇸 US_427
-  - 🇺🇸_美国_10
-  - 🇺🇸 US_422
-  - 美国 011
-  - 🇨🇦_加拿大_1
-  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.19.48.236:2086
-  - xiaoer886_US_231
-  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.19.48.236:2052
-  - 加拿大 030
-  - SC_bb060_0053
-  - xiaoer886_US_69
-  - 美国 056
-  - SSR-美国-NF解锁自制剧-ChatGPT-YouTube-54.214.180.125:443
-  - 🇸🇪_瑞典_1
   - 加拿大 012
-  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.16.155.10:2095
-  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.16.155.10:2052
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:3389
-  - 美国 023
-  - 加拿大 029
-  - 美国 CloudFlare节点-qh1R
-  - 美国 021
-  - 🇺🇸US-156.146.38.167-0384 | 90.605MB
-  - 🇺🇸US-156.146.38.170-0382 | 101.09MB
-  - 🇺🇸US-156.146.38.168-0381 | 95.266MB
-  - 🇺🇸US-156.146.38.169-0383 | 133.736MB
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.215:5001
-  - 🇺🇸 US_419
-  - 🇺🇸 US_416
-  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.17.213.241:2086
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.215:8119
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:5600
-  - _200
-  - 🇺🇸_美国_11
-  - 🇺🇸US-184.170.241.194-0393 | 81.801MB
-  - 加拿大 020
-  - 🇺🇸_美国_19
-  - xiaoer886_US_147
-  - 订阅随时会失效，请加电报群防止失联
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:2375
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:5499
-  - 美国 026
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:8000
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:5500
-  - 🇺🇸_US_美国_11
-  - 🇺🇸US-173.244.56.6-0392 | 75.064MB
-  - 🇺🇸_US_美国_4
-  - US_bb060_0107
-  - 🇺🇸_美国_4-UpiD
-  - xiaoer886_US_103
-  - xiaoer886_US_81
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:8118
-  - 🇺🇸 US_434
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:6379
-  - 🇺🇸_美国_28
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:5498
-  - '@MxlShare 美国 | USA'
-  - 🇺🇸US-23.157.40.5-6360 | 6.779MB
-  - 🇺🇸US-23.157.40.5-6354 | 7.509MB
-  - 🇺🇸US-38.68.134.202-6211 | 17.549MB
-  - 🇺🇸US-38.68.134.202-6212 | 15.998MB
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:3306
-  - 🇺🇸US-38.68.134.202-5919 | 15.795MB
-  - 🇺🇸_美国_9
-  - 🇺🇸US-38.68.134.202-6210 | 11.553MB
+  - 美国 068
+  - xiaoer886_US_97
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.207.155.64:1633
+  - xiaoer886_US_50
+  - xiaoer886_US_250
+  - xiaoer886_FR_2
+  - xiaoer886_IT_1
+  - xiaoer886_US_311
+  - xiaoer886_US_213
+  - xiaoer886_US_93
+  - xiaoer886_NL_2
+  - 美国 043
+  - xiaoer886_US_241
+  - xiaoer886_US_172
+  - xiaoer886_US_245
+  - xiaoer886_US_44
+  - xiaoer886_NL_4
+  - xiaoer886_US_127
+  - xiaoer886_US_204
+  - xiaoer886_US_206
+  - xiaoer886_US_295
+  - xiaoer886_US_122
+  - xiaoer886_US_153
+  - 🇺🇸US-79.110.53.169-0400 | 56.614MB
+  - xiaoer886_US_190
+  - xiaoer886_US_148
+  - xiaoer886_US_169
+  - xiaoer886_US_30
+  - xiaoer886_US_55
+  - xiaoer886_US_104
+  - xiaoer886_FR_4
+  - xiaoer886_US_115
+  - xiaoer886_US_54
+  - xiaoer886_US_276
+  - xiaoer886_US_194
+  - 加拿大 019
+  - xiaoer886_US_46
+  - xiaoer886_US_107
+  - 🇺🇸US-23.157.40.85-0524 | 16.762MB
+  - xiaoer886_BR_11
   - xiaoer886_US_109
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:6697
-  - 🇷🇴_RO_罗马尼亚-eeET
-  - 美国 010
-  - 🇺🇸_美国_13
-  - 🇺🇸US-38.68.134.202-0558 | 18.691MB
-  - 🇺🇸US-23.157.40.5-6368 | 8.144MB
-  - 🇺🇸US-38.121.43.51-0464 | 34.048MB
-  - 美国 030
-  - 美国 019
+  - xiaoer886_US_291
+  - 🇺🇸_美国_27
+  - xiaoer886_US_4
+  - xiaoer886_US_141
+  - xiaoer886_US_38
+  - xiaoer886_US_171
+  - 加拿大 029
+  - xiaoer886_US_39
+  - xiaoer886_US_209
+  - 🇺🇸US-173.244.56.6-0392 | 75.064MB
+  - xiaoer886_US_231
+  - 美国 062
+  - US_bb060_0110
+  - 🇺🇸_美国_1
+  - xiaoer886_US_227
+  - xiaoer886_US_2
+  - xiaoer886_US_278
+  - xiaoer886_US_136
+  - xiaoer886_US_290
+  - xiaoer886_US_239
+  - 🇺🇸US-212.102.47.130-0397 | 78.235MB
+  - 美国 050
+  - xiaoer886_US_191
+  - 🇺🇸_美国_10
+  - 美国 054
+  - 🇺🇸_美国_8
+  - 美国 032
+  - 美国 053
+  - 🇺🇸_美国_12
+  - 🇺🇸_美国_26
+  - 🇺🇸_美国_21
+  - 🇺🇸_美国_7
   - 美国 005
-  - 🇺🇸US-23.157.40.5-6352 | 5.821MB
-  - 🇺🇸US-69.50.92.72-5904 | 13.921MB
-  - US_bb060_0070
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-38.121.43.154:4444
+  - xiaoer886_US_14
+  - 🇺🇸US-23.157.40.95-6118 | 7.321MB
+  - 加拿大 030
+  - xiaoer886_US_146
+  - 印度 002
+  - 🇺🇸_US_美国_11
+  - 美国 056
+  - 🇺🇸_美国_15
+  - xiaoer886_US_186
+  - 美国 009
+  - 美国 020
+  - SI_bb060_0068
+  - 🇨🇦_加拿大_1
+  - SC_bb060_0055
+  - 印度 001
+  - 🇸🇪_瑞典_3
+  - xiaoer886_US_150
+  - 🇺🇸US-212.102.47.131-0415 | 81.427MB
+  - 🇨🇦CA-149.22.95.183-0427 | 72.775MB
+  - xiaoer886_US_320
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:5500
+  - xiaoer886_RU_2
+  - xiaoer886_US_297
+  - 🇺🇸 US_427
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:5600
+  - xiaoer886_US_69
+  - SC_bb060_0054
+  - SC_bb060_0053
+  - 🇸🇪_瑞典_1
+  - 🇺🇸US-54.218.237.217-0468 | 55.157MB
+  - 🇺🇸US-23.157.40.103-5992 | 5.576MB
+  - 美国 CloudFlare节点-vLVQ
+  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.19.48.236:2052
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.215:5001
+  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.16.155.10:2095
+  - 🇺🇸US-156.146.38.168-0381 | 95.266MB
+  - 🇺🇸US-156.146.38.167-0384 | 90.605MB
+  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.16.155.10:2052
+  - 🇺🇸US-156.146.38.170-0382 | 101.09MB
+  - US_bb060_0105
+  - 🇺🇸US-156.146.38.169-0383 | 133.736MB
+  - SSR-美国-NF解锁自制剧-ChatGPT-YouTube-54.214.180.125:443
+  - 🇺🇸US-23.157.40.5-6360 | 6.779MB
+  - 捷克 001
+  - 🇺🇸US-23.157.40.5-6354 | 7.509MB
+  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.17.213.241:2086
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:2375
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:8000
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.215:8882
+  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.19.48.236:2086
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:6697
+  - 🇺🇸_美国_9
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:8118
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:5498
+  - 🇺🇸_美国_13
+  - xiaoer886_US_103
+  - 🇺🇸US-38.68.134.202-6212 | 15.998MB
+  - 🇺🇸US-38.68.134.202-6210 | 11.553MB
+  - 🇺🇸US-38.68.134.202-0558 | 18.691MB
+  - 🇺🇸_美国_11
+  - 🇺🇸_美国_19
+  - 美国 010
+  - 🇺🇸US-38.68.134.202-5919 | 15.795MB
+  - 🇺🇸_US_美国_10
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.215:8119
+  - US_bb060_0107
+  - 🇺🇸_美国_28
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:6379
+  - 🇺🇸_美国_4-Xrgx
+  - 🇺🇸US-38.68.134.202-6211 | 17.549MB
   - 🇺🇸US-23.157.40.5-6353 | 6.145MB
-  - 🇺🇸US-37.19.198.244-0372 | 109.3MB
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:3389
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:5499
+  - 🇺🇸_US_美国_8
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:3306
+  - 🇺🇸US-23.157.40.5-6375 | 9.503MB
+  - 美国 019
+  - 🇺🇸US-23.157.40.5-6352 | 5.821MB
+  - 🇺🇸 US_426
+  - 🇺🇸_US_美国_12
+  - US_bb060_0072
+  - 🇺🇸 US_422
+  - 🇺🇸US-23.157.40.101-6067 | 5.806MB
+  - '@MxlShare 美国 | USA'
+  - 🇺🇸_US_美国_9
+  - _200
+  - 🇷🇴_RO_罗马尼亚-9wMZ
+  - 瑞典+V2CROSS.COM
+  - 🇺🇸 US_419
+  - 瑞典+V2CROSS.COM-W8ee
+  - 瑞典+V2CROSS.COM-oZq6
+  - 美国 007
+  - 🇺🇸 US_416
+  - 美国 008
+  - xiaoer886_US_147
+  - 美国 015
+  - 美国 014
+  - 美国 023
+  - 🇺🇸_US_美国_5
   - 美国 028
-  - 🇺🇸US-142.202.49.84-5899 | 5.011MB
+  - 🇺🇸US-38.121.43.51-0464 | 34.048MB
+  - xiaoer886_US_81
+  - 美国 013
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-38.121.43.154:4444
+  - 美国 017
+  - 美国 030
+  - 🇺🇸US-37.19.198.244-0372 | 109.3MB
   - 🇺🇸US-37.19.198.236-0376 | 124.327MB
   - 🇺🇸US-37.19.198.243-0375 | 107.373MB
-  - 美国 032
-  - 🇺🇸_US_美国_1-zhNJ
-  - 🇺🇸US-69.50.92.72-5905 | 14.317MB
-  - 🇺🇸_US_美国_2-4YXp
-  - 🇨🇦CA-142.4.216.225-5516 | 19.278MB
-  - 🇺🇸_美国_21
-  - 🇺🇸US-69.50.92.72-5903 | 14.111MB
+  - 🇺🇸_US_美国_3
+  - 🇺🇸US-37.19.198.160-0373 | 112.432MB
+  - 🇺🇸US-142.202.49.84-5899 | 5.011MB
+  - 🇺🇸_US_美国_1-do0y
   - 🇺🇸_US_美国
-  - 🇺🇸_US_美国_9
-  - 🇺🇸US-69.50.92.72-5896 | 15.415MB
-  - 美国 035
+  - 美国 021
+  - SS-加拿大-NF解锁自制剧-64.74.163.130:990
   - 美国 034
   - US_bb060_0071
-  - 🇺🇸_US_美国_8
-  - 🇺🇸US-38.110.1.111-0473 | 23.019MB
-  - 美国 016
-  - 🇺🇸US-138.199.42.68-0390 | 101.712MB
-  - 🇺🇸US-5.8.93.173-127
-  - Alvin1
-  - Alvin3
-  - Alvin2
-  - US_bb060_0106
-  - xiaoer886_US_287
-  - xiaoer886_US_240
-  - xiaoer886_US_67
-  - xiaoer886_US_5
-  - 🇯🇵JP-149.22.87.204-6235 | 21.007MB
   - 美国 024
-  - 🇯🇵JP-149.22.87.240-0569 | 20.481MB
-  - 瑞典+V2CROSS.COM-4VOG
-  - 🇯🇵JP-149.22.87.241-0568 | 20.65MB
-  - '@MxlShare 日本 | JPN 7'
-  - 🇨🇦_CA_加拿大
-  - xiaoer886_US_217
-  - 🇺🇸US-23.157.40.87-6094 | 7.737MB
-  - 美国2
-  - 瑞典+V2CROSS.COM-GqvH
-  - 美国5
-  - xiaoer886_RU_20
-  - 🇺🇸US-5.8.93.173-125
-  - 🇺🇸US-166.1.227.184-126
-  - 🇺🇸US-166.1.227.184-124
-  - '@MxlShare 日本 | JPN 5'
-  - 美国3
-  - xiaoer886_US_377
-  - 13|🇰🇷-JHTl
   - 🇺🇸US-216.39.248.133-0556 | 14.526MB
-  - '@MxlShare 美国 | USA 7'
-  - '@MxlShare 美国 | USA 8'
-  - '@MxlShare 美国 | USA 6'
-  - '@MxlShare 美国 | USA 5'
-  - 🇬🇧GB-212.102.53.81-0437 | 27.457MB
-  - 13|🇸🇬-TdDP
-  - '@MxlShare 美国 | USA 4'
-  - 🇬🇧GB-212.102.53.79-0457 | 28.043MB
-  - 🇬🇧GB-212.102.53.197-5424 | 28.324MB
+  - 美国 016
+  - 美国 035
+  - 美国 CloudFlare节点-p31n
+  - 🇺🇸US-138.199.42.68-0390 | 101.712MB
+  - xiaoer886_US_287
+  - xiaoer886_US_5
+  - Alvin1
+  - 🇨🇦CA-142.4.216.225-5516 | 19.278MB
+  - 🇺🇸US-38.110.1.111-0473 | 23.019MB
+  - Alvin2
+  - Alvin3
+  - xiaoer886_RU_20
+  - 🇯🇵JP-149.22.87.241-0568 | 20.65MB
+  - 🇯🇵JP-149.22.87.204-6235 | 21.007MB
+  - xiaoer886_US_67
+  - 🇯🇵JP-149.22.87.240-0569 | 20.481MB
+  - '@MxlShare 美国 | USA 3'
+  - xiaoer886_US_175
+  - xiaoer886_US_240
+  - xiaoer886_US_29
+  - 13|🇰🇷-whVB
+  - '@MxlShare 日本 | JPN 5'
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.175.96.74:16899
+  - 🇺🇸US-69.50.92.72-5904 | 13.921MB
+  - 🇺🇸US-23.154.136.176-6126 | 5.663MB
+  - 🇺🇸US-92.118.112.111-0535 | 88.022MB
+  - 🇺🇸US-5.8.93.173-125
+  - '@MxlShare 日本 | JPN 7'
+  - xiaoer886_US_120
+  - 🇺🇸_US_美国_7
+  - JP_bb060_0035
+  - xiaoer886_US_217
+  - 🇺🇸US-69.50.92.72-5905 | 14.317MB
+  - 🇺🇸US-166.1.227.184-126
+  - xiaoer886_US_377
+  - 美国2
+  - 美国3
+  - 美国 CloudFlare节点-uy0i
+  - US_bb060_0104
+  - 🇺🇸US-184.170.241.194-0393 | 81.801MB
   - 🇬🇧GB-212.102.53.198-0458 | 29.475MB
+  - 🇬🇧GB-212.102.53.81-0437 | 27.457MB
+  - 🇬🇧GB-212.102.53.196-0441 | 26.979MB
   - 🇬🇧GB-77.72.5.113-0432 | 23.736MB
+  - 美国5
+  - 🇬🇧GB-212.102.53.193-0442 | 26.372MB
+  - 🇬🇧GB-212.102.53.197-5424 | 28.324MB
   - 🇬🇧GB-212.102.53.78-0434 | 26.899MB
   - 🇬🇧GB-212.102.53.195-0435 | 27.0MB
-  - 🇬🇧GB-62.100.205.48-0440 | 26.318MB
-  - 🇬🇧GB-212.102.53.196-0441 | 26.979MB
-  - 🇬🇧GB-212.102.53.193-0442 | 26.372MB
+  - 🇬🇧GB-212.102.53.79-0457 | 28.043MB
   - 🇬🇧GB-212.102.53.194-0187 | 25.719MB
-  - CA_0001
   - 🇬🇧GB-212.102.53.80-0459 | 27.965MB
   - 🇰🇷KR-218.237.185.230-053
-  - 美国 017
-  - 🇬🇧GB-146.70.61.18-0456 | 24.423MB
-  - 🇳🇱NL-149.34.244.82-0475 | 25.354MB
+  - 🇬🇧GB-62.100.205.48-0440 | 26.318MB
   - 🇫🇷FR-51.15.27.48-0463 | 23.937MB
-  - 🇺🇸US-23.157.40.95-6118 | 7.321MB
-  - MD-86.104.74.243-0477 | 17.052MB
-  - 🇳🇱NL-109.201.152.181-0453 | 23.856MB
-  - 🇺🇸_US_美国_12
-  - 🇳🇱NL-149.34.244.77-0469 | 25.388MB
+  - 🇬🇧GB-146.70.61.18-0456 | 24.423MB
+  - 🇰🇷KR-221.168.44.72-055
   - 🇳🇱NL-149.34.244.68-0488 | 23.777MB
+  - 🇳🇱NL-149.34.244.77-0469 | 25.388MB
+  - 🇳🇱NL-149.34.244.82-0475 | 25.354MB
   - 🇬🇧GB-169.150.210.233-0500 | 22.921MB
-  - 🇫🇷FR-195.154.185.174-0474 | 23.282MB
+  - 🇳🇱NL-109.201.152.181-0453 | 23.856MB
+  - '@MxlShare 美国 | USA 8'
+  - '@MxlShare 美国 | USA 7'
   - 🇫🇷FR-51.159.111.208-0476 | 23.236MB
-  - _201
-  - '@MxlShare 美国 | USA 3'
-  - 🇭🇰HK-112.213.102.228-6146 | 8.675MB
-  - BE-192.71.249.78-5722 | 10.589MB
-  - 美国02
-  - 🇩🇪DE-80.92.204.106-5750 | 11.117MB
-  - 🇨🇦CA-142.4.216.225-0562 | 17.346MB
-  - 🇫🇷FR-45.158.171.66-439
-  - 0|--16
-  - 🇸🇬SG-68.183.227.236-6165 | 19.303MB
-  - 🇸🇬SG-68.183.227.4-6349 | 19.086MB
-  - SG_bb060_0056
-  - 🇸🇬SG-128.199.172.224-6356 | 19.387MB
-  - 🇺🇸US_579
-  - xiaoer886_UA_3
-  - 🇩🇰DK-192.36.27.94-4599 | 12.385MB
-  - CH-156.146.62.164-0516 | 21.755MB
-  - CH-156.146.62.163-0522 | 22.599MB
-  - AR-190.103.176.29-5721 | 14.127MB
-  - CH-156.146.62.161-0514 | 22.212MB
-  - '@MxlShare 新加坡 | SGP 15'
-  - 🇬🇧GB-141.98.101.180-0484 | 21.517MB
-  - CH-156.146.62.162-0518 | 21.898MB
-  - '@MxlShare 新加坡 | SGP 13'
-  - SS-瑞典-NF解锁瑞典自制剧-ChatGPT-TikTok-YouTube-46.246.98.155:44013
-  - 13|🇯🇵-Waco
-  - 🇷🇺_RU_俄罗斯_6
-  - 美国 015
-  - '@MxlShare 新加坡 | SGP 12'
-  - 🇬🇧GB-141.98.101.179-0508 | 21.62MB
-  - 🇸🇬SG-54.179.76.173-071
-  - '@MxlShare 新加坡 | SGP 14'
-  - '@MxlShare 新加坡 | SGP 11'
-  - '@MxlShare 美国 | USA 33'
+  - 🇫🇷FR-195.154.185.174-0474 | 23.282MB
   - 美国01
-  - 美国03
-  - MD-103.106.1.92-0538 | 21.589MB
-  - 美国04
-  - 美国 CloudFlare节点-4CKT
-  - '@MxlShare 新加坡 | SGP 10'
-  - SS-法国>荷兰-NF解锁荷兰自制剧-ChatGPT-YouTube-45.158.171.151:8080
-  - 🇨🇭_CH_瑞士
-  - 🇺🇸US_578
-  - 🇨🇳TW-185.189.160.98-6344 | 16.766MB
-  - CZ-195.181.160.6-0525 | 22.561MB
-  - 美国1
-  - 美国05
-  - 🇷🇴 RO_362
-  - SK-156.146.40.194-0541 | 19.966MB
   - 🇬🇧GB-141.98.101.178-0489 | 18.644MB
-  - 🇷🇺_RU_俄罗斯_1
+  - 🇬🇧GB-141.98.101.182-0513 | 19.387MB
+  - 🇬🇧GB-141.98.101.179-0508 | 21.62MB
+  - _201
+  - 美国05
+  - '@MxlShare 美国 | USA 6'
+  - 订阅随时会失效，请加电报群防止失联
+  - BE-192.71.249.78-5722 | 10.589MB
+  - 🇭🇰HK-112.213.102.228-6146 | 8.675MB
+  - CA_0001
+  - 🇳🇱NL-5.35.47.122-0472 | 20.801MB
+  - 🇬🇧GB-141.98.101.180-0484 | 21.517MB
+  - 🇺🇸US_579
+  - '@MxlShare 美国 | USA 4'
+  - '@MxlShare 美国 | USA 5'
+  - 🇫🇷FR-45.158.171.66-439
+  - 🇸🇬SG-68.183.227.4-6349 | 19.086MB
+  - 🇺🇸US-23.157.40.113-5952 | 7.643MB
+  - 🇸🇬SG-128.199.172.224-6356 | 19.387MB
+  - 🇸🇬SG-68.183.227.236-6165 | 19.303MB
+  - '@MxlShare 新加坡 | SGP 12'
+  - CH-156.146.62.163-0522 | 22.599MB
+  - '@MxlShare 新加坡 | SGP 15'
+  - SG_bb060_0056
+  - CH-156.146.62.161-0514 | 22.212MB
+  - US_bb060_0097
+  - CH-156.146.62.162-0518 | 21.898MB
+  - CH-156.146.62.164-0516 | 21.755MB
+  - SS-英国-NF解锁荷兰自制剧-ChatGPT-TikTok-198.105.123.190:46902
+  - 🇸🇬SG-54.179.76.173-071
+  - '@MxlShare 新加坡 | SGP 11'
+  - 美国 006
+  - '@MxlShare 新加坡 | SGP 13'
+  - 🇩🇪DE-80.92.204.106-5752 | 7.756MB
+  - '@MxlShare 新加坡 | SGP 10'
+  - '@MxlShare 新加坡 | SGP 14'
+  - AR-190.103.176.29-5721 | 14.127MB
+  - SS-瑞典-NF解锁瑞典自制剧-ChatGPT-TikTok-YouTube-46.246.98.155:44013
+  - US_bb060_0070
+  - SSR-瑞士-NF解锁瑞士自制剧-ChatGPT-TikTok-YouTube-84.17.53.160:989
+  - SS-挪威-NF解锁挪威地区非自制剧-ChatGPT-TikTok-109.205.9.7:52952
+  - 美国03
+  - US_bb060_0095
+  - SS-英国-NF解锁英国自制剧-ChatGPT-TikTok-YouTube-109.120.186.231:11329
+  - 🇨🇭_CH_瑞士
+  - 0|--16
+  - 美国 082
+  - 13|🇯🇵-w0dZ
+  - xiaoer886_RU_9
+  - 🇷🇺_RU_俄罗斯_6
+  - VMESS-未知>美国-NF解锁香港地区非自制剧-ChatGPT-TikTok-YouTube-104.16.155.10:2082
+  - 美国 CloudFlare节点
+  - 🇷🇺_RU_俄罗斯_7
+  - 美国 011
+  - 🇨🇦CA-142.4.216.225-0562 | 17.346MB
+  - 美国04
+  - 🇺🇸US_578
+  - 🇷🇴 RO_362
+  - 美国02
+  - KR_bb060_0037
+  - VMESS-未知>美国-NF解锁台湾地区非自制剧-ChatGPT-TikTok-YouTube-104.17.221.248:8080
+  - 🇩🇪DE-80.92.204.106-5755 | 11.443MB
+  - 🇩🇪DE-80.92.204.106-5750 | 11.117MB
+  - CZ-195.181.160.6-0525 | 22.561MB
+  - 美国4
+  - PA-138.186.142.4-6209 | 15.319MB
+  - 🇵🇱PL-92.118.205.228-5747 | 17.368MB
   - SE-121.127.46.147-0548 | 21.508MB
-  - 🇷🇺_RU_俄罗斯_4
-  - 🇩🇪DE-80.92.204.106-5754 | 8.268MB
+  - SSR-丹麦-NF解锁丹麦自制剧-ChatGPT-TikTok-YouTube-185.186.79.53:989
+  - 🇩🇰DK-192.36.27.94-4599 | 12.385MB
+  - 0|--18
+  - 0|--1
+  - xiaoer886_GB_3
+  - 美国1
+  - MD-103.106.1.92-0538 | 21.589MB
+  - 🇨🇳TW-185.189.160.98-6344 | 16.766MB
+  - xiaoer886_KR_1
+  - xiaoer886_GB_2
+  - 🇯🇵 免费-日本7-Ver.1
+  - '@MxlShare 澳大利亚 | AUS'
+  - 🇯🇵 免费-日本4-Ver.7
+  - 🇺🇸US-5.8.93.173-127
+  - '@MxlShare 澳大利亚 | AUS 2'
+  - 🇯🇵 免费-日本2-Ver.7
+  - 美国 026
+  - 🇺🇸US-166.1.227.184-124
   - 🇭🇰 HK_318
   - 🇯🇵 免费-日本5-Ver.8
-  - SS-英国-NF解锁英国自制剧-ChatGPT-TikTok-YouTube-109.120.186.231:11329
-  - 🇵🇱PL-92.118.205.228-5747 | 17.368MB
-  - 🇬🇧GB-141.98.101.182-0513 | 19.387MB
-  - 🇯🇵 免费-日本2-Ver.7
-  - 🇩🇪DE-80.92.204.106-5752 | 7.756MB
-  - 🇯🇵 免费-日本7-Ver.1
-  - SS-英国-NF解锁荷兰自制剧-ChatGPT-TikTok-198.105.123.190:46902
-  - NO-51.13.183.76-0536 | 21.726MB
-  - US_bb060_0104
-  - xiaoer886_GB_3
-  - 🇷🇺_RU_俄罗斯_2
-  - KR_bb060_0044
-  - '@MxlShare 美国 | USA 13'
-  - US_bb060_0097
-  - 美国 CloudFlare节点-thhv
-  - xiaoer886_KR_1
-  - 瑞典+V2CROSS.COM
-  - '@MxlShare 澳大利亚 | AUS 2'
-  - '@MxlShare 美国 | USA 9'
-  - 🇯🇵5
-  - '@MxlShare 澳大利亚 | AUS'
-  - 🇳🇱NL-89.23.103.125-0553 | 13.427MB
-  - xiaoer886_GB_2
-  - 美国 CloudFlare节点
-  - PA-138.186.142.4-6209 | 15.319MB
-  - LV-46.183.217.232-0564 | 20.206MB
-  - _207
-  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hms19.best-tizi.top:443
   - '@MxlShare 日本 | JPN'
-  - VN-103.163.218.2-6358 | 14.374MB
-  - SSR-丹麦-NF解锁丹麦自制剧-ChatGPT-TikTok-YouTube-185.186.79.53:989
-  - 🇯🇵4
   - '@MxlShare 日本 | JPN 3'
-  - '@MxlShare 日本 | JPN 2'
-  - 🇬🇧GB-212.102.53.197-0462 | 28.875MB
-  - 🇯🇵 日本 | JPN 19
-  - 0|--1
-  - 🏁ZZ_601
-  - 🇯🇵 免费-日本4-Ver.7
-  - 🇺🇸_美国_2
-  - '@MxlShare 美国 | USA 24'
+  - LV-46.183.217.232-0564 | 20.206MB
+  - 🇯🇵7
+  - RS-194.71.126.31-0546 | 21.008MB
   - xiaoer886_FR_10
-  - SS-挪威-NF解锁挪威地区非自制剧-ChatGPT-TikTok-109.205.9.7:52952
-  - xiaoer886_US_175
-  - 美国4
+  - '@MxlShare 日本 | JPN 4'
+  - 🏁ZZ_601
+  - xiaoer886_FR_14
+  - '@MxlShare 美国 | USA 24'
+  - xiaoer886_US_66
+  - 🇩🇪DE-80.240.112.32-081
+  - 🇺🇸_美国_2
+  - 🇩🇪DE-80.240.112.32-079
+  - 🇹🇼2
+  - 🇯🇵6
+  - 🇯🇵5
+  - 0|--51
+  - _206
+  - VN-103.163.218.2-6358 | 14.374MB
+  - xiaoer886_US_45
+  - xiaoer886_RU_22
+  - 🇫🇷FR-51.15.15.82-6362 | 8.254MB
   - 🇷🇺_RU_俄罗斯_3
   - xiaoer886_DE_4
-  - 🇭🇰 香港-1C
-  - 🇫🇷FR-51.15.15.82-6362 | 8.254MB
-  - xiaoer886_GB_10
-  - '@MxlShare 韩国 | KOR 5'
-  - US_bb060_0100
+  - 🇬🇧GB-212.102.53.197-0462 | 28.875MB
+  - 🇯🇵4
+  - xiaoer886_FR_13
+  - _199
   - xiaoer886_SG_2
+  - xiaoer886_GB_10
+  - 🇰🇷3
   - xiaoer886_RU_27
-  - xiaoer886_RU_23
-  - xiaoer886_RU_25
-  - 🇯🇵3
   - xiaoer886_RU_21
-  - '@MxlShare 韩国 | KOR 3'
+  - 🇯🇵2
+  - NO-51.13.183.76-0536 | 21.726MB
+  - xiaoer886_RU_25
+  - xiaoer886_RU_23
+  - '@MxlShare 新加坡 | SGP'
+  - 🇭🇰 香港-1C
+  - 🇯🇵3
+  - 🇯🇵1
+  - xiaoer886_RU_26
+  - KR_bb060_0038
   - '@MxlShare 韩国 | KOR 2'
   - xiaoer886_US_294
-  - 美国 022
-  - xiaoer886_FR_13
-  - 🇯🇵 日本 | JPN 8
-  - 🇷🇺_RU_俄罗斯_7
-  - 🇺🇸US-69.50.93.86-6237 | 5.314MB
-  - 🇸🇬5
-  - hk2
-  - xiaoer886_US_116
-  - RELAY-104.19.48.236-0297 | 18.717MB
-  - 🇯🇵 免费-日本1-Ver.6
-  - _203
-  - 🇯🇵 免费-日本6-Ver.7
-  - xiaoer886_US_317
-  - 🇺🇦_乌克兰_1
-  - 🇯🇵 免费-日本3-Ver.6
-  - VMESS-未知>新加坡-NF解锁新加坡自制剧-ChatGPT-TikTok-YouTube-104.17.213.241:80
-  - RELAY-104.16.155.10-0296 | 18.685MB
-  - '@MxlShare 日本 | JPN 4'
-  - 🇷🇺_RU_俄罗斯
-  - US_bb060_0095
-  - '@MxlShare 巴西 | BRA'
-  - '@MxlShare 韩国 | KOR'
-  - VMESS-未知>德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-yaml777.133010.xyz:80
-  - xiaoer886_UA_1
-  - hk7
-  - hk3
+  - 🇰🇷KR-221.168.44.72-057
+  - 🇳🇱NL-89.23.103.125-0553 | 13.427MB
   - hk6
-  - VMESS-未知>日本-NF解锁日本自制剧-ChatGPT-TikTok-YouTube-jgw350m.pai50288.uk:443
-  - '@MxlShare 韩国 | KOR 4'
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.175.96.74:16899
-  - 0|--18
-  - '@MxlShare 新加坡 | SGP 2'
-  - 🇯🇵 JP_321
-  - 🇯🇵7
-  - 🇸🇬7
-  - 🇫🇷FR_294
-  - 🇷🇺_RU_俄罗斯_1-aOwH
-  - 🇫🇷FR_290
-  - xiaoer886_RU_9
-  - 🇬🇧GB_310
-  - 日本2
-  - '@MxlShare 香港 | HKG 7'
-  - 🇷🇺_RU_俄罗斯_5
-  - '@MxlShare 香港 | HKG 6'
-  - 🇺🇸_美国_4
-  - 日本1
-  - 🇯🇵 日本 | JPN 18
-  - '@MxlShare 香港 | HKG 5'
-  - 🏁ZZ_602
-  - 日本3
-  - '@MxlShare 香港 | HKG 4'
-  - 🇬🇧 英国 | GBR
-  - 🇺🇸US_581
-  - xiaoer886_RU_22
-  - '@MxlShare 香港 | HKG 3'
-  - _204
-  - xiaoer886_PL
-  - 🇫🇷FR_292
-  - _208
-  - 🇮🇳IN-5.8.35.208-116
-  - 🇩🇪DE-80.92.204.106-5755 | 11.443MB
-  - 🇰🇷KR-221.168.44.72-055
-  - xiaoer886_JP_4
-  - SG_Singapore_Amazon Technologies Inc._OpenAI_Claude2
-  - '@MxlShare 卢森堡 | LUX 4'
-  - xiaoer886_RU_26
-  - 🇯🇵 日本 | JPN 23
-  - 🇸🇬SG-139.59.119.143-6395 | 19.203MB
-  - 0|--13
-  - '@MxlShare 卢森堡 | LUX 3'
-  - 🇺🇸 美国5
-  - 0|--51
-  - 美国 064
-  - 8|@V2ray1_Ng
-  - '@MxlShare 卢森堡 | LUX 2'
-  - 🇰🇷 韩国 | KOR
-  - VMESS-未知>巴西-NF解锁巴西地区非自制剧-ChatGPT-TikTok-YouTube-104.18.7.41:2052
-  - '@MxlShare 卢森堡 | LUX'
-  - NL_bb060_0048
-  - 🇷🇺RU_373
-  - 🇯🇵 日本 | JPN 22
-  - ES_bb060_0029
-  - xiaoer886_GB_15
-  - 🇩🇪 德国 | DEU 2
-  - 🇰🇷2
-  - 🇯🇵 日本 | JPN 27
-  - xiaoer886_US_318
-  - IN_bb060_0034
-  - xiaoer886_GB_6
-  - _199
-  - 🇹🇼 台湾2全天极速优先使用|X3
-  - 🇸🇬 新加坡 | SGP 51
-  - 🇯🇵 日本 | JPN 28
-  - '@MxlShare 印度 | IND'
-  - 台湾1
-  - '@MxlShare 新加坡 | SGP 3'
-  - 🇬🇮GI_315
-  - 🇸🇬6
-  - 🇯🇵 日本 | JPN 15
-  - xiaoer886_CH_2
-  - TR-45.89.52.66-5630 | 11.329MB
-  - 🇮🇳IN印度-Oracle
-  - xiaoer886_CH_1
-  - 🇰🇷 韩国 | KOR 3
-  - 埃及 001
-  - 🇩🇪DE-80.92.204.106-5756 | 13.286MB
-  - 🇹🇼2
-  - xiaoer886_US_64
-  - xiaoer886_US_120
-  - '@MxlShare 新加坡 | SGP'
-  - 🇯🇵2
-  - 🇯🇵 日本 | JPN 10
-  - 0|--56
-  - 香港1
-  - VMESS-未知>美国-NF解锁台湾地区非自制剧-ChatGPT-TikTok-YouTube-104.17.221.248:8080
-  - 🇸🇬2
-  - xiaoer886_DE_2
-  - xiaoer886_US_87
-  - 🇺🇸_美国_3
-  - 🇩🇪 DE_232
-  - 🇯🇵 日本 | JPN 9
-  - 🇸🇬SG-13.251.189.12-6153 | 19.682MB
-  - 🇩🇪DE-80.240.112.32-081
-  - 🇩🇪DE-80.240.112.32-079
-  - 🇯🇵6
-  - '@MxlShare 新加坡 | SGP 5'
+  - 🇯🇵 免费-日本6-Ver.7
+  - hk7
+  - xiaoer886_LT
   - 🇰🇷1
-  - 🇫🇷 FR_246
-  - '@MxlShare 新加坡 | SGP 4'
-  - VMESS-未知>巴西-NF解锁巴西地区非自制剧-ChatGPT-TikTok-YouTube-c1.v2raybrasil.xyz:2082
-  - 🇸🇬1
-  - 🇳🇱NL_335
   - hk4
-  - 🇯🇵1
-  - SG_Singapore_Amazon Technologies Inc_OpenAI_Claude1
+  - '@MxlShare 韩国 | KOR 3'
+  - _203
+  - 🇸🇬5
+  - 🇸🇬6
+  - '@MxlShare 日本 | JPN 2'
+  - 🇸🇬2
+  - xiaoer886_US_116
+  - 🇸🇬7
+  - '@MxlShare 韩国 | KOR 5'
+  - 🇸🇬3
+  - '@MxlShare 美国 | USA 13'
+  - hk3
+  - 🇸🇬1
+  - xiaoer886_PL
+  - VMESS-未知>新加坡-NF解锁新加坡自制剧-ChatGPT-TikTok-YouTube-104.17.213.241:80
+  - 🇸🇬4
+  - 🇩🇪DE-80.92.204.106-5756 | 13.286MB
+  - 🇯🇵 免费-日本1-Ver.6
+  - '@MxlShare 美国 | USA 9'
+  - 🇷🇺_RU_俄罗斯_5
+  - '@MxlShare 新加坡 | SGP 2'
+  - '@MxlShare 香港 | HKG 7'
+  - US_bb060_0100
+  - VMESS-未知>德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-yaml777.133010.xyz:80
+  - SK-156.146.40.194-0541 | 19.966MB
+  - RELAY-104.16.155.10-0296 | 18.685MB
+  - RELAY-104.19.48.236-0297 | 18.717MB
+  - 🇰🇷2
+  - '@MxlShare 香港 | HKG 5'
+  - ES_bb060_0029
+  - '@MxlShare 美国 | USA 33'
+  - xiaoer886_US_317
+  - '@MxlShare 香港 | HKG 4'
+  - 🇺🇦_乌克兰_1
+  - 日本2
+  - 🇮🇳IN-5.8.35.208-116
+  - 日本1
+  - VMESS-未知>日本-NF解锁日本自制剧-ChatGPT-TikTok-YouTube-jgw350m.pai50288.uk:443
+  - 🇷🇺_RU_俄罗斯
+  - IN_bb060_0034
+  - VMESS-未知>巴西-NF解锁巴西地区非自制剧-ChatGPT-TikTok-YouTube-104.18.7.41:2052
+  - hk2
+  - 日本3
+  - xiaoer886_US_318
+  - 🇰🇷 韩国 | KOR 11
+  - 0|--56
+  - _208
+  - xiaoer886_GB_6
+  - 🇯🇵 免费-日本3-Ver.6
+  - '@MxlShare 巴西 | BRA'
+  - 🇧🇪_比利时_1
+  - NL_bb060_0048
+  - 🇦🇺AU_209
   - 0|--62
+  - '@MxlShare 韩国 | KOR'
+  - 美国 064
+  - TR-45.89.52.66-5630 | 11.329MB
+  - xiaoer886_JP_4
+  - 🇷🇺_RU_俄罗斯_4
+  - 🇸🇬SG-139.59.119.143-6395 | 19.203MB
+  - 🇺🇸 美国5
+  - 🇩🇪DE-80.92.204.106-5754 | 8.268MB
+  - 🇸🇬SG-13.251.189.12-6153 | 19.682MB
+  - xiaoer886_CH_2
+  - 美国 022
+  - 🇺🇸_美国_4
+  - xiaoer886_US_64
+  - 🇷🇺RU-45.151.62.54-0557 | 16.161MB
+  - 🇫🇷FR_294
+  - 🏁ZZ_602
+  - 台湾1
+  - 🇷🇺_RU_俄罗斯_1-urP3
+  - '@MxlShare 香港 | HKG 6'
+  - 🇫🇷FR_290
+  - 🇯🇵 日本 | JPN 19
+  - 🇺🇸US_581
+  - xiaoer886_CH_1
+  - '@MxlShare 卢森堡 | LUX'
+  - KZ-213.156.137.67-5639 | 18.874MB
+  - 🇯🇵 日本 | JPN 23
+  - 🇯🇵 日本 | JPN 15
+  - 🇬🇧GB_310
+  - 🇫🇷FR_292
+  - '@MxlShare 卢森堡 | LUX 4'
+  - '@MxlShare 卢森堡 | LUX 3'
+  - '@MxlShare 韩国 | KOR 4'
+  - '@MxlShare 卢森堡 | LUX 2'
+  - _204
+  - 🇸🇬SG_377
+  - xiaoer886_DE_2
+  - 香港1
+  - 🇯🇵 日本 | JPN 27
   - 🇩🇪DE-80.92.204.106-5751 | 12.552MB
+  - 🇳🇱NL_335
+  - 🇹🇼1
+  - '@MxlShare 香港 | HKG 3'
+  - 埃及 001
+  - '@MxlShare 印度 | IND'
+  - 🇯🇵 日本 | JPN 22
+  - 🇹🇼 台湾2全天极速优先使用|X3
+  - 🇬🇮GI_315
+  - VMESS-未知>巴西-NF解锁巴西地区非自制剧-ChatGPT-TikTok-YouTube-c1.v2raybrasil.xyz:2082
+  - 🇯🇵 日本 | JPN 10
+  - 🇯🇵 日本 | JPN 8
+  - 🇯🇵 日本 | JPN 9
   - PL_Warsaw_OVH SAS_OpenAI_Claude1
-  - 🇰🇷 韩国 | KOR 6
-  - xiaoer886_FR_7
-  - 🇰🇷 韩国 | KOR 7
+  - 🇺🇸_美国_3
   - 🇮🇳IN-159.65.149.72-5832 | 18.579MB
+  - SS-法国>荷兰-NF解锁荷兰自制剧-ChatGPT-YouTube-45.158.171.151:8080
+  - '@MxlShare 新加坡 | SGP 3'
+  - 🇩🇪 DE_232
+  - 🇰🇷 韩国 | KOR 9
   - xiaoer886_UA_4
+  - 0|--7
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
   - 🇺🇸_US_美国_6
-  - 🇺🇸US-107.155.57.51-0424 | 57.273MB
   - 🇺🇸US-107.155.57.11-0406 | 73.328MB
+  - 🇺🇸US-137.175.113.192-0411 | 8.77MB
   - 🇺🇸US-45.55.2.232-0409 | 44.011MB
   - SSR-美国>塞舌尔-NF解锁自制剧-ChatGPT-TikTok-YouTube-137.175.113.192:8388
-  - 🇺🇸US-137.175.113.192-0411 | 8.77MB
-  - 加拿大 019
-  - 美国 078
-  - xiaoer886_US_97
+  - 🇺🇸US-107.155.57.51-0424 | 57.273MB
+  - '@MxlShare 美国 | USA 30'
+  - xiaoer886_US_86
+  - 加拿大 020
+  - 美国 067
   - 🇺🇸US-107.151.182.253-0813 | 38.653MB
+  - xiaoer886_US_168
   - xiaoer886_US_152
-  - xiaoer886_US_169
-  - xiaoer886_US_245
-  - xiaoer886_US_46
+  - xiaoer886_US_108
+  - xiaoer886_US_111
+  - xiaoer886_US_76
+  - xiaoer886_US_253
+  - xiaoer886_US_263
+  - 美国 076
+  - 加拿大 027
+  - xiaoer886_US_101
+  - xiaoer886_US_15
+  - xiaoer886_US_283
+  - xiaoer886_US_125
+  - 美国 077
   - 🇺🇸US-207.246.101.50-0439 | 37.069MB
   - xiaoer886_US_203
-  - xiaoer886_US_55
-  - xiaoer886_US_283
-  - xiaoer886_US_186
-  - xiaoer886_US_168
-  - xiaoer886_US_125
-  - xiaoer886_US_104
-  - 加拿大 027
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.207.155.64:1633
-  - xiaoer886_US_93
-  - xiaoer886_US_172
-  - xiaoer886_US_206
-  - xiaoer886_US_76
-  - 美国 067
-  - xiaoer886_US_50
-  - xiaoer886_US_241
-  - xiaoer886_US_30
-  - xiaoer886_US_127
-  - '@MxlShare 美国 | USA 30'
-  - xiaoer886_US_239
-  - xiaoer886_US_153
-  - xiaoer886_US_253
-  - 🇺🇸_美国_146
-  - xiaoer886_US_101
-  - 美国 076
-  - 美国 062
-  - 🇺🇸US-79.110.53.169-0400 | 56.614MB
-  - xiaoer886_US_14
-  - xiaoer886_NL_2
-  - xiaoer886_US_250
-  - xiaoer886_US_291
-  - 美国 068
   - xiaoer886_US_274
-  - xiaoer886_US_263
-  - xiaoer886_US_227
-  - xiaoer886_US_108
-  - xiaoer886_US_311
-  - xiaoer886_US_115
-  - xiaoer886_US_44
-  - xiaoer886_US_4
-  - 🇺🇸_美国_15
-  - 美国 082
-  - 美国 077
-  - xiaoer886_US_194
-  - xiaoer886_IT_1
-  - 🇺🇸_美国_26
-  - xiaoer886_US_86
-  - xiaoer886_US_209
-  - xiaoer886_US_213
-  - 美国 050
-  - xiaoer886_FR_4
-  - xiaoer886_US_107
-  - US_bb060_0110
-  - xiaoer886_US_111
-  - xiaoer886_US_15
-  - xiaoer886_US_148
-  - xiaoer886_US_171
-  - 美国 043
-  - 🇺🇸US-23.157.40.103-5992 | 5.576MB
-  - xiaoer886_US_190
-  - xiaoer886_US_141
-  - xiaoer886_US_295
-  - xiaoer886_US_2
-  - xiaoer886_US_191
-  - xiaoer886_US_276
-  - 🇺🇸_美国_8
-  - 🇺🇸US-23.157.40.101-6067 | 5.806MB
-  - xiaoer886_US_136
-  - xiaoer886_US_38
-  - xiaoer886_US_146
-  - 美国 053
-  - xiaoer886_US_278
-  - xiaoer886_US_122
-  - xiaoer886_US_290
-  - 🇺🇸US-212.102.47.131-0415 | 81.427MB
-  - 🇺🇸_美国_12
-  - 🇺🇸US-212.102.47.130-0397 | 78.235MB
-  - US_bb060_0105
-  - 🇺🇸_美国_7
-  - xiaoer886_NL_4
-  - 🇺🇸_美国_27
-  - xiaoer886_US_39
-  - xiaoer886_BR_11
-  - xiaoer886_RU_2
-  - 🇺🇸_美国_1
-  - xiaoer886_US_204
-  - xiaoer886_FR_2
-  - xiaoer886_US_150
-  - SC_bb060_0054
-  - 🇺🇸US-23.157.40.87-6004 | 5.577MB
-  - 印度 002
-  - 🇨🇦CA-149.22.95.183-0427 | 72.775MB
-  - xiaoer886_US_54
-  - 美国 054
-  - 捷克 001
-  - SC_bb060_0055
-  - SI_bb060_0068
-  - 美国 014
-  - 🇸🇪_瑞典_3
-  - US_bb060_0072
-  - 美国 008
-  - 美国 006
-  - xiaoer886_US_297
-  - 🇺🇸US-23.157.40.113-5952 | 7.643MB
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.215:8882
-  - 美国 020
-  - 🇺🇸 US_426
-  - xiaoer886_US_320
-  - 美国 007
-  - 美国 013
-  - 🇺🇸 US_427
-  - 🇺🇸_美国_10
-  - 🇺🇸 US_422
-  - 美国 011
-  - 🇨🇦_加拿大_1
-  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.19.48.236:2086
-  - xiaoer886_US_231
-  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.19.48.236:2052
-  - 加拿大 030
-  - SC_bb060_0053
-  - xiaoer886_US_69
-  - 美国 056
-  - SSR-美国-NF解锁自制剧-ChatGPT-YouTube-54.214.180.125:443
-  - 🇸🇪_瑞典_1
   - 加拿大 012
-  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.16.155.10:2095
-  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.16.155.10:2052
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:3389
-  - 美国 023
-  - 加拿大 029
-  - 美国 CloudFlare节点-qh1R
-  - 美国 021
-  - 🇺🇸US-156.146.38.167-0384 | 90.605MB
-  - 🇺🇸US-156.146.38.170-0382 | 101.09MB
-  - 🇺🇸US-156.146.38.168-0381 | 95.266MB
-  - 🇺🇸US-156.146.38.169-0383 | 133.736MB
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.215:5001
-  - 🇺🇸 US_419
-  - 🇺🇸 US_416
-  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.17.213.241:2086
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.215:8119
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:5600
-  - _200
-  - 🇺🇸_美国_11
-  - 🇺🇸US-184.170.241.194-0393 | 81.801MB
-  - 加拿大 020
-  - 🇺🇸_美国_19
-  - xiaoer886_US_147
-  - 订阅随时会失效，请加电报群防止失联
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:2375
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:5499
-  - 美国 026
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:8000
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:5500
-  - 🇺🇸_US_美国_11
-  - 🇺🇸US-173.244.56.6-0392 | 75.064MB
-  - 🇺🇸_US_美国_4
-  - US_bb060_0107
-  - 🇺🇸_美国_4-UpiD
-  - xiaoer886_US_103
-  - xiaoer886_US_81
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:8118
-  - 🇺🇸 US_434
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:6379
-  - 🇺🇸_美国_28
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:5498
-  - '@MxlShare 美国 | USA'
-  - 🇺🇸US-23.157.40.5-6360 | 6.779MB
-  - 🇺🇸US-23.157.40.5-6354 | 7.509MB
-  - 🇺🇸US-38.68.134.202-6211 | 17.549MB
-  - 🇺🇸US-38.68.134.202-6212 | 15.998MB
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:3306
-  - 🇺🇸US-38.68.134.202-5919 | 15.795MB
-  - 🇺🇸_美国_9
-  - 🇺🇸US-38.68.134.202-6210 | 11.553MB
+  - 美国 068
+  - xiaoer886_US_97
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.207.155.64:1633
+  - xiaoer886_US_50
+  - xiaoer886_US_250
+  - xiaoer886_FR_2
+  - xiaoer886_IT_1
+  - xiaoer886_US_311
+  - xiaoer886_US_213
+  - xiaoer886_US_93
+  - xiaoer886_NL_2
+  - 美国 043
+  - xiaoer886_US_241
+  - xiaoer886_US_172
+  - xiaoer886_US_245
+  - xiaoer886_US_44
+  - xiaoer886_NL_4
+  - xiaoer886_US_127
+  - xiaoer886_US_204
+  - xiaoer886_US_206
+  - xiaoer886_US_295
+  - xiaoer886_US_122
+  - xiaoer886_US_153
+  - 🇺🇸US-79.110.53.169-0400 | 56.614MB
+  - xiaoer886_US_190
+  - xiaoer886_US_148
+  - xiaoer886_US_169
+  - xiaoer886_US_30
+  - xiaoer886_US_55
+  - xiaoer886_US_104
+  - xiaoer886_FR_4
+  - xiaoer886_US_115
+  - xiaoer886_US_54
+  - xiaoer886_US_276
+  - xiaoer886_US_194
+  - 加拿大 019
+  - xiaoer886_US_46
+  - xiaoer886_US_107
+  - 🇺🇸US-23.157.40.85-0524 | 16.762MB
+  - xiaoer886_BR_11
   - xiaoer886_US_109
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:6697
-  - 🇷🇴_RO_罗马尼亚-eeET
-  - 美国 010
-  - 🇺🇸_美国_13
-  - 🇺🇸US-38.68.134.202-0558 | 18.691MB
-  - 🇺🇸US-23.157.40.5-6368 | 8.144MB
-  - 🇺🇸US-38.121.43.51-0464 | 34.048MB
-  - 美国 030
-  - 美国 019
+  - xiaoer886_US_291
+  - 🇺🇸_美国_27
+  - xiaoer886_US_4
+  - xiaoer886_US_141
+  - xiaoer886_US_38
+  - xiaoer886_US_171
+  - 加拿大 029
+  - xiaoer886_US_39
+  - xiaoer886_US_209
+  - 🇺🇸US-173.244.56.6-0392 | 75.064MB
+  - xiaoer886_US_231
+  - 美国 062
+  - US_bb060_0110
+  - 🇺🇸_美国_1
+  - xiaoer886_US_227
+  - xiaoer886_US_2
+  - xiaoer886_US_278
+  - xiaoer886_US_136
+  - xiaoer886_US_290
+  - xiaoer886_US_239
+  - 🇺🇸US-212.102.47.130-0397 | 78.235MB
+  - 美国 050
+  - xiaoer886_US_191
+  - 🇺🇸_美国_10
+  - 美国 054
+  - 🇺🇸_美国_8
+  - 美国 032
+  - 美国 053
+  - 🇺🇸_美国_12
+  - 🇺🇸_美国_26
+  - 🇺🇸_美国_21
+  - 🇺🇸_美国_7
   - 美国 005
-  - 🇺🇸US-23.157.40.5-6352 | 5.821MB
-  - 🇺🇸US-69.50.92.72-5904 | 13.921MB
-  - US_bb060_0070
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-38.121.43.154:4444
+  - xiaoer886_US_14
+  - 🇺🇸US-23.157.40.95-6118 | 7.321MB
+  - 加拿大 030
+  - xiaoer886_US_146
+  - 印度 002
+  - 🇺🇸_US_美国_11
+  - 美国 056
+  - 🇺🇸_美国_15
+  - xiaoer886_US_186
+  - 美国 009
+  - 美国 020
+  - SI_bb060_0068
+  - 🇨🇦_加拿大_1
+  - SC_bb060_0055
+  - 印度 001
+  - 🇸🇪_瑞典_3
+  - xiaoer886_US_150
+  - 🇺🇸US-212.102.47.131-0415 | 81.427MB
+  - 🇨🇦CA-149.22.95.183-0427 | 72.775MB
+  - xiaoer886_US_320
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:5500
+  - xiaoer886_RU_2
+  - xiaoer886_US_297
+  - 🇺🇸 US_427
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:5600
+  - xiaoer886_US_69
+  - SC_bb060_0054
+  - SC_bb060_0053
+  - 🇸🇪_瑞典_1
+  - 🇺🇸US-54.218.237.217-0468 | 55.157MB
+  - 🇺🇸US-23.157.40.103-5992 | 5.576MB
+  - 美国 CloudFlare节点-vLVQ
+  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.19.48.236:2052
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.215:5001
+  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.16.155.10:2095
+  - 🇺🇸US-156.146.38.168-0381 | 95.266MB
+  - 🇺🇸US-156.146.38.167-0384 | 90.605MB
+  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.16.155.10:2052
+  - 🇺🇸US-156.146.38.170-0382 | 101.09MB
+  - US_bb060_0105
+  - 🇺🇸US-156.146.38.169-0383 | 133.736MB
+  - SSR-美国-NF解锁自制剧-ChatGPT-YouTube-54.214.180.125:443
+  - 🇺🇸US-23.157.40.5-6360 | 6.779MB
+  - 捷克 001
+  - 🇺🇸US-23.157.40.5-6354 | 7.509MB
+  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.17.213.241:2086
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:2375
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:8000
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.215:8882
+  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.19.48.236:2086
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:6697
+  - 🇺🇸_美国_9
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:8118
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:5498
+  - 🇺🇸_美国_13
+  - xiaoer886_US_103
+  - 🇺🇸US-38.68.134.202-6212 | 15.998MB
+  - 🇺🇸US-38.68.134.202-6210 | 11.553MB
+  - 🇺🇸US-38.68.134.202-0558 | 18.691MB
+  - 🇺🇸_美国_11
+  - 🇺🇸_美国_19
+  - 美国 010
+  - 🇺🇸US-38.68.134.202-5919 | 15.795MB
+  - 🇺🇸_US_美国_10
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.215:8119
+  - US_bb060_0107
+  - 🇺🇸_美国_28
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:6379
+  - 🇺🇸_美国_4-Xrgx
+  - 🇺🇸US-38.68.134.202-6211 | 17.549MB
   - 🇺🇸US-23.157.40.5-6353 | 6.145MB
-  - 🇺🇸US-37.19.198.244-0372 | 109.3MB
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:3389
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:5499
+  - 🇺🇸_US_美国_8
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.87.217:3306
+  - 🇺🇸US-23.157.40.5-6375 | 9.503MB
+  - 美国 019
+  - 🇺🇸US-23.157.40.5-6352 | 5.821MB
+  - 🇺🇸 US_426
+  - 🇺🇸_US_美国_12
+  - US_bb060_0072
+  - 🇺🇸 US_422
+  - 🇺🇸US-23.157.40.101-6067 | 5.806MB
+  - '@MxlShare 美国 | USA'
+  - 🇺🇸_US_美国_9
+  - _200
+  - 🇷🇴_RO_罗马尼亚-9wMZ
+  - 瑞典+V2CROSS.COM
+  - 🇺🇸 US_419
+  - 瑞典+V2CROSS.COM-W8ee
+  - 瑞典+V2CROSS.COM-oZq6
+  - 美国 007
+  - 🇺🇸 US_416
+  - 美国 008
+  - xiaoer886_US_147
+  - 美国 015
+  - 美国 014
+  - 美国 023
+  - 🇺🇸_US_美国_5
   - 美国 028
-  - 🇺🇸US-142.202.49.84-5899 | 5.011MB
+  - 🇺🇸US-38.121.43.51-0464 | 34.048MB
+  - xiaoer886_US_81
+  - 美国 013
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-38.121.43.154:4444
+  - 美国 017
+  - 美国 030
+  - 🇺🇸US-37.19.198.244-0372 | 109.3MB
   - 🇺🇸US-37.19.198.236-0376 | 124.327MB
   - 🇺🇸US-37.19.198.243-0375 | 107.373MB
-  - 美国 032
-  - 🇺🇸_US_美国_1-zhNJ
-  - 🇺🇸US-69.50.92.72-5905 | 14.317MB
-  - 🇺🇸_US_美国_2-4YXp
-  - 🇨🇦CA-142.4.216.225-5516 | 19.278MB
-  - 🇺🇸_美国_21
-  - 🇺🇸US-69.50.92.72-5903 | 14.111MB
+  - 🇺🇸_US_美国_3
+  - 🇺🇸US-37.19.198.160-0373 | 112.432MB
+  - 🇺🇸US-142.202.49.84-5899 | 5.011MB
+  - 🇺🇸_US_美国_1-do0y
   - 🇺🇸_US_美国
-  - 🇺🇸_US_美国_9
-  - 🇺🇸US-69.50.92.72-5896 | 15.415MB
-  - 美国 035
+  - 美国 021
+  - SS-加拿大-NF解锁自制剧-64.74.163.130:990
   - 美国 034
   - US_bb060_0071
-  - 🇺🇸_US_美国_8
-  - 🇺🇸US-38.110.1.111-0473 | 23.019MB
-  - 美国 016
-  - 🇺🇸US-138.199.42.68-0390 | 101.712MB
-  - 🇺🇸US-5.8.93.173-127
-  - Alvin1
-  - Alvin3
-  - Alvin2
-  - US_bb060_0106
-  - xiaoer886_US_287
-  - xiaoer886_US_240
-  - xiaoer886_US_67
-  - xiaoer886_US_5
-  - 🇯🇵JP-149.22.87.204-6235 | 21.007MB
   - 美国 024
-  - 🇯🇵JP-149.22.87.240-0569 | 20.481MB
-  - 瑞典+V2CROSS.COM-4VOG
-  - 🇯🇵JP-149.22.87.241-0568 | 20.65MB
-  - '@MxlShare 日本 | JPN 7'
-  - 🇨🇦_CA_加拿大
-  - xiaoer886_US_217
-  - 🇺🇸US-23.157.40.87-6094 | 7.737MB
-  - 美国2
-  - 瑞典+V2CROSS.COM-GqvH
-  - 美国5
-  - xiaoer886_RU_20
-  - 🇺🇸US-5.8.93.173-125
-  - 🇺🇸US-166.1.227.184-126
-  - 🇺🇸US-166.1.227.184-124
-  - '@MxlShare 日本 | JPN 5'
-  - 美国3
-  - xiaoer886_US_377
-  - 13|🇰🇷-JHTl
   - 🇺🇸US-216.39.248.133-0556 | 14.526MB
-  - '@MxlShare 美国 | USA 7'
-  - '@MxlShare 美国 | USA 8'
-  - '@MxlShare 美国 | USA 6'
-  - '@MxlShare 美国 | USA 5'
-  - 🇬🇧GB-212.102.53.81-0437 | 27.457MB
-  - 13|🇸🇬-TdDP
-  - '@MxlShare 美国 | USA 4'
-  - 🇬🇧GB-212.102.53.79-0457 | 28.043MB
-  - 🇬🇧GB-212.102.53.197-5424 | 28.324MB
+  - 美国 016
+  - 美国 035
+  - 美国 CloudFlare节点-p31n
+  - 🇺🇸US-138.199.42.68-0390 | 101.712MB
+  - xiaoer886_US_287
+  - xiaoer886_US_5
+  - Alvin1
+  - 🇨🇦CA-142.4.216.225-5516 | 19.278MB
+  - 🇺🇸US-38.110.1.111-0473 | 23.019MB
+  - Alvin2
+  - Alvin3
+  - xiaoer886_RU_20
+  - 🇯🇵JP-149.22.87.241-0568 | 20.65MB
+  - 🇯🇵JP-149.22.87.204-6235 | 21.007MB
+  - xiaoer886_US_67
+  - 🇯🇵JP-149.22.87.240-0569 | 20.481MB
+  - '@MxlShare 美国 | USA 3'
+  - xiaoer886_US_175
+  - xiaoer886_US_240
+  - xiaoer886_US_29
+  - 13|🇰🇷-whVB
+  - '@MxlShare 日本 | JPN 5'
+  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.175.96.74:16899
+  - 🇺🇸US-69.50.92.72-5904 | 13.921MB
+  - 🇺🇸US-23.154.136.176-6126 | 5.663MB
+  - 🇺🇸US-92.118.112.111-0535 | 88.022MB
+  - 🇺🇸US-5.8.93.173-125
+  - '@MxlShare 日本 | JPN 7'
+  - xiaoer886_US_120
+  - 🇺🇸_US_美国_7
+  - JP_bb060_0035
+  - xiaoer886_US_217
+  - 🇺🇸US-69.50.92.72-5905 | 14.317MB
+  - 🇺🇸US-166.1.227.184-126
+  - xiaoer886_US_377
+  - 美国2
+  - 美国3
+  - 美国 CloudFlare节点-uy0i
+  - US_bb060_0104
+  - 🇺🇸US-184.170.241.194-0393 | 81.801MB
   - 🇬🇧GB-212.102.53.198-0458 | 29.475MB
+  - 🇬🇧GB-212.102.53.81-0437 | 27.457MB
+  - 🇬🇧GB-212.102.53.196-0441 | 26.979MB
   - 🇬🇧GB-77.72.5.113-0432 | 23.736MB
+  - 美国5
+  - 🇬🇧GB-212.102.53.193-0442 | 26.372MB
+  - 🇬🇧GB-212.102.53.197-5424 | 28.324MB
   - 🇬🇧GB-212.102.53.78-0434 | 26.899MB
   - 🇬🇧GB-212.102.53.195-0435 | 27.0MB
-  - 🇬🇧GB-62.100.205.48-0440 | 26.318MB
-  - 🇬🇧GB-212.102.53.196-0441 | 26.979MB
-  - 🇬🇧GB-212.102.53.193-0442 | 26.372MB
+  - 🇬🇧GB-212.102.53.79-0457 | 28.043MB
   - 🇬🇧GB-212.102.53.194-0187 | 25.719MB
-  - CA_0001
   - 🇬🇧GB-212.102.53.80-0459 | 27.965MB
   - 🇰🇷KR-218.237.185.230-053
-  - 美国 017
-  - 🇬🇧GB-146.70.61.18-0456 | 24.423MB
-  - 🇳🇱NL-149.34.244.82-0475 | 25.354MB
+  - 🇬🇧GB-62.100.205.48-0440 | 26.318MB
   - 🇫🇷FR-51.15.27.48-0463 | 23.937MB
-  - 🇺🇸US-23.157.40.95-6118 | 7.321MB
-  - MD-86.104.74.243-0477 | 17.052MB
-  - 🇳🇱NL-109.201.152.181-0453 | 23.856MB
-  - 🇺🇸_US_美国_12
-  - 🇳🇱NL-149.34.244.77-0469 | 25.388MB
+  - 🇬🇧GB-146.70.61.18-0456 | 24.423MB
+  - 🇰🇷KR-221.168.44.72-055
   - 🇳🇱NL-149.34.244.68-0488 | 23.777MB
+  - 🇳🇱NL-149.34.244.77-0469 | 25.388MB
+  - 🇳🇱NL-149.34.244.82-0475 | 25.354MB
   - 🇬🇧GB-169.150.210.233-0500 | 22.921MB
-  - 🇫🇷FR-195.154.185.174-0474 | 23.282MB
+  - 🇳🇱NL-109.201.152.181-0453 | 23.856MB
+  - '@MxlShare 美国 | USA 8'
+  - '@MxlShare 美国 | USA 7'
   - 🇫🇷FR-51.159.111.208-0476 | 23.236MB
-  - _201
-  - '@MxlShare 美国 | USA 3'
-  - 🇭🇰HK-112.213.102.228-6146 | 8.675MB
-  - BE-192.71.249.78-5722 | 10.589MB
-  - 美国02
-  - 🇩🇪DE-80.92.204.106-5750 | 11.117MB
-  - 🇨🇦CA-142.4.216.225-0562 | 17.346MB
-  - 🇫🇷FR-45.158.171.66-439
-  - 0|--16
-  - 🇸🇬SG-68.183.227.236-6165 | 19.303MB
-  - 🇸🇬SG-68.183.227.4-6349 | 19.086MB
-  - SG_bb060_0056
-  - 🇸🇬SG-128.199.172.224-6356 | 19.387MB
-  - 🇺🇸US_579
-  - xiaoer886_UA_3
-  - 🇩🇰DK-192.36.27.94-4599 | 12.385MB
-  - CH-156.146.62.164-0516 | 21.755MB
-  - CH-156.146.62.163-0522 | 22.599MB
-  - AR-190.103.176.29-5721 | 14.127MB
-  - CH-156.146.62.161-0514 | 22.212MB
-  - '@MxlShare 新加坡 | SGP 15'
-  - 🇬🇧GB-141.98.101.180-0484 | 21.517MB
-  - CH-156.146.62.162-0518 | 21.898MB
-  - '@MxlShare 新加坡 | SGP 13'
-  - SS-瑞典-NF解锁瑞典自制剧-ChatGPT-TikTok-YouTube-46.246.98.155:44013
-  - 13|🇯🇵-Waco
-  - 🇷🇺_RU_俄罗斯_6
-  - 美国 015
-  - '@MxlShare 新加坡 | SGP 12'
-  - 🇬🇧GB-141.98.101.179-0508 | 21.62MB
-  - 🇸🇬SG-54.179.76.173-071
-  - '@MxlShare 新加坡 | SGP 14'
-  - '@MxlShare 新加坡 | SGP 11'
-  - '@MxlShare 美国 | USA 33'
+  - 🇫🇷FR-195.154.185.174-0474 | 23.282MB
   - 美国01
-  - 美国03
-  - MD-103.106.1.92-0538 | 21.589MB
-  - 美国04
-  - 美国 CloudFlare节点-4CKT
-  - '@MxlShare 新加坡 | SGP 10'
-  - SS-法国>荷兰-NF解锁荷兰自制剧-ChatGPT-YouTube-45.158.171.151:8080
-  - 🇨🇭_CH_瑞士
-  - 🇺🇸US_578
-  - 🇨🇳TW-185.189.160.98-6344 | 16.766MB
-  - CZ-195.181.160.6-0525 | 22.561MB
-  - 美国1
-  - 美国05
-  - 🇷🇴 RO_362
-  - SK-156.146.40.194-0541 | 19.966MB
   - 🇬🇧GB-141.98.101.178-0489 | 18.644MB
-  - 🇷🇺_RU_俄罗斯_1
+  - 🇬🇧GB-141.98.101.182-0513 | 19.387MB
+  - 🇬🇧GB-141.98.101.179-0508 | 21.62MB
+  - _201
+  - 美国05
+  - '@MxlShare 美国 | USA 6'
+  - 订阅随时会失效，请加电报群防止失联
+  - BE-192.71.249.78-5722 | 10.589MB
+  - 🇭🇰HK-112.213.102.228-6146 | 8.675MB
+  - CA_0001
+  - 🇳🇱NL-5.35.47.122-0472 | 20.801MB
+  - 🇬🇧GB-141.98.101.180-0484 | 21.517MB
+  - 🇺🇸US_579
+  - '@MxlShare 美国 | USA 4'
+  - '@MxlShare 美国 | USA 5'
+  - 🇫🇷FR-45.158.171.66-439
+  - 🇸🇬SG-68.183.227.4-6349 | 19.086MB
+  - 🇺🇸US-23.157.40.113-5952 | 7.643MB
+  - 🇸🇬SG-128.199.172.224-6356 | 19.387MB
+  - 🇸🇬SG-68.183.227.236-6165 | 19.303MB
+  - '@MxlShare 新加坡 | SGP 12'
+  - CH-156.146.62.163-0522 | 22.599MB
+  - '@MxlShare 新加坡 | SGP 15'
+  - SG_bb060_0056
+  - CH-156.146.62.161-0514 | 22.212MB
+  - US_bb060_0097
+  - CH-156.146.62.162-0518 | 21.898MB
+  - CH-156.146.62.164-0516 | 21.755MB
+  - SS-英国-NF解锁荷兰自制剧-ChatGPT-TikTok-198.105.123.190:46902
+  - 🇸🇬SG-54.179.76.173-071
+  - '@MxlShare 新加坡 | SGP 11'
+  - 美国 006
+  - '@MxlShare 新加坡 | SGP 13'
+  - 🇩🇪DE-80.92.204.106-5752 | 7.756MB
+  - '@MxlShare 新加坡 | SGP 10'
+  - '@MxlShare 新加坡 | SGP 14'
+  - AR-190.103.176.29-5721 | 14.127MB
+  - SS-瑞典-NF解锁瑞典自制剧-ChatGPT-TikTok-YouTube-46.246.98.155:44013
+  - US_bb060_0070
+  - SSR-瑞士-NF解锁瑞士自制剧-ChatGPT-TikTok-YouTube-84.17.53.160:989
+  - SS-挪威-NF解锁挪威地区非自制剧-ChatGPT-TikTok-109.205.9.7:52952
+  - 美国03
+  - US_bb060_0095
+  - SS-英国-NF解锁英国自制剧-ChatGPT-TikTok-YouTube-109.120.186.231:11329
+  - 🇨🇭_CH_瑞士
+  - 0|--16
+  - 美国 082
+  - 13|🇯🇵-w0dZ
+  - xiaoer886_RU_9
+  - 🇷🇺_RU_俄罗斯_6
+  - VMESS-未知>美国-NF解锁香港地区非自制剧-ChatGPT-TikTok-YouTube-104.16.155.10:2082
+  - 美国 CloudFlare节点
+  - 🇷🇺_RU_俄罗斯_7
+  - 美国 011
+  - 🇨🇦CA-142.4.216.225-0562 | 17.346MB
+  - 美国04
+  - 🇺🇸US_578
+  - 🇷🇴 RO_362
+  - 美国02
+  - KR_bb060_0037
+  - VMESS-未知>美国-NF解锁台湾地区非自制剧-ChatGPT-TikTok-YouTube-104.17.221.248:8080
+  - 🇩🇪DE-80.92.204.106-5755 | 11.443MB
+  - 🇩🇪DE-80.92.204.106-5750 | 11.117MB
+  - CZ-195.181.160.6-0525 | 22.561MB
+  - 美国4
+  - PA-138.186.142.4-6209 | 15.319MB
+  - 🇵🇱PL-92.118.205.228-5747 | 17.368MB
   - SE-121.127.46.147-0548 | 21.508MB
-  - 🇷🇺_RU_俄罗斯_4
-  - 🇩🇪DE-80.92.204.106-5754 | 8.268MB
+  - SSR-丹麦-NF解锁丹麦自制剧-ChatGPT-TikTok-YouTube-185.186.79.53:989
+  - 🇩🇰DK-192.36.27.94-4599 | 12.385MB
+  - 0|--18
+  - 0|--1
+  - xiaoer886_GB_3
+  - 美国1
+  - MD-103.106.1.92-0538 | 21.589MB
+  - 🇨🇳TW-185.189.160.98-6344 | 16.766MB
+  - xiaoer886_KR_1
+  - xiaoer886_GB_2
+  - 🇯🇵 免费-日本7-Ver.1
+  - '@MxlShare 澳大利亚 | AUS'
+  - 🇯🇵 免费-日本4-Ver.7
+  - 🇺🇸US-5.8.93.173-127
+  - '@MxlShare 澳大利亚 | AUS 2'
+  - 🇯🇵 免费-日本2-Ver.7
+  - 美国 026
+  - 🇺🇸US-166.1.227.184-124
   - 🇭🇰 HK_318
   - 🇯🇵 免费-日本5-Ver.8
-  - SS-英国-NF解锁英国自制剧-ChatGPT-TikTok-YouTube-109.120.186.231:11329
-  - 🇵🇱PL-92.118.205.228-5747 | 17.368MB
-  - 🇬🇧GB-141.98.101.182-0513 | 19.387MB
-  - 🇯🇵 免费-日本2-Ver.7
-  - 🇩🇪DE-80.92.204.106-5752 | 7.756MB
-  - 🇯🇵 免费-日本7-Ver.1
-  - SS-英国-NF解锁荷兰自制剧-ChatGPT-TikTok-198.105.123.190:46902
-  - NO-51.13.183.76-0536 | 21.726MB
-  - US_bb060_0104
-  - xiaoer886_GB_3
-  - 🇷🇺_RU_俄罗斯_2
-  - KR_bb060_0044
-  - '@MxlShare 美国 | USA 13'
-  - US_bb060_0097
-  - 美国 CloudFlare节点-thhv
-  - xiaoer886_KR_1
-  - 瑞典+V2CROSS.COM
-  - '@MxlShare 澳大利亚 | AUS 2'
-  - '@MxlShare 美国 | USA 9'
-  - 🇯🇵5
-  - '@MxlShare 澳大利亚 | AUS'
-  - 🇳🇱NL-89.23.103.125-0553 | 13.427MB
-  - xiaoer886_GB_2
-  - 美国 CloudFlare节点
-  - PA-138.186.142.4-6209 | 15.319MB
-  - LV-46.183.217.232-0564 | 20.206MB
-  - _207
-  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hms19.best-tizi.top:443
   - '@MxlShare 日本 | JPN'
-  - VN-103.163.218.2-6358 | 14.374MB
-  - SSR-丹麦-NF解锁丹麦自制剧-ChatGPT-TikTok-YouTube-185.186.79.53:989
-  - 🇯🇵4
   - '@MxlShare 日本 | JPN 3'
-  - '@MxlShare 日本 | JPN 2'
-  - 🇬🇧GB-212.102.53.197-0462 | 28.875MB
-  - 🇯🇵 日本 | JPN 19
-  - 0|--1
-  - 🏁ZZ_601
-  - 🇯🇵 免费-日本4-Ver.7
-  - 🇺🇸_美国_2
-  - '@MxlShare 美国 | USA 24'
+  - LV-46.183.217.232-0564 | 20.206MB
+  - 🇯🇵7
+  - RS-194.71.126.31-0546 | 21.008MB
   - xiaoer886_FR_10
-  - SS-挪威-NF解锁挪威地区非自制剧-ChatGPT-TikTok-109.205.9.7:52952
-  - xiaoer886_US_175
-  - 美国4
+  - '@MxlShare 日本 | JPN 4'
+  - 🏁ZZ_601
+  - xiaoer886_FR_14
+  - '@MxlShare 美国 | USA 24'
+  - xiaoer886_US_66
+  - 🇩🇪DE-80.240.112.32-081
+  - 🇺🇸_美国_2
+  - 🇩🇪DE-80.240.112.32-079
+  - 🇹🇼2
+  - 🇯🇵6
+  - 🇯🇵5
+  - 0|--51
+  - _206
+  - VN-103.163.218.2-6358 | 14.374MB
+  - xiaoer886_US_45
+  - xiaoer886_RU_22
+  - 🇫🇷FR-51.15.15.82-6362 | 8.254MB
   - 🇷🇺_RU_俄罗斯_3
   - xiaoer886_DE_4
-  - 🇭🇰 香港-1C
-  - 🇫🇷FR-51.15.15.82-6362 | 8.254MB
-  - xiaoer886_GB_10
-  - '@MxlShare 韩国 | KOR 5'
-  - US_bb060_0100
+  - 🇬🇧GB-212.102.53.197-0462 | 28.875MB
+  - 🇯🇵4
+  - xiaoer886_FR_13
+  - _199
   - xiaoer886_SG_2
+  - xiaoer886_GB_10
+  - 🇰🇷3
   - xiaoer886_RU_27
-  - xiaoer886_RU_23
-  - xiaoer886_RU_25
-  - 🇯🇵3
   - xiaoer886_RU_21
-  - '@MxlShare 韩国 | KOR 3'
+  - 🇯🇵2
+  - NO-51.13.183.76-0536 | 21.726MB
+  - xiaoer886_RU_25
+  - xiaoer886_RU_23
+  - '@MxlShare 新加坡 | SGP'
+  - 🇭🇰 香港-1C
+  - 🇯🇵3
+  - 🇯🇵1
+  - xiaoer886_RU_26
+  - KR_bb060_0038
   - '@MxlShare 韩国 | KOR 2'
   - xiaoer886_US_294
-  - 美国 022
-  - xiaoer886_FR_13
-  - 🇯🇵 日本 | JPN 8
-  - 🇷🇺_RU_俄罗斯_7
-  - 🇺🇸US-69.50.93.86-6237 | 5.314MB
-  - 🇸🇬5
-  - hk2
-  - xiaoer886_US_116
-  - RELAY-104.19.48.236-0297 | 18.717MB
-  - 🇯🇵 免费-日本1-Ver.6
-  - _203
-  - 🇯🇵 免费-日本6-Ver.7
-  - xiaoer886_US_317
-  - 🇺🇦_乌克兰_1
-  - 🇯🇵 免费-日本3-Ver.6
-  - VMESS-未知>新加坡-NF解锁新加坡自制剧-ChatGPT-TikTok-YouTube-104.17.213.241:80
-  - RELAY-104.16.155.10-0296 | 18.685MB
-  - '@MxlShare 日本 | JPN 4'
-  - 🇷🇺_RU_俄罗斯
-  - US_bb060_0095
-  - '@MxlShare 巴西 | BRA'
-  - '@MxlShare 韩国 | KOR'
-  - VMESS-未知>德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-yaml777.133010.xyz:80
-  - xiaoer886_UA_1
-  - hk7
-  - hk3
+  - 🇰🇷KR-221.168.44.72-057
+  - 🇳🇱NL-89.23.103.125-0553 | 13.427MB
   - hk6
-  - VMESS-未知>日本-NF解锁日本自制剧-ChatGPT-TikTok-YouTube-jgw350m.pai50288.uk:443
-  - '@MxlShare 韩国 | KOR 4'
-  - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.175.96.74:16899
-  - 0|--18
-  - '@MxlShare 新加坡 | SGP 2'
-  - 🇯🇵 JP_321
-  - 🇯🇵7
-  - 🇸🇬7
-  - 🇫🇷FR_294
-  - 🇷🇺_RU_俄罗斯_1-aOwH
-  - 🇫🇷FR_290
-  - xiaoer886_RU_9
-  - 🇬🇧GB_310
-  - 日本2
-  - '@MxlShare 香港 | HKG 7'
-  - 🇷🇺_RU_俄罗斯_5
-  - '@MxlShare 香港 | HKG 6'
-  - 🇺🇸_美国_4
-  - 日本1
-  - 🇯🇵 日本 | JPN 18
-  - '@MxlShare 香港 | HKG 5'
-  - 🏁ZZ_602
-  - 日本3
-  - '@MxlShare 香港 | HKG 4'
-  - 🇬🇧 英国 | GBR
-  - 🇺🇸US_581
-  - xiaoer886_RU_22
-  - '@MxlShare 香港 | HKG 3'
-  - _204
-  - xiaoer886_PL
-  - 🇫🇷FR_292
-  - _208
-  - 🇮🇳IN-5.8.35.208-116
-  - 🇩🇪DE-80.92.204.106-5755 | 11.443MB
-  - 🇰🇷KR-221.168.44.72-055
-  - xiaoer886_JP_4
-  - SG_Singapore_Amazon Technologies Inc._OpenAI_Claude2
-  - '@MxlShare 卢森堡 | LUX 4'
-  - xiaoer886_RU_26
-  - 🇯🇵 日本 | JPN 23
-  - 🇸🇬SG-139.59.119.143-6395 | 19.203MB
-  - 0|--13
-  - '@MxlShare 卢森堡 | LUX 3'
-  - 🇺🇸 美国5
-  - 0|--51
-  - 美国 064
-  - 8|@V2ray1_Ng
-  - '@MxlShare 卢森堡 | LUX 2'
-  - 🇰🇷 韩国 | KOR
-  - VMESS-未知>巴西-NF解锁巴西地区非自制剧-ChatGPT-TikTok-YouTube-104.18.7.41:2052
-  - '@MxlShare 卢森堡 | LUX'
-  - NL_bb060_0048
-  - 🇷🇺RU_373
-  - 🇯🇵 日本 | JPN 22
-  - ES_bb060_0029
-  - xiaoer886_GB_15
-  - 🇩🇪 德国 | DEU 2
-  - 🇰🇷2
-  - 🇯🇵 日本 | JPN 27
-  - xiaoer886_US_318
-  - IN_bb060_0034
-  - xiaoer886_GB_6
-  - _199
-  - 🇹🇼 台湾2全天极速优先使用|X3
-  - 🇸🇬 新加坡 | SGP 51
-  - 🇯🇵 日本 | JPN 28
-  - '@MxlShare 印度 | IND'
-  - 台湾1
-  - '@MxlShare 新加坡 | SGP 3'
-  - 🇬🇮GI_315
-  - 🇸🇬6
-  - 🇯🇵 日本 | JPN 15
-  - xiaoer886_CH_2
-  - TR-45.89.52.66-5630 | 11.329MB
-  - 🇮🇳IN印度-Oracle
-  - xiaoer886_CH_1
-  - 🇰🇷 韩国 | KOR 3
-  - 埃及 001
-  - 🇩🇪DE-80.92.204.106-5756 | 13.286MB
-  - 🇹🇼2
-  - xiaoer886_US_64
-  - xiaoer886_US_120
-  - '@MxlShare 新加坡 | SGP'
-  - 🇯🇵2
-  - 🇯🇵 日本 | JPN 10
-  - 0|--56
-  - 香港1
-  - VMESS-未知>美国-NF解锁台湾地区非自制剧-ChatGPT-TikTok-YouTube-104.17.221.248:8080
-  - 🇸🇬2
-  - xiaoer886_DE_2
-  - xiaoer886_US_87
-  - 🇺🇸_美国_3
-  - 🇩🇪 DE_232
-  - 🇯🇵 日本 | JPN 9
-  - 🇸🇬SG-13.251.189.12-6153 | 19.682MB
-  - 🇩🇪DE-80.240.112.32-081
-  - 🇩🇪DE-80.240.112.32-079
-  - 🇯🇵6
-  - '@MxlShare 新加坡 | SGP 5'
+  - 🇯🇵 免费-日本6-Ver.7
+  - hk7
+  - xiaoer886_LT
   - 🇰🇷1
-  - 🇫🇷 FR_246
-  - '@MxlShare 新加坡 | SGP 4'
-  - VMESS-未知>巴西-NF解锁巴西地区非自制剧-ChatGPT-TikTok-YouTube-c1.v2raybrasil.xyz:2082
-  - 🇸🇬1
-  - 🇳🇱NL_335
   - hk4
-  - 🇯🇵1
-  - SG_Singapore_Amazon Technologies Inc_OpenAI_Claude1
+  - '@MxlShare 韩国 | KOR 3'
+  - _203
+  - 🇸🇬5
+  - 🇸🇬6
+  - '@MxlShare 日本 | JPN 2'
+  - 🇸🇬2
+  - xiaoer886_US_116
+  - 🇸🇬7
+  - '@MxlShare 韩国 | KOR 5'
+  - 🇸🇬3
+  - '@MxlShare 美国 | USA 13'
+  - hk3
+  - 🇸🇬1
+  - xiaoer886_PL
+  - VMESS-未知>新加坡-NF解锁新加坡自制剧-ChatGPT-TikTok-YouTube-104.17.213.241:80
+  - 🇸🇬4
+  - 🇩🇪DE-80.92.204.106-5756 | 13.286MB
+  - 🇯🇵 免费-日本1-Ver.6
+  - '@MxlShare 美国 | USA 9'
+  - 🇷🇺_RU_俄罗斯_5
+  - '@MxlShare 新加坡 | SGP 2'
+  - '@MxlShare 香港 | HKG 7'
+  - US_bb060_0100
+  - VMESS-未知>德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-yaml777.133010.xyz:80
+  - SK-156.146.40.194-0541 | 19.966MB
+  - RELAY-104.16.155.10-0296 | 18.685MB
+  - RELAY-104.19.48.236-0297 | 18.717MB
+  - 🇰🇷2
+  - '@MxlShare 香港 | HKG 5'
+  - ES_bb060_0029
+  - '@MxlShare 美国 | USA 33'
+  - xiaoer886_US_317
+  - '@MxlShare 香港 | HKG 4'
+  - 🇺🇦_乌克兰_1
+  - 日本2
+  - 🇮🇳IN-5.8.35.208-116
+  - 日本1
+  - VMESS-未知>日本-NF解锁日本自制剧-ChatGPT-TikTok-YouTube-jgw350m.pai50288.uk:443
+  - 🇷🇺_RU_俄罗斯
+  - IN_bb060_0034
+  - VMESS-未知>巴西-NF解锁巴西地区非自制剧-ChatGPT-TikTok-YouTube-104.18.7.41:2052
+  - hk2
+  - 日本3
+  - xiaoer886_US_318
+  - 🇰🇷 韩国 | KOR 11
+  - 0|--56
+  - _208
+  - xiaoer886_GB_6
+  - 🇯🇵 免费-日本3-Ver.6
+  - '@MxlShare 巴西 | BRA'
+  - 🇧🇪_比利时_1
+  - NL_bb060_0048
+  - 🇦🇺AU_209
   - 0|--62
+  - '@MxlShare 韩国 | KOR'
+  - 美国 064
+  - TR-45.89.52.66-5630 | 11.329MB
+  - xiaoer886_JP_4
+  - 🇷🇺_RU_俄罗斯_4
+  - 🇸🇬SG-139.59.119.143-6395 | 19.203MB
+  - 🇺🇸 美国5
+  - 🇩🇪DE-80.92.204.106-5754 | 8.268MB
+  - 🇸🇬SG-13.251.189.12-6153 | 19.682MB
+  - xiaoer886_CH_2
+  - 美国 022
+  - 🇺🇸_美国_4
+  - xiaoer886_US_64
+  - 🇷🇺RU-45.151.62.54-0557 | 16.161MB
+  - 🇫🇷FR_294
+  - 🏁ZZ_602
+  - 台湾1
+  - 🇷🇺_RU_俄罗斯_1-urP3
+  - '@MxlShare 香港 | HKG 6'
+  - 🇫🇷FR_290
+  - 🇯🇵 日本 | JPN 19
+  - 🇺🇸US_581
+  - xiaoer886_CH_1
+  - '@MxlShare 卢森堡 | LUX'
+  - KZ-213.156.137.67-5639 | 18.874MB
+  - 🇯🇵 日本 | JPN 23
+  - 🇯🇵 日本 | JPN 15
+  - 🇬🇧GB_310
+  - 🇫🇷FR_292
+  - '@MxlShare 卢森堡 | LUX 4'
+  - '@MxlShare 卢森堡 | LUX 3'
+  - '@MxlShare 韩国 | KOR 4'
+  - '@MxlShare 卢森堡 | LUX 2'
+  - _204
+  - 🇸🇬SG_377
+  - xiaoer886_DE_2
+  - 香港1
+  - 🇯🇵 日本 | JPN 27
   - 🇩🇪DE-80.92.204.106-5751 | 12.552MB
+  - 🇳🇱NL_335
+  - 🇹🇼1
+  - '@MxlShare 香港 | HKG 3'
+  - 埃及 001
+  - '@MxlShare 印度 | IND'
+  - 🇯🇵 日本 | JPN 22
+  - 🇹🇼 台湾2全天极速优先使用|X3
+  - 🇬🇮GI_315
+  - VMESS-未知>巴西-NF解锁巴西地区非自制剧-ChatGPT-TikTok-YouTube-c1.v2raybrasil.xyz:2082
+  - 🇯🇵 日本 | JPN 10
+  - 🇯🇵 日本 | JPN 8
+  - 🇯🇵 日本 | JPN 9
   - PL_Warsaw_OVH SAS_OpenAI_Claude1
-  - 🇰🇷 韩国 | KOR 6
-  - xiaoer886_FR_7
-  - 🇰🇷 韩国 | KOR 7
+  - 🇺🇸_美国_3
   - 🇮🇳IN-159.65.149.72-5832 | 18.579MB
+  - SS-法国>荷兰-NF解锁荷兰自制剧-ChatGPT-YouTube-45.158.171.151:8080
+  - '@MxlShare 新加坡 | SGP 3'
+  - 🇩🇪 DE_232
+  - 🇰🇷 韩国 | KOR 9
   - xiaoer886_UA_4
+  - 0|--7
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
