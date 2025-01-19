@@ -32,6 +32,589 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
+- cipher: aes-256-gcm
+  name: 🇺🇸_US_美国
+  password: lGqs95QkFHo2NV
+  port: 5498
+  server: 23.157.40.5
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸_US_美国_1-K1HB
+  password: Y6R9pAtvxxzmGC
+  port: 5001
+  server: 23.157.40.5
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸_US_美国_3
+  password: FoOiGlkAA9yPEGP
+  port: 7306
+  server: 23.157.40.5
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸_US_美国_5
+  password: e4FCWrgpkji3QY
+  port: 9102
+  server: 23.157.40.5
+  type: ss
+- cipher: rc4-md5
+  name: 🇺🇸_US_美国_6
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 23.251.121.242
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸_US_美国_8
+  password: TEzjfAYq2IjtuoS
+  port: 6697
+  server: 23.157.40.5
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇷🇺_RU_俄罗斯
+  password: BejrQvtu9sqUeNuZ
+  port: 9024
+  server: 217.30.10.18
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇷🇺_RU_俄罗斯_1-yUGT
+  password: S7KwUu7yBy58S3Ga
+  port: 9042
+  server: 217.30.10.18
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸_US_美国_9
+  password: Y6R9pAtvxxzmGC
+  port: 5600
+  server: 23.157.40.5
+  type: ss
+- name: 🇷🇺_RU_俄罗斯_3
+  password: '3723507166611775488'
+  port: 443
+  server: 80.240.112.167
+  skip-cert-verify: false
+  sni: ample-cockatoo.boa152.lol
+  type: trojan
+- cipher: aes-256-gcm
+  name: 🇺🇸_US_美国_10
+  password: Y6R9pAtvxxzmGC
+  port: 5601
+  server: 23.157.40.5
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇷🇺_RU_俄罗斯_4
+  password: KnJGad3FqTvjqbaX
+  port: 9014
+  server: 217.30.10.18
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸_US_美国_11
+  password: RexnBgU7EV5ADxG
+  port: 7002
+  server: 23.157.40.87
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇨🇦_CA_加拿大
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 23.154.136.247
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇷🇺_RU_俄罗斯_5
+  password: f8npKgNzdkss2ytn
+  port: 9088
+  server: 217.30.10.18
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸_US_美国_12
+  password: Y6R9pAtvxxzmGC
+  port: 3306
+  server: 23.157.40.5
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇷🇺_RU_俄罗斯_6
+  password: rNBfNuuANFCAk7KB
+  port: 9056
+  server: 217.30.10.18
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇷🇺_RU_俄罗斯_7
+  password: FG5ddLsMPbV5CutE
+  port: 9050
+  server: 217.30.10.18
+  type: ss
+- type: vless
+  name: xiaoer886_US_5
+  server: 15.204.165.202
+  port: 443
+  uuid: 3b9bc773-05eb-4d5f-8c1f-57342c0c4f40
+  skip-cert-verify: true
+  network: tcp
+  servername: 147135010103.sec19org.com
+  tls: true
+  udp: true
+- type: vmess
+  name: xiaoer886_US_320
+  ws-opts:
+    path: /dabai.in104.17.169.115
+    headers:
+      host: 100-49-141-209.s1.db-link02.top
+  server: 104.17.221.248
+  port: '80'
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  alterId: '0'
+  cipher: auto
+  network: ws
+- type: vless
+  name: xiaoer886_US_29
+  server: 15.204.151.113
+  port: 443
+  uuid: ea286109-d20f-415e-849e-4af20ab04b65
+  skip-cert-verify: true
+  network: tcp
+  servername: 147135001195.sec22org.com
+  tls: true
+  udp: true
+- type: vless
+  name: xiaoer886_GB_2
+  server: 144.24.90.107
+  port: 443
+  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: mmdserver.us.kg
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      host: mmdserver.us.kg
+- type: vless
+  name: xiaoer886_US_14
+  server: 104.21.21.181
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: a.xn--i-sx6a60i.us.kg
+  ws-opts:
+    path: /
+    headers:
+      host: a.xn--i-sx6a60i.us.kg
+- type: vless
+  name: xiaoer886_US_39
+  server: 138.2.227.164
+  port: 443
+  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: mmdserver.us.kg
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      host: mmdserver.us.kg
+- type: vless
+  name: xiaoer886_US_15
+  server: 104.26.12.31
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: a.xn--i-sx6a60i.us.kg
+  ws-opts:
+    path: /
+    headers:
+      host: a.xn--i-sx6a60i.us.kg
+- type: vless
+  name: xiaoer886_US_43
+  server: 104.19.54.50
+  port: 443
+  uuid: ad4a8fe9-2a32-49c4-a532-e4eef253f148
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: azadanet.azadanet.workers.dev
+  ws-opts:
+    path: /
+    headers:
+      host: azadanet.azadanet.workers.dev
+- type: vless
+  name: xiaoer886_US_57
+  server: 23.227.38.135
+  port: 443
+  uuid: 465fc43c-9872-40f9-bb94-ebee934e40b4
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: eupmaq-fyvoq0da0mdvvzehshnqqcd6inl5ihzvry3fo5veeghhfkkhertre6uy.t03w4b.workers.Dev
+  ws-opts:
+    path: /
+    headers:
+      host: eupmaq-fyvoq0da0mdvvzehshnqqcd6inl5ihzvry3fo5veeghhfkkhertre6uy.t03w4b.workers.Dev
+- type: vless
+  name: xiaoer886_US_30
+  server: 104.21.7.41
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: a.xn--i-sx6a60i.us.kg
+  ws-opts:
+    path: /
+    headers:
+      host: a.xn--i-sx6a60i.us.kg
+- type: vmess
+  name: xiaoer886_US_318
+  ws-opts:
+    path: /
+    headers:
+      host: chunchuan.kejixiaoqi666.store
+  server: 104.16.155.10
+  port: '80'
+  uuid: e6543319-0574-42ac-b778-1c4325d626f5
+  alterId: '0'
+  cipher: auto
+  network: ws
+- type: vless
+  name: xiaoer886_US_25
+  server: 172.67.196.100
+  port: 443
+  uuid: b4c97223-8d5d-4ffd-af6f-d5a59b575ffc
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: join-midas-x-x----join-midas-x-x.join-midas-x-x-ab13.workers.dev
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: join-midas-x-x----join-midas-x-x.join-midas-x-x-ab13.workers.dev
+- type: vless
+  name: xiaoer886_US_44
+  server: 104.26.10.197
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: a.xn--i-sx6a60i.us.kg
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: a.xn--i-sx6a60i.us.kg
+- type: vless
+  name: xiaoer886_US_50
+  server: 104.20.30.125
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: a.xn--i-sx6a60i.us.kg
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: a.xn--i-sx6a60i.us.kg
+- type: vless
+  name: xiaoer886_US_55
+  server: 172.67.137.37
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: a.xn--i-sx6a60i.us.kg
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: a.xn--i-sx6a60i.us.kg
+- type: vless
+  name: xiaoer886_BR_2
+  server: 188.114.96.3
+  port: 443
+  uuid: e2d6455c-9846-4502-8394-16b8c1c07b68
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: GrOUPyoUnEs.PAGEs.DEv
+  ws-opts:
+    path: /Orib1TRRDQo8XqMa?ed=2560
+    headers:
+      host: GrOUPyoUnEs.PAGEs.DEv
+- type: vless
+  name: xiaoer886_US_2
+  server: 104.22.57.77
+  port: 443
+  uuid: c7d543af-1023-4b96-a698-187c190d3f4c
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: nautica.foolvpn.me
+  ws-opts:
+    path: /47.89.39.186-39251
+    headers:
+      host: nautica.foolvpn.me
+- type: vless
+  name: xiaoer886_US_153
+  server: 104.26.8.43
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: a.xn--i-sx6a60i.us.kg
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: a.xn--i-sx6a60i.us.kg
+- type: vless
+  name: xiaoer886_US_164
+  server: 104.21.69.44
+  port: 443
+  uuid: 890bbf4f-3e1d-4a5c-8d1f-939fb327a804
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: SINa.HTTPpROxygo.WoRKerS.DEv
+  ws-opts:
+    path: /KbXm8oC3DLdTN7vq?ed=2560.-@ViP_Fragment_V2ray-@ViP_Fragment_V2ray-@ViP_Fragment_V2ray-@ViP_Fragment_V2ray-@ViP_Fragment_V2ray-@ViP_Fragment_V2ray-@ViP_Fragment_V2ray-@ViP_Fragment_V2ray-@ViP_Fragment_V2ray-@ViP_Fragment_V2ray-@ViP_Fragment_V2ray-@ViP_Fragment_V2ray-@ViP_Fragment_V2ray-@ViP_Fragment_V2ray-@ViP_Fragment_V2ray-@ViP_Fragment_V2ray
+    headers:
+      host: SINa.HTTPpROxygo.WoRKerS.DEv
+- type: vless
+  name: xiaoer886_BR_11
+  server: 188.114.97.3
+  port: 8443
+  uuid: 6a1aca29-e80f-47e1-981b-203ab9fd87de
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: GhacHVpN.HAFT1502.WORKErS.dEv
+  ws-opts:
+    path: /Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420?ed=2048
+    headers:
+      host: GhacHVpN.HAFT1502.WORKErS.dEv
+- type: vless
+  name: xiaoer886_US_206
+  server: 172.66.40.228
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: a.xn--i-sx6a60i.us.kg
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: a.xn--i-sx6a60i.us.kg
+- type: vless
+  name: xiaoer886_US_194
+  server: 104.26.1.108
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: a.xn--i-sx6a60i.us.kg
+  ws-opts:
+    path: /TELEGRAM-PROXY_MTM-TELEGRAM-PROXY_MTM-TELEGRAM-PROXY_MTM-TELEGRAM-PROXY_MTM?ed=2560
+    headers:
+      host: a.xn--i-sx6a60i.us.kg
+- type: vless
+  name: xiaoer886_US_197
+  server: 104.21.84.22
+  port: 443
+  uuid: 375dd25d-0ec6-454c-be6f-ce67b196b23b
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: freedom11.fmnxmt.workers.dev
+  ws-opts:
+    path: /
+    headers:
+      host: freedom11.fmnxmt.workers.dev
+- type: vless
+  name: xiaoer886_US_205
+  server: 104.18.2.57
+  port: 443
+  uuid: 9c682edf-7e17-41d6-83e1-d7f6996a9542
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: vip1.yomato7390.workers.Dev
+  ws-opts:
+    path: /?ed=2048@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi
+    headers:
+      host: vip1.yomato7390.workers.Dev
+- type: vless
+  name: xiaoer886_US_146
+  server: 104.25.140.153
+  port: 443
+  uuid: f9f52055-ff98-4f3c-baa4-869864503e1e
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: BPB-pANEL-En-1O0.pAges.DEV
+  ws-opts:
+    path: /
+    headers:
+      host: BPB-pANEL-En-1O0.pAges.DEV
+- type: vless
+  name: xiaoer886_US_172
+  server: 104.17.197.1
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: a.xn--i-sx6a60i.us.kg
+  ws-opts:
+    path: /?d=2560
+    headers:
+      host: a.xn--i-sx6a60i.us.kg
+- type: vless
+  name: xiaoer886_US_263
+  server: 104.21.8.135
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: a.xn--i-sx6a60i.us.kg
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: a.xn--i-sx6a60i.us.kg
+- type: vless
+  name: xiaoer886_US_240
+  server: 15.204.153.78
+  port: 443
+  uuid: 3b9bc773-05eb-4d5f-8c1f-57342c0c4f40
+  skip-cert-verify: true
+  network: tcp
+  servername: 147135010103.sec19org.com
+  tls: true
+  udp: true
+- type: vless
+  name: xiaoer886_US_231
+  server: 104.21.15.24
+  port: 443
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: ProduCtioN.pPAL03.adhAm-EsSA.workerS.Dev
+  ws-opts:
+    path: /LjXdwDKC36EBWgFf?ed=2560
+    headers:
+      host: ProduCtioN.pPAL03.adhAm-EsSA.workerS.Dev
+- type: vless
+  name: xiaoer886_US_258
+  server: 104.21.79.64
+  port: 443
+  uuid: c8e6e9d4-4339-4ee2-830b-8ece0f78f46b
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: selincselincselincselincselincselincselincselinc.selincselinc.workers.dev
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      host: selincselincselincselincselincselincselincselinc.selincselinc.workers.dev
+- type: vless
+  name: xiaoer886_US_253
+  server: 172.67.144.253
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: a.xn--i-sx6a60i.us.kg
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: a.xn--i-sx6a60i.us.kg
+- type: vless
+  name: xiaoer886_US_266
+  server: 172.67.142.142
+  port: 443
+  uuid: c8e6e9d4-4339-4ee2-830b-8ece0f78f46b
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: selincselincselincselincselincselincselincselinc.selincselinc.workers.dev
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      host: selincselincselincselincselincselincselincselinc.selincselinc.workers.dev
+- type: vless
+  name: xiaoer886_US_269
+  server: 172.66.47.25
+  port: 443
+  uuid: e2d6455c-9846-4502-8394-16b8c1c07b68
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: GrOupYOUNeS.PAGes.DEV
+  ws-opts:
+    path: /QKSAoBjr7TCbZcjm?ed=2560
+    headers:
+      host: GrOupYOUNeS.PAGes.DEV
+- type: vless
+  name: xiaoer886_US_244
+  server: 104.18.3.57
+  port: 443
+  uuid: 9c682edf-7e17-41d6-83e1-d7f6996a9542
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: vip1.yomato7390.workers.Dev
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      host: vip1.yomato7390.workers.Dev
+- type: vless
+  name: xiaoer886_US_275
+  server: 172.67.69.227
+  port: 443
+  uuid: 291c2abe-716a-4691-acd0-3b13dc2f7b12
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: wORKER-fRosTY-buTtErfLy-B0e9.4158fb3524.wORKeRs.DeV
+  ws-opts:
+    path: /vk_l-IzYy3q_-NOq?ed=2048@SinaBigo
+    headers:
+      host: wORKER-fRosTY-buTtErfLy-B0e9.4158fb3524.wORKeRs.DeV
 - type: vless
   name: xiaoer886_US_276
   server: 172.67.20.136
@@ -74,20 +657,6 @@ proxies:
     path: /?ed=2048
     headers:
       host: mmdserver.us.kg
-- type: vless
-  name: xiaoer886_US_237
-  server: 104.21.10.227
-  port: 443
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: ppAL03.yEyESiB146.WorKers.DEv
-  ws-opts:
-    path: /MuhCrbkPTOFJDDen?ed=2560
-    headers:
-      host: ppAL03.yEyESiB146.WorKers.DEv
 - type: vless
   name: xiaoer886_US_239
   server: 104.21.85.68
@@ -159,6 +728,20 @@ proxies:
     headers:
       host: a.xn--i-sx6a60i.us.kg
 - type: vless
+  name: xiaoer886_US_259
+  server: 172.67.205.138
+  port: 443
+  uuid: 62a49d41-e231-4a6b-af26-cec86ef64001
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: 1403.stopt7307.workers.dev
+  ws-opts:
+    path: /
+    headers:
+      host: 1403.stopt7307.workers.dev
+- type: vless
   name: xiaoer886_US_227
   server: 104.27.0.44
   port: 443
@@ -229,34 +812,6 @@ proxies:
     headers:
       host: EsETSEcurityLICensE.siqiLwDQ.WOrKeRS.DEv
 - type: vless
-  name: xiaoer886_US_256
-  server: 104.21.32.208
-  port: 443
-  uuid: 4d5400ef-201d-43a3-890f-c767746fc524
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: PpaL03.EDmUnD-RAU.wORkeRs.dev
-  ws-opts:
-    path: /kndpb9d\_JvNAMx3D?ed=2048
-    headers:
-      host: PpaL03.EDmUnD-RAU.wORkeRs.dev
-- type: vless
-  name: xiaoer886_US_273
-  server: 104.18.8.38
-  port: 443
-  uuid: 25c5cbda-39e5-47ed-b36c-b87ffef2378d
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: worker-fancy-base-7d08.yajici1215.workers.DEV
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: worker-fancy-base-7d08.yajici1215.workers.DEV
-- type: vless
   name: xiaoer886_US_278
   server: 104.17.247.119
   port: 443
@@ -279,26 +834,6 @@ proxies:
   skip-cert-verify: true
   sni: organic-hare.boa152.lol
   network: tcp
-- type: vless
-  name: xiaoer886_US_287
-  server: 51.81.37.82
-  port: 443
-  uuid: 3b9bc773-05eb-4d5f-8c1f-57342c0c4f40
-  skip-cert-verify: true
-  network: tcp
-  servername: 147135010103.sec19org.com
-  tls: true
-  udp: true
-- type: vless
-  name: xiaoer886_US_303
-  server: 15.204.167.6
-  port: 443
-  uuid: ea286109-d20f-415e-849e-4af20ab04b65
-  skip-cert-verify: true
-  network: tcp
-  servername: 147135001195.sec22org.com
-  tls: true
-  udp: true
 - type: vless
   name: xiaoer886_US_311
   server: 104.21.95.253
@@ -341,1067 +876,261 @@ proxies:
     path: /NcNau6guGA35qfuP?ed=2560
     headers:
       host: esetsEcURiTYliCEnSe.kMlRV.wOrkERs.DEV
-- type: vless
-  name: xiaoer886_US_295
-  server: 192.0.54.235
-  port: 443
-  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
+- name: '@MxlShare 香港 | HKG 5'
+  server: meiyou-hk.jiumaojiu.org
+  port: 20597
+  type: hysteria2
+  password: 332604ec-44d3-4d5b-a01f-784ad9709f7d
+  auth: 332604ec-44d3-4d5b-a01f-784ad9709f7d
+  sni: meiyou-hk.jiumaojiu.org
+  up: 1000
+  down: 1000
   skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: mmdserver.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: mmdserver.us.kg
-- type: vless
-  name: xiaoer886_US_296
-  server: 172.67.157.75
-  port: 443
-  uuid: 9a407093-e267-4f2a-91da-b7bfc63dcaf6
+  ports: 20501-20599
+- name: '@MxlShare 香港 | HKG 6'
+  server: meiyou-hk.jiumaojiu.org
+  port: 20584
+  type: hysteria2
+  password: 887f95d6-3ed1-4fbd-891c-e65e15087e1f
+  auth: 887f95d6-3ed1-4fbd-891c-e65e15087e1f
+  sni: meiyou-hk.jiumaojiu.org
+  up: 1000
+  down: 1000
   skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: damp-moon-9a22.houmandadash84.workers.dev
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: damp-moon-9a22.houmandadash84.workers.dev
-- type: vless
-  name: xiaoer886_US_297
-  server: 104.19.67.237
-  port: 443
-  uuid: 0ee275fd-726e-4d7e-a7ef-c429982974c3
+  ports: 20501-20599
+- name: '@MxlShare 日本 | JPN'
+  server: 138.2.2.120
+  port: 20000
+  type: hysteria2
+  password: 3bf0826e-b1ca-4657-8983-cfd096a155a4
+  auth: 3bf0826e-b1ca-4657-8983-cfd096a155a4
+  sni: www.bing.com
   skip-cert-verify: true
+  ports: 20000-55000
   udp: true
-  tls: true
-  network: ws
-  servername: f1b953bd-round-bush-dba2.steep-lion9627.workers.dev
-  ws-opts:
-    path: /@Yuv2ray
-    headers:
-      host: f1b953bd-round-bush-dba2.steep-lion9627.workers.dev
-- type: trojan
-  name: xiaoer886_RU_20
-  server: 5.8.93.173
-  port: 443
-  password: '3723507166611775488'
-  udp: true
+- name: '@MxlShare 日本 | JPN 2'
+  server: 138.2.31.176
+  port: 20000
+  type: hysteria2
+  password: 3bf0826e-b1ca-4657-8983-cfd096a155a4
+  auth: 3bf0826e-b1ca-4657-8983-cfd096a155a4
+  sni: www.bing.com
   skip-cert-verify: true
-  sni: nearby-hedgehog.boa152.lol
-  network: tcp
-- type: vless
-  name: xiaoer886_US_290
-  server: 172.67.137.115
-  port: 443
-  uuid: 2ffe29ef-258c-43f5-b63d-5017048950c2
-  skip-cert-verify: true
+  ports: 20000-55000
   udp: true
-  tls: true
-  network: ws
-  servername: papl03.JamaNI-KInsLEr.WORKErS.dEV
-  ws-opts:
-    path: /EmnMzJgeEcbarabP?ed=2560
-    headers:
-      host: papl03.JamaNI-KInsLEr.WORKErS.dEV
-- type: vless
-  name: xiaoer886_US_306
-  server: 104.26.0.73
-  port: 443
-  uuid: c93b1359-c570-4703-894a-ce18883faac3
+- name: '@MxlShare 日本 | JPN 3'
+  server: 138.3.208.201
+  port: 20000
+  type: hysteria2
+  password: 3bf0826e-b1ca-4657-8983-cfd096a155a4
+  auth: 3bf0826e-b1ca-4657-8983-cfd096a155a4
+  sni: www.bing.com
   skip-cert-verify: true
+  ports: 20000-55000
   udp: true
-  tls: true
-  network: ws
-  servername: bsw8xmeczkaqznfcbu7sdx39baabahluzcnr9xyifcgpnzls6jsodqndaygtww3.yju9y2x.workers.Dev
-  ws-opts:
-    path: /
-    headers:
-      host: bsw8xmeczkaqznfcbu7sdx39baabahluzcnr9xyifcgpnzls6jsodqndaygtww3.yju9y2x.workers.Dev
-- type: vless
-  name: xiaoer886_US_288
-  server: 104.22.22.164
-  port: 443
-  uuid: 85b82e66-e9cb-49c7-be5b-81b3ae1bda90
+- name: '@MxlShare 日本 | JPN 4'
+  server: 141.147.156.163
+  port: 20000
+  type: hysteria2
+  password: 3bf0826e-b1ca-4657-8983-cfd096a155a4
+  auth: 3bf0826e-b1ca-4657-8983-cfd096a155a4
+  sni: www.bing.com
   skip-cert-verify: true
+  ports: 20000-55000
   udp: true
-  tls: true
-  network: ws
-  servername: mehdiama.vpntestvpn794.workers.dev
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: mehdiama.vpntestvpn794.workers.dev
-- type: vless
-  name: xiaoer886_US_302
-  server: 172.66.44.231
+- name: '@MxlShare 日本 | JPN 5'
+  server: 13.115.53.158
   port: 443
-  uuid: e2d6455c-9846-4502-8394-16b8c1c07b68
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: GrOupYOUNeS.PAGes.DEV
-  ws-opts:
-    path: /QKSAoBjr7TCbZcjm?ed=2560
-    headers:
-      host: GrOupYOUNeS.PAGes.DEV
-- name: 美国 067
-  type: vless
-  network: ws
-  server: 141.101.121.87
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: '@MxlShare 日本 | JPN 7'
+  server: 18.183.250.250
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: '@MxlShare 日本 | JPN 8'
+  server: 167.82.1.136
   port: 80
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  servername: a.mifeng.us.kg
-  skip-cert-verify: false
-  ws-opts:
-    headers:
-      Host: a.mifeng.us.kg
-    path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed
-- name: 美国 068
   type: vless
-  network: ws
-  server: 198.41.209.27
-  port: 80
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  servername: a.mifeng.us.kg
-  skip-cert-verify: false
-  ws-opts:
-    headers:
-      Host: a.mifeng.us.kg
-    path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed
-- name: 美国 076
-  type: vless
-  network: ws
-  server: 198.41.198.40
-  port: 80
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  servername: a.mifeng.us.kg
-  skip-cert-verify: false
-  ws-opts:
-    headers:
-      Host: a.mifeng.us.kg
-    path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed
-- name: 美国 077
-  type: vless
-  network: ws
-  server: 198.41.205.44
-  port: 80
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  servername: a.mifeng.us.kg
-  skip-cert-verify: false
-  ws-opts:
-    headers:
-      Host: a.mifeng.us.kg
-    path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed
-- name: 美国 078
-  type: vless
-  network: ws
-  server: 104.21.30.5
-  port: 80
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  servername: a.mifeng.us.kg
+  uuid: 253ef561-9e57-4336-befd-878ddd30df01
   tls: false
-  ws-opts:
-    headers:
-      Host: a.mifeng.us.kg
-    path: /?ed=2048
-- name: 美国 082
-  type: vless
   network: ws
-  server: 141.101.122.107
+  ws-opts:
+    path: /Telegram@V2ray_Alpha/?ed=2560
+    headers:
+      Host: teleirani.ir
+- name: '@MxlShare 韩国 | KOR'
+  server: 132.226.235.134
+  port: 20000
+  type: hysteria2
+  password: 3bf0826e-b1ca-4657-8983-cfd096a155a4
+  auth: 3bf0826e-b1ca-4657-8983-cfd096a155a4
+  sni: www.bing.com
+  skip-cert-verify: true
+  ports: 20000-55000
+  udp: true
+- name: '@MxlShare 韩国 | KOR 3'
+  server: 152.70.234.101
+  port: 20000
+  type: hysteria2
+  password: 3bf0826e-b1ca-4657-8983-cfd096a155a4
+  auth: 3bf0826e-b1ca-4657-8983-cfd096a155a4
+  sni: www.bing.com
+  skip-cert-verify: true
+  ports: 20000-55000
+  udp: true
+- name: '@MxlShare 韩国 | KOR 5'
+  server: 193.122.106.44
+  port: 20000
+  type: hysteria2
+  password: 3bf0826e-b1ca-4657-8983-cfd096a155a4
+  auth: 3bf0826e-b1ca-4657-8983-cfd096a155a4
+  sni: www.bing.com
+  skip-cert-verify: true
+  ports: 20000-55000
+  udp: true
+- name: '@MxlShare 新加坡 | SGP 10'
+  server: 13.213.58.54
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: '@MxlShare 新加坡 | SGP 11'
+  server: 13.229.206.58
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: '@MxlShare 新加坡 | SGP 12'
+  server: 13.250.116.31
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: '@MxlShare 新加坡 | SGP 14'
+  server: 18.142.225.149
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: '@MxlShare 新加坡 | SGP 15'
+  server: 54.179.54.70
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: '@MxlShare 新加坡 | SGP 17'
+  server: 167.82.0.0
   port: 80
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  servername: a.mifeng.us.kg
-  skip-cert-verify: false
+  type: vless
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  tls: false
+  servername: edge.validbv3528.ir
+  client-fingerprint: chrome
+  network: ws
   ws-opts:
+    path: /Telegram@V2ray_Alpha/?ed=2560
     headers:
-      Host: a.mifeng.us.kg
-    path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed
-- type: vless
-  name: 🇵🇱_波兰_1
-  server: 91.149.239.145
+      Host: edge.validbv3528.ir
+- name: '@MxlShare 新加坡 | SGP 19'
+  server: 167.82.1.102
+  port: 80
+  type: vless
+  uuid: 253ef561-9e57-4336-befd-878ddd30df01
+  tls: false
+  servername: teleirani.ir
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: teleirani.ir
+- name: '@MxlShare 美国 | USA 3'
+  server: kevin.iserver.store
+  port: 8443
+  type: hysteria2
+  password: Telegram:@KevinZakarian
+  auth: Telegram:@KevinZakarian
+  sni: kevin.iserver.store
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: Telegram:@KevinZakarian
+- name: '@MxlShare 美国 | USA 4'
+  server: meiyou-us.jiumaojiu.org
+  port: 20502
+  type: hysteria2
+  password: 332604ec-44d3-4d5b-a01f-784ad9709f7d
+  auth: 332604ec-44d3-4d5b-a01f-784ad9709f7d
+  sni: meiyou-us.jiumaojiu.org
+  skip-cert-verify: true
+- name: '@MxlShare 美国 | USA 5'
+  server: meiyou-us.jiumaojiu.org
+  port: 20531
+  type: hysteria2
+  password: 332604ec-44d3-4d5b-a01f-784ad9709f7d
+  auth: 332604ec-44d3-4d5b-a01f-784ad9709f7d
+  sni: meiyou-us.jiumaojiu.org
+  skip-cert-verify: true
+- name: '@MxlShare 美国 | USA 6'
+  server: meiyou-us.jiumaojiu.org
+  port: 20563
+  type: hysteria2
+  password: 887f95d6-3ed1-4fbd-891c-e65e15087e1f
+  auth: 887f95d6-3ed1-4fbd-891c-e65e15087e1f
+  sni: meiyou-us.jiumaojiu.org
+  skip-cert-verify: true
+- name: '@MxlShare 美国 | USA 7'
+  server: meiyou-us.jiumaojiu.org
+  port: 20530
+  type: hysteria2
+  password: 332604ec-44d3-4d5b-a01f-784ad9709f7d
+  auth: 332604ec-44d3-4d5b-a01f-784ad9709f7d
+  sni: meiyou-us.jiumaojiu.org
+  skip-cert-verify: true
+- name: '@MxlShare 美国 | USA 8'
+  server: meiyou-us.jiumaojiu.org
+  port: 20505
+  type: hysteria2
+  password: 332604ec-44d3-4d5b-a01f-784ad9709f7d
+  auth: 332604ec-44d3-4d5b-a01f-784ad9709f7d
+  sni: meiyou-us.jiumaojiu.org
+  skip-cert-verify: true
+- name: '@MxlShare 美国 | USA 24'
+  server: 18.176.215.63
+  port: 2377
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    mode: tls
+    host: (TG @WangCai2)80b6690:72938
+- name: '@MxlShare 美国 | USA 29'
+  server: 151.101.194.133
+  port: 80
+  type: vless
+  uuid: 253ef561-9e57-4336-befd-878ddd30df01
+  tls: false
+  servername: teleirani.ir
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048fp=chrome
+    headers:
+      Host: teleirani.ir
+  udp: true
+- name: '@MxlShare 美国 | USA 30'
+  server: 155.248.213.85
   port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
+  type: vless
+  uuid: 3bf0826e-b1ca-4657-8983-cfd096a155a4
   tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: /?ed=2560&proxyip=91.149.239.145:443
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇺🇦_乌克兰_1
-  server: 45.67.215.109
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: 767w1-45dc0-9ocf2.xn--4gq62f52gppi29k.com
+  client-fingerprint: chrome
+  network: tcp
   udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇦🇹_奥地利_1
-  server: 212.183.88.246
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇺🇦_乌克兰_2
-  server: 45.67.215.174
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇦🇹_奥地利_2
-  server: 212.183.88.50
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_1
-  server: 160.79.105.98
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: / uxz.vs2024.us.kg
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_2-9hbj
-  server: 206.238.237.151
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_3-AlYQ
-  server: join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇳🇿_新西兰
-  server: 202.37.33.81
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: /?ed=2560&proxyip=202.37.33.81:443
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_4-L1u5
-  server: 216.221.213.189
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_5
-  server: 160.79.105.85
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: /?ed=2560&proxyip=160.79.105.85:443
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇷🇺_俄罗斯_1
-  server: 194.76.18.99
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: / uxz.vs2024.us.kg
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇿🇦_南非_1
-  server: 160.123.255.34
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_6
-  server: 130.250.137.107
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_7
-  server: 160.79.104.254
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: / uxz.vs2024.us.kg
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_8
-  server: 160.79.104.98
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_9
-  server: 160.79.104.19
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: /?ed=2560&proxyip=160.79.104.197:443
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_10
-  server: 160.79.105.72
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: / uxz.vs2024.us.kg
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_11
-  server: 63.141.128.177
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇦🇹_奥地利_3
-  server: 212.183.88.94
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇿🇦_南非_2
-  server: 160.123.255.85
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: /?ed=2560&proxyip=160.123.255.85:443
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_12
-  server: 63.141.128.103
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇺🇦_乌克兰_3
-  server: 45.67.215.242
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_14
-  server: 160.79.105.233
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: /?ed=2560&proxyip=160.79.105.233:443
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_15
-  server: 130.250.137.163
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: / uxz.vs2024.us.kg
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇺🇦_乌克兰_4
-  server: 45.67.215.212
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇩🇪_德国_1
-  server: 185.16.110.107
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇿🇦_南非_3
-  server: 160.123.255.17
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: / uxz.vs2024.us.kg
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇿🇦_南非_4
-  server: 160.123.255.58
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_16
-  server: 63.141.128.37
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: / uxz.vs2024.us.kg
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_17
-  server: 160.79.104.181
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: /?ed=2560&proxyip=160.79.104.181:443
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_18
-  server: 192.0.54.111
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: / uxz.vs2024.us.kg
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇷🇺_俄罗斯_3
-  server: 194.76.18.10
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_19
-  server: 129.80.177.42
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: /?ed=2560&proxyip=129.80.177.42:443
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇬🇧_英国_1
-  server: 217.163.76.99
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: / uxz.vs2024.us.kg
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_21
-  server: 206.238.237.185
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: /?ed=2560&proxyip=206.238.237.185:443
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_22
-  server: 216.24.57.108
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇩🇪_德国_3
-  server: 185.16.110.111
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_23
-  server: 63.141.128.208
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_24
-  server: 192.0.54.104
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇺🇦_乌克兰_5
-  server: 45.67.215.118
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_25
-  server: 216.24.57.113
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: / uxz.vs2024.us.kg
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_26
-  server: 206.238.236.58
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_27
-  server: 63.141.128.254
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: / uxz.vs2024.us.kg
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_30
-  server: 160.79.105.12
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: /?ed=2560&proxyip=160.79.105.12:443
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_31
-  server: 63.141.128.122
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇩🇪_德国_4
-  server: 185.16.110.91
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: /?ed=2560&proxyip=185.16.110.91:443
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_32
-  server: 160.79.104.116
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: /?ed=2560&proxyip=160.79.104.116:443
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_33
-  server: 160.79.104.199
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: / uxz.vs2024.us.kg
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_34
-  server: 160.79.104.103
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: /?ed=2560&proxyip=160.79.104.103:443
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇺🇦_乌克兰_6
-  server: 45.67.215.98
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_35
-  server: 4.255.56.137
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: / uxz.vs2024.us.kg
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_36
-  server: 4.255.56.138
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: / uxz.vs2024.us.kg
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_38
-  server: 150.136.87.192
-  port: 443
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uxz.vs2024.us.kg
-  ws-opts:
-    path: / uxz.vs2024.us.kg
-    headers:
-      host: uxz.vs2024.us.kg
-- type: vless
-  name: 🇯🇵_日本_2
-  server: 103.116.7.133
-  port: 2083
-  uuid: 807b2717-e1ac-4209-933b-b04076cddde9
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: amedo.ambercc.filegear-sg.me
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: amedo.ambercc.filegear-sg.me
-- type: vless
-  name: 🇯🇵_日本_4
-  server: 103.116.7.189
-  port: 443
-  uuid: 807b2717-e1ac-4209-933b-b04076cddde9
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: amedo.ambercc.filegear-sg.me
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: amedo.ambercc.filegear-sg.me
-- type: vless
-  name: 🇺🇸_美国_57
-  server: ignacio.ns.cloudflare.com
-  port: 443
-  uuid: 807b2717-e1ac-4209-933b-b04076cddde9
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: amedo.ambercc.filegear-sg.me
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: amedo.ambercc.filegear-sg.me
-- type: vless
-  name: 🇺🇸_美国_151
-  server: 135.84.74.254
-  port: 2083
-  uuid: 807b2717-e1ac-4209-933b-b04076cddde9
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: amedo.ambercc.filegear-sg.me
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: amedo.ambercc.filegear-sg.me
-- type: vless
-  name: 🇺🇸_美国_156
-  server: 108.165.152.78
-  port: 2083
-  uuid: 807b2717-e1ac-4209-933b-b04076cddde9
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: amedo.ambercc.filegear-sg.me
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: amedo.ambercc.filegear-sg.me
-- type: vless
-  name: 🇺🇸_美国_159
-  server: 216.24.57.1
-  port: 2053
-  uuid: 807b2717-e1ac-4209-933b-b04076cddde9
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: amedo.ambercc.filegear-sg.me
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: amedo.ambercc.filegear-sg.me
-- type: vless
-  name: 🇺🇸_美国_160
-  server: pranab.ns.cloudflare.com
-  port: 443
-  uuid: 807b2717-e1ac-4209-933b-b04076cddde9
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: amedo.ambercc.filegear-sg.me
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: amedo.ambercc.filegear-sg.me
-- type: vless
-  name: 🇺🇸_美国_165
-  server: arvind.ns.cloudflare.com
-  port: 443
-  uuid: 807b2717-e1ac-4209-933b-b04076cddde9
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: amedo.ambercc.filegear-sg.me
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: amedo.ambercc.filegear-sg.me
-- type: vless
-  name: 🇺🇸_美国_170
-  server: lynn.ns.cloudflare.com
-  port: 443
-  uuid: 807b2717-e1ac-4209-933b-b04076cddde9
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: amedo.ambercc.filegear-sg.me
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: amedo.ambercc.filegear-sg.me
 proxy-groups:
 - name: 节点选择
   type: select
@@ -1414,106 +1143,106 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - xiaoer886_RU_20
-  - 🇩🇪_德国_4
-  - 🇺🇸_美国_30
-  - xiaoer886_US_287
-  - 🇺🇸_美国_26
-  - 🇿🇦_南非_3
-  - 🇺🇦_乌克兰_4
-  - 🇺🇸_美国_31
-  - xiaoer886_US_306
-  - xiaoer886_US_239
-  - xiaoer886_US_291
-  - xiaoer886_US_288
-  - 🇺🇸_美国_32
-  - 🇺🇦_乌克兰_5
-  - 🇺🇸_美国_14
-  - 🇺🇦_乌克兰_2
-  - 🇺🇸_美国_23
-  - xiaoer886_US_296
-  - 美国 078
-  - 🇺🇸_美国_21
-  - 🇩🇪_德国_3
-  - 🇺🇸_美国_9
-  - 🇺🇸_美国_22
-  - 🇺🇸_美国_17
-  - 🇺🇸_美国_27
-  - 🇿🇦_南非_4
-  - 🇺🇸_美国_34
-  - 美国 076
-  - 🇺🇸_美国_16
-  - 🇺🇸_美国_4-L1u5
-  - 🇦🇹_奥地利_1
-  - 🇿🇦_南非_2
-  - xiaoer886_US_274
-  - 🇺🇸_美国_18
-  - 🇺🇸_美国_36
-  - 🇳🇿_新西兰
-  - 🇺🇸_美国_5
-  - xiaoer886_US_377
-  - xiaoer886_US_289
-  - 🇷🇺_俄罗斯_3
-  - 🇦🇹_奥地利_3
-  - 🇺🇸_美国_12
-  - 🇺🇸_美国_25
-  - 🇺🇸_美国_35
-  - 🇺🇸_美国_2-9hbj
-  - xiaoer886_US_245
-  - 🇺🇦_乌克兰_3
-  - xiaoer886_US_311
-  - xiaoer886_US_302
-  - xiaoer886_US_241
-  - 🇺🇸_美国_24
-  - 🇩🇪_德国_1
-  - 🇺🇸_美国_33
-  - 🇺🇦_乌克兰_1
-  - 美国 082
-  - 🇿🇦_南非_1
-  - 美国 068
-  - 🇺🇸_美国_8
-  - 🇬🇧_英国_1
-  - 🇺🇸_美国_15
+  - '@MxlShare 美国 | USA 30'
   - xiaoer886_US_278
-  - xiaoer886_US_273
-  - 🇺🇦_乌克兰_6
-  - xiaoer886_US_290
-  - xiaoer886_US_222
-  - 美国 067
-  - 🇺🇸_美国_11
-  - 🇺🇸_美国_1
-  - 🇦🇹_奥地利_2
+  - xiaoer886_US_245
+  - xiaoer886_US_153
+  - xiaoer886_US_274
+  - xiaoer886_US_263
+  - xiaoer886_US_269
+  - xiaoer886_US_241
   - xiaoer886_US_277
-  - 🇺🇸_美国_6
-  - 🇺🇸_美国_10
-  - 美国 077
-  - xiaoer886_US_252
-  - xiaoer886_US_256
-  - 🇯🇵_日本_4
-  - xiaoer886_US_221
-  - 🇺🇸_美国_38
-  - 🇺🇸_美国_7
-  - xiaoer886_US_297
+  - xiaoer886_US_44
   - xiaoer886_US_227
+  - xiaoer886_BR_11
   - xiaoer886_US_234
-  - xiaoer886_US_237
-  - xiaoer886_US_276
-  - xiaoer886_US_303
+  - xiaoer886_US_50
+  - xiaoer886_US_266
+  - xiaoer886_US_289
+  - xiaoer886_US_30
+  - xiaoer886_US_258
+  - xiaoer886_US_55
+  - xiaoer886_US_221
   - xiaoer886_US_283
-  - 🇷🇺_俄罗斯_1
-  - xiaoer886_US_295
-  - 🇺🇸_美国_151
-  - 🇺🇸_美国_159
-  - 🇺🇸_美国_165
-  - 🇺🇸_美国_57
-  - 🇺🇸_美国_170
-  - 🇺🇸_美国_156
-  - 🇯🇵_日本_2
-  - 🇺🇸_美国_160
-  - 🇵🇱_波兰_1
-  - 🇺🇸_美国_19
+  - xiaoer886_US_206
+  - xiaoer886_US_311
+  - xiaoer886_US_244
+  - xiaoer886_US_259
+  - xiaoer886_US_276
+  - xiaoer886_US_239
+  - xiaoer886_US_275
+  - xiaoer886_US_164
+  - xiaoer886_US_172
+  - xiaoer886_US_43
+  - xiaoer886_US_291
+  - xiaoer886_US_252
+  - xiaoer886_US_231
+  - xiaoer886_US_197
+  - xiaoer886_US_194
+  - xiaoer886_BR_2
+  - xiaoer886_US_15
+  - '@MxlShare 美国 | USA 29'
+  - xiaoer886_US_222
+  - xiaoer886_US_14
+  - xiaoer886_US_25
+  - xiaoer886_US_205
+  - xiaoer886_US_253
+  - '@MxlShare 新加坡 | SGP 17'
+  - 🇺🇸_US_美国_3
+  - xiaoer886_US_2
+  - 🇺🇸_US_美国_9
+  - 🇺🇸_US_美国_10
+  - xiaoer886_US_57
+  - 🇺🇸_US_美国_6
+  - 🇺🇸_US_美国_5
+  - xiaoer886_US_146
+  - 🇺🇸_US_美国_1-K1HB
+  - xiaoer886_US_39
+  - 🇺🇸_US_美国
+  - xiaoer886_US_320
+  - 🇺🇸_US_美国_8
+  - '@MxlShare 美国 | USA 3'
+  - '@MxlShare 日本 | JPN 8'
+  - '@MxlShare 美国 | USA 8'
+  - xiaoer886_US_240
+  - '@MxlShare 美国 | USA 7'
+  - xiaoer886_US_5
+  - '@MxlShare 美国 | USA 6'
+  - '@MxlShare 美国 | USA 5'
+  - '@MxlShare 美国 | USA 4'
+  - xiaoer886_US_377
+  - 🇺🇸_US_美国_11
+  - 🇺🇸_US_美国_12
+  - xiaoer886_US_29
+  - '@MxlShare 日本 | JPN 7'
+  - '@MxlShare 日本 | JPN 5'
+  - '@MxlShare 美国 | USA 24'
+  - 🇨🇦_CA_加拿大
+  - '@MxlShare 新加坡 | SGP 19'
+  - '@MxlShare 新加坡 | SGP 11'
+  - '@MxlShare 新加坡 | SGP 15'
+  - '@MxlShare 新加坡 | SGP 14'
+  - '@MxlShare 新加坡 | SGP 12'
+  - '@MxlShare 新加坡 | SGP 10'
+  - 🇷🇺_RU_俄罗斯
+  - 🇷🇺_RU_俄罗斯_6
+  - 🇷🇺_RU_俄罗斯_5
+  - 🇷🇺_RU_俄罗斯_4
+  - 🇷🇺_RU_俄罗斯_7
+  - '@MxlShare 日本 | JPN 3'
   - xiaoer886_GB_10
-  - 🇺🇸_美国_3-AlYQ
+  - '@MxlShare 日本 | JPN 2'
+  - '@MxlShare 日本 | JPN'
+  - '@MxlShare 日本 | JPN 4'
+  - '@MxlShare 韩国 | KOR 3'
+  - '@MxlShare 韩国 | KOR 5'
+  - 🇷🇺_RU_俄罗斯_3
+  - '@MxlShare 韩国 | KOR'
+  - xiaoer886_US_318
+  - '@MxlShare 香港 | HKG 6'
+  - '@MxlShare 香港 | HKG 5'
+  - 🇷🇺_RU_俄罗斯_1-yUGT
+  - xiaoer886_GB_2
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
@@ -1521,211 +1250,211 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - xiaoer886_RU_20
-  - 🇩🇪_德国_4
-  - 🇺🇸_美国_30
-  - xiaoer886_US_287
-  - 🇺🇸_美国_26
-  - 🇿🇦_南非_3
-  - 🇺🇦_乌克兰_4
-  - 🇺🇸_美国_31
-  - xiaoer886_US_306
-  - xiaoer886_US_239
-  - xiaoer886_US_291
-  - xiaoer886_US_288
-  - 🇺🇸_美国_32
-  - 🇺🇦_乌克兰_5
-  - 🇺🇸_美国_14
-  - 🇺🇦_乌克兰_2
-  - 🇺🇸_美国_23
-  - xiaoer886_US_296
-  - 美国 078
-  - 🇺🇸_美国_21
-  - 🇩🇪_德国_3
-  - 🇺🇸_美国_9
-  - 🇺🇸_美国_22
-  - 🇺🇸_美国_17
-  - 🇺🇸_美国_27
-  - 🇿🇦_南非_4
-  - 🇺🇸_美国_34
-  - 美国 076
-  - 🇺🇸_美国_16
-  - 🇺🇸_美国_4-L1u5
-  - 🇦🇹_奥地利_1
-  - 🇿🇦_南非_2
-  - xiaoer886_US_274
-  - 🇺🇸_美国_18
-  - 🇺🇸_美国_36
-  - 🇳🇿_新西兰
-  - 🇺🇸_美国_5
-  - xiaoer886_US_377
-  - xiaoer886_US_289
-  - 🇷🇺_俄罗斯_3
-  - 🇦🇹_奥地利_3
-  - 🇺🇸_美国_12
-  - 🇺🇸_美国_25
-  - 🇺🇸_美国_35
-  - 🇺🇸_美国_2-9hbj
-  - xiaoer886_US_245
-  - 🇺🇦_乌克兰_3
-  - xiaoer886_US_311
-  - xiaoer886_US_302
-  - xiaoer886_US_241
-  - 🇺🇸_美国_24
-  - 🇩🇪_德国_1
-  - 🇺🇸_美国_33
-  - 🇺🇦_乌克兰_1
-  - 美国 082
-  - 🇿🇦_南非_1
-  - 美国 068
-  - 🇺🇸_美国_8
-  - 🇬🇧_英国_1
-  - 🇺🇸_美国_15
+  - '@MxlShare 美国 | USA 30'
   - xiaoer886_US_278
-  - xiaoer886_US_273
-  - 🇺🇦_乌克兰_6
-  - xiaoer886_US_290
-  - xiaoer886_US_222
-  - 美国 067
-  - 🇺🇸_美国_11
-  - 🇺🇸_美国_1
-  - 🇦🇹_奥地利_2
+  - xiaoer886_US_245
+  - xiaoer886_US_153
+  - xiaoer886_US_274
+  - xiaoer886_US_263
+  - xiaoer886_US_269
+  - xiaoer886_US_241
   - xiaoer886_US_277
-  - 🇺🇸_美国_6
-  - 🇺🇸_美国_10
-  - 美国 077
-  - xiaoer886_US_252
-  - xiaoer886_US_256
-  - 🇯🇵_日本_4
-  - xiaoer886_US_221
-  - 🇺🇸_美国_38
-  - 🇺🇸_美国_7
-  - xiaoer886_US_297
+  - xiaoer886_US_44
   - xiaoer886_US_227
+  - xiaoer886_BR_11
   - xiaoer886_US_234
-  - xiaoer886_US_237
-  - xiaoer886_US_276
-  - xiaoer886_US_303
+  - xiaoer886_US_50
+  - xiaoer886_US_266
+  - xiaoer886_US_289
+  - xiaoer886_US_30
+  - xiaoer886_US_258
+  - xiaoer886_US_55
+  - xiaoer886_US_221
   - xiaoer886_US_283
-  - 🇷🇺_俄罗斯_1
-  - xiaoer886_US_295
-  - 🇺🇸_美国_151
-  - 🇺🇸_美国_159
-  - 🇺🇸_美国_165
-  - 🇺🇸_美国_57
-  - 🇺🇸_美国_170
-  - 🇺🇸_美国_156
-  - 🇯🇵_日本_2
-  - 🇺🇸_美国_160
-  - 🇵🇱_波兰_1
-  - 🇺🇸_美国_19
+  - xiaoer886_US_206
+  - xiaoer886_US_311
+  - xiaoer886_US_244
+  - xiaoer886_US_259
+  - xiaoer886_US_276
+  - xiaoer886_US_239
+  - xiaoer886_US_275
+  - xiaoer886_US_164
+  - xiaoer886_US_172
+  - xiaoer886_US_43
+  - xiaoer886_US_291
+  - xiaoer886_US_252
+  - xiaoer886_US_231
+  - xiaoer886_US_197
+  - xiaoer886_US_194
+  - xiaoer886_BR_2
+  - xiaoer886_US_15
+  - '@MxlShare 美国 | USA 29'
+  - xiaoer886_US_222
+  - xiaoer886_US_14
+  - xiaoer886_US_25
+  - xiaoer886_US_205
+  - xiaoer886_US_253
+  - '@MxlShare 新加坡 | SGP 17'
+  - 🇺🇸_US_美国_3
+  - xiaoer886_US_2
+  - 🇺🇸_US_美国_9
+  - 🇺🇸_US_美国_10
+  - xiaoer886_US_57
+  - 🇺🇸_US_美国_6
+  - 🇺🇸_US_美国_5
+  - xiaoer886_US_146
+  - 🇺🇸_US_美国_1-K1HB
+  - xiaoer886_US_39
+  - 🇺🇸_US_美国
+  - xiaoer886_US_320
+  - 🇺🇸_US_美国_8
+  - '@MxlShare 美国 | USA 3'
+  - '@MxlShare 日本 | JPN 8'
+  - '@MxlShare 美国 | USA 8'
+  - xiaoer886_US_240
+  - '@MxlShare 美国 | USA 7'
+  - xiaoer886_US_5
+  - '@MxlShare 美国 | USA 6'
+  - '@MxlShare 美国 | USA 5'
+  - '@MxlShare 美国 | USA 4'
+  - xiaoer886_US_377
+  - 🇺🇸_US_美国_11
+  - 🇺🇸_US_美国_12
+  - xiaoer886_US_29
+  - '@MxlShare 日本 | JPN 7'
+  - '@MxlShare 日本 | JPN 5'
+  - '@MxlShare 美国 | USA 24'
+  - 🇨🇦_CA_加拿大
+  - '@MxlShare 新加坡 | SGP 19'
+  - '@MxlShare 新加坡 | SGP 11'
+  - '@MxlShare 新加坡 | SGP 15'
+  - '@MxlShare 新加坡 | SGP 14'
+  - '@MxlShare 新加坡 | SGP 12'
+  - '@MxlShare 新加坡 | SGP 10'
+  - 🇷🇺_RU_俄罗斯
+  - 🇷🇺_RU_俄罗斯_6
+  - 🇷🇺_RU_俄罗斯_5
+  - 🇷🇺_RU_俄罗斯_4
+  - 🇷🇺_RU_俄罗斯_7
+  - '@MxlShare 日本 | JPN 3'
   - xiaoer886_GB_10
-  - 🇺🇸_美国_3-AlYQ
+  - '@MxlShare 日本 | JPN 2'
+  - '@MxlShare 日本 | JPN'
+  - '@MxlShare 日本 | JPN 4'
+  - '@MxlShare 韩国 | KOR 3'
+  - '@MxlShare 韩国 | KOR 5'
+  - 🇷🇺_RU_俄罗斯_3
+  - '@MxlShare 韩国 | KOR'
+  - xiaoer886_US_318
+  - '@MxlShare 香港 | HKG 6'
+  - '@MxlShare 香港 | HKG 5'
+  - 🇷🇺_RU_俄罗斯_1-yUGT
+  - xiaoer886_GB_2
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - xiaoer886_RU_20
-  - 🇩🇪_德国_4
-  - 🇺🇸_美国_30
-  - xiaoer886_US_287
-  - 🇺🇸_美国_26
-  - 🇿🇦_南非_3
-  - 🇺🇦_乌克兰_4
-  - 🇺🇸_美国_31
-  - xiaoer886_US_306
-  - xiaoer886_US_239
-  - xiaoer886_US_291
-  - xiaoer886_US_288
-  - 🇺🇸_美国_32
-  - 🇺🇦_乌克兰_5
-  - 🇺🇸_美国_14
-  - 🇺🇦_乌克兰_2
-  - 🇺🇸_美国_23
-  - xiaoer886_US_296
-  - 美国 078
-  - 🇺🇸_美国_21
-  - 🇩🇪_德国_3
-  - 🇺🇸_美国_9
-  - 🇺🇸_美国_22
-  - 🇺🇸_美国_17
-  - 🇺🇸_美国_27
-  - 🇿🇦_南非_4
-  - 🇺🇸_美国_34
-  - 美国 076
-  - 🇺🇸_美国_16
-  - 🇺🇸_美国_4-L1u5
-  - 🇦🇹_奥地利_1
-  - 🇿🇦_南非_2
-  - xiaoer886_US_274
-  - 🇺🇸_美国_18
-  - 🇺🇸_美国_36
-  - 🇳🇿_新西兰
-  - 🇺🇸_美国_5
-  - xiaoer886_US_377
-  - xiaoer886_US_289
-  - 🇷🇺_俄罗斯_3
-  - 🇦🇹_奥地利_3
-  - 🇺🇸_美国_12
-  - 🇺🇸_美国_25
-  - 🇺🇸_美国_35
-  - 🇺🇸_美国_2-9hbj
-  - xiaoer886_US_245
-  - 🇺🇦_乌克兰_3
-  - xiaoer886_US_311
-  - xiaoer886_US_302
-  - xiaoer886_US_241
-  - 🇺🇸_美国_24
-  - 🇩🇪_德国_1
-  - 🇺🇸_美国_33
-  - 🇺🇦_乌克兰_1
-  - 美国 082
-  - 🇿🇦_南非_1
-  - 美国 068
-  - 🇺🇸_美国_8
-  - 🇬🇧_英国_1
-  - 🇺🇸_美国_15
+  - '@MxlShare 美国 | USA 30'
   - xiaoer886_US_278
-  - xiaoer886_US_273
-  - 🇺🇦_乌克兰_6
-  - xiaoer886_US_290
-  - xiaoer886_US_222
-  - 美国 067
-  - 🇺🇸_美国_11
-  - 🇺🇸_美国_1
-  - 🇦🇹_奥地利_2
+  - xiaoer886_US_245
+  - xiaoer886_US_153
+  - xiaoer886_US_274
+  - xiaoer886_US_263
+  - xiaoer886_US_269
+  - xiaoer886_US_241
   - xiaoer886_US_277
-  - 🇺🇸_美国_6
-  - 🇺🇸_美国_10
-  - 美国 077
-  - xiaoer886_US_252
-  - xiaoer886_US_256
-  - 🇯🇵_日本_4
-  - xiaoer886_US_221
-  - 🇺🇸_美国_38
-  - 🇺🇸_美国_7
-  - xiaoer886_US_297
+  - xiaoer886_US_44
   - xiaoer886_US_227
+  - xiaoer886_BR_11
   - xiaoer886_US_234
-  - xiaoer886_US_237
-  - xiaoer886_US_276
-  - xiaoer886_US_303
+  - xiaoer886_US_50
+  - xiaoer886_US_266
+  - xiaoer886_US_289
+  - xiaoer886_US_30
+  - xiaoer886_US_258
+  - xiaoer886_US_55
+  - xiaoer886_US_221
   - xiaoer886_US_283
-  - 🇷🇺_俄罗斯_1
-  - xiaoer886_US_295
-  - 🇺🇸_美国_151
-  - 🇺🇸_美国_159
-  - 🇺🇸_美国_165
-  - 🇺🇸_美国_57
-  - 🇺🇸_美国_170
-  - 🇺🇸_美国_156
-  - 🇯🇵_日本_2
-  - 🇺🇸_美国_160
-  - 🇵🇱_波兰_1
-  - 🇺🇸_美国_19
+  - xiaoer886_US_206
+  - xiaoer886_US_311
+  - xiaoer886_US_244
+  - xiaoer886_US_259
+  - xiaoer886_US_276
+  - xiaoer886_US_239
+  - xiaoer886_US_275
+  - xiaoer886_US_164
+  - xiaoer886_US_172
+  - xiaoer886_US_43
+  - xiaoer886_US_291
+  - xiaoer886_US_252
+  - xiaoer886_US_231
+  - xiaoer886_US_197
+  - xiaoer886_US_194
+  - xiaoer886_BR_2
+  - xiaoer886_US_15
+  - '@MxlShare 美国 | USA 29'
+  - xiaoer886_US_222
+  - xiaoer886_US_14
+  - xiaoer886_US_25
+  - xiaoer886_US_205
+  - xiaoer886_US_253
+  - '@MxlShare 新加坡 | SGP 17'
+  - 🇺🇸_US_美国_3
+  - xiaoer886_US_2
+  - 🇺🇸_US_美国_9
+  - 🇺🇸_US_美国_10
+  - xiaoer886_US_57
+  - 🇺🇸_US_美国_6
+  - 🇺🇸_US_美国_5
+  - xiaoer886_US_146
+  - 🇺🇸_US_美国_1-K1HB
+  - xiaoer886_US_39
+  - 🇺🇸_US_美国
+  - xiaoer886_US_320
+  - 🇺🇸_US_美国_8
+  - '@MxlShare 美国 | USA 3'
+  - '@MxlShare 日本 | JPN 8'
+  - '@MxlShare 美国 | USA 8'
+  - xiaoer886_US_240
+  - '@MxlShare 美国 | USA 7'
+  - xiaoer886_US_5
+  - '@MxlShare 美国 | USA 6'
+  - '@MxlShare 美国 | USA 5'
+  - '@MxlShare 美国 | USA 4'
+  - xiaoer886_US_377
+  - 🇺🇸_US_美国_11
+  - 🇺🇸_US_美国_12
+  - xiaoer886_US_29
+  - '@MxlShare 日本 | JPN 7'
+  - '@MxlShare 日本 | JPN 5'
+  - '@MxlShare 美国 | USA 24'
+  - 🇨🇦_CA_加拿大
+  - '@MxlShare 新加坡 | SGP 19'
+  - '@MxlShare 新加坡 | SGP 11'
+  - '@MxlShare 新加坡 | SGP 15'
+  - '@MxlShare 新加坡 | SGP 14'
+  - '@MxlShare 新加坡 | SGP 12'
+  - '@MxlShare 新加坡 | SGP 10'
+  - 🇷🇺_RU_俄罗斯
+  - 🇷🇺_RU_俄罗斯_6
+  - 🇷🇺_RU_俄罗斯_5
+  - 🇷🇺_RU_俄罗斯_4
+  - 🇷🇺_RU_俄罗斯_7
+  - '@MxlShare 日本 | JPN 3'
   - xiaoer886_GB_10
-  - 🇺🇸_美国_3-AlYQ
+  - '@MxlShare 日本 | JPN 2'
+  - '@MxlShare 日本 | JPN'
+  - '@MxlShare 日本 | JPN 4'
+  - '@MxlShare 韩国 | KOR 3'
+  - '@MxlShare 韩国 | KOR 5'
+  - 🇷🇺_RU_俄罗斯_3
+  - '@MxlShare 韩国 | KOR'
+  - xiaoer886_US_318
+  - '@MxlShare 香港 | HKG 6'
+  - '@MxlShare 香港 | HKG 5'
+  - 🇷🇺_RU_俄罗斯_1-yUGT
+  - xiaoer886_GB_2
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
