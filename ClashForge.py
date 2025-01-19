@@ -40,7 +40,7 @@ MAX_CONCURRENT_TESTS = 100
 LIMIT = 10000 # 最多保留LIMIT个节点
 CONFIG_FILE = 'clash_config.yaml'
 INPUT = "input" # 从文件中加载代理节点，支持yaml/yml、txt(每条代理链接占一行)
-allowed_types=["ss","vmess","trojan"]
+ALLOWED_TYPES=["ss","vmess","trojan"]
 BAN = ["中国", "China", "CN", "电信", "移动", "移动", "联通"]
 headers = {
     'Accept-Charset': 'utf-8',
