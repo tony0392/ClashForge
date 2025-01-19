@@ -1575,7 +1575,7 @@ def generate_clash_config(links,load_nodes):
 
 
     for link in links:
-        if link.startswith(("hysteria2://", "hy2://","trojan://", "ss://", "vless://", "vmess://")):
+        if link.startswith(("trojan://", "ss://", "vmess://")):
             node = parse_proxy_link(link)
             resolve_name_conflicts(node)
         else:
