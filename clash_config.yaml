@@ -32,1151 +32,636 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- cipher: aes-256-gcm
-  name: 🇺🇸_US_美国
-  password: lGqs95QkFHo2NV
-  port: 5498
-  server: 23.157.40.5
+- name: 🇺🇸_US_美国->🇷🇴_RO_罗马尼亚_1
+  port: 443
+  server: 34.211.250.149
   type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸_US_美国_1-zu78
-  password: Y6R9pAtvxxzmGC
-  port: 5001
-  server: 23.157.40.5
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸_US_美国_2-WB6B
-  password: TEzjfAYq2IjtuoS
-  port: 6679
-  server: 23.157.40.5
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸_US_美国_5
-  password: e4FCWrgpkji3QY
-  port: 9102
-  server: 23.157.40.5
-  type: ss
-- cipher: rc4-md5
-  name: 🇺🇸_US_美国_6
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 23.251.121.242
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇷🇺_RU_俄罗斯
-  password: BejrQvtu9sqUeNuZ
-  port: 9024
-  server: 217.30.10.18
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇷🇺_RU_俄罗斯_1-D0ir
-  password: S7KwUu7yBy58S3Ga
-  port: 9042
-  server: 217.30.10.18
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸_US_美国_9
-  password: Y6R9pAtvxxzmGC
-  port: 5600
-  server: 23.157.40.5
-  type: ss
-- name: 🇷🇺_RU_俄罗斯_3
-  password: '3723507166611775488'
-  port: 443
-  server: 80.240.112.167
-  skip-cert-verify: false
-  sni: ample-cockatoo.boa152.lol
-  type: trojan
-- cipher: aes-256-gcm
-  name: 🇺🇸_US_美国_10
-  password: Y6R9pAtvxxzmGC
-  port: 5601
-  server: 23.157.40.5
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇨🇦_CA_加拿大
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 23.154.136.247
-  type: ss
-- type: vless
-  name: xiaoer886_US_5
-  server: 15.204.165.202
-  port: 443
-  uuid: 3b9bc773-05eb-4d5f-8c1f-57342c0c4f40
-  skip-cert-verify: true
-  network: tcp
-  servername: 147135010103.sec19org.com
-  tls: true
   udp: true
-- type: vmess
-  name: xiaoer886_US_320
-  ws-opts:
-    path: /dabai.in104.17.169.115
-    headers:
-      host: 100-49-141-209.s1.db-link02.top
-  server: 104.17.221.248
-  port: '80'
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  alterId: '0'
-  cipher: auto
-  network: ws
-- type: vless
-  name: xiaoer886_US_14
-  server: 104.21.21.181
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: a.xn--i-sx6a60i.us.kg
-  ws-opts:
-    path: /
-    headers:
-      host: a.xn--i-sx6a60i.us.kg
-- type: vless
-  name: xiaoer886_US_39
-  server: 138.2.227.164
-  port: 443
-  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: mmdserver.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: mmdserver.us.kg
-- type: vless
-  name: xiaoer886_US_15
-  server: 104.26.12.31
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: a.xn--i-sx6a60i.us.kg
-  ws-opts:
-    path: /
-    headers:
-      host: a.xn--i-sx6a60i.us.kg
-- type: vless
-  name: xiaoer886_US_45
-  server: 51.81.36.199
-  port: 443
-  uuid: ea286109-d20f-415e-849e-4af20ab04b65
-  skip-cert-verify: true
-  network: tcp
-  servername: 147135001195.sec22org.com
-  tls: true
-  udp: true
-- type: vless
-  name: xiaoer886_US_30
-  server: 104.21.7.41
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: a.xn--i-sx6a60i.us.kg
-  ws-opts:
-    path: /
-    headers:
-      host: a.xn--i-sx6a60i.us.kg
-- type: vless
-  name: xiaoer886_US_44
-  server: 104.26.10.197
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: a.xn--i-sx6a60i.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: a.xn--i-sx6a60i.us.kg
-- type: vless
-  name: xiaoer886_US_50
-  server: 104.20.30.125
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: a.xn--i-sx6a60i.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: a.xn--i-sx6a60i.us.kg
-- type: vless
-  name: xiaoer886_US_55
-  server: 172.67.137.37
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: a.xn--i-sx6a60i.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: a.xn--i-sx6a60i.us.kg
-- type: vless
-  name: xiaoer886_BR_2
-  server: 188.114.96.3
-  port: 443
-  uuid: e2d6455c-9846-4502-8394-16b8c1c07b68
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: GrOUPyoUnEs.PAGEs.DEv
-  ws-opts:
-    path: /Orib1TRRDQo8XqMa?ed=2560
-    headers:
-      host: GrOUPyoUnEs.PAGEs.DEv
-- type: vless
-  name: xiaoer886_US_2
-  server: 104.22.57.77
-  port: 443
-  uuid: c7d543af-1023-4b96-a698-187c190d3f4c
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: nautica.foolvpn.me
-  ws-opts:
-    path: /47.89.39.186-39251
-    headers:
-      host: nautica.foolvpn.me
-- type: vless
-  name: xiaoer886_RU_2
-  server: 46.254.92.33
-  port: 443
-  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: mmdserver.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: mmdserver.us.kg
-- type: vless
-  name: xiaoer886_US_54
-  server: 172.67.172.56
-  port: 443
-  uuid: e98e99ae-6f24-476c-9920-29b8c3358967
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: RasPy-DaRKNesS-6ab6.FaRANFreLSJINEJXj.WOrkERS.DEv
-  ws-opts:
-    path: /telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420?ed=2560
-    headers:
-      host: RasPy-DaRKNesS-6ab6.FaRANFreLSJINEJXj.WOrkERS.DEv
-- type: vless
-  name: xiaoer886_IT_1
-  server: 92.60.74.100
-  port: 443
-  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: mmdserver.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: mmdserver.us.kg
-- type: vless
-  name: xiaoer886_US_4
-  server: 104.27.80.43
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: a.xn--i-sx6a60i.us.kg
-  ws-opts:
-    path: /TELEGRAM-PROXY_MTM-TELEGRAM-PROXY_MTM-TELEGRAM-PROXY_MTM?ed=2560
-    headers:
-      host: a.xn--i-sx6a60i.us.kg
-- type: vless
-  name: xiaoer886_US_38
-  server: 104.21.47.6
-  port: 443
-  uuid: 161fa2ac-9618-4a3c-bc9b-5420ecc1826e
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: v2ray-vmess-free.irnoen.workers.dev
-  ws-opts:
-    path: /?@VPN_ROOM------@VPN_ROOM
-    headers:
-      host: v2ray-vmess-free.irnoen.workers.dev
-- type: vless
-  name: xiaoer886_US_46
-  server: 172.67.194.21
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: a.xn--i-sx6a60i.us.kg
-  ws-opts:
-    path: /@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray?ed=2560
-    headers:
-      host: a.xn--i-sx6a60i.us.kg
-- type: vless
-  name: xiaoer886_UA_3
-  server: 46.202.140.41
-  port: 11247
-  uuid: 54bbf92b-4d56-4bbe-b519-ad405aa6895d
-  skip-cert-verify: true
-  network: tcp
-  tls: false
-  udp: true
-- type: vless
-  name: xiaoer886_US_81
-  server: 152.70.155.147
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: a.xn--i-sx6a60i.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: a.xn--i-sx6a60i.us.kg
-- type: vless
-  name: xiaoer886_US_67
-  server: 15.204.145.23
-  port: 443
-  uuid: e20ebe01-1815-4c09-8e77-fb2f168263ce
-  skip-cert-verify: true
-  network: tcp
-  servername: 147135001178.sec22org.com
-  tls: true
-  udp: true
-- type: vless
-  name: xiaoer886_US_107
-  server: 104.21.88.131
-  port: 443
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: ppaL03.mr-lOlA-rAyNoR.WORKErs.dEV
-  ws-opts:
-    path: /qeIk5TeCFGaSnfP9?ed=2560
-    headers:
-      host: ppaL03.mr-lOlA-rAyNoR.WORKErs.dEV
-- type: vless
-  name: xiaoer886_US_66
-  server: 15.204.145.84
-  port: 443
-  uuid: ea286109-d20f-415e-849e-4af20ab04b65
-  skip-cert-verify: true
-  network: tcp
-  servername: 147135001195.sec22org.com
-  tls: true
-  udp: true
-- type: vless
-  name: xiaoer886_US_93
-  server: 104.18.43.169
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: a.xn--i-sx6a60i.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: a.xn--i-sx6a60i.us.kg
-- type: vless
-  name: xiaoer886_US_98
-  server: 172.67.216.94
-  port: 443
-  uuid: c43cf30c-18f1-4e20-bd88-73b1288c5202
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: worker-dry-breeze-60a0.chngyznwy.workers.dev
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: worker-dry-breeze-60a0.chngyznwy.workers.dev
-- type: vless
-  name: xiaoer886_US_110
-  server: 172.66.44.68
-  port: 443
-  uuid: 87ced8c4-b4d4-4c7b-ba67-11b78833a1b6
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: 37c60f8d.ALBAnGURaKUqi.paGEs.dEv
-  ws-opts:
-    path: /telegram-@expressvpn_420,telegram-@expressvpn_420,telegram-@expressvpn_420,telegram-@expressvpn_420,telegram-@expressvpn_420,telegram-@expressvpn_420,telegram-@expressvpn_420,telegram-@expressvpn_420,telegram-@expressvpn_420,telegram-@expressvpn_420,telegram-@expressvpn_420,telegram-@expressvpn_420?ed=2560
-    headers:
-      host: 37c60f8d.ALBAnGURaKUqi.paGEs.dEv
-- type: vless
-  name: xiaoer886_US_111
-  server: 162.159.138.178
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: a.xn--i-sx6a60i.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: a.xn--i-sx6a60i.us.kg
-- type: vless
-  name: xiaoer886_US_104
-  server: 104.16.227.101
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: a.xn--i-sx6a60i.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: a.xn--i-sx6a60i.us.kg
-- type: vless
-  name: xiaoer886_US_101
-  server: 104.26.9.236
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: a.xn--i-sx6a60i.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: a.xn--i-sx6a60i.us.kg
-- type: vless
-  name: xiaoer886_US_108
-  server: 104.18.82.33
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: a.xn--i-sx6a60i.us.kg
-  ws-opts:
-    path: /TELEGRAM-PROXY_MTM-TELEGRAM-PROXY_MTM-TELEGRAM-PROXY_MTM?ed=2560
-    headers:
-      host: a.xn--i-sx6a60i.us.kg
-- type: vless
-  name: xiaoer886_US_122
-  server: 170.114.45.159
-  port: 443
-  uuid: c3708323-48fe-49c2-aaef-84d0a4cd12ff
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: 3my2cynahdu6esnujyt3kd0onc3orjj5nuhqvmoqqbd0sj-dyc.15zyyu2.workers.Dev
-  ws-opts:
-    path: /
-    headers:
-      host: 3my2cynahdu6esnujyt3kd0onc3orjj5nuhqvmoqqbd0sj-dyc.15zyyu2.workers.Dev
-- type: vless
-  name: xiaoer886_US_76
-  server: 104.17.247.19
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: a.xn--i-sx6a60i.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: a.xn--i-sx6a60i.us.kg
-- type: vless
-  name: xiaoer886_US_115
-  server: 172.67.70.99
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: a.xn--i-sx6a60i.us.kg
-  ws-opts:
-    path: /
-    headers:
-      host: a.xn--i-sx6a60i.us.kg
-- type: vless
-  name: xiaoer886_US_239
-  server: 104.21.85.68
-  port: 443
-  uuid: 44b68625-8022-452b-8c91-ee40abe7ff63
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: ppaL03.aLesSIA-beRNiER.wORkeRS.dEv
-  ws-opts:
-    path: /TELEGRAM-MARAMBASHI/?ed=2048
-    headers:
-      host: ppaL03.aLesSIA-beRNiER.wORkeRS.dEv
-- type: vless
-  name: xiaoer886_US_274
-  server: 104.26.1.67
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: a.xn--i-sx6a60i.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: a.xn--i-sx6a60i.us.kg
-- type: vless
-  name: xiaoer886_US_259
-  server: 172.67.205.138
-  port: 443
-  uuid: 62a49d41-e231-4a6b-af26-cec86ef64001
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: 1403.stopt7307.workers.dev
-  ws-opts:
-    path: /
-    headers:
-      host: 1403.stopt7307.workers.dev
-- type: vless
-  name: xiaoer886_US_227
-  server: 104.27.0.44
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: a.xn--i-sx6a60i.us.kg
-  ws-opts:
-    path: /
-    headers:
-      host: a.xn--i-sx6a60i.us.kg
-- type: vless
-  name: xiaoer886_US_245
-  server: 104.26.7.40
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: a.xn--i-sx6a60i.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: a.xn--i-sx6a60i.us.kg
-- type: vless
-  name: xiaoer886_US_241
-  server: 104.27.37.19
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: a.xn--i-sx6a60i.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: a.xn--i-sx6a60i.us.kg
-- type: vless
-  name: xiaoer886_US_278
-  server: 104.17.247.119
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: a.xn--i-sx6a60i.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: a.xn--i-sx6a60i.us.kg
-- type: trojan
-  name: xiaoer886_US_377
-  server: 166.1.227.184
-  port: 443
-  password: '3723507166611775488'
-  udp: true
-  skip-cert-verify: true
-  sni: organic-hare.boa152.lol
-  network: tcp
-- type: vless
-  name: xiaoer886_US_287
-  server: 51.81.37.82
-  port: 443
-  uuid: 3b9bc773-05eb-4d5f-8c1f-57342c0c4f40
-  skip-cert-verify: true
-  network: tcp
-  servername: 147135010103.sec19org.com
-  tls: true
-  udp: true
-- name: 美国 078
-  type: vless
-  network: ws
-  server: 104.21.30.5
-  port: 80
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  servername: a.mifeng.us.kg
-  tls: false
-  ws-opts:
-    headers:
-      Host: a.mifeng.us.kg
-    path: /?ed=2048
-- name: 美国 082
-  type: vless
-  network: ws
-  server: 141.101.122.107
-  port: 80
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  servername: a.mifeng.us.kg
-  skip-cert-verify: false
-  ws-opts:
-    headers:
-      Host: a.mifeng.us.kg
-    path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed
-- type: vmess
-  name: 订阅随时会失效，请加电报群防止失联
-  ws-opts:
-    path: /path/1737280757504
-    headers:
-      host: www.17330585.xyz
-  server: 199.180.100.98
-  port: '31003'
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: '64'
-  cipher: auto
-  network: ws
-  tls: true
-- type: vmess
-  name: 🇺🇸_美国_1
-  ws-opts:
-    path: /path/1737281819057
-    headers:
-      host: www.37319796.xyz
-  server: 192.74.230.149
-  port: '30001'
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: '64'
-  cipher: auto
-  network: ws
-  tls: true
-- type: vmess
-  name: 🇺🇸_美国_4-Qlxn
-  ws-opts:
-    path: /path/1737280757504
-    headers:
-      host: www.65420682.xyz
-  server: 38.11.50.72
-  port: '31005'
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: '64'
-  cipher: auto
-  network: ws
-  tls: true
-- type: vmess
-  name: 🇸🇪_瑞典_1
-  ws-opts:
-    path: /path/1737281819057
-    headers:
-      host: www.24003370.xyz
-  server: 148.135.31.41
-  port: '37002'
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: '64'
-  cipher: auto
-  network: ws
-  tls: true
-- type: vmess
-  name: 🇨🇦_加拿大_1
-  ws-opts:
-    path: /path/1737281819057
-    headers:
-      host: www.76492797.xyz
-  server: 142.171.122.163
-  port: '31006'
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: '64'
-  cipher: auto
-  network: ws
-  tls: true
-- type: vmess
-  name: 🇺🇸_美国_7
-  ws-opts:
-    path: /path/1737281819057
-    headers:
-      host: www.28073723.xyz
-  server: 38.11.74.152
-  port: '38007'
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: '64'
-  cipher: auto
-  network: ws
-  tls: true
-- type: vmess
-  name: 🇺🇸_美国_8
-  ws-opts:
-    path: /path/1737280757504
-    headers:
-      host: www.70778598.xyz
-  server: 199.180.101.24
-  port: '38004'
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: '64'
-  cipher: auto
-  network: ws
-  tls: true
-- type: vmess
-  name: 🇺🇸_美国_9
-  ws-opts:
-    path: /path/1737280757504
-    headers:
-      host: www.23355292.xyz
-  server: 198.200.48.251
-  port: '37006'
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: '64'
-  cipher: auto
-  network: ws
-  tls: true
-- type: vmess
-  name: 🇺🇸_美国_10
-  ws-opts:
-    path: /path/1737281819057
-    headers:
-      host: www.42067459.xyz
-  server: 38.11.9.173
-  port: '37008'
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: '64'
-  cipher: auto
-  network: ws
-  tls: true
-- type: vmess
-  name: 🇺🇸_美国_11
-  ws-opts:
-    path: /path/1737280757504
-    headers:
-      host: www.57277774.xyz
-  server: 192.74.231.200
-  port: '37001'
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: '64'
-  cipher: auto
-  network: ws
-  tls: true
-- type: vmess
-  name: 🇺🇸_美国_12
-  ws-opts:
-    path: /path/1737281819057
-    headers:
-      host: www.86838014.xyz
-  server: 137.175.49.124
-  port: '37009'
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: '64'
-  cipher: auto
-  network: ws
-  tls: true
-- type: vmess
-  name: 🇺🇸_美国_13
-  ws-opts:
-    path: /path/1737280757504
-    headers:
-      host: www.23178778.xyz
-  server: 137.175.23.133
-  port: '36003'
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: '64'
-  cipher: auto
-  network: ws
-  tls: true
-- type: vmess
-  name: 🇸🇪_瑞典_3
-  ws-opts:
-    path: /path/1737281819057
-    headers:
-      host: www.56486239.xyz
-  server: 148.135.37.214
-  port: '30003'
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: '64'
-  cipher: auto
-  network: ws
-  tls: true
-- type: vmess
-  name: 🇺🇸_美国_15
-  ws-opts:
-    path: /path/1737280757504
-    headers:
-      host: www.62813234.xyz
-  server: 192.74.242.244
-  port: '38003'
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: '64'
-  cipher: auto
-  network: ws
-  tls: true
-- type: vmess
-  name: 🇺🇸_美国_19
-  ws-opts:
-    path: /path/1737194780660
-    headers:
-      host: www.93976091.xyz
-  server: 108.186.26.174
-  port: '37004'
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: '64'
-  cipher: auto
-  network: ws
-  tls: true
-- type: vmess
-  name: 🇺🇸_美国_23
-  ws-opts:
-    path: /path/1737188349819
-    headers:
-      host: www.64786755.xyz
-  server: 38.11.71.68
-  port: '37002'
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: '64'
-  cipher: auto
-  network: ws
-  tls: true
-- type: vmess
-  name: 🇺🇸_美国_26
-  ws-opts:
-    path: /path/1737281819057
-    headers:
-      host: www.16586486.xyz
-  server: 192.74.237.81
-  port: '37008'
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: '64'
-  cipher: auto
-  network: ws
-  tls: true
-- type: vmess
-  name: 🇺🇸_美国_27
-  ws-opts:
-    path: /path/1737188349819
-    headers:
-      host: www.46554484.xyz
-  server: 199.188.105.59
-  port: '31004'
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: '64'
-  cipher: auto
-  network: ws
-  tls: true
-- type: vmess
-  name: 🇺🇸_美国_146
-  ws-opts:
-    path: /path/1737285757504
-    headers:
-      host: www.35743578.xyz
-  server: 199.180.103.26
-  port: '37007'
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: '64'
-  cipher: auto
-  network: ws
-  tls: true
-- type: vless
-  name: 🇺🇦_乌克兰_1
-  server: 95.164.51.24
-  port: 2501
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: a.mifeng.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: a.mifeng.us.kg
-- cipher: aes-256-gcm
-  name: 🇺🇸US-38.68.134.202-6212 | 15.998MB
-  password: faBAoD54k87UJG7
-  port: 2375
-  server: 38.68.134.202
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇺🇸US-45.55.2.232-0409 | 44.011MB
-  password: 2170f8
-  port: 14293
-  server: 45.55.2.232
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇺🇸US-52.11.79.56-0450 | 46.71MB
   password: amazonskr05
+  cipher: aes-256-cfb
+- name: 🇷🇺_RU_俄罗斯_2
+  port: 8388
+  server: 89.221.224.166
+  type: ss
+  udp: true
+  password: MDZhNTAz
+  cipher: chacha20-ietf-poly1305
+- type: vless
+  name: xiaoer886_US_250
+  server: 172.67.216.86
   port: 443
-  server: 52.11.79.56
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: a.xn--i-sx6a60i.us.kg
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: a.xn--i-sx6a60i.us.kg
+- name: 美国5
+  server: usgp2-cdn-route.couldflare-cdn.com
+  port: 443
+  type: http
+  tls: true
+  skip-cert-verify: false
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+  password: exaxgqkKkd0TAMrCxeonWg==
+- name: 美国03
+  server: us-ashburn-virginia-2.keenvpn.me
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  udp: true
+- name: 美国04
+  server: us-ashburn-virginia.keenvpn.me
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  udp: true
+- cipher: aes-256-cfb
+  name: AR-190.103.176.29-5721 | 14.127MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 190.103.176.29
   type: ss
 - cipher: aes-256-cfb
-  name: 🇺🇸US-54.218.237.217-0468 | 55.157MB
-  password: amazonskr05
+  name: BE-192.71.249.78-5722 | 10.589MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 192.71.249.78
+  type: ss
+- cipher: aes-128-gcm
+  name: CH-156.146.62.161-0514 | 22.212MB
+  password: shadowsocks
   port: 443
-  server: 54.218.237.217
+  server: 156.146.62.161
   type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸US-69.50.92.72-5896 | 15.415MB
-  password: kDWvXYZoTBcGkC4
-  port: 8882
-  server: 69.50.92.72
+- cipher: aes-128-gcm
+  name: CH-156.146.62.162-0518 | 21.898MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.162
   type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸US-69.50.92.72-5904 | 13.921MB
-  password: kDWvXYZoTBcGkC4
-  port: 8881
-  server: 69.50.92.72
+- cipher: aes-128-gcm
+  name: CH-156.146.62.163-0522 | 22.599MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.163
   type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸US-69.50.93.86-6237 | 5.314MB
-  password: Y6R9pAtvxxzmGC
-  port: 8888
-  server: 69.50.93.86
-  type: ss
-- cipher: rc4-md5
-  name: 🇺🇸US-79.110.53.169-0400 | 56.614MB
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 79.110.53.169
+- cipher: aes-128-gcm
+  name: CH-156.146.62.164-0516 | 21.755MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.164
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇺🇸US-92.118.112.111-0535 | 88.022MB
-  password: gmYDzSG6K35s8b19oY4fGz
-  port: 18622
-  server: 92.118.112.111
+  name: CZ-195.181.160.6-0525 | 22.561MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 195.181.160.6
   type: ss
-- name: _203
-  type: vmess
-  server: 140.83.63.38
-  port: 24445
-  uuid: 94c5ef37-4d82-49f9-c624-f01259374a17
-  alterId: 64
+- cipher: aes-256-cfb
+  name: LV-46.183.217.232-0564 | 20.206MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 46.183.217.232
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: MD-103.106.1.92-0538 | 21.589MB
+  password: yMX9WGPgUEcRZmlaa0YHHC
+  port: 23492
+  server: 103.106.1.92
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: NO-51.13.183.76-0536 | 21.726MB
+  password: 07LkDtx6AwrmkLMbehrIAh
+  port: 6454
+  server: 51.13.183.76
+  type: ss
+- cipher: aes-256-cfb
+  name: PA-138.186.142.4-6209 | 15.319MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 138.186.142.4
+  type: ss
+- alterId: 0
   cipher: auto
-  network: ''
-  tls: false
-  sni: ''
-  ws-opts: {}
-- name: _205
-  type: vmess
-  server: 198.2.218.102
-  port: 41400
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
-  network: ''
-  tls: false
-  sni: ''
-  ws-opts: {}
-- name: _206
-  type: vmess
-  server: 142.0.134.241
-  port: 45017
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
-  network: ''
-  tls: false
-  sni: ''
-  ws-opts: {}
-- name: 🇩🇪 DE_234
-  type: vmess
-  server: frankfurt03.zgjok.com
-  port: 443
-  uuid: 4f7c2243-a38a-4672-983b-f1378aee0a7f
-  alterId: 0
-  cipher: auto
+  name: RELAY-104.16.155.10-0296 | 18.685MB
   network: ws
-  tls: true
-  sni: ''
+  port: 80
+  server: 104.16.155.10
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: e6543319-0574-42ac-b778-1c4325d626f5
   ws-opts:
+    headers:
+      Host: chunchuan.kejixiaoqi666.store
     path: /
-    headers:
-      Host: frankfurt03.zgjok.com
-- name: 🇫🇷 FR_246
-  type: vmess
-  server: 194.9.172.65
-  port: 443
-  uuid: 8d90c129-4156-4d6c-9115-24df25f26a02
-  alterId: 0
+- alterId: 0
   cipher: auto
+  name: RELAY-104.19.48.236-0297 | 18.717MB
   network: ws
-  tls: true
-  sni: ''
+  port: 80
+  server: 104.19.48.236
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: e6543319-0574-42ac-b778-1c4325d626f5
   ws-opts:
-    path: /linkws
     headers:
-      Host: beyonddbc.sbs
-- name: 🇭🇰 HK_313
-  type: vmess
-  server: 118.193.33.237
-  port: 40908
-  uuid: 43740b3d-16b7-4d31-cf20-f1eab5e35bc9
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  sni: ''
-  ws-opts: {}
-- name: 🇷🇴 RO_360
-  type: vmess
-  server: 193.29.107.234
-  port: 49020
-  uuid: 2e967dd5-8d24-4099-a901-412dcb4024fd
-  alterId: 64
-  cipher: auto
-  network: tcp
-  tls: false
-  sni: ''
-  ws-opts: {}
-- name: 🇺🇸 US_413
-  type: vmess
-  server: 142.4.104.33
-  port: 52143
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
-  network: tcp
-  tls: false
-  sni: ''
-  ws-opts: {}
-- name: 🇺🇸 US_417
-  type: vmess
-  server: 142.0.134.245
-  port: 45017
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
-  network: tcp
-  tls: false
-  sni: ''
-  ws-opts: {}
-- name: 🇺🇸 US_418
-  type: vmess
-  server: 107.148.207.249
-  port: 48712
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
-  network: tcp
-  tls: false
-  sni: ''
-  ws-opts: {}
-- name: 🇺🇸 US_420
-  type: vmess
-  server: 142.0.134.243
-  port: 45017
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
-  network: tcp
-  tls: false
-  sni: ''
-  ws-opts: {}
-- name: 🇺🇸 US_422
-  type: vmess
-  server: 142.0.134.244
-  port: 45017
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
-  network: tcp
-  tls: false
-  sni: ''
-  ws-opts: {}
-- name: 🇺🇸 US_427
-  type: vmess
-  server: 142.0.134.242
-  port: 45017
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
-  network: tcp
-  tls: false
-  sni: ''
-  ws-opts: {}
-- name: 🇺🇸 US_428
-  type: vmess
-  server: 198.2.218.100
-  port: 41400
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
-  network: tcp
-  tls: false
-  sni: ''
-  ws-opts: {}
-- name: 🇺🇸US_580
-  type: vmess
-  server: 154.47.21.27
-  port: 8099
-  uuid: fa1897db-1925-4c86-a495-939a959af900
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  sni: ''
-  ws-opts: {}
-- name: 🇩🇪 德国 | DEU 8
-  server: oracle-arm-frankfurt1.lanmaoyun.icu
-  port: 30001
-  client-fingerprint: chrome
-  type: hysteria2
-  password: feb9dd07-3669-480e-987f-27f68d83b933
-  auth: feb9dd07-3669-480e-987f-27f68d83b933
-  sni: frankfurt1.nodes.lanmaoyun.icu
-  up: 100
-  down: 1000
-  skip-cert-verify: true
-  udp: true
+      Host: chunchuan.kejixiaoqi666.store
+    path: /
+- cipher: aes-256-cfb
+  name: RS-194.71.126.31-0546 | 21.008MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 194.71.126.31
+  type: ss
+- cipher: aes-256-cfb
+  name: SE-121.127.46.147-0548 | 21.508MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 121.127.46.147
+  type: ss
+- cipher: aes-256-cfb
+  name: SK-156.146.40.194-0541 | 19.966MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 156.146.40.194
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-142.4.216.225-0562 | 17.346MB
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: ca225.vpnbook.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-142.4.216.225-5516 | 19.278MB
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇨🇦CA-149.22.95.183-0427 | 72.775MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.95.183
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇨🇳TW-185.189.160.98-6344 | 16.766MB
+  password: qwerREWQ@@
+  port: 64759
+  server: 185.189.160.98
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-80.92.204.106-5750 | 11.117MB
+  password: FAdUvMJUq5vDgKEq
+  port: 9006
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-80.92.204.106-5751 | 12.552MB
+  password: Sn5B7jTqr76aCJT8
+  port: 9097
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-80.92.204.106-5752 | 7.756MB
+  password: cp8pRSUAyLhTfVWH
+  port: 9064
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-80.92.204.106-5755 | 11.443MB
+  password: ZpNDDKRu9MagNvaf
+  port: 9015
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-80.92.204.106-5756 | 13.286MB
+  password: 4R3hUfZ2FHhDmNcP
+  port: 9061
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇩🇰DK-192.36.27.94-4599 | 12.385MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 192.36.27.94
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇫🇷FR-195.154.169.198-0471 | 23.293MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 195.154.169.198
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇫🇷FR-195.154.185.174-0474 | 23.282MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 195.154.185.174
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇫🇷FR-51.15.27.48-0463 | 23.937MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.27.48
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇫🇷FR-51.159.111.208-0476 | 23.236MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.159.111.208
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-141.98.101.178-0489 | 18.644MB
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-141.98.101.179-0508 | 21.62MB
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.179
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-141.98.101.180-0484 | 21.517MB
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.180
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-141.98.101.182-0513 | 19.387MB
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.182
+  type: ss
+- cipher: rc4-md5
+  name: 🇬🇧GB-146.70.61.18-0456 | 24.423MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 146.70.61.18
+  type: ss
+- cipher: rc4-md5
+  name: 🇬🇧GB-169.150.210.233-0500 | 22.921MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 169.150.210.233
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.193-0442 | 26.372MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.193
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.194-0187 | 25.719MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.194
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.195-0435 | 27.0MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.195
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.196-0441 | 26.979MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.196
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.197-0462 | 28.875MB
+  password: shadowsocks
+  port: 443
+  server: uk-dc1.yangon.club
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.197-5424 | 28.324MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.197
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.198-0458 | 29.475MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.198
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.78-0434 | 26.899MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.78
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.79-0457 | 28.043MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.79
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.80-0459 | 27.965MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.80
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.81-0437 | 27.457MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.81
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇬🇧GB-62.100.205.48-0440 | 26.318MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 62.100.205.48
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇬🇧GB-77.72.5.113-0432 | 23.736MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 77.72.5.113
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇭🇰HK-112.213.102.228-6146 | 8.675MB
+  password: qwerREWQ@@
+  port: 4231
+  server: 112.213.102.228
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.204-6235 | 21.007MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.240-0569 | 20.481MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.240
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.241-0568 | 20.65MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.241
+  type: ss
+- cipher: aes-128-cfb
+  name: 🇳🇱NL-109.201.152.181-0453 | 23.856MB
+  password: shadowsocks
+  port: 443
+  server: 109.201.152.181
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇳🇱NL-149.34.244.68-0488 | 23.777MB
+  password: shadowsocks
+  port: 443
+  server: 149.34.244.68
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇳🇱NL-149.34.244.77-0469 | 25.388MB
+  password: shadowsocks
+  port: 443
+  server: 149.34.244.77
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇳🇱NL-149.34.244.82-0475 | 25.354MB
+  password: shadowsocks
+  port: 443
+  server: 149.34.244.82
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱NL-5.35.47.122-0472 | 20.801MB
+  password: CLphyEMQT8nbG8EImX0A2D
+  port: 45635
+  server: 5.35.47.122
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇵🇱PL-92.118.205.228-5747 | 17.368MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 92.118.205.228
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇷🇺RU-45.151.62.54-0557 | 16.161MB
+  password: 0zyDRZ1XmNXaaCAN7KEA8a
+  port: 28825
+  server: 45.151.62.54
+  type: ss
+- cipher: rc4-md5
+  name: 🇸🇬SG-128.199.172.224-6356 | 19.387MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 128.199.172.224
+  type: ss
+- cipher: rc4-md5
+  name: 🇸🇬SG-68.183.227.236-6165 | 19.303MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 68.183.227.236
+  type: ss
+- cipher: rc4-md5
+  name: 🇸🇬SG-68.183.227.4-6349 | 19.086MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 68.183.227.4
+  type: ss
+- cipher: rc4-md5
+  name: 🇺🇸US-107.151.182.253-0813 | 38.653MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 107.151.182.253
+  type: ss
+- cipher: rc4-md5
+  name: 🇺🇸US-107.155.57.11-0406 | 73.328MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 107.155.57.11
+  type: ss
+- cipher: rc4-md5
+  name: 🇺🇸US-107.155.57.51-0424 | 57.273MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 107.155.57.51
+  type: ss
+- cipher: chacha20-ietf
+  name: 🇺🇸US-137.175.113.192-0411 | 8.77MB
+  password: asd123456
+  port: 8388
+  server: 137.175.113.192
+  type: ss
+- cipher: rc4-md5
+  name: 🇺🇸US-138.199.42.68-0390 | 101.712MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 138.199.42.68
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-142.202.49.84-5899 | 5.011MB
+  password: TEzjfAYq2IjtuoS
+  port: 6679
+  server: 142.202.49.84
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-156.146.38.167-0384 | 90.605MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.167
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-156.146.38.168-0381 | 95.266MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.168
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-156.146.38.169-0383 | 133.736MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.169
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-156.146.38.170-0382 | 101.09MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.170
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-173.244.56.6-0392 | 75.064MB
+  password: shadowsocks
+  port: 443
+  server: 173.244.56.6
+  type: ss
+- cipher: aes-128-cfb
+  name: 🇺🇸US-184.170.241.194-0393 | 81.801MB
+  password: shadowsocks
+  port: 443
+  server: 184.170.241.194
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸US-207.246.101.50-0439 | 37.069MB
+  password: o_A7inN1yqeWtOTL
+  port: 1633
+  server: 207.246.101.50
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-212.102.47.130-0397 | 78.235MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.47.130
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-212.102.47.131-0415 | 81.427MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.47.131
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-23.157.40.101-6067 | 5.806MB
+  password: FoOiGlkAA9yPEGP
+  port: 7307
+  server: 23.157.40.101
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-23.157.40.103-5992 | 5.576MB
+  password: TEzjfAYq2IjtuoS
+  port: 6697
+  server: 23.157.40.103
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-23.157.40.113-5950 | 5.474MB
+  password: zDNVedRFPQexG9v
+  port: 6379
+  server: 23.157.40.113
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-23.157.40.5-6352 | 5.821MB
+  password: cdBIDV42DCwnfIN
+  port: 8119
+  server: 23.157.40.5
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-23.157.40.5-6353 | 6.145MB
+  password: Y6R9pAtvxxzmGC
+  port: 5000
+  server: 23.157.40.5
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-23.157.40.5-6354 | 7.509MB
+  password: PCnnH6SQSnfoS27
+  port: 8091
+  server: 23.157.40.5
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-23.157.40.5-6360 | 6.779MB
+  password: cdBIDV42DCwnfIN
+  port: 8118
+  server: 23.157.40.5
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-23.157.40.5-6368 | 8.144MB
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 23.157.40.5
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-23.157.40.5-6375 | 9.503MB
+  password: pKEW8JPByTVTLtM
+  port: 443
+  server: 23.157.40.5
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-23.157.40.85-0524 | 16.762MB
+  password: TEzjfAYq2IjtuoS
+  port: 6697
+  server: 23.157.40.85
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-37.19.198.160-0373 | 112.432MB
+  password: shadowsocks
+  port: 443
+  server: 37.19.198.160
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-37.19.198.236-0376 | 124.327MB
+  password: shadowsocks
+  port: 443
+  server: 37.19.198.236
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-37.19.198.243-0375 | 107.373MB
+  password: shadowsocks
+  port: 443
+  server: 37.19.198.243
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-37.19.198.244-0372 | 109.3MB
+  password: shadowsocks
+  port: 443
+  server: 37.19.198.244
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.110.1.111-0473 | 23.019MB
+  password: KixLvKzwjekG00rm
+  port: 8000
+  server: 38.110.1.111
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.51-0464 | 34.048MB
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 38.121.43.51
+  type: ss
 proxy-groups:
 - name: 节点选择
   type: select
@@ -1189,106 +674,106 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 🇨🇦_CA_加拿大
-  - xiaoer886_US_5
-  - xiaoer886_US_287
-  - xiaoer886_US_278
-  - xiaoer886_US_14
-  - xiaoer886_US_104
-  - xiaoer886_US_30
-  - xiaoer886_US_76
-  - xiaoer886_US_241
-  - xiaoer886_US_2
-  - xiaoer886_US_50
-  - xiaoer886_US_239
-  - xiaoer886_BR_2
-  - xiaoer886_US_259
-  - xiaoer886_US_93
-  - xiaoer886_US_115
-  - xiaoer886_US_55
-  - xiaoer886_US_111
-  - xiaoer886_US_4
-  - xiaoer886_US_101
-  - xiaoer886_US_108
-  - 美国 078
-  - xiaoer886_US_122
-  - 美国 082
-  - xiaoer886_US_377
-  - xiaoer886_US_274
-  - xiaoer886_US_245
-  - xiaoer886_US_46
-  - xiaoer886_US_107
-  - xiaoer886_US_15
-  - xiaoer886_US_44
-  - xiaoer886_US_54
-  - xiaoer886_US_98
-  - xiaoer886_US_38
-  - xiaoer886_US_110
-  - xiaoer886_US_67
-  - xiaoer886_US_66
-  - 🇺🇸US-69.50.93.86-6237 | 5.314MB
-  - xiaoer886_US_227
-  - xiaoer886_RU_2
-  - xiaoer886_IT_1
-  - 🇺🇸US-92.118.112.111-0535 | 88.022MB
-  - 🇺🇸US-38.68.134.202-6212 | 15.998MB
-  - 🇺🇸US-45.55.2.232-0409 | 44.011MB
-  - 🇺🇸 US_418
-  - 🇺🇸US-69.50.92.72-5904 | 13.921MB
-  - xiaoer886_UA_3
-  - xiaoer886_US_45
-  - xiaoer886_US_320
-  - 🇺🇸US_580
-  - 🇺🇸US-54.218.237.217-0468 | 55.157MB
-  - _206
-  - xiaoer886_US_81
-  - 🇺🇸 US_417
-  - xiaoer886_US_39
-  - 🇺🇸 US_420
-  - 🇺🇸US-79.110.53.169-0400 | 56.614MB
-  - 🇺🇸 US_413
-  - 🇺🇸_US_美国_6
-  - 🇺🇸 US_427
-  - 🇷🇺_RU_俄罗斯_3
-  - 🇺🇸 US_422
-  - 🇷🇴 RO_360
-  - 🇨🇦_加拿大_1
-  - 🇸🇪_瑞典_3
-  - 🇸🇪_瑞典_1
-  - 🇷🇺_RU_俄罗斯_1-D0ir
-  - 🇺🇸US-52.11.79.56-0450 | 46.71MB
-  - 🇺🇸_美国_8
-  - 🇺🇸_美国_27
-  - 🇺🇸_美国_146
-  - 🇺🇸_美国_10
-  - 🇺🇸_美国_4-Qlxn
-  - 🇺🇸_美国_12
-  - 🇺🇸_美国_23
-  - 🇺🇸_US_美国_9
-  - 🇺🇸_US_美国_1-zu78
-  - 🇺🇸_美国_9
-  - 🇺🇸_美国_7
-  - 🇺🇸_US_美国_5
-  - 🇺🇸_美国_15
-  - 🇺🇸_US_美国
-  - 🇺🇸_US_美国_10
-  - 🇺🇸_US_美国_2-WB6B
-  - 🇺🇸_美国_19
-  - 🇺🇸_美国_11
-  - 🇺🇸_美国_13
-  - 🇩🇪 德国 | DEU 8
-  - 🇺🇦_乌克兰_1
-  - 🇩🇪 DE_234
-  - 🇫🇷 FR_246
-  - 🇷🇺_RU_俄罗斯
-  - 🇭🇰 HK_313
-  - _205
-  - _203
-  - 🇺🇸US-69.50.92.72-5896 | 15.415MB
-  - 🇺🇸_美国_1
-  - 🇺🇸_美国_26
-  - 订阅随时会失效，请加电报群防止失联
-  - 🇺🇸 US_428
+  - 🇺🇸US-138.199.42.68-0390 | 101.712MB
+  - 🇺🇸US-156.146.38.167-0384 | 90.605MB
+  - 🇺🇸US-156.146.38.170-0382 | 101.09MB
+  - 🇺🇸US-156.146.38.169-0383 | 133.736MB
+  - 🇺🇸US-38.121.43.51-0464 | 34.048MB
+  - 🇺🇸US-156.146.38.168-0381 | 95.266MB
+  - 🇨🇦CA-142.4.216.225-5516 | 19.278MB
+  - 🇺🇸US-37.19.198.244-0372 | 109.3MB
+  - 🇺🇸US-37.19.198.243-0375 | 107.373MB
+  - 🇺🇸US-37.19.198.236-0376 | 124.327MB
+  - 🇺🇸US-37.19.198.160-0373 | 112.432MB
+  - 🇺🇸US-142.202.49.84-5899 | 5.011MB
+  - xiaoer886_US_250
+  - 🇺🇸US-38.110.1.111-0473 | 23.019MB
+  - 🇺🇸US-212.102.47.131-0415 | 81.427MB
+  - 🇺🇸US-207.246.101.50-0439 | 37.069MB
+  - 🇺🇸US-212.102.47.130-0397 | 78.235MB
+  - 🇨🇦CA-149.22.95.183-0427 | 72.775MB
+  - 🇺🇸US-184.170.241.194-0393 | 81.801MB
+  - 🇺🇸US-173.244.56.6-0392 | 75.064MB
+  - 🇨🇦CA-142.4.216.225-0562 | 17.346MB
+  - 🇺🇸US-23.157.40.103-5992 | 5.576MB
+  - 🇺🇸_US_美国->🇷🇴_RO_罗马尼亚_1
+  - 🇺🇸US-107.155.57.11-0406 | 73.328MB
+  - 🇺🇸US-107.155.57.51-0424 | 57.273MB
+  - 🇺🇸US-137.175.113.192-0411 | 8.77MB
+  - 美国04
+  - 🇬🇧GB-212.102.53.78-0434 | 26.899MB
+  - 🇬🇧GB-212.102.53.195-0435 | 27.0MB
+  - 🇬🇧GB-212.102.53.194-0187 | 25.719MB
+  - 🇬🇧GB-212.102.53.81-0437 | 27.457MB
+  - 🇬🇧GB-212.102.53.79-0457 | 28.043MB
+  - 🇬🇧GB-212.102.53.193-0442 | 26.372MB
+  - 🇬🇧GB-212.102.53.197-5424 | 28.324MB
+  - 🇬🇧GB-212.102.53.196-0441 | 26.979MB
+  - 🇬🇧GB-212.102.53.198-0458 | 29.475MB
+  - 🇬🇧GB-212.102.53.80-0459 | 27.965MB
+  - 🇳🇱NL-149.34.244.82-0475 | 25.354MB
+  - 🇬🇧GB-62.100.205.48-0440 | 26.318MB
+  - 🇳🇱NL-149.34.244.77-0469 | 25.388MB
+  - 🇳🇱NL-109.201.152.181-0453 | 23.856MB
+  - 🇳🇱NL-149.34.244.68-0488 | 23.777MB
+  - 🇳🇱NL-5.35.47.122-0472 | 20.801MB
+  - 🇫🇷FR-51.159.111.208-0476 | 23.236MB
+  - 美国03
+  - 🇺🇸US-23.157.40.85-0524 | 16.762MB
+  - 🇺🇸US-107.151.182.253-0813 | 38.653MB
+  - 🇫🇷FR-195.154.169.198-0471 | 23.293MB
+  - 🇺🇸US-23.157.40.5-6375 | 9.503MB
+  - CH-156.146.62.162-0518 | 21.898MB
+  - 🇺🇸US-23.157.40.113-5950 | 5.474MB
+  - CH-156.146.62.164-0516 | 21.755MB
+  - CH-156.146.62.163-0522 | 22.599MB
+  - CH-156.146.62.161-0514 | 22.212MB
+  - 🇬🇧GB-141.98.101.178-0489 | 18.644MB
+  - 🇺🇸US-23.157.40.5-6352 | 5.821MB
+  - 🇺🇸US-23.157.40.5-6360 | 6.779MB
+  - NO-51.13.183.76-0536 | 21.726MB
+  - 🇺🇸US-23.157.40.5-6368 | 8.144MB
+  - SE-121.127.46.147-0548 | 21.508MB
+  - 🇺🇸US-23.157.40.5-6353 | 6.145MB
+  - 🇬🇧GB-141.98.101.179-0508 | 21.62MB
+  - 🇬🇧GB-141.98.101.180-0484 | 21.517MB
+  - 🇬🇧GB-77.72.5.113-0432 | 23.736MB
+  - 🇬🇧GB-141.98.101.182-0513 | 19.387MB
+  - 🇬🇧GB-212.102.53.197-0462 | 28.875MB
+  - 🇫🇷FR-51.15.27.48-0463 | 23.937MB
+  - 🇬🇧GB-146.70.61.18-0456 | 24.423MB
+  - MD-103.106.1.92-0538 | 21.589MB
+  - SK-156.146.40.194-0541 | 19.966MB
+  - 🇩🇪DE-80.92.204.106-5756 | 13.286MB
+  - 🇷🇺_RU_俄罗斯_2
+  - BE-192.71.249.78-5722 | 10.589MB
+  - 🇫🇷FR-195.154.185.174-0474 | 23.282MB
+  - 🇩🇪DE-80.92.204.106-5755 | 11.443MB
+  - 🇬🇧GB-169.150.210.233-0500 | 22.921MB
+  - 🇯🇵JP-149.22.87.204-6235 | 21.007MB
+  - 🇯🇵JP-149.22.87.240-0569 | 20.481MB
+  - 🇯🇵JP-149.22.87.241-0568 | 20.65MB
+  - 美国5
+  - CZ-195.181.160.6-0525 | 22.561MB
+  - 🇵🇱PL-92.118.205.228-5747 | 17.368MB
+  - LV-46.183.217.232-0564 | 20.206MB
+  - 🇷🇺RU-45.151.62.54-0557 | 16.161MB
+  - 🇺🇸US-23.157.40.101-6067 | 5.806MB
+  - 🇺🇸US-23.157.40.5-6354 | 7.509MB
+  - 🇩🇪DE-80.92.204.106-5750 | 11.117MB
+  - 🇩🇰DK-192.36.27.94-4599 | 12.385MB
+  - AR-190.103.176.29-5721 | 14.127MB
+  - RS-194.71.126.31-0546 | 21.008MB
+  - 🇩🇪DE-80.92.204.106-5751 | 12.552MB
+  - PA-138.186.142.4-6209 | 15.319MB
+  - 🇭🇰HK-112.213.102.228-6146 | 8.675MB
+  - 🇸🇬SG-68.183.227.236-6165 | 19.303MB
+  - 🇸🇬SG-68.183.227.4-6349 | 19.086MB
+  - 🇸🇬SG-128.199.172.224-6356 | 19.387MB
+  - 🇨🇳TW-185.189.160.98-6344 | 16.766MB
+  - 🇩🇪DE-80.92.204.106-5752 | 7.756MB
+  - RELAY-104.16.155.10-0296 | 18.685MB
+  - RELAY-104.19.48.236-0297 | 18.717MB
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
@@ -1296,211 +781,211 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 🇨🇦_CA_加拿大
-  - xiaoer886_US_5
-  - xiaoer886_US_287
-  - xiaoer886_US_278
-  - xiaoer886_US_14
-  - xiaoer886_US_104
-  - xiaoer886_US_30
-  - xiaoer886_US_76
-  - xiaoer886_US_241
-  - xiaoer886_US_2
-  - xiaoer886_US_50
-  - xiaoer886_US_239
-  - xiaoer886_BR_2
-  - xiaoer886_US_259
-  - xiaoer886_US_93
-  - xiaoer886_US_115
-  - xiaoer886_US_55
-  - xiaoer886_US_111
-  - xiaoer886_US_4
-  - xiaoer886_US_101
-  - xiaoer886_US_108
-  - 美国 078
-  - xiaoer886_US_122
-  - 美国 082
-  - xiaoer886_US_377
-  - xiaoer886_US_274
-  - xiaoer886_US_245
-  - xiaoer886_US_46
-  - xiaoer886_US_107
-  - xiaoer886_US_15
-  - xiaoer886_US_44
-  - xiaoer886_US_54
-  - xiaoer886_US_98
-  - xiaoer886_US_38
-  - xiaoer886_US_110
-  - xiaoer886_US_67
-  - xiaoer886_US_66
-  - 🇺🇸US-69.50.93.86-6237 | 5.314MB
-  - xiaoer886_US_227
-  - xiaoer886_RU_2
-  - xiaoer886_IT_1
-  - 🇺🇸US-92.118.112.111-0535 | 88.022MB
-  - 🇺🇸US-38.68.134.202-6212 | 15.998MB
-  - 🇺🇸US-45.55.2.232-0409 | 44.011MB
-  - 🇺🇸 US_418
-  - 🇺🇸US-69.50.92.72-5904 | 13.921MB
-  - xiaoer886_UA_3
-  - xiaoer886_US_45
-  - xiaoer886_US_320
-  - 🇺🇸US_580
-  - 🇺🇸US-54.218.237.217-0468 | 55.157MB
-  - _206
-  - xiaoer886_US_81
-  - 🇺🇸 US_417
-  - xiaoer886_US_39
-  - 🇺🇸 US_420
-  - 🇺🇸US-79.110.53.169-0400 | 56.614MB
-  - 🇺🇸 US_413
-  - 🇺🇸_US_美国_6
-  - 🇺🇸 US_427
-  - 🇷🇺_RU_俄罗斯_3
-  - 🇺🇸 US_422
-  - 🇷🇴 RO_360
-  - 🇨🇦_加拿大_1
-  - 🇸🇪_瑞典_3
-  - 🇸🇪_瑞典_1
-  - 🇷🇺_RU_俄罗斯_1-D0ir
-  - 🇺🇸US-52.11.79.56-0450 | 46.71MB
-  - 🇺🇸_美国_8
-  - 🇺🇸_美国_27
-  - 🇺🇸_美国_146
-  - 🇺🇸_美国_10
-  - 🇺🇸_美国_4-Qlxn
-  - 🇺🇸_美国_12
-  - 🇺🇸_美国_23
-  - 🇺🇸_US_美国_9
-  - 🇺🇸_US_美国_1-zu78
-  - 🇺🇸_美国_9
-  - 🇺🇸_美国_7
-  - 🇺🇸_US_美国_5
-  - 🇺🇸_美国_15
-  - 🇺🇸_US_美国
-  - 🇺🇸_US_美国_10
-  - 🇺🇸_US_美国_2-WB6B
-  - 🇺🇸_美国_19
-  - 🇺🇸_美国_11
-  - 🇺🇸_美国_13
-  - 🇩🇪 德国 | DEU 8
-  - 🇺🇦_乌克兰_1
-  - 🇩🇪 DE_234
-  - 🇫🇷 FR_246
-  - 🇷🇺_RU_俄罗斯
-  - 🇭🇰 HK_313
-  - _205
-  - _203
-  - 🇺🇸US-69.50.92.72-5896 | 15.415MB
-  - 🇺🇸_美国_1
-  - 🇺🇸_美国_26
-  - 订阅随时会失效，请加电报群防止失联
-  - 🇺🇸 US_428
+  - 🇺🇸US-138.199.42.68-0390 | 101.712MB
+  - 🇺🇸US-156.146.38.167-0384 | 90.605MB
+  - 🇺🇸US-156.146.38.170-0382 | 101.09MB
+  - 🇺🇸US-156.146.38.169-0383 | 133.736MB
+  - 🇺🇸US-38.121.43.51-0464 | 34.048MB
+  - 🇺🇸US-156.146.38.168-0381 | 95.266MB
+  - 🇨🇦CA-142.4.216.225-5516 | 19.278MB
+  - 🇺🇸US-37.19.198.244-0372 | 109.3MB
+  - 🇺🇸US-37.19.198.243-0375 | 107.373MB
+  - 🇺🇸US-37.19.198.236-0376 | 124.327MB
+  - 🇺🇸US-37.19.198.160-0373 | 112.432MB
+  - 🇺🇸US-142.202.49.84-5899 | 5.011MB
+  - xiaoer886_US_250
+  - 🇺🇸US-38.110.1.111-0473 | 23.019MB
+  - 🇺🇸US-212.102.47.131-0415 | 81.427MB
+  - 🇺🇸US-207.246.101.50-0439 | 37.069MB
+  - 🇺🇸US-212.102.47.130-0397 | 78.235MB
+  - 🇨🇦CA-149.22.95.183-0427 | 72.775MB
+  - 🇺🇸US-184.170.241.194-0393 | 81.801MB
+  - 🇺🇸US-173.244.56.6-0392 | 75.064MB
+  - 🇨🇦CA-142.4.216.225-0562 | 17.346MB
+  - 🇺🇸US-23.157.40.103-5992 | 5.576MB
+  - 🇺🇸_US_美国->🇷🇴_RO_罗马尼亚_1
+  - 🇺🇸US-107.155.57.11-0406 | 73.328MB
+  - 🇺🇸US-107.155.57.51-0424 | 57.273MB
+  - 🇺🇸US-137.175.113.192-0411 | 8.77MB
+  - 美国04
+  - 🇬🇧GB-212.102.53.78-0434 | 26.899MB
+  - 🇬🇧GB-212.102.53.195-0435 | 27.0MB
+  - 🇬🇧GB-212.102.53.194-0187 | 25.719MB
+  - 🇬🇧GB-212.102.53.81-0437 | 27.457MB
+  - 🇬🇧GB-212.102.53.79-0457 | 28.043MB
+  - 🇬🇧GB-212.102.53.193-0442 | 26.372MB
+  - 🇬🇧GB-212.102.53.197-5424 | 28.324MB
+  - 🇬🇧GB-212.102.53.196-0441 | 26.979MB
+  - 🇬🇧GB-212.102.53.198-0458 | 29.475MB
+  - 🇬🇧GB-212.102.53.80-0459 | 27.965MB
+  - 🇳🇱NL-149.34.244.82-0475 | 25.354MB
+  - 🇬🇧GB-62.100.205.48-0440 | 26.318MB
+  - 🇳🇱NL-149.34.244.77-0469 | 25.388MB
+  - 🇳🇱NL-109.201.152.181-0453 | 23.856MB
+  - 🇳🇱NL-149.34.244.68-0488 | 23.777MB
+  - 🇳🇱NL-5.35.47.122-0472 | 20.801MB
+  - 🇫🇷FR-51.159.111.208-0476 | 23.236MB
+  - 美国03
+  - 🇺🇸US-23.157.40.85-0524 | 16.762MB
+  - 🇺🇸US-107.151.182.253-0813 | 38.653MB
+  - 🇫🇷FR-195.154.169.198-0471 | 23.293MB
+  - 🇺🇸US-23.157.40.5-6375 | 9.503MB
+  - CH-156.146.62.162-0518 | 21.898MB
+  - 🇺🇸US-23.157.40.113-5950 | 5.474MB
+  - CH-156.146.62.164-0516 | 21.755MB
+  - CH-156.146.62.163-0522 | 22.599MB
+  - CH-156.146.62.161-0514 | 22.212MB
+  - 🇬🇧GB-141.98.101.178-0489 | 18.644MB
+  - 🇺🇸US-23.157.40.5-6352 | 5.821MB
+  - 🇺🇸US-23.157.40.5-6360 | 6.779MB
+  - NO-51.13.183.76-0536 | 21.726MB
+  - 🇺🇸US-23.157.40.5-6368 | 8.144MB
+  - SE-121.127.46.147-0548 | 21.508MB
+  - 🇺🇸US-23.157.40.5-6353 | 6.145MB
+  - 🇬🇧GB-141.98.101.179-0508 | 21.62MB
+  - 🇬🇧GB-141.98.101.180-0484 | 21.517MB
+  - 🇬🇧GB-77.72.5.113-0432 | 23.736MB
+  - 🇬🇧GB-141.98.101.182-0513 | 19.387MB
+  - 🇬🇧GB-212.102.53.197-0462 | 28.875MB
+  - 🇫🇷FR-51.15.27.48-0463 | 23.937MB
+  - 🇬🇧GB-146.70.61.18-0456 | 24.423MB
+  - MD-103.106.1.92-0538 | 21.589MB
+  - SK-156.146.40.194-0541 | 19.966MB
+  - 🇩🇪DE-80.92.204.106-5756 | 13.286MB
+  - 🇷🇺_RU_俄罗斯_2
+  - BE-192.71.249.78-5722 | 10.589MB
+  - 🇫🇷FR-195.154.185.174-0474 | 23.282MB
+  - 🇩🇪DE-80.92.204.106-5755 | 11.443MB
+  - 🇬🇧GB-169.150.210.233-0500 | 22.921MB
+  - 🇯🇵JP-149.22.87.204-6235 | 21.007MB
+  - 🇯🇵JP-149.22.87.240-0569 | 20.481MB
+  - 🇯🇵JP-149.22.87.241-0568 | 20.65MB
+  - 美国5
+  - CZ-195.181.160.6-0525 | 22.561MB
+  - 🇵🇱PL-92.118.205.228-5747 | 17.368MB
+  - LV-46.183.217.232-0564 | 20.206MB
+  - 🇷🇺RU-45.151.62.54-0557 | 16.161MB
+  - 🇺🇸US-23.157.40.101-6067 | 5.806MB
+  - 🇺🇸US-23.157.40.5-6354 | 7.509MB
+  - 🇩🇪DE-80.92.204.106-5750 | 11.117MB
+  - 🇩🇰DK-192.36.27.94-4599 | 12.385MB
+  - AR-190.103.176.29-5721 | 14.127MB
+  - RS-194.71.126.31-0546 | 21.008MB
+  - 🇩🇪DE-80.92.204.106-5751 | 12.552MB
+  - PA-138.186.142.4-6209 | 15.319MB
+  - 🇭🇰HK-112.213.102.228-6146 | 8.675MB
+  - 🇸🇬SG-68.183.227.236-6165 | 19.303MB
+  - 🇸🇬SG-68.183.227.4-6349 | 19.086MB
+  - 🇸🇬SG-128.199.172.224-6356 | 19.387MB
+  - 🇨🇳TW-185.189.160.98-6344 | 16.766MB
+  - 🇩🇪DE-80.92.204.106-5752 | 7.756MB
+  - RELAY-104.16.155.10-0296 | 18.685MB
+  - RELAY-104.19.48.236-0297 | 18.717MB
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 🇨🇦_CA_加拿大
-  - xiaoer886_US_5
-  - xiaoer886_US_287
-  - xiaoer886_US_278
-  - xiaoer886_US_14
-  - xiaoer886_US_104
-  - xiaoer886_US_30
-  - xiaoer886_US_76
-  - xiaoer886_US_241
-  - xiaoer886_US_2
-  - xiaoer886_US_50
-  - xiaoer886_US_239
-  - xiaoer886_BR_2
-  - xiaoer886_US_259
-  - xiaoer886_US_93
-  - xiaoer886_US_115
-  - xiaoer886_US_55
-  - xiaoer886_US_111
-  - xiaoer886_US_4
-  - xiaoer886_US_101
-  - xiaoer886_US_108
-  - 美国 078
-  - xiaoer886_US_122
-  - 美国 082
-  - xiaoer886_US_377
-  - xiaoer886_US_274
-  - xiaoer886_US_245
-  - xiaoer886_US_46
-  - xiaoer886_US_107
-  - xiaoer886_US_15
-  - xiaoer886_US_44
-  - xiaoer886_US_54
-  - xiaoer886_US_98
-  - xiaoer886_US_38
-  - xiaoer886_US_110
-  - xiaoer886_US_67
-  - xiaoer886_US_66
-  - 🇺🇸US-69.50.93.86-6237 | 5.314MB
-  - xiaoer886_US_227
-  - xiaoer886_RU_2
-  - xiaoer886_IT_1
-  - 🇺🇸US-92.118.112.111-0535 | 88.022MB
-  - 🇺🇸US-38.68.134.202-6212 | 15.998MB
-  - 🇺🇸US-45.55.2.232-0409 | 44.011MB
-  - 🇺🇸 US_418
-  - 🇺🇸US-69.50.92.72-5904 | 13.921MB
-  - xiaoer886_UA_3
-  - xiaoer886_US_45
-  - xiaoer886_US_320
-  - 🇺🇸US_580
-  - 🇺🇸US-54.218.237.217-0468 | 55.157MB
-  - _206
-  - xiaoer886_US_81
-  - 🇺🇸 US_417
-  - xiaoer886_US_39
-  - 🇺🇸 US_420
-  - 🇺🇸US-79.110.53.169-0400 | 56.614MB
-  - 🇺🇸 US_413
-  - 🇺🇸_US_美国_6
-  - 🇺🇸 US_427
-  - 🇷🇺_RU_俄罗斯_3
-  - 🇺🇸 US_422
-  - 🇷🇴 RO_360
-  - 🇨🇦_加拿大_1
-  - 🇸🇪_瑞典_3
-  - 🇸🇪_瑞典_1
-  - 🇷🇺_RU_俄罗斯_1-D0ir
-  - 🇺🇸US-52.11.79.56-0450 | 46.71MB
-  - 🇺🇸_美国_8
-  - 🇺🇸_美国_27
-  - 🇺🇸_美国_146
-  - 🇺🇸_美国_10
-  - 🇺🇸_美国_4-Qlxn
-  - 🇺🇸_美国_12
-  - 🇺🇸_美国_23
-  - 🇺🇸_US_美国_9
-  - 🇺🇸_US_美国_1-zu78
-  - 🇺🇸_美国_9
-  - 🇺🇸_美国_7
-  - 🇺🇸_US_美国_5
-  - 🇺🇸_美国_15
-  - 🇺🇸_US_美国
-  - 🇺🇸_US_美国_10
-  - 🇺🇸_US_美国_2-WB6B
-  - 🇺🇸_美国_19
-  - 🇺🇸_美国_11
-  - 🇺🇸_美国_13
-  - 🇩🇪 德国 | DEU 8
-  - 🇺🇦_乌克兰_1
-  - 🇩🇪 DE_234
-  - 🇫🇷 FR_246
-  - 🇷🇺_RU_俄罗斯
-  - 🇭🇰 HK_313
-  - _205
-  - _203
-  - 🇺🇸US-69.50.92.72-5896 | 15.415MB
-  - 🇺🇸_美国_1
-  - 🇺🇸_美国_26
-  - 订阅随时会失效，请加电报群防止失联
-  - 🇺🇸 US_428
+  - 🇺🇸US-138.199.42.68-0390 | 101.712MB
+  - 🇺🇸US-156.146.38.167-0384 | 90.605MB
+  - 🇺🇸US-156.146.38.170-0382 | 101.09MB
+  - 🇺🇸US-156.146.38.169-0383 | 133.736MB
+  - 🇺🇸US-38.121.43.51-0464 | 34.048MB
+  - 🇺🇸US-156.146.38.168-0381 | 95.266MB
+  - 🇨🇦CA-142.4.216.225-5516 | 19.278MB
+  - 🇺🇸US-37.19.198.244-0372 | 109.3MB
+  - 🇺🇸US-37.19.198.243-0375 | 107.373MB
+  - 🇺🇸US-37.19.198.236-0376 | 124.327MB
+  - 🇺🇸US-37.19.198.160-0373 | 112.432MB
+  - 🇺🇸US-142.202.49.84-5899 | 5.011MB
+  - xiaoer886_US_250
+  - 🇺🇸US-38.110.1.111-0473 | 23.019MB
+  - 🇺🇸US-212.102.47.131-0415 | 81.427MB
+  - 🇺🇸US-207.246.101.50-0439 | 37.069MB
+  - 🇺🇸US-212.102.47.130-0397 | 78.235MB
+  - 🇨🇦CA-149.22.95.183-0427 | 72.775MB
+  - 🇺🇸US-184.170.241.194-0393 | 81.801MB
+  - 🇺🇸US-173.244.56.6-0392 | 75.064MB
+  - 🇨🇦CA-142.4.216.225-0562 | 17.346MB
+  - 🇺🇸US-23.157.40.103-5992 | 5.576MB
+  - 🇺🇸_US_美国->🇷🇴_RO_罗马尼亚_1
+  - 🇺🇸US-107.155.57.11-0406 | 73.328MB
+  - 🇺🇸US-107.155.57.51-0424 | 57.273MB
+  - 🇺🇸US-137.175.113.192-0411 | 8.77MB
+  - 美国04
+  - 🇬🇧GB-212.102.53.78-0434 | 26.899MB
+  - 🇬🇧GB-212.102.53.195-0435 | 27.0MB
+  - 🇬🇧GB-212.102.53.194-0187 | 25.719MB
+  - 🇬🇧GB-212.102.53.81-0437 | 27.457MB
+  - 🇬🇧GB-212.102.53.79-0457 | 28.043MB
+  - 🇬🇧GB-212.102.53.193-0442 | 26.372MB
+  - 🇬🇧GB-212.102.53.197-5424 | 28.324MB
+  - 🇬🇧GB-212.102.53.196-0441 | 26.979MB
+  - 🇬🇧GB-212.102.53.198-0458 | 29.475MB
+  - 🇬🇧GB-212.102.53.80-0459 | 27.965MB
+  - 🇳🇱NL-149.34.244.82-0475 | 25.354MB
+  - 🇬🇧GB-62.100.205.48-0440 | 26.318MB
+  - 🇳🇱NL-149.34.244.77-0469 | 25.388MB
+  - 🇳🇱NL-109.201.152.181-0453 | 23.856MB
+  - 🇳🇱NL-149.34.244.68-0488 | 23.777MB
+  - 🇳🇱NL-5.35.47.122-0472 | 20.801MB
+  - 🇫🇷FR-51.159.111.208-0476 | 23.236MB
+  - 美国03
+  - 🇺🇸US-23.157.40.85-0524 | 16.762MB
+  - 🇺🇸US-107.151.182.253-0813 | 38.653MB
+  - 🇫🇷FR-195.154.169.198-0471 | 23.293MB
+  - 🇺🇸US-23.157.40.5-6375 | 9.503MB
+  - CH-156.146.62.162-0518 | 21.898MB
+  - 🇺🇸US-23.157.40.113-5950 | 5.474MB
+  - CH-156.146.62.164-0516 | 21.755MB
+  - CH-156.146.62.163-0522 | 22.599MB
+  - CH-156.146.62.161-0514 | 22.212MB
+  - 🇬🇧GB-141.98.101.178-0489 | 18.644MB
+  - 🇺🇸US-23.157.40.5-6352 | 5.821MB
+  - 🇺🇸US-23.157.40.5-6360 | 6.779MB
+  - NO-51.13.183.76-0536 | 21.726MB
+  - 🇺🇸US-23.157.40.5-6368 | 8.144MB
+  - SE-121.127.46.147-0548 | 21.508MB
+  - 🇺🇸US-23.157.40.5-6353 | 6.145MB
+  - 🇬🇧GB-141.98.101.179-0508 | 21.62MB
+  - 🇬🇧GB-141.98.101.180-0484 | 21.517MB
+  - 🇬🇧GB-77.72.5.113-0432 | 23.736MB
+  - 🇬🇧GB-141.98.101.182-0513 | 19.387MB
+  - 🇬🇧GB-212.102.53.197-0462 | 28.875MB
+  - 🇫🇷FR-51.15.27.48-0463 | 23.937MB
+  - 🇬🇧GB-146.70.61.18-0456 | 24.423MB
+  - MD-103.106.1.92-0538 | 21.589MB
+  - SK-156.146.40.194-0541 | 19.966MB
+  - 🇩🇪DE-80.92.204.106-5756 | 13.286MB
+  - 🇷🇺_RU_俄罗斯_2
+  - BE-192.71.249.78-5722 | 10.589MB
+  - 🇫🇷FR-195.154.185.174-0474 | 23.282MB
+  - 🇩🇪DE-80.92.204.106-5755 | 11.443MB
+  - 🇬🇧GB-169.150.210.233-0500 | 22.921MB
+  - 🇯🇵JP-149.22.87.204-6235 | 21.007MB
+  - 🇯🇵JP-149.22.87.240-0569 | 20.481MB
+  - 🇯🇵JP-149.22.87.241-0568 | 20.65MB
+  - 美国5
+  - CZ-195.181.160.6-0525 | 22.561MB
+  - 🇵🇱PL-92.118.205.228-5747 | 17.368MB
+  - LV-46.183.217.232-0564 | 20.206MB
+  - 🇷🇺RU-45.151.62.54-0557 | 16.161MB
+  - 🇺🇸US-23.157.40.101-6067 | 5.806MB
+  - 🇺🇸US-23.157.40.5-6354 | 7.509MB
+  - 🇩🇪DE-80.92.204.106-5750 | 11.117MB
+  - 🇩🇰DK-192.36.27.94-4599 | 12.385MB
+  - AR-190.103.176.29-5721 | 14.127MB
+  - RS-194.71.126.31-0546 | 21.008MB
+  - 🇩🇪DE-80.92.204.106-5751 | 12.552MB
+  - PA-138.186.142.4-6209 | 15.319MB
+  - 🇭🇰HK-112.213.102.228-6146 | 8.675MB
+  - 🇸🇬SG-68.183.227.236-6165 | 19.303MB
+  - 🇸🇬SG-68.183.227.4-6349 | 19.086MB
+  - 🇸🇬SG-128.199.172.224-6356 | 19.387MB
+  - 🇨🇳TW-185.189.160.98-6344 | 16.766MB
+  - 🇩🇪DE-80.92.204.106-5752 | 7.756MB
+  - RELAY-104.16.155.10-0296 | 18.685MB
+  - RELAY-104.19.48.236-0297 | 18.717MB
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
