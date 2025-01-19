@@ -1529,7 +1529,7 @@ def read_yaml_files(folder_path):
     return load_nodes
 
 # 进行type过滤
-def filter_by_types_alt(allowed_types=["ss","vmess","trojan"]):
+def filter_by_types_alt(allowed_types,nodes):
     # 进行过滤
     return [x for x in nodes if x.get('type') in allowed_types]
 
@@ -1541,7 +1541,7 @@ def merge_lists(*lists):
 def handle_links(new_links,resolve_name_conflicts):
     try:
         for new_link in new_links:
-            if new_link.startswith(("hysteria2://", "hy2://", "trojan://", "ss://", "vless://", "vmess://")):
+            if new_link.startswith(("trojan://", "ss://",  "vmess://")):
                 node = parse_proxy_link(new_link)
                 if node:
                     resolve_name_conflicts(node)
@@ -2294,7 +2294,7 @@ def resolve_template_url(template_url):
 
     return resolved_url
 
-def work(links,check=True,allowed_types=["ss","vmess","trojan"],only_check=True):
+def work(links,check=False,allowed_types=[],only_check=False):
     try:
         if not only_check:
             load_nodes = read_yaml_files(folder_path=INPUT)
