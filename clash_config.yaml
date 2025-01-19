@@ -96,22 +96,6 @@ proxies:
     path: /yaml777
     headers:
       HOST: yaml777.133010.xyz
-- name: 日本1
-  server: jpgmo101-cdn-route.couldflare-cdn.com
-  port: 443
-  type: http
-  tls: true
-  skip-cert-verify: false
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-  password: exaxgqkKkd0TAMrCxeonWg==
-- name: 日本2
-  server: jpgmo102-cdn-route.couldflare-cdn.com
-  port: 443
-  type: http
-  tls: true
-  skip-cert-verify: false
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-  password: exaxgqkKkd0TAMrCxeonWg==
 - name: 美国1
   server: usport1-cdn-route.couldflare-cdn.com
   port: 443
@@ -245,12 +229,6 @@ proxies:
   udp: true
 - name: '@MxlShare 日本 | JPN 5'
   server: 13.115.53.158
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: '@MxlShare 日本 | JPN 7'
-  server: 18.183.250.250
   port: 443
   type: ss
   cipher: aes-256-cfb
@@ -558,12 +536,6 @@ proxies:
   server: 103.106.1.92
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: MD-86.104.74.243-0477 | 17.052MB
-  password: fDDmH4QefmWqMJ8UURZrGh
-  port: 14255
-  server: 86.104.74.243
-  type: ss
-- cipher: chacha20-ietf-poly1305
   name: NO-51.13.183.76-0536 | 21.726MB
   password: 07LkDtx6AwrmkLMbehrIAh
   port: 6454
@@ -575,20 +547,6 @@ proxies:
   port: 989
   server: 138.186.142.4
   type: ss
-- alterId: 0
-  cipher: auto
-  name: RELAY-104.16.155.10-0296 | 18.685MB
-  network: ws
-  port: 80
-  server: 104.16.155.10
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: e6543319-0574-42ac-b778-1c4325d626f5
-  ws-opts:
-    headers:
-      Host: chunchuan.kejixiaoqi666.store
-    path: /
 - cipher: aes-256-cfb
   name: RS-194.71.126.31-0546 | 21.008MB
   password: f8f7aCzcPKbsF8p3
@@ -606,12 +564,6 @@ proxies:
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 156.146.40.194
-  type: ss
-- cipher: aes-256-cfb
-  name: TR-45.89.52.66-5630 | 11.329MB
-  password: p9z5BVADH2YFs3MN
-  port: 9040
-  server: 45.89.52.66
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇨🇦CA-142.4.216.225-0562 | 17.346MB
@@ -632,12 +584,6 @@ proxies:
   server: 149.22.95.183
   type: ss
 - cipher: aes-256-cfb
-  name: 🇨🇳TW-185.189.160.98-6344 | 16.766MB
-  password: qwerREWQ@@
-  port: 64759
-  server: 185.189.160.98
-  type: ss
-- cipher: aes-256-cfb
   name: 🇩🇪DE-80.92.204.106-5750 | 11.117MB
   password: FAdUvMJUq5vDgKEq
   port: 9006
@@ -647,12 +593,6 @@ proxies:
   name: 🇩🇪DE-80.92.204.106-5751 | 12.552MB
   password: Sn5B7jTqr76aCJT8
   port: 9097
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇩🇪DE-80.92.204.106-5752 | 7.756MB
-  password: cp8pRSUAyLhTfVWH
-  port: 9064
   server: 80.92.204.106
   type: ss
 - cipher: aes-256-cfb
@@ -757,19 +697,6 @@ proxies:
   port: 443
   server: 212.102.53.196
   type: ss
-- name: 🇭🇰 香港 | HKG 16
-  server: 212.192.12.70
-  port: 32902
-  client-fingerprint: chrome
-  type: hysteria2
-  password: 010162b8-2ba6-466a-a960-18274bbc9e27
-  auth: 010162b8-2ba6-466a-a960-18274bbc9e27
-  up: 2
-  down: 2
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: YzcwOTNlODc4NDIzMWMyMg==
-  udp: true
 - name: 🇭🇰 香港 | HKG 18
   server: gsgs.hy2.one
   port: 53344
@@ -777,45 +704,6 @@ proxies:
   type: ss
   cipher: 2022-blake3-aes-256-gcm
   password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:MmE4NWU1NTItMDc0Ni00NTA2LThkMzQtOWIyMWFlYmY=
-  udp: true
-- name: 🇭🇰 香港 | HKG 31
-  server: 212.192.12.70
-  port: 32902
-  client-fingerprint: chrome
-  type: hysteria2
-  password: 84551ec3-0575-4ea0-9db6-fae0f442c4fe
-  auth: 84551ec3-0575-4ea0-9db6-fae0f442c4fe
-  up: 2
-  down: 2
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: YzcwOTNlODc4NDIzMWMyMg==
-  udp: true
-- name: 🇭🇰 香港 | HKG 38
-  server: 212.192.12.70
-  port: 32902
-  client-fingerprint: chrome
-  type: hysteria2
-  password: cdcc9f3a-ad63-46e2-92f4-173c2a6ec201
-  auth: cdcc9f3a-ad63-46e2-92f4-173c2a6ec201
-  up: 2
-  down: 2
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: YzcwOTNlODc4NDIzMWMyMg==
-  udp: true
-- name: 🇭🇰 香港 | HKG 39
-  server: 212.192.12.70
-  port: 32902
-  client-fingerprint: chrome
-  type: hysteria2
-  password: c3f7ff71-8e83-4983-94fd-c7bc4018b824
-  auth: c3f7ff71-8e83-4983-94fd-c7bc4018b824
-  up: 100
-  down: 100
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: YzcwOTNlODc4NDIzMWMyMg==
   udp: true
 proxy-groups:
 - name: 节点选择
@@ -829,106 +717,94 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
+  - '@MxlShare 美国 | USA 13'
+  - '@MxlShare 美国 | USA 9'
   - '@MxlShare 新加坡 | SGP 17'
+  - '@MxlShare 美国 | USA 33'
   - 🇨🇦CA-142.4.216.225-5516 | 19.278MB
   - '@MxlShare 美国 | USA 3'
+  - 美国04
+  - '@MxlShare 美国 | USA 5'
+  - '@MxlShare 美国 | USA 4'
+  - '@MxlShare 美国 | USA 6'
+  - '@MxlShare 美国 | USA 7'
+  - '@MxlShare 美国 | USA 8'
   - 美国03
-  - '@MxlShare 美国 | USA 9'
-  - '@MxlShare 美国 | USA 13'
+  - '@MxlShare 美国 | USA 29'
   - 美国02
   - 🇨🇦CA-142.4.216.225-0562 | 17.346MB
-  - '@MxlShare 美国 | USA 29'
+  - '@MxlShare 日本 | JPN 8'
   - 🇨🇦CA-149.22.95.183-0427 | 72.775MB
-  - 🇬🇧GB-212.102.53.193-0442 | 26.372MB
+  - '@MxlShare 新加坡 | SGP 19'
   - 🇬🇧GB-212.102.53.195-0435 | 27.0MB
+  - 🇬🇧GB-212.102.53.193-0442 | 26.372MB
   - 🇬🇧GB-212.102.53.196-0441 | 26.979MB
-  - 美国04
   - 🇬🇧GB-212.102.53.194-0187 | 25.719MB
   - 🇫🇷FR-51.159.111.208-0476 | 23.236MB
-  - 🇫🇷FR-195.154.185.174-0474 | 23.282MB
-  - '@MxlShare 美国 | USA 30'
   - 美国4
+  - 🇫🇷FR-195.154.169.198-0471 | 23.293MB
+  - VMESS-未知>美国-NF解锁香港地区非自制剧-ChatGPT-TikTok-YouTube-104.16.155.10:2082
+  - '@MxlShare 美国 | USA 30'
+  - CH-156.146.62.164-0516 | 21.755MB
   - CH-156.146.62.163-0522 | 22.599MB
   - CH-156.146.62.161-0514 | 22.212MB
-  - CH-156.146.62.164-0516 | 21.755MB
-  - VMESS-未知>美国-NF解锁香港地区非自制剧-ChatGPT-TikTok-YouTube-104.16.155.10:2082
   - CH-156.146.62.162-0518 | 21.898MB
   - 🇬🇧GB-141.98.101.179-0508 | 21.62MB
-  - 🇬🇧GB-141.98.101.180-0484 | 21.517MB
   - 🇬🇧GB-141.98.101.182-0513 | 19.387MB
+  - 🇬🇧GB-141.98.101.180-0484 | 21.517MB
+  - 🇩🇪DE-80.92.204.106-5750 | 11.117MB
   - 🇫🇷FR-51.15.27.48-0463 | 23.937MB
-  - SE-121.127.46.147-0548 | 21.508MB
+  - 美国05
   - 🇬🇧GB-146.70.61.18-0456 | 24.423MB
   - NO-51.13.183.76-0536 | 21.726MB
-  - '@MxlShare 美国 | USA 33'
-  - 🇫🇷FR-195.154.169.198-0471 | 23.293MB
-  - SK-156.146.40.194-0541 | 19.966MB
-  - 🇬🇧GB-169.150.210.233-0500 | 22.921MB
-  - BE-192.71.249.78-5722 | 10.589MB
-  - '@MxlShare 美国 | USA 5'
-  - '@MxlShare 美国 | USA 6'
-  - '@MxlShare 美国 | USA 8'
-  - '@MxlShare 美国 | USA 4'
-  - '@MxlShare 美国 | USA 7'
-  - 美国5
-  - 美国05
-  - 美国01
-  - CZ-195.181.160.6-0525 | 22.561MB
-  - 美国2
-  - 美国3
   - MD-103.106.1.92-0538 | 21.589MB
-  - '@MxlShare 新加坡 | SGP 19'
-  - VMESS-未知>德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-yaml777.133010.xyz:80
-  - 🇩🇰DK-192.36.27.94-4599 | 12.385MB
-  - '@MxlShare 日本 | JPN 8'
-  - '@MxlShare 日本 | JPN 7'
-  - '@MxlShare 日本 | JPN 5'
-  - '@MxlShare 美国 | USA 24'
-  - LV-46.183.217.232-0564 | 20.206MB
-  - RS-194.71.126.31-0546 | 21.008MB
-  - AR-190.103.176.29-5721 | 14.127MB
-  - 美国1
-  - MD-86.104.74.243-0477 | 17.052MB
-  - '@MxlShare 新加坡 | SGP 12'
-  - 🇫🇷FR-51.15.15.82-6362 | 8.254MB
-  - '@MxlShare 新加坡 | SGP 13'
-  - '@MxlShare 新加坡 | SGP 11'
-  - '@MxlShare 新加坡 | SGP 15'
-  - PA-138.186.142.4-6209 | 15.319MB
-  - '@MxlShare 新加坡 | SGP 10'
   - 🇩🇪DE-80.92.204.106-5756 | 13.286MB
-  - VMESS-未知>巴西-NF解锁巴西地区非自制剧-ChatGPT-TikTok-YouTube-104.18.7.41:2052
-  - '@MxlShare 新加坡 | SGP 14'
-  - 🇯🇵3
-  - 🇯🇵6
-  - '@MxlShare 卢森堡 | LUX 3'
-  - '@MxlShare 卢森堡 | LUX'
-  - '@MxlShare 卢森堡 | LUX 2'
-  - 🇯🇵1
-  - TR-45.89.52.66-5630 | 11.329MB
-  - PL_Warsaw_OVH SAS_OpenAI_Claude1
-  - 🇭🇰 香港 | HKG 18
-  - 🇹🇼2
-  - 🇯🇵5
-  - 🇩🇪DE-80.92.204.106-5752 | 7.756MB
-  - 🇸🇬3
+  - SE-121.127.46.147-0548 | 21.508MB
+  - 🇫🇷FR-195.154.185.174-0474 | 23.282MB
+  - BE-192.71.249.78-5722 | 10.589MB
+  - 🇬🇧GB-169.150.210.233-0500 | 22.921MB
+  - 美国01
+  - SK-156.146.40.194-0541 | 19.966MB
   - 🇩🇪DE-80.92.204.106-5751 | 12.552MB
-  - VMESS-未知>巴西-NF解锁巴西地区非自制剧-ChatGPT-TikTok-YouTube-c1.v2raybrasil.xyz:2082
-  - '@MxlShare 新加坡 | SGP'
-  - '@MxlShare 新加坡 | SGP 2'
-  - 🇯🇵7
-  - 🇯🇵4
-  - 🇩🇪DE-80.92.204.106-5750 | 11.117MB
+  - 美国2
   - 🇩🇪DE-80.92.204.106-5754 | 8.268MB
+  - 美国5
+  - 美国3
+  - VMESS-未知>德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-yaml777.133010.xyz:80
+  - CZ-195.181.160.6-0525 | 22.561MB
+  - 🇩🇰DK-192.36.27.94-4599 | 12.385MB
+  - LV-46.183.217.232-0564 | 20.206MB
+  - 美国1
+  - '@MxlShare 美国 | USA 24'
+  - '@MxlShare 卢森堡 | LUX 3'
+  - '@MxlShare 日本 | JPN 5'
+  - '@MxlShare 卢森堡 | LUX 2'
+  - AR-190.103.176.29-5721 | 14.127MB
+  - 🇯🇵3
+  - RS-194.71.126.31-0546 | 21.008MB
+  - 🇯🇵6
+  - 🇯🇵5
+  - PA-138.186.142.4-6209 | 15.319MB
+  - 🇹🇼2
+  - '@MxlShare 新加坡 | SGP 14'
+  - '@MxlShare 新加坡 | SGP 13'
+  - 🇯🇵1
+  - '@MxlShare 新加坡 | SGP 15'
+  - '@MxlShare 新加坡 | SGP 10'
+  - '@MxlShare 新加坡 | SGP 12'
+  - 🇯🇵7
+  - '@MxlShare 新加坡 | SGP 11'
+  - PL_Warsaw_OVH SAS_OpenAI_Claude1
+  - 🇯🇵4
+  - '@MxlShare 卢森堡 | LUX'
+  - VMESS-未知>巴西-NF解锁巴西地区非自制剧-ChatGPT-TikTok-YouTube-104.18.7.41:2052
+  - 🇭🇰 香港 | HKG 18
+  - 🇸🇬3
+  - 🇫🇷FR-51.15.15.82-6362 | 8.254MB
+  - '@MxlShare 新加坡 | SGP'
+  - VMESS-未知>巴西-NF解锁巴西地区非自制剧-ChatGPT-TikTok-YouTube-c1.v2raybrasil.xyz:2082
+  - '@MxlShare 新加坡 | SGP 2'
   - '@MxlShare 新加坡 | SGP 3'
-  - 🇭🇰 香港 | HKG 39
-  - RELAY-104.16.155.10-0296 | 18.685MB
-  - 🇭🇰 香港 | HKG 38
-  - 日本2
-  - 🇨🇳TW-185.189.160.98-6344 | 16.766MB
-  - 🇭🇰 香港 | HKG 31
-  - 🇭🇰 香港 | HKG 16
-  - 日本1
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
@@ -936,211 +812,187 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
+  - '@MxlShare 美国 | USA 13'
+  - '@MxlShare 美国 | USA 9'
   - '@MxlShare 新加坡 | SGP 17'
+  - '@MxlShare 美国 | USA 33'
   - 🇨🇦CA-142.4.216.225-5516 | 19.278MB
   - '@MxlShare 美国 | USA 3'
+  - 美国04
+  - '@MxlShare 美国 | USA 5'
+  - '@MxlShare 美国 | USA 4'
+  - '@MxlShare 美国 | USA 6'
+  - '@MxlShare 美国 | USA 7'
+  - '@MxlShare 美国 | USA 8'
   - 美国03
-  - '@MxlShare 美国 | USA 9'
-  - '@MxlShare 美国 | USA 13'
+  - '@MxlShare 美国 | USA 29'
   - 美国02
   - 🇨🇦CA-142.4.216.225-0562 | 17.346MB
-  - '@MxlShare 美国 | USA 29'
+  - '@MxlShare 日本 | JPN 8'
   - 🇨🇦CA-149.22.95.183-0427 | 72.775MB
-  - 🇬🇧GB-212.102.53.193-0442 | 26.372MB
+  - '@MxlShare 新加坡 | SGP 19'
   - 🇬🇧GB-212.102.53.195-0435 | 27.0MB
+  - 🇬🇧GB-212.102.53.193-0442 | 26.372MB
   - 🇬🇧GB-212.102.53.196-0441 | 26.979MB
-  - 美国04
   - 🇬🇧GB-212.102.53.194-0187 | 25.719MB
   - 🇫🇷FR-51.159.111.208-0476 | 23.236MB
-  - 🇫🇷FR-195.154.185.174-0474 | 23.282MB
-  - '@MxlShare 美国 | USA 30'
   - 美国4
+  - 🇫🇷FR-195.154.169.198-0471 | 23.293MB
+  - VMESS-未知>美国-NF解锁香港地区非自制剧-ChatGPT-TikTok-YouTube-104.16.155.10:2082
+  - '@MxlShare 美国 | USA 30'
+  - CH-156.146.62.164-0516 | 21.755MB
   - CH-156.146.62.163-0522 | 22.599MB
   - CH-156.146.62.161-0514 | 22.212MB
-  - CH-156.146.62.164-0516 | 21.755MB
-  - VMESS-未知>美国-NF解锁香港地区非自制剧-ChatGPT-TikTok-YouTube-104.16.155.10:2082
   - CH-156.146.62.162-0518 | 21.898MB
   - 🇬🇧GB-141.98.101.179-0508 | 21.62MB
-  - 🇬🇧GB-141.98.101.180-0484 | 21.517MB
   - 🇬🇧GB-141.98.101.182-0513 | 19.387MB
+  - 🇬🇧GB-141.98.101.180-0484 | 21.517MB
+  - 🇩🇪DE-80.92.204.106-5750 | 11.117MB
   - 🇫🇷FR-51.15.27.48-0463 | 23.937MB
-  - SE-121.127.46.147-0548 | 21.508MB
+  - 美国05
   - 🇬🇧GB-146.70.61.18-0456 | 24.423MB
   - NO-51.13.183.76-0536 | 21.726MB
-  - '@MxlShare 美国 | USA 33'
-  - 🇫🇷FR-195.154.169.198-0471 | 23.293MB
-  - SK-156.146.40.194-0541 | 19.966MB
-  - 🇬🇧GB-169.150.210.233-0500 | 22.921MB
-  - BE-192.71.249.78-5722 | 10.589MB
-  - '@MxlShare 美国 | USA 5'
-  - '@MxlShare 美国 | USA 6'
-  - '@MxlShare 美国 | USA 8'
-  - '@MxlShare 美国 | USA 4'
-  - '@MxlShare 美国 | USA 7'
-  - 美国5
-  - 美国05
-  - 美国01
-  - CZ-195.181.160.6-0525 | 22.561MB
-  - 美国2
-  - 美国3
   - MD-103.106.1.92-0538 | 21.589MB
-  - '@MxlShare 新加坡 | SGP 19'
-  - VMESS-未知>德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-yaml777.133010.xyz:80
-  - 🇩🇰DK-192.36.27.94-4599 | 12.385MB
-  - '@MxlShare 日本 | JPN 8'
-  - '@MxlShare 日本 | JPN 7'
-  - '@MxlShare 日本 | JPN 5'
-  - '@MxlShare 美国 | USA 24'
-  - LV-46.183.217.232-0564 | 20.206MB
-  - RS-194.71.126.31-0546 | 21.008MB
-  - AR-190.103.176.29-5721 | 14.127MB
-  - 美国1
-  - MD-86.104.74.243-0477 | 17.052MB
-  - '@MxlShare 新加坡 | SGP 12'
-  - 🇫🇷FR-51.15.15.82-6362 | 8.254MB
-  - '@MxlShare 新加坡 | SGP 13'
-  - '@MxlShare 新加坡 | SGP 11'
-  - '@MxlShare 新加坡 | SGP 15'
-  - PA-138.186.142.4-6209 | 15.319MB
-  - '@MxlShare 新加坡 | SGP 10'
   - 🇩🇪DE-80.92.204.106-5756 | 13.286MB
-  - VMESS-未知>巴西-NF解锁巴西地区非自制剧-ChatGPT-TikTok-YouTube-104.18.7.41:2052
-  - '@MxlShare 新加坡 | SGP 14'
-  - 🇯🇵3
-  - 🇯🇵6
-  - '@MxlShare 卢森堡 | LUX 3'
-  - '@MxlShare 卢森堡 | LUX'
-  - '@MxlShare 卢森堡 | LUX 2'
-  - 🇯🇵1
-  - TR-45.89.52.66-5630 | 11.329MB
-  - PL_Warsaw_OVH SAS_OpenAI_Claude1
-  - 🇭🇰 香港 | HKG 18
-  - 🇹🇼2
-  - 🇯🇵5
-  - 🇩🇪DE-80.92.204.106-5752 | 7.756MB
-  - 🇸🇬3
+  - SE-121.127.46.147-0548 | 21.508MB
+  - 🇫🇷FR-195.154.185.174-0474 | 23.282MB
+  - BE-192.71.249.78-5722 | 10.589MB
+  - 🇬🇧GB-169.150.210.233-0500 | 22.921MB
+  - 美国01
+  - SK-156.146.40.194-0541 | 19.966MB
   - 🇩🇪DE-80.92.204.106-5751 | 12.552MB
-  - VMESS-未知>巴西-NF解锁巴西地区非自制剧-ChatGPT-TikTok-YouTube-c1.v2raybrasil.xyz:2082
-  - '@MxlShare 新加坡 | SGP'
-  - '@MxlShare 新加坡 | SGP 2'
-  - 🇯🇵7
-  - 🇯🇵4
-  - 🇩🇪DE-80.92.204.106-5750 | 11.117MB
+  - 美国2
   - 🇩🇪DE-80.92.204.106-5754 | 8.268MB
+  - 美国5
+  - 美国3
+  - VMESS-未知>德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-yaml777.133010.xyz:80
+  - CZ-195.181.160.6-0525 | 22.561MB
+  - 🇩🇰DK-192.36.27.94-4599 | 12.385MB
+  - LV-46.183.217.232-0564 | 20.206MB
+  - 美国1
+  - '@MxlShare 美国 | USA 24'
+  - '@MxlShare 卢森堡 | LUX 3'
+  - '@MxlShare 日本 | JPN 5'
+  - '@MxlShare 卢森堡 | LUX 2'
+  - AR-190.103.176.29-5721 | 14.127MB
+  - 🇯🇵3
+  - RS-194.71.126.31-0546 | 21.008MB
+  - 🇯🇵6
+  - 🇯🇵5
+  - PA-138.186.142.4-6209 | 15.319MB
+  - 🇹🇼2
+  - '@MxlShare 新加坡 | SGP 14'
+  - '@MxlShare 新加坡 | SGP 13'
+  - 🇯🇵1
+  - '@MxlShare 新加坡 | SGP 15'
+  - '@MxlShare 新加坡 | SGP 10'
+  - '@MxlShare 新加坡 | SGP 12'
+  - 🇯🇵7
+  - '@MxlShare 新加坡 | SGP 11'
+  - PL_Warsaw_OVH SAS_OpenAI_Claude1
+  - 🇯🇵4
+  - '@MxlShare 卢森堡 | LUX'
+  - VMESS-未知>巴西-NF解锁巴西地区非自制剧-ChatGPT-TikTok-YouTube-104.18.7.41:2052
+  - 🇭🇰 香港 | HKG 18
+  - 🇸🇬3
+  - 🇫🇷FR-51.15.15.82-6362 | 8.254MB
+  - '@MxlShare 新加坡 | SGP'
+  - VMESS-未知>巴西-NF解锁巴西地区非自制剧-ChatGPT-TikTok-YouTube-c1.v2raybrasil.xyz:2082
+  - '@MxlShare 新加坡 | SGP 2'
   - '@MxlShare 新加坡 | SGP 3'
-  - 🇭🇰 香港 | HKG 39
-  - RELAY-104.16.155.10-0296 | 18.685MB
-  - 🇭🇰 香港 | HKG 38
-  - 日本2
-  - 🇨🇳TW-185.189.160.98-6344 | 16.766MB
-  - 🇭🇰 香港 | HKG 31
-  - 🇭🇰 香港 | HKG 16
-  - 日本1
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
+  - '@MxlShare 美国 | USA 13'
+  - '@MxlShare 美国 | USA 9'
   - '@MxlShare 新加坡 | SGP 17'
+  - '@MxlShare 美国 | USA 33'
   - 🇨🇦CA-142.4.216.225-5516 | 19.278MB
   - '@MxlShare 美国 | USA 3'
+  - 美国04
+  - '@MxlShare 美国 | USA 5'
+  - '@MxlShare 美国 | USA 4'
+  - '@MxlShare 美国 | USA 6'
+  - '@MxlShare 美国 | USA 7'
+  - '@MxlShare 美国 | USA 8'
   - 美国03
-  - '@MxlShare 美国 | USA 9'
-  - '@MxlShare 美国 | USA 13'
+  - '@MxlShare 美国 | USA 29'
   - 美国02
   - 🇨🇦CA-142.4.216.225-0562 | 17.346MB
-  - '@MxlShare 美国 | USA 29'
+  - '@MxlShare 日本 | JPN 8'
   - 🇨🇦CA-149.22.95.183-0427 | 72.775MB
-  - 🇬🇧GB-212.102.53.193-0442 | 26.372MB
+  - '@MxlShare 新加坡 | SGP 19'
   - 🇬🇧GB-212.102.53.195-0435 | 27.0MB
+  - 🇬🇧GB-212.102.53.193-0442 | 26.372MB
   - 🇬🇧GB-212.102.53.196-0441 | 26.979MB
-  - 美国04
   - 🇬🇧GB-212.102.53.194-0187 | 25.719MB
   - 🇫🇷FR-51.159.111.208-0476 | 23.236MB
-  - 🇫🇷FR-195.154.185.174-0474 | 23.282MB
-  - '@MxlShare 美国 | USA 30'
   - 美国4
+  - 🇫🇷FR-195.154.169.198-0471 | 23.293MB
+  - VMESS-未知>美国-NF解锁香港地区非自制剧-ChatGPT-TikTok-YouTube-104.16.155.10:2082
+  - '@MxlShare 美国 | USA 30'
+  - CH-156.146.62.164-0516 | 21.755MB
   - CH-156.146.62.163-0522 | 22.599MB
   - CH-156.146.62.161-0514 | 22.212MB
-  - CH-156.146.62.164-0516 | 21.755MB
-  - VMESS-未知>美国-NF解锁香港地区非自制剧-ChatGPT-TikTok-YouTube-104.16.155.10:2082
   - CH-156.146.62.162-0518 | 21.898MB
   - 🇬🇧GB-141.98.101.179-0508 | 21.62MB
-  - 🇬🇧GB-141.98.101.180-0484 | 21.517MB
   - 🇬🇧GB-141.98.101.182-0513 | 19.387MB
+  - 🇬🇧GB-141.98.101.180-0484 | 21.517MB
+  - 🇩🇪DE-80.92.204.106-5750 | 11.117MB
   - 🇫🇷FR-51.15.27.48-0463 | 23.937MB
-  - SE-121.127.46.147-0548 | 21.508MB
+  - 美国05
   - 🇬🇧GB-146.70.61.18-0456 | 24.423MB
   - NO-51.13.183.76-0536 | 21.726MB
-  - '@MxlShare 美国 | USA 33'
-  - 🇫🇷FR-195.154.169.198-0471 | 23.293MB
-  - SK-156.146.40.194-0541 | 19.966MB
-  - 🇬🇧GB-169.150.210.233-0500 | 22.921MB
-  - BE-192.71.249.78-5722 | 10.589MB
-  - '@MxlShare 美国 | USA 5'
-  - '@MxlShare 美国 | USA 6'
-  - '@MxlShare 美国 | USA 8'
-  - '@MxlShare 美国 | USA 4'
-  - '@MxlShare 美国 | USA 7'
-  - 美国5
-  - 美国05
-  - 美国01
-  - CZ-195.181.160.6-0525 | 22.561MB
-  - 美国2
-  - 美国3
   - MD-103.106.1.92-0538 | 21.589MB
-  - '@MxlShare 新加坡 | SGP 19'
-  - VMESS-未知>德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-yaml777.133010.xyz:80
-  - 🇩🇰DK-192.36.27.94-4599 | 12.385MB
-  - '@MxlShare 日本 | JPN 8'
-  - '@MxlShare 日本 | JPN 7'
-  - '@MxlShare 日本 | JPN 5'
-  - '@MxlShare 美国 | USA 24'
-  - LV-46.183.217.232-0564 | 20.206MB
-  - RS-194.71.126.31-0546 | 21.008MB
-  - AR-190.103.176.29-5721 | 14.127MB
-  - 美国1
-  - MD-86.104.74.243-0477 | 17.052MB
-  - '@MxlShare 新加坡 | SGP 12'
-  - 🇫🇷FR-51.15.15.82-6362 | 8.254MB
-  - '@MxlShare 新加坡 | SGP 13'
-  - '@MxlShare 新加坡 | SGP 11'
-  - '@MxlShare 新加坡 | SGP 15'
-  - PA-138.186.142.4-6209 | 15.319MB
-  - '@MxlShare 新加坡 | SGP 10'
   - 🇩🇪DE-80.92.204.106-5756 | 13.286MB
-  - VMESS-未知>巴西-NF解锁巴西地区非自制剧-ChatGPT-TikTok-YouTube-104.18.7.41:2052
-  - '@MxlShare 新加坡 | SGP 14'
-  - 🇯🇵3
-  - 🇯🇵6
-  - '@MxlShare 卢森堡 | LUX 3'
-  - '@MxlShare 卢森堡 | LUX'
-  - '@MxlShare 卢森堡 | LUX 2'
-  - 🇯🇵1
-  - TR-45.89.52.66-5630 | 11.329MB
-  - PL_Warsaw_OVH SAS_OpenAI_Claude1
-  - 🇭🇰 香港 | HKG 18
-  - 🇹🇼2
-  - 🇯🇵5
-  - 🇩🇪DE-80.92.204.106-5752 | 7.756MB
-  - 🇸🇬3
+  - SE-121.127.46.147-0548 | 21.508MB
+  - 🇫🇷FR-195.154.185.174-0474 | 23.282MB
+  - BE-192.71.249.78-5722 | 10.589MB
+  - 🇬🇧GB-169.150.210.233-0500 | 22.921MB
+  - 美国01
+  - SK-156.146.40.194-0541 | 19.966MB
   - 🇩🇪DE-80.92.204.106-5751 | 12.552MB
-  - VMESS-未知>巴西-NF解锁巴西地区非自制剧-ChatGPT-TikTok-YouTube-c1.v2raybrasil.xyz:2082
-  - '@MxlShare 新加坡 | SGP'
-  - '@MxlShare 新加坡 | SGP 2'
-  - 🇯🇵7
-  - 🇯🇵4
-  - 🇩🇪DE-80.92.204.106-5750 | 11.117MB
+  - 美国2
   - 🇩🇪DE-80.92.204.106-5754 | 8.268MB
+  - 美国5
+  - 美国3
+  - VMESS-未知>德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-yaml777.133010.xyz:80
+  - CZ-195.181.160.6-0525 | 22.561MB
+  - 🇩🇰DK-192.36.27.94-4599 | 12.385MB
+  - LV-46.183.217.232-0564 | 20.206MB
+  - 美国1
+  - '@MxlShare 美国 | USA 24'
+  - '@MxlShare 卢森堡 | LUX 3'
+  - '@MxlShare 日本 | JPN 5'
+  - '@MxlShare 卢森堡 | LUX 2'
+  - AR-190.103.176.29-5721 | 14.127MB
+  - 🇯🇵3
+  - RS-194.71.126.31-0546 | 21.008MB
+  - 🇯🇵6
+  - 🇯🇵5
+  - PA-138.186.142.4-6209 | 15.319MB
+  - 🇹🇼2
+  - '@MxlShare 新加坡 | SGP 14'
+  - '@MxlShare 新加坡 | SGP 13'
+  - 🇯🇵1
+  - '@MxlShare 新加坡 | SGP 15'
+  - '@MxlShare 新加坡 | SGP 10'
+  - '@MxlShare 新加坡 | SGP 12'
+  - 🇯🇵7
+  - '@MxlShare 新加坡 | SGP 11'
+  - PL_Warsaw_OVH SAS_OpenAI_Claude1
+  - 🇯🇵4
+  - '@MxlShare 卢森堡 | LUX'
+  - VMESS-未知>巴西-NF解锁巴西地区非自制剧-ChatGPT-TikTok-YouTube-104.18.7.41:2052
+  - 🇭🇰 香港 | HKG 18
+  - 🇸🇬3
+  - 🇫🇷FR-51.15.15.82-6362 | 8.254MB
+  - '@MxlShare 新加坡 | SGP'
+  - VMESS-未知>巴西-NF解锁巴西地区非自制剧-ChatGPT-TikTok-YouTube-c1.v2raybrasil.xyz:2082
+  - '@MxlShare 新加坡 | SGP 2'
   - '@MxlShare 新加坡 | SGP 3'
-  - 🇭🇰 香港 | HKG 39
-  - RELAY-104.16.155.10-0296 | 18.685MB
-  - 🇭🇰 香港 | HKG 38
-  - 日本2
-  - 🇨🇳TW-185.189.160.98-6344 | 16.766MB
-  - 🇭🇰 香港 | HKG 31
-  - 🇭🇰 香港 | HKG 16
-  - 日本1
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
