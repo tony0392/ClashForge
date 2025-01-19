@@ -1529,8 +1529,11 @@ def read_yaml_files(folder_path):
     return load_nodes
 
 # 进行type过滤
-def filter_by_types_alt(nodes):
-    allowed_types = ['ss', 'vmess', 'trojan']  # 设定允许的节点类型
+def filter_by_types_alt(allowed_types=None, nodes=None):
+    if allowed_types is None:
+        allowed_types = ['ss', 'vmess', 'trojan']  # 设定允许的节点类型
+    if nodes is None:
+        nodes = []  # 使用空列表作为默认值
     # 进行过滤
     return [x for x in nodes if x.get('type') in allowed_types]
 
