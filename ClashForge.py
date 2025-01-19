@@ -1528,12 +1528,28 @@ def read_yaml_files(folder_path):
         print(f'加载【{folder_path}】目录下yaml/yml中所有节点')
     return load_nodes
 
-# 进行type过滤
+import enum
+
+class NodeType(enum.Enum):
+    SS = 'ss'
+    VMess = 'vmess'
+    Trojan = 'trojan'
+
 def filter_by_types_alt(nodes, allowed_types=None):
+    """
+    过滤 nodes 中的类型。
+    
+    Args:
+        nodes (list): 过滤的节点列表。
+        allowed_types (list, optional): 允许的类型。 Defaults to [NodeType.SS, NodeType.VMess, NodeType.Trojan].
+    
+    Returns:
+        list: 过滤后的节点列表。
+    """
     if allowed_types is None:
-        allowed_types = ['ss', 'vmess', 'trojan']
+        allowed_types = [NodeType.SS, NodeType.VMess, NodeType.Trojan]
     # 进行过滤
-    return [x for x in nodes if x.get('type') in allowed_types]
+    return [x for x in nodes if isinstance(x, dict) and x.get('type') in [t.value for t in allowed_types]]
 
 # 合并links列表
 def merge_lists(*lists):
