@@ -1529,7 +1529,9 @@ def read_yaml_files(folder_path):
     return load_nodes
 
 # 进行type过滤
-def filter_by_types_alt(allowed_types=['ss', 'trojan'], nodes=['ss', 'trojan']):
+def filter_by_types_alt(allowed_types=['ss', 'trojan'], nodes=None):
+    if nodes is None:
+        nodes = []
     # 进行过滤
     return [node for node in nodes if node.get('type') in allowed_types]
 
