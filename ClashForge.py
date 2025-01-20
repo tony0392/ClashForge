@@ -1529,11 +1529,9 @@ def read_yaml_files(folder_path):
     return load_nodes
 
 # 进行type过滤
-def filter_by_types_alt(allowed_types=['ss'], nodes=None):
-    if nodes is None:
-        nodes = ['ss']
+def filter_by_types_alt(allowed_types,nodes):
     # 进行过滤
-    return [node for node in nodes if node.get('type') in allowed_types]
+    return [x for x in nodes if x.get('type') in allowed_types]
 
 # 合并links列表
 def merge_lists(*lists):
@@ -2296,7 +2294,7 @@ def resolve_template_url(template_url):
 
     return resolved_url
 
-def work(links,check=False,allowed_types=[],only_check=False):
+def work(links,check=True,allowed_types=["ss"],only_check=False):
     try:
         if not only_check:
             load_nodes = read_yaml_files(folder_path=INPUT)
