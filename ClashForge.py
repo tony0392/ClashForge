@@ -1457,14 +1457,10 @@ def process_url(url):
 
 # 解析不同的代理链接
 def parse_proxy_link(link):
-    if link.startswith("hysteria2://") or link.startswith("hy2://"):
-        return parse_hysteria2_link(link)
-    elif link.startswith("trojan://"):
+    if   link.startswith("trojan://"):
         return parse_trojan_link(link)
     elif link.startswith("ss://"):
         return parse_ss_link(link)
-    elif link.startswith("vless://"):
-        return parse_vless_link(link)
     elif link.startswith("vmess://"):
         return parse_vmess_link(link)
     return None
@@ -2294,7 +2290,7 @@ def resolve_template_url(template_url):
 
     return resolved_url
 
-def work(links,check=True,allowed_types=["ss"],only_check=False):
+def work(links,check=True,allowed_types=[],only_check=False):
     try:
         if not only_check:
             load_nodes = read_yaml_files(folder_path=INPUT)
