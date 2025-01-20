@@ -1364,7 +1364,7 @@ def parse_md_link(link):
         content = response.text
         content = urllib.parse.unquote(content)
         # 定义正则表达式模式，匹配所需的协议链接
-        pattern = r'(?:vless|vmess|trojan|hysteria2|ss):\/\/[^#\s]*(?:#[^\s]*)?'
+        pattern = r'(?:vmess|trojan|ss):\/\/[^#\s]*(?:#[^\s]*)?'
 
         # 使用re.findall()提取所有匹配的链接
         matches = re.findall(pattern, content)
