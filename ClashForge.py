@@ -1364,7 +1364,7 @@ def parse_md_link(link):
         content = response.text
         content = urllib.parse.unquote(content)
         # 定义正则表达式模式，匹配所需的协议链接
-        pattern = r'(?:vmess|trojan|ss):\/\/[^#\s]*(?:#[^\s]*)?'
+        pattern = r'(?:vless|vmess|trojan|hysteria2|ss):\/\/[^#\s]*(?:#[^\s]*)?'
 
         # 使用re.findall()提取所有匹配的链接
         matches = re.findall(pattern, content)
@@ -1541,7 +1541,7 @@ def merge_lists(*lists):
 def handle_links(new_links,resolve_name_conflicts):
     try:
         for new_link in new_links:
-            if new_link.startswith(("hysteria2://", "hy2://", "trojan://", "ss://", "vless://", "vmess://")):
+            if new_link.startswith(("trojan://", "ss://", "vmess://")):
                 node = parse_proxy_link(new_link)
                 if node:
                     resolve_name_conflicts(node)
