@@ -32,6 +32,13 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
+- name: 🇷🇺_RU_俄罗斯_1
+  port: 989
+  server: 185.231.233.173
+  type: ss
+  udp: true
+  password: f8f7aCzcPKbsF8p3
+  cipher: aes-256-cfb
 - name: 🇨🇭_CH_瑞士
   port: 989
   server: 84.17.53.160
@@ -60,6 +67,12 @@ proxies:
   udp: true
   password: MDZhNTAz
   cipher: chacha20-ietf-poly1305
+- cipher: aes-256-cfb
+  name: 🇷🇺_RU_俄罗斯
+  password: BejrQvtu9sqUeNuZ
+  port: 9024
+  server: 217.30.10.18
+  type: ss
 - name: 🇷🇺_RU_俄罗斯_3
   password: '3723507166611775488'
   port: 443
@@ -67,28 +80,24 @@ proxies:
   skip-cert-verify: false
   sni: ample-cockatoo.boa152.lol
   type: trojan
+- cipher: aes-256-cfb
+  name: 🇷🇺_RU_俄罗斯_4
+  password: KnJGad3FqTvjqbaX
+  port: 9014
+  server: 217.30.10.18
+  type: ss
 - cipher: aes-256-gcm
   name: 🇨🇦_CA_加拿大
   password: faBAoD54k87UJG7
   port: 2376
   server: 23.154.136.247
   type: ss
-- name: 台湾2
-  server: twmoon1-cdn-route.couldflare-cdn.com
-  port: 1443
-  type: http
-  tls: true
-  skip-cert-verify: false
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-  password: exaxgqkKkd0TAMrCxeonWg==
-- name: 台湾3
-  server: tw4-cdn-route.couldflare-cdn.com
-  port: 443
-  type: http
-  tls: true
-  skip-cert-verify: false
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-  password: exaxgqkKkd0TAMrCxeonWg==
+- cipher: aes-256-cfb
+  name: 🇷🇺_RU_俄罗斯_5
+  password: f8npKgNzdkss2ytn
+  port: 9088
+  server: 217.30.10.18
+  type: ss
 - name: 日本1
   server: jpgmo101-cdn-route.couldflare-cdn.com
   port: 443
@@ -113,14 +122,6 @@ proxies:
   password: exaxgqkKkd0TAMrCxeonWg==
   tls: true
   skip-cert-verify: false
-- name: 香港1
-  server: hkre1-cdn-route.couldflare-cdn.com
-  port: 443
-  type: http
-  tls: true
-  skip-cert-verify: false
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-  password: exaxgqkKkd0TAMrCxeonWg==
 - name: 🇹🇼1
   server: taiwan.keenvpn.me
   port: 443
@@ -212,20 +213,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 2afbc97400ca71c8f3306f9843a6e1c2
   udp: true
-- name: 🇸🇬2
-  server: singapore-2.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: 🇸🇬3
-  server: singapore-3.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
 - name: 🇸🇬4
   server: singapore-4.keenvpn.me
   port: 443
@@ -256,41 +243,6 @@ proxies:
   udp: true
 - name: hk2
   server: hong-kong.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: hk3
-  server: hong-kong-2.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: hk4
-  server: hong-kong-3.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: hk5
-  server: hong-kong-4.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: hk6
-  server: hong-kong-5.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: hk7
-  server: hong-kong-6.keenvpn.me
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
@@ -366,49 +318,30 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: 🇹🇼 台湾2全天极速优先使用|X3
+- name: 🇭🇰 香港-1D
   type: vmess
-  server: yx.sulink.one
-  port: 2052
-  uuid: 9cdec55d-4477-40de-a919-418651fb28ab
+  server: xg.dashuai.cyou
+  port: 19901
+  uuid: 9bb029e8-27a9-4932-8b7e-94aac0f1e14d
   alterId: 0
   cipher: auto
-  network: ws
+  network: tcp
   tls: false
   sni: ''
-  ws-opts:
-    path: /
-    headers:
-      Host: tw02.xn--io0a7iw0ab67b.xyz
-- name: 🇷🇴_RO_罗马尼亚-p3fG
+  ws-opts: {}
+- name: 🇷🇴_RO_罗马尼亚-Uxl4
   type: ss
   server: 194.5.215.59
   port: 8080
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇰🇷 韩国[01]
-  server: pop.ff34894a-296c-446f-af39-20b90947f3a7.heima360.cc
+- name: 🇫🇷 法国[01]
+  server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   port: 443
   client-fingerprint: chrome
   type: trojan
   password: 63d9790c-269c-4d6f-8e53-4f9a5865176f
-  sni: pop.ff34894a-296c-446f-af39-20b90947f3a7.heima360.cc
-  skip-cert-verify: false
-- name: 🇲🇾 马来西亚[03]
-  server: pop.4b470bd6-cc42-4520-9fe6-d7d53a67b022.heima360.cc
-  port: 443
-  client-fingerprint: chrome
-  type: trojan
-  password: 63d9790c-269c-4d6f-8e53-4f9a5865176f
-  sni: pop.4b470bd6-cc42-4520-9fe6-d7d53a67b022.heima360.cc
-  skip-cert-verify: false
-- name: 🇸🇬 新加坡[02]
-  server: pop.09d21837-9b89-4490-92bf-eabf449e3321.heima360.cc
-  port: 443
-  client-fingerprint: chrome
-  type: trojan
-  password: 63d9790c-269c-4d6f-8e53-4f9a5865176f
-  sni: pop.09d21837-9b89-4490-92bf-eabf449e3321.heima360.cc
+  sni: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   skip-cert-verify: false
 - name: 瑞典+V2CROSS.COM
   type: ss
@@ -417,14 +350,14 @@ proxies:
   cipher: aes-256-gcm
   password: cdBIDV42DCwnfIN
   udp: true
-- name: 瑞典+V2CROSS.COM-jgyF
+- name: 瑞典+V2CROSS.COM-AhE0
   type: ss
   server: 167.88.63.21
   port: 8881
   cipher: aes-256-gcm
   password: kDWvXYZoTBcGkC4
   udp: true
-- name: 瑞典+V2CROSS.COM-Akcj
+- name: 瑞典+V2CROSS.COM-loDN
   type: ss
   server: 167.88.63.21
   port: 5601
@@ -483,7 +416,53 @@ proxies:
   ws-opts:
     path: /linkvws
   udp: true
-- name: 15|IN_speednode_0042
+- cipher: aes-256-cfb
+  name: 13|🇸🇬 狮城特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 13.231.234.231
+  tfo: false
+  type: ss
+- name: 15|AM_speednode_0001
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 188.164.159.3
+  skip-cert-verify: false
+  sni: amepo.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: amepo.ambercc.filegear-sg.me
+    path: /
+- name: 15|AM_speednode_0002
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 188.164.159.248
+  skip-cert-verify: false
+  sni: amepo.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: amepo.ambercc.filegear-sg.me
+    path: /
+- name: 15|ES_speednode_0020
+  network: ws
+  password: Aimer
+  port: 443
+  server: 185.114.72.148
+  skip-cert-verify: false
+  sni: amepo.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: amepo.ambercc.filegear-sg.me
+    path: /
+- name: 15|IN_speednode_0028
   password: '3648425794742788096'
   port: 443
   server: 5.8.35.208
@@ -491,18 +470,57 @@ proxies:
   sni: loving-boa.treefrog761.one
   type: trojan
   udp: true
-- name: 🇰🇷KR-211.178.105.134-053
-  server: 211.178.105.134
-  port: 51633
+- name: 15|LU_speednode_0031
+  network: ws
+  password: Aimer
+  port: 81
+  server: 45.80.209.25
+  skip-cert-verify: false
+  sni: amepo.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: amepo.ambercc.filegear-sg.me
+    path: /
+- name: 15|SG_speednode_0045
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 206.238.236.63
+  skip-cert-verify: false
+  sni: amepo.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: amepo.ambercc.filegear-sg.me
+    path: /
+- name: 15|SG_speednode_0046
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 92.243.74.3
+  skip-cert-verify: false
+  sni: amepo.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: amepo.ambercc.filegear-sg.me
+    path: /
+- name: 🇸🇬SG-68.183.227.4-059
+  server: 68.183.227.4
+  port: 8080
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇰🇷KR-27.255.82.135-065
+  server: 27.255.82.135
+  port: 61891
   type: ss
   cipher: aes-256-cfb
   password: qwerREWQ@@
-- name: 🇳🇱NL-213.109.147.242-055
-  server: 213.109.147.242
-  port: 62685
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: VpKABcOpNNA0l5G2AVOmw8
 - name: 🇮🇳IN-5.8.35.208-104
   server: 5.8.35.208
   port: 443
@@ -510,18 +528,6 @@ proxies:
   password: 3648425794742788096
   sni: loving-boa.treefrog761.one
   skip-cert-verify: true
-- name: 🇳🇱NL-193.29.139.189-137
-  server: 193.29.139.189
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QCXDxuDlTTMD7jtgHUjIoj
-- name: 🇷🇺_RU_俄罗斯_3-I2cy
-  type: ss
-  server: 217.30.10.18
-  port: 9025
-  cipher: aes-256-cfb
-  password: XPtzA9sCug3SPR4c
 - name: 🇬🇧_GB_英国
   type: ss
   server: 51.15.15.82
@@ -534,7 +540,18 @@ proxies:
   port: 8080
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: _211
+- name: _209
+  type: vmess
+  server: 152.69.197.60
+  port: 1069
+  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
+  alterId: 0
+  cipher: auto
+  network: ''
+  tls: false
+  sni: ''
+  ws-opts: {}
+- name: _210
   type: vmess
   server: 140.83.63.38
   port: 24445
@@ -545,18 +562,7 @@ proxies:
   tls: false
   sni: ''
   ws-opts: {}
-- name: _212
-  type: vmess
-  server: 142.0.134.241
-  port: 45017
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
-  network: ''
-  tls: false
-  sni: ''
-  ws-opts: {}
-- name: 🇩🇪 DE_241
+- name: 🇩🇪 DE_240
   type: vmess
   server: frankfurt03.zgjok.com
   port: 443
@@ -570,18 +576,35 @@ proxies:
     path: /
     headers:
       Host: frankfurt03.zgjok.com
-- name: 🇭🇰 HK_330
+- name: 🇫🇷 FR_255
   type: vmess
-  server: 118.193.33.237
-  port: 40908
-  uuid: 43740b3d-16b7-4d31-cf20-f1eab5e35bc9
+  server: az05.beyondy.cfd
+  port: 443
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
   alterId: 0
   cipher: auto
-  network: tcp
-  tls: false
+  network: ws
+  tls: true
   sni: ''
-  ws-opts: {}
-- name: 🇷🇴 RO_395
+  ws-opts:
+    path: /link
+    headers:
+      Host: az05.beyondy.cfd
+- name: 🇫🇷 FR_256
+  type: vmess
+  server: 146.19.168.161
+  port: 443
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  sni: ''
+  ws-opts:
+    path: /link
+    headers:
+      Host: az05.beyondy.cfd
+- name: 🇷🇴 RO_391
   type: vmess
   server: 193.29.107.234
   port: 49020
@@ -622,78 +645,76 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - _212
-  - 瑞典+V2CROSS.COM-Akcj
-  - 🇨🇦_CA_加拿大
+  - 瑞典+V2CROSS.COM-AhE0
+  - 瑞典+V2CROSS.COM-loDN
   - 瑞典+V2CROSS.COM
-  - Alvin3
-  - 瑞典+V2CROSS.COM-jgyF
-  - Alvin2
-  - Alvin1
-  - 🇷🇴_RO_罗马尼亚-p3fG
+  - 🇨🇦_CA_加拿大
   - CA_0001
-  - 🇯🇵 japan
+  - 15|AM_speednode_0002
+  - 15|AM_speednode_0001
+  - 🇷🇴_RO_罗马尼亚-Uxl4
+  - 15|SG_speednode_0046
+  - 15|SG_speednode_0045
   - 🇳🇱 nl
-  - 🇯🇵 免费-日本5-Ver.8
-  - 🇯🇵 免费-日本7-Ver.1
-  - 🇯🇵 免费-日本2-Ver.7
-  - 🇭🇰 HK_330
-  - 🇯🇵 免费-日本4-Ver.7
   - 🇺🇦_UA_乌克兰
-  - 🇯🇵2
-  - 🇯🇵4
-  - 🇯🇵5
-  - 🇯🇵7
+  - Alvin3
+  - Alvin1
+  - Alvin2
+  - 🇨🇭_CH_瑞士
+  - 🇬🇧_GB_英国_1
+  - 🇷🇴 RO_391
   - 🇺🇦_UA_乌克兰->🇷🇺_RU_俄罗斯
-  - 🇯🇵6
+  - 🇷🇺_RU_俄罗斯_2
+  - 🇷🇺_RU_俄罗斯
+  - 15|ES_speednode_0020
+  - 🇷🇺_RU_俄罗斯_3
+  - uk_manchester
+  - 🇷🇺_RU_俄罗斯_1
+  - 🇯🇵 japan
+  - 🇫🇷 FR_256
+  - 🇯🇵4
+  - 🇯🇵2
+  - 🇯🇵 免费-日本2-Ver.7
   - 🇯🇵3
   - 🇯🇵1
   - 🇹🇼2
-  - uk_manchester
-  - _211
-  - 🇷🇴 RO_395
-  - 🇯🇵 免费-日本6-Ver.7
-  - 🇬🇧_GB_英国_1
-  - hk4
-  - hk6
-  - 🇯🇵 免费-日本3-Ver.6
-  - 🇸🇬3
-  - hk7
-  - hk3
-  - 🇯🇵 免费-日本1-Ver.6
-  - 🇸🇬5
-  - 🇸🇬2
-  - 🇷🇺_RU_俄罗斯_3
-  - 🇸🇬4
-  - hk2
-  - 🇸🇬6
+  - 15|LU_speednode_0031
+  - 🇩🇪 DE_240
+  - 🇬🇧_GB_英国
+  - 🇹🇼1
+  - 13|🇸🇬 狮城特殊|@ripaojiedian
+  - 🇯🇵 免费-日本7-Ver.1
+  - 🇫🇷 FR_255
+  - 🇯🇵 免费-日本5-Ver.8
+  - 🇯🇵 免费-日本4-Ver.7
+  - _210
+  - 🇯🇵7
+  - 🇯🇵5
+  - 🇷🇺_RU_俄罗斯_4
+  - 🇭🇰 香港-1D
+  - 🇰🇷2
+  - 🇰🇷KR-27.255.82.135-065
   - 🇸🇬7
-  - 🇷🇺_RU_俄罗斯_2
-  - 🇰🇷KR-211.178.105.134-053
+  - 15|IN_speednode_0028
+  - 🇮🇳IN-5.8.35.208-104
+  - 🇯🇵 免费-日本1-Ver.6
+  - 🇯🇵 免费-日本3-Ver.6
+  - 🇫🇷 法国[01]
+  - 🇯🇵 免费-日本6-Ver.7
+  - _209
+  - 🇸🇬6
+  - hk2
+  - 🇸🇬1
+  - 🇸🇬5
   - 日本2
-  - 🇨🇭_CH_瑞士
-  - 🇰🇷3
   - 日本1
+  - 🇸🇬SG-68.183.227.4-059
+  - 🇯🇵6
   - 日本3
   - 🇰🇷1
-  - 🇸🇬1
-  - 🇳🇱NL-213.109.147.242-055
-  - 🇸🇬 新加坡[02]
-  - 台湾2
-  - hk5
-  - 台湾3
-  - 🇲🇾 马来西亚[03]
-  - 🇰🇷2
-  - 🇹🇼 台湾2全天极速优先使用|X3
-  - 🇰🇷 韩国[01]
-  - 15|IN_speednode_0042
-  - 🇳🇱NL-193.29.139.189-137
-  - 🇷🇺_RU_俄罗斯_3-I2cy
-  - 🇬🇧_GB_英国
-  - 🇩🇪 DE_241
-  - 🇮🇳IN-5.8.35.208-104
-  - 香港1
-  - 🇹🇼1
+  - 🇷🇺_RU_俄罗斯_5
+  - 🇰🇷3
+  - 🇸🇬4
   url: https://i.ytimg.com/generate_204
   interval: 300
   tolerance: 50
@@ -701,155 +722,151 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - _212
-  - 瑞典+V2CROSS.COM-Akcj
-  - 🇨🇦_CA_加拿大
+  - 瑞典+V2CROSS.COM-AhE0
+  - 瑞典+V2CROSS.COM-loDN
   - 瑞典+V2CROSS.COM
-  - Alvin3
-  - 瑞典+V2CROSS.COM-jgyF
-  - Alvin2
-  - Alvin1
-  - 🇷🇴_RO_罗马尼亚-p3fG
+  - 🇨🇦_CA_加拿大
   - CA_0001
-  - 🇯🇵 japan
+  - 15|AM_speednode_0002
+  - 15|AM_speednode_0001
+  - 🇷🇴_RO_罗马尼亚-Uxl4
+  - 15|SG_speednode_0046
+  - 15|SG_speednode_0045
   - 🇳🇱 nl
-  - 🇯🇵 免费-日本5-Ver.8
-  - 🇯🇵 免费-日本7-Ver.1
-  - 🇯🇵 免费-日本2-Ver.7
-  - 🇭🇰 HK_330
-  - 🇯🇵 免费-日本4-Ver.7
   - 🇺🇦_UA_乌克兰
-  - 🇯🇵2
-  - 🇯🇵4
-  - 🇯🇵5
-  - 🇯🇵7
+  - Alvin3
+  - Alvin1
+  - Alvin2
+  - 🇨🇭_CH_瑞士
+  - 🇬🇧_GB_英国_1
+  - 🇷🇴 RO_391
   - 🇺🇦_UA_乌克兰->🇷🇺_RU_俄罗斯
-  - 🇯🇵6
+  - 🇷🇺_RU_俄罗斯_2
+  - 🇷🇺_RU_俄罗斯
+  - 15|ES_speednode_0020
+  - 🇷🇺_RU_俄罗斯_3
+  - uk_manchester
+  - 🇷🇺_RU_俄罗斯_1
+  - 🇯🇵 japan
+  - 🇫🇷 FR_256
+  - 🇯🇵4
+  - 🇯🇵2
+  - 🇯🇵 免费-日本2-Ver.7
   - 🇯🇵3
   - 🇯🇵1
   - 🇹🇼2
-  - uk_manchester
-  - _211
-  - 🇷🇴 RO_395
-  - 🇯🇵 免费-日本6-Ver.7
-  - 🇬🇧_GB_英国_1
-  - hk4
-  - hk6
-  - 🇯🇵 免费-日本3-Ver.6
-  - 🇸🇬3
-  - hk7
-  - hk3
-  - 🇯🇵 免费-日本1-Ver.6
-  - 🇸🇬5
-  - 🇸🇬2
-  - 🇷🇺_RU_俄罗斯_3
-  - 🇸🇬4
-  - hk2
-  - 🇸🇬6
+  - 15|LU_speednode_0031
+  - 🇩🇪 DE_240
+  - 🇬🇧_GB_英国
+  - 🇹🇼1
+  - 13|🇸🇬 狮城特殊|@ripaojiedian
+  - 🇯🇵 免费-日本7-Ver.1
+  - 🇫🇷 FR_255
+  - 🇯🇵 免费-日本5-Ver.8
+  - 🇯🇵 免费-日本4-Ver.7
+  - _210
+  - 🇯🇵7
+  - 🇯🇵5
+  - 🇷🇺_RU_俄罗斯_4
+  - 🇭🇰 香港-1D
+  - 🇰🇷2
+  - 🇰🇷KR-27.255.82.135-065
   - 🇸🇬7
-  - 🇷🇺_RU_俄罗斯_2
-  - 🇰🇷KR-211.178.105.134-053
+  - 15|IN_speednode_0028
+  - 🇮🇳IN-5.8.35.208-104
+  - 🇯🇵 免费-日本1-Ver.6
+  - 🇯🇵 免费-日本3-Ver.6
+  - 🇫🇷 法国[01]
+  - 🇯🇵 免费-日本6-Ver.7
+  - _209
+  - 🇸🇬6
+  - hk2
+  - 🇸🇬1
+  - 🇸🇬5
   - 日本2
-  - 🇨🇭_CH_瑞士
-  - 🇰🇷3
   - 日本1
+  - 🇸🇬SG-68.183.227.4-059
+  - 🇯🇵6
   - 日本3
   - 🇰🇷1
-  - 🇸🇬1
-  - 🇳🇱NL-213.109.147.242-055
-  - 🇸🇬 新加坡[02]
-  - 台湾2
-  - hk5
-  - 台湾3
-  - 🇲🇾 马来西亚[03]
-  - 🇰🇷2
-  - 🇹🇼 台湾2全天极速优先使用|X3
-  - 🇰🇷 韩国[01]
-  - 15|IN_speednode_0042
-  - 🇳🇱NL-193.29.139.189-137
-  - 🇷🇺_RU_俄罗斯_3-I2cy
-  - 🇬🇧_GB_英国
-  - 🇩🇪 DE_241
-  - 🇮🇳IN-5.8.35.208-104
-  - 香港1
-  - 🇹🇼1
+  - 🇷🇺_RU_俄罗斯_5
+  - 🇰🇷3
+  - 🇸🇬4
   url: https://i.ytimg.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - _212
-  - 瑞典+V2CROSS.COM-Akcj
-  - 🇨🇦_CA_加拿大
+  - 瑞典+V2CROSS.COM-AhE0
+  - 瑞典+V2CROSS.COM-loDN
   - 瑞典+V2CROSS.COM
-  - Alvin3
-  - 瑞典+V2CROSS.COM-jgyF
-  - Alvin2
-  - Alvin1
-  - 🇷🇴_RO_罗马尼亚-p3fG
+  - 🇨🇦_CA_加拿大
   - CA_0001
-  - 🇯🇵 japan
+  - 15|AM_speednode_0002
+  - 15|AM_speednode_0001
+  - 🇷🇴_RO_罗马尼亚-Uxl4
+  - 15|SG_speednode_0046
+  - 15|SG_speednode_0045
   - 🇳🇱 nl
-  - 🇯🇵 免费-日本5-Ver.8
-  - 🇯🇵 免费-日本7-Ver.1
-  - 🇯🇵 免费-日本2-Ver.7
-  - 🇭🇰 HK_330
-  - 🇯🇵 免费-日本4-Ver.7
   - 🇺🇦_UA_乌克兰
-  - 🇯🇵2
-  - 🇯🇵4
-  - 🇯🇵5
-  - 🇯🇵7
+  - Alvin3
+  - Alvin1
+  - Alvin2
+  - 🇨🇭_CH_瑞士
+  - 🇬🇧_GB_英国_1
+  - 🇷🇴 RO_391
   - 🇺🇦_UA_乌克兰->🇷🇺_RU_俄罗斯
-  - 🇯🇵6
+  - 🇷🇺_RU_俄罗斯_2
+  - 🇷🇺_RU_俄罗斯
+  - 15|ES_speednode_0020
+  - 🇷🇺_RU_俄罗斯_3
+  - uk_manchester
+  - 🇷🇺_RU_俄罗斯_1
+  - 🇯🇵 japan
+  - 🇫🇷 FR_256
+  - 🇯🇵4
+  - 🇯🇵2
+  - 🇯🇵 免费-日本2-Ver.7
   - 🇯🇵3
   - 🇯🇵1
   - 🇹🇼2
-  - uk_manchester
-  - _211
-  - 🇷🇴 RO_395
-  - 🇯🇵 免费-日本6-Ver.7
-  - 🇬🇧_GB_英国_1
-  - hk4
-  - hk6
-  - 🇯🇵 免费-日本3-Ver.6
-  - 🇸🇬3
-  - hk7
-  - hk3
-  - 🇯🇵 免费-日本1-Ver.6
-  - 🇸🇬5
-  - 🇸🇬2
-  - 🇷🇺_RU_俄罗斯_3
-  - 🇸🇬4
-  - hk2
-  - 🇸🇬6
+  - 15|LU_speednode_0031
+  - 🇩🇪 DE_240
+  - 🇬🇧_GB_英国
+  - 🇹🇼1
+  - 13|🇸🇬 狮城特殊|@ripaojiedian
+  - 🇯🇵 免费-日本7-Ver.1
+  - 🇫🇷 FR_255
+  - 🇯🇵 免费-日本5-Ver.8
+  - 🇯🇵 免费-日本4-Ver.7
+  - _210
+  - 🇯🇵7
+  - 🇯🇵5
+  - 🇷🇺_RU_俄罗斯_4
+  - 🇭🇰 香港-1D
+  - 🇰🇷2
+  - 🇰🇷KR-27.255.82.135-065
   - 🇸🇬7
-  - 🇷🇺_RU_俄罗斯_2
-  - 🇰🇷KR-211.178.105.134-053
+  - 15|IN_speednode_0028
+  - 🇮🇳IN-5.8.35.208-104
+  - 🇯🇵 免费-日本1-Ver.6
+  - 🇯🇵 免费-日本3-Ver.6
+  - 🇫🇷 法国[01]
+  - 🇯🇵 免费-日本6-Ver.7
+  - _209
+  - 🇸🇬6
+  - hk2
+  - 🇸🇬1
+  - 🇸🇬5
   - 日本2
-  - 🇨🇭_CH_瑞士
-  - 🇰🇷3
   - 日本1
+  - 🇸🇬SG-68.183.227.4-059
+  - 🇯🇵6
   - 日本3
   - 🇰🇷1
-  - 🇸🇬1
-  - 🇳🇱NL-213.109.147.242-055
-  - 🇸🇬 新加坡[02]
-  - 台湾2
-  - hk5
-  - 台湾3
-  - 🇲🇾 马来西亚[03]
-  - 🇰🇷2
-  - 🇹🇼 台湾2全天极速优先使用|X3
-  - 🇰🇷 韩国[01]
-  - 15|IN_speednode_0042
-  - 🇳🇱NL-193.29.139.189-137
-  - 🇷🇺_RU_俄罗斯_3-I2cy
-  - 🇬🇧_GB_英国
-  - 🇩🇪 DE_241
-  - 🇮🇳IN-5.8.35.208-104
-  - 香港1
-  - 🇹🇼1
+  - 🇷🇺_RU_俄罗斯_5
+  - 🇰🇷3
+  - 🇸🇬4
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
