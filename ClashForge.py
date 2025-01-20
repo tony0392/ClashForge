@@ -1364,7 +1364,7 @@ def parse_md_link(link):
         content = response.text
         content = urllib.parse.unquote(content)
         # 定义正则表达式模式，匹配所需的协议链接
-        pattern = r'(?:vless|vmess|trojan|hysteria2|ss):\/\/[^#\s]*(?:#[^\s]*)?'
+        pattern = r'(?:vmess|trojan|ss):\/\/[^#\s]*(?:#[^\s]*)?'
 
         # 使用re.findall()提取所有匹配的链接
         matches = re.findall(pattern, content)
@@ -1457,10 +1457,14 @@ def process_url(url):
 
 # 解析不同的代理链接
 def parse_proxy_link(link):
-    if   link.startswith("trojan://"):
+    if link.startswith("hysteria2://") or link.startswith("hy2://"):
+        return parse_hysteria2_link(link)
+    elif link.startswith("trojan://"):
         return parse_trojan_link(link)
     elif link.startswith("ss://"):
         return parse_ss_link(link)
+    elif link.startswith("vless://"):
+        return parse_vless_link(link)
     elif link.startswith("vmess://"):
         return parse_vmess_link(link)
     return None
