@@ -39,9 +39,23 @@ proxies:
   udp: true
   password: f8f7aCzcPKbsF8p3
   cipher: aes-256-cfb
+- name: 🇨🇭_CH_瑞士
+  port: 989
+  server: 84.17.53.160
+  type: ss
+  udp: true
+  password: f8f7aCzcPKbsF8p3
+  cipher: aes-256-cfb
 - name: 🇺🇦_UA_乌克兰
   port: 8388
   server: 95.164.36.59
+  type: ss
+  udp: true
+  password: ZmQwZjFk
+  cipher: chacha20-ietf-poly1305
+- name: 🇺🇦_UA_乌克兰->🇷🇺_RU_俄罗斯
+  port: 8388
+  server: at1.opensocks.site
   type: ss
   udp: true
   password: ZmQwZjFk
@@ -60,7 +74,7 @@ proxies:
   server: 217.30.10.18
   type: ss
 - cipher: aes-256-cfb
-  name: 🇷🇺_RU_俄罗斯_1-bMIz
+  name: 🇷🇺_RU_俄罗斯_1-rURV
   password: S7KwUu7yBy58S3Ga
   port: 9042
   server: 217.30.10.18
@@ -89,12 +103,6 @@ proxies:
   port: 9056
   server: 217.30.10.18
   type: ss
-- cipher: aes-256-cfb
-  name: 🇷🇺_RU_俄罗斯_7
-  password: FG5ddLsMPbV5CutE
-  port: 9050
-  server: 217.30.10.18
-  type: ss
 - name: 🇷🇴_RO_罗马尼亚_1
   port: 989
   server: 188.214.36.155
@@ -102,13 +110,23 @@ proxies:
   udp: true
   password: f8f7aCzcPKbsF8p3
   cipher: aes-256-cfb
-- name: 🇦🇱_AL_阿尔巴尼亚
-  port: 33333
-  server: 109.104.154.146
-  type: ss
+- name: 🇷🇺_RU_俄罗斯_1_2
+  port: 17926
+  server: 195.58.49.86
+  type: vmess
+  network: ws
+  tls: false
   udp: true
-  password: dongtaiwang.com
-  cipher: aes-256-gcm
+  version: '2'
+  servername: ''
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      host: ''
+  cipher: auto
+  uuid: 2dbf46e8-1b20-4c7d-9cf4-5360c3ab5099
+  alterId: 0
 - name: 🇳🇱_NL_荷兰->🇷🇺_RU_俄罗斯
   port: 8388
   server: 45.140.146.223
@@ -116,30 +134,6 @@ proxies:
   udp: true
   password: YjJiYzBj
   cipher: chacha20-ietf-poly1305
-- name: 台湾1
-  server: tw1-cdn-route.couldflare-cdn.com
-  port: 443
-  type: http
-  tls: true
-  skip-cert-verify: false
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-  password: exaxgqkKkd0TAMrCxeonWg==
-- name: 台湾2
-  server: twmoon1-cdn-route.couldflare-cdn.com
-  port: 1443
-  type: http
-  tls: true
-  skip-cert-verify: false
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-  password: exaxgqkKkd0TAMrCxeonWg==
-- name: 台湾3
-  server: tw4-cdn-route.couldflare-cdn.com
-  port: 443
-  type: http
-  tls: true
-  skip-cert-verify: false
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-  password: exaxgqkKkd0TAMrCxeonWg==
 - name: 日本1
   server: jpgmo101-cdn-route.couldflare-cdn.com
   port: 443
@@ -164,22 +158,6 @@ proxies:
   password: exaxgqkKkd0TAMrCxeonWg==
   tls: true
   skip-cert-verify: false
-- name: 香港1
-  server: hkre1-cdn-route.couldflare-cdn.com
-  port: 443
-  type: http
-  tls: true
-  skip-cert-verify: false
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-  password: exaxgqkKkd0TAMrCxeonWg==
-- name: 香港2
-  server: hkcera3-cdn-route.couldflare-cdn.com
-  port: 443
-  type: http
-  tls: true
-  skip-cert-verify: false
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-  password: exaxgqkKkd0TAMrCxeonWg==
 - name: 美国1
   server: usport1-cdn-route.couldflare-cdn.com
   port: 443
@@ -220,6 +198,13 @@ proxies:
   skip-cert-verify: false
   username: mrwdfNTD8M79LCukCieldrqZWqs=
   password: exaxgqkKkd0TAMrCxeonWg==
+- name: 🇹🇼1
+  server: taiwan.keenvpn.me
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  udp: true
 - name: 🇹🇼2
   server: taiwan-2.keenvpn.me
   port: 443
@@ -262,22 +247,15 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 2afbc97400ca71c8f3306f9843a6e1c2
   udp: true
+- name: 🇯🇵6
+  server: japan-6.keenvpn.me
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  udp: true
 - name: 🇯🇵7
   server: japan-7.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: 🇰🇷1
-  server: south-korea.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: 🇰🇷2
-  server: south-korea-2.keenvpn.me
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
@@ -297,15 +275,8 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 2afbc97400ca71c8f3306f9843a6e1c2
   udp: true
-- name: 🇸🇬2
-  server: singapore-2.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: 🇸🇬4
-  server: singapore-4.keenvpn.me
+- name: 🇸🇬3
+  server: singapore-3.keenvpn.me
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
@@ -320,13 +291,6 @@ proxies:
   udp: true
 - name: 🇸🇬6
   server: singapore-6.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: 🇸🇬7
-  server: singapore-7.keenvpn.me
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
@@ -419,16 +383,6 @@ proxies:
   tls: true
   skip-cert-verify: false
   udp: true
-- name: 🇯🇵 免费-日本2-Ver.7
-  server: l4pwe-g03.jp02-9a99-vm0.entry.fr0307a.art
-  port: 11775
-  type: vmess
-  uuid: 8e555d33-4ce4-395e-93cd-670297aeeb0f
-  alterId: 99999
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
 - name: 🇯🇵 免费-日本3-Ver.6
   server: zleja-g03.jp03-7d22-vm0.entry.fr0307a.art
   port: 21583
@@ -442,6 +396,16 @@ proxies:
 - name: 🇯🇵 免费-日本4-Ver.7
   server: 4sq5c-g03.jp04-3771-vm0.entry.fr0307a.art
   port: 446
+  type: vmess
+  uuid: 8e555d33-4ce4-395e-93cd-670297aeeb0f
+  alterId: 99999
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: 🇯🇵 免费-日本5-Ver.8
+  server: 555h7-g03.jp05-6786-vm0.entry.fr0307a.art
+  port: 46484
   type: vmess
   uuid: 8e555d33-4ce4-395e-93cd-670297aeeb0f
   alterId: 99999
@@ -469,68 +433,24 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: 🇭🇰 香港-1F
+- name: 🇭🇰 香港-1E
   type: vmess
   server: xg.dashuai.cyou
   port: 19901
-  uuid: 562a3d43-b612-475d-9c17-4728ae918813
+  uuid: 4f3caf84-7201-42b9-be6e-fcf8c242d821
   alterId: 0
   cipher: auto
   network: tcp
   tls: false
   sni: ''
   ws-opts: {}
-- name: 🇺🇸 美国5
-  type: vmess
-  server: yx.sulink.one
-  port: 80
-  uuid: f03c8d43-209a-43b3-a459-e53fd598548f
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: false
-  sni: ''
-  ws-opts:
-    path: /
-    headers:
-      Host: us5.sulink.one
-- name: 🇹🇼 台湾2全天极速优先使用|X3
-  type: vmess
-  server: yx.sulink.one
-  port: 2052
-  uuid: f03c8d43-209a-43b3-a459-e53fd598548f
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: false
-  sni: ''
-  ws-opts:
-    path: /
-    headers:
-      Host: tw02.xn--io0a7iw0ab67b.xyz
-- name: 🇰🇷 韩国[01]
-  server: pop.ff34894a-296c-446f-af39-20b90947f3a7.heima360.cc
+- name: 🇫🇷 法国[01]
+  server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   port: 443
   client-fingerprint: chrome
   type: trojan
   password: afb3496c-eeb5-4ea3-8c2c-a91c9b04c294
-  sni: pop.ff34894a-296c-446f-af39-20b90947f3a7.heima360.cc
-  skip-cert-verify: false
-- name: 🇲🇾 马来西亚[03]
-  server: pop.4b470bd6-cc42-4520-9fe6-d7d53a67b022.heima360.cc
-  port: 443
-  client-fingerprint: chrome
-  type: trojan
-  password: afb3496c-eeb5-4ea3-8c2c-a91c9b04c294
-  sni: pop.4b470bd6-cc42-4520-9fe6-d7d53a67b022.heima360.cc
-  skip-cert-verify: false
-- name: 🇸🇬 新加坡[02]
-  server: pop.09d21837-9b89-4490-92bf-eabf449e3321.heima360.cc
-  port: 443
-  client-fingerprint: chrome
-  type: trojan
-  password: afb3496c-eeb5-4ea3-8c2c-a91c9b04c294
-  sni: pop.09d21837-9b89-4490-92bf-eabf449e3321.heima360.cc
+  sni: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   skip-cert-verify: false
 - name: 美国 CloudFlare节点
   type: vmess
@@ -546,7 +466,7 @@ proxies:
     path: /dabai.in172.64.27.73
     headers:
       Host: 100-150-51-99.s1.cn-db.top
-- name: 美国 CloudFlare节点-tEkO
+- name: 美国 CloudFlare节点-SMtk
   type: vmess
   server: 104.16.155.10
   port: 2082
@@ -567,7 +487,7 @@ proxies:
   cipher: aes-256-gcm
   password: cdBIDV42DCwnfIN
   udp: true
-- name: 美国 CloudFlare节点-eHvC
+- name: 美国 CloudFlare节点-JCvD
   type: vmess
   server: s1.db-link02.top
   port: 2082
@@ -581,7 +501,7 @@ proxies:
     path: /dabai.in104.20.8.162
     headers:
       Host: 100-6-81-226.s1.db-link02.top
-- name: 美国 CloudFlare节点-AghA
+- name: 美国 CloudFlare节点-IfjN
   type: vmess
   server: 104.17.221.248
   port: 80
@@ -595,7 +515,7 @@ proxies:
     path: /dabai.in104.17.169.115
     headers:
       Host: 100-49-141-209.s1.db-link02.top
-- name: 美国 CloudFlare节点-avem
+- name: 美国 CloudFlare节点-qbdy
   type: vmess
   server: s1.cn-db.top
   port: 2052
@@ -609,14 +529,14 @@ proxies:
     path: /dabai.in172.64.9.180
     headers:
       Host: 100-185-39-111.s1.cn-db.top
-- name: 瑞典+V2CROSS.COM-Eq8R
+- name: 瑞典+V2CROSS.COM-kDYy
   type: ss
   server: 167.88.63.21
   port: 8881
   cipher: aes-256-gcm
   password: kDWvXYZoTBcGkC4
   udp: true
-- name: 瑞典+V2CROSS.COM-CHoP
+- name: 瑞典+V2CROSS.COM-E2XU
   type: ss
   server: 167.88.63.21
   port: 5601
@@ -651,6 +571,40 @@ proxies:
   server: 47.128.244.15
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 13,14|俄罗斯|@ripaojiedian
+  network: ws
+  port: '17926'
+  server: 194.87.69.52
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: c3f7ff71-8e83-4983-94fd-c7bc4018b824
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- name: 🇱🇹LT-45.87.175.181-058
+  server: 45.87.175.181
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: cvII85TrW6n0OGyfpHVS1u
+- name: 🇯🇵JP-18.183.250.250-061
+  server: 18.183.250.250
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵JP-13.230.174.203-062
+  server: 13.230.174.203
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇮🇳IN-5.8.35.208-088
   server: 5.8.35.208
   port: 443
@@ -658,6 +612,19 @@ proxies:
   password: 3648425794742788096
   sni: loving-boa.treefrog761.one
   skip-cert-verify: true
+- name: 🇷🇺RU-194.87.69.52-108
+  server: 194.87.69.52
+  port: 17926
+  type: vmess
+  uuid: c3f7ff71-8e83-4983-94fd-c7bc4018b824
+  alterId: 0
+  cipher: auto
+  skip-cert-verify: true
+  network: ws
+  ws-path: /
+  tls: false
+  ws-headers:
+    Host: 194.87.69.52
 - name: 🇱🇹LT-45.87.175.171-187
   server: 45.87.175.171
   port: 8080
@@ -676,43 +643,55 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇷🇴_RO_罗马尼亚-tcWn
+- name: 🇷🇴_RO_罗马尼亚-0lX9
   type: ss
   server: 194.5.215.59
   port: 8080
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇷🇺_RU_俄罗斯_1-kI7P
+- name: 🇷🇺_RU_俄罗斯_1-Vz5f
   type: ss
   server: 217.30.10.18
   port: 9037
   cipher: aes-256-cfb
   password: TN2YqghxeFDKZfLU
-- name: 🇷🇺_RU_俄罗斯_2-Q5Es
+- name: 🇷🇺_RU_俄罗斯_2-XnBA
   type: ss
   server: 217.30.10.18
   port: 9040
   cipher: aes-256-cfb
   password: p9z5BVADH2YFs3MN
-- name: 🇷🇺_RU_俄罗斯_3-OpBr
+- name: 🇷🇺_RU_俄罗斯_3-RsTy
   type: ss
   server: 217.30.10.18
   port: 9025
   cipher: aes-256-cfb
   password: XPtzA9sCug3SPR4c
-- name: 🇷🇺_RU_俄罗斯_5-QOVf
+- name: 🇷🇺_RU_俄罗斯_4-7XA9
+  type: ss
+  server: 217.30.10.18
+  port: 9026
+  cipher: aes-256-cfb
+  password: QWDDvVE9npNurQfA
+- name: 🇷🇺_RU_俄罗斯_5-wevW
   type: ss
   server: 217.30.10.18
   port: 9010
   cipher: aes-256-cfb
   password: f63gg8EruDnUrmz4
-- name: 🇷🇺_RU_俄罗斯_6-2Jqi
+- name: 🇬🇧_GB_英国
+  type: ss
+  server: 51.15.15.82
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇷🇺_RU_俄罗斯_6-qLxM
   type: ss
   server: 217.30.10.18
   port: 9079
   cipher: aes-256-cfb
   password: TPqX8edgbAURcAMb
-- name: 🇷🇺_RU_俄罗斯_7-j9uK
+- name: 🇷🇺_RU_俄罗斯_7-MI4y
   type: ss
   server: 217.30.10.18
   port: 9011
@@ -736,24 +715,7 @@ proxies:
   port: 9019
   cipher: aes-256-cfb
   password: GA9KzeEgvfxNrgmM
-- name: 🇷🇺_RU_俄罗斯_9
-  type: ss
-  server: 217.30.10.18
-  port: 9003
-  cipher: aes-256-cfb
-  password: JdmRK9gMEqFgs8nP
-- name: _211
-  type: vmess
-  server: 140.83.63.38
-  port: 24445
-  uuid: 94c5ef37-4d82-49f9-c624-f01259374a17
-  alterId: 64
-  cipher: auto
-  network: ''
-  tls: false
-  sni: ''
-  ws-opts: {}
-- name: _212
+- name: _208
   type: vmess
   server: 142.0.134.241
   port: 45017
@@ -764,21 +726,29 @@ proxies:
   tls: false
   sni: ''
   ws-opts: {}
-- name: 🇩🇪 DE_240
+- name: _209
   type: vmess
-  server: frankfurt03.zgjok.com
-  port: 443
-  uuid: 4f7c2243-a38a-4672-983b-f1378aee0a7f
-  alterId: 0
+  server: 140.83.63.38
+  port: 24445
+  uuid: 94c5ef37-4d82-49f9-c624-f01259374a17
+  alterId: 64
   cipher: auto
-  network: ws
-  tls: true
+  network: ''
+  tls: false
   sni: ''
-  ws-opts:
-    path: /
-    headers:
-      Host: frankfurt03.zgjok.com
-- name: 🇫🇷 FR_254
+  ws-opts: {}
+- name: _210
+  type: vmess
+  server: 198.2.218.102
+  port: 41400
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  cipher: auto
+  network: ''
+  tls: false
+  sni: ''
+  ws-opts: {}
+- name: 🇫🇷 FR_250
   type: vmess
   server: 146.19.168.161
   port: 443
@@ -792,7 +762,35 @@ proxies:
     path: /link
     headers:
       Host: az05.beyondy.cfd
-- name: 🇭🇰 HK_330
+- name: 🇫🇷 FR_254
+  type: vmess
+  server: az05.beyondy.cfd
+  port: 443
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  sni: ''
+  ws-opts:
+    path: /link
+    headers:
+      Host: az05.beyondy.cfd
+- name: 🇫🇷 FR_255
+  type: vmess
+  server: 194.9.172.65
+  port: 443
+  uuid: 8d90c129-4156-4d6c-9115-24df25f26a02
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  sni: ''
+  ws-opts:
+    path: /linkws
+    headers:
+      Host: beyonddbc.sbs
+- name: 🇭🇰 HK_326
   type: vmess
   server: 118.193.33.237
   port: 40908
@@ -803,7 +801,7 @@ proxies:
   tls: false
   sni: ''
   ws-opts: {}
-- name: 🇷🇴 RO_404
+- name: 🇷🇴 RO_395
   type: vmess
   server: 193.29.107.234
   port: 49020
@@ -844,106 +842,104 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 美国3
-  - 美国2
-  - 美国5
-  - 瑞典+V2CROSS.COM-CHoP
+  - 瑞典+V2CROSS.COM-E2XU
+  - 瑞典+V2CROSS.COM-kDYy
   - 瑞典+V2CROSS.COM
-  - 瑞典+V2CROSS.COM-Eq8R
-  - _212
-  - 美国1
   - 🇨🇦_CA_加拿大
-  - 🇷🇴_RO_罗马尼亚-tcWn
-  - 美国4
   - CA_0001
-  - 美国01
-  - 🇯🇵 japan
-  - 美国 CloudFlare节点-AghA
-  - 美国05
+  - 🇷🇴_RO_罗马尼亚-0lX9
   - 美国03
   - 美国04
-  - 🇳🇱 nl
-  - 🇱🇹LT-45.87.175.171-187
-  - 🇯🇵 免费-日本2-Ver.7
-  - 🇯🇵 免费-日本4-Ver.7
-  - 🇮🇪IE-95.164.44.221-192
-  - 🇺🇦_UA_乌克兰
-  - 13|🇯🇵 日本特殊|@ripaojiedian
-  - 🇯🇵 免费-日本7-Ver.1
-  - 🇷🇺_RU_俄罗斯_2-Q5Es
-  - 🇭🇰 HK_330
-  - 🇷🇺_RU_俄罗斯_3-OpBr
-  - 🇷🇺_RU_俄罗斯_7-j9uK
-  - 🇷🇺_RU_俄罗斯_1-kI7P
-  - 🇩🇪_DE_德国->🇷🇺_RU_俄罗斯
-  - uk_manchester
-  - 🇯🇵5
+  - 美国4
+  - _208
+  - _210
   - 美国02
-  - 🇷🇺_RU_俄罗斯_7
-  - 🇯🇵4
-  - 🇷🇺_RU_俄罗斯_9
-  - 🇷🇺_RU_俄罗斯_8
-  - 🇷🇺_RU_俄罗斯_6-2Jqi
-  - 美国 CloudFlare节点
-  - 🇷🇺_RU_俄罗斯_6
-  - 🇹🇼2
-  - 美国 CloudFlare节点-eHvC
+  - 🇳🇱 nl
+  - 美国 CloudFlare节点-SMtk
+  - 🇫🇷FR-45.158.171.110-194
+  - 🇩🇪_DE_德国->🇷🇺_RU_俄罗斯
+  - 🇮🇪IE-95.164.44.221-192
+  - 美国05
+  - 🇺🇦_UA_乌克兰
+  - 🇺🇦_UA_乌克兰->🇷🇺_RU_俄罗斯
+  - 🇷🇺_RU_俄罗斯_1-rURV
   - 🇷🇺_RU_俄罗斯_5
-  - 🇷🇺_RU_俄罗斯_1-bMIz
-  - 🇷🇺_RU_俄罗斯_5-QOVf
-  - 🇷🇺_RU_俄罗斯
-  - 美国 CloudFlare节点-avem
+  - 美国01
+  - uk_manchester
+  - 🇷🇺_RU_俄罗斯_8
+  - 🇱🇹LT-45.87.175.171-187
+  - 🇨🇭_CH_瑞士
+  - 🇷🇺_RU_俄罗斯_6-qLxM
+  - 🇷🇺_RU_俄罗斯_1-Vz5f
+  - 🇷🇺_RU_俄罗斯_5-wevW
+  - 🇷🇺_RU_俄罗斯_4-7XA9
+  - 🇷🇺_RU_俄罗斯_7-MI4y
+  - 美国 CloudFlare节点-IfjN
+  - 🇷🇺_RU_俄罗斯_3-RsTy
+  - 🇷🇴 RO_395
+  - 🇬🇧_GB_英国_1
+  - 0,15|DE_speednode_0023
+  - 美国2
+  - 🇷🇺_RU_俄罗斯_2
+  - 美国5
   - 🇷🇺_RU_俄罗斯_4
-  - 🇭🇰 香港-1F
-  - 🇷🇴 RO_404
+  - 🇯🇵 japan
+  - 美国3
+  - 🇷🇺_RU_俄罗斯_6
+  - 🇯🇵JP-13.230.174.203-062
+  - 🇯🇵JP-18.183.250.250-061
+  - 美国1
+  - 🇷🇺_RU_俄罗斯
+  - 🇷🇺_RU_俄罗斯_2-XnBA
+  - 🇷🇺_RU_俄罗斯_1
+  - 🇭🇰 HK_326
+  - 🇷🇺RU-194.87.69.52-108
+  - 🇯🇵 免费-日本5-Ver.8
+  - 🇯🇵 免费-日本7-Ver.1
+  - 13|🇯🇵 日本特殊|@ripaojiedian
+  - 🇯🇵5
+  - 🇯🇵2
+  - 🇯🇵 免费-日本4-Ver.7
+  - 🇱🇹LT-45.87.175.181-058
+  - 🇫🇷 FR_250
+  - 美国 CloudFlare节点-qbdy
+  - 13,14|俄罗斯|@ripaojiedian
+  - 🇷🇴_RO_罗马尼亚_1
+  - 美国 CloudFlare节点
+  - 🇭🇰 香港-1E
+  - _209
+  - 🇬🇧_GB_英国
+  - 美国 CloudFlare节点-JCvD
+  - 🇯🇵7
+  - 🇯🇵6
+  - 🇸🇬1
+  - 🇷🇺_RU_俄罗斯_1_2
+  - 🇯🇵4
+  - 🇯🇵 免费-日本6-Ver.7
   - 🇯🇵 免费-日本3-Ver.6
+  - 🇹🇼1
+  - 🇳🇱_NL_荷兰->🇷🇺_RU_俄罗斯
+  - 🇸🇬6
+  - 🇫🇷 FR_255
   - 🇯🇵 免费-日本1-Ver.6
   - 🇯🇵1
-  - 🇬🇧_GB_英国_1
-  - 🇯🇵 免费-日本6-Ver.7
-  - 0,15|DE_speednode_0023
-  - 🇯🇵2
-  - 🇷🇺_RU_俄罗斯_2
-  - 🇸🇬7
-  - 日本1
-  - 🇯🇵7
-  - 日本3
-  - 🇺🇸 美国5
-  - 🇷🇴_RO_罗马尼亚_1
-  - 🇦🇱_AL_阿尔巴尼亚
-  - _211
-  - 🇷🇺_RU_俄罗斯_1
-  - 🇸🇬 新加坡[02]
-  - 台湾1
-  - hk5
-  - hk4
-  - 台湾3
-  - 台湾2
-  - 🇸🇬2
-  - 🇳🇱_NL_荷兰->🇷🇺_RU_俄罗斯
-  - 🇹🇼 台湾2全天极速优先使用|X3
-  - 🇲🇾 马来西亚[03]
-  - 🇸🇬6
-  - hk6
-  - 🇸🇬5
-  - 🇸🇬1
-  - 🇰🇷2
+  - 🇮🇳IN-5.8.35.208-088
   - 🇯🇵3
+  - 🇫🇷 FR_254
   - 日本2
   - 🇰🇷3
-  - hk3
+  - 日本1
   - hk7
-  - 🇰🇷 韩国[01]
-  - 🇩🇪 DE_240
-  - 香港1
-  - 🇰🇷1
-  - 🇮🇳IN-5.8.35.208-088
-  - 🇫🇷FR-45.158.171.110-194
+  - hk6
+  - 🇫🇷 法国[01]
+  - hk4
+  - 🇸🇬3
+  - 🇹🇼2
+  - 日本3
+  - 🇸🇬5
+  - hk3
   - hk2
-  - 美国 CloudFlare节点-tEkO
-  - 香港2
-  - 🇫🇷 FR_254
-  - 🇸🇬4
+  - hk5
   url: https://i.ytimg.com/generate_204
   interval: 300
   tolerance: 50
@@ -951,211 +947,207 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 美国3
-  - 美国2
-  - 美国5
-  - 瑞典+V2CROSS.COM-CHoP
+  - 瑞典+V2CROSS.COM-E2XU
+  - 瑞典+V2CROSS.COM-kDYy
   - 瑞典+V2CROSS.COM
-  - 瑞典+V2CROSS.COM-Eq8R
-  - _212
-  - 美国1
   - 🇨🇦_CA_加拿大
-  - 🇷🇴_RO_罗马尼亚-tcWn
-  - 美国4
   - CA_0001
-  - 美国01
-  - 🇯🇵 japan
-  - 美国 CloudFlare节点-AghA
-  - 美国05
+  - 🇷🇴_RO_罗马尼亚-0lX9
   - 美国03
   - 美国04
-  - 🇳🇱 nl
-  - 🇱🇹LT-45.87.175.171-187
-  - 🇯🇵 免费-日本2-Ver.7
-  - 🇯🇵 免费-日本4-Ver.7
-  - 🇮🇪IE-95.164.44.221-192
-  - 🇺🇦_UA_乌克兰
-  - 13|🇯🇵 日本特殊|@ripaojiedian
-  - 🇯🇵 免费-日本7-Ver.1
-  - 🇷🇺_RU_俄罗斯_2-Q5Es
-  - 🇭🇰 HK_330
-  - 🇷🇺_RU_俄罗斯_3-OpBr
-  - 🇷🇺_RU_俄罗斯_7-j9uK
-  - 🇷🇺_RU_俄罗斯_1-kI7P
-  - 🇩🇪_DE_德国->🇷🇺_RU_俄罗斯
-  - uk_manchester
-  - 🇯🇵5
+  - 美国4
+  - _208
+  - _210
   - 美国02
-  - 🇷🇺_RU_俄罗斯_7
-  - 🇯🇵4
-  - 🇷🇺_RU_俄罗斯_9
-  - 🇷🇺_RU_俄罗斯_8
-  - 🇷🇺_RU_俄罗斯_6-2Jqi
-  - 美国 CloudFlare节点
-  - 🇷🇺_RU_俄罗斯_6
-  - 🇹🇼2
-  - 美国 CloudFlare节点-eHvC
+  - 🇳🇱 nl
+  - 美国 CloudFlare节点-SMtk
+  - 🇫🇷FR-45.158.171.110-194
+  - 🇩🇪_DE_德国->🇷🇺_RU_俄罗斯
+  - 🇮🇪IE-95.164.44.221-192
+  - 美国05
+  - 🇺🇦_UA_乌克兰
+  - 🇺🇦_UA_乌克兰->🇷🇺_RU_俄罗斯
+  - 🇷🇺_RU_俄罗斯_1-rURV
   - 🇷🇺_RU_俄罗斯_5
-  - 🇷🇺_RU_俄罗斯_1-bMIz
-  - 🇷🇺_RU_俄罗斯_5-QOVf
-  - 🇷🇺_RU_俄罗斯
-  - 美国 CloudFlare节点-avem
+  - 美国01
+  - uk_manchester
+  - 🇷🇺_RU_俄罗斯_8
+  - 🇱🇹LT-45.87.175.171-187
+  - 🇨🇭_CH_瑞士
+  - 🇷🇺_RU_俄罗斯_6-qLxM
+  - 🇷🇺_RU_俄罗斯_1-Vz5f
+  - 🇷🇺_RU_俄罗斯_5-wevW
+  - 🇷🇺_RU_俄罗斯_4-7XA9
+  - 🇷🇺_RU_俄罗斯_7-MI4y
+  - 美国 CloudFlare节点-IfjN
+  - 🇷🇺_RU_俄罗斯_3-RsTy
+  - 🇷🇴 RO_395
+  - 🇬🇧_GB_英国_1
+  - 0,15|DE_speednode_0023
+  - 美国2
+  - 🇷🇺_RU_俄罗斯_2
+  - 美国5
   - 🇷🇺_RU_俄罗斯_4
-  - 🇭🇰 香港-1F
-  - 🇷🇴 RO_404
+  - 🇯🇵 japan
+  - 美国3
+  - 🇷🇺_RU_俄罗斯_6
+  - 🇯🇵JP-13.230.174.203-062
+  - 🇯🇵JP-18.183.250.250-061
+  - 美国1
+  - 🇷🇺_RU_俄罗斯
+  - 🇷🇺_RU_俄罗斯_2-XnBA
+  - 🇷🇺_RU_俄罗斯_1
+  - 🇭🇰 HK_326
+  - 🇷🇺RU-194.87.69.52-108
+  - 🇯🇵 免费-日本5-Ver.8
+  - 🇯🇵 免费-日本7-Ver.1
+  - 13|🇯🇵 日本特殊|@ripaojiedian
+  - 🇯🇵5
+  - 🇯🇵2
+  - 🇯🇵 免费-日本4-Ver.7
+  - 🇱🇹LT-45.87.175.181-058
+  - 🇫🇷 FR_250
+  - 美国 CloudFlare节点-qbdy
+  - 13,14|俄罗斯|@ripaojiedian
+  - 🇷🇴_RO_罗马尼亚_1
+  - 美国 CloudFlare节点
+  - 🇭🇰 香港-1E
+  - _209
+  - 🇬🇧_GB_英国
+  - 美国 CloudFlare节点-JCvD
+  - 🇯🇵7
+  - 🇯🇵6
+  - 🇸🇬1
+  - 🇷🇺_RU_俄罗斯_1_2
+  - 🇯🇵4
+  - 🇯🇵 免费-日本6-Ver.7
   - 🇯🇵 免费-日本3-Ver.6
+  - 🇹🇼1
+  - 🇳🇱_NL_荷兰->🇷🇺_RU_俄罗斯
+  - 🇸🇬6
+  - 🇫🇷 FR_255
   - 🇯🇵 免费-日本1-Ver.6
   - 🇯🇵1
-  - 🇬🇧_GB_英国_1
-  - 🇯🇵 免费-日本6-Ver.7
-  - 0,15|DE_speednode_0023
-  - 🇯🇵2
-  - 🇷🇺_RU_俄罗斯_2
-  - 🇸🇬7
-  - 日本1
-  - 🇯🇵7
-  - 日本3
-  - 🇺🇸 美国5
-  - 🇷🇴_RO_罗马尼亚_1
-  - 🇦🇱_AL_阿尔巴尼亚
-  - _211
-  - 🇷🇺_RU_俄罗斯_1
-  - 🇸🇬 新加坡[02]
-  - 台湾1
-  - hk5
-  - hk4
-  - 台湾3
-  - 台湾2
-  - 🇸🇬2
-  - 🇳🇱_NL_荷兰->🇷🇺_RU_俄罗斯
-  - 🇹🇼 台湾2全天极速优先使用|X3
-  - 🇲🇾 马来西亚[03]
-  - 🇸🇬6
-  - hk6
-  - 🇸🇬5
-  - 🇸🇬1
-  - 🇰🇷2
+  - 🇮🇳IN-5.8.35.208-088
   - 🇯🇵3
+  - 🇫🇷 FR_254
   - 日本2
   - 🇰🇷3
-  - hk3
+  - 日本1
   - hk7
-  - 🇰🇷 韩国[01]
-  - 🇩🇪 DE_240
-  - 香港1
-  - 🇰🇷1
-  - 🇮🇳IN-5.8.35.208-088
-  - 🇫🇷FR-45.158.171.110-194
+  - hk6
+  - 🇫🇷 法国[01]
+  - hk4
+  - 🇸🇬3
+  - 🇹🇼2
+  - 日本3
+  - 🇸🇬5
+  - hk3
   - hk2
-  - 美国 CloudFlare节点-tEkO
-  - 香港2
-  - 🇫🇷 FR_254
-  - 🇸🇬4
+  - hk5
   url: https://i.ytimg.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 美国3
-  - 美国2
-  - 美国5
-  - 瑞典+V2CROSS.COM-CHoP
+  - 瑞典+V2CROSS.COM-E2XU
+  - 瑞典+V2CROSS.COM-kDYy
   - 瑞典+V2CROSS.COM
-  - 瑞典+V2CROSS.COM-Eq8R
-  - _212
-  - 美国1
   - 🇨🇦_CA_加拿大
-  - 🇷🇴_RO_罗马尼亚-tcWn
-  - 美国4
   - CA_0001
-  - 美国01
-  - 🇯🇵 japan
-  - 美国 CloudFlare节点-AghA
-  - 美国05
+  - 🇷🇴_RO_罗马尼亚-0lX9
   - 美国03
   - 美国04
-  - 🇳🇱 nl
-  - 🇱🇹LT-45.87.175.171-187
-  - 🇯🇵 免费-日本2-Ver.7
-  - 🇯🇵 免费-日本4-Ver.7
-  - 🇮🇪IE-95.164.44.221-192
-  - 🇺🇦_UA_乌克兰
-  - 13|🇯🇵 日本特殊|@ripaojiedian
-  - 🇯🇵 免费-日本7-Ver.1
-  - 🇷🇺_RU_俄罗斯_2-Q5Es
-  - 🇭🇰 HK_330
-  - 🇷🇺_RU_俄罗斯_3-OpBr
-  - 🇷🇺_RU_俄罗斯_7-j9uK
-  - 🇷🇺_RU_俄罗斯_1-kI7P
-  - 🇩🇪_DE_德国->🇷🇺_RU_俄罗斯
-  - uk_manchester
-  - 🇯🇵5
+  - 美国4
+  - _208
+  - _210
   - 美国02
-  - 🇷🇺_RU_俄罗斯_7
-  - 🇯🇵4
-  - 🇷🇺_RU_俄罗斯_9
-  - 🇷🇺_RU_俄罗斯_8
-  - 🇷🇺_RU_俄罗斯_6-2Jqi
-  - 美国 CloudFlare节点
-  - 🇷🇺_RU_俄罗斯_6
-  - 🇹🇼2
-  - 美国 CloudFlare节点-eHvC
+  - 🇳🇱 nl
+  - 美国 CloudFlare节点-SMtk
+  - 🇫🇷FR-45.158.171.110-194
+  - 🇩🇪_DE_德国->🇷🇺_RU_俄罗斯
+  - 🇮🇪IE-95.164.44.221-192
+  - 美国05
+  - 🇺🇦_UA_乌克兰
+  - 🇺🇦_UA_乌克兰->🇷🇺_RU_俄罗斯
+  - 🇷🇺_RU_俄罗斯_1-rURV
   - 🇷🇺_RU_俄罗斯_5
-  - 🇷🇺_RU_俄罗斯_1-bMIz
-  - 🇷🇺_RU_俄罗斯_5-QOVf
-  - 🇷🇺_RU_俄罗斯
-  - 美国 CloudFlare节点-avem
+  - 美国01
+  - uk_manchester
+  - 🇷🇺_RU_俄罗斯_8
+  - 🇱🇹LT-45.87.175.171-187
+  - 🇨🇭_CH_瑞士
+  - 🇷🇺_RU_俄罗斯_6-qLxM
+  - 🇷🇺_RU_俄罗斯_1-Vz5f
+  - 🇷🇺_RU_俄罗斯_5-wevW
+  - 🇷🇺_RU_俄罗斯_4-7XA9
+  - 🇷🇺_RU_俄罗斯_7-MI4y
+  - 美国 CloudFlare节点-IfjN
+  - 🇷🇺_RU_俄罗斯_3-RsTy
+  - 🇷🇴 RO_395
+  - 🇬🇧_GB_英国_1
+  - 0,15|DE_speednode_0023
+  - 美国2
+  - 🇷🇺_RU_俄罗斯_2
+  - 美国5
   - 🇷🇺_RU_俄罗斯_4
-  - 🇭🇰 香港-1F
-  - 🇷🇴 RO_404
+  - 🇯🇵 japan
+  - 美国3
+  - 🇷🇺_RU_俄罗斯_6
+  - 🇯🇵JP-13.230.174.203-062
+  - 🇯🇵JP-18.183.250.250-061
+  - 美国1
+  - 🇷🇺_RU_俄罗斯
+  - 🇷🇺_RU_俄罗斯_2-XnBA
+  - 🇷🇺_RU_俄罗斯_1
+  - 🇭🇰 HK_326
+  - 🇷🇺RU-194.87.69.52-108
+  - 🇯🇵 免费-日本5-Ver.8
+  - 🇯🇵 免费-日本7-Ver.1
+  - 13|🇯🇵 日本特殊|@ripaojiedian
+  - 🇯🇵5
+  - 🇯🇵2
+  - 🇯🇵 免费-日本4-Ver.7
+  - 🇱🇹LT-45.87.175.181-058
+  - 🇫🇷 FR_250
+  - 美国 CloudFlare节点-qbdy
+  - 13,14|俄罗斯|@ripaojiedian
+  - 🇷🇴_RO_罗马尼亚_1
+  - 美国 CloudFlare节点
+  - 🇭🇰 香港-1E
+  - _209
+  - 🇬🇧_GB_英国
+  - 美国 CloudFlare节点-JCvD
+  - 🇯🇵7
+  - 🇯🇵6
+  - 🇸🇬1
+  - 🇷🇺_RU_俄罗斯_1_2
+  - 🇯🇵4
+  - 🇯🇵 免费-日本6-Ver.7
   - 🇯🇵 免费-日本3-Ver.6
+  - 🇹🇼1
+  - 🇳🇱_NL_荷兰->🇷🇺_RU_俄罗斯
+  - 🇸🇬6
+  - 🇫🇷 FR_255
   - 🇯🇵 免费-日本1-Ver.6
   - 🇯🇵1
-  - 🇬🇧_GB_英国_1
-  - 🇯🇵 免费-日本6-Ver.7
-  - 0,15|DE_speednode_0023
-  - 🇯🇵2
-  - 🇷🇺_RU_俄罗斯_2
-  - 🇸🇬7
-  - 日本1
-  - 🇯🇵7
-  - 日本3
-  - 🇺🇸 美国5
-  - 🇷🇴_RO_罗马尼亚_1
-  - 🇦🇱_AL_阿尔巴尼亚
-  - _211
-  - 🇷🇺_RU_俄罗斯_1
-  - 🇸🇬 新加坡[02]
-  - 台湾1
-  - hk5
-  - hk4
-  - 台湾3
-  - 台湾2
-  - 🇸🇬2
-  - 🇳🇱_NL_荷兰->🇷🇺_RU_俄罗斯
-  - 🇹🇼 台湾2全天极速优先使用|X3
-  - 🇲🇾 马来西亚[03]
-  - 🇸🇬6
-  - hk6
-  - 🇸🇬5
-  - 🇸🇬1
-  - 🇰🇷2
+  - 🇮🇳IN-5.8.35.208-088
   - 🇯🇵3
+  - 🇫🇷 FR_254
   - 日本2
   - 🇰🇷3
-  - hk3
+  - 日本1
   - hk7
-  - 🇰🇷 韩国[01]
-  - 🇩🇪 DE_240
-  - 香港1
-  - 🇰🇷1
-  - 🇮🇳IN-5.8.35.208-088
-  - 🇫🇷FR-45.158.171.110-194
+  - hk6
+  - 🇫🇷 法国[01]
+  - hk4
+  - 🇸🇬3
+  - 🇹🇼2
+  - 日本3
+  - 🇸🇬5
+  - hk3
   - hk2
-  - 美国 CloudFlare节点-tEkO
-  - 香港2
-  - 🇫🇷 FR_254
-  - 🇸🇬4
+  - hk5
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
