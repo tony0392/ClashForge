@@ -2389,4 +2389,4 @@ if __name__ == '__main__':
         "https://www.sstank.top/link/sAHQuZoZ1tzQWjrn?clash=1",
         "https://github.com/midpoint/pools2/raw/refs/heads/master/Eternity.yml"
     ]
-    work(links, check=True, only_check=False, allowed_types=["ss"","vmess","trojan"])
+    work(links, check=True, only_check=False, allowed_types=["ss","vmess","trojan"])
