@@ -31,16 +31,16 @@ warnings.filterwarnings('ignore')
 from requests_html import HTMLSession
 
 # TEST_URL = "http://www.gstatic.com/generate_204"
-TEST_URL = "https://i.ytimg.com/generate_204"
+TEST_URL = "http://www.pinterest.com"
 CLASH_API_PORTS = [9090]
 CLASH_API_HOST = "127.0.0.1"
 CLASH_API_SECRET = ""
 TIMEOUT = 1
 MAX_CONCURRENT_TESTS = 100
-LIMIT = 100 # 最多保留LIMIT个节点
+LIMIT = 200 # 最多保留LIMIT个节点
 CONFIG_FILE = 'clash_config.yaml'
 INPUT = "input" # 从文件中加载代理节点，支持yaml/yml、txt(每条代理链接占一行)
-BAN = ["中国", "China", "CN", "电信", "移动", "联通", "US", "us"]
+BAN = ["中国", "China", "CN", "电信", "移动", "联通"]
 headers = {
     'Accept-Charset': 'utf-8',
     'Accept': 'text/html,application/x-yaml,*/*',
@@ -57,7 +57,7 @@ clash_config_template = {
     "log-level": "info",
     "external-controller": "127.0.0.1:9090",
     "geodata-mode": True,
-    'geox-url': {'geoip': 'https://ghfast.top/https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip.dat', 'mmdb': 'https://ghfast.top/https://raw.githubusercontent.com/Loyalsoldier/geoip/release/GeoLite2-Country.mmdb'},
+    'geox-url': {'geoip': 'https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip.dat', 'mmdb': 'https://raw.githubusercontent.com/Loyalsoldier/geoip/release/GeoLite2-Country.mmdb'},
     "dns": {
         "enable": True,
         "ipv6": False,
@@ -104,7 +104,7 @@ clash_config_template = {
             "exclude-filter": "(?i)中国|China|CN|电信|移动|联通",
             "proxies": [],
             # "url": "http://www.gstatic.com/generate_204",
-            "url": "https://i.ytimg.com/generate_204",
+            "url": "http://www.pinterest.com",
             "interval": 300,
             "tolerance": 50
         },
@@ -113,7 +113,7 @@ clash_config_template = {
             "type": "fallback",
             "exclude-filter": "(?i)中国|China|CN|电信|移动|联通",
             "proxies": [],
-            "url": "https://i.ytimg.com/generate_204",
+            "url": "http://www.gstatic.com/generate_204",
             "interval": 300
         },
         {
@@ -2294,7 +2294,7 @@ def resolve_template_url(template_url):
 
     return resolved_url
 
-def work(links,check=True,allowed_types=[],only_check=False):
+def work(links,check=False,allowed_types=[],only_check=False):
     try:
         if not only_check:
             load_nodes = read_yaml_files(folder_path=INPUT)
