@@ -32,1394 +32,1806 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- name: Paris  Pro 3
-  type: trojan
-  server: set-swan.goat627.mom
+- name: 🇸🇬 狮城特殊|@ripaojiedian
+  server: 13.213.51.39
   port: 443
-  password: '3675223316756701184'
-  sni: set-swan.goat627.mom
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  tfo: false
+- name: 🇰🇷 韩国特殊|@ripaojiedian
+  server: 3.39.223.233
+  port: 443
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  tfo: false
+- name: 🇯🇵 日本特殊|@ripaojiedian
+  server: 54.151.193.123
+  port: 443
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  tfo: false
+- name: 🇳🇱 荷兰|@ripaojiedian
+  server: 109.104.154.146
+  port: 33333
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-256-gcm
+  password: dongtaiwang.com
+  tfo: false
+- name: 🇩🇪 德国2|@ripaojiedian
+  server: 94.182.150.230
+  port: 80
+  client-fingerprint: chrome
+  type: vmess
+  uuid: 2b7ce1d2-0372-4104-aa06-f7d999f26e1d
+  alterId: 0
+  cipher: auto
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+- name: Toronto  Pro 2-pDbJ
+  type: trojan
+  server: safe-louse.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: safe-louse.treefrog761.one
   skip-cert-verify: false
   udp: true
-- name: Ohio -L22 2
-  type: trojan
-  server: active-quagga.goat627.mom
-  port: 443
-  password: '3675223316756701184'
-  sni: active-quagga.goat627.mom
+- name: warp.irss.eu.org
+  server: 172.64.108.237
+  port: 80
+  client-fingerprint: randomized
+  type: vless
+  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
+  tls: false
+  tfo: false
   skip-cert-verify: false
-  udp: true
-- name: Frankfurt  Pro 4
-  type: trojan
-  server: merry-shad.goat627.mom
-  port: 443
-  password: '3675223316756701184'
-  sni: merry-shad.goat627.mom
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: warp.irss.eu.org
+- name: warp.irss.eu.org 2
+  server: 172.67.78.65
+  port: 80
+  client-fingerprint: randomized
+  type: vless
+  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
+  tls: false
+  tfo: false
   skip-cert-verify: false
-  udp: true
-- name: Toronto  Pro 1
-  type: trojan
-  server: neutral-magpie.treefrog761.one
-  port: 443
-  password: '3675223316756701184'
-  sni: neutral-magpie.treefrog761.one
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: warp.irss.eu.org
+- name: warp.irss.eu.org 3
+  server: 172.67.72.209
+  port: 80
+  client-fingerprint: randomized
+  type: vless
+  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
+  tls: false
+  tfo: false
   skip-cert-verify: false
-  udp: true
-- name: Ireland  2
-  type: trojan
-  server: superb-wildcat.silkworm814.makeup
-  port: 443
-  password: '3675223316756701184'
-  sni: superb-wildcat.silkworm814.makeup
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: warp.irss.eu.org
+- name: warp.irss.eu.org 4
+  server: 190.93.247.46
+  port: 80
+  client-fingerprint: randomized
+  type: vless
+  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
+  tls: false
+  tfo: false
   skip-cert-verify: false
-  udp: true
-- name: Manassas  1
-  type: trojan
-  server: open-baboon.goat627.mom
-  port: 443
-  password: '3675223316756701184'
-  sni: open-baboon.goat627.mom
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: warp.irss.eu.org
+- name: warp.irss.eu.org 5
+  server: 172.67.196.125
+  port: 80
+  client-fingerprint: randomized
+  type: vless
+  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
+  tls: false
+  tfo: false
   skip-cert-verify: false
-  udp: true
-- name: 🇩🇪 德国-法兰克福-HY-001-1C
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: warp.irss.eu.org
+- name: warp.irss.eu.org 7
+  server: 104.21.233.205
+  port: 80
+  client-fingerprint: randomized
+  type: vless
+  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: warp.irss.eu.org
+- name: warp.irss.eu.org 8
+  server: 104.16.237.83
+  port: 80
+  client-fingerprint: randomized
+  type: vless
+  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: warp.irss.eu.org
+- name: warp.irss.eu.org 9
+  server: 162.159.255.155
+  port: 80
+  client-fingerprint: randomized
+  type: vless
+  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: warp.irss.eu.org
+- name: warp.irss.eu.org 10
+  server: 104.17.50.101
+  port: 80
+  client-fingerprint: randomized
+  type: vless
+  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: warp.irss.eu.org
+- name: warp.irss.eu.org 11
+  server: 172.67.167.116
+  port: 80
+  client-fingerprint: randomized
+  type: vless
+  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: warp.irss.eu.org
+- name: warp.irss.eu.org 12
+  server: 172.67.34.93
+  port: 80
+  client-fingerprint: randomized
+  type: vless
+  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: warp.irss.eu.org
+- name: warp.irss.eu.org 13
+  server: 172.64.133.218
+  port: 80
+  client-fingerprint: randomized
+  type: vless
+  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: warp.irss.eu.org
+- name: warp.irss.eu.org 14
+  server: 172.67.23.7
+  port: 80
+  client-fingerprint: randomized
+  type: vless
+  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: warp.irss.eu.org
+- name: warp.irss.eu.org 15
+  server: 172.64.90.89
+  port: 80
+  client-fingerprint: randomized
+  type: vless
+  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: warp.irss.eu.org
+- name: 🇩🇪 德国-法兰克福-HY-001-1B-54ta
   server: 5.39.252.204
   port: 3942
   type: hysteria2
-  password: 507da709-7ff1-42c0-a976-d6538a82b02c
-  auth: 507da709-7ff1-42c0-a976-d6538a82b02c
+  password: bb58d777-ab6a-469a-833b-3b2e4eeb3ca9
+  auth: bb58d777-ab6a-469a-833b-3b2e4eeb3ca9
+  up: 15
+  down: 15
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: M2UyNTc5OWUwYjkyM2Q2OQ==
+  udp: true
+- name: 🇩🇪 德国-法兰克福-HY-001-1E
+  server: 5.39.252.204
+  port: 3942
+  type: hysteria2
+  password: f8236275-09f6-42a0-8418-ee7258137594
+  auth: f8236275-09f6-42a0-8418-ee7258137594
   up: 100
   down: 100
   skip-cert-verify: true
   obfs: salamander
   obfs-password: M2UyNTc5OWUwYjkyM2Q2OQ==
   udp: true
-- name: 🇯🇵 JP 香草星冰乐-1B
-  server: jpzl2.stardad.lol
-  port: 48512
-  type: hysteria2
-  password: be17dc6b-01aa-4c7a-abcc-9693213b5474
-  auth: be17dc6b-01aa-4c7a-abcc-9693213b5474
-  sni: https://bing.com
-  up: 1024
-  down: 1024
+- name: 🇧🇬 保加利亚 - 索菲亞 - Cloudflare, Inc. - 1
+  server: 95.164.116.22
+  port: 2501
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: a.mifeng.us.kg
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: a.mifeng.us.kg
+- name: 🇨🇦 加拿大 - 蒙特利尔 - OVH SAS - 1
+  server: 15.235.83.228
+  port: 443
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  network: ws
+  ws-opts:
+    path: /linkvws
+- name: 🇩🇪 德国 - Frankfurt - GTHost - 5
+  server: 23.158.56.241
+  port: 443
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  network: ws
+  ws-opts:
+    path: /linkvws
+- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 7
+  server: 167.82.101.76
+  port: 80
+  type: vless
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  tls: false
+  servername: edge.validbv3528.ir
+  network: ws
+  ws-opts:
+    path: /vless-ws/
+    headers:
+      Host: edge.validbv3528.ir
+- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 8
+  server: 193.122.58.158
+  port: 443
+  type: vless
+  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
+  tls: true
+  servername: mmdserver.us.kg
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: mmdserver.us.kg
+  udp: true
+- name: 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 9
+  server: 138.3.240.63
+  port: 443
+  type: vless
+  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
+  tls: true
+  servername: mmdserver.us.kg
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: mmdserver.us.kg
+  udp: true
+- name: 🇩🇪 德国 - 纽伦堡 - Hetzner Online GmbH - 4
+  server: 94.182.150.231
+  port: 80
+  type: vmess
+  uuid: 2b7ce1d2-0372-4104-aa06-f7d999f26e1d
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇰 丹麦 - 哥本哈根 - ONEPROVIDER - 1
+  server: 185.186.79.53
+  port: 989
+  type: ssr
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+  protocol: origin
+  obfs: plain
+  protocol-param: ''
+  obfs-param: ''
+- name: 🇪🇨 厄瓜多尔 - 基多 - ONEPROVIDER - 1
+  server: 185.47.253.171
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇪🇪 爱沙尼亚 - 塔林 - RJ Network OU - 1
+  server: 188.214.36.155
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇪🇪 爱沙尼亚 - 塔林 - RJ Network OU - 2
+  server: 185.193.49.88
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+  udp: true
+- name: 🇬🇧 英国 - 豪恩斯洛 - Cloudflare, Inc. - 5
+  server: 104.21.30.21
+  port: 80
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: false
+  network: ws
+  ws-opts:
+    path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048
+    headers:
+      Host: a.mifeng.us.kg
+- name: 🇬🇷 希腊 - 塞萨洛尼基 - SYNAPSECOM S.A. Provider of Telecommunications and Internet
+    Services - 1
+  server: 192.71.166.100
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇭🇰 美国 - 洛杉矶 - Kaopu Cloud HK Limited - 5
+  server: 38.54.94.122
+  port: 2053
+  type: vmess
+  uuid: 2ca8b9c3-a2c7-4f3e-b3f4-acd85525ace1
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /L0229-16
+- name: 🇯🇵 日本 - 成田市 - Cloudflare, Inc. - 5
+  server: 167.82.0.1
+  port: 80
+  type: vless
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  tls: false
+  servername: edge.validbv3528.ir
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edge.validbv3528.ir
+  udp: true
+- name: 🇯🇵 日本 - 成田市 - Cloudflare, Inc. - 7
+  server: 167.82.1.103
+  port: 80
+  type: vless
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  tls: false
+  servername: edge.validbv3528.ir
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: edge.validbv3528.ir
+  udp: true
+- name: 🇯🇵 日本 - 成田市 - Cloudflare, Inc. - 8
+  server: 167.82.1.102
+  port: 80
+  type: vless
+  uuid: 253ef561-9e57-4336-befd-878ddd30df01
+  tls: false
+  servername: teleirani.ir
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: teleirani.ir
+- name: 🇯🇵 日本 - 成田市 - Cloudflare, Inc. - 9
+  server: 167.82.0.9
+  port: 80
+  type: vless
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  tls: false
+  servername: edge.validbv3528.ir
+  network: ws
+  ws-opts:
+    path: /vless-ws/
+    headers:
+      Host: edge.validbv3528.ir
+- name: 🇰🇷 韩国 - Seongnam-si - Korea Telecom - 1
+  server: 121.170.203.147
+  port: 37041
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+  udp: true
+- name: 🇰🇷 韩国 - Yeongdong-gun - Cloudflare, Inc. - 5
+  server: 132.145.94.80
+  port: 443
+  type: vless
+  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
+  tls: true
+  servername: mmdserver.us.kg
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: mmdserver.us.kg
+  udp: true
+- name: 🇱🇻 拉脱维亚 - 里加 - Cloudflare, Inc. - 2
+  server: 103.231.73.153
+  port: 443
+  type: vless
+  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
+  tls: true
+  servername: mmdserver.us.kg
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: mmdserver.us.kg
+  udp: true
+- name: 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 5
+  server: 152.70.49.115
+  port: 443
+  type: vless
+  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
+  tls: true
+  servername: mmdserver.us.kg
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: mmdserver.us.kg
+  udp: true
+- name: 🇳🇱 荷兰 - 阿姆斯特丹 - Greenhost BV - 2
+  server: 45.158.171.110
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 - 阿姆斯特丹 - Stark Industries Solutions LTD - 1
+  server: 198.105.123.190
+  port: 46902
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 27797vuXysidnntE2NJ3FwnG19k3exZ8QvXUZjPD9SRYbTMkD5Ekb6jDLDErLjVdnuVs2ahEEJehH4qYLQYejjpLVhpFFhqS
+  udp: true
+- name: 🇸🇬 印度 - 新孟買 - G-Core Labs S.A. - 1
+  server: 5.8.35.208
+  port: 443
+  type: trojan
+  password: 3648425794742788096
+  sni: loving-boa.treefrog761.one
   skip-cert-verify: true
   udp: true
-- name: _138
-  server: 51.77.53.200
-  type: ss
-  port: 3389
+- name: 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 21
+  server: 104.18.26.94
+  port: 80
+  type: vless
+  uuid: 61ff8b60-2be0-40a6-94b5-92cca33f1fab
+  tls: false
+  servername: sedalat.tatexe3807.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sedalat.tatexe3807.workers.dev
+- name: 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 22
+  server: 104.18.27.94
+  port: 80
+  type: vless
+  uuid: 61ff8b60-2be0-40a6-94b5-92cca33f1fab
+  tls: false
+  servername: sedalat.tatexe3807.workers.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sedalat.tatexe3807.workers.dev
+- name: 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 23
+  server: 151.101.194.133
+  port: 80
+  type: vless
+  uuid: 253ef561-9e57-4336-befd-878ddd30df01
+  tls: false
+  servername: teleirani.ir
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048fp=chrome
+    headers:
+      Host: teleirani.ir
   udp: true
-  password: Y6R9pAtvxxzmGC
-  cipher: aes-256-gcm
-- name: _139
-  server: 54.36.174.181
-  type: ss
-  port: 5601
+- name: 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 25
+  server: 167.82.65.80
+  port: 80
+  type: vless
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  tls: false
+  servername: edge.validbv3528.ir
+  network: ws
+  ws-opts:
+    path: /vless-ws/
+    headers:
+      Host: edge.validbv3528.ir
+- name: 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 26
+  server: 167.82.65.8
+  port: 80
+  type: vless
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  tls: false
+  servername: edge.validbv3528.ir
+  network: ws
+  ws-opts:
+    path: /vless-ws/
+    headers:
+      Host: edge.validbv3528.ir
+- name: 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 27
+  server: 167.82.70.214
+  port: 80
+  type: vless
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  tls: false
+  servername: edge.validbv3528.ir
+  network: ws
+  ws-opts:
+    path: /vless-ws/
+    headers:
+      Host: edge.validbv3528.ir
+- name: 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 28
+  server: 167.82.65.71
+  port: 80
+  type: vless
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  tls: false
+  servername: edge.validbv3528.ir
+  network: ws
+  ws-opts:
+    path: /vless-ws/
+    headers:
+      Host: edge.validbv3528.ir
+- name: 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 29
+  server: 167.82.72.38
+  port: 80
+  type: vless
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  tls: false
+  servername: edge.validbv3528.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edge.validbv3528.ir
+- name: 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 30
+  server: 167.82.69.101
+  port: 80
+  type: vless
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  tls: false
+  servername: edge.validbv3528.ir
+  network: ws
+  ws-opts:
+    path: /vless-ws/
+    headers:
+      Host: edge.validbv3528.ir
+- name: 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 31
+  server: 167.82.71.3
+  port: 80
+  type: vless
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  tls: false
+  servername: edge.validbv3528.ir
+  network: ws
+  ws-opts:
+    path: /vless-ws/
+    headers:
+      Host: edge.validbv3528.ir
+- name: 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 32
+  server: 167.82.101.10
+  port: 80
+  type: vless
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  tls: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vless-ws/
+    headers:
+      Host: edge.validbv3528.ir
+- name: 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 33
+  server: 167.82.102.100
+  port: 80
+  type: vless
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  tls: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vless-ws/
+    headers:
+      Host: edge.validbv3528.ir
+- name: 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 34
+  server: 167.82.99.180
+  port: 80
+  type: vless
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  tls: false
+  servername: edge.validbv3528.ir
+  network: ws
+  ws-opts:
+    path: /vless-ws/
+    headers:
+      Host: edge.validbv3528.ir
+- name: 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 35
+  server: 167.82.100.124
+  port: 80
+  type: vless
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  tls: false
+  network: ws
+  ws-opts:
+    path: /vless-ws/
+    headers:
+      Host: edge.validbv3528.ir
+- name: 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 36
+  server: 167.82.101.43
+  port: 80
+  type: vless
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  tls: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vless-ws/
+    headers:
+      Host: edge.validbv3528.ir
+- name: 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 37
+  server: 167.82.99.4
+  port: 80
+  type: vless
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  tls: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vless-ws/
+    headers:
+      Host: edge.validbv3528.ir
+- name: 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 38
+  server: 167.82.102.107
+  port: 80
+  type: vless
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  tls: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edge.validbv3528.ir
+- name: 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 43
+  server: 167.82.65.119
+  port: 80
+  type: vless
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  tls: false
+  servername: edge.validbv3528.ir
+  network: ws
+  ws-opts:
+    path: /vless-ws/
+    headers:
+      Host: edge.validbv3528.ir
+- name: 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 44
+  server: 167.82.66.165
+  port: 80
+  type: vless
+  uuid: 253ef561-9e57-4336-befd-878ddd30df01
+  tls: false
+  servername: teleirani.ir
+  network: ws
+  ws-opts:
+    path: /vless-ws/
+    headers:
+      Host: teleirani.ir
+- name: 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 47
+  server: 154.23.240.232
+  port: 443
+  type: vless
+  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
+  tls: true
+  servername: mmdserver.us.kg
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: mmdserver.us.kg
   udp: true
-  password: Y6R9pAtvxxzmGC
-  cipher: aes-256-gcm
-- name: _140
-  server: 54.36.174.181
-  type: ss
-  port: 7306
+- name: 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 49
+  server: 129.146.46.164
+  port: 443
+  type: vless
+  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
+  tls: true
+  servername: mmdserver.us.kg
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: mmdserver.us.kg
   udp: true
-  password: FoOiGlkAA9yPEGP
-  cipher: aes-256-gcm
-- name: _141
-  server: 51.77.53.200
-  type: ss
-  port: 3306
+- name: 🇺🇸 美国 - 水牛城 - HostPapa - 4
+  server: 107.174.34.6
+  port: 80
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /dabai.in172.64.19.172
+- name: 🇺🇸 美国 - 洛杉矶 - HostPapa - 14
+  server: s2.cn-db.top
+  port: 2052
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /dabai.in104.17.31.68
+    headers:
+      Host: 100-252-79-9.s2.cn-db.top
+- name: 🇺🇸 美国 - 洛杉矶 - HostPapa - 15
+  server: s2.db-link01.top
+  port: 2082
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /dabai.in172.67.61.61
+    headers:
+      Host: 100-253-20-251.s2.db-link01.top
+- name: 🇺🇸 美国 - 洛杉矶 - HostPapa - 19
+  server: 23.94.243.79
+  port: 443
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  network: ws
+  ws-opts:
+    path: /dabai.in104.20.27.115
+- name: 🇺🇸 美国 - 洛杉矶 - HostPapa - 6
+  server: 23.94.243.79
+  port: 80
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /dabai.in104.20.27.115
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 39
+  server: 198.41.216.118
+  port: 80
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: false
+  servername: a.mifeng.us.kg
+  network: ws
+  ws-opts:
+    path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048
+    headers:
+      Host: a.mifeng.us.kg
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 40
+  server: 141.101.121.87
+  port: 80
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: false
+  servername: a.mifeng.us.kg
+  network: ws
+  ws-opts:
+    path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed
+    headers:
+      Host: a.mifeng.us.kg
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 41
+  server: 198.41.205.44
+  port: 80
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: false
+  servername: a.mifeng.us.kg
+  network: ws
+  ws-opts:
+    path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed
+    headers:
+      Host: a.mifeng.us.kg
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 42
+  server: 192.0.54.235
+  port: 443
+  type: vless
+  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
+  tls: true
+  servername: mmdserver.us.kg
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: mmdserver.us.kg
   udp: true
-  password: Y6R9pAtvxxzmGC
-  cipher: aes-256-gcm
-- name: _142
-  server: 51.77.53.200
-  type: ss
-  port: 6679
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 45
+  server: 104.16.251.142
+  port: 80
+  type: vless
+  uuid: b0c6d7bd-a10c-44ce-b651-8a245cac2f4e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: cool-sun-e406-ppal03.lafota3425.workers.dev
+- name: 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 46
+  server: 198.41.209.27
+  port: 80
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: false
+  servername: a.mifeng.us.kg
+  network: ws
+  ws-opts:
+    path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed
+    headers:
+      Host: a.mifeng.us.kg
+- name: 🇺🇸 美国 - 聖荷西 - PEG TECH INC - 3
+  server: 38.11.50.81
+  port: 31005
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /path/1731490899984
+- name: pimax_LosAngeles
+  server: ssm.pimax.com
+  port: 10122
+  type: vmess
+  uuid: 68876abb-0e56-4beb-b959-34a4bc57a6a2
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: ssm.pimax.com
+  network: ws
+  ws-opts:
+    path: /fkgevws
+    headers:
+      Host: ssm.pimax.com
   udp: true
-  password: TEzjfAYq2IjtuoS
-  cipher: aes-256-gcm
-- name: _143
-  server: 54.36.174.181
+- alterId: 0
+  cipher: auto
+  name: 11|0|--50
+  network: ws
+  port: 8880
+  server: yx1.changyouVPN.top
+  tls: false
+  type: vmess
+  uuid: 85c7eba1-dfba-4f3e-9f7a-833fa729dc19
+  ws-opts:
+    headers:
+      Host: yg.changyouVPN.top
+    path: /?ed=2048
+- name: _08
+  server: 142.4.216.225
   type: ss
-  port: 8119
-  udp: true
-  password: cdBIDV42DCwnfIN
-  cipher: aes-256-gcm
-- name: _144
-  server: 51.77.53.200
+  port: 80
+  password: JIhN6rBKkaEboLNXVSv5rq
+  cipher: chacha20-ietf-poly1305
+- name: _10
+  server: 38.110.1.105
   type: ss
-  port: 8888
-  udp: true
-  password: Y6R9pAtvxxzmGC
-  cipher: aes-256-gcm
-- name: _145
-  server: 54.36.174.181
-  type: ss
-  port: 5003
+  port: 5004
   udp: true
   password: g5MeD6Ft3CWlJId
   cipher: aes-256-gcm
-- name: _146
-  server: 54.36.174.181
+- name: _11
+  server: 169.197.142.216
   type: ss
-  port: 443
-  udp: true
-  password: pKEW8JPByTVTLtM
-  cipher: aes-256-gcm
-- name: _147
-  server: 54.36.174.181
-  type: ss
-  port: 8009
-  udp: true
-  password: XKFKl2rULjIp74
-  cipher: aes-256-gcm
-- name: _148
-  server: 54.36.174.181
-  type: ss
-  port: 7002
-  udp: true
-  password: RexnBgU7EV5ADxG
-  cipher: aes-256-gcm
-- name: _149
-  server: 54.36.174.181
-  type: ss
-  port: 6379
-  udp: true
-  password: zDNVedRFPQexG9v
-  cipher: aes-256-gcm
-- name: _150
-  server: 51.77.53.200
-  type: ss
-  port: 5003
-  udp: true
-  password: g5MeD6Ft3CWlJId
-  cipher: aes-256-gcm
-- name: _151
-  server: 54.36.174.181
-  type: ss
-  port: 3306
-  udp: true
-  password: Y6R9pAtvxxzmGC
-  cipher: aes-256-gcm
-- name: _152
-  server: 54.36.174.181
-  type: ss
-  port: 4444
-  udp: true
-  password: pKEW8JPByTVTLtM
-  cipher: aes-256-gcm
-- name: _153
-  server: 54.36.174.181
-  type: ss
-  port: 8888
-  udp: true
-  password: Y6R9pAtvxxzmGC
-  cipher: aes-256-gcm
-- name: _154
-  server: 54.36.174.181
-  type: ss
-  port: 9101
-  udp: true
-  password: e4FCWrgpkji3QY
-  cipher: aes-256-gcm
-- name: _155
-  server: 109.201.152.181
-  type: ss
-  port: 443
-  udp: true
-  password: shadowsocks
-  cipher: aes-128-cfb
-- name: _156
-  server: 145.239.6.202
-  type: ss
-  port: 8008
-  udp: true
-  password: XKFKl2rULjIp74
-  cipher: aes-256-gcm
-- name: _157
-  server: 145.239.6.202
-  type: ss
-  port: 8090
-  udp: true
-  password: PCnnH6SQSnfoS27
-  cipher: aes-256-gcm
-- name: _158
-  server: 51.68.206.229
-  type: ss
-  port: 8118
-  udp: true
-  password: cdBIDV42DCwnfIN
-  cipher: aes-256-gcm
-- name: _159
-  server: 51.68.206.229
-  type: ss
-  port: 8080
-  udp: true
-  password: KixLvKzwjekG00rm
-  cipher: aes-256-gcm
-- name: _160
-  server: 149.202.82.172
-  type: ss
-  port: 6379
-  udp: true
-  password: zDNVedRFPQexG9v
+  port: 2376
+  password: faBAoD54k87UJG7
   cipher: aes-256-gcm
 - name: _161
   server: 149.202.82.172
   type: ss
+  port: 6379
+  udp: true
+  password: zDNVedRFPQexG9v
+  cipher: aes-256-gcm
+- name: _162
+  server: 149.202.82.172
+  type: ss
   port: 8009
   udp: true
   password: XKFKl2rULjIp74
   cipher: aes-256-gcm
-- name: _162
+- name: _163
   server: 149.202.82.172
   type: ss
   port: 5000
   udp: true
   password: Y6R9pAtvxxzmGC
   cipher: aes-256-gcm
-- name: _163
+- name: _164
   server: 149.202.82.172
   type: ss
   port: 8091
   udp: true
   password: PCnnH6SQSnfoS27
   cipher: aes-256-gcm
-- name: _164
+- name: _165
   server: 149.202.82.172
   type: ss
   port: 8881
   udp: true
   password: kDWvXYZoTBcGkC4
   cipher: aes-256-gcm
-- name: _165
+- name: _166
   server: 149.202.82.172
   type: ss
   port: 7002
   udp: true
   password: RexnBgU7EV5ADxG
   cipher: aes-256-gcm
-- name: _166
+- name: _167
   server: 195.154.169.198
   type: ss
   port: 989
   udp: true
   password: f8f7aCzcPKbsF8p3
   cipher: aes-256-cfb
-- name: _167
+- name: _168
   server: 149.202.82.172
   type: ss
   port: 8888
   udp: true
   password: Y6R9pAtvxxzmGC
   cipher: aes-256-gcm
-- name: _168
+- name: _169
   server: 149.202.82.172
   type: ss
   port: 8118
   udp: true
   password: cdBIDV42DCwnfIN
   cipher: aes-256-gcm
-- name: _169
+- name: _170
   server: 149.202.82.172
   type: ss
   port: 9102
   udp: true
   password: e4FCWrgpkji3QY
   cipher: aes-256-gcm
-- name: _170
+- name: _171
   server: 149.202.82.172
   type: ss
   port: 7307
   udp: true
   password: FoOiGlkAA9yPEGP
   cipher: aes-256-gcm
-- name: _171
+- name: _172
   server: 184.170.241.194
   type: ss
   port: 443
   password: shadowsocks
   cipher: aes-128-cfb
-- name: _172
+- name: _173
   server: 51.159.111.208
   type: ss
   port: 989
   udp: true
   password: f8f7aCzcPKbsF8p3
   cipher: aes-256-cfb
-- name: _173
+- name: _174
   server: 149.202.82.172
   type: ss
   port: 7306
   udp: true
   password: FoOiGlkAA9yPEGP
   cipher: aes-256-gcm
-- name: _174
+- name: _175
   server: 149.202.82.172
   type: ss
   port: 5600
   udp: true
   password: Y6R9pAtvxxzmGC
   cipher: aes-256-gcm
-- name: _175
+- name: _176
   server: 149.202.82.172
   type: ss
   port: 5500
   udp: true
   password: KixLvKzwjekG00rm
   cipher: aes-256-gcm
-- name: _176
+- name: _177
   server: 149.202.82.172
   type: ss
   port: 8882
   udp: true
   password: kDWvXYZoTBcGkC4
   cipher: aes-256-gcm
-- name: _177
+- name: _178
   server: 149.202.82.172
   type: ss
   port: 3389
   udp: true
   password: Y6R9pAtvxxzmGC
   cipher: aes-256-gcm
-- name: _178
+- name: _179
   server: 149.202.82.172
   type: ss
   port: 8000
   udp: true
   password: KixLvKzwjekG00rm
   cipher: aes-256-gcm
-- name: _179
+- name: _180
   server: 149.202.82.172
   type: ss
   port: 3306
   udp: true
   password: Y6R9pAtvxxzmGC
   cipher: aes-256-gcm
-- name: _180
+- name: _181
   server: 149.202.82.172
   type: ss
   port: 9101
   udp: true
   password: e4FCWrgpkji3QY
   cipher: aes-256-gcm
-- name: _181
+- name: _182
   server: 149.202.82.172
   type: ss
   port: 7001
   udp: true
   password: RexnBgU7EV5ADxG
   cipher: aes-256-gcm
-- name: _182
+- name: _183
   server: 149.202.82.172
   type: ss
   port: 4444
   udp: true
   password: pKEW8JPByTVTLtM
   cipher: aes-256-gcm
-- name: _183
+- name: _184
   server: 149.202.82.172
   type: ss
   port: 2375
   udp: true
   password: faBAoD54k87UJG7
   cipher: aes-256-gcm
-- name: _184
+- name: _185
   server: 217.182.198.219
   type: ss
   port: 5003
   udp: true
   password: g5MeD6Ft3CWlJId
   cipher: aes-256-gcm
-- name: _186
+- name: _187
   server: 212.102.53.79
   type: ss
   port: 443
   password: shadowsocks
   cipher: aes-128-gcm
-- name: _187
+- name: _188
   server: 149.202.82.172
   type: ss
   port: 5601
   password: Y6R9pAtvxxzmGC
   cipher: aes-256-gcm
-- name: _188
+- name: _189
   server: 149.202.82.172
   type: ss
   port: 5001
   password: Y6R9pAtvxxzmGC
   cipher: aes-256-gcm
-- name: _189
+- name: _190
   server: 45.55.2.232
   type: ss
   port: 14293
   password: 2170f8
   cipher: aes-256-cfb
-- name: _190
+- name: _191
   server: 212.102.53.193
   type: ss
   port: 443
   password: shadowsocks
   cipher: aes-128-gcm
-- name: _191
+- name: _192
   server: 212.102.53.80
   type: ss
   port: 443
   password: shadowsocks
   cipher: aes-128-gcm
-- name: _192
+- name: _193
   server: 212.102.53.81
   type: ss
   port: 443
   password: shadowsocks
   cipher: aes-128-gcm
-- name: _193
+- name: _194
   server: 212.102.53.196
   type: ss
   port: 443
   password: shadowsocks
   cipher: aes-128-gcm
-- name: _194
+- name: _195
   server: 212.102.53.78
   type: ss
   port: 443
   password: shadowsocks
   cipher: aes-128-gcm
-- name: _195
-  server: 194.116.173.21
-  type: ss
-  port: 9038
-  password: gYCYXfkUQEs2TaJQ
-  cipher: aes-256-cfb
 - name: _196
   server: 5.188.181.201
   type: ss
   port: 9000
   password: a3GFYt36Sm82Vys9
   cipher: aes-256-cfb
-- name: _200
+- name: _197
+  server: 80.92.204.106
+  type: ss
+  port: 9011
+  password: M3t2ZEQcMGRWBjRa
+  cipher: aes-256-cfb
+- name: _198
+  server: 45.89.52.66
+  type: ss
+  port: 9043
+  udp: true
+  password: HSZuyJQcWe8dxNdF
+  cipher: aes-256-cfb
+- name: _201
+  server: 192.36.27.94
+  type: ss
+  port: 989
+  password: f8f7aCzcPKbsF8p3
+  cipher: aes-256-cfb
+- name: _202
+  server: 194.71.126.31
+  type: ss
+  port: 989
+  password: f8f7aCzcPKbsF8p3
+  cipher: aes-256-cfb
+- name: _203
+  server: 46.183.217.232
+  type: ss
+  port: 989
+  udp: true
+  password: f8f7aCzcPKbsF8p3
+  cipher: aes-256-cfb
+- name: _204
+  server: 46.183.184.60
+  type: ss
+  port: 989
+  udp: true
+  password: f8f7aCzcPKbsF8p3
+  cipher: aes-256-cfb
+- name: _205
+  server: 77.72.5.113
+  type: ss
+  port: 989
+  udp: true
+  password: f8f7aCzcPKbsF8p3
+  cipher: aes-256-cfb
+- name: _206
+  server: 192.71.244.150
+  type: ss
+  port: 989
+  udp: true
+  password: f8f7aCzcPKbsF8p3
+  cipher: aes-256-cfb
+- name: _208
+  server: 190.103.176.29
+  type: ss
+  port: 989
+  udp: true
+  password: f8f7aCzcPKbsF8p3
+  cipher: aes-256-cfb
+- name: _209
   server: 192.71.249.78
   type: ss
   port: 989
   password: f8f7aCzcPKbsF8p3
   cipher: aes-256-cfb
-- name: 🇺🇸US_581
-  server: 23.157.40.120
-  type: ss
-  country: 🇺🇸US
-  port: 445
-  password: zDNVedRFPQexG9v
-  cipher: aes-256-gcm
-- name: 🇺🇸US_582
-  server: 23.157.40.120
-  type: ss
-  country: 🇺🇸US
-  port: 6697
-  password: TEzjfAYq2IjtuoS
-  cipher: aes-256-gcm
-- name: 🇺🇸US_583
-  server: 23.157.40.113
-  type: ss
-  country: 🇺🇸US
-  port: 5499
-  password: lGqs95QkFHo2NV
-  cipher: aes-256-gcm
-- name: 🇺🇸US_584
-  server: 23.157.40.26
-  type: ss
-  country: 🇺🇸US
-  port: 5498
-  password: lGqs95QkFHo2NV
-  cipher: aes-256-gcm
-- name: 🇺🇸US_585
-  server: 23.157.40.120
-  type: ss
-  country: 🇺🇸US
-  port: 443
-  password: pKEW8JPByTVTLtM
-  cipher: aes-256-gcm
-- name: 🇺🇸US_586
-  server: 23.157.40.101
-  type: ss
-  country: 🇺🇸US
-  port: 8008
-  password: XKFKl2rULjIp74
-  cipher: aes-256-gcm
-- name: 🇺🇸US_587
-  server: 23.157.40.120
-  type: ss
-  country: 🇺🇸US
-  port: 4444
-  password: pKEW8JPByTVTLtM
-  cipher: aes-256-gcm
-- name: 🇺🇸US_588
-  server: 23.157.40.120
-  type: ss
-  country: 🇺🇸US
-  port: 8881
-  password: kDWvXYZoTBcGkC4
-  cipher: aes-256-gcm
-- name: 🇺🇸US_589
-  server: 23.157.40.120
-  type: ss
-  country: 🇺🇸US
-  port: 5498
-  password: lGqs95QkFHo2NV
-  cipher: aes-256-gcm
-- name: 🇺🇸US_590
-  server: 23.157.40.87
-  type: ss
-  country: 🇺🇸US
-  port: 9102
-  password: e4FCWrgpkji3QY
-  cipher: aes-256-gcm
-- name: 🇺🇸US_591
-  server: 167.88.61.235
-  type: ss
-  country: 🇺🇸US
-  port: 9102
-  password: e4FCWrgpkji3QY
-  cipher: aes-256-gcm
-- name: 🇺🇸US_592
-  server: 23.157.40.113
-  type: ss
-  country: 🇺🇸US
-  port: 8000
-  password: KixLvKzwjekG00rm
-  cipher: aes-256-gcm
-- name: 🇺🇸US_593
-  server: 38.110.1.122
-  type: ss
-  country: 🇺🇸US
-  port: 8090
-  password: PCnnH6SQSnfoS27
-  cipher: aes-256-gcm
-- name: 🇺🇸US_594
-  server: 23.157.40.26
-  type: ss
-  country: 🇺🇸US
-  port: 5601
-  password: Y6R9pAtvxxzmGC
-  cipher: aes-256-gcm
-- name: 🇺🇸US_595
-  server: 23.157.40.113
-  type: ss
-  country: 🇺🇸US
-  port: 5004
-  password: g5MeD6Ft3CWlJId
-  cipher: aes-256-gcm
-- name: 🇺🇸US_596
-  server: 23.157.40.113
-  type: ss
-  country: 🇺🇸US
-  port: 2375
-  password: faBAoD54k87UJG7
-  cipher: aes-256-gcm
-- name: 🇺🇸US_597
-  server: 2.58.87.221
-  type: ss
-  country: 🇺🇸US
-  port: 16899
-  password: Yc2CtrIz8L
-  cipher: aes-128-gcm
-- name: 🇺🇸US_598
-  server: 23.157.40.87
-  type: ss
-  country: 🇺🇸US
-  port: 8888
-  password: Y6R9pAtvxxzmGC
-  cipher: aes-256-gcm
-- name: 🇺🇸US_599
-  server: 23.157.40.113
-  type: ss
-  country: 🇺🇸US
-  port: 5601
-  password: Y6R9pAtvxxzmGC
-  cipher: aes-256-gcm
-- name: 🇺🇸US_600
-  server: 23.157.40.87
-  type: ss
-  country: 🇺🇸US
-  port: 7307
-  password: FoOiGlkAA9yPEGP
-  cipher: aes-256-gcm
-- name: 🇺🇸US_601
-  server: 23.157.40.119
-  type: ss
-  country: 🇺🇸US
-  port: 5601
-  password: Y6R9pAtvxxzmGC
-  cipher: aes-256-gcm
-- name: 🇺🇸US_602
-  server: 23.157.40.113
-  type: ss
-  country: 🇺🇸US
-  port: 7001
-  password: RexnBgU7EV5ADxG
-  cipher: aes-256-gcm
-- name: 🇺🇸US_603
-  server: 23.157.40.120
-  type: ss
-  country: 🇺🇸US
-  port: 9101
-  password: e4FCWrgpkji3QY
-  cipher: aes-256-gcm
-- name: 🇺🇸US_604
-  server: 38.110.1.122
-  type: ss
-  country: 🇺🇸US
-  port: 7306
-  password: FoOiGlkAA9yPEGP
-  cipher: aes-256-gcm
-- name: 🇺🇸US_605
-  server: 23.157.40.113
-  type: ss
-  country: 🇺🇸US
-  port: 8090
-  password: PCnnH6SQSnfoS27
-  cipher: aes-256-gcm
-- name: 🇺🇸US_606
-  server: 169.197.142.216
-  type: ss
-  country: 🇺🇸US
-  port: 6697
-  password: TEzjfAYq2IjtuoS
-  cipher: aes-256-gcm
-- name: 🇺🇸US_607
-  server: 15.204.87.217
-  type: ss
-  country: 🇺🇸US
-  port: 6697
-  password: TEzjfAYq2IjtuoS
-  cipher: aes-256-gcm
-- name: 🇺🇸US_609
-  server: 23.157.40.120
-  type: ss
-  country: 🇺🇸US
-  port: 9090
-  password: Y6R9pAtvxxzmGC
-  cipher: aes-256-gcm
-- name: 🇺🇸US_610
-  server: 38.143.66.87
-  type: ss
-  country: 🇺🇸US
-  port: 9102
-  password: e4FCWrgpkji3QY
-  cipher: aes-256-gcm
-- name: 🇺🇸US_611
-  server: 23.157.40.113
-  type: ss
-  country: 🇺🇸US
-  port: 7307
-  password: FoOiGlkAA9yPEGP
-  cipher: aes-256-gcm
-- name: 🇺🇸US_612
-  server: 23.157.40.87
-  type: ss
-  country: 🇺🇸US
-  port: 7306
-  password: FoOiGlkAA9yPEGP
-  cipher: aes-256-gcm
-- name: 🇺🇸US_613
-  server: 23.157.40.87
-  type: ss
-  country: 🇺🇸US
-  port: 6379
-  password: zDNVedRFPQexG9v
-  cipher: aes-256-gcm
-- name: 🇺🇸US_614
-  server: 23.157.40.113
-  type: ss
-  country: 🇺🇸US
-  port: 8119
-  password: cdBIDV42DCwnfIN
-  cipher: aes-256-gcm
-- name: 🇺🇸US_615
-  server: 23.157.40.87
-  type: ss
-  country: 🇺🇸US
-  port: 7002
-  password: RexnBgU7EV5ADxG
-  cipher: aes-256-gcm
-- name: 🇺🇸US_616
-  server: 23.157.40.113
-  type: ss
-  country: 🇺🇸US
-  port: 8091
-  password: PCnnH6SQSnfoS27
-  cipher: aes-256-gcm
-- name: 🇺🇸US_617
-  server: 169.197.142.120
-  type: ss
-  country: 🇺🇸US
-  port: 3389
-  password: Y6R9pAtvxxzmGC
-  cipher: aes-256-gcm
-- name: 🇺🇸US_619
-  server: 38.143.66.244
-  type: ss
-  country: 🇺🇸US
-  port: 7307
-  password: FoOiGlkAA9yPEGP
-  cipher: aes-256-gcm
-- name: 🇺🇸US_620
-  server: 154.47.21.27
+- name: _211
+  server: jp-am48-6.eqnode.net
+  type: ssr
+  port: 8081
+  udp: true
+  password: eAokbaDN6
+  cipher: aes-256-cfb
+  protocol: origin
+  obfs: tls1.2_ticket_auth
+- name: _212
+  server: 142.0.134.241
   type: vmess
-  country: 🇺🇸US
-  port: 8099
-  uuid: fa1897db-1925-4c86-a495-939a959af900
-  alterId: 0
-  cipher: auto
-  network: tcp
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇺🇸US_621
-  server: 50.114.243.61
-  type: vmess
-  country: 🇺🇸US
-  port: 43834
-  uuid: b246e34d-bbd1-4016-8f74-ea461c37e411
-  alterId: 0
-  cipher: auto
-  network: tcp
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇺🇸US_622
-  server: 198.2.218.108
-  type: vmess
-  country: 🇺🇸US
-  port: 41400
+  port: 45017
+  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   alterId: 64
   cipher: auto
-  network: tcp
   http-opts: {}
   h2-opts: {}
   skip-cert-verify: true
-- name: 🇺🇸US_623
-  server: 5.253.41.160
+- name: _213
+  server: 198.2.218.102
+  type: vmess
+  port: 41400
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  cipher: auto
+  http-opts: {}
+  h2-opts: {}
+  skip-cert-verify: true
+- name: _214
+  server: 140.83.63.38
+  type: vmess
+  port: 24445
+  udp: true
+  uuid: 94c5ef37-4d82-49f9-c624-f01259374a17
+  alterId: 64
+  cipher: auto
+  http-opts: {}
+  h2-opts: {}
+  skip-cert-verify: true
+- name: _216
+  server: jp-full.privateip.net
   type: trojan
-  country: 🇺🇸US
   port: 443
   password: d9576e81-fc34-46f2-b624-0c1e99cde4be
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸US_624
-  server: fr2-full.privateip.net
+- name: _217
+  server: es-full.privateip.net
   type: trojan
-  country: 🇺🇸US
   port: 443
-  password: 0280b529-2747-4b7a-ab11-bad6453150b9
+  password: 3240d72a-1373-4566-9c6c-68524e4b13fc
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸US_625
-  server: 138.124.184.173
+- name: _218
+  server: ca-full.privateip.net
   type: trojan
-  country: 🇺🇸US
+  port: 443
+  password: acfef609-b3c7-4e52-b292-8921d5fca90d
+- name: _219
+  server: us-full.privateip.net
+  type: trojan
   port: 443
   password: 87ec85ad-8e8e-40a0-9b23-1fa8217c9647
+- name: _220
+  server: 138.199.23.100
+  type: trojan
+  port: 43118
+  password: ypDt8RkT7J
+  sni: radtz.phooeyunfold.com
   skip-cert-verify: true
   udp: true
-- name: 🇿🇦 ZA_626
-  server: 156.244.9.92
+- name: 🇦🇺AU_221
+  server: au-full.privateip.net
+  type: trojan
+  country: 🇦🇺AU
+  port: 443
+  password: 882f187b-feb1-4be7-8678-32460f1ecfe6
+  skip-cert-verify: true
+  udp: true
+- name: 🇧🇩 BD_222
+  server: 103.106.1.92
   type: ss
-  country: 🇿🇦 ZA
+  country: 🇧🇩 BD
+  port: 23492
+  password: yMX9WGPgUEcRZmlaa0YHHC
+  cipher: chacha20-ietf-poly1305
+- name: 🇨🇦CA_232
+  server: ca225.vpnbook.com
+  type: ss
+  country: 🇨🇦CA
+  port: 80
+  password: JIhN6rBKkaEboLNXVSv5rq
+  cipher: chacha20-ietf-poly1305
+- name: 🇨🇦CA_233
+  server: 91.194.11.168
+  type: trojan
+  country: 🇨🇦CA
+  port: 443
+  password: acfef609-b3c7-4e52-b292-8921d5fca90d
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇿 CZ_240
+  server: 198.105.123.190
+  type: ss
+  country: 🇨🇿 CZ
+  port: 46902
+  password: 2UrSffeNABXGXXfNhoL6xBUnh1RzqMizrQ2s9QfC38P2YPuYPRTqW5zZg6jGisiNhkzM4SRjF6nzvFb18GPtESWoXWjhqyC8
+  cipher: chacha20-ietf-poly1305
+- name: 🇨🇿 CZ_241
+  server: 185.190.250.103
+  type: ss
+  country: 🇨🇿 CZ
+  port: 57328
+  password: xzlOqy2v6vJ0XvFTN8zIBH
+  cipher: chacha20-ietf-poly1305
+- name: 🇨🇿 CZ_242
+  server: 195.181.160.6
+  type: ss
+  country: 🇨🇿 CZ
   port: 990
   password: f8f7aCzcPKbsF8p3
   cipher: chacha20-ietf-poly1305
-- name: 🏁 ZZ_628
-  server: 23.157.40.95
+- name: 🇩🇪 DE_243
+  server: 92.118.205.228
   type: ss
-  country: 🏁 ZZ
-  port: 5000
+  country: 🇩🇪 DE
+  port: 990
+  password: f8f7aCzcPKbsF8p3
+  cipher: chacha20-ietf-poly1305
+- name: 🇩🇪 DE_244
+  server: frankfurt03.zgjok.com
+  type: vmess
+  country: 🇩🇪 DE
+  port: 443
+  uuid: 4f7c2243-a38a-4672-983b-f1378aee0a7f
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-path: /
+  servername: frankfurt03.zgjok.com
+  ws-headers:
+    HOST: frankfurt03.zgjok.com
+  http-opts: {}
+  h2-opts: {}
+  tls: true
+  skip-cert-verify: true
+- name: 🇩🇪DE_245
+  server: 80.92.204.106
+  type: ss
+  country: 🇩🇪DE
+  port: 9064
+  password: cp8pRSUAyLhTfVWH
+  cipher: aes-256-cfb
+- name: 🇩🇪DE_246
+  server: 80.92.204.106
+  type: ss
+  country: 🇩🇪DE
+  port: 9061
+  password: 4R3hUfZ2FHhDmNcP
+  cipher: aes-256-cfb
+- name: 🇩🇪DE_247
+  server: 80.92.204.106
+  type: ss
+  country: 🇩🇪DE
+  port: 9097
+  password: Sn5B7jTqr76aCJT8
+  cipher: aes-256-cfb
+- name: 🇩🇪DE_248
+  server: 80.92.204.106
+  type: ss
+  country: 🇩🇪DE
+  port: 9042
+  password: S7KwUu7yBy58S3Ga
+  cipher: aes-256-cfb
+- name: 🇩🇪DE_249
+  server: 80.92.204.106
+  type: ss
+  country: 🇩🇪DE
+  port: 9046
+  password: NvS8N4Vf8qAGPSCL
+  cipher: aes-256-cfb
+- name: 🇩🇪DE_250
+  server: 80.92.204.106
+  type: ss
+  country: 🇩🇪DE
+  port: 9006
+  password: FAdUvMJUq5vDgKEq
+  cipher: aes-256-cfb
+- name: 🇩🇪DE_251
+  server: 80.92.204.106
+  type: ss
+  country: 🇩🇪DE
+  port: 9015
+  password: ZpNDDKRu9MagNvaf
+  cipher: aes-256-cfb
+- name: 🇩🇪DE_252
+  server: 80.92.204.106
+  type: ss
+  country: 🇩🇪DE
+  port: 9025
+  password: XPtzA9sCug3SPR4c
+  cipher: aes-256-cfb
+- name: 🇩🇪DE_253
+  server: 80.92.204.106
+  type: ss
+  country: 🇩🇪DE
+  port: 9098
+  password: aLpQtfEZe445QyHk
+  cipher: aes-256-cfb
+- name: 🇩🇪DE_254
+  server: 80.92.204.106
+  type: ss
+  country: 🇩🇪DE
+  port: 9031
+  password: BwcAUZk8hUFAkDGN
+  cipher: aes-256-cfb
+- name: 🇩🇪DE_255
+  server: 139.162.158.172
+  type: trojan
+  country: 🇩🇪DE
+  port: 443
+  password: 665c944d-047d-4659-80d5-3eaac70241a9
+  sni: de2-full.privateip.net
+  skip-cert-verify: true
+  udp: true
+- name: 🇪🇸 ES_256
+  server: 134.255.210.49
+  type: ss
+  country: 🇪🇸 ES
+  port: 990
+  password: f8f7aCzcPKbsF8p3
+  cipher: chacha20-ietf-poly1305
+- name: 🇪🇸ES_257
+  server: 5.188.181.201
+  type: ss
+  country: 🇪🇸ES
+  port: 9040
+  password: p9z5BVADH2YFs3MN
+  cipher: aes-256-cfb
+- name: 🇫🇷FR_264
+  server: 149.202.82.172
+  type: ss
+  country: 🇫🇷FR
+  port: 443
+  password: pKEW8JPByTVTLtM
+  cipher: aes-256-gcm
+- name: 🇫🇷FR_265
+  server: 54.36.174.181
+  type: ss
+  country: 🇫🇷FR
+  port: 5001
   password: Y6R9pAtvxxzmGC
   cipher: aes-256-gcm
-- name: 🏁 ZZ_629
-  server: 23.157.40.95
+- name: 🇫🇷FR_266
+  server: 217.182.198.219
   type: ss
-  country: 🏁 ZZ
-  port: 5498
-  password: lGqs95QkFHo2NV
+  country: 🇫🇷FR
+  port: 3389
+  password: Y6R9pAtvxxzmGC
   cipher: aes-256-gcm
-- name: 🏁 ZZ_630
-  server: arxfw2b78fi2q9hzylhn.freesocks.work
+- name: 🇫🇷FR_267
+  server: 54.36.174.181
   type: ss
-  country: 🏁 ZZ
-  port: 443
-  password: Nk9asglDzHzjktVzTkvhaA
-  cipher: chacha20-ietf-poly1305
-- name: 🏁 ZZ_631
-  server: 160.19.78.75
-  type: ss
-  country: 🏁 ZZ
-  port: 443
-  password: Nk9asglDzHzjktVzTkvhaA
-  cipher: chacha20-ietf-poly1305
-- name: 🏁 ZZ_632
-  server: 139.64.165.230
-  type: ss
-  country: 🏁 ZZ
+  country: 🇫🇷FR
   port: 2376
   password: faBAoD54k87UJG7
   cipher: aes-256-gcm
-- name: 🏁 ZZ_633
-  server: 139.64.165.230
+- name: 🇫🇷FR_268
+  server: 54.36.174.181
   type: ss
-  country: 🏁 ZZ
-  port: 5500
-  password: KixLvKzwjekG00rm
-  cipher: aes-256-gcm
-- name: 🏁 ZZ_634
-  server: 23.154.136.247
-  type: ss
-  country: 🏁 ZZ
-  port: 2376
-  password: faBAoD54k87UJG7
-  cipher: aes-256-gcm
-- name: 🏁 ZZ_635
-  server: 23.157.40.95
-  type: ss
-  country: 🏁 ZZ
-  port: 8881
-  password: kDWvXYZoTBcGkC4
-  cipher: aes-256-gcm
-- name: 🏁 ZZ_636
-  server: 23.157.40.95
-  type: ss
-  country: 🏁 ZZ
-  port: 8090
-  password: PCnnH6SQSnfoS27
-  cipher: aes-256-gcm
-- name: 🏁 ZZ_637
-  server: 23.157.40.95
-  type: ss
-  country: 🏁 ZZ
-  port: 8882
-  password: kDWvXYZoTBcGkC4
-  cipher: aes-256-gcm
-- name: 🏁ZZ_639
-  server: 23.154.136.176
-  type: ss
-  country: 🏁ZZ
+  country: 🇫🇷FR
   port: 7307
   password: FoOiGlkAA9yPEGP
   cipher: aes-256-gcm
-- name: 🏁ZZ_640
-  server: 23.154.136.176
+- name: 🇫🇷FR_269
+  server: 145.239.6.202
   type: ss
-  country: 🏁ZZ
+  country: 🇫🇷FR
+  port: 2376
+  password: faBAoD54k87UJG7
+  cipher: aes-256-gcm
+- name: 🇫🇷FR_270
+  server: 217.182.198.219
+  type: ss
+  country: 🇫🇷FR
+  port: 8090
+  password: PCnnH6SQSnfoS27
+  cipher: aes-256-gcm
+- name: 🇫🇷FR_271
+  server: 217.182.198.219
+  type: ss
+  country: 🇫🇷FR
+  port: 8119
+  password: cdBIDV42DCwnfIN
+  cipher: aes-256-gcm
+- name: 🇫🇷FR_272
+  server: 149.202.82.172
+  type: ss
+  country: 🇫🇷FR
+  port: 5004
+  password: g5MeD6Ft3CWlJId
+  cipher: aes-256-gcm
+- name: 🇫🇷FR_273
+  server: 145.239.6.202
+  type: ss
+  country: 🇫🇷FR
+  port: 8009
+  password: XKFKl2rULjIp74
+  cipher: aes-256-gcm
+- name: 🇫🇷FR_274
+  server: 149.202.82.172
+  type: ss
+  country: 🇫🇷FR
+  port: 2376
+  password: faBAoD54k87UJG7
+  cipher: aes-256-gcm
+- name: 🇫🇷FR_275
+  server: 54.36.174.181
+  type: ss
+  country: 🇫🇷FR
+  port: 6679
+  password: TEzjfAYq2IjtuoS
+  cipher: aes-256-gcm
+- name: 🇫🇷FR_276
+  server: 217.182.198.219
+  type: ss
+  country: 🇫🇷FR
+  port: 8008
+  password: XKFKl2rULjIp74
+  cipher: aes-256-gcm
+- name: 🇫🇷FR_277
+  server: 217.182.198.219
+  type: ss
+  country: 🇫🇷FR
+  port: 5000
+  password: Y6R9pAtvxxzmGC
+  cipher: aes-256-gcm
+- name: 🇫🇷FR_278
+  server: 145.239.6.202
+  type: ss
+  country: 🇫🇷FR
+  port: 8118
+  password: cdBIDV42DCwnfIN
+  cipher: aes-256-gcm
+- name: 🇫🇷FR_279
+  server: 149.202.82.172
+  type: ss
+  country: 🇫🇷FR
+  port: 6679
+  password: TEzjfAYq2IjtuoS
+  cipher: aes-256-gcm
+- name: 🇫🇷FR_280
+  server: 217.182.198.219
+  type: ss
+  country: 🇫🇷FR
+  port: 6697
+  password: TEzjfAYq2IjtuoS
+  cipher: aes-256-gcm
+- name: 🇫🇷FR_281
+  server: 217.182.198.219
+  type: ss
+  country: 🇫🇷FR
+  port: 5001
+  password: Y6R9pAtvxxzmGC
+  cipher: aes-256-gcm
+- name: 🇫🇷FR_282
+  server: 217.182.198.219
+  type: ss
+  country: 🇫🇷FR
+  port: 4444
+  password: pKEW8JPByTVTLtM
+  cipher: aes-256-gcm
+- name: 🇫🇷FR_283
+  server: 145.239.6.202
+  type: ss
+  country: 🇫🇷FR
+  port: 3389
+  password: Y6R9pAtvxxzmGC
+  cipher: aes-256-gcm
+- name: 🇫🇷FR_284
+  server: 54.36.174.181
+  type: ss
+  country: 🇫🇷FR
+  port: 8091
+  password: PCnnH6SQSnfoS27
+  cipher: aes-256-gcm
+- name: 🇫🇷FR_285
+  server: 217.182.198.219
+  type: ss
+  country: 🇫🇷FR
+  port: 8009
+  password: XKFKl2rULjIp74
+  cipher: aes-256-gcm
+- name: 🇫🇷FR_286
+  server: 217.182.198.219
+  type: ss
+  country: 🇫🇷FR
+  port: 2376
+  password: faBAoD54k87UJG7
+  cipher: aes-256-gcm
+- name: 🇫🇷FR_287
+  server: 54.36.174.181
+  type: ss
+  country: 🇫🇷FR
+  port: 8008
+  password: XKFKl2rULjIp74
+  cipher: aes-256-gcm
+- name: 🇫🇷FR_288
+  server: 149.202.82.172
+  type: ss
+  country: 🇫🇷FR
+  port: 8119
+  password: cdBIDV42DCwnfIN
+  cipher: aes-256-gcm
+- name: 🇫🇷FR_289
+  server: 54.36.174.181
+  type: ss
+  country: 🇫🇷FR
+  port: 9102
+  password: e4FCWrgpkji3QY
+  cipher: aes-256-gcm
+- name: 🇫🇷FR_290
+  server: 217.182.198.219
+  type: ss
+  country: 🇫🇷FR
   port: 9101
   password: e4FCWrgpkji3QY
   cipher: aes-256-gcm
-- name: 🏁ZZ_641
-  server: 23.154.136.176
+- name: 🇫🇷FR_291
+  server: 145.239.6.202
   type: ss
-  country: 🏁ZZ
-  port: 5500
-  password: KixLvKzwjekG00rm
-  cipher: aes-256-gcm
-- name: 🏁ZZ_642
-  server: 23.154.136.176
-  type: ss
-  country: 🏁ZZ
-  port: 9102
-  password: e4FCWrgpkji3QY
-  cipher: aes-256-gcm
-- name: 🏁ZZ_643
-  server: 23.154.136.176
-  type: ss
-  country: 🏁ZZ
-  port: 8118
-  password: cdBIDV42DCwnfIN
-  cipher: aes-256-gcm
-- name: 🏁ZZ_644
-  server: nl2-full.privateip.net
-  type: trojan
-  country: 🏁ZZ
-  port: 443
-  password: c378f9c9-733c-4a28-af47-cfa8b063a7f6
-  skip-cert-verify: true
-  udp: true
-- name: 🏁ZZ_645
-  server: 176.126.113.161
-  type: trojan
-  country: 🏁ZZ
-  port: 443
-  password: c378f9c9-733c-4a28-af47-cfa8b063a7f6
-  sni: nl2-full.privateip.net
-  skip-cert-verify: true
-  udp: true
-- name: 日本1-Trojan
-  type: trojan
-  server: jp1.sstank.top
-  port: 443
-  password: b8e7b9eb-877a-382a-81d5-610021a53abd
-  sni: jp1.sstank.top
-  udp: true
-- name: 日本2-Trojan
-  type: trojan
-  server: jp2.sstank.top
-  port: 443
-  password: b8e7b9eb-877a-382a-81d5-610021a53abd
-  sni: jp2.sstank.top
-  udp: true
-- name: 日本3-Trojan
-  type: trojan
-  server: jp3.sstank.top
-  port: 443
-  password: b8e7b9eb-877a-382a-81d5-610021a53abd
-  sni: jp3.sstank.top
-  udp: true
-- name: 美国-Trojan
-  type: trojan
-  server: usa.sstank.top
-  port: 443
-  password: b8e7b9eb-877a-382a-81d5-610021a53abd
-  sni: usa.sstank.top
-  udp: true
-- name: 美国1-Trojan
-  type: trojan
-  server: usa1.sstank.top
-  port: 443
-  password: b8e7b9eb-877a-382a-81d5-610021a53abd
-  sni: usa1.sstank.top
-  udp: true
-- name: 🇺🇸US-37.19.198.243-0392 | 121.457MB
-  server: 37.19.198.243
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸US-37.19.198.244-0373 | 120.383MB
-  server: 37.19.198.244
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸US-37.19.198.160-0354 | 116.741MB
-  server: 37.19.198.160
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸US-138.199.42.68-0348 | 113.535MB
-  server: 138.199.42.68
-  port: 8080
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇺🇸US-37.19.198.236-0364 | 106.289MB
-  server: 37.19.198.236
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸US-194.5.215.59-0351 | 104.94MB
-  server: 194.5.215.59
-  port: 8080
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇺🇸US-156.146.38.168-0367 | 98.93MB
-  server: 156.146.38.168
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸US-156.146.38.169-0342 | 85.172MB
-  server: 156.146.38.169
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸US-107.151.182.253-0330 | 64.02MB
-  server: 107.151.182.253
-  port: 8080
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧GB-62.100.205.48-0464 | 56.963MB
-  server: 62.100.205.48
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: 🇺🇸US-23.251.121.242-0334 | 56.865MB
-  server: 23.251.121.242
-  port: 8080
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇺🇸US-79.110.53.169-0332 | 54.598MB
-  server: 79.110.53.169
-  port: 8080
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇺🇸US-107.155.57.51-0337 | 40.535MB
-  server: 107.155.57.51
-  port: 8080
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇫🇷FR-45.158.171.136-1167 | 39.858MB
-  server: 45.158.171.136
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 4a2rfixophdjffa8KVA4Aa
-- name: 🇨🇦CA-149.22.95.183-0341 | 39.417MB
-  server: 149.22.95.183
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸US-107.155.57.11-0336 | 39.183MB
-  server: 107.155.57.11
-  port: 8080
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇺🇸US-212.102.47.131-0346 | 38.939MB
-  server: 212.102.47.131
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇬🇧GB-146.70.61.18-0369 | 34.154MB
-  server: 146.70.61.18
-  port: 8080
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇳🇱NL-149.34.244.77-1205 | 32.831MB
-  server: 149.34.244.77
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇳🇱NL-149.34.244.68-0394 | 32.345MB
-  server: 149.34.244.68
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇬🇧GB-169.150.210.233-0385 | 32.296MB
-  server: 169.150.210.233
-  port: 8080
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇳🇱NL-149.34.244.82-0389 | 31.479MB
-  server: 149.34.244.82
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: SE-121.127.46.147-0379 | 31.102MB
-  server: 121.127.46.147
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: EE-147.45.60.33-1093 | 27.681MB
-  server: 147.45.60.33
-  port: 16356
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: LqlPI19oqnunGNSLMvdXyB
-- name: SK-156.146.40.194-0388 | 27.19MB
-  server: 156.146.40.194
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: 🇯🇵JP-149.22.87.241-0363 | 26.781MB
-  server: 149.22.87.241
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇯🇵JP-149.22.87.240-0393 | 26.664MB
-  server: 149.22.87.240
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇩🇪DE-193.108.119.230-1146 | 26.605MB
-  server: 193.108.119.230
-  port: 8080
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬SG-68.183.227.236-0470 | 25.833MB
-  server: 68.183.227.236
-  port: 8080
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬SG-139.59.119.143-0378 | 25.805MB
-  server: connectwithemployers.online
-  port: 443
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  skip-cert-verify: false
-- name: 🇸🇬SG-68.183.227.4-0471 | 25.753MB
-  server: 68.183.227.4
-  port: 8080
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧GB-141.98.101.182-0410 | 25.517MB
-  server: 141.98.101.182
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇸🇬SG-68.183.227.45-0434 | 24.812MB
-  server: 68.183.227.45
-  port: 8080
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇯🇵JP-149.22.87.204-0370 | 24.63MB
-  server: 149.22.87.204
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇬🇧GB-141.98.101.180-0504 | 22.45MB
-  server: 141.98.101.180
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇸🇬SG-128.199.172.224-0380 | 22.058MB
-  server: 128.199.172.224
-  port: 8080
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: RELAY-104.19.48.236-0257 | 21.378MB
-  server: 104.19.48.236
-  port: 80
-  type: vmess
-  uuid: e6543319-0574-42ac-b778-1c4325d626f5
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: chunchuan.kejixiaoqi666.store
-- name: RELAY-104.16.155.10-0256 | 20.683MB
-  server: 104.16.155.10
-  port: 80
-  type: vmess
-  uuid: e6543319-0574-42ac-b778-1c4325d626f5
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: chunchuan.kejixiaoqi666.store
-- name: RELAY-198.41.209.70-0411 | 20.548MB
-  server: 198.41.209.70
-  port: 80
-  type: vmess
-  uuid: e6543319-0574-42ac-b778-1c4325d626f5
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: chunchuan.kejixiaoqi666.store
-- name: RELAY-104.17.221.248-0418 | 19.72MB
-  server: 104.17.221.248
-  port: 80
-  type: vmess
-  uuid: e6543319-0574-42ac-b778-1c4325d626f5
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: chunchuan.kejixiaoqi666.store
-- name: 🇬🇧GB-141.98.101.179-1174 | 19.717MB
-  server: 141.98.101.179
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: PA-138.186.142.4-0459 | 18.4MB
-  server: 138.186.142.4
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: 🇨🇳TW-185.189.160.98-6160 | 16.846MB
-  server: 185.189.160.98
-  port: 64759
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: VN-103.163.218.2-1142 | 16.537MB
-  server: 103.163.218.2
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: 🇫🇷FR-51.15.15.82-0490 | 16.417MB
-  server: 51.15.15.82
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: 🇵🇱PL-217.30.10.18-6161 | 14.686MB
-  server: 217.30.10.18
-  port: 9042
-  type: ss
-  cipher: aes-256-cfb
-  password: S7KwUu7yBy58S3Ga
-- name: 🇭🇰HK-112.213.102.228-6054 | 14.418MB
-  server: 112.213.102.228
-  port: 4231
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇺🇸US-23.157.40.5-1352 | 13.637MB
-  server: 23.157.40.5
-  port: 5000
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: 🇺🇸US-23.157.40.5-1349 | 11.745MB
-  server: 23.157.40.5
-  port: 5498
-  type: ss
-  cipher: aes-256-gcm
-  password: lGqs95QkFHo2NV
-- name: 🇵🇱PL-217.30.10.18-6164 | 11.488MB
-  server: 217.30.10.18
-  port: 9024
-  type: ss
-  cipher: aes-256-cfb
-  password: BejrQvtu9sqUeNuZ
-- name: 🇺🇸US-23.157.40.5-1343 | 11.355MB
-  server: 23.157.40.5
+  country: 🇫🇷FR
   port: 3306
-  type: ss
-  cipher: aes-256-gcm
   password: Y6R9pAtvxxzmGC
-- name: 🇺🇸US-23.157.40.5-1361 | 10.432MB
-  server: 23.157.40.5
-  port: 5003
-  type: ss
   cipher: aes-256-gcm
-  password: g5MeD6Ft3CWlJId
-- name: 🇺🇸US-23.157.40.5-6122 | 10.419MB
-  server: 23.157.40.5
-  port: 6679
+- name: 🇫🇷FR_292
+  server: 145.239.6.202
   type: ss
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
-- name: 🇺🇸US-23.157.40.5-6127 | 9.863MB
-  server: 23.157.40.5
-  port: 443
-  type: ss
-  cipher: aes-256-gcm
+  country: 🇫🇷FR
+  port: 4444
   password: pKEW8JPByTVTLtM
-- name: 🇵🇱PL-217.30.10.18-6081 | 9.764MB
-  server: 217.30.10.18
-  port: 9006
+  cipher: aes-256-gcm
+- name: 🇫🇷FR_293
+  server: 195.154.185.174
   type: ss
+  country: 🇫🇷FR
+  port: 989
+  password: f8f7aCzcPKbsF8p3
   cipher: aes-256-cfb
-  password: FAdUvMJUq5vDgKEq
-- name: 🇺🇸US-23.157.40.5-1356 | 6.86MB
-  server: 23.157.40.5
-  port: 7002
+- name: 🇫🇷FR_294
+  server: 149.202.82.172
   type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-- name: 🇺🇸US-167.88.63.21-0863 | 6.73MB
-  server: 167.88.63.21
-  port: 5601
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: 🇺🇸US-23.157.40.5-1359 | 6.688MB
-  server: 23.157.40.5
-  port: 7001
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-- name: 🇺🇸US-167.88.63.21-0859 | 6.374MB
-  server: 167.88.63.21
-  port: 8881
-  type: ss
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
-- name: 🇺🇸US-142.202.49.75-6182 | 6.21MB
-  server: 142.202.49.75
-  port: 8000
-  type: ss
-  cipher: aes-256-gcm
-  password: KixLvKzwjekG00rm
-- name: 🇺🇸US-167.88.63.21-0854 | 5.529MB
-  server: 167.88.63.21
-  port: 8118
-  type: ss
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-- name: 🇺🇸US-142.202.48.105-6096 | 5.407MB
-  server: 142.202.48.105
+  country: 🇫🇷FR
   port: 5003
-  type: ss
-  cipher: aes-256-gcm
   password: g5MeD6Ft3CWlJId
-- name: 🇺🇸US-38.121.43.27-6098 | 5.25MB
-  server: 38.121.43.27
+  cipher: aes-256-gcm
+- name: 🇫🇷FR_295
+  server: 217.182.198.219
+  type: ss
+  country: 🇫🇷FR
+  port: 8118
+  password: cdBIDV42DCwnfIN
+  cipher: aes-256-gcm
+- name: 🇫🇷FR_296
+  server: 54.36.174.181
+  type: ss
+  country: 🇫🇷FR
   port: 6697
-  type: ss
-  cipher: aes-256-gcm
   password: TEzjfAYq2IjtuoS
-- name: 🇺🇸US-38.121.43.27-6117 | 4.743MB
-  server: 38.121.43.27
-  port: 8881
-  type: ss
   cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
-- name: 🇺🇸US-38.121.43.27-6099 | 4.617MB
-  server: 38.121.43.27
-  port: 443
+- name: 🇫🇷FR_297
+  server: 217.182.198.219
   type: ss
+  country: 🇫🇷FR
+  port: 7306
+  password: FoOiGlkAA9yPEGP
   cipher: aes-256-gcm
-  password: pKEW8JPByTVTLtM
-- name: 🇺🇸US-23.157.40.5-1350 | 4.361MB
-  server: 23.157.40.5
-  port: 9102
+- name: 🇫🇷FR_298
+  server: 217.182.198.219
   type: ss
+  country: 🇫🇷FR
+  port: 2375
+  password: faBAoD54k87UJG7
   cipher: aes-256-gcm
-  password: e4FCWrgpkji3QY
-- name: 🇺🇸US-23.157.40.5-0502 | 4.332MB
-  server: 23.157.40.5
-  port: 8090
+- name: 🇫🇷FR_299
+  server: 217.182.198.219
   type: ss
+  country: 🇫🇷FR
+  port: 3306
+  password: Y6R9pAtvxxzmGC
   cipher: aes-256-gcm
+- name: 🇫🇷FR_300
+  server: 145.239.6.202
+  type: ss
+  country: 🇫🇷FR
+  port: 7001
+  password: RexnBgU7EV5ADxG
+  cipher: aes-256-gcm
+- name: 🇫🇷FR_301
+  server: 217.182.198.219
+  type: ss
+  country: 🇫🇷FR
+  port: 8091
   password: PCnnH6SQSnfoS27
+  cipher: aes-256-gcm
+- name: 🇫🇷FR_302
+  server: 145.239.6.202
+  type: ss
+  country: 🇫🇷FR
+  port: 5000
+  password: Y6R9pAtvxxzmGC
+  cipher: aes-256-gcm
 proxy-groups:
 - name: 节点选择
   type: select
@@ -1432,206 +1844,207 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 🏁ZZ_643
-  - 🏁ZZ_639
-  - 🏁 ZZ_634
-  - 🏁ZZ_642
-  - 🇺🇸US-142.202.49.75-6182 | 6.21MB
-  - 🏁ZZ_641
-  - 🏁ZZ_640
-  - 🇺🇸US-38.121.43.27-6099 | 4.617MB
-  - 🇺🇸US-167.88.63.21-0859 | 6.374MB
-  - 🇺🇸US-167.88.63.21-0863 | 6.73MB
-  - 🇺🇸US-142.202.48.105-6096 | 5.407MB
-  - 🇺🇸US-37.19.198.243-0392 | 121.457MB
-  - 🇺🇸US-138.199.42.68-0348 | 113.535MB
-  - 🇺🇸US-167.88.63.21-0854 | 5.529MB
-  - 🇺🇸US-38.121.43.27-6117 | 4.743MB
-  - 🇺🇸US-37.19.198.236-0364 | 106.289MB
-  - _195
-  - 🇺🇸US-194.5.215.59-0351 | 104.94MB
-  - 🇺🇸US-37.19.198.160-0354 | 116.741MB
-  - 🇺🇸US-38.121.43.27-6098 | 5.25MB
-  - 🇺🇸US-37.19.198.244-0373 | 120.383MB
-  - 🇺🇸US-156.146.38.168-0367 | 98.93MB
-  - 🇺🇸US-156.146.38.169-0342 | 85.172MB
-  - 🇺🇸US_625
-  - 🇺🇸US_604
-  - Manassas  1
-  - 🇺🇸US_593
-  - _189
-  - 🇺🇸US-107.151.182.253-0330 | 64.02MB
-  - 🇺🇸US-212.102.47.131-0346 | 38.939MB
-  - 🇨🇦CA-149.22.95.183-0341 | 39.417MB
-  - 🇺🇸US-107.155.57.11-0336 | 39.183MB
-  - 🇺🇸US-107.155.57.51-0337 | 40.535MB
-  - _191
-  - _194
-  - _192
-  - _186
-  - 🇺🇸US-23.251.121.242-0334 | 56.865MB
-  - 🏁 ZZ_632
-  - 🇺🇸US_588
-  - 🇺🇸US_622
-  - _193
-  - _157
+  - warp.irss.eu.org 9
+  - warp.irss.eu.org 11
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 22
+  - warp.irss.eu.org 12
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 46
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 39
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 40
+  - warp.irss.eu.org 4
+  - warp.irss.eu.org 3
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 41
+  - warp.irss.eu.org 2
+  - 🇬🇧 英国 - 豪恩斯洛 - Cloudflare, Inc. - 5
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 21
+  - warp.irss.eu.org 5
+  - warp.irss.eu.org 15
+  - warp.irss.eu.org 10
+  - warp.irss.eu.org 14
+  - 🇨🇦CA_233
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 45
+  - warp.irss.eu.org 8
+  - _08
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 42
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 28
+  - warp.irss.eu.org 7
+  - _10
   - _190
-  - _156
-  - _159
-  - 🏁 ZZ_633
-  - 🇺🇸US-79.110.53.169-0332 | 54.598MB
-  - 🇺🇸US_619
-  - _155
-  - 🇺🇸US_617
-  - 🇺🇸US_586
-  - 🇺🇸US_587
-  - 🏁 ZZ_637
-  - 🇺🇸US-23.157.40.5-1343 | 11.355MB
-  - 🇺🇸US-23.157.40.5-1349 | 11.745MB
-  - 🇺🇸US_609
-  - _158
-  - 🇬🇧GB-146.70.61.18-0369 | 34.154MB
+  - 🇯🇵 日本 - 成田市 - Cloudflare, Inc. - 5
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 33
+  - _11
+  - 🇨🇦 加拿大 - 蒙特利尔 - OVH SAS - 1
+  - 🇯🇵 日本 - 成田市 - Cloudflare, Inc. - 9
   - _172
-  - 🇬🇧GB-62.100.205.48-0464 | 56.963MB
-  - 🇺🇸US_582
-  - 🇺🇸US-23.157.40.5-1352 | 13.637MB
-  - 🇺🇸US_614
-  - 🇺🇸US_585
-  - 🇺🇸US_601
-  - Toronto  Pro 1
-  - 🏁 ZZ_635
-  - 🇩🇪DE-193.108.119.230-1146 | 26.605MB
-  - 🇳🇱NL-149.34.244.77-1205 | 32.831MB
-  - 🇺🇸US_581
-  - 🇳🇱NL-149.34.244.82-0389 | 31.479MB
-  - 🇺🇸US-23.157.40.5-1359 | 6.688MB
-  - 🇺🇸US_583
-  - 🇳🇱NL-149.34.244.68-0394 | 32.345MB
-  - 🇺🇸US_603
-  - 🇺🇸US_605
-  - 🇺🇸US_616
-  - Ohio -L22 2
-  - 🇺🇸US_602
-  - 🇺🇸US_597
-  - 🇺🇸US_610
-  - _174
-  - _180
-  - 🇺🇸US_584
-  - 🏁 ZZ_636
-  - _188
-  - _176
-  - 🏁 ZZ_629
-  - _175
-  - _165
-  - _183
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 31
+  - _213
+  - _218
+  - _212
+  - _195
+  - 🇫🇷FR_278
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 34
+  - warp.irss.eu.org
+  - _193
+  - _205
+  - 🇫🇷FR_291
+  - 🇫🇷FR_273
+  - _192
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 30
+  - _194
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 35
   - _187
-  - 🇬🇧GB-141.98.101.179-1174 | 19.717MB
-  - _196
-  - _184
-  - 🏁 ZZ_628
-  - _169
-  - _168
-  - 🇺🇸US-23.157.40.5-0502 | 4.332MB
-  - 🇺🇸US-23.157.40.5-1350 | 4.361MB
-  - 🇺🇸US_611
-  - 🇺🇸US-23.157.40.5-1356 | 6.86MB
-  - 🇺🇸US_599
-  - 🇺🇸US_620
-  - _166
-  - 🇺🇸US_606
-  - _167
-  - _178
-  - _177
-  - 🇺🇸US-23.157.40.5-6122 | 10.419MB
-  - 🇬🇧GB-169.150.210.233-0385 | 32.296MB
-  - _162
-  - _182
-  - _181
-  - _161
-  - _164
-  - _163
-  - _160
-  - 🇬🇧GB-141.98.101.180-0504 | 22.45MB
-  - 🇺🇸US-23.157.40.5-6127 | 9.863MB
-  - _179
-  - 🇬🇧GB-141.98.101.182-0410 | 25.517MB
+  - 🇫🇷FR_269
+  - _191
+  - 🇫🇷FR_292
+  - 🇫🇷FR_283
+  - 🇫🇷FR_302
   - _173
-  - 🇺🇸US_596
-  - 🇺🇸US-23.157.40.5-1361 | 10.432MB
-  - _170
-  - 🇫🇷FR-45.158.171.136-1167 | 39.858MB
-  - 🇺🇸US_592
-  - 🇺🇸US_589
-  - 🇺🇸US_595
-  - 🇺🇸US_594
-  - 🇺🇸US_591
-  - 🇵🇱PL-217.30.10.18-6164 | 11.488MB
-  - _200
-  - 🇺🇸US_598
-  - 🇵🇱PL-217.30.10.18-6081 | 9.764MB
-  - _154
-  - _152
-  - _149
-  - _150
-  - _145
-  - 🇵🇱PL-217.30.10.18-6161 | 14.686MB
-  - _151
-  - 🇺🇸US_613
-  - _153
-  - _146
-  - 🇺🇸US_600
-  - 🏁ZZ_645
-  - 🇺🇸US_590
-  - _141
-  - SK-156.146.40.194-0388 | 27.19MB
-  - 🇺🇸US_615
-  - _148
-  - _143
-  - _142
-  - _140
-  - _147
+  - 🇨🇦CA_232
+  - _179
+  - 🇨🇿 CZ_240
+  - 🇫🇷FR_285
+  - 🇫🇷FR_301
+  - 🇫🇷FR_286
+  - 🇫🇷FR_297
+  - _167
+  - 🇫🇷FR_279
+  - 🇫🇷FR_293
+  - 🇫🇷FR_294
+  - _188
+  - 🇫🇷FR_277
+  - _177
+  - _183
+  - _178
+  - 🇫🇷FR_295
+  - 🇫🇷FR_281
+  - 🇫🇷FR_299
+  - 🇫🇷FR_271
+  - 🇫🇷FR_276
+  - 🇫🇷FR_288
+  - 🇫🇷FR_290
+  - _181
+  - 🇭🇰 美国 - 洛杉矶 - Kaopu Cloud HK Limited - 5
+  - _165
+  - 🇫🇷FR_280
   - _171
-  - _144
-  - _139
-  - _138
-  - Ireland  2
-  - EE-147.45.60.33-1093 | 27.681MB
-  - 🇺🇸US_607
-  - PA-138.186.142.4-0459 | 18.4MB
-  - SE-121.127.46.147-0379 | 31.102MB
-  - 🇯🇵JP-149.22.87.240-0393 | 26.664MB
-  - 🇯🇵JP-149.22.87.241-0363 | 26.781MB
-  - 🇯🇵JP-149.22.87.204-0370 | 24.63MB
-  - Paris  Pro 3
-  - 🇫🇷FR-51.15.15.82-0490 | 16.417MB
-  - Frankfurt  Pro 4
-  - 🏁ZZ_644
-  - 🇭🇰HK-112.213.102.228-6054 | 14.418MB
-  - 🇺🇸US_624
-  - 🇩🇪 德国-法兰克福-HY-001-1C
-  - 🇸🇬SG-68.183.227.236-0470 | 25.833MB
-  - 🇸🇬SG-68.183.227.4-0471 | 25.753MB
-  - 🇸🇬SG-68.183.227.45-0434 | 24.812MB
-  - 🇺🇸US_612
-  - 🇸🇬SG-128.199.172.224-0380 | 22.058MB
-  - 🇨🇳TW-185.189.160.98-6160 | 16.846MB
-  - 🇺🇸US_621
-  - VN-103.163.218.2-1142 | 16.537MB
-  - 🇺🇸US_623
-  - 美国1-Trojan
-  - 美国-Trojan
-  - 🇯🇵 JP 香草星冰乐-1B
-  - 🇿🇦 ZA_626
-  - 🏁 ZZ_631
-  - 🏁 ZZ_630
-  - RELAY-104.17.221.248-0418 | 19.72MB
-  - RELAY-198.41.209.70-0411 | 20.548MB
-  - 🇸🇬SG-139.59.119.143-0378 | 25.805MB
-  - RELAY-104.19.48.236-0257 | 21.378MB
-  - 日本3-Trojan
-  - RELAY-104.16.155.10-0256 | 20.683MB
-  - 日本2-Trojan
-  - 日本1-Trojan
+  - _168
+  - 🇫🇷FR_264
+  - _209
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Greenhost BV - 2
+  - 🇫🇷FR_266
+  - _180
+  - 🇫🇷FR_270
+  - 🇫🇷FR_282
+  - 🇫🇷FR_274
+  - 🇫🇷FR_300
+  - _175
+  - warp.irss.eu.org 13
+  - 🇪🇸ES_257
+  - _166
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 23
+  - _184
+  - 🇫🇷FR_298
+  - _162
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 49
+  - _182
+  - _185
+  - _164
+  - _176
+  - _161
+  - _163
+  - _169
+  - _189
+  - 🇫🇷FR_272
+  - 🇩🇪DE_247
+  - _196
+  - 🇨🇿 CZ_242
+  - _170
+  - 🇧🇩 BD_222
+  - _174
+  - 🇩🇪DE_246
+  - _201
+  - 🇩🇪 DE_243
+  - Toronto  Pro 2-pDbJ
+  - _204
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Stark Industries Solutions LTD - 1
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 36
+  - 🇫🇷FR_296
+  - 🇫🇷FR_284
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 47
+  - 🇩🇰 丹麦 - 哥本哈根 - ONEPROVIDER - 1
+  - 🇺🇸 美国 - 洛杉矶 - HostPapa - 6
+  - 🇫🇷FR_289
+  - 🇫🇷FR_268
+  - 🇫🇷FR_287
+  - 🇩🇪DE_254
+  - 🇫🇷FR_267
+  - _202
+  - _203
+  - _208
+  - 🇩🇪DE_255
+  - 🇺🇸 美国 - 洛杉矶 - HostPapa - 19
+  - 🇩🇪DE_249
+  - 🇫🇷FR_275
+  - 🇩🇪DE_253
+  - 🇫🇷FR_265
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 7
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 38
+  - 🇩🇪DE_248
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 25
+  - 🇯🇵 日本 - 成田市 - Cloudflare, Inc. - 7
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 8
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 5
+  - 🇩🇪DE_252
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 9
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 4
+  - _198
+  - 🇪🇪 爱沙尼亚 - 塔林 - RJ Network OU - 2
+  - 🇬🇷 希腊 - 塞萨洛尼基 - SYNAPSECOM S.A. Provider of Telecommunications and Internet Services
+    - 1
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 32
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 26
+  - 🇰🇷 韩国 - Seongnam-si - Korea Telecom - 1
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 27
+  - 🇩🇪DE_245
+  - _197
+  - _206
+  - 🇩🇪DE_250
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 43
+  - 🇯🇵 日本 - 成田市 - Cloudflare, Inc. - 8
+  - _214
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 29
+  - 🇸🇬 狮城特殊|@ripaojiedian
+  - 🇩🇪 德国 - Frankfurt - GTHost - 5
+  - 🇺🇸 美国 - 聖荷西 - PEG TECH INC - 3
+  - _219
+  - 🇯🇵 日本特殊|@ripaojiedian
+  - 🇪🇪 爱沙尼亚 - 塔林 - RJ Network OU - 1
+  - 🇰🇷 韩国特殊|@ripaojiedian
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 44
+  - _220
+  - _217
+  - 🇩🇪DE_251
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 37
+  - 🇪🇸 ES_256
+  - 11|0|--50
+  - 🇺🇸 美国 - 洛杉矶 - HostPapa - 15
+  - 🇱🇻 拉脱维亚 - 里加 - Cloudflare, Inc. - 2
+  - pimax_LosAngeles
+  - 🇩🇪 DE_244
+  - _211
+  - 🇨🇿 CZ_241
+  - 🇺🇸 美国 - 洛杉矶 - HostPapa - 14
+  - 🇩🇪 德国2|@ripaojiedian
+  - 🇩🇪 德国 - 纽伦堡 - Hetzner Online GmbH - 4
+  - _216
+  - 🇸🇬 印度 - 新孟買 - G-Core Labs S.A. - 1
+  - 🇰🇷 韩国 - Yeongdong-gun - Cloudflare, Inc. - 5
+  - 🇩🇪 德国-法兰克福-HY-001-1B-54ta
+  - 🇦🇺AU_221
+  - 🇪🇨 厄瓜多尔 - 基多 - ONEPROVIDER - 1
+  - 🇩🇪 德国-法兰克福-HY-001-1E
+  - 🇧🇬 保加利亚 - 索菲亞 - Cloudflare, Inc. - 1
+  - 🇳🇱 荷兰|@ripaojiedian
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
@@ -1639,411 +2052,413 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 🏁ZZ_643
-  - 🏁ZZ_639
-  - 🏁 ZZ_634
-  - 🏁ZZ_642
-  - 🇺🇸US-142.202.49.75-6182 | 6.21MB
-  - 🏁ZZ_641
-  - 🏁ZZ_640
-  - 🇺🇸US-38.121.43.27-6099 | 4.617MB
-  - 🇺🇸US-167.88.63.21-0859 | 6.374MB
-  - 🇺🇸US-167.88.63.21-0863 | 6.73MB
-  - 🇺🇸US-142.202.48.105-6096 | 5.407MB
-  - 🇺🇸US-37.19.198.243-0392 | 121.457MB
-  - 🇺🇸US-138.199.42.68-0348 | 113.535MB
-  - 🇺🇸US-167.88.63.21-0854 | 5.529MB
-  - 🇺🇸US-38.121.43.27-6117 | 4.743MB
-  - 🇺🇸US-37.19.198.236-0364 | 106.289MB
-  - _195
-  - 🇺🇸US-194.5.215.59-0351 | 104.94MB
-  - 🇺🇸US-37.19.198.160-0354 | 116.741MB
-  - 🇺🇸US-38.121.43.27-6098 | 5.25MB
-  - 🇺🇸US-37.19.198.244-0373 | 120.383MB
-  - 🇺🇸US-156.146.38.168-0367 | 98.93MB
-  - 🇺🇸US-156.146.38.169-0342 | 85.172MB
-  - 🇺🇸US_625
-  - 🇺🇸US_604
-  - Manassas  1
-  - 🇺🇸US_593
-  - _189
-  - 🇺🇸US-107.151.182.253-0330 | 64.02MB
-  - 🇺🇸US-212.102.47.131-0346 | 38.939MB
-  - 🇨🇦CA-149.22.95.183-0341 | 39.417MB
-  - 🇺🇸US-107.155.57.11-0336 | 39.183MB
-  - 🇺🇸US-107.155.57.51-0337 | 40.535MB
-  - _191
-  - _194
-  - _192
-  - _186
-  - 🇺🇸US-23.251.121.242-0334 | 56.865MB
-  - 🏁 ZZ_632
-  - 🇺🇸US_588
-  - 🇺🇸US_622
-  - _193
-  - _157
+  - warp.irss.eu.org 9
+  - warp.irss.eu.org 11
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 22
+  - warp.irss.eu.org 12
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 46
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 39
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 40
+  - warp.irss.eu.org 4
+  - warp.irss.eu.org 3
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 41
+  - warp.irss.eu.org 2
+  - 🇬🇧 英国 - 豪恩斯洛 - Cloudflare, Inc. - 5
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 21
+  - warp.irss.eu.org 5
+  - warp.irss.eu.org 15
+  - warp.irss.eu.org 10
+  - warp.irss.eu.org 14
+  - 🇨🇦CA_233
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 45
+  - warp.irss.eu.org 8
+  - _08
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 42
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 28
+  - warp.irss.eu.org 7
+  - _10
   - _190
-  - _156
-  - _159
-  - 🏁 ZZ_633
-  - 🇺🇸US-79.110.53.169-0332 | 54.598MB
-  - 🇺🇸US_619
-  - _155
-  - 🇺🇸US_617
-  - 🇺🇸US_586
-  - 🇺🇸US_587
-  - 🏁 ZZ_637
-  - 🇺🇸US-23.157.40.5-1343 | 11.355MB
-  - 🇺🇸US-23.157.40.5-1349 | 11.745MB
-  - 🇺🇸US_609
-  - _158
-  - 🇬🇧GB-146.70.61.18-0369 | 34.154MB
+  - 🇯🇵 日本 - 成田市 - Cloudflare, Inc. - 5
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 33
+  - _11
+  - 🇨🇦 加拿大 - 蒙特利尔 - OVH SAS - 1
+  - 🇯🇵 日本 - 成田市 - Cloudflare, Inc. - 9
   - _172
-  - 🇬🇧GB-62.100.205.48-0464 | 56.963MB
-  - 🇺🇸US_582
-  - 🇺🇸US-23.157.40.5-1352 | 13.637MB
-  - 🇺🇸US_614
-  - 🇺🇸US_585
-  - 🇺🇸US_601
-  - Toronto  Pro 1
-  - 🏁 ZZ_635
-  - 🇩🇪DE-193.108.119.230-1146 | 26.605MB
-  - 🇳🇱NL-149.34.244.77-1205 | 32.831MB
-  - 🇺🇸US_581
-  - 🇳🇱NL-149.34.244.82-0389 | 31.479MB
-  - 🇺🇸US-23.157.40.5-1359 | 6.688MB
-  - 🇺🇸US_583
-  - 🇳🇱NL-149.34.244.68-0394 | 32.345MB
-  - 🇺🇸US_603
-  - 🇺🇸US_605
-  - 🇺🇸US_616
-  - Ohio -L22 2
-  - 🇺🇸US_602
-  - 🇺🇸US_597
-  - 🇺🇸US_610
-  - _174
-  - _180
-  - 🇺🇸US_584
-  - 🏁 ZZ_636
-  - _188
-  - _176
-  - 🏁 ZZ_629
-  - _175
-  - _165
-  - _183
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 31
+  - _213
+  - _218
+  - _212
+  - _195
+  - 🇫🇷FR_278
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 34
+  - warp.irss.eu.org
+  - _193
+  - _205
+  - 🇫🇷FR_291
+  - 🇫🇷FR_273
+  - _192
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 30
+  - _194
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 35
   - _187
-  - 🇬🇧GB-141.98.101.179-1174 | 19.717MB
-  - _196
-  - _184
-  - 🏁 ZZ_628
-  - _169
-  - _168
-  - 🇺🇸US-23.157.40.5-0502 | 4.332MB
-  - 🇺🇸US-23.157.40.5-1350 | 4.361MB
-  - 🇺🇸US_611
-  - 🇺🇸US-23.157.40.5-1356 | 6.86MB
-  - 🇺🇸US_599
-  - 🇺🇸US_620
-  - _166
-  - 🇺🇸US_606
-  - _167
-  - _178
-  - _177
-  - 🇺🇸US-23.157.40.5-6122 | 10.419MB
-  - 🇬🇧GB-169.150.210.233-0385 | 32.296MB
-  - _162
-  - _182
-  - _181
-  - _161
-  - _164
-  - _163
-  - _160
-  - 🇬🇧GB-141.98.101.180-0504 | 22.45MB
-  - 🇺🇸US-23.157.40.5-6127 | 9.863MB
-  - _179
-  - 🇬🇧GB-141.98.101.182-0410 | 25.517MB
+  - 🇫🇷FR_269
+  - _191
+  - 🇫🇷FR_292
+  - 🇫🇷FR_283
+  - 🇫🇷FR_302
   - _173
-  - 🇺🇸US_596
-  - 🇺🇸US-23.157.40.5-1361 | 10.432MB
-  - _170
-  - 🇫🇷FR-45.158.171.136-1167 | 39.858MB
-  - 🇺🇸US_592
-  - 🇺🇸US_589
-  - 🇺🇸US_595
-  - 🇺🇸US_594
-  - 🇺🇸US_591
-  - 🇵🇱PL-217.30.10.18-6164 | 11.488MB
-  - _200
-  - 🇺🇸US_598
-  - 🇵🇱PL-217.30.10.18-6081 | 9.764MB
-  - _154
-  - _152
-  - _149
-  - _150
-  - _145
-  - 🇵🇱PL-217.30.10.18-6161 | 14.686MB
-  - _151
-  - 🇺🇸US_613
-  - _153
-  - _146
-  - 🇺🇸US_600
-  - 🏁ZZ_645
-  - 🇺🇸US_590
-  - _141
-  - SK-156.146.40.194-0388 | 27.19MB
-  - 🇺🇸US_615
-  - _148
-  - _143
-  - _142
-  - _140
-  - _147
+  - 🇨🇦CA_232
+  - _179
+  - 🇨🇿 CZ_240
+  - 🇫🇷FR_285
+  - 🇫🇷FR_301
+  - 🇫🇷FR_286
+  - 🇫🇷FR_297
+  - _167
+  - 🇫🇷FR_279
+  - 🇫🇷FR_293
+  - 🇫🇷FR_294
+  - _188
+  - 🇫🇷FR_277
+  - _177
+  - _183
+  - _178
+  - 🇫🇷FR_295
+  - 🇫🇷FR_281
+  - 🇫🇷FR_299
+  - 🇫🇷FR_271
+  - 🇫🇷FR_276
+  - 🇫🇷FR_288
+  - 🇫🇷FR_290
+  - _181
+  - 🇭🇰 美国 - 洛杉矶 - Kaopu Cloud HK Limited - 5
+  - _165
+  - 🇫🇷FR_280
   - _171
-  - _144
-  - _139
-  - _138
-  - Ireland  2
-  - EE-147.45.60.33-1093 | 27.681MB
-  - 🇺🇸US_607
-  - PA-138.186.142.4-0459 | 18.4MB
-  - SE-121.127.46.147-0379 | 31.102MB
-  - 🇯🇵JP-149.22.87.240-0393 | 26.664MB
-  - 🇯🇵JP-149.22.87.241-0363 | 26.781MB
-  - 🇯🇵JP-149.22.87.204-0370 | 24.63MB
-  - Paris  Pro 3
-  - 🇫🇷FR-51.15.15.82-0490 | 16.417MB
-  - Frankfurt  Pro 4
-  - 🏁ZZ_644
-  - 🇭🇰HK-112.213.102.228-6054 | 14.418MB
-  - 🇺🇸US_624
-  - 🇩🇪 德国-法兰克福-HY-001-1C
-  - 🇸🇬SG-68.183.227.236-0470 | 25.833MB
-  - 🇸🇬SG-68.183.227.4-0471 | 25.753MB
-  - 🇸🇬SG-68.183.227.45-0434 | 24.812MB
-  - 🇺🇸US_612
-  - 🇸🇬SG-128.199.172.224-0380 | 22.058MB
-  - 🇨🇳TW-185.189.160.98-6160 | 16.846MB
-  - 🇺🇸US_621
-  - VN-103.163.218.2-1142 | 16.537MB
-  - 🇺🇸US_623
-  - 美国1-Trojan
-  - 美国-Trojan
-  - 🇯🇵 JP 香草星冰乐-1B
-  - 🇿🇦 ZA_626
-  - 🏁 ZZ_631
-  - 🏁 ZZ_630
-  - RELAY-104.17.221.248-0418 | 19.72MB
-  - RELAY-198.41.209.70-0411 | 20.548MB
-  - 🇸🇬SG-139.59.119.143-0378 | 25.805MB
-  - RELAY-104.19.48.236-0257 | 21.378MB
-  - 日本3-Trojan
-  - RELAY-104.16.155.10-0256 | 20.683MB
-  - 日本2-Trojan
-  - 日本1-Trojan
+  - _168
+  - 🇫🇷FR_264
+  - _209
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Greenhost BV - 2
+  - 🇫🇷FR_266
+  - _180
+  - 🇫🇷FR_270
+  - 🇫🇷FR_282
+  - 🇫🇷FR_274
+  - 🇫🇷FR_300
+  - _175
+  - warp.irss.eu.org 13
+  - 🇪🇸ES_257
+  - _166
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 23
+  - _184
+  - 🇫🇷FR_298
+  - _162
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 49
+  - _182
+  - _185
+  - _164
+  - _176
+  - _161
+  - _163
+  - _169
+  - _189
+  - 🇫🇷FR_272
+  - 🇩🇪DE_247
+  - _196
+  - 🇨🇿 CZ_242
+  - _170
+  - 🇧🇩 BD_222
+  - _174
+  - 🇩🇪DE_246
+  - _201
+  - 🇩🇪 DE_243
+  - Toronto  Pro 2-pDbJ
+  - _204
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Stark Industries Solutions LTD - 1
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 36
+  - 🇫🇷FR_296
+  - 🇫🇷FR_284
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 47
+  - 🇩🇰 丹麦 - 哥本哈根 - ONEPROVIDER - 1
+  - 🇺🇸 美国 - 洛杉矶 - HostPapa - 6
+  - 🇫🇷FR_289
+  - 🇫🇷FR_268
+  - 🇫🇷FR_287
+  - 🇩🇪DE_254
+  - 🇫🇷FR_267
+  - _202
+  - _203
+  - _208
+  - 🇩🇪DE_255
+  - 🇺🇸 美国 - 洛杉矶 - HostPapa - 19
+  - 🇩🇪DE_249
+  - 🇫🇷FR_275
+  - 🇩🇪DE_253
+  - 🇫🇷FR_265
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 7
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 38
+  - 🇩🇪DE_248
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 25
+  - 🇯🇵 日本 - 成田市 - Cloudflare, Inc. - 7
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 8
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 5
+  - 🇩🇪DE_252
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 9
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 4
+  - _198
+  - 🇪🇪 爱沙尼亚 - 塔林 - RJ Network OU - 2
+  - 🇬🇷 希腊 - 塞萨洛尼基 - SYNAPSECOM S.A. Provider of Telecommunications and Internet Services
+    - 1
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 32
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 26
+  - 🇰🇷 韩国 - Seongnam-si - Korea Telecom - 1
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 27
+  - 🇩🇪DE_245
+  - _197
+  - _206
+  - 🇩🇪DE_250
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 43
+  - 🇯🇵 日本 - 成田市 - Cloudflare, Inc. - 8
+  - _214
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 29
+  - 🇸🇬 狮城特殊|@ripaojiedian
+  - 🇩🇪 德国 - Frankfurt - GTHost - 5
+  - 🇺🇸 美国 - 聖荷西 - PEG TECH INC - 3
+  - _219
+  - 🇯🇵 日本特殊|@ripaojiedian
+  - 🇪🇪 爱沙尼亚 - 塔林 - RJ Network OU - 1
+  - 🇰🇷 韩国特殊|@ripaojiedian
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 44
+  - _220
+  - _217
+  - 🇩🇪DE_251
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 37
+  - 🇪🇸 ES_256
+  - 11|0|--50
+  - 🇺🇸 美国 - 洛杉矶 - HostPapa - 15
+  - 🇱🇻 拉脱维亚 - 里加 - Cloudflare, Inc. - 2
+  - pimax_LosAngeles
+  - 🇩🇪 DE_244
+  - _211
+  - 🇨🇿 CZ_241
+  - 🇺🇸 美国 - 洛杉矶 - HostPapa - 14
+  - 🇩🇪 德国2|@ripaojiedian
+  - 🇩🇪 德国 - 纽伦堡 - Hetzner Online GmbH - 4
+  - _216
+  - 🇸🇬 印度 - 新孟買 - G-Core Labs S.A. - 1
+  - 🇰🇷 韩国 - Yeongdong-gun - Cloudflare, Inc. - 5
+  - 🇩🇪 德国-法兰克福-HY-001-1B-54ta
+  - 🇦🇺AU_221
+  - 🇪🇨 厄瓜多尔 - 基多 - ONEPROVIDER - 1
+  - 🇩🇪 德国-法兰克福-HY-001-1E
+  - 🇧🇬 保加利亚 - 索菲亞 - Cloudflare, Inc. - 1
+  - 🇳🇱 荷兰|@ripaojiedian
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 🏁ZZ_643
-  - 🏁ZZ_639
-  - 🏁 ZZ_634
-  - 🏁ZZ_642
-  - 🇺🇸US-142.202.49.75-6182 | 6.21MB
-  - 🏁ZZ_641
-  - 🏁ZZ_640
-  - 🇺🇸US-38.121.43.27-6099 | 4.617MB
-  - 🇺🇸US-167.88.63.21-0859 | 6.374MB
-  - 🇺🇸US-167.88.63.21-0863 | 6.73MB
-  - 🇺🇸US-142.202.48.105-6096 | 5.407MB
-  - 🇺🇸US-37.19.198.243-0392 | 121.457MB
-  - 🇺🇸US-138.199.42.68-0348 | 113.535MB
-  - 🇺🇸US-167.88.63.21-0854 | 5.529MB
-  - 🇺🇸US-38.121.43.27-6117 | 4.743MB
-  - 🇺🇸US-37.19.198.236-0364 | 106.289MB
-  - _195
-  - 🇺🇸US-194.5.215.59-0351 | 104.94MB
-  - 🇺🇸US-37.19.198.160-0354 | 116.741MB
-  - 🇺🇸US-38.121.43.27-6098 | 5.25MB
-  - 🇺🇸US-37.19.198.244-0373 | 120.383MB
-  - 🇺🇸US-156.146.38.168-0367 | 98.93MB
-  - 🇺🇸US-156.146.38.169-0342 | 85.172MB
-  - 🇺🇸US_625
-  - 🇺🇸US_604
-  - Manassas  1
-  - 🇺🇸US_593
-  - _189
-  - 🇺🇸US-107.151.182.253-0330 | 64.02MB
-  - 🇺🇸US-212.102.47.131-0346 | 38.939MB
-  - 🇨🇦CA-149.22.95.183-0341 | 39.417MB
-  - 🇺🇸US-107.155.57.11-0336 | 39.183MB
-  - 🇺🇸US-107.155.57.51-0337 | 40.535MB
-  - _191
-  - _194
-  - _192
-  - _186
-  - 🇺🇸US-23.251.121.242-0334 | 56.865MB
-  - 🏁 ZZ_632
-  - 🇺🇸US_588
-  - 🇺🇸US_622
-  - _193
-  - _157
+  - warp.irss.eu.org 9
+  - warp.irss.eu.org 11
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 22
+  - warp.irss.eu.org 12
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 46
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 39
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 40
+  - warp.irss.eu.org 4
+  - warp.irss.eu.org 3
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 41
+  - warp.irss.eu.org 2
+  - 🇬🇧 英国 - 豪恩斯洛 - Cloudflare, Inc. - 5
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 21
+  - warp.irss.eu.org 5
+  - warp.irss.eu.org 15
+  - warp.irss.eu.org 10
+  - warp.irss.eu.org 14
+  - 🇨🇦CA_233
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 45
+  - warp.irss.eu.org 8
+  - _08
+  - 🇺🇸 美国 - 聖荷西 - Cloudflare, Inc. - 42
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 28
+  - warp.irss.eu.org 7
+  - _10
   - _190
-  - _156
-  - _159
-  - 🏁 ZZ_633
-  - 🇺🇸US-79.110.53.169-0332 | 54.598MB
-  - 🇺🇸US_619
-  - _155
-  - 🇺🇸US_617
-  - 🇺🇸US_586
-  - 🇺🇸US_587
-  - 🏁 ZZ_637
-  - 🇺🇸US-23.157.40.5-1343 | 11.355MB
-  - 🇺🇸US-23.157.40.5-1349 | 11.745MB
-  - 🇺🇸US_609
-  - _158
-  - 🇬🇧GB-146.70.61.18-0369 | 34.154MB
+  - 🇯🇵 日本 - 成田市 - Cloudflare, Inc. - 5
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 33
+  - _11
+  - 🇨🇦 加拿大 - 蒙特利尔 - OVH SAS - 1
+  - 🇯🇵 日本 - 成田市 - Cloudflare, Inc. - 9
   - _172
-  - 🇬🇧GB-62.100.205.48-0464 | 56.963MB
-  - 🇺🇸US_582
-  - 🇺🇸US-23.157.40.5-1352 | 13.637MB
-  - 🇺🇸US_614
-  - 🇺🇸US_585
-  - 🇺🇸US_601
-  - Toronto  Pro 1
-  - 🏁 ZZ_635
-  - 🇩🇪DE-193.108.119.230-1146 | 26.605MB
-  - 🇳🇱NL-149.34.244.77-1205 | 32.831MB
-  - 🇺🇸US_581
-  - 🇳🇱NL-149.34.244.82-0389 | 31.479MB
-  - 🇺🇸US-23.157.40.5-1359 | 6.688MB
-  - 🇺🇸US_583
-  - 🇳🇱NL-149.34.244.68-0394 | 32.345MB
-  - 🇺🇸US_603
-  - 🇺🇸US_605
-  - 🇺🇸US_616
-  - Ohio -L22 2
-  - 🇺🇸US_602
-  - 🇺🇸US_597
-  - 🇺🇸US_610
-  - _174
-  - _180
-  - 🇺🇸US_584
-  - 🏁 ZZ_636
-  - _188
-  - _176
-  - 🏁 ZZ_629
-  - _175
-  - _165
-  - _183
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 31
+  - _213
+  - _218
+  - _212
+  - _195
+  - 🇫🇷FR_278
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 34
+  - warp.irss.eu.org
+  - _193
+  - _205
+  - 🇫🇷FR_291
+  - 🇫🇷FR_273
+  - _192
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 30
+  - _194
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 35
   - _187
-  - 🇬🇧GB-141.98.101.179-1174 | 19.717MB
-  - _196
-  - _184
-  - 🏁 ZZ_628
-  - _169
-  - _168
-  - 🇺🇸US-23.157.40.5-0502 | 4.332MB
-  - 🇺🇸US-23.157.40.5-1350 | 4.361MB
-  - 🇺🇸US_611
-  - 🇺🇸US-23.157.40.5-1356 | 6.86MB
-  - 🇺🇸US_599
-  - 🇺🇸US_620
-  - _166
-  - 🇺🇸US_606
-  - _167
-  - _178
-  - _177
-  - 🇺🇸US-23.157.40.5-6122 | 10.419MB
-  - 🇬🇧GB-169.150.210.233-0385 | 32.296MB
-  - _162
-  - _182
-  - _181
-  - _161
-  - _164
-  - _163
-  - _160
-  - 🇬🇧GB-141.98.101.180-0504 | 22.45MB
-  - 🇺🇸US-23.157.40.5-6127 | 9.863MB
-  - _179
-  - 🇬🇧GB-141.98.101.182-0410 | 25.517MB
+  - 🇫🇷FR_269
+  - _191
+  - 🇫🇷FR_292
+  - 🇫🇷FR_283
+  - 🇫🇷FR_302
   - _173
-  - 🇺🇸US_596
-  - 🇺🇸US-23.157.40.5-1361 | 10.432MB
-  - _170
-  - 🇫🇷FR-45.158.171.136-1167 | 39.858MB
-  - 🇺🇸US_592
-  - 🇺🇸US_589
-  - 🇺🇸US_595
-  - 🇺🇸US_594
-  - 🇺🇸US_591
-  - 🇵🇱PL-217.30.10.18-6164 | 11.488MB
-  - _200
-  - 🇺🇸US_598
-  - 🇵🇱PL-217.30.10.18-6081 | 9.764MB
-  - _154
-  - _152
-  - _149
-  - _150
-  - _145
-  - 🇵🇱PL-217.30.10.18-6161 | 14.686MB
-  - _151
-  - 🇺🇸US_613
-  - _153
-  - _146
-  - 🇺🇸US_600
-  - 🏁ZZ_645
-  - 🇺🇸US_590
-  - _141
-  - SK-156.146.40.194-0388 | 27.19MB
-  - 🇺🇸US_615
-  - _148
-  - _143
-  - _142
-  - _140
-  - _147
+  - 🇨🇦CA_232
+  - _179
+  - 🇨🇿 CZ_240
+  - 🇫🇷FR_285
+  - 🇫🇷FR_301
+  - 🇫🇷FR_286
+  - 🇫🇷FR_297
+  - _167
+  - 🇫🇷FR_279
+  - 🇫🇷FR_293
+  - 🇫🇷FR_294
+  - _188
+  - 🇫🇷FR_277
+  - _177
+  - _183
+  - _178
+  - 🇫🇷FR_295
+  - 🇫🇷FR_281
+  - 🇫🇷FR_299
+  - 🇫🇷FR_271
+  - 🇫🇷FR_276
+  - 🇫🇷FR_288
+  - 🇫🇷FR_290
+  - _181
+  - 🇭🇰 美国 - 洛杉矶 - Kaopu Cloud HK Limited - 5
+  - _165
+  - 🇫🇷FR_280
   - _171
-  - _144
-  - _139
-  - _138
-  - Ireland  2
-  - EE-147.45.60.33-1093 | 27.681MB
-  - 🇺🇸US_607
-  - PA-138.186.142.4-0459 | 18.4MB
-  - SE-121.127.46.147-0379 | 31.102MB
-  - 🇯🇵JP-149.22.87.240-0393 | 26.664MB
-  - 🇯🇵JP-149.22.87.241-0363 | 26.781MB
-  - 🇯🇵JP-149.22.87.204-0370 | 24.63MB
-  - Paris  Pro 3
-  - 🇫🇷FR-51.15.15.82-0490 | 16.417MB
-  - Frankfurt  Pro 4
-  - 🏁ZZ_644
-  - 🇭🇰HK-112.213.102.228-6054 | 14.418MB
-  - 🇺🇸US_624
-  - 🇩🇪 德国-法兰克福-HY-001-1C
-  - 🇸🇬SG-68.183.227.236-0470 | 25.833MB
-  - 🇸🇬SG-68.183.227.4-0471 | 25.753MB
-  - 🇸🇬SG-68.183.227.45-0434 | 24.812MB
-  - 🇺🇸US_612
-  - 🇸🇬SG-128.199.172.224-0380 | 22.058MB
-  - 🇨🇳TW-185.189.160.98-6160 | 16.846MB
-  - 🇺🇸US_621
-  - VN-103.163.218.2-1142 | 16.537MB
-  - 🇺🇸US_623
-  - 美国1-Trojan
-  - 美国-Trojan
-  - 🇯🇵 JP 香草星冰乐-1B
-  - 🇿🇦 ZA_626
-  - 🏁 ZZ_631
-  - 🏁 ZZ_630
-  - RELAY-104.17.221.248-0418 | 19.72MB
-  - RELAY-198.41.209.70-0411 | 20.548MB
-  - 🇸🇬SG-139.59.119.143-0378 | 25.805MB
-  - RELAY-104.19.48.236-0257 | 21.378MB
-  - 日本3-Trojan
-  - RELAY-104.16.155.10-0256 | 20.683MB
-  - 日本2-Trojan
-  - 日本1-Trojan
+  - _168
+  - 🇫🇷FR_264
+  - _209
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Greenhost BV - 2
+  - 🇫🇷FR_266
+  - _180
+  - 🇫🇷FR_270
+  - 🇫🇷FR_282
+  - 🇫🇷FR_274
+  - 🇫🇷FR_300
+  - _175
+  - warp.irss.eu.org 13
+  - 🇪🇸ES_257
+  - _166
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 23
+  - _184
+  - 🇫🇷FR_298
+  - _162
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 49
+  - _182
+  - _185
+  - _164
+  - _176
+  - _161
+  - _163
+  - _169
+  - _189
+  - 🇫🇷FR_272
+  - 🇩🇪DE_247
+  - _196
+  - 🇨🇿 CZ_242
+  - _170
+  - 🇧🇩 BD_222
+  - _174
+  - 🇩🇪DE_246
+  - _201
+  - 🇩🇪 DE_243
+  - Toronto  Pro 2-pDbJ
+  - _204
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Stark Industries Solutions LTD - 1
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 36
+  - 🇫🇷FR_296
+  - 🇫🇷FR_284
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 47
+  - 🇩🇰 丹麦 - 哥本哈根 - ONEPROVIDER - 1
+  - 🇺🇸 美国 - 洛杉矶 - HostPapa - 6
+  - 🇫🇷FR_289
+  - 🇫🇷FR_268
+  - 🇫🇷FR_287
+  - 🇩🇪DE_254
+  - 🇫🇷FR_267
+  - _202
+  - _203
+  - _208
+  - 🇩🇪DE_255
+  - 🇺🇸 美国 - 洛杉矶 - HostPapa - 19
+  - 🇩🇪DE_249
+  - 🇫🇷FR_275
+  - 🇩🇪DE_253
+  - 🇫🇷FR_265
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 7
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 38
+  - 🇩🇪DE_248
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 25
+  - 🇯🇵 日本 - 成田市 - Cloudflare, Inc. - 7
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 8
+  - 🇳🇱 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 5
+  - 🇩🇪DE_252
+  - 🇩🇪 德国 - 德赖艾希 - Cloudflare, Inc. - 9
+  - 🇺🇸 美国 - 水牛城 - HostPapa - 4
+  - _198
+  - 🇪🇪 爱沙尼亚 - 塔林 - RJ Network OU - 2
+  - 🇬🇷 希腊 - 塞萨洛尼基 - SYNAPSECOM S.A. Provider of Telecommunications and Internet Services
+    - 1
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 32
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 26
+  - 🇰🇷 韩国 - Seongnam-si - Korea Telecom - 1
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 27
+  - 🇩🇪DE_245
+  - _197
+  - _206
+  - 🇩🇪DE_250
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 43
+  - 🇯🇵 日本 - 成田市 - Cloudflare, Inc. - 8
+  - _214
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 29
+  - 🇸🇬 狮城特殊|@ripaojiedian
+  - 🇩🇪 德国 - Frankfurt - GTHost - 5
+  - 🇺🇸 美国 - 聖荷西 - PEG TECH INC - 3
+  - _219
+  - 🇯🇵 日本特殊|@ripaojiedian
+  - 🇪🇪 爱沙尼亚 - 塔林 - RJ Network OU - 1
+  - 🇰🇷 韩国特殊|@ripaojiedian
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 44
+  - _220
+  - _217
+  - 🇩🇪DE_251
+  - 🇺🇸 美国 - 东洛杉矶 - Cloudflare, Inc. - 37
+  - 🇪🇸 ES_256
+  - 11|0|--50
+  - 🇺🇸 美国 - 洛杉矶 - HostPapa - 15
+  - 🇱🇻 拉脱维亚 - 里加 - Cloudflare, Inc. - 2
+  - pimax_LosAngeles
+  - 🇩🇪 DE_244
+  - _211
+  - 🇨🇿 CZ_241
+  - 🇺🇸 美国 - 洛杉矶 - HostPapa - 14
+  - 🇩🇪 德国2|@ripaojiedian
+  - 🇩🇪 德国 - 纽伦堡 - Hetzner Online GmbH - 4
+  - _216
+  - 🇸🇬 印度 - 新孟買 - G-Core Labs S.A. - 1
+  - 🇰🇷 韩国 - Yeongdong-gun - Cloudflare, Inc. - 5
+  - 🇩🇪 德国-法兰克福-HY-001-1B-54ta
+  - 🇦🇺AU_221
+  - 🇪🇨 厄瓜多尔 - 基多 - ONEPROVIDER - 1
+  - 🇩🇪 德国-法兰克福-HY-001-1E
+  - 🇧🇬 保加利亚 - 索菲亞 - Cloudflare, Inc. - 1
+  - 🇳🇱 荷兰|@ripaojiedian
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
