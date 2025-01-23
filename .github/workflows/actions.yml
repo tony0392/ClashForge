@@ -58,7 +58,7 @@ jobs:
         images: ${{ env.REGISTRY }}/${{ env.IMAGE }}
         tags: |
           # set latest tag for master branch
-          type=raw,value=latest,enable=${{ github.ref == format('refs/heads/{0}', 'master') }}
+          type=raw,value=latest,enable=${{ github.ref == format('refs/heads/{0}', 'main') }}
     # 构建并上传镜像到仓库
     - name: Build and push
       uses: docker/build-push-action@v6
