@@ -2341,7 +2341,7 @@ if __name__ == '__main__':
         "https://mhq.us.kg",
         "http://clash.554556.xyz",
         "https://proxy-air.zheyu.one",
-        "https://warpip.irss.eu.org",
+        "https://warpip.irss.eu.org|ss",
         "https://clash.neobirdfly.eu.org",
         "https://ccccclash.skyrace.top",
         "https://gist.zmy666.us.kg",
