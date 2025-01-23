@@ -2336,7 +2336,7 @@ if __name__ == '__main__':
         "https://dingyue.davesuen.store",
         "https://dy.5468936.xyz",
         "https://super.jack991.filegear-sg.me",
-        "https://lswmc.0000002.best",
+        "https://lswmc.0000002.best|ss",
         "https://aggregator.aoip.top",
         "https://mhq.us.kg",
         "http://clash.554556.xyz",
