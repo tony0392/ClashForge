@@ -2343,7 +2343,6 @@ if __name__ == '__main__':
         "https://proxy-air.zheyu.one",
         "https://warpip.irss.eu.org",
         "https://clash.neobirdfly.eu.org",
-        "http://www.velaton.xyz",
         "https://ccccclash.skyrace.top",
         "https://gist.zmy666.us.kg",
         "https://flclash.us.kg",
