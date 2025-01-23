@@ -2374,10 +2374,10 @@ if __name__ == '__main__':
         "https://ghfast.top/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml",
         "https://ghfast.top/https://raw.githubusercontent.com/mfuu/v2ray/master/clash.yaml",
         "https://api.mxlweb.xyz/sub?target=clash&url=https://www.xrayvip.com/free.yaml&insert=false",
-        "https://www.freeclashnode.com/uploads/{Y}/{m}/0-{Ymd}.yaml|ss",
-        "https://proxypool.link/trojan/sub|ss",
+        "https://www.freeclashnode.com/uploads/{Y}/{m}/0-{Ymd}.yaml",
+        "https://proxypool.link/trojan/sub",
         "https://proxypool.link/ss/sub|links",
-        "https://proxypool.link/vmess/sub|ss",
+        "https://proxypool.link/vmess/sub",
         "https://igdux.top/5Hna|ss"
         
     ]
