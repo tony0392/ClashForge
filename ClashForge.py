@@ -2334,12 +2334,7 @@ if __name__ == '__main__':
         "http://103.67.52.65",
         "https://dy.5468936.xyz",
         "https://mhq.us.kg",
-        "http://clash.554556.xyz",
         "https://ccccclash.skyrace.top",
-        "https://gist.zmy666.us.kg",
-        "https://flclash.us.kg",
-        "https://6666.pengggan.us.kg",
-        "https://7777.pengggan.us.kg", 
         "https://www.sstank.top/link/sAHQuZoZ1tzQWjrn?clash=1",
         "https://ghfast.top/https://raw.githubusercontent.com/Roywaller/clash_subscription/refs/heads/main/clash_subscription.txt",
         "https://ghfast.top/https://raw.githubusercontent.com/leetomlee123/freenode/refs/heads/main/README.md",
@@ -2349,6 +2344,5 @@ if __name__ == '__main__':
         "https://ghfast.top/https://raw.githubusercontent.com/mfuu/v2ray/master/clash.yaml",
         "https://api.mxlweb.xyz/sub?target=clash&url=https://www.xrayvip.com/free.yaml&insert=false",
         "https://www.freeclashnode.com/uploads/{Y}/{m}/0-{Ymd}.yaml",
-        
     ]
     work(links, check=True, only_check=False, allowed_types=["ss","vmess","trojan"])
