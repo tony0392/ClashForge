@@ -2340,7 +2340,7 @@ if __name__ == '__main__':
         "https://gist.zmy666.us.kg",
         "https://flclash.us.kg",
         "https://6666.pengggan.us.kg",
-        "https://7777.pengggan.us.kg"， 
+        "https://7777.pengggan.us.kg", 
         "https://www.sstank.top/link/sAHQuZoZ1tzQWjrn?clash=1",
         "https://ghfast.top/https://raw.githubusercontent.com/Roywaller/clash_subscription/refs/heads/main/clash_subscription.txt",
         "https://ghfast.top/https://raw.githubusercontent.com/leetomlee123/freenode/refs/heads/main/README.md",
