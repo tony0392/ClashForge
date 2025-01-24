@@ -40,7 +40,7 @@ MAX_CONCURRENT_TESTS = 100
 LIMIT = 200 # 最多保留LIMIT个节点
 CONFIG_FILE = 'clash_config.yaml'
 INPUT = "input" # 从文件中加载代理节点，支持yaml/yml、txt(每条代理链接占一行)
-BAN = ["China", "CN", "电信", "移动", "联通", "美国", "US", "us"]
+BAN = ["China", "CN", "电信", "移动", "联通",]
 headers = {
     'Accept-Charset': 'utf-8',
     'Accept': 'text/html,application/x-yaml,*/*',
@@ -2335,7 +2335,6 @@ if __name__ == '__main__':
         "https://dy.5468936.xyz",
         "https://mhq.us.kg",
         "http://clash.554556.xyz",
-        "https://warpip.irss.eu.org|ss",
         "https://ccccclash.skyrace.top",
         "https://gist.zmy666.us.kg",
         "https://flclash.us.kg",
