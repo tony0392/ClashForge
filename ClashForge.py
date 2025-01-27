@@ -2339,7 +2339,6 @@ if __name__ == '__main__':
         "https://ghfast.top/https://raw.githubusercontent.com/Roywaller/clash_subscription/refs/heads/main/clash_subscription.txt",
         "https://ghfast.top/https://raw.githubusercontent.com/leetomlee123/freenode/refs/heads/main/README.md",
         "https://ghfast.top/https://raw.githubusercontent.com/mgit0001/test_clash/refs/heads/main/tgs.yaml",
-        "https://ghfast.top/https://raw.githubusercontent.com/a2470982985/getNode/main/clash.yaml",
         "https://ghfast.top/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml",
         "https://ghfast.top/https://raw.githubusercontent.com/mfuu/v2ray/master/clash.yaml",
         "https://api.mxlweb.xyz/sub?target=clash&url=https://www.xrayvip.com/free.yaml&insert=false",
