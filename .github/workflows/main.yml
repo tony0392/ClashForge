@@ -31,7 +31,7 @@ jobs:
       - name: Run ClashForge.py
         run: python ClashForge.py
 
-      - name: Commit 和 push file
+      - name: Commit and push file
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
