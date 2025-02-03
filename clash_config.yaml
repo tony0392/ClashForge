@@ -32,68 +32,28 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- name: Manassas  25
+- name: Madrid Pro 1
   type: trojan
-  server: faithful-goshawk.goat627.mom
+  server: subtle-seahorse.treefrog761.one
   port: 443
   password: '3648425794742788096'
-  sni: faithful-goshawk.goat627.mom
+  sni: subtle-seahorse.treefrog761.one
   skip-cert-verify: false
   udp: true
-- name: Amsterdam  24
+- name: Amsterdam Pro 25
   type: trojan
-  server: modest-bulldog.goat627.mom
+  server: pet-bulldog.goat627.mom
   port: 443
   password: '3648425794742788096'
-  sni: modest-bulldog.goat627.mom
+  sni: pet-bulldog.goat627.mom
   skip-cert-verify: false
   udp: true
-- name: Tokyo  Pro 3
+- name: Frankfurt Pro 2
   type: trojan
-  server: trusty-asp.goat627.mom
+  server: right-goldfish.goat627.mom
   port: 443
   password: '3648425794742788096'
-  sni: trusty-asp.goat627.mom
-  skip-cert-verify: false
-  udp: true
-- name: Tokyo  15
-  type: trojan
-  server: closing-phoenix.goat627.mom
-  port: 443
-  password: '3648425794742788096'
-  sni: closing-phoenix.goat627.mom
-  skip-cert-verify: false
-  udp: true
-- name: Amsterdam  Pro 3
-  type: trojan
-  server: learning-cattle.treefrog761.one
-  port: 443
-  password: '3648425794742788096'
-  sni: learning-cattle.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Amsterdam  28
-  type: trojan
-  server: big-whale.goat627.mom
-  port: 443
-  password: '3648425794742788096'
-  sni: big-whale.goat627.mom
-  skip-cert-verify: false
-  udp: true
-- name: London  Pro 1
-  type: trojan
-  server: electric-sawfish.goat627.mom
-  port: 443
-  password: '3648425794742788096'
-  sni: electric-sawfish.goat627.mom
-  skip-cert-verify: false
-  udp: true
-- name: Manassas  Pro 1
-  type: trojan
-  server: open-baboon.goat627.mom
-  port: 443
-  password: '3648425794742788096'
-  sni: open-baboon.goat627.mom
+  sni: right-goldfish.goat627.mom
   skip-cert-verify: false
   udp: true
 - name: London  Pro 15
@@ -104,76 +64,36 @@ proxies:
   sni: enabling-cat.goat627.mom
   skip-cert-verify: false
   udp: true
-- name: Frankfurt  7
+- name: Tokyo  Pro 3
   type: trojan
-  server: assuring-roughy.goat627.mom
+  server: trusty-asp.goat627.mom
   port: 443
   password: '3648425794742788096'
-  sni: assuring-roughy.goat627.mom
+  sni: trusty-asp.goat627.mom
   skip-cert-verify: false
   udp: true
-- name: Amsterdam 25
+- name: Tokyo  Pro 15
   type: trojan
-  server: pet-bulldog.goat627.mom
+  server: closing-phoenix.goat627.mom
   port: 443
   password: '3648425794742788096'
-  sni: pet-bulldog.goat627.mom
+  sni: closing-phoenix.goat627.mom
   skip-cert-verify: false
   udp: true
-- name: Oregon  19
+- name: Saint Peterburg Pro 2
   type: trojan
-  server: fitting-foxhound.goat627.mom
+  server: relaxed-jaybird.treefrog761.one
   port: 443
   password: '3648425794742788096'
-  sni: fitting-foxhound.goat627.mom
+  sni: relaxed-jaybird.treefrog761.one
   skip-cert-verify: false
   udp: true
-- name: Manassas  Pro 35
+- name: London  Pro 1
   type: trojan
-  server: major-ape.goat627.mom
+  server: electric-sawfish.goat627.mom
   port: 443
   password: '3648425794742788096'
-  sni: major-ape.goat627.mom
-  skip-cert-verify: false
-  udp: true
-- name: Paris  Pro 6
-  type: trojan
-  server: artistic-vulture.goat627.mom
-  port: 443
-  password: '3648425794742788096'
-  sni: artistic-vulture.goat627.mom
-  skip-cert-verify: false
-  udp: true
-- name: Frankfurt 2
-  type: trojan
-  server: right-goldfish.goat627.mom
-  port: 443
-  password: '3648425794742788096'
-  sni: right-goldfish.goat627.mom
-  skip-cert-verify: false
-  udp: true
-- name: New York   Pro 8
-  type: trojan
-  server: useful-rooster.treefrog761.one
-  port: 443
-  password: '3648425794742788096'
-  sni: useful-rooster.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Singapore  Pro 1
-  type: trojan
-  server: rational-piranha.treefrog761.one
-  port: 443
-  password: '3648425794742788096'
-  sni: rational-piranha.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Prague Pro 2
-  type: trojan
-  server: humane-tetra.treefrog761.one
-  port: 443
-  password: '3648425794742788096'
-  sni: humane-tetra.treefrog761.one
+  sni: electric-sawfish.goat627.mom
   skip-cert-verify: false
   udp: true
 - name: Bergamo Pro 3
@@ -184,7 +104,23 @@ proxies:
   sni: grown-cardinal.treefrog761.one
   skip-cert-verify: false
   udp: true
-- name: Tokyo  Pro 13
+- name: Amsterdam  Pro 19
+  type: trojan
+  server: ideal-tomcat.goat627.mom
+  port: 443
+  password: '3648425794742788096'
+  sni: ideal-tomcat.goat627.mom
+  skip-cert-verify: false
+  udp: true
+- name: Prague Pro 2
+  type: trojan
+  server: humane-tetra.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: humane-tetra.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Tokyo  13
   type: trojan
   server: exotic-badger.goat627.mom
   port: 443
@@ -192,12 +128,76 @@ proxies:
   sni: exotic-badger.goat627.mom
   skip-cert-verify: false
   udp: true
-- name: Frankfurt  Pro 4
+- name: Manassas  25
   type: trojan
-  server: merry-shad.goat627.mom
+  server: faithful-goshawk.goat627.mom
   port: 443
   password: '3648425794742788096'
-  sni: merry-shad.goat627.mom
+  sni: faithful-goshawk.goat627.mom
+  skip-cert-verify: false
+  udp: true
+- name: Manassas  Pro 35
+  type: trojan
+  server: major-ape.goat627.mom
+  port: 443
+  password: '3648425794742788096'
+  sni: major-ape.goat627.mom
+  skip-cert-verify: false
+  udp: true
+- name: Frankfurt  7
+  type: trojan
+  server: assuring-roughy.goat627.mom
+  port: 443
+  password: '3648425794742788096'
+  sni: assuring-roughy.goat627.mom
+  skip-cert-verify: false
+  udp: true
+- name: Moscow Pro 3
+  type: trojan
+  server: usable-skink.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: usable-skink.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Amsterdam  24
+  type: trojan
+  server: modest-bulldog.goat627.mom
+  port: 443
+  password: '3648425794742788096'
+  sni: modest-bulldog.goat627.mom
+  skip-cert-verify: false
+  udp: true
+- name: Warsaw  Pro 8
+  type: trojan
+  server: expert-shepherd.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: expert-shepherd.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Amsterdam  28
+  type: trojan
+  server: big-whale.goat627.mom
+  port: 443
+  password: '3648425794742788096'
+  sni: big-whale.goat627.mom
+  skip-cert-verify: false
+  udp: true
+- name: London  Pro 3
+  type: trojan
+  server: cheerful-asp.goat627.mom
+  port: 443
+  password: '3648425794742788096'
+  sni: cheerful-asp.goat627.mom
+  skip-cert-verify: false
+  udp: true
+- name: Frankfurt  Pro 8
+  type: trojan
+  server: electric-sunbird.goat627.mom
+  port: 443
+  password: '3648425794742788096'
+  sni: electric-sunbird.goat627.mom
   skip-cert-verify: false
   udp: true
 - name: Seoul  7
@@ -208,6 +208,54 @@ proxies:
   sni: ace-alien.goat627.mom
   skip-cert-verify: false
   udp: true
+- name: Ashburn Pro 6
+  type: trojan
+  server: learning-boxer.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: learning-boxer.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Mumbai  Pro 8
+  type: trojan
+  server: clever-primate.goat627.mom
+  port: 443
+  password: '3648425794742788096'
+  sni: clever-primate.goat627.mom
+  skip-cert-verify: false
+  udp: true
+- name: Frankfurt  Pro 4
+  type: trojan
+  server: merry-shad.goat627.mom
+  port: 443
+  password: '3648425794742788096'
+  sni: merry-shad.goat627.mom
+  skip-cert-verify: false
+  udp: true
+- name: Oregon  Pro 19
+  type: trojan
+  server: fitting-foxhound.goat627.mom
+  port: 443
+  password: '3648425794742788096'
+  sni: fitting-foxhound.goat627.mom
+  skip-cert-verify: false
+  udp: true
+- name: New York   Pro 8
+  type: trojan
+  server: useful-rooster.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: useful-rooster.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Amsterdam  Pro 3
+  type: trojan
+  server: learning-cattle.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: learning-cattle.treefrog761.one
+  skip-cert-verify: false
+  udp: true
 - name: Frankfurt  Pro 16
   type: trojan
   server: kind-burro.goat627.mom
@@ -216,28 +264,12 @@ proxies:
   sni: kind-burro.goat627.mom
   skip-cert-verify: false
   udp: true
-- name: Frankfurt  8
+- name: Tokyo  Pro 2
   type: trojan
-  server: electric-sunbird.goat627.mom
+  server: nearby-sheep.goat627.mom
   port: 443
   password: '3648425794742788096'
-  sni: electric-sunbird.goat627.mom
-  skip-cert-verify: false
-  udp: true
-- name: London  3
-  type: trojan
-  server: cheerful-asp.goat627.mom
-  port: 443
-  password: '3648425794742788096'
-  sni: cheerful-asp.goat627.mom
-  skip-cert-verify: false
-  udp: true
-- name: Amsterdam  19
-  type: trojan
-  server: ideal-tomcat.goat627.mom
-  port: 443
-  password: '3648425794742788096'
-  sni: ideal-tomcat.goat627.mom
+  sni: nearby-sheep.goat627.mom
   skip-cert-verify: false
   udp: true
 - name: Sao Paulo Pro 1
@@ -248,19 +280,19 @@ proxies:
   sni: glorious-calf.treefrog761.one
   skip-cert-verify: false
   udp: true
-- name: Kuala Lumpur Pro 1
+- name: Manassas  1
   type: trojan
-  server: safe-ferret.treefrog761.one
+  server: open-baboon.goat627.mom
   port: 443
   password: '3648425794742788096'
-  sni: safe-ferret.treefrog761.one
+  sni: open-baboon.goat627.mom
   skip-cert-verify: false
   udp: true
-- name: 🇩🇪 德国法兰克福-1G
+- name: 🇩🇪 德国法兰克福-1A
   type: vmess
   server: frankfurt.faforex.eu.org
   port: 23451
-  uuid: 2d9dca01-9b3c-4a89-9fa5-eeda36d51ae3
+  uuid: 231b580a-2efa-4da7-b2d0-5ffcce863a8f
   alterId: 0
   cipher: auto
   network: ws
@@ -270,39 +302,47 @@ proxies:
     path: /itdog?ed=2560
     headers:
       Host: us-new03.daluquan.top
-- name: 🇭🇰 香港-1B
+- name: 🇭🇰 香港-1A
   type: vmess
   server: xg.dashuai.cyou
   port: 19901
-  uuid: 97b490bb-bd95-4321-b8fb-e64f382ae055
+  uuid: 5dd6361d-b2f6-459e-b57b-54f3272839dd
   alterId: 0
   cipher: auto
   network: tcp
   tls: false
   sni: ''
   ws-opts: {}
+- name: 🇦🇺 澳大利亚[01]
+  server: pop.25cbab93-4c08-4a3c-8521-3f3d8c4b36ae.heima360.cc
+  port: 443
+  client-fingerprint: chrome
+  type: trojan
+  password: adba144d-980c-4c46-915d-8f69a37382ec
+  sni: pop.25cbab93-4c08-4a3c-8521-3f3d8c4b36ae.heima360.cc
+  skip-cert-verify: false
 - cipher: aes-256-gcm
-  name: 13|🇸🇬 新加坡2|@ripaojiedian
-  password: YQCL9XWR1282EOSS
-  port: 16004
-  server: 154.196.244.14
+  name: 13|🇺🇸 美国|@ripaojiedian
+  password: OUKMA500HD6PGEPF
+  port: 17005
+  server: 23.185.248.15
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  name: 13|🇺🇸 美国2|@ripaojiedian
+  password: 2VMSAJ5HAWHYMBRN
+  port: 17003
+  server: 23.185.248.13
   tfo: false
   type: ss
 - cipher: aes-256-cfb
   name: 13|🇰🇷 韩国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 3.34.182.113
+  server: 43.206.239.0
   tfo: false
   type: ss
-- cipher: aes-256-cfb
-  name: 13|🇯🇵 日本特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 52.79.147.203
-  tfo: false
-  type: ss
-- name: 🏁RELAY-104.21.3.219-015
+- name: 🏁RELAY-172.67.153.156-015
   server: ovhwuxian.pai50288.uk
   port: 8443
   type: vmess
@@ -321,117 +361,135 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: oXGp1+ihlfKg826H
-- name: 🇬🇧GB-212.102.53.197-023
+- name: 🇬🇧GB-64.176.184.129-018
+  server: 64.176.184.129
+  port: 1866
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oXGp1+ihlfKg826H
+- name: 🏁RELAY-104.16.231.132-023
+  server: mods-destruction-academy-gear.trycloudflare.com
+  port: 443
+  type: vmess
+  uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
+  alterId: 0
+  cipher: auto
+  skip-cert-verify: true
+  network: ws
+  ws-path: /
+  tls: true
+  ws-headers:
+    Host: mods-destruction-academy-gear.trycloudflare.com
+- name: 🇺🇸US-23.22.196.39-033
+  server: bursting-bunny.goat627.mom
+  port: 443
+  type: trojan
+  password: 3770966768580042752
+  sni: bursting-bunny.goat627.mom
+  skip-cert-verify: true
+- name: 🇬🇧GB-185.67.127.69-034
+  server: 185.67.127.69
+  port: 443
+  type: trojan
+  password: 3770966768580042752
+  sni: correct-boxer.goat627.mom
+  skip-cert-verify: true
+- name: 🇩🇪DE-63.176.213.29-042
+  server: 63.176.213.29
+  port: 22222
+  type: trojan
+  password: telegram-id-directvpn
+  sni: trojan.burgerip.co.uk
+  skip-cert-verify: true
+- name: 🇯🇵JP-52.197.171.218-044
+  server: japan-5.keenvpn.me
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+- name: 🇬🇧GB-185.67.127.69-052
+  server: correct-boxer.goat627.mom
+  port: 443
+  type: trojan
+  password: 3770966768580042752
+  sni: correct-boxer.goat627.mom
+  skip-cert-verify: true
+- name: 🇺🇸US-52.24.52.100-054
+  server: 52.24.52.100
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇬🇧GB-212.102.53.197-379
+  server: uk-dc1.yangon.club
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇬🇧GB-212.102.53.197-380
   server: 212.102.53.197
   port: 443
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇻🇳VN-103.173.66.192-032
-  server: 103.173.66.192
+- name: 🇯🇵JP-18.178.9.97-394
+  server: real-hookworm.goat627.mom
   port: 443
   type: trojan
-  password: 5f7be901-1bb7-4cc5-9c7d-e33bd7e407ad
+  password: 3770966768580042752
+  sni: real-hookworm.goat627.mom
   skip-cert-verify: true
-- name: 🇫🇷FR-13.36.118.128-039
-  server: 13.36.118.128
-  port: 22222
+- name: 🇬🇧GB-18.171.213.58-396
+  server: direct-mongrel.goat627.mom
+  port: 443
   type: trojan
-  password: telegram-id-privatevpns
-  sni: trojan.burgerip.co.uk
+  password: 3770966768580042752
+  sni: direct-mongrel.goat627.mom
   skip-cert-verify: true
-- name: 🇲🇩MD-45.142.214.123-041
-  server: 45.142.214.123
-  port: 8388
+- name: 🇺🇸US-52.33.84.43-397
+  server: us-boardman-oregon-2.keenvpn.me
+  port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: ZjFmYTY0
-- name: 🇫🇷FR-13.39.138.247-045
-  server: 13.39.138.247
-  port: 22222
-  type: trojan
-  password: telegram-id-privatevpns
-  sni: trojan.burgerip.co.uk
-  skip-cert-verify: true
-- name: 🇬🇧GB-13.41.15.178-047
-  server: 13.41.15.178
-  port: 22222
-  type: trojan
-  password: telegram-id-privatevpns
-  sni: trojan.burgerip.co.uk
-  skip-cert-verify: true
-- name: 🇸🇬SG-52.74.96.243-048
-  server: square-walleye.treefrog761.one
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+- name: 🇺🇸US-52.89.149.132-399
+  server: fitting-foxhound.goat627.mom
   port: 443
   type: trojan
-  password: 3763495982449565696
+  password: 3770966768580042752
+  sni: fitting-foxhound.goat627.mom
   skip-cert-verify: true
-- name: 🇫🇷FR-185.231.205.179-055
-  server: 185.231.205.179
-  port: 8388
+- name: 🇯🇵JP-156.231.104.17-402
+  server: 156.231.104.17
+  port: 18007
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: OTVlMzcy
-- name: 🇺🇸US-35.85.136.7-063
-  server: 35.85.136.7
-  port: 443
+  cipher: aes-256-gcm
+  password: Y7YAFIFIFLS9Z3PX
+- name: 🇩🇪DE-162.55.171.226-408
+  server: cpanel.erade33.ir
+  port: 100
+  type: vmess
+  uuid: 1889d9ef-9d58-4427-bb3e-a08810c214eb
+  alterId: 0
+  cipher: auto
+  skip-cert-verify: true
+  network: tcp
+  ws-path: /
+  tls: false
+  ws-headers:
+    Host: cpanel.erade33.ir
+- name: 🇨🇭_CH_瑞士
   type: ss
+  server: 84.17.53.160
+  port: 989
   cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇯🇵JP-52.195.223.31-075
-  server: 52.195.223.31
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇰🇷KR-13.209.84.81-083
-  server: 13.209.84.81
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇰🇷KR-15.165.15.42-084
-  server: 15.165.15.42
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇯🇵JP-18.183.79.218-088
-  server: 18.183.79.218
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇱🇹LT-45.87.175.199-089
-  server: 45.87.175.199
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-- name: 🇰🇷KR-52.79.96.7-091
-  server: 52.79.96.7
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸US-35.89.84.182-093
-  server: 35.89.84.182
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇹🇼TW-185.189.160.98-099
-  server: 185.189.160.98
-  port: 64759
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇦🇹_AT_奥地利->🇺🇸_US_美国
-  type: ss
-  server: 192.36.61.59
-  port: 990
-  cipher: chacha20-ietf-poly1305
   password: f8f7aCzcPKbsF8p3
+- name: 🇳🇱_NL_荷兰
+  type: ss
+  server: 193.29.139.189
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: cvII85TrW6n0OGyfpHVS1u
 proxy-groups:
 - name: 节点选择
   type: select
@@ -444,59 +502,64 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 🇺🇸US-35.89.84.182-093
-  - 🇺🇸US-35.85.136.7-063
-  - Oregon  19
-  - 🇯🇵JP-52.195.223.31-075
-  - 🇬🇧GB-212.102.53.197-023
-  - 🇯🇵JP-18.183.79.218-088
-  - Manassas  Pro 1
+  - 🏁RELAY-172.67.153.156-015
   - Manassas  25
-  - 🇱🇹LT-45.87.175.199-089
-  - 🏁RELAY-104.21.3.219-015
-  - New York   Pro 8
-  - 🇺🇸US-204.136.10.115-017
   - Manassas  Pro 35
-  - 🇰🇷KR-15.165.15.42-084
-  - 🇦🇹_AT_奥地利->🇺🇸_US_美国
-  - 🇰🇷KR-52.79.96.7-091
-  - 13|🇯🇵 日本特殊|@ripaojiedian
-  - 🇬🇧GB-13.41.15.178-047
-  - 🇫🇷FR-13.36.118.128-039
-  - 🇫🇷FR-13.39.138.247-045
-  - 🇭🇰 香港-1B
-  - Tokyo  Pro 13
-  - Tokyo  Pro 3
+  - 🇺🇸US-23.22.196.39-033
+  - Manassas  1
+  - Oregon  Pro 19
+  - 🇬🇧GB-212.102.53.197-380
+  - New York   Pro 8
+  - 🏁RELAY-104.16.231.132-023
+  - 🇨🇭_CH_瑞士
+  - 🇺🇸US-52.33.84.43-397
+  - 🇺🇸US-52.89.149.132-399
+  - 🇬🇧GB-64.176.184.129-018
+  - 🇺🇸US-204.136.10.115-017
+  - 🇬🇧GB-212.102.53.197-379
+  - Ashburn Pro 6
+  - 🇬🇧GB-185.67.127.69-034
+  - 13|🇺🇸 美国2|@ripaojiedian
+  - 🇩🇪DE-63.176.213.29-042
   - 13|🇰🇷 韩国特殊|@ripaojiedian
-  - 13|🇸🇬 新加坡2|@ripaojiedian
-  - Tokyo  15
-  - 🇫🇷FR-185.231.205.179-055
-  - 🇹🇼TW-185.189.160.98-099
-  - 🇰🇷KR-13.209.84.81-083
-  - 🇩🇪 德国法兰克福-1G
-  - London  Pro 15
-  - London  Pro 1
-  - Frankfurt 2
-  - Amsterdam  24
-  - Frankfurt  8
-  - Amsterdam 25
+  - 🇺🇸US-52.24.52.100-054
+  - 13|🇺🇸 美国|@ripaojiedian
+  - 🇯🇵JP-156.231.104.17-402
+  - 🇬🇧GB-18.171.213.58-396
   - Amsterdam  28
-  - Paris  Pro 6
-  - Frankfurt  7
-  - 🇲🇩MD-45.142.214.123-041
-  - Amsterdam  19
-  - Bergamo Pro 3
-  - London  3
+  - Amsterdam  Pro 19
+  - Amsterdam  24
+  - London  Pro 15
+  - 🇬🇧GB-185.67.127.69-052
+  - London  Pro 3
+  - Frankfurt  Pro 8
   - Frankfurt  Pro 16
-  - Seoul  7
   - Frankfurt  Pro 4
-  - Kuala Lumpur Pro 1
-  - 🇸🇬SG-52.74.96.243-048
-  - Singapore  Pro 1
-  - Sao Paulo Pro 1
+  - Amsterdam Pro 25
+  - Frankfurt  7
+  - 🇩🇪DE-162.55.171.226-408
+  - Frankfurt Pro 2
+  - Bergamo Pro 3
   - Amsterdam  Pro 3
-  - 🇻🇳VN-103.173.66.192-032
+  - London  Pro 1
+  - 🇯🇵JP-52.197.171.218-044
+  - 🇩🇪 德国法兰克福-1A
   - Prague Pro 2
+  - Warsaw  Pro 8
+  - Sao Paulo Pro 1
+  - 🇭🇰 香港-1A
+  - 🇯🇵JP-18.178.9.97-394
+  - Tokyo  Pro 2
+  - Tokyo  Pro 3
+  - Tokyo  Pro 15
+  - Tokyo  13
+  - Madrid Pro 1
+  - 🇳🇱_NL_荷兰
+  - Moscow Pro 3
+  - Mumbai  Pro 8
+  - Saint Peterburg Pro 2
+  - Seoul  7
+  - 🇦🇺 澳大利亚[01]
   url: https://i.ytimg.com/generate_204
   interval: 300
   tolerance: 50
@@ -504,117 +567,127 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 🇺🇸US-35.89.84.182-093
-  - 🇺🇸US-35.85.136.7-063
-  - Oregon  19
-  - 🇯🇵JP-52.195.223.31-075
-  - 🇬🇧GB-212.102.53.197-023
-  - 🇯🇵JP-18.183.79.218-088
-  - Manassas  Pro 1
+  - 🏁RELAY-172.67.153.156-015
   - Manassas  25
-  - 🇱🇹LT-45.87.175.199-089
-  - 🏁RELAY-104.21.3.219-015
-  - New York   Pro 8
-  - 🇺🇸US-204.136.10.115-017
   - Manassas  Pro 35
-  - 🇰🇷KR-15.165.15.42-084
-  - 🇦🇹_AT_奥地利->🇺🇸_US_美国
-  - 🇰🇷KR-52.79.96.7-091
-  - 13|🇯🇵 日本特殊|@ripaojiedian
-  - 🇬🇧GB-13.41.15.178-047
-  - 🇫🇷FR-13.36.118.128-039
-  - 🇫🇷FR-13.39.138.247-045
-  - 🇭🇰 香港-1B
-  - Tokyo  Pro 13
-  - Tokyo  Pro 3
+  - 🇺🇸US-23.22.196.39-033
+  - Manassas  1
+  - Oregon  Pro 19
+  - 🇬🇧GB-212.102.53.197-380
+  - New York   Pro 8
+  - 🏁RELAY-104.16.231.132-023
+  - 🇨🇭_CH_瑞士
+  - 🇺🇸US-52.33.84.43-397
+  - 🇺🇸US-52.89.149.132-399
+  - 🇬🇧GB-64.176.184.129-018
+  - 🇺🇸US-204.136.10.115-017
+  - 🇬🇧GB-212.102.53.197-379
+  - Ashburn Pro 6
+  - 🇬🇧GB-185.67.127.69-034
+  - 13|🇺🇸 美国2|@ripaojiedian
+  - 🇩🇪DE-63.176.213.29-042
   - 13|🇰🇷 韩国特殊|@ripaojiedian
-  - 13|🇸🇬 新加坡2|@ripaojiedian
-  - Tokyo  15
-  - 🇫🇷FR-185.231.205.179-055
-  - 🇹🇼TW-185.189.160.98-099
-  - 🇰🇷KR-13.209.84.81-083
-  - 🇩🇪 德国法兰克福-1G
-  - London  Pro 15
-  - London  Pro 1
-  - Frankfurt 2
-  - Amsterdam  24
-  - Frankfurt  8
-  - Amsterdam 25
+  - 🇺🇸US-52.24.52.100-054
+  - 13|🇺🇸 美国|@ripaojiedian
+  - 🇯🇵JP-156.231.104.17-402
+  - 🇬🇧GB-18.171.213.58-396
   - Amsterdam  28
-  - Paris  Pro 6
-  - Frankfurt  7
-  - 🇲🇩MD-45.142.214.123-041
-  - Amsterdam  19
-  - Bergamo Pro 3
-  - London  3
+  - Amsterdam  Pro 19
+  - Amsterdam  24
+  - London  Pro 15
+  - 🇬🇧GB-185.67.127.69-052
+  - London  Pro 3
+  - Frankfurt  Pro 8
   - Frankfurt  Pro 16
-  - Seoul  7
   - Frankfurt  Pro 4
-  - Kuala Lumpur Pro 1
-  - 🇸🇬SG-52.74.96.243-048
-  - Singapore  Pro 1
-  - Sao Paulo Pro 1
+  - Amsterdam Pro 25
+  - Frankfurt  7
+  - 🇩🇪DE-162.55.171.226-408
+  - Frankfurt Pro 2
+  - Bergamo Pro 3
   - Amsterdam  Pro 3
-  - 🇻🇳VN-103.173.66.192-032
+  - London  Pro 1
+  - 🇯🇵JP-52.197.171.218-044
+  - 🇩🇪 德国法兰克福-1A
   - Prague Pro 2
+  - Warsaw  Pro 8
+  - Sao Paulo Pro 1
+  - 🇭🇰 香港-1A
+  - 🇯🇵JP-18.178.9.97-394
+  - Tokyo  Pro 2
+  - Tokyo  Pro 3
+  - Tokyo  Pro 15
+  - Tokyo  13
+  - Madrid Pro 1
+  - 🇳🇱_NL_荷兰
+  - Moscow Pro 3
+  - Mumbai  Pro 8
+  - Saint Peterburg Pro 2
+  - Seoul  7
+  - 🇦🇺 澳大利亚[01]
   url: https://i.ytimg.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 🇺🇸US-35.89.84.182-093
-  - 🇺🇸US-35.85.136.7-063
-  - Oregon  19
-  - 🇯🇵JP-52.195.223.31-075
-  - 🇬🇧GB-212.102.53.197-023
-  - 🇯🇵JP-18.183.79.218-088
-  - Manassas  Pro 1
+  - 🏁RELAY-172.67.153.156-015
   - Manassas  25
-  - 🇱🇹LT-45.87.175.199-089
-  - 🏁RELAY-104.21.3.219-015
-  - New York   Pro 8
-  - 🇺🇸US-204.136.10.115-017
   - Manassas  Pro 35
-  - 🇰🇷KR-15.165.15.42-084
-  - 🇦🇹_AT_奥地利->🇺🇸_US_美国
-  - 🇰🇷KR-52.79.96.7-091
-  - 13|🇯🇵 日本特殊|@ripaojiedian
-  - 🇬🇧GB-13.41.15.178-047
-  - 🇫🇷FR-13.36.118.128-039
-  - 🇫🇷FR-13.39.138.247-045
-  - 🇭🇰 香港-1B
-  - Tokyo  Pro 13
-  - Tokyo  Pro 3
+  - 🇺🇸US-23.22.196.39-033
+  - Manassas  1
+  - Oregon  Pro 19
+  - 🇬🇧GB-212.102.53.197-380
+  - New York   Pro 8
+  - 🏁RELAY-104.16.231.132-023
+  - 🇨🇭_CH_瑞士
+  - 🇺🇸US-52.33.84.43-397
+  - 🇺🇸US-52.89.149.132-399
+  - 🇬🇧GB-64.176.184.129-018
+  - 🇺🇸US-204.136.10.115-017
+  - 🇬🇧GB-212.102.53.197-379
+  - Ashburn Pro 6
+  - 🇬🇧GB-185.67.127.69-034
+  - 13|🇺🇸 美国2|@ripaojiedian
+  - 🇩🇪DE-63.176.213.29-042
   - 13|🇰🇷 韩国特殊|@ripaojiedian
-  - 13|🇸🇬 新加坡2|@ripaojiedian
-  - Tokyo  15
-  - 🇫🇷FR-185.231.205.179-055
-  - 🇹🇼TW-185.189.160.98-099
-  - 🇰🇷KR-13.209.84.81-083
-  - 🇩🇪 德国法兰克福-1G
-  - London  Pro 15
-  - London  Pro 1
-  - Frankfurt 2
-  - Amsterdam  24
-  - Frankfurt  8
-  - Amsterdam 25
+  - 🇺🇸US-52.24.52.100-054
+  - 13|🇺🇸 美国|@ripaojiedian
+  - 🇯🇵JP-156.231.104.17-402
+  - 🇬🇧GB-18.171.213.58-396
   - Amsterdam  28
-  - Paris  Pro 6
-  - Frankfurt  7
-  - 🇲🇩MD-45.142.214.123-041
-  - Amsterdam  19
-  - Bergamo Pro 3
-  - London  3
+  - Amsterdam  Pro 19
+  - Amsterdam  24
+  - London  Pro 15
+  - 🇬🇧GB-185.67.127.69-052
+  - London  Pro 3
+  - Frankfurt  Pro 8
   - Frankfurt  Pro 16
-  - Seoul  7
   - Frankfurt  Pro 4
-  - Kuala Lumpur Pro 1
-  - 🇸🇬SG-52.74.96.243-048
-  - Singapore  Pro 1
-  - Sao Paulo Pro 1
+  - Amsterdam Pro 25
+  - Frankfurt  7
+  - 🇩🇪DE-162.55.171.226-408
+  - Frankfurt Pro 2
+  - Bergamo Pro 3
   - Amsterdam  Pro 3
-  - 🇻🇳VN-103.173.66.192-032
+  - London  Pro 1
+  - 🇯🇵JP-52.197.171.218-044
+  - 🇩🇪 德国法兰克福-1A
   - Prague Pro 2
+  - Warsaw  Pro 8
+  - Sao Paulo Pro 1
+  - 🇭🇰 香港-1A
+  - 🇯🇵JP-18.178.9.97-394
+  - Tokyo  Pro 2
+  - Tokyo  Pro 3
+  - Tokyo  Pro 15
+  - Tokyo  13
+  - Madrid Pro 1
+  - 🇳🇱_NL_荷兰
+  - Moscow Pro 3
+  - Mumbai  Pro 8
+  - Saint Peterburg Pro 2
+  - Seoul  7
+  - 🇦🇺 澳大利亚[01]
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
