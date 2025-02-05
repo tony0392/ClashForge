@@ -32,84 +32,12 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- name: Saint Peterburg Pro 2
-  type: trojan
-  server: relaxed-jaybird.treefrog761.one
-  port: 443
-  password: '3648425794742788096'
-  sni: relaxed-jaybird.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Riga Pro 1
-  type: trojan
-  server: adequate-narwhal.treefrog761.one
-  port: 443
-  password: '3648425794742788096'
-  sni: adequate-narwhal.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Amsterdam  Pro 3
-  type: trojan
-  server: learning-cattle.treefrog761.one
-  port: 443
-  password: '3648425794742788096'
-  sni: learning-cattle.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Moscow Pro 3
-  type: trojan
-  server: usable-skink.treefrog761.one
-  port: 443
-  password: '3648425794742788096'
-  sni: usable-skink.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Sao Paulo Pro 1
-  type: trojan
-  server: glorious-calf.treefrog761.one
-  port: 443
-  password: '3648425794742788096'
-  sni: glorious-calf.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Madrid Pro 1
-  type: trojan
-  server: subtle-seahorse.treefrog761.one
-  port: 443
-  password: '3648425794742788096'
-  sni: subtle-seahorse.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: New York   Pro 8
-  type: trojan
-  server: useful-rooster.treefrog761.one
-  port: 443
-  password: '3648425794742788096'
-  sni: useful-rooster.treefrog761.one
-  skip-cert-verify: false
-  udp: true
 - name: Amsterdam  24
   type: trojan
   server: modest-bulldog.goat627.mom
   port: 443
   password: '3648425794742788096'
   sni: modest-bulldog.goat627.mom
-  skip-cert-verify: false
-  udp: true
-- name: Bergamo Pro 3
-  type: trojan
-  server: grown-cardinal.treefrog761.one
-  port: 443
-  password: '3648425794742788096'
-  sni: grown-cardinal.treefrog761.one
-  skip-cert-verify: false
-  udp: true
-- name: Prague Pro 2
-  type: trojan
-  server: humane-tetra.treefrog761.one
-  port: 443
-  password: '3648425794742788096'
-  sni: humane-tetra.treefrog761.one
   skip-cert-verify: false
   udp: true
 - name: Warsaw  Pro 8
@@ -120,61 +48,127 @@ proxies:
   sni: expert-shepherd.treefrog761.one
   skip-cert-verify: false
   udp: true
-- name: 🇩🇪 德国法兰克福-1A
-  type: vmess
-  server: frankfurt.faforex.eu.org
-  port: 23451
-  uuid: 94009b70-041d-400d-83ce-8de6796802e7
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: false
-  sni: ''
-  ws-opts:
-    path: /itdog?ed=2560
-    headers:
-      Host: us-new03.daluquan.top
-- name: 🇭🇰 香港-1A
+- name: Riga Pro 1
+  type: trojan
+  server: adequate-narwhal.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: adequate-narwhal.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Sydney  Pro 3
+  type: trojan
+  server: magical-ewe.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: magical-ewe.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Saint Peterburg Pro 2
+  type: trojan
+  server: relaxed-jaybird.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: relaxed-jaybird.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Moscow Pro 3
+  type: trojan
+  server: usable-skink.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: usable-skink.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Prague Pro 2
+  type: trojan
+  server: humane-tetra.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: humane-tetra.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: New York   Pro 8
+  type: trojan
+  server: useful-rooster.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: useful-rooster.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Singapore  Pro 1
+  type: trojan
+  server: rational-piranha.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: rational-piranha.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Amsterdam  Pro 3
+  type: trojan
+  server: learning-cattle.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: learning-cattle.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Sao Paulo Pro 1
+  type: trojan
+  server: glorious-calf.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: glorious-calf.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Bergamo Pro 3
+  type: trojan
+  server: grown-cardinal.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: grown-cardinal.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: Madrid Pro 1
+  type: trojan
+  server: subtle-seahorse.treefrog761.one
+  port: 443
+  password: '3648425794742788096'
+  sni: subtle-seahorse.treefrog761.one
+  skip-cert-verify: false
+  udp: true
+- name: 🇭🇰 香港-1B
   type: vmess
   server: xg.dashuai.cyou
   port: 19901
-  uuid: ed578d52-5703-4545-b013-5e8e34dae7ed
+  uuid: cd1e2924-5257-4960-b677-85f9458d1ae8
   alterId: 0
   cipher: auto
   network: tcp
   tls: false
   sni: ''
   ws-opts: {}
-- name: 🇫🇷 法国[01]
-  server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
+- name: 13|🇰🇷 韩国|@ripaojiedian
+  password: '65086520307764900'
   port: 443
-  client-fingerprint: chrome
-  type: trojan
-  password: f6f037b8-d6f5-4892-9bb5-0f915cac5b3b
-  sni: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
+  server: useful-jennet.shiner427.skin
   skip-cert-verify: false
+  sni: useful-jennet.shiner427.skin
+  type: trojan
+- name: 13|🇺🇸 美国|@ripaojiedian
+  password: '65086520307764900'
+  port: 443
+  server: moral-rat.shiner427.skin
+  skip-cert-verify: false
+  sni: moral-rat.shiner427.skin
+  type: trojan
 - cipher: aes-256-cfb
   name: 13|🇰🇷 韩国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 54.255.198.143
+  server: 18.143.78.171
   tfo: false
   type: ss
-- cipher: aes-256-cfb
-  name: 13|🇯🇵 日本特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 43.207.112.160
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  name: 13|🇸🇬 狮城特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 52.192.75.193
-  tfo: false
-  type: ss
-- name: 🏁RELAY-104.21.3.219-015
+- name: 🏁RELAY-172.67.153.156-015
   server: ovhwuxian.pai50288.uk
   port: 8443
   type: vmess
@@ -193,102 +187,69 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: oXGp1+ihlfKg826H
-- name: 🇩🇪DE-185.177.229.245-023
+- name: 🇩🇪DE-185.177.229.245-022
   server: 185.177.229.245
   port: 1866
   type: ss
   cipher: chacha20-ietf-poly1305
   password: oXGp1+ihlfKg826H
-- name: 🇨🇦CA-3.97.76.243-033
-  server: 3.97.76.243
-  port: 22222
-  type: trojan
-  password: telegram-id-directvpn
-  sni: trojan.burgerip.co.uk
-  skip-cert-verify: true
-- name: 🇺🇸US-64.74.163.130-034
-  server: 64.74.163.130
-  port: 990
+- name: 🇦🇪AE-40.172.178.194-026
+  server: 40.172.178.194
+  port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
+  password: u17T3BvpYaaiuW2c
+- name: 🇸🇪SE-62.60.151.134-034
+  server: 62.60.151.134
+  port: 60758
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: vkQP4Fe2dFEA1rdWx0lAjH
+- name: 🇺🇸US-34.218.228.243-049
+  server: 34.218.228.243
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇬SG-13.212.188.124-051
+  server: 13.212.188.124
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸US-54.185.251.195-052
+  server: 54.185.251.195
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇵🇱PL-217.30.10.18-054
+  server: 217.30.10.18
+  port: 9003
+  type: ss
+  cipher: aes-256-cfb
+  password: JdmRK9gMEqFgs8nP
+- name: 🇸🇬SG-13.214.212.139-057
+  server: 13.214.212.139
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇳🇱_NL_荷兰_1
+  type: ss
+  server: 45.158.171.110
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇮🇹_IT_意大利
+  type: ss
+  server: 37.143.129.230
+  port: 989
+  cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
-- name: 🇹🇼TW-2.58.241.42-041
-  server: 2.58.241.42
-  port: 443
+- name: 🇺🇸_US_美国_1
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-- name: 🇹🇼TW-2.58.241.42-042
-  server: taiwan-2.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-- name: 🇱🇹LT-45.87.175.166-044
-  server: 45.87.175.166
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 4a2rfixophdjffa8KVA4Aa
-- name: 🇩🇪DE-63.177.166.25-058
-  server: 63.177.166.25
-  port: 22222
-  type: trojan
-  password: telegram-id-directvpn
-  sni: trojan.burgerip.co.uk
-  skip-cert-verify: true
-- name: 🇸🇬SG-54.254.233.138-063
-  server: 54.254.233.138
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇭🇰HK-103.149.183.61-064
-  server: 103.149.183.61
-  port: 8388
-  type: ss
-  cipher: chacha20-ietf
-  password: asd123456
-- name: 🇸🇬SG-47.129.238.146-066
-  server: 47.129.238.146
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇯🇵JP-52.195.220.24-067
-  server: 52.195.220.24
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇬SG-47.128.13.190-068
-  server: 47.128.13.190
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸US-52.24.52.100-073
-  server: 52.24.52.100
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇱🇹LT-45.87.175.166-078
-  server: 45.87.175.166
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-- name: 🇹🇷TR-213.156.152.210-335
-  server: boss-tetra.treefrog761.one
-  port: 443
-  type: trojan
-  password: 3770966768580042752
-  sni: boss-tetra.treefrog761.one
-  skip-cert-verify: true
-- name: 🇺🇸_US_美国->🇩🇪_DE_德国
-  type: ss
-  server: 34.217.72.81
+  server: 44.246.37.239
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
@@ -298,6 +259,24 @@ proxies:
   port: 989
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
+- name: 🇷🇴_RO_罗马尼亚_1
+  type: ss
+  server: 188.214.36.155
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇷🇺_RU_俄罗斯_2
+  type: ss
+  server: 217.30.10.18
+  port: 9019
+  cipher: aes-256-cfb
+  password: GA9KzeEgvfxNrgmM
+- name: 🇫🇷_FR_法国_1
+  type: ss
+  server: 146.19.247.183
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: ZTUxOTQ5
 proxy-groups:
 - name: 节点选择
   type: select
@@ -310,42 +289,40 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 🇨🇦CA-3.97.76.243-033
-  - 🏁RELAY-104.21.3.219-015
-  - 🇺🇸US-52.24.52.100-073
-  - 🇺🇸_US_美国->🇩🇪_DE_德国
   - New York   Pro 8
-  - 🇺🇸US-64.74.163.130-034
-  - 🇩🇪DE-185.177.229.245-023
-  - 🇩🇪DE-63.177.166.25-058
-  - 13|🇯🇵 日本特殊|@ripaojiedian
-  - 13|🇸🇬 狮城特殊|@ripaojiedian
-  - 🇯🇵JP-52.195.220.24-067
-  - Amsterdam  24
-  - 🇱🇹LT-45.87.175.166-078
-  - 🇹🇼TW-2.58.241.42-041
-  - 🇸🇬SG-47.129.238.146-066
-  - Bergamo Pro 3
-  - 🇭🇰HK-103.149.183.61-064
-  - 13|🇰🇷 韩国特殊|@ripaojiedian
+  - 🏁RELAY-172.67.153.156-015
   - 🇬🇧_GB_英国
-  - 🇸🇬SG-54.254.233.138-063
-  - Amsterdam  Pro 3
-  - 🇸🇬SG-47.128.13.190-068
-  - Prague Pro 2
-  - 🇹🇼TW-2.58.241.42-042
+  - 🇩🇪DE-185.177.229.245-022
+  - 🇺🇸US-34.218.228.243-049
+  - 🇳🇱_NL_荷兰_1
+  - 🇺🇸US-54.185.251.195-052
+  - 🇺🇸_US_美国_1
   - 🇺🇸US-204.136.10.115-017
+  - 🇫🇷_FR_法国_1
+  - Bergamo Pro 3
+  - Amsterdam  Pro 3
+  - Prague Pro 2
+  - 🇵🇱PL-217.30.10.18-054
+  - 🇷🇺_RU_俄罗斯_2
+  - Amsterdam  24
   - Sao Paulo Pro 1
-  - Warsaw  Pro 8
-  - Saint Peterburg Pro 2
+  - 13|🇺🇸 美国|@ripaojiedian
+  - 🇮🇹_IT_意大利
   - Riga Pro 1
-  - 🇭🇰 香港-1A
+  - Saint Peterburg Pro 2
   - Moscow Pro 3
+  - 🇷🇴_RO_罗马尼亚_1
+  - Warsaw  Pro 8
+  - 🇸🇬SG-13.214.212.139-057
+  - 🇸🇬SG-13.212.188.124-051
+  - 🇦🇪AE-40.172.178.194-026
   - Madrid Pro 1
-  - 🇩🇪 德国法兰克福-1A
-  - 🇱🇹LT-45.87.175.166-044
-  - 🇹🇷TR-213.156.152.210-335
-  - 🇫🇷 法国[01]
+  - 🇭🇰 香港-1B
+  - 13|🇰🇷 韩国特殊|@ripaojiedian
+  - 🇸🇪SE-62.60.151.134-034
+  - Sydney  Pro 3
+  - Singapore  Pro 1
+  - 13|🇰🇷 韩国|@ripaojiedian
   url: https://i.ytimg.com/generate_204
   interval: 300
   tolerance: 50
@@ -353,83 +330,79 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 🇨🇦CA-3.97.76.243-033
-  - 🏁RELAY-104.21.3.219-015
-  - 🇺🇸US-52.24.52.100-073
-  - 🇺🇸_US_美国->🇩🇪_DE_德国
   - New York   Pro 8
-  - 🇺🇸US-64.74.163.130-034
-  - 🇩🇪DE-185.177.229.245-023
-  - 🇩🇪DE-63.177.166.25-058
-  - 13|🇯🇵 日本特殊|@ripaojiedian
-  - 13|🇸🇬 狮城特殊|@ripaojiedian
-  - 🇯🇵JP-52.195.220.24-067
-  - Amsterdam  24
-  - 🇱🇹LT-45.87.175.166-078
-  - 🇹🇼TW-2.58.241.42-041
-  - 🇸🇬SG-47.129.238.146-066
-  - Bergamo Pro 3
-  - 🇭🇰HK-103.149.183.61-064
-  - 13|🇰🇷 韩国特殊|@ripaojiedian
+  - 🏁RELAY-172.67.153.156-015
   - 🇬🇧_GB_英国
-  - 🇸🇬SG-54.254.233.138-063
-  - Amsterdam  Pro 3
-  - 🇸🇬SG-47.128.13.190-068
-  - Prague Pro 2
-  - 🇹🇼TW-2.58.241.42-042
+  - 🇩🇪DE-185.177.229.245-022
+  - 🇺🇸US-34.218.228.243-049
+  - 🇳🇱_NL_荷兰_1
+  - 🇺🇸US-54.185.251.195-052
+  - 🇺🇸_US_美国_1
   - 🇺🇸US-204.136.10.115-017
+  - 🇫🇷_FR_法国_1
+  - Bergamo Pro 3
+  - Amsterdam  Pro 3
+  - Prague Pro 2
+  - 🇵🇱PL-217.30.10.18-054
+  - 🇷🇺_RU_俄罗斯_2
+  - Amsterdam  24
   - Sao Paulo Pro 1
-  - Warsaw  Pro 8
-  - Saint Peterburg Pro 2
+  - 13|🇺🇸 美国|@ripaojiedian
+  - 🇮🇹_IT_意大利
   - Riga Pro 1
-  - 🇭🇰 香港-1A
+  - Saint Peterburg Pro 2
   - Moscow Pro 3
+  - 🇷🇴_RO_罗马尼亚_1
+  - Warsaw  Pro 8
+  - 🇸🇬SG-13.214.212.139-057
+  - 🇸🇬SG-13.212.188.124-051
+  - 🇦🇪AE-40.172.178.194-026
   - Madrid Pro 1
-  - 🇩🇪 德国法兰克福-1A
-  - 🇱🇹LT-45.87.175.166-044
-  - 🇹🇷TR-213.156.152.210-335
-  - 🇫🇷 法国[01]
+  - 🇭🇰 香港-1B
+  - 13|🇰🇷 韩国特殊|@ripaojiedian
+  - 🇸🇪SE-62.60.151.134-034
+  - Sydney  Pro 3
+  - Singapore  Pro 1
+  - 13|🇰🇷 韩国|@ripaojiedian
   url: https://i.ytimg.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 🇨🇦CA-3.97.76.243-033
-  - 🏁RELAY-104.21.3.219-015
-  - 🇺🇸US-52.24.52.100-073
-  - 🇺🇸_US_美国->🇩🇪_DE_德国
   - New York   Pro 8
-  - 🇺🇸US-64.74.163.130-034
-  - 🇩🇪DE-185.177.229.245-023
-  - 🇩🇪DE-63.177.166.25-058
-  - 13|🇯🇵 日本特殊|@ripaojiedian
-  - 13|🇸🇬 狮城特殊|@ripaojiedian
-  - 🇯🇵JP-52.195.220.24-067
-  - Amsterdam  24
-  - 🇱🇹LT-45.87.175.166-078
-  - 🇹🇼TW-2.58.241.42-041
-  - 🇸🇬SG-47.129.238.146-066
-  - Bergamo Pro 3
-  - 🇭🇰HK-103.149.183.61-064
-  - 13|🇰🇷 韩国特殊|@ripaojiedian
+  - 🏁RELAY-172.67.153.156-015
   - 🇬🇧_GB_英国
-  - 🇸🇬SG-54.254.233.138-063
-  - Amsterdam  Pro 3
-  - 🇸🇬SG-47.128.13.190-068
-  - Prague Pro 2
-  - 🇹🇼TW-2.58.241.42-042
+  - 🇩🇪DE-185.177.229.245-022
+  - 🇺🇸US-34.218.228.243-049
+  - 🇳🇱_NL_荷兰_1
+  - 🇺🇸US-54.185.251.195-052
+  - 🇺🇸_US_美国_1
   - 🇺🇸US-204.136.10.115-017
+  - 🇫🇷_FR_法国_1
+  - Bergamo Pro 3
+  - Amsterdam  Pro 3
+  - Prague Pro 2
+  - 🇵🇱PL-217.30.10.18-054
+  - 🇷🇺_RU_俄罗斯_2
+  - Amsterdam  24
   - Sao Paulo Pro 1
-  - Warsaw  Pro 8
-  - Saint Peterburg Pro 2
+  - 13|🇺🇸 美国|@ripaojiedian
+  - 🇮🇹_IT_意大利
   - Riga Pro 1
-  - 🇭🇰 香港-1A
+  - Saint Peterburg Pro 2
   - Moscow Pro 3
+  - 🇷🇴_RO_罗马尼亚_1
+  - Warsaw  Pro 8
+  - 🇸🇬SG-13.214.212.139-057
+  - 🇸🇬SG-13.212.188.124-051
+  - 🇦🇪AE-40.172.178.194-026
   - Madrid Pro 1
-  - 🇩🇪 德国法兰克福-1A
-  - 🇱🇹LT-45.87.175.166-044
-  - 🇹🇷TR-213.156.152.210-335
-  - 🇫🇷 法国[01]
+  - 🇭🇰 香港-1B
+  - 13|🇰🇷 韩国特殊|@ripaojiedian
+  - 🇸🇪SE-62.60.151.134-034
+  - Sydney  Pro 3
+  - Singapore  Pro 1
+  - 13|🇰🇷 韩国|@ripaojiedian
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
