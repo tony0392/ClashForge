@@ -32,6 +32,25 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
+- name: 22|@MxlShare 香港 | HKG 6
+  password: 90c0bc87-d7dd-4233-9b1a-cc9e7cf30649
+  port: 46737
+  server: 74.176.201.186
+  skip-cert-verify: true
+  sni: data.bilibili.com
+  type: trojan
+- cipher: aes-256-cfb
+  name: 22|@MxlShare 日本 | JPN 6
+  password: amazonskr05
+  port: 443
+  server: 52.68.247.21
+  type: ss
+- cipher: aes-256-cfb
+  name: 22|@MxlShare 日本 | JPN 8
+  password: amazonskr05
+  port: 443
+  server: 57.180.51.247
+  type: ss
 - cipher: aes-128-gcm
   name: 25,30,32,62,77|JP_Tokyo_Datacamp Limited2
   password: shadowsocks
@@ -45,10 +64,52 @@ proxies:
   server: 149.22.87.241
   type: ss
 - cipher: chacha20-ietf-poly1305
+  name: 61|🇯🇵1
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  port: 443
+  server: japan.keenvpn.me
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 61|🇯🇵2
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  port: 443
+  server: japan-2.keenvpn.me
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 61|🇯🇵3
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  port: 443
+  server: japan-3.keenvpn.me
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 61|🇯🇵4
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  port: 443
+  server: japan-4.keenvpn.me
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 61|🇯🇵6
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  port: 443
+  server: japan-6.keenvpn.me
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
   name: 61|🇯🇵7
   password: 2afbc97400ca71c8f3306f9843a6e1c2
   port: 443
   server: japan-7.keenvpn.me
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 61|🇰🇷1
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  port: 443
+  server: south-korea.keenvpn.me
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -58,8 +119,14 @@ proxies:
   port: 989
   server: 103.106.229.219
   type: ss
+- cipher: aes-256-cfb
+  name: 22|@MxlShare 新加坡 | SGP 2
+  password: amazonskr05
+  port: 443
+  server: 13.212.149.153
+  type: ss
 - client-fingerprint: chrome
-  name: 22,51,65|SG-38.180.249.177-029
+  name: 51,65|SG-38.180.249.177-029
   password: installshield
   port: 8443
   server: 38.180.249.177
@@ -71,6 +138,41 @@ proxies:
   port: 45077
   server: 68.183.225.201
   tfo: false
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 61|🇸🇬1
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  port: 443
+  server: singapore.keenvpn.me
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 61|🇸🇬2
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  port: 443
+  server: singapore-2.keenvpn.me
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 61|🇸🇬3
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  port: 443
+  server: singapore-3.keenvpn.me
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 61|🇸🇬5
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  port: 443
+  server: singapore-5.keenvpn.me
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 61|🇸🇬7
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  port: 443
+  server: singapore-7.keenvpn.me
   type: ss
   udp: true
 - alterId: 0
@@ -89,6 +191,13 @@ proxies:
     headers:
       HOST: chunchuan.kejixiaoqi666.store
     path: /
+- name: 65|CA-35.183.169.192-028
+  password: telegram-id-directvpn
+  port: 22222
+  server: 35.183.169.192
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 0
   cipher: auto
   h2-opts: {}
@@ -106,38 +215,40 @@ proxies:
     headers:
       HOST: ovhwuxian.pai50288.uk
     path: /
-- cipher: aes-256-cfb
-  delay: 2835
-  name: 2,9,19,28,59,73|SSR--NF解锁丹麦自制剧-ChatGPT-TikTok-...
-  obfs: plain
-  obfs-param: ''
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  protocol: origin
-  protocol-param: ''
-  server: 185.186.79.53
-  type: ssr
-- cipher: chacha20-ietf-poly1305
-  name: 25,30,62,65,73|SS-国-NF解锁大自制剧-ChatGPT-TikTok-Y...
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
-  type: ss
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 37|🇩🇪 德国 | DEU 3
+  h2-opts: {}
+  http-opts: {}
+  name: 73|VMESS-未知>加拿大-NF解锁加拿大自制剧-ChatGP...
   network: ws
-  port: 23451
-  server: frankfurt.faforex.eu.org
-  tls: false
+  port: 443
+  server: ca0.899994.xyz
+  skip-cert-verify: true
+  tls: true
   type: vmess
-  udp: true
-  uuid: e35d4dbd-94c1-4493-9ef7-069961909585
+  uuid: a0605527-28e4-449c-80ee-5642cc16a8af
+  ws-opts:
+    path: /index
+- name: 65|🇩🇪DE-3.79.78.214-023
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.79.78.214
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 42|🇫🇷 FR_234
+  network: ws
+  port: 443
+  server: 194.9.172.65
+  tls: true
+  type: vmess
+  uuid: 8d90c129-4156-4d6c-9115-24df25f26a02
   ws-opts:
     headers:
-      Host: us-new03.daluquan.top
-    path: /itdog?ed=2560
+      Host: beyonddbc.sbs
+    path: /linkws
 - alterId: 0
   cipher: auto
   name: 42|🇫🇷 FR_236
@@ -176,59 +287,39 @@ proxies:
   port: 8080
   server: beesyar.org
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 73|SS-法国-NF解锁法国地区非自制剧-ChatGPT-Tik...
-  password: eGqbOk5Sd0qd1EnNOCkmQ4
-  port: 4619
-  server: 91.108.240.23
-  type: ss
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 73|VMESS-未知>法国-NF解锁法国自制剧-ChatGPT-...
+  network: ws
+  port: 80
+  server: www.speedtest.net
+  servername: eu-2.hihu.net
+  skip-cert-verify: true
+  type: vmess
+  uuid: e75ed5a0-e32c-11ef-b535-205c6d5f5d78
+  ws-opts:
+    headers:
+      HOST: eu-2.hihu.net
+    path: /nd9emita
 - cipher: chacha20-ietf-poly1305
   name: 73|SS--NF解锁法国自制剧-ChatGPT-YouTube-...
   password: nAxr8GpN7Zt5Xpvto3W4Mb
   port: 24495
   server: 213.176.66.228
   type: ss
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 46,48,49|🇬🇧_GB_英国
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 62.100.205.48
-  type: ss
-  udp: true
 - country: 🇬🇧GB
-  name: 51,65|GB-35.176.154.96-151
+  name: 45,51,52|[Trojan] 🇬🇧 英国 伦敦Amazon数据中心
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 35.176.154.96
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- country: 🇬🇧GB
-  name: 51,52|[Trojan] 🇺🇸 美国 Amazon数据中心
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.169.69.27
+  server: 35.179.242.55
   skip-cert-verify: true
   sni: trojan.burgerip.co.uk
   tfo: false
   type: trojan
   udp: true
-- cipher: aes-256-cfb
-  name: 57|🇺_RU_
-  password: TN2YqghxeFDKZfLU
-  port: 9037
-  server: 217.30.10.18
-  type: ss
-- cipher: aes-256-cfb
-  name: 57|🇺_RU_俄罗斯_1
-  password: ueLXVkvh4hckhErQ
-  port: 9060
-  server: 217.30.10.18
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 61|🇹🇼2
   password: 2afbc97400ca71c8f3306f9843a6e1c2
@@ -248,28 +339,40 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 73|VMESS-未知>-NF解锁加拿大自制剧-ChatGPT-T...
-  - 46,48,49|🇬🇧_GB_英国
+  - 65|CA-35.183.169.192-028
+  - 73|VMESS-未知>加拿大-NF解锁加拿大自制剧-ChatGP...
   - 65|FR-51.91.39.14-019
-  - 51,52|[Trojan] 🇺🇸 美国 Amazon数据中心
-  - 51,65|GB-35.176.154.96-151
   - 73|SS--NF解锁法国自制剧-ChatGPT-YouTube-...
-  - 25,30,62,65,73|SS-国-NF解锁大自制剧-ChatGPT-TikTok-Y...
-  - 65|🇫🇷FR-45.158.171.141-034
-  - 57|🇺_RU_俄罗斯_1
+  - 45,51,52|[Trojan] 🇬🇧 英国 伦敦Amazon数据中心
+  - 65|🇩🇪DE-3.79.78.214-023
+  - 73|VMESS-未知>-NF解锁加拿大自制剧-ChatGPT-T...
   - 25,30,62,77|JP_Tokyo_Datacamp Limited1
   - 25,30,32,62,77|JP_Tokyo_Datacamp Limited2
-  - 42|🇫🇷 FR_236
-  - 2,9,19,22,25,28,30,51,59,62,65|🇸🇬SG-103.106.229.219-064
-  - 37|🇩🇪 德国 | DEU 3
+  - 73|VMESS-未知>法国-NF解锁法国自制剧-ChatGPT-...
+  - 65|🇫🇷FR-45.158.171.141-034
+  - 22|@MxlShare 日本 | JPN 6
+  - 22|@MxlShare 日本 | JPN 8
   - 52|[SS] 🇸🇬 新加坡 Digital Ocean数据中心
-  - 42|🇫🇷 FR_238
-  - 57|🇺_RU_
-  - 61|🇯🇵7
-  - 73|SS-法国-NF解锁法国地区非自制剧-ChatGPT-Tik...
+  - 22|@MxlShare 新加坡 | SGP 2
   - 61|🇹🇼2
-  - 22,51,65|SG-38.180.249.177-029
-  - 2,9,19,28,59,73|SSR--NF解锁丹麦自制剧-ChatGPT-TikTok-...
+  - 42|🇫🇷 FR_234
+  - 61|🇯🇵6
+  - 61|🇯🇵2
+  - 42|🇫🇷 FR_236
+  - 61|🇯🇵4
+  - 61|🇯🇵7
+  - 61|🇸🇬2
+  - 61|🇸🇬1
+  - 61|🇸🇬3
+  - 61|🇯🇵1
+  - 2,9,19,22,25,28,30,51,59,62,65|🇸🇬SG-103.106.229.219-064
+  - 22|@MxlShare 香港 | HKG 6
+  - 42|🇫🇷 FR_238
+  - 61|🇸🇬5
+  - 61|🇰🇷1
+  - 61|🇸🇬7
+  - 51,65|SG-38.180.249.177-029
+  - 61|🇯🇵3
   - 73|VMESS-未知>新加坡-NF解锁新加坡自制剧-ChatGP...
   url: https://i.ytimg.com/generate_204
   interval: 300
@@ -278,56 +381,80 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 73|VMESS-未知>-NF解锁加拿大自制剧-ChatGPT-T...
-  - 46,48,49|🇬🇧_GB_英国
+  - 65|CA-35.183.169.192-028
+  - 73|VMESS-未知>加拿大-NF解锁加拿大自制剧-ChatGP...
   - 65|FR-51.91.39.14-019
-  - 51,52|[Trojan] 🇺🇸 美国 Amazon数据中心
-  - 51,65|GB-35.176.154.96-151
   - 73|SS--NF解锁法国自制剧-ChatGPT-YouTube-...
-  - 25,30,62,65,73|SS-国-NF解锁大自制剧-ChatGPT-TikTok-Y...
-  - 65|🇫🇷FR-45.158.171.141-034
-  - 57|🇺_RU_俄罗斯_1
+  - 45,51,52|[Trojan] 🇬🇧 英国 伦敦Amazon数据中心
+  - 65|🇩🇪DE-3.79.78.214-023
+  - 73|VMESS-未知>-NF解锁加拿大自制剧-ChatGPT-T...
   - 25,30,62,77|JP_Tokyo_Datacamp Limited1
   - 25,30,32,62,77|JP_Tokyo_Datacamp Limited2
-  - 42|🇫🇷 FR_236
-  - 2,9,19,22,25,28,30,51,59,62,65|🇸🇬SG-103.106.229.219-064
-  - 37|🇩🇪 德国 | DEU 3
+  - 73|VMESS-未知>法国-NF解锁法国自制剧-ChatGPT-...
+  - 65|🇫🇷FR-45.158.171.141-034
+  - 22|@MxlShare 日本 | JPN 6
+  - 22|@MxlShare 日本 | JPN 8
   - 52|[SS] 🇸🇬 新加坡 Digital Ocean数据中心
-  - 42|🇫🇷 FR_238
-  - 57|🇺_RU_
-  - 61|🇯🇵7
-  - 73|SS-法国-NF解锁法国地区非自制剧-ChatGPT-Tik...
+  - 22|@MxlShare 新加坡 | SGP 2
   - 61|🇹🇼2
-  - 22,51,65|SG-38.180.249.177-029
-  - 2,9,19,28,59,73|SSR--NF解锁丹麦自制剧-ChatGPT-TikTok-...
+  - 42|🇫🇷 FR_234
+  - 61|🇯🇵6
+  - 61|🇯🇵2
+  - 42|🇫🇷 FR_236
+  - 61|🇯🇵4
+  - 61|🇯🇵7
+  - 61|🇸🇬2
+  - 61|🇸🇬1
+  - 61|🇸🇬3
+  - 61|🇯🇵1
+  - 2,9,19,22,25,28,30,51,59,62,65|🇸🇬SG-103.106.229.219-064
+  - 22|@MxlShare 香港 | HKG 6
+  - 42|🇫🇷 FR_238
+  - 61|🇸🇬5
+  - 61|🇰🇷1
+  - 61|🇸🇬7
+  - 51,65|SG-38.180.249.177-029
+  - 61|🇯🇵3
   - 73|VMESS-未知>新加坡-NF解锁新加坡自制剧-ChatGP...
   url: https://i.ytimg.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 73|VMESS-未知>-NF解锁加拿大自制剧-ChatGPT-T...
-  - 46,48,49|🇬🇧_GB_英国
+  - 65|CA-35.183.169.192-028
+  - 73|VMESS-未知>加拿大-NF解锁加拿大自制剧-ChatGP...
   - 65|FR-51.91.39.14-019
-  - 51,52|[Trojan] 🇺🇸 美国 Amazon数据中心
-  - 51,65|GB-35.176.154.96-151
   - 73|SS--NF解锁法国自制剧-ChatGPT-YouTube-...
-  - 25,30,62,65,73|SS-国-NF解锁大自制剧-ChatGPT-TikTok-Y...
-  - 65|🇫🇷FR-45.158.171.141-034
-  - 57|🇺_RU_俄罗斯_1
+  - 45,51,52|[Trojan] 🇬🇧 英国 伦敦Amazon数据中心
+  - 65|🇩🇪DE-3.79.78.214-023
+  - 73|VMESS-未知>-NF解锁加拿大自制剧-ChatGPT-T...
   - 25,30,62,77|JP_Tokyo_Datacamp Limited1
   - 25,30,32,62,77|JP_Tokyo_Datacamp Limited2
-  - 42|🇫🇷 FR_236
-  - 2,9,19,22,25,28,30,51,59,62,65|🇸🇬SG-103.106.229.219-064
-  - 37|🇩🇪 德国 | DEU 3
+  - 73|VMESS-未知>法国-NF解锁法国自制剧-ChatGPT-...
+  - 65|🇫🇷FR-45.158.171.141-034
+  - 22|@MxlShare 日本 | JPN 6
+  - 22|@MxlShare 日本 | JPN 8
   - 52|[SS] 🇸🇬 新加坡 Digital Ocean数据中心
-  - 42|🇫🇷 FR_238
-  - 57|🇺_RU_
-  - 61|🇯🇵7
-  - 73|SS-法国-NF解锁法国地区非自制剧-ChatGPT-Tik...
+  - 22|@MxlShare 新加坡 | SGP 2
   - 61|🇹🇼2
-  - 22,51,65|SG-38.180.249.177-029
-  - 2,9,19,28,59,73|SSR--NF解锁丹麦自制剧-ChatGPT-TikTok-...
+  - 42|🇫🇷 FR_234
+  - 61|🇯🇵6
+  - 61|🇯🇵2
+  - 42|🇫🇷 FR_236
+  - 61|🇯🇵4
+  - 61|🇯🇵7
+  - 61|🇸🇬2
+  - 61|🇸🇬1
+  - 61|🇸🇬3
+  - 61|🇯🇵1
+  - 2,9,19,22,25,28,30,51,59,62,65|🇸🇬SG-103.106.229.219-064
+  - 22|@MxlShare 香港 | HKG 6
+  - 42|🇫🇷 FR_238
+  - 61|🇸🇬5
+  - 61|🇰🇷1
+  - 61|🇸🇬7
+  - 51,65|SG-38.180.249.177-029
+  - 61|🇯🇵3
   - 73|VMESS-未知>新加坡-NF解锁新加坡自制剧-ChatGP...
 rules:
 - DOMAIN,app.adjust.com,DIRECT
