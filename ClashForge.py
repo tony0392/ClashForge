@@ -37,7 +37,7 @@ CLASH_API_HOST = "127.0.0.1"
 CLASH_API_SECRET = ""
 TIMEOUT = 1
 MAX_CONCURRENT_TESTS = 100
-LIMIT = 200 # 最多保留LIMIT个节点
+LIMIT = 100 # 最多保留LIMIT个节点
 CONFIG_FILE = 'clash_config.yaml'
 INPUT = "input" # 从文件中加载代理节点，支持yaml/yml、txt(每条代理链接占一行)
 BAN = ["China", "CN", "电信", "移动", "联通",]
@@ -2331,17 +2331,6 @@ def work(links,check=False,allowed_types=[],only_check=False):
 
 if __name__ == '__main__':
     links = [
-        "http://103.67.52.65",
-        "https://dy.5468936.xyz",
-        "https://mhq.us.kg",
-        "https://ccccclash.skyrace.top",
-        "https://www.sstank.top/link/sAHQuZoZ1tzQWjrn?clash=1",
-        "https://ghfast.top/https://raw.githubusercontent.com/Roywaller/clash_subscription/refs/heads/main/clash_subscription.txt",
-        "https://ghfast.top/https://raw.githubusercontent.com/leetomlee123/freenode/refs/heads/main/README.md",
-        "https://ghfast.top/https://raw.githubusercontent.com/mgit0001/test_clash/refs/heads/main/tgs.yaml",
-        "https://ghfast.top/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml",
-        "https://ghfast.top/https://raw.githubusercontent.com/mfuu/v2ray/master/clash.yaml",
-        "https://api.mxlweb.xyz/sub?target=clash&url=https://www.xrayvip.com/free.yaml&insert=false",
-        "https://www.freeclashnode.com/uploads/{Y}/{m}/0-{Ymd}.yaml",
+        "https://github.com/tony0392/NoMoreWalls/blob/master/list.yml"
     ]
     work(links, check=True, only_check=False, allowed_types=["ss","vmess","trojan"])
