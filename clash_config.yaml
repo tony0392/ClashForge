@@ -32,418 +32,474 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- name: 37|🇫🇷FR-45.158.171.146-0775
+- name: 0,5,29,38|🇯🇵1
   type: ss
-  server: 45.158.171.146
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: QCXDxuDlTTMD7jtgHUjIoj
+  server: 13.113.168.96
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
   udp: true
-- name: 37|🇬🇧GB-212.102.53.196-0474
+- name: 0,5,29|🇸🇬-34kC
   type: ss
-  server: 212.102.53.196
+  server: 54.178.45.63
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 4,11,28,35|🇮🇸
+  type: ss
+  server: 37.235.49.152
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+  udp: true
+- name: 4,11,28,35|🇰🇷-B6Mj
+  type: ss
+  server: 52.79.249.199
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 4,11,28,35,37|🇰🇷KR-43.201.102.200-5989
+  type: ss
+  server: 43.201.102.200
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 4,11,28,35|🇰🇷-t6ZA
+  type: ss
+  server: 3.34.123.239
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 4,11,28,35,37|🇳🇱NL-149.34.244.72-5991
+  type: ss
+  server: 149.34.244.72
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 37|🇳🇱NL-109.201.152.181-0447
+- name: 4,11,28,35|🇵🇱-qFJn
   type: ss
-  server: 109.201.152.181
+  server: 217.30.10.18
+  port: 9059
+  cipher: aes-256-cfb
+  password: 9XwYyZsK8SNzQDtY
+  udp: true
+- name: 4,11,28,35|🇵🇱-tQaK
+  type: ss
+  server: 217.30.10.18
+  port: 9027
+  cipher: aes-256-cfb
+  password: EXN3S3eQpjE7EJu8
+  udp: true
+- name: 4,11,28,35|🇸🇬-jDiK
+  type: trojan
+  server: dynamic-shrew.shiner427.skin
+  port: 443
+  password: '65086520307764900'
+  sni: ''
+  skip-cert-verify: false
+- name: 4,11,28,35|🇸🇬-WUux
+  type: ss
+  server: 13.229.229.102
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 4,11,28,35|🇸🇬-zcIN
+  type: ss
+  server: 54.255.245.79
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 4,11,28,35|🇺🇸
+  type: trojan
+  server: arriving-longhorn.shiner427.skin
+  port: 443
+  password: '65086520307764900'
+  sni: ''
+  skip-cert-verify: false
+- name: 4,11,28,35|🇺🇸-OQNo
+  type: trojan
+  server: 44.213.197.235
+  port: 443
+  password: '65086520307764900'
+  sni: arriving-longhorn.shiner427.skin
+  skip-cert-verify: false
+- name: 37|🇺🇸US-34.233.201.214-0408
+  type: ss
+  server: us-ashburn-virginia.keenvpn.me
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  udp: true
+- name: 37|🇺🇸US-37.19.198.236-0415
+  type: ss
+  server: 37.19.198.236
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 37|🇺🇸US-37.19.198.243-0410
+  type: ss
+  server: 37.19.198.243
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 37|🇺🇸US-37.19.198.160-0420
+  type: ss
+  server: 37.19.198.160
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 37|🇺🇸US-194.5.215.59-0419
+  type: ss
+  server: 194.5.215.59
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+  udp: true
+- name: 37|🇺🇸US-37.19.198.244-0416
+  type: ss
+  server: 37.19.198.244
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 37|🇺🇸US-156.146.38.167-0414
+  type: ss
+  server: 156.146.38.167
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 37|🇺🇸US-92.118.112.111-0590
+  type: ss
+  server: 92.118.112.111
+  port: 18622
+  cipher: chacha20-ietf-poly1305
+  password: gmYDzSG6K35s8b19oY4fGz
+  udp: true
+- name: 37|🇺🇸US-156.146.38.168-0413
+  type: ss
+  server: 156.146.38.168
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 37|🇺🇸US-156.146.38.169-0411
+  type: ss
+  server: 156.146.38.169
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 37|🇺🇸US-64.74.163.130-0433
+  type: ss
+  server: 64.74.163.130
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: f8f7aCzcPKbsF8p3
+  udp: true
+- name: 37|🇺🇸US-184.170.241.194-0421
+  type: ss
+  server: 184.170.241.194
   port: 443
   cipher: aes-128-cfb
   password: shadowsocks
   udp: true
-- name: 37|🇫🇷FR-51.15.27.48-0490
+- name: 37|🇺🇸US-212.102.47.131-0423
   type: ss
-  server: 51.15.27.48
+  server: 212.102.47.131
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 37|🇨🇦CA-79.127.233.170-0432
+  type: ss
+  server: 79.127.233.170
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: f8f7aCzcPKbsF8p3
+  udp: true
+- name: 37|🇺🇸US-154.3.8.151-5795
+  type: ss
+  server: 154.3.8.151
+  port: 30067
+  cipher: aes-256-gcm
+  password: iUB0923RBA
+  udp: true
+- name: 37|🇺🇸US-212.102.47.130-0422
+  type: ss
+  server: 212.102.47.130
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 37|🇺🇸US-212.102.47.132-0425
+  type: ss
+  server: 212.102.47.132
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 37|🇺🇸US-173.244.56.6-0424
+  type: ss
+  server: 173.244.56.6
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 37|🇬🇧GB-62.100.205.48-0439
+  type: ss
+  server: 62.100.205.48
   port: 989
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
   udp: true
-- name: 37|🇬🇧GB-141.98.101.180-0520
-  type: ss
-  server: 141.98.101.180
+- name: 37|🇬🇧GB-161.35.34.48-0445
+  type: trojan
+  server: yourjobnavigator.online
   port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 37|🇬🇧GB-141.98.101.182-0566
-  type: ss
-  server: 141.98.101.182
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 37|SE-46.246.98.155-5717
-  type: ss
-  server: 46.246.98.155
-  port: 44013
-  cipher: chacha20-ietf-poly1305
-  password: UDcjYQ6Z6AIWxViZpqyOmO
-  udp: true
-- name: 37|MD-86.104.74.243-5701
-  type: ss
-  server: 86.104.74.243
-  port: 14255
-  cipher: chacha20-ietf-poly1305
-  password: fDDmH4QefmWqMJ8UURZrGh
-  udp: true
-- name: 37|RS-194.71.126.31-0487
-  type: ss
-  server: 194.71.126.31
-  port: 989
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-  udp: true
-- name: 37|🇺🇸US-104.207.155.64-0444
-  type: ss
-  server: 104.207.155.64
-  port: 1633
-  cipher: chacha20-ietf-poly1305
-  password: o_A7inN1yqeWtOTL
-  udp: true
-- name: 37|🇬🇧GB-141.98.101.179-0549
-  type: ss
-  server: 141.98.101.179
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 37|🇫🇷FR-45.158.171.132-5663
-  type: ss
-  server: 45.158.171.132
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: cvII85TrW6n0OGyfpHVS1u
-  udp: true
-- name: 37|🇳🇱NL-213.109.147.242-0483
-  type: ss
-  server: 213.109.147.242
-  port: 62685
-  cipher: chacha20-ietf-poly1305
-  password: VpKABcOpNNA0l5G2AVOmw8
-  udp: true
-- name: 37|🇺🇸US-207.246.101.50-0451
-  type: ss
-  server: 207.246.101.50
-  port: 1633
-  cipher: chacha20-ietf-poly1305
-  password: o_A7inN1yqeWtOTL
-  udp: true
-- name: 37|🇬🇧GB-212.102.53.198-0476
-  type: ss
-  server: 212.102.53.198
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 37|SK-156.146.40.194-0494
-  type: ss
-  server: 156.146.40.194
-  port: 989
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-  udp: true
-- name: 37|🇺🇸US-172.233.128.126-0442
-  type: ss
-  server: 172.233.128.126
-  port: 1866
-  cipher: chacha20-ietf-poly1305
-  password: oXGp1+ihlfKg826H
-  udp: true
-- name: 37|EE-147.45.60.33-0582
-  type: ss
-  server: 147.45.60.33
-  port: 16356
-  cipher: chacha20-ietf-poly1305
-  password: LqlPI19oqnunGNSLMvdXyB
-  udp: true
-- name: 37|🇬🇧GB-212.102.53.79-0480
-  type: ss
-  server: 212.102.53.79
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 37|🇳🇱NL-193.29.139.189-0492
-  type: ss
-  server: 193.29.139.189
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: cvII85TrW6n0OGyfpHVS1u
-  udp: true
-- name: 37|AT-95.164.36.59-0496
-  type: ss
-  server: 95.164.36.59
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: OWY4ODBm
-  udp: true
-- name: 37|CH-156.146.62.163-0485
-  type: ss
-  server: 156.146.62.163
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 37|🇺🇸US-172.232.171.192-0443
-  type: ss
-  server: 172.232.171.192
-  port: 1866
-  cipher: chacha20-ietf-poly1305
-  password: oXGp1+ihlfKg826H
-  udp: true
-- name: 37|🇳🇱NL-89.23.103.125-5705
-  type: ss
-  server: 89.23.103.125
-  port: 42090
-  cipher: chacha20-ietf-poly1305
-  password: uQS5ntVqC00sSKkeNzUiD3
-  udp: true
-- name: 37|🇺🇸US-38.107.226.146-0575
-  type: ss
-  server: 38.107.226.146
-  port: 1230
-  cipher: chacha20-ietf-poly1305
-  password: H5S0hvcxRi#YLmgU
-  udp: true
-- name: 37|🇵🇱PL-45.144.48.63-0584
-  type: ss
-  server: war.ssvpnapp.win
-  port: 57456
-  cipher: chacha20-ietf-poly1305
-  password: d3837224ed465f00
-  udp: true
-- name: 37|🇷🇺RU-45.151.62.54-5702
-  type: ss
-  server: 45.151.62.54
-  port: 28825
-  cipher: chacha20-ietf-poly1305
-  password: 0zyDRZ1XmNXaaCAN7KEA8a
-  udp: true
-- name: 37|🇯🇵JP-52.197.171.218-5933
-  type: ss
-  server: japan-5.keenvpn.me
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: 37|MD-45.142.214.123-5946
-  type: ss
-  server: 45.142.214.123
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: ZjFmYTY0
-  udp: true
-- name: 37|🇵🇱PL-45.144.48.63-5357
-  type: ss
-  server: 45.144.48.63
-  port: 57456
-  cipher: chacha20-ietf-poly1305
-  password: d3837224ed465f00
-  udp: true
-- name: 37|GI-95.164.68.37-5925
-  type: ss
-  server: 95.164.68.37
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: OTBkYmFk
-  udp: true
-- name: 37|🇩🇪DE-193.108.119.230-0557
-  type: ss
-  server: 193.108.119.230
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-  udp: true
-- name: 37|🇨🇦CA-142.4.216.225-0547
-  type: ss
-  server: 142.4.216.225
-  port: 80
-  cipher: chacha20-ietf-poly1305
-  password: JIhN6rBKkaEboLNXVSv5rq
-  udp: true
-- name: 37|🇩🇪DE-146.19.247.183-0594
-  type: ss
-  server: 146.19.247.183
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: ZTUxOTQ5
-  udp: true
-- name: 37|🇯🇵JP-149.22.87.204-0499
-  type: ss
-  server: 149.22.87.204
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 37|🇰🇷KR-43.202.96.177-0517
-  type: ss
-  server: south-korea-2.keenvpn.me
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: 37|🇺🇸US-194.116.173.21-1290
-  type: ss
-  server: 194.116.173.21
-  port: 9038
-  cipher: aes-256-cfb
-  password: gYCYXfkUQEs2TaJQ
-  udp: true
-- name: 37|SE-62.60.151.134-5645
-  type: ss
-  server: 62.60.151.134
-  port: 60758
-  cipher: chacha20-ietf-poly1305
-  password: vkQP4Fe2dFEA1rdWx0lAjH
-  udp: true
-- name: 37|🇯🇵JP-149.22.87.240-0502
-  type: ss
-  server: 149.22.87.240
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 37|RELAY-104.21.3.219-0576 | 2.72...
-  type: vmess
-  server: ovhwuxian.pai50288.uk
-  port: 8443
-  uuid: 86455bfc-dd02-4a3b-9f03-7668f39375d6
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
+  password: 2cba4104747d49d18319e5ade1b93ab5
   sni: ''
-  ws-opts:
-    path: /
-    headers:
-      Host: ovhwuxian.pai50288.uk
-- name: 37|🇺🇸US-79.110.53.169-0436
+  skip-cert-verify: false
+- name: 37|🇺🇸US-23.251.121.242-0426
   type: ss
-  server: 79.110.53.169
+  server: 23.251.121.242
   port: 8080
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
   udp: true
-- name: 37|🇸🇬SG-68.183.227.45-0526
+- name: 37|🇫🇷FR-195.154.185.174-0452
   type: ss
-  server: 68.183.227.45
+  server: 195.154.185.174
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+  udp: true
+- name: 37|LT-45.87.175.181-0342
+  type: ss
+  server: 45.87.175.181
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: cvII85TrW6n0OGyfpHVS1u
+  udp: true
+- name: 37,38|🇺🇸3
+  type: ss
+  server: 107.155.57.11
   port: 8080
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
   udp: true
-- name: 37|🇯🇵JP-149.22.87.241-0505
+- name: 37|🇫🇷FR-45.158.171.66-5793
   type: ss
-  server: 149.22.87.241
+  server: 45.158.171.66
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 37|LT-45.87.175.199-0497
+  type: ss
+  server: 45.87.175.199
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  udp: true
+- name: 37|🇬🇧GB-146.70.61.18-0455
+  type: ss
+  server: 146.70.61.18
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+  udp: true
+- name: 37|LT-45.87.175.157-5655
+  type: ss
+  server: 45.87.175.157
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: 4a2rfixophdjffa8KVA4Aa
+  udp: true
+- name: 37|🇳🇱NL-193.29.139.179-5672
+  type: ss
+  server: 193.29.139.179
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: cvII85TrW6n0OGyfpHVS1u
+  udp: true
+- name: 37|🇳🇱NL-193.29.139.164-0470
+  type: ss
+  server: 193.29.139.164
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: 4a2rfixophdjffa8KVA4Aa
+  udp: true
+- name: 37|🇺🇸US-107.155.57.51-0431
+  type: ss
+  server: 107.155.57.51
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+  udp: true
+- name: 37|LT-45.87.175.164-5657
+  type: ss
+  server: 45.87.175.164
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  udp: true
+- name: 37|MD-103.106.1.92-5538
+  type: ss
+  server: 103.106.1.92
+  port: 23492
+  cipher: chacha20-ietf-poly1305
+  password: yMX9WGPgUEcRZmlaa0YHHC
+  udp: true
+- name: 37|🇩🇪DE-165.22.74.230-6292
+  type: trojan
+  server: nextstepcareer.online
+  port: 443
+  password: 4732adfa16c6450bbef87264e41332db
+  sni: ''
+  skip-cert-verify: false
+- name: 37|🇫🇷FR-45.158.171.110-5662
+  type: ss
+  server: 45.158.171.110
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 37|🇳🇱NL-193.29.139.227-6198
+  type: ss
+  server: 193.29.139.227
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: cvII85TrW6n0OGyfpHVS1u
+  udp: true
+- name: 37|🇫🇷FR-185.234.64.35-1367
+  type: ss
+  server: 185.234.64.35
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: YTNjNDY5
+  udp: true
+- name: 37|🇳🇱NL-193.29.139.133-6248
+  type: ss
+  server: 193.29.139.133
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: cvII85TrW6n0OGyfpHVS1u
+  udp: true
+- name: 37|🇨🇦CA-149.22.95.183-0427
+  type: ss
+  server: 149.22.95.183
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 37|🇬🇧GB-141.98.101.178-0551
+- name: 37|LT-45.87.175.166-5650
   type: ss
-  server: 141.98.101.178
+  server: 45.87.175.166
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  udp: true
+- name: 37|LT-45.87.175.188-0498
+  type: ss
+  server: 45.87.175.188
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: cvII85TrW6n0OGyfpHVS1u
+  udp: true
+- name: 37|🇫🇷FR-195.154.169.198-0493
+  type: ss
+  server: 195.154.169.198
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+  udp: true
+- name: 37|LT-45.87.175.192-0512
+  type: ss
+  server: 45.87.175.192
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: 4a2rfixophdjffa8KVA4Aa
+  udp: true
+- name: 37|🇳🇱NL-193.29.139.162-0488
+  type: ss
+  server: 193.29.139.162
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: 4a2rfixophdjffa8KVA4Aa
+  udp: true
+- name: 37|CH-84.17.53.160-0458
+  type: ss
+  server: 84.17.53.160
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+  udp: true
+- name: 37|🇳🇱NL-193.29.139.138-5669
+  type: ss
+  server: 193.29.139.138
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  udp: true
+- name: 37|🇫🇷FR-45.158.171.141-0506
+  type: ss
+  server: 45.158.171.141
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: 4a2rfixophdjffa8KVA4Aa
+  udp: true
+- name: 37|🇺🇸US-156.146.38.170-0412
+  type: ss
+  server: 156.146.38.170
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 37|🇸🇬SG-68.183.227.236-0530
+- name: 37|🇳🇱NL-149.34.244.77-0461
   type: ss
-  server: 68.183.227.236
+  server: 149.34.244.77
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 37|🇳🇱NL-193.29.139.206-0554
+  type: ss
+  server: 193.29.139.206
   port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-  udp: true
-- name: 37|🇸🇬SG-128.199.172.224-0532
-  type: ss
-  server: 128.199.172.224
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-  udp: true
-- name: 37|🇰🇷KR-43.203.206.63-0585
-  type: ss
-  server: 43.203.206.63
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 37|🇨🇦CA-142.4.216.225-0535
-  type: ss
-  server: ca225.vpnbook.com
-  port: 80
   cipher: chacha20-ietf-poly1305
-  password: JIhN6rBKkaEboLNXVSv5rq
+  password: 4a2rfixophdjffa8KVA4Aa
   udp: true
-- name: 37|🇸🇬SG-68.183.227.4-0529
+- name: 37|🇵🇱PL-217.30.10.70-9627
   type: ss
-  server: 68.183.227.4
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-  udp: true
-- name: 37|BH-157.241.22.213-0580
-  type: ss
-  server: admin.c3.webramz.co
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: Bog0ELmMM9DSxDdQ
-  udp: true
-- name: 37|SE-94.228.165.178-5714
-  type: ss
-  server: 94.228.165.178
-  port: 58176
-  cipher: chacha20-ietf-poly1305
-  password: afKAHp1VfRWZu91LIi9o0D
-  udp: true
-- name: 37|🇭🇰HK-141.98.234.93-5703
-  type: ss
-  server: 141.98.234.93
-  port: 20012
-  cipher: chacha20-ietf-poly1305
-  password: WfmxKX2FBJRU0Ie9VLIYDL
-  udp: true
-- name: 37|AE-40.172.178.194-0579
-  type: ss
-  server: 40.172.178.194
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: u17T3BvpYaaiuW2c
-  udp: true
-- name: 38|🇸🇬3
-  type: ss
-  server: 18.141.25.54
-  port: 443
+  server: 217.30.10.70
+  port: 9044
   cipher: aes-256-cfb
-  password: amazonskr05
+  password: KBGjZYcy4SyRShmA
   udp: true
-- name: 38|🇫🇷1
+- name: 37|🇳🇱NL-149.34.244.82-0462
   type: ss
-  server: 57.181.33.247
+  server: 149.34.244.82
   port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
-- name: 38|🇯🇵3
+- name: 37|🇳🇱NL-149.34.244.68-6222
   type: ss
-  server: 3.112.232.193
+  server: 149.34.244.68
   port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 38|🇸🇬4
-  type: ss
-  server: 13.212.249.95
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 38|🇰🇷1
-  type: ss
-  server: 52.79.216.192
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
 - name: 55|Manassas
   type: trojan
@@ -473,13 +529,6 @@ proxies:
   password: '3747000103274291200'
   sni: relaxing-narwhal.pigeon031.one
   skip-cert-verify: false
-- name: 55|Tokyo
-  type: trojan
-  server: sweeping-cat.pigeon031.one
-  port: 443
-  password: '3747000103274291200'
-  sni: sweeping-cat.pigeon031.one
-  skip-cert-verify: false
 - name: 55|Toronto
   type: trojan
   server: helpful-wallaby.pigeon031.one
@@ -494,105 +543,35 @@ proxies:
   password: '3747000103274291200'
   sni: caring-jackal.pigeon031.one
   skip-cert-verify: false
-- name: 55|London
-  type: trojan
-  server: saved-shark.pigeon031.one
-  port: 443
-  password: '3747000103274291200'
-  sni: saved-shark.pigeon031.one
-  skip-cert-verify: false
-- name: 55|Riga
-  type: trojan
-  server: key-pangolin.treefrog761.one
-  port: 443
-  password: '3747000103274291200'
-  sni: key-pangolin.treefrog761.one
-  skip-cert-verify: false
-- name: 55|London-2KPt
-  type: trojan
-  server: key-sheep.pigeon031.one
-  port: 443
-  password: '3747000103274291200'
-  sni: key-sheep.pigeon031.one
-  skip-cert-verify: false
-- name: 55|Frankfurt
-  type: trojan
-  server: cuddly-bengal.pigeon031.one
-  port: 443
-  password: '3747000103274291200'
-  sni: cuddly-bengal.pigeon031.one
-  skip-cert-verify: false
-- name: 55|Amsterdam
-  type: trojan
-  server: sunny-jackal.insect388.motorcycles
-  port: 443
-  password: '3747000103274291200'
-  sni: sunny-jackal.insect388.motorcycles
-  skip-cert-verify: false
-- name: 55|Amsterdam-84qp
-  type: trojan
-  server: eternal-sole.insect388.motorcycles
-  port: 443
-  password: '3747000103274291200'
-  sni: eternal-sole.insect388.motorcycles
-  skip-cert-verify: false
-- name: 55|London-IQrv
-  type: trojan
-  server: choice-longhorn.insect388.motorcycles
-  port: 443
-  password: '3747000103274291200'
-  sni: choice-longhorn.insect388.motorcycles
-  skip-cert-verify: false
-- name: 55|Virginia
-  type: trojan
-  server: darling-goshawk.pigeon031.one
-  port: 443
-  password: '3747000103274291200'
-  sni: darling-goshawk.pigeon031.one
-  skip-cert-verify: false
-- name: 55|Virginia-88GZ
-  type: trojan
-  server: darling-ox.pigeon031.one
-  port: 443
-  password: '3747000103274291200'
-  sni: darling-ox.pigeon031.one
-  skip-cert-verify: false
-- name: 55|Manassas-YhqT
-  type: trojan
-  server: capable-jaybird.pigeon031.one
-  port: 443
-  password: '3747000103274291200'
-  sni: capable-jaybird.pigeon031.one
-  skip-cert-verify: false
-- name: 55|Ireland-dtgU
+- name: 55|Ireland-P2zM
   type: trojan
   server: awaited-racer.pigeon031.one
   port: 443
   password: '3747000103274291200'
   sni: awaited-racer.pigeon031.one
   skip-cert-verify: false
-- name: 55|London-5b9F
+- name: 55|London-pp7d
   type: trojan
   server: mutual-flea.pigeon031.one
   port: 443
   password: '3747000103274291200'
   sni: mutual-flea.pigeon031.one
   skip-cert-verify: false
-- name: 55|Tokyo-Ntbs
+- name: 55|Tokyo-PiWc
   type: trojan
   server: whole-bullfrog.pigeon031.one
   port: 443
   password: '3747000103274291200'
   sni: whole-bullfrog.pigeon031.one
   skip-cert-verify: false
-- name: 55|Tokyo-b9N7
+- name: 55|Tokyo-yUSN
   type: trojan
   server: settling-trout.pigeon031.one
   port: 443
   password: '3747000103274291200'
   sni: settling-trout.pigeon031.one
   skip-cert-verify: false
-- name: 55|Stockholm-qJXF
+- name: 55|Stockholm-GW62
   type: trojan
   server: saved-macaque.pigeon031.one
   port: 443
@@ -606,42 +585,49 @@ proxies:
   password: '3747000103274291200'
   sni: next-hippo.treefrog761.one
   skip-cert-verify: false
-- name: 55|Manassas-AdOg
+- name: 55|Manassas-JE6R
   type: trojan
   server: content-shrimp.pigeon031.one
   port: 443
   password: '3747000103274291200'
   sni: content-shrimp.pigeon031.one
   skip-cert-verify: false
-- name: 55|Amsterdam-OstV
+- name: 55|Amsterdam-ocPG
   type: trojan
   server: awaited-hedgehog.insect388.motorcycles
   port: 443
   password: '3747000103274291200'
   sni: awaited-hedgehog.insect388.motorcycles
   skip-cert-verify: false
-- name: 55|Tokyo-c9Lz
+- name: 55|Tokyo-Nk81
   type: trojan
   server: helpful-mackerel.pigeon031.one
   port: 443
   password: '3747000103274291200'
   sni: helpful-mackerel.pigeon031.one
   skip-cert-verify: false
-- name: 55|Tokyo-rhNz
+- name: 55|Singapore-YhVx
+  type: trojan
+  server: flying-tuna.treefrog761.one
+  port: 443
+  password: '3747000103274291200'
+  sni: flying-tuna.treefrog761.one
+  skip-cert-verify: false
+- name: 55|Tokyo-6HYT
   type: trojan
   server: open-maggot.pigeon031.one
   port: 443
   password: '3747000103274291200'
   sni: open-maggot.pigeon031.one
   skip-cert-verify: false
-- name: 55|Frankfurt-YNeH
+- name: 55|Frankfurt-vn8u
   type: trojan
   server: united-puma.pigeon031.one
   port: 443
   password: '3747000103274291200'
   sni: united-puma.pigeon031.one
   skip-cert-verify: false
-- name: 55|London-ymzp
+- name: 55|London-lDmN
   type: trojan
   server: classic-akita.pigeon031.one
   port: 443
@@ -662,33 +648,40 @@ proxies:
   password: '3747000103274291200'
   sni: grateful-glowworm.treefrog761.one
   skip-cert-verify: false
-- name: 55|London-Jlsf
+- name: 55|London-qwvm
   type: trojan
   server: primary-gannet.pigeon031.one
   port: 443
   password: '3747000103274291200'
   sni: primary-gannet.pigeon031.one
   skip-cert-verify: false
-- name: 55|Paris-Orvc
+- name: 55|Paris-yzzu
   type: trojan
   server: model-deer.pigeon031.one
   port: 443
   password: '3747000103274291200'
   sni: model-deer.pigeon031.one
   skip-cert-verify: false
-- name: 55|Stockholm-SIYE
+- name: 55|Singapore-j022
+  type: trojan
+  server: guiding-raven.treefrog761.one
+  port: 443
+  password: '3747000103274291200'
+  sni: guiding-raven.treefrog761.one
+  skip-cert-verify: false
+- name: 55|Stockholm-12NL
   type: trojan
   server: direct-doe.pigeon031.one
   port: 443
   password: '3747000103274291200'
   sni: direct-doe.pigeon031.one
   skip-cert-verify: false
-- name: 55|Mumbai-acZ4
+- name: 55|Singapore-E24s
   type: trojan
-  server: driven-gnat.pigeon031.one
+  server: probable-drum.treefrog761.one
   port: 443
   password: '3747000103274291200'
-  sni: driven-gnat.pigeon031.one
+  sni: probable-drum.treefrog761.one
   skip-cert-verify: false
 - name: 55|Saint
   type: trojan
@@ -697,7 +690,7 @@ proxies:
   password: '3747000103274291200'
   sni: better-crappie.treefrog761.one
   skip-cert-verify: false
-- name: 55|Amsterdam-R6Gv
+- name: 55|Amsterdam-oedY
   type: trojan
   server: inspired-cardinal.insect388.motorcycles
   port: 443
@@ -711,7 +704,7 @@ proxies:
   password: '3747000103274291200'
   sni: grateful-bobcat.treefrog761.one
   skip-cert-verify: false
-- name: 55|Frankfurt-hi3Q
+- name: 55|Frankfurt-hvha
   type: trojan
   server: main-labrador.pigeon031.one
   port: 443
@@ -725,12 +718,12 @@ proxies:
   password: '3747000103274291200'
   sni: destined-cub.treefrog761.one
   skip-cert-verify: false
-- name: 55|Mumbai-9o72
+- name: 55|Singapore-maQ9
   type: trojan
-  server: deciding-mantis.treefrog761.one
+  server: amazed-gobbler.treefrog761.one
   port: 443
   password: '3747000103274291200'
-  sni: deciding-mantis.treefrog761.one
+  sni: amazed-gobbler.treefrog761.one
   skip-cert-verify: false
 - name: 55|New
   type: trojan
@@ -751,106 +744,106 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 37|🇺🇸US-38.107.226.146-0575
-  - 37|🇺🇸US-194.116.173.21-1290
-  - 37|🇨🇦CA-142.4.216.225-0547
-  - 55|Virginia
-  - 55|Manassas-AdOg
-  - 55|Virginia-88GZ
-  - 55|Manassas-YhqT
+  - 37|🇺🇸US-156.146.38.167-0414
+  - 37|🇺🇸US-156.146.38.168-0413
+  - 37|🇺🇸US-156.146.38.169-0411
+  - 37|🇺🇸US-156.146.38.170-0412
+  - 37|🇺🇸US-37.19.198.243-0410
+  - 37|🇺🇸US-37.19.198.236-0415
+  - 37|🇺🇸US-37.19.198.160-0420
+  - 37|🇺🇸US-92.118.112.111-0590
+  - 37|🇺🇸US-37.19.198.244-0416
+  - 4,11,28,35|🇺🇸-OQNo
+  - 37|🇺🇸US-64.74.163.130-0433
+  - 37|🇺🇸US-212.102.47.132-0425
+  - 37|🇺🇸US-212.102.47.131-0423
+  - 37|🇺🇸US-212.102.47.130-0422
+  - 37|🇺🇸US-194.5.215.59-0419
+  - 55|Manassas-JE6R
+  - 37|🇨🇦CA-149.22.95.183-0427
+  - 37|🇺🇸US-173.244.56.6-0424
+  - 37|🇨🇦CA-79.127.233.170-0432
+  - 37|🇺🇸US-154.3.8.151-5795
+  - 37|🇺🇸US-107.155.57.51-0431
+  - 4,11,28,35|🇺🇸
   - 55|Manassas
-  - 37|RELAY-104.21.3.219-0576 | 2.72...
-  - 37|🇺🇸US-104.207.155.64-0444
+  - 37,38|🇺🇸3
+  - 37|🇺🇸US-23.251.121.242-0426
   - 55|New
-  - 37|🇺🇸US-207.246.101.50-0451
-  - 37|🇺🇸US-172.232.171.192-0443
-  - 37|🇨🇦CA-142.4.216.225-0535
-  - 37|🇺🇸US-172.233.128.126-0442
   - 55|Toronto
-  - 37|🇳🇱NL-109.201.152.181-0447
   - 55|Ohio
-  - 37|MD-86.104.74.243-5701
-  - 37|🇳🇱NL-213.109.147.242-0483
-  - 37|🇬🇧GB-212.102.53.198-0476
-  - 37|🇫🇷FR-45.158.171.132-5663
-  - 37|🇫🇷FR-45.158.171.146-0775
-  - 37|🇬🇧GB-212.102.53.79-0480
-  - 37|🇳🇱NL-89.23.103.125-5705
-  - 37|🇳🇱NL-193.29.139.189-0492
-  - 37|🇬🇧GB-212.102.53.196-0474
-  - 37|AT-95.164.36.59-0496
-  - 37|GI-95.164.68.37-5925
-  - 37|🇩🇪DE-146.19.247.183-0594
-  - 37|🇺🇸US-79.110.53.169-0436
-  - 37|SE-46.246.98.155-5717
-  - 37|CH-156.146.62.163-0485
-  - 37|🇬🇧GB-141.98.101.178-0551
-  - 37|🇬🇧GB-141.98.101.182-0566
-  - 37|🇬🇧GB-141.98.101.179-0549
-  - 37|🇬🇧GB-141.98.101.180-0520
-  - 37|EE-147.45.60.33-0582
-  - 55|Mexico
-  - 37|🇩🇪DE-193.108.119.230-0557
-  - 55|Ireland-dtgU
-  - 37|🇵🇱PL-45.144.48.63-5357
-  - 37|🇷🇺RU-45.151.62.54-5702
-  - 55|London-Jlsf
-  - 55|Amsterdam-OstV
-  - 55|Amsterdam-84qp
-  - 55|London-IQrv
-  - 55|Paris
-  - 37|SE-94.228.165.178-5714
+  - 37|🇺🇸US-34.233.201.214-0408
+  - 37|🇬🇧GB-62.100.205.48-0439
+  - 37|🇳🇱NL-149.34.244.68-6222
+  - 37|🇳🇱NL-149.34.244.77-0461
+  - 4,11,28,35,37|🇳🇱NL-149.34.244.72-5991
+  - 37|🇳🇱NL-149.34.244.82-0462
+  - 37|🇫🇷FR-185.234.64.35-1367
+  - 37|🇫🇷FR-45.158.171.66-5793
+  - 37|🇳🇱NL-193.29.139.162-0488
+  - 37|🇫🇷FR-45.158.171.141-0506
+  - 37|🇳🇱NL-193.29.139.179-5672
+  - 37|🇳🇱NL-193.29.139.133-6248
+  - 37|🇳🇱NL-193.29.139.227-6198
+  - 37|LT-45.87.175.181-0342
+  - 37|MD-103.106.1.92-5538
+  - 37|🇫🇷FR-45.158.171.110-5662
+  - 37|🇳🇱NL-193.29.139.206-0554
+  - 37|LT-45.87.175.192-0512
+  - 37|🇳🇱NL-193.29.139.138-5669
+  - 37|LT-45.87.175.166-5650
+  - 37|LT-45.87.175.164-5657
+  - 37|LT-45.87.175.188-0498
+  - 37|LT-45.87.175.199-0497
+  - 37|🇳🇱NL-193.29.139.164-0470
+  - 37|LT-45.87.175.157-5655
+  - 37|🇫🇷FR-195.154.185.174-0452
+  - 37|🇫🇷FR-195.154.169.198-0493
+  - 37|🇺🇸US-184.170.241.194-0421
+  - 37|CH-84.17.53.160-0458
   - 55|Oregon
-  - 37|SE-62.60.151.134-5645
-  - 55|Amsterdam
-  - 55|London-ymzp
-  - 55|London-5b9F
-  - 55|Frankfurt-YNeH
-  - 55|London
-  - 55|Amsterdam-R6Gv
+  - 37|🇵🇱PL-217.30.10.70-9627
+  - 55|Paris
+  - 55|Paris-yzzu
+  - 37|🇬🇧GB-146.70.61.18-0455
+  - 55|Mexico
+  - 4,11,28,35|🇵🇱-tQaK
+  - 55|Ireland-P2zM
+  - 0,5,29|🇸🇬-34kC
+  - 0,5,29,38|🇯🇵1
+  - 37|🇬🇧GB-161.35.34.48-0445
+  - 55|London-qwvm
+  - 55|Amsterdam-ocPG
+  - 37|🇩🇪DE-165.22.74.230-6292
+  - 55|London-lDmN
+  - 55|Amsterdam-oedY
+  - 55|Frankfurt-vn8u
+  - 55|London-pp7d
   - 55|Bergamo
-  - 37|🇵🇱PL-45.144.48.63-0584
-  - 37|🇯🇵JP-149.22.87.240-0502
-  - 38|🇯🇵3
-  - 37|RS-194.71.126.31-0487
-  - 38|🇫🇷1
-  - 37|🇯🇵JP-149.22.87.204-0499
-  - 55|Paris-Orvc
+  - 4,11,28,35|🇮🇸
+  - 4,11,28,35|🇸🇬-WUux
+  - 4,11,28,35|🇸🇬-zcIN
+  - 55|Stockholm-GW62
+  - 55|Stockholm-12NL
   - 55|Prague
-  - 37|🇯🇵JP-149.22.87.241-0505
-  - 55|Stockholm-qJXF
-  - 55|London-2KPt
-  - 55|Frankfurt
-  - 55|Frankfurt-hi3Q
-  - 55|Stockholm-SIYE
-  - 55|Riga
-  - 55|Sao
+  - 55|Frankfurt-hvha
   - 55|Moscow
-  - 37|AE-40.172.178.194-0579
-  - 37|🇯🇵JP-52.197.171.218-5933
+  - 4,11,28,35|🇰🇷-B6Mj
+  - 4,11,28,35,37|🇰🇷KR-43.201.102.200-5989
+  - 55|Tokyo-6HYT
+  - 55|Tokyo-PiWc
+  - 55|Sao
+  - 55|Tokyo-yUSN
+  - 55|Tokyo-Nk81
   - 55|Saint
-  - 37|MD-45.142.214.123-5946
-  - 38|🇸🇬4
-  - 37|🇰🇷KR-43.203.206.63-0585
-  - 38|🇸🇬3
-  - 38|🇰🇷1
+  - 4,11,28,35|🇰🇷-t6ZA
+  - 55|Singapore-j022
   - 55|Madrid
-  - 37|SK-156.146.40.194-0494
-  - 37|🇭🇰HK-141.98.234.93-5703
-  - 55|Tokyo-Ntbs
-  - 55|Tokyo
-  - 37|BH-157.241.22.213-0580
-  - 55|Tokyo-rhNz
-  - 55|Tokyo-b9N7
-  - 55|Tokyo-c9Lz
-  - 37|🇸🇬SG-68.183.227.45-0526
-  - 37|🇫🇷FR-51.15.27.48-0490
-  - 37|🇸🇬SG-68.183.227.236-0530
-  - 37|🇸🇬SG-68.183.227.4-0529
-  - 37|🇰🇷KR-43.202.96.177-0517
-  - 55|Mumbai-9o72
-  - 37|🇸🇬SG-128.199.172.224-0532
-  - 55|Mumbai-acZ4
+  - 4,11,28,35|🇵🇱-qFJn
+  - 55|Singapore-maQ9
+  - 55|Singapore-YhVx
+  - 4,11,28,35|🇸🇬-jDiK
+  - 55|Singapore-E24s
   url: https://i.ytimg.com/generate_204
   interval: 300
   tolerance: 50
@@ -858,211 +851,211 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 37|🇺🇸US-38.107.226.146-0575
-  - 37|🇺🇸US-194.116.173.21-1290
-  - 37|🇨🇦CA-142.4.216.225-0547
-  - 55|Virginia
-  - 55|Manassas-AdOg
-  - 55|Virginia-88GZ
-  - 55|Manassas-YhqT
+  - 37|🇺🇸US-156.146.38.167-0414
+  - 37|🇺🇸US-156.146.38.168-0413
+  - 37|🇺🇸US-156.146.38.169-0411
+  - 37|🇺🇸US-156.146.38.170-0412
+  - 37|🇺🇸US-37.19.198.243-0410
+  - 37|🇺🇸US-37.19.198.236-0415
+  - 37|🇺🇸US-37.19.198.160-0420
+  - 37|🇺🇸US-92.118.112.111-0590
+  - 37|🇺🇸US-37.19.198.244-0416
+  - 4,11,28,35|🇺🇸-OQNo
+  - 37|🇺🇸US-64.74.163.130-0433
+  - 37|🇺🇸US-212.102.47.132-0425
+  - 37|🇺🇸US-212.102.47.131-0423
+  - 37|🇺🇸US-212.102.47.130-0422
+  - 37|🇺🇸US-194.5.215.59-0419
+  - 55|Manassas-JE6R
+  - 37|🇨🇦CA-149.22.95.183-0427
+  - 37|🇺🇸US-173.244.56.6-0424
+  - 37|🇨🇦CA-79.127.233.170-0432
+  - 37|🇺🇸US-154.3.8.151-5795
+  - 37|🇺🇸US-107.155.57.51-0431
+  - 4,11,28,35|🇺🇸
   - 55|Manassas
-  - 37|RELAY-104.21.3.219-0576 | 2.72...
-  - 37|🇺🇸US-104.207.155.64-0444
+  - 37,38|🇺🇸3
+  - 37|🇺🇸US-23.251.121.242-0426
   - 55|New
-  - 37|🇺🇸US-207.246.101.50-0451
-  - 37|🇺🇸US-172.232.171.192-0443
-  - 37|🇨🇦CA-142.4.216.225-0535
-  - 37|🇺🇸US-172.233.128.126-0442
   - 55|Toronto
-  - 37|🇳🇱NL-109.201.152.181-0447
   - 55|Ohio
-  - 37|MD-86.104.74.243-5701
-  - 37|🇳🇱NL-213.109.147.242-0483
-  - 37|🇬🇧GB-212.102.53.198-0476
-  - 37|🇫🇷FR-45.158.171.132-5663
-  - 37|🇫🇷FR-45.158.171.146-0775
-  - 37|🇬🇧GB-212.102.53.79-0480
-  - 37|🇳🇱NL-89.23.103.125-5705
-  - 37|🇳🇱NL-193.29.139.189-0492
-  - 37|🇬🇧GB-212.102.53.196-0474
-  - 37|AT-95.164.36.59-0496
-  - 37|GI-95.164.68.37-5925
-  - 37|🇩🇪DE-146.19.247.183-0594
-  - 37|🇺🇸US-79.110.53.169-0436
-  - 37|SE-46.246.98.155-5717
-  - 37|CH-156.146.62.163-0485
-  - 37|🇬🇧GB-141.98.101.178-0551
-  - 37|🇬🇧GB-141.98.101.182-0566
-  - 37|🇬🇧GB-141.98.101.179-0549
-  - 37|🇬🇧GB-141.98.101.180-0520
-  - 37|EE-147.45.60.33-0582
-  - 55|Mexico
-  - 37|🇩🇪DE-193.108.119.230-0557
-  - 55|Ireland-dtgU
-  - 37|🇵🇱PL-45.144.48.63-5357
-  - 37|🇷🇺RU-45.151.62.54-5702
-  - 55|London-Jlsf
-  - 55|Amsterdam-OstV
-  - 55|Amsterdam-84qp
-  - 55|London-IQrv
-  - 55|Paris
-  - 37|SE-94.228.165.178-5714
+  - 37|🇺🇸US-34.233.201.214-0408
+  - 37|🇬🇧GB-62.100.205.48-0439
+  - 37|🇳🇱NL-149.34.244.68-6222
+  - 37|🇳🇱NL-149.34.244.77-0461
+  - 4,11,28,35,37|🇳🇱NL-149.34.244.72-5991
+  - 37|🇳🇱NL-149.34.244.82-0462
+  - 37|🇫🇷FR-185.234.64.35-1367
+  - 37|🇫🇷FR-45.158.171.66-5793
+  - 37|🇳🇱NL-193.29.139.162-0488
+  - 37|🇫🇷FR-45.158.171.141-0506
+  - 37|🇳🇱NL-193.29.139.179-5672
+  - 37|🇳🇱NL-193.29.139.133-6248
+  - 37|🇳🇱NL-193.29.139.227-6198
+  - 37|LT-45.87.175.181-0342
+  - 37|MD-103.106.1.92-5538
+  - 37|🇫🇷FR-45.158.171.110-5662
+  - 37|🇳🇱NL-193.29.139.206-0554
+  - 37|LT-45.87.175.192-0512
+  - 37|🇳🇱NL-193.29.139.138-5669
+  - 37|LT-45.87.175.166-5650
+  - 37|LT-45.87.175.164-5657
+  - 37|LT-45.87.175.188-0498
+  - 37|LT-45.87.175.199-0497
+  - 37|🇳🇱NL-193.29.139.164-0470
+  - 37|LT-45.87.175.157-5655
+  - 37|🇫🇷FR-195.154.185.174-0452
+  - 37|🇫🇷FR-195.154.169.198-0493
+  - 37|🇺🇸US-184.170.241.194-0421
+  - 37|CH-84.17.53.160-0458
   - 55|Oregon
-  - 37|SE-62.60.151.134-5645
-  - 55|Amsterdam
-  - 55|London-ymzp
-  - 55|London-5b9F
-  - 55|Frankfurt-YNeH
-  - 55|London
-  - 55|Amsterdam-R6Gv
+  - 37|🇵🇱PL-217.30.10.70-9627
+  - 55|Paris
+  - 55|Paris-yzzu
+  - 37|🇬🇧GB-146.70.61.18-0455
+  - 55|Mexico
+  - 4,11,28,35|🇵🇱-tQaK
+  - 55|Ireland-P2zM
+  - 0,5,29|🇸🇬-34kC
+  - 0,5,29,38|🇯🇵1
+  - 37|🇬🇧GB-161.35.34.48-0445
+  - 55|London-qwvm
+  - 55|Amsterdam-ocPG
+  - 37|🇩🇪DE-165.22.74.230-6292
+  - 55|London-lDmN
+  - 55|Amsterdam-oedY
+  - 55|Frankfurt-vn8u
+  - 55|London-pp7d
   - 55|Bergamo
-  - 37|🇵🇱PL-45.144.48.63-0584
-  - 37|🇯🇵JP-149.22.87.240-0502
-  - 38|🇯🇵3
-  - 37|RS-194.71.126.31-0487
-  - 38|🇫🇷1
-  - 37|🇯🇵JP-149.22.87.204-0499
-  - 55|Paris-Orvc
+  - 4,11,28,35|🇮🇸
+  - 4,11,28,35|🇸🇬-WUux
+  - 4,11,28,35|🇸🇬-zcIN
+  - 55|Stockholm-GW62
+  - 55|Stockholm-12NL
   - 55|Prague
-  - 37|🇯🇵JP-149.22.87.241-0505
-  - 55|Stockholm-qJXF
-  - 55|London-2KPt
-  - 55|Frankfurt
-  - 55|Frankfurt-hi3Q
-  - 55|Stockholm-SIYE
-  - 55|Riga
-  - 55|Sao
+  - 55|Frankfurt-hvha
   - 55|Moscow
-  - 37|AE-40.172.178.194-0579
-  - 37|🇯🇵JP-52.197.171.218-5933
+  - 4,11,28,35|🇰🇷-B6Mj
+  - 4,11,28,35,37|🇰🇷KR-43.201.102.200-5989
+  - 55|Tokyo-6HYT
+  - 55|Tokyo-PiWc
+  - 55|Sao
+  - 55|Tokyo-yUSN
+  - 55|Tokyo-Nk81
   - 55|Saint
-  - 37|MD-45.142.214.123-5946
-  - 38|🇸🇬4
-  - 37|🇰🇷KR-43.203.206.63-0585
-  - 38|🇸🇬3
-  - 38|🇰🇷1
+  - 4,11,28,35|🇰🇷-t6ZA
+  - 55|Singapore-j022
   - 55|Madrid
-  - 37|SK-156.146.40.194-0494
-  - 37|🇭🇰HK-141.98.234.93-5703
-  - 55|Tokyo-Ntbs
-  - 55|Tokyo
-  - 37|BH-157.241.22.213-0580
-  - 55|Tokyo-rhNz
-  - 55|Tokyo-b9N7
-  - 55|Tokyo-c9Lz
-  - 37|🇸🇬SG-68.183.227.45-0526
-  - 37|🇫🇷FR-51.15.27.48-0490
-  - 37|🇸🇬SG-68.183.227.236-0530
-  - 37|🇸🇬SG-68.183.227.4-0529
-  - 37|🇰🇷KR-43.202.96.177-0517
-  - 55|Mumbai-9o72
-  - 37|🇸🇬SG-128.199.172.224-0532
-  - 55|Mumbai-acZ4
+  - 4,11,28,35|🇵🇱-qFJn
+  - 55|Singapore-maQ9
+  - 55|Singapore-YhVx
+  - 4,11,28,35|🇸🇬-jDiK
+  - 55|Singapore-E24s
   url: https://i.ytimg.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 37|🇺🇸US-38.107.226.146-0575
-  - 37|🇺🇸US-194.116.173.21-1290
-  - 37|🇨🇦CA-142.4.216.225-0547
-  - 55|Virginia
-  - 55|Manassas-AdOg
-  - 55|Virginia-88GZ
-  - 55|Manassas-YhqT
+  - 37|🇺🇸US-156.146.38.167-0414
+  - 37|🇺🇸US-156.146.38.168-0413
+  - 37|🇺🇸US-156.146.38.169-0411
+  - 37|🇺🇸US-156.146.38.170-0412
+  - 37|🇺🇸US-37.19.198.243-0410
+  - 37|🇺🇸US-37.19.198.236-0415
+  - 37|🇺🇸US-37.19.198.160-0420
+  - 37|🇺🇸US-92.118.112.111-0590
+  - 37|🇺🇸US-37.19.198.244-0416
+  - 4,11,28,35|🇺🇸-OQNo
+  - 37|🇺🇸US-64.74.163.130-0433
+  - 37|🇺🇸US-212.102.47.132-0425
+  - 37|🇺🇸US-212.102.47.131-0423
+  - 37|🇺🇸US-212.102.47.130-0422
+  - 37|🇺🇸US-194.5.215.59-0419
+  - 55|Manassas-JE6R
+  - 37|🇨🇦CA-149.22.95.183-0427
+  - 37|🇺🇸US-173.244.56.6-0424
+  - 37|🇨🇦CA-79.127.233.170-0432
+  - 37|🇺🇸US-154.3.8.151-5795
+  - 37|🇺🇸US-107.155.57.51-0431
+  - 4,11,28,35|🇺🇸
   - 55|Manassas
-  - 37|RELAY-104.21.3.219-0576 | 2.72...
-  - 37|🇺🇸US-104.207.155.64-0444
+  - 37,38|🇺🇸3
+  - 37|🇺🇸US-23.251.121.242-0426
   - 55|New
-  - 37|🇺🇸US-207.246.101.50-0451
-  - 37|🇺🇸US-172.232.171.192-0443
-  - 37|🇨🇦CA-142.4.216.225-0535
-  - 37|🇺🇸US-172.233.128.126-0442
   - 55|Toronto
-  - 37|🇳🇱NL-109.201.152.181-0447
   - 55|Ohio
-  - 37|MD-86.104.74.243-5701
-  - 37|🇳🇱NL-213.109.147.242-0483
-  - 37|🇬🇧GB-212.102.53.198-0476
-  - 37|🇫🇷FR-45.158.171.132-5663
-  - 37|🇫🇷FR-45.158.171.146-0775
-  - 37|🇬🇧GB-212.102.53.79-0480
-  - 37|🇳🇱NL-89.23.103.125-5705
-  - 37|🇳🇱NL-193.29.139.189-0492
-  - 37|🇬🇧GB-212.102.53.196-0474
-  - 37|AT-95.164.36.59-0496
-  - 37|GI-95.164.68.37-5925
-  - 37|🇩🇪DE-146.19.247.183-0594
-  - 37|🇺🇸US-79.110.53.169-0436
-  - 37|SE-46.246.98.155-5717
-  - 37|CH-156.146.62.163-0485
-  - 37|🇬🇧GB-141.98.101.178-0551
-  - 37|🇬🇧GB-141.98.101.182-0566
-  - 37|🇬🇧GB-141.98.101.179-0549
-  - 37|🇬🇧GB-141.98.101.180-0520
-  - 37|EE-147.45.60.33-0582
-  - 55|Mexico
-  - 37|🇩🇪DE-193.108.119.230-0557
-  - 55|Ireland-dtgU
-  - 37|🇵🇱PL-45.144.48.63-5357
-  - 37|🇷🇺RU-45.151.62.54-5702
-  - 55|London-Jlsf
-  - 55|Amsterdam-OstV
-  - 55|Amsterdam-84qp
-  - 55|London-IQrv
-  - 55|Paris
-  - 37|SE-94.228.165.178-5714
+  - 37|🇺🇸US-34.233.201.214-0408
+  - 37|🇬🇧GB-62.100.205.48-0439
+  - 37|🇳🇱NL-149.34.244.68-6222
+  - 37|🇳🇱NL-149.34.244.77-0461
+  - 4,11,28,35,37|🇳🇱NL-149.34.244.72-5991
+  - 37|🇳🇱NL-149.34.244.82-0462
+  - 37|🇫🇷FR-185.234.64.35-1367
+  - 37|🇫🇷FR-45.158.171.66-5793
+  - 37|🇳🇱NL-193.29.139.162-0488
+  - 37|🇫🇷FR-45.158.171.141-0506
+  - 37|🇳🇱NL-193.29.139.179-5672
+  - 37|🇳🇱NL-193.29.139.133-6248
+  - 37|🇳🇱NL-193.29.139.227-6198
+  - 37|LT-45.87.175.181-0342
+  - 37|MD-103.106.1.92-5538
+  - 37|🇫🇷FR-45.158.171.110-5662
+  - 37|🇳🇱NL-193.29.139.206-0554
+  - 37|LT-45.87.175.192-0512
+  - 37|🇳🇱NL-193.29.139.138-5669
+  - 37|LT-45.87.175.166-5650
+  - 37|LT-45.87.175.164-5657
+  - 37|LT-45.87.175.188-0498
+  - 37|LT-45.87.175.199-0497
+  - 37|🇳🇱NL-193.29.139.164-0470
+  - 37|LT-45.87.175.157-5655
+  - 37|🇫🇷FR-195.154.185.174-0452
+  - 37|🇫🇷FR-195.154.169.198-0493
+  - 37|🇺🇸US-184.170.241.194-0421
+  - 37|CH-84.17.53.160-0458
   - 55|Oregon
-  - 37|SE-62.60.151.134-5645
-  - 55|Amsterdam
-  - 55|London-ymzp
-  - 55|London-5b9F
-  - 55|Frankfurt-YNeH
-  - 55|London
-  - 55|Amsterdam-R6Gv
+  - 37|🇵🇱PL-217.30.10.70-9627
+  - 55|Paris
+  - 55|Paris-yzzu
+  - 37|🇬🇧GB-146.70.61.18-0455
+  - 55|Mexico
+  - 4,11,28,35|🇵🇱-tQaK
+  - 55|Ireland-P2zM
+  - 0,5,29|🇸🇬-34kC
+  - 0,5,29,38|🇯🇵1
+  - 37|🇬🇧GB-161.35.34.48-0445
+  - 55|London-qwvm
+  - 55|Amsterdam-ocPG
+  - 37|🇩🇪DE-165.22.74.230-6292
+  - 55|London-lDmN
+  - 55|Amsterdam-oedY
+  - 55|Frankfurt-vn8u
+  - 55|London-pp7d
   - 55|Bergamo
-  - 37|🇵🇱PL-45.144.48.63-0584
-  - 37|🇯🇵JP-149.22.87.240-0502
-  - 38|🇯🇵3
-  - 37|RS-194.71.126.31-0487
-  - 38|🇫🇷1
-  - 37|🇯🇵JP-149.22.87.204-0499
-  - 55|Paris-Orvc
+  - 4,11,28,35|🇮🇸
+  - 4,11,28,35|🇸🇬-WUux
+  - 4,11,28,35|🇸🇬-zcIN
+  - 55|Stockholm-GW62
+  - 55|Stockholm-12NL
   - 55|Prague
-  - 37|🇯🇵JP-149.22.87.241-0505
-  - 55|Stockholm-qJXF
-  - 55|London-2KPt
-  - 55|Frankfurt
-  - 55|Frankfurt-hi3Q
-  - 55|Stockholm-SIYE
-  - 55|Riga
-  - 55|Sao
+  - 55|Frankfurt-hvha
   - 55|Moscow
-  - 37|AE-40.172.178.194-0579
-  - 37|🇯🇵JP-52.197.171.218-5933
+  - 4,11,28,35|🇰🇷-B6Mj
+  - 4,11,28,35,37|🇰🇷KR-43.201.102.200-5989
+  - 55|Tokyo-6HYT
+  - 55|Tokyo-PiWc
+  - 55|Sao
+  - 55|Tokyo-yUSN
+  - 55|Tokyo-Nk81
   - 55|Saint
-  - 37|MD-45.142.214.123-5946
-  - 38|🇸🇬4
-  - 37|🇰🇷KR-43.203.206.63-0585
-  - 38|🇸🇬3
-  - 38|🇰🇷1
+  - 4,11,28,35|🇰🇷-t6ZA
+  - 55|Singapore-j022
   - 55|Madrid
-  - 37|SK-156.146.40.194-0494
-  - 37|🇭🇰HK-141.98.234.93-5703
-  - 55|Tokyo-Ntbs
-  - 55|Tokyo
-  - 37|BH-157.241.22.213-0580
-  - 55|Tokyo-rhNz
-  - 55|Tokyo-b9N7
-  - 55|Tokyo-c9Lz
-  - 37|🇸🇬SG-68.183.227.45-0526
-  - 37|🇫🇷FR-51.15.27.48-0490
-  - 37|🇸🇬SG-68.183.227.236-0530
-  - 37|🇸🇬SG-68.183.227.4-0529
-  - 37|🇰🇷KR-43.202.96.177-0517
-  - 55|Mumbai-9o72
-  - 37|🇸🇬SG-128.199.172.224-0532
-  - 55|Mumbai-acZ4
+  - 4,11,28,35|🇵🇱-qFJn
+  - 55|Singapore-maQ9
+  - 55|Singapore-YhVx
+  - 4,11,28,35|🇸🇬-jDiK
+  - 55|Singapore-E24s
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
