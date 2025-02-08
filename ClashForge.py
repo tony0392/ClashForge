@@ -2337,11 +2337,9 @@ if __name__ == '__main__':
         "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_SG.yml|links",
         "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_CA.yml|links",
         "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_DE.yml|links",
-        "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_EE.yml|links",
         "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_FR.yml|links",
         "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_GB.yml|links",
         "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_RU.yml|links",
-        "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_SE.yml|links",
         "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_SG.yml|links",
         "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_TW.yml|links"
     ]
