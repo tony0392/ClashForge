@@ -136,17 +136,6 @@ proxies:
   sni: modest-bulldog.goat627.mom
   skip-cert-verify: false
   udp: true
-- name: 🇭🇰 香港-1C
-  type: vmess
-  server: xg.dashuai.cyou
-  port: 19901
-  uuid: 21106a38-9b75-4573-9327-738709238444
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  sni: ''
-  ws-opts: {}
 - name: 🏁RELAY-172.67.153.156-001
   server: ovhwuxian.pai50288.uk
   port: 8443
@@ -185,26 +174,6 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: oXGp1+ihlfKg826H
-- name: 🇺🇸US-3.148.56.233-032
-  server: 3.148.56.233
-  port: 22222
-  type: trojan
-  password: telegram-id-directvpn
-  sni: trojan.burgerip.co.uk
-  skip-cert-verify: true
-- name: 🇺🇸US-18.189.160.76-049
-  server: 18.189.160.76
-  port: 22222
-  type: trojan
-  password: telegram-id-directvpn
-  sni: trojan.burgerip.co.uk
-  skip-cert-verify: true
-- name: 🇸🇬SG-13.229.229.102-064
-  server: 13.229.229.102
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: 🇸🇬SG-13.250.99.8-067
   server: 13.250.99.8
   port: 443
@@ -217,18 +186,6 @@ proxies:
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: YTNjNDY5
-- name: 🇷🇺_RU_俄罗斯_4
-  type: ss
-  server: 80.242.56.218
-  port: 50042
-  cipher: chacha20-ietf-poly1305
-  password: W2ntIaIjyoh6bVFlXvQrYs
-- name: 🇺🇸_US_美国->🇮🇪_IE_爱尔兰_1
-  type: ss
-  server: 34.217.145.61
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: 🇺🇸_US_美国_6
   type: ss
   server: 184.170.241.194
@@ -247,28 +204,22 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 🇺🇸US-3.148.56.233-032
-  - 🇺🇸US-18.189.160.76-049
-  - 🏁RELAY-172.67.153.156-001
   - 🇺🇸_US_美国_6
-  - 🇩🇪DE-185.177.229.245-009
-  - 🇺🇦_UA_乌克兰
-  - 🇺🇸_US_美国->🇮🇪_IE_爱尔兰_1
-  - 🇺🇸US-204.136.10.115-003
-  - Amsterdam  24
-  - 🇷🇺_RU_俄罗斯_4
-  - CDN优选-5
+  - CDN优选-8
+  - 🏁RELAY-172.67.153.156-001
+  - CDN优选-4
   - CDN优选-2
   - CDN优选-1
+  - CDN优选-5
   - CDN优选-6
-  - CDN优选-8
-  - 🏁RELAY-104.16.231.132-008
-  - CDN优选-3
-  - CDN优选-4
-  - 🇸🇬SG-13.229.229.102-064
   - CDN优选-7
+  - 🏁RELAY-104.16.231.132-008
+  - 🇺🇦_UA_乌克兰
+  - 🇩🇪DE-185.177.229.245-009
   - 🇸🇬SG-13.250.99.8-067
-  - 🇭🇰 香港-1C
+  - 🇺🇸US-204.136.10.115-003
+  - CDN优选-3
+  - Amsterdam  24
   url: https://i.ytimg.com/generate_204
   interval: 300
   tolerance: 50
@@ -276,55 +227,43 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 🇺🇸US-3.148.56.233-032
-  - 🇺🇸US-18.189.160.76-049
-  - 🏁RELAY-172.67.153.156-001
   - 🇺🇸_US_美国_6
-  - 🇩🇪DE-185.177.229.245-009
-  - 🇺🇦_UA_乌克兰
-  - 🇺🇸_US_美国->🇮🇪_IE_爱尔兰_1
-  - 🇺🇸US-204.136.10.115-003
-  - Amsterdam  24
-  - 🇷🇺_RU_俄罗斯_4
-  - CDN优选-5
+  - CDN优选-8
+  - 🏁RELAY-172.67.153.156-001
+  - CDN优选-4
   - CDN优选-2
   - CDN优选-1
+  - CDN优选-5
   - CDN优选-6
-  - CDN优选-8
-  - 🏁RELAY-104.16.231.132-008
-  - CDN优选-3
-  - CDN优选-4
-  - 🇸🇬SG-13.229.229.102-064
   - CDN优选-7
+  - 🏁RELAY-104.16.231.132-008
+  - 🇺🇦_UA_乌克兰
+  - 🇩🇪DE-185.177.229.245-009
   - 🇸🇬SG-13.250.99.8-067
-  - 🇭🇰 香港-1C
+  - 🇺🇸US-204.136.10.115-003
+  - CDN优选-3
+  - Amsterdam  24
   url: https://i.ytimg.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 🇺🇸US-3.148.56.233-032
-  - 🇺🇸US-18.189.160.76-049
-  - 🏁RELAY-172.67.153.156-001
   - 🇺🇸_US_美国_6
-  - 🇩🇪DE-185.177.229.245-009
-  - 🇺🇦_UA_乌克兰
-  - 🇺🇸_US_美国->🇮🇪_IE_爱尔兰_1
-  - 🇺🇸US-204.136.10.115-003
-  - Amsterdam  24
-  - 🇷🇺_RU_俄罗斯_4
-  - CDN优选-5
+  - CDN优选-8
+  - 🏁RELAY-172.67.153.156-001
+  - CDN优选-4
   - CDN优选-2
   - CDN优选-1
+  - CDN优选-5
   - CDN优选-6
-  - CDN优选-8
-  - 🏁RELAY-104.16.231.132-008
-  - CDN优选-3
-  - CDN优选-4
-  - 🇸🇬SG-13.229.229.102-064
   - CDN优选-7
+  - 🏁RELAY-104.16.231.132-008
+  - 🇺🇦_UA_乌克兰
+  - 🇩🇪DE-185.177.229.245-009
   - 🇸🇬SG-13.250.99.8-067
-  - 🇭🇰 香港-1C
+  - 🇺🇸US-204.136.10.115-003
+  - CDN优选-3
+  - Amsterdam  24
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
