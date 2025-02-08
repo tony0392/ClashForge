@@ -2331,6 +2331,6 @@ def work(links,check=False,allowed_types=[],only_check=False):
 
 if __name__ == '__main__':
     links = [
-        "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/list_raw.txt|ss"
+        "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/list_raw.txt|links"
     ]
     work(links, check=True, only_check=False, allowed_types=["ss","vmess","trojan"])
