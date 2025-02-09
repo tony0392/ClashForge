@@ -32,6 +32,110 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 124|🇯🇵1
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  port: 443
+  server: japan.keenvpn.me
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 124|🇯🇵2
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  port: 443
+  server: japan-2.keenvpn.me
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 124|🇯🇵3
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  port: 443
+  server: japan-3.keenvpn.me
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 124|🇯🇵4
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  port: 443
+  server: japan-4.keenvpn.me
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 124|🇯🇵6
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  port: 443
+  server: japan-6.keenvpn.me
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 124|🇯🇵7
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  port: 443
+  server: japan-7.keenvpn.me
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 13,18,42,107,108,141,142,152|🇰🇷 13|🇰🇷 韩国特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 13.212.92.41
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 114|🇸🇬_SG_新加坡
+  password: amazonskr05
+  port: 443
+  server: 13.250.47.75
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 124|🇸🇬2
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  port: 443
+  server: singapore-2.keenvpn.me
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 124|🇸🇬3
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  port: 443
+  server: singapore-3.keenvpn.me
+  type: ss
+  udp: true
+- name: 132|新加坡[02]
+  password: 7e7331ba-5095-405a-b301-c2a8e75c7d58
+  port: 443
+  server: pop.09d21837-9b89-4490-92bf-eabf449e3321.heima360.cc
+  skip-cert-verify: false
+  type: trojan
+- cipher: aes-256-cfb
+  name: 44|@MxlShare 美国 | USA 2
+  password: amazonskr05
+  port: 443
+  server: 34.213.217.245
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇦CA
+  name: 47,55,68,78,126|🇨🇦CA-142.4.216.225-0493 | 11.9...
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: ca225.vpnbook.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 47,55,68,126|🇨🇦CA-142.4.216.225-0502 | 7.89...
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  type: ss
+- cipher: aes-128-gcm
+  name: 47,55,126|🇨🇦CA-149.22.95.183-0378 | 24.6...
+  password: shadowsocks
+  port: 443
+  server: 149.22.95.183
+  type: ss
 - cipher: aes-128-gcm
   country: 🇸 US
   name: 47,55,68,126|CH-156.146.62.161-0470 | 19.74...
@@ -96,10 +200,19 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇱🇹 LT
-  name: 45,55,68,126,150|SS-立陶宛>荷兰-NF解锁荷兰自制剧-ChatGPT-Ti...
+  name: 45,68|🇱🇹 LT_298
   password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
-  server: 45.87.175.192
+  server: beesyar.org
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 45,55,97,126|LT-45.87.175.178-5840 | 50.075...
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 45.87.175.178
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 47,150|SS-国-NF解锁自制剧-ChatGPT-TikTok-Yo...
@@ -120,18 +233,39 @@ proxies:
   server: 80.92.204.106
   type: ss
   udp: true
+- cipher: aes-256-cfb
+  name: 47,68|_12
+  password: BejrQvtu9sqUeNuZ
+  port: 9024
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 47,68|_13
+  password: ZET59LF6DvCC8KVt
+  port: 9005
+  server: 80.92.204.106
+  type: ss
 - name: 55,126|🇩🇪DE-165.22.74.230-0464 | 49.4...
   password: 4732adfa16c6450bbef87264e41332db
   port: 443
   server: nextstepcareer.online
   skip-cert-verify: false
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 55,126|🇩🇪DE-146.19.247.183-0526 | 1.9...
-  password: ZTUxOTQ5
-  port: 8388
-  server: 146.19.247.183
-  type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 62|🇩🇪 德国 | DEU
+  network: ws
+  port: 23451
+  server: frankfurt.faforex.eu.org
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 506063ef-d307-40e5-8846-b1f7006349a6
+  ws-opts:
+    headers:
+      Host: us-new03.daluquan.top
+    path: /itdog?ed=2560
 - cipher: aes-256-cfb
   country: 🇩🇪DE
   name: 68|🇪DE_209
@@ -195,12 +329,6 @@ proxies:
   port: 9006
   server: 80.92.204.106
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 45,150|SS--NF解锁拿大自制剧-ChatGPT-TikTok-Y...
-  password: ODZmZ
-  port: 8388
-  server: ca1.ssocks.wiki
-  type: ss
 - cipher: aes-256-cfb
   name: 47,55,68,126|🇫🇷FR-195.154.169.198-0413 | 45...
   password: f8f7aCzcPKbsF8p3
@@ -222,6 +350,13 @@ proxies:
   port: 8080
   server: 45.158.171.141
   type: ss
+- cipher: aes-256-cfb
+  country: 🇱NL
+  name: 47,55,68,126|🇫🇷FR-51.15.27.48-0418 | 17.326...
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.27.48
+  type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇸US
   name: 55,68,126|🇫🇷FR-45.158.171.66-0415 | 23.4...
@@ -229,6 +364,14 @@ proxies:
   port: 8080
   server: 45.158.171.66
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 55,100,126,150|SS-法国-YouTube-185.231.205.179:...
+  password: OTVlMzcy
+  port: 8388
+  server: 185.231.205.179
+  tfo: false
+  type: ss
+  udp: true
 - cipher: aes-256-gcm
   country: 🇷FR
   name: 68|🇫🇷FR_226
@@ -238,31 +381,10 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 68|🇫🇷FR_227
-  password: PCnnH6SQSnfoS27
-  port: 8091
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
   name: 68|🇫🇷FR_228
   password: cdBIDV42DCwnfIN
   port: 8119
   server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 68|🇫🇷FR_229
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 149.202.82.172
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 68|🇫🇷FR_230
-  password: TEzjfAYq2IjtuoS
-  port: 6679
-  server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
@@ -278,118 +400,6 @@ proxies:
   port: 4444
   server: 217.182.198.219
   type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 68|🇫🇷FR_233
-  password: pKEW8JPByTVTLtM
-  port: 443
-  server: 149.202.82.172
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 68|🇫🇷FR_234
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 145.239.6.202
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 68,78|🇷FR(AzadNet.t.me)_032
-  password: Y6R9pAtvxxzmGC
-  port: 3306
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 68|🇫🇷FR_236
-  password: Y6R9pAtvxxzmGC
-  port: 3389
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 68|🇫🇷FR_238
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 54.36.174.181
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇷FR
-  name: 68|🇫🇷FR_239
-  password: cdBIDV42DCwnfIN
-  port: 8118
-  server: 145.239.6.202
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 68|🇫🇷FR_240
-  password: e4FCWrgpkji3QY
-  port: 9101
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 68,78|🇧GB(AzadNet.t.me)_014
-  password: pKEW8JPByTVTLtM
-  port: 4444
-  server: 145.239.6.202
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 68,78|🇫🇷FR(AzadNet.t.me)_052
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 149.202.82.172
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 68|🇫🇷FR_243
-  password: XKFKl2rULjIp74
-  port: 8008
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 68,78|🇫🇷FR(AzadNet.t.me)_043
-  password: Y6R9pAtvxxzmGC
-  port: 5000
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 68|🇫🇷FR_245
-  password: PCnnH6SQSnfoS27
-  port: 8090
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 68|🇫🇷FR_247
-  password: FoOiGlkAA9yPEGP
-  port: 7306
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 68,78|🇫🇷FR(AzadNet.t.me)_042
-  password: g5MeD6Ft3CWlJId
-  port: 5004
-  server: 149.202.82.172
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 68|🇫🇷FR_249
-  password: XKFKl2rULjIp74
-  port: 8009
-  server: 145.239.6.202
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 68|🇫🇷FR_252
-  password: XKFKl2rULjIp74
-  port: 8009
-  server: 217.182.198.219
-  type: ss
 proxy-groups:
 - name: 节点选择
   type: select
@@ -402,56 +412,56 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 68|🇫🇷FR_234
-  - 68,78|🇧GB(AzadNet.t.me)_014
-  - 68|🇫🇷FR_239
-  - 68|🇫🇷FR_252
-  - 47,150|SS-国-NF解锁自制剧-ChatGPT-TikTok-Yo...
-  - 55,68,126|🇫🇷FR-45.158.171.66-0415 | 23.4...
-  - 68|🇫🇷FR_228
-  - 68,78|🇫🇷FR(AzadNet.t.me)_042
+  - 47,55,126|🇨🇦CA-149.22.95.183-0378 | 24.6...
+  - 44|@MxlShare 美国 | USA 2
+  - 47,55,68,126|🇨🇦CA-142.4.216.225-0502 | 7.89...
   - 68|🇫🇷FR_226
-  - 47,55,68,126|🇫🇷FR-195.154.169.198-0413 | 45...
+  - 47,55,68,78,126|🇨🇦CA-142.4.216.225-0493 | 11.9...
   - 68,78|🇫🇷FR(AzadNet.t.me)_051
-  - 68,78|🇫🇷FR(AzadNet.t.me)_052
-  - 68|🇫🇷FR_230
-  - 47,55,68,126|CH-156.146.62.162-0475 | 19.96...
-  - 47,55,68,126|CH-156.146.62.164-0485 | 18.96...
+  - 68|🇫🇷FR_232
+  - 47,55,68,126|🇫🇷FR-195.154.185.174-0404 | 44...
+  - 68|🇫🇷FR_228
+  - 47,55,68,126|🇫🇷FR-45.158.171.141-0409 | 23....
+  - 55,68,126|🇫🇷FR-45.158.171.66-0415 | 23.4...
   - 47,55,68,126|CH-156.146.62.161-0470 | 19.74...
   - 47,55,68,126|CH-156.146.62.163-0503 | 15.67...
+  - 47,55,68,126|CH-156.146.62.164-0485 | 18.96...
+  - 47,55,68,126|CH-156.146.62.162-0475 | 19.96...
+  - 47,150|SS-国-NF解锁自制剧-ChatGPT-TikTok-Yo...
   - 47,55,126|CH-84.17.53.160-0419 | 23.852M...
-  - 45,55,68,126,150|SS-立陶宛>荷兰-NF解锁荷兰自制剧-ChatGPT-Ti...
-  - 68|🇫🇷FR_249
-  - 68|🇩🇪DE_214
-  - 55,126|🇩🇪DE-146.19.247.183-0526 | 1.9...
-  - 68|🇩🇪DE_217
+  - 47,68|_13
+  - 47,68|_27
+  - 68|🇩🇪DE_213
+  - 13,18,42,107,108,141,142,152|🇰🇷 13|🇰🇷 韩国特殊|@ripaojiedian
+  - 55,100,126,150|SS-法国-YouTube-185.231.205.179:...
   - 68|🇩🇪DE_216
   - 68|🇩🇪DE_211
-  - 47,68|_27
-  - 68|🇫🇷FR_232
-  - 47,55,68,126|🇫🇷FR-45.158.171.141-0409 | 23....
-  - 68,78|🇷FR(AzadNet.t.me)_032
-  - 68,78|🇫🇷FR(AzadNet.t.me)_043
-  - 68|🇫🇷FR_247
-  - 68|🇫🇷FR_229
-  - 68|🇫🇷FR_227
-  - 68|🇫🇷FR_236
-  - 68|🇫🇷FR_240
-  - 68|🇫🇷FR_245
-  - 68|🇫🇷FR_233
-  - 68|🇫🇷FR_243
-  - 47,55,68,126|🇫🇷FR-195.154.185.174-0404 | 44...
   - 68|🇩🇪DE_212
-  - 68|🇩🇪DE_213
-  - 68|🇩🇪DE_215
-  - 17,24,41,53,117|德国 - 兰河畔林堡 - OVH SAS - 1
-  - 68|🇪DE_209
-  - 47|🇩🇪DE-193.108.119.230-0530 | 17...
-  - 68|🇫🇷FR_238
-  - 45,150|SS--NF解锁拿大自制剧-ChatGPT-TikTok-Y...
-  - 17,24,41,47,53,68,113,117,154,155|CA_speednode_0001
+  - 68|🇩🇪DE_214
   - 68|🇪DE_210
+  - 47,55,68,126|🇫🇷FR-51.15.27.48-0418 | 17.326...
+  - 68|🇪DE_209
+  - 114|🇸🇬_SG_新加坡
+  - 47,55,68,126|🇫🇷FR-195.154.169.198-0413 | 45...
+  - 47|🇩🇪DE-193.108.119.230-0530 | 17...
+  - 17,24,41,53,117|德国 - 兰河畔林堡 - OVH SAS - 1
+  - 45,55,97,126|LT-45.87.175.178-5840 | 50.075...
+  - 124|🇯🇵4
+  - 47,68|_12
+  - 68|🇩🇪DE_217
+  - 68|🇩🇪DE_215
+  - 17,24,41,47,53,68,113,117,154,155|CA_speednode_0001
+  - 124|🇯🇵7
+  - 45,68|🇱🇹 LT_298
+  - 124|🇯🇵6
+  - 124|🇯🇵3
+  - 62|🇩🇪 德国 | DEU
   - 55,126|🇩🇪DE-165.22.74.230-0464 | 49.4...
+  - 124|🇯🇵2
+  - 124|🇸🇬2
+  - 132|新加坡[02]
+  - 124|🇯🇵1
+  - 124|🇸🇬3
   url: https://i.ytimg.com/generate_204
   interval: 300
   tolerance: 50
@@ -459,111 +469,111 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 68|🇫🇷FR_234
-  - 68,78|🇧GB(AzadNet.t.me)_014
-  - 68|🇫🇷FR_239
-  - 68|🇫🇷FR_252
-  - 47,150|SS-国-NF解锁自制剧-ChatGPT-TikTok-Yo...
-  - 55,68,126|🇫🇷FR-45.158.171.66-0415 | 23.4...
-  - 68|🇫🇷FR_228
-  - 68,78|🇫🇷FR(AzadNet.t.me)_042
+  - 47,55,126|🇨🇦CA-149.22.95.183-0378 | 24.6...
+  - 44|@MxlShare 美国 | USA 2
+  - 47,55,68,126|🇨🇦CA-142.4.216.225-0502 | 7.89...
   - 68|🇫🇷FR_226
-  - 47,55,68,126|🇫🇷FR-195.154.169.198-0413 | 45...
+  - 47,55,68,78,126|🇨🇦CA-142.4.216.225-0493 | 11.9...
   - 68,78|🇫🇷FR(AzadNet.t.me)_051
-  - 68,78|🇫🇷FR(AzadNet.t.me)_052
-  - 68|🇫🇷FR_230
-  - 47,55,68,126|CH-156.146.62.162-0475 | 19.96...
-  - 47,55,68,126|CH-156.146.62.164-0485 | 18.96...
+  - 68|🇫🇷FR_232
+  - 47,55,68,126|🇫🇷FR-195.154.185.174-0404 | 44...
+  - 68|🇫🇷FR_228
+  - 47,55,68,126|🇫🇷FR-45.158.171.141-0409 | 23....
+  - 55,68,126|🇫🇷FR-45.158.171.66-0415 | 23.4...
   - 47,55,68,126|CH-156.146.62.161-0470 | 19.74...
   - 47,55,68,126|CH-156.146.62.163-0503 | 15.67...
+  - 47,55,68,126|CH-156.146.62.164-0485 | 18.96...
+  - 47,55,68,126|CH-156.146.62.162-0475 | 19.96...
+  - 47,150|SS-国-NF解锁自制剧-ChatGPT-TikTok-Yo...
   - 47,55,126|CH-84.17.53.160-0419 | 23.852M...
-  - 45,55,68,126,150|SS-立陶宛>荷兰-NF解锁荷兰自制剧-ChatGPT-Ti...
-  - 68|🇫🇷FR_249
-  - 68|🇩🇪DE_214
-  - 55,126|🇩🇪DE-146.19.247.183-0526 | 1.9...
-  - 68|🇩🇪DE_217
+  - 47,68|_13
+  - 47,68|_27
+  - 68|🇩🇪DE_213
+  - 13,18,42,107,108,141,142,152|🇰🇷 13|🇰🇷 韩国特殊|@ripaojiedian
+  - 55,100,126,150|SS-法国-YouTube-185.231.205.179:...
   - 68|🇩🇪DE_216
   - 68|🇩🇪DE_211
-  - 47,68|_27
-  - 68|🇫🇷FR_232
-  - 47,55,68,126|🇫🇷FR-45.158.171.141-0409 | 23....
-  - 68,78|🇷FR(AzadNet.t.me)_032
-  - 68,78|🇫🇷FR(AzadNet.t.me)_043
-  - 68|🇫🇷FR_247
-  - 68|🇫🇷FR_229
-  - 68|🇫🇷FR_227
-  - 68|🇫🇷FR_236
-  - 68|🇫🇷FR_240
-  - 68|🇫🇷FR_245
-  - 68|🇫🇷FR_233
-  - 68|🇫🇷FR_243
-  - 47,55,68,126|🇫🇷FR-195.154.185.174-0404 | 44...
   - 68|🇩🇪DE_212
-  - 68|🇩🇪DE_213
-  - 68|🇩🇪DE_215
-  - 17,24,41,53,117|德国 - 兰河畔林堡 - OVH SAS - 1
-  - 68|🇪DE_209
-  - 47|🇩🇪DE-193.108.119.230-0530 | 17...
-  - 68|🇫🇷FR_238
-  - 45,150|SS--NF解锁拿大自制剧-ChatGPT-TikTok-Y...
-  - 17,24,41,47,53,68,113,117,154,155|CA_speednode_0001
+  - 68|🇩🇪DE_214
   - 68|🇪DE_210
+  - 47,55,68,126|🇫🇷FR-51.15.27.48-0418 | 17.326...
+  - 68|🇪DE_209
+  - 114|🇸🇬_SG_新加坡
+  - 47,55,68,126|🇫🇷FR-195.154.169.198-0413 | 45...
+  - 47|🇩🇪DE-193.108.119.230-0530 | 17...
+  - 17,24,41,53,117|德国 - 兰河畔林堡 - OVH SAS - 1
+  - 45,55,97,126|LT-45.87.175.178-5840 | 50.075...
+  - 124|🇯🇵4
+  - 47,68|_12
+  - 68|🇩🇪DE_217
+  - 68|🇩🇪DE_215
+  - 17,24,41,47,53,68,113,117,154,155|CA_speednode_0001
+  - 124|🇯🇵7
+  - 45,68|🇱🇹 LT_298
+  - 124|🇯🇵6
+  - 124|🇯🇵3
+  - 62|🇩🇪 德国 | DEU
   - 55,126|🇩🇪DE-165.22.74.230-0464 | 49.4...
+  - 124|🇯🇵2
+  - 124|🇸🇬2
+  - 132|新加坡[02]
+  - 124|🇯🇵1
+  - 124|🇸🇬3
   url: https://i.ytimg.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 68|🇫🇷FR_234
-  - 68,78|🇧GB(AzadNet.t.me)_014
-  - 68|🇫🇷FR_239
-  - 68|🇫🇷FR_252
-  - 47,150|SS-国-NF解锁自制剧-ChatGPT-TikTok-Yo...
-  - 55,68,126|🇫🇷FR-45.158.171.66-0415 | 23.4...
-  - 68|🇫🇷FR_228
-  - 68,78|🇫🇷FR(AzadNet.t.me)_042
+  - 47,55,126|🇨🇦CA-149.22.95.183-0378 | 24.6...
+  - 44|@MxlShare 美国 | USA 2
+  - 47,55,68,126|🇨🇦CA-142.4.216.225-0502 | 7.89...
   - 68|🇫🇷FR_226
-  - 47,55,68,126|🇫🇷FR-195.154.169.198-0413 | 45...
+  - 47,55,68,78,126|🇨🇦CA-142.4.216.225-0493 | 11.9...
   - 68,78|🇫🇷FR(AzadNet.t.me)_051
-  - 68,78|🇫🇷FR(AzadNet.t.me)_052
-  - 68|🇫🇷FR_230
-  - 47,55,68,126|CH-156.146.62.162-0475 | 19.96...
-  - 47,55,68,126|CH-156.146.62.164-0485 | 18.96...
+  - 68|🇫🇷FR_232
+  - 47,55,68,126|🇫🇷FR-195.154.185.174-0404 | 44...
+  - 68|🇫🇷FR_228
+  - 47,55,68,126|🇫🇷FR-45.158.171.141-0409 | 23....
+  - 55,68,126|🇫🇷FR-45.158.171.66-0415 | 23.4...
   - 47,55,68,126|CH-156.146.62.161-0470 | 19.74...
   - 47,55,68,126|CH-156.146.62.163-0503 | 15.67...
+  - 47,55,68,126|CH-156.146.62.164-0485 | 18.96...
+  - 47,55,68,126|CH-156.146.62.162-0475 | 19.96...
+  - 47,150|SS-国-NF解锁自制剧-ChatGPT-TikTok-Yo...
   - 47,55,126|CH-84.17.53.160-0419 | 23.852M...
-  - 45,55,68,126,150|SS-立陶宛>荷兰-NF解锁荷兰自制剧-ChatGPT-Ti...
-  - 68|🇫🇷FR_249
-  - 68|🇩🇪DE_214
-  - 55,126|🇩🇪DE-146.19.247.183-0526 | 1.9...
-  - 68|🇩🇪DE_217
+  - 47,68|_13
+  - 47,68|_27
+  - 68|🇩🇪DE_213
+  - 13,18,42,107,108,141,142,152|🇰🇷 13|🇰🇷 韩国特殊|@ripaojiedian
+  - 55,100,126,150|SS-法国-YouTube-185.231.205.179:...
   - 68|🇩🇪DE_216
   - 68|🇩🇪DE_211
-  - 47,68|_27
-  - 68|🇫🇷FR_232
-  - 47,55,68,126|🇫🇷FR-45.158.171.141-0409 | 23....
-  - 68,78|🇷FR(AzadNet.t.me)_032
-  - 68,78|🇫🇷FR(AzadNet.t.me)_043
-  - 68|🇫🇷FR_247
-  - 68|🇫🇷FR_229
-  - 68|🇫🇷FR_227
-  - 68|🇫🇷FR_236
-  - 68|🇫🇷FR_240
-  - 68|🇫🇷FR_245
-  - 68|🇫🇷FR_233
-  - 68|🇫🇷FR_243
-  - 47,55,68,126|🇫🇷FR-195.154.185.174-0404 | 44...
   - 68|🇩🇪DE_212
-  - 68|🇩🇪DE_213
-  - 68|🇩🇪DE_215
-  - 17,24,41,53,117|德国 - 兰河畔林堡 - OVH SAS - 1
-  - 68|🇪DE_209
-  - 47|🇩🇪DE-193.108.119.230-0530 | 17...
-  - 68|🇫🇷FR_238
-  - 45,150|SS--NF解锁拿大自制剧-ChatGPT-TikTok-Y...
-  - 17,24,41,47,53,68,113,117,154,155|CA_speednode_0001
+  - 68|🇩🇪DE_214
   - 68|🇪DE_210
+  - 47,55,68,126|🇫🇷FR-51.15.27.48-0418 | 17.326...
+  - 68|🇪DE_209
+  - 114|🇸🇬_SG_新加坡
+  - 47,55,68,126|🇫🇷FR-195.154.169.198-0413 | 45...
+  - 47|🇩🇪DE-193.108.119.230-0530 | 17...
+  - 17,24,41,53,117|德国 - 兰河畔林堡 - OVH SAS - 1
+  - 45,55,97,126|LT-45.87.175.178-5840 | 50.075...
+  - 124|🇯🇵4
+  - 47,68|_12
+  - 68|🇩🇪DE_217
+  - 68|🇩🇪DE_215
+  - 17,24,41,47,53,68,113,117,154,155|CA_speednode_0001
+  - 124|🇯🇵7
+  - 45,68|🇱🇹 LT_298
+  - 124|🇯🇵6
+  - 124|🇯🇵3
+  - 62|🇩🇪 德国 | DEU
   - 55,126|🇩🇪DE-165.22.74.230-0464 | 49.4...
+  - 124|🇯🇵2
+  - 124|🇸🇬2
+  - 132|新加坡[02]
+  - 124|🇯🇵1
+  - 124|🇸🇬3
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
