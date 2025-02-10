@@ -34,7 +34,7 @@ dns:
 proxies:
 - client-fingerprint: chrome
   delay: 624
-  name: 0,3,35,42,53,60,61,67,69,73|HK_speednode_0119
+  name: 0,3,42,53,60,61,67,69,73|HK_speednode_0119
   password: 43e5eeacbad3032bfe4c25a2f011b6b7
   port: 443
   server: 104.251.227.182
@@ -138,6 +138,22 @@ proxies:
   server: cn05.closeai.one
   type: ssr
   udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 21,27,56,64|🇭🇰HK-141.98.234.93-5598 | 1.07...
+  password: WfmxKX2FBJRU0Ie9VLIYDL
+  port: 20012
+  server: 141.98.234.93
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 0,3,19,47,60,67,69,73|SG_speednode_0143
+  password: amazonskr05
+  port: 443
+  server: 18.139.221.191
+  tfo: false
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
   name: 19|@MxlShare 日本 | JPN 17
   password: amazonskr05
@@ -160,24 +176,10 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 19|@MxlShare 日本 | JPN 20
-  password: amazonskr05
-  port: 443
-  server: 18.183.142.200
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
   name: 19|@MxlShare 日本 | JPN 21
   password: amazonskr05
   port: 443
   server: 3.112.28.118
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 19|@MxlShare 日本 | JPN 22
-  password: amazonskr05
-  port: 443
-  server: 3.112.5.139
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -234,13 +236,6 @@ proxies:
   port: 443
   server: 149.22.87.241
   type: ss
-- cipher: aes-256-cfb
-  name: 69,73|JP_speednode_0120
-  password: amazonskr05
-  port: 443
-  server: 52.68.141.225
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   h2-opts: {}
@@ -263,6 +258,163 @@ proxies:
   port: 51633
   server: 211.178.105.134
   type: ss
+- cipher: aes-256-cfb
+  delay: 939
+  name: 9,42,53,69,73|KR_speednode_0130
+  password: amazonskr05
+  port: 443
+  server: 3.34.123.239
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  delay: 1167
+  name: 19,53,69,73|KR_speednode_0131
+  password: amazonskr05
+  port: 443
+  server: 3.35.0.140
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 21,56,64|🇰🇷KR-43.202.96.177-0372 | 1.08...
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  port: 443
+  server: south-korea-2.keenvpn.me
+  type: ss
+- cipher: aes-256-cfb
+  delay: 907
+  name: 42,53|韩国 - 首尔特别市 - Amazon Technologi...
+  password: amazonskr05
+  port: 443
+  server: 54.180.158.248
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: 🇰🇷KR
+  delay: 1080
+  name: 53|韩国 - Gwangmyeong - SK Broadban...
+  password: qwerREWQ@@
+  port: 28902
+  server: 218.38.103.150
+  type: ss
+- cipher: aes-256-cfb
+  name: 19|@MxlShare 新加坡 | SGP 19
+  password: amazonskr05
+  port: 443
+  server: 13.212.175.124
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19,69,73|SG_speednode_0134
+  password: amazonskr05
+  port: 443
+  server: 13.212.177.74
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  delay: 2630
+  name: 19,53,69,73|SG_speednode_0135
+  password: amazonskr05
+  port: 443
+  server: 13.212.48.245
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19,23,42,69,73|SG_speednode_0138
+  password: amazonskr05
+  port: 443
+  server: 13.213.40.92
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19|@MxlShare 新加坡 | SGP 25
+  password: amazonskr05
+  port: 443
+  server: 13.250.55.231
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19|@MxlShare 新加坡 | SGP 27
+  password: amazonskr05
+  port: 443
+  server: 18.141.9.206
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19|@MxlShare 新加坡 | SGP 28
+  password: amazonskr05
+  port: 443
+  server: 18.143.103.137
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19|@MxlShare 新加坡 | SGP 29
+  password: amazonskr05
+  port: 443
+  server: 18.143.130.71
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19,69,73|SG_speednode_0141
+  password: amazonskr05
+  port: 443
+  server: 18.143.140.182
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19|@MxlShare 新加坡 | SGP 32
+  password: amazonskr05
+  port: 443
+  server: 47.129.235.184
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19,69,73|SG_speednode_0137
+  password: amazonskr05
+  port: 443
+  server: 47.129.8.91
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19,69,73|SG_speednode_0140
+  password: amazonskr05
+  port: 443
+  server: 54.255.247.242
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 21,56,64|🇸🇬SG-68.183.227.4-0395 | 1.078...
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 68.183.227.4
+  type: ss
+- cipher: rc4-md5
+  name: 21,56,64|🇸🇬SG-68.183.227.45-0407 | 1.07...
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 68.183.227.45
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇬 SG
+  h2-opts: {}
+  http-opts: {}
+  name: 27| SG_339
+  network: ws
+  port: 443
+  server: tls.81.node-for-bigairport.win
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  ws-path: /
+- cipher: aes-256-cfb
+  delay: 2997
+  name: 53,69,73|SG_speednode_0136
+  password: amazonskr05
+  port: 443
+  server: 52.221.234.117
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   country: 🇩🇪DE
@@ -288,219 +440,17 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 21,56,64|🇨🇦CA-142.4.216.225-0460 | 1.16...
+  name: 21,27,56,64|🇨🇦CA-142.4.216.225-0460 | 1.16...
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 21,56,64|🇨🇦CA-142.4.216.225-0467 | 1.54...
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: ca225.vpnbook.com
-  type: ss
-- cipher: aes-128-gcm
-  name: 21,56,64|🇨🇦CA-149.22.95.183-0331 | 33.0...
-  password: shadowsocks
-  port: 443
-  server: 149.22.95.183
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 21,56,64|🇨🇦CA-79.127.233.170-0332 | 37....
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 79.127.233.170
-  type: ss
-- alterId: 0
-  cipher: auto
-  delay: 2502
-  name: 46,53|美国 - 洛杉矶 - HostPapa - 62
-  network: ws
-  port: 2082
-  server: s1.db-link01.top
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-39-195-198.s1.db-link01.top
-    path: /dabai.in104.16.26.37
-- alterId: 0
-  cipher: auto
-  name: 46|加拿大 006
-  network: ws
-  port: 2095
-  server: s5.db-link01.top
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-107-157-212.s5.db-link01.top
-    path: /dabai.in172.67.60.136
-- alterId: 0
-  cipher: auto
-  name: 46|加拿大 011
-  network: ws
-  port: 2082
-  server: s5.cn-db.top
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-219-162-241.s5.cn-db.top
-    path: /dabai.in172.64.23.14
-- alterId: 0
-  cipher: auto
-  name: 46|加拿大 012
-  network: ws
-  port: 80
-  server: s2.db-link01.top
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-55-60-174.s2.db-link01.top
-    path: /dabai.in172.67.60.154
-- alterId: 0
-  cipher: auto
-  name: 46|加拿大 015
-  network: ws
-  port: 8880
-  server: s2.db-link01.top
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-177-17-45.s2.db-link01.top
-    path: /dabai.in172.67.92.156
-- cipher: aes-128-gcm
-  name: 21,56,64|CH-156.146.62.161-0420 | 14.55...
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.161
-  type: ss
-- cipher: aes-128-gcm
-  name: 21,56,64|CH-156.146.62.162-0446 | 16.21...
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.162
-  type: ss
-- cipher: aes-128-gcm
-  name: 21,56,64|CH-156.146.62.163-0421 | 19.99...
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.163
-  type: ss
-- cipher: aes-128-gcm
-  name: 21,56,64|CH-156.146.62.164-0417 | 15.25...
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.164
-  type: ss
-- cipher: aes-256-cfb
-  name: 21,56,64|CH-84.17.53.160-0391 | 32.477M...
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 84.17.53.160
-  type: ss
-- cipher: aes-256-cfb
-  name: 9|🇩🇰 丹麦 - 哥本哈根 - ONEPROVIDER - 1
-  obfs: plain
-  obfs-param: ''
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  protocol: origin
-  protocol-param: ''
-  server: 185.186.79.53
-  type: ssr
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 9,21,50,56,64,72|🇮🇹_IT_意大利
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 37.143.129.230
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 19,72|🇩🇰_DK_丹麦
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.186.79.53
-  type: ss
-  udp: true
-- name: 21,56,64|🇩🇪DE-165.22.74.230-0386 | 32.1...
-  password: 4732adfa16c6450bbef87264e41332db
-  port: 443
-  server: nextstepcareer.online
-  skip-cert-verify: false
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 43|[VMess] 🇩🇪 德国 V2CROSS.COM
-  port: 43763
-  server: 62.146.233.159
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 1ddf3ade-5b8c-420c-84f6-f96979ec3080
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸US
-  delay: 1702
-  h2-opts: {}
-  http-opts: {}
-  name: 53|德国 - 杜塞尔多夫 - Felix Gassan - 1
-  network: ws
-  port: 443
-  server: eu9.998998.best
-  servername: server54-2.998877.best
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 07b7b563-f868-49fb-943a-6425e3dc34d9
-  ws-opts:
-    headers:
-      HOST: server54-2.998877.best
-    path: /edgikmfhnrusb?ed=2560
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  h2-opts: {}
-  http-opts: {}
-  name: 50,70|VMESS-美国>德国-ChatGPT-TikTok-You...
-  network: ws
-  port: 80
-  server: 151.101.194.133
-  servername: telegram-isvvpn.ir
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: ca387597-d79e-48c2-89a7-e2dc66a88a70
-  ws-opts:
-    headers:
-      HOST: telegram-isvvpn.ir
-    path: /racevpn?telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn
-- cipher: chacha20-ietf-poly1305
-  ip-version: dual
-  name: 50,51,52,60|🇳🇱NL-193.29.139.189-142
-  password: cvII85TrW6n0OGyfpHVS1u
+  name: 70|SS->-NF解锁兰自制剧-ChatGPT-YouTube-...
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
-  server: 193.29.139.189
+  server: 45.87.175.58
   type: ss
-  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -513,55 +463,55 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 21,56,64|🇨🇦CA-142.4.216.225-0460 | 1.16...
-  - 21,56,64|🇨🇦CA-142.4.216.225-0467 | 1.54...
-  - 21,56,64|🇨🇦CA-149.22.95.183-0331 | 33.0...
-  - 21,56,64|CH-156.146.62.164-0417 | 15.25...
-  - 21,56,64|CH-156.146.62.161-0420 | 14.55...
-  - 21,56,64|CH-156.146.62.162-0446 | 16.21...
-  - 21,56,64|CH-156.146.62.163-0421 | 19.99...
-  - 50,51,52,60|🇳🇱NL-193.29.139.189-142
-  - 21,56,64|🇨🇦CA-79.127.233.170-0332 | 37....
-  - 21,56,64|CH-84.17.53.160-0391 | 32.477M...
-  - 9,21,50,56,64,72|🇮🇹_IT_意大利
-  - 50,70|VMESS-美国>德国-ChatGPT-TikTok-You...
-  - 21,56,64|🇩🇪DE-165.22.74.230-0386 | 32.1...
+  - 21,27,56,64|🇨🇦CA-142.4.216.225-0460 | 1.16...
+  - 70|SS->-NF解锁兰自制剧-ChatGPT-YouTube-...
+  - 27| SG_339
+  - 21,24,56,64,74|JP_Tokyo_Datacamp Limited2
   - 21,56,64,74|JP_Tokyo_Datacamp Limited1
+  - 19|@MxlShare 日本 | JPN 23
+  - 19|@MxlShare 日本 | JPN 29
   - 21,56,64|🇯🇵JP-149.22.87.204-0363 | 1.19...
   - 19|@MxlShare 日本 | JPN 17
-  - 19|@MxlShare 日本 | JPN 19
-  - 69,73|JP_speednode_0120
-  - 21,24,56,64,74|JP_Tokyo_Datacamp Limited2
-  - 19|@MxlShare 日本 | JPN 23
-  - 19|@MxlShare 日本 | JPN 24
   - 19|@MxlShare 日本 | JPN 26
-  - 19|@MxlShare 日本 | JPN 22
-  - 19|@MxlShare 日本 | JPN 20
-  - 19,53|日本 - 东京 - Amazon.com, Inc. - 1
-  - 19|@MxlShare 日本 | JPN 29
+  - 19|@MxlShare 日本 | JPN 24
   - 19|@MxlShare 日本 | JPN 18
+  - 19,53|日本 - 东京 - Amazon.com, Inc. - 1
   - 19|@MxlShare 日本 | JPN 21
-  - 19,72|🇩🇰_DK_丹麦
-  - 53|德国 - 杜塞尔多夫 - Felix Gassan - 1
-  - 9|🇩🇰 丹麦 - 哥本哈根 - ONEPROVIDER - 1
-  - 46,53|美国 - 洛杉矶 - HostPapa - 62
-  - 46|加拿大 011
+  - 19|@MxlShare 日本 | JPN 19
+  - 21,27,56,64|🇭🇰HK-141.98.234.93-5598 | 1.07...
+  - 19|@MxlShare 新加坡 | SGP 28
+  - 19|@MxlShare 新加坡 | SGP 19
+  - 53,69,73|SG_speednode_0136
+  - 19|@MxlShare 新加坡 | SGP 25
+  - 19|@MxlShare 新加坡 | SGP 29
+  - 19|@MxlShare 新加坡 | SGP 32
+  - 19|@MxlShare 新加坡 | SGP 27
+  - 19,69,73|SG_speednode_0141
   - 69,73|SG_speednode_0139
-  - 46|加拿大 006
+  - 19,69,73|SG_speednode_0140
+  - 0,3,19,47,60,67,69,73|SG_speednode_0143
+  - 19,53,69,73|SG_speednode_0135
+  - 19,69,73|SG_speednode_0134
+  - 19,23,42,69,73|SG_speednode_0138
+  - 42,53|韩国 - 首尔特别市 - Amazon Technologi...
+  - 19,53,69,73|KR_speednode_0131
+  - 19,69,73|SG_speednode_0137
+  - 53|韩国 - Gwangmyeong - SK Broadban...
+  - 19,42,53|中国 - 香港 - Akile LTD - 5
   - 53,60,61|🇩🇪 德国 V2CROSS.COM
-  - 46|加拿大 015
-  - 43|[VMess] 🇩🇪 德国 V2CROSS.COM
   - 70|VMESS-未知>日本-NF解锁日本地区非自制剧-ChatG...
-  - 0,3,35,42,53,60,61,67,69,73|HK_speednode_0119
-  - 19,42,53|中国 - 香港 - Akile LTD - 26
+  - 9,42,53,69,73|KR_speednode_0130
+  - 21,56,64|🇰🇷KR-43.202.96.177-0372 | 1.08...
+  - 0,3,42,53,60,61,67,69,73|HK_speednode_0119
   - 19,42,53|中国 - 香港 - Akile LTD - 17
-  - 19,42,53|中国 - 香港 - Akile LTD - 25
+  - 19,42,53|中国 - 香港 - Akile LTD - 22
   - 19,42,53|中国 - 香港 - Akile LTD - 24
   - 19,42,53|中国 - 香港 - Akile LTD - 21
-  - 46|加拿大 012
+  - 21,56,64|🇸🇬SG-68.183.227.45-0407 | 1.07...
+  - 21,56,64|🇸🇬SG-68.183.227.4-0395 | 1.078...
+  - 19,42,53|中国 - 香港 - Akile LTD - 26
+  - 19,42,53|中国 - 香港 - Akile LTD - 25
   - 19,42,53|中国 - 香港 - Akile LTD - 4
-  - 19,42,53|中国 - 香港 - Akile LTD - 22
-  - 19,42,53|中国 - 香港 - Akile LTD - 5
   - 9|🇰🇷 韩国 - Yongin-si - SK Broadba...
   url: https://i.ytimg.com/generate_204
   interval: 300
@@ -570,110 +520,110 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 21,56,64|🇨🇦CA-142.4.216.225-0460 | 1.16...
-  - 21,56,64|🇨🇦CA-142.4.216.225-0467 | 1.54...
-  - 21,56,64|🇨🇦CA-149.22.95.183-0331 | 33.0...
-  - 21,56,64|CH-156.146.62.164-0417 | 15.25...
-  - 21,56,64|CH-156.146.62.161-0420 | 14.55...
-  - 21,56,64|CH-156.146.62.162-0446 | 16.21...
-  - 21,56,64|CH-156.146.62.163-0421 | 19.99...
-  - 50,51,52,60|🇳🇱NL-193.29.139.189-142
-  - 21,56,64|🇨🇦CA-79.127.233.170-0332 | 37....
-  - 21,56,64|CH-84.17.53.160-0391 | 32.477M...
-  - 9,21,50,56,64,72|🇮🇹_IT_意大利
-  - 50,70|VMESS-美国>德国-ChatGPT-TikTok-You...
-  - 21,56,64|🇩🇪DE-165.22.74.230-0386 | 32.1...
+  - 21,27,56,64|🇨🇦CA-142.4.216.225-0460 | 1.16...
+  - 70|SS->-NF解锁兰自制剧-ChatGPT-YouTube-...
+  - 27| SG_339
+  - 21,24,56,64,74|JP_Tokyo_Datacamp Limited2
   - 21,56,64,74|JP_Tokyo_Datacamp Limited1
+  - 19|@MxlShare 日本 | JPN 23
+  - 19|@MxlShare 日本 | JPN 29
   - 21,56,64|🇯🇵JP-149.22.87.204-0363 | 1.19...
   - 19|@MxlShare 日本 | JPN 17
-  - 19|@MxlShare 日本 | JPN 19
-  - 69,73|JP_speednode_0120
-  - 21,24,56,64,74|JP_Tokyo_Datacamp Limited2
-  - 19|@MxlShare 日本 | JPN 23
-  - 19|@MxlShare 日本 | JPN 24
   - 19|@MxlShare 日本 | JPN 26
-  - 19|@MxlShare 日本 | JPN 22
-  - 19|@MxlShare 日本 | JPN 20
-  - 19,53|日本 - 东京 - Amazon.com, Inc. - 1
-  - 19|@MxlShare 日本 | JPN 29
+  - 19|@MxlShare 日本 | JPN 24
   - 19|@MxlShare 日本 | JPN 18
+  - 19,53|日本 - 东京 - Amazon.com, Inc. - 1
   - 19|@MxlShare 日本 | JPN 21
-  - 19,72|🇩🇰_DK_丹麦
-  - 53|德国 - 杜塞尔多夫 - Felix Gassan - 1
-  - 9|🇩🇰 丹麦 - 哥本哈根 - ONEPROVIDER - 1
-  - 46,53|美国 - 洛杉矶 - HostPapa - 62
-  - 46|加拿大 011
+  - 19|@MxlShare 日本 | JPN 19
+  - 21,27,56,64|🇭🇰HK-141.98.234.93-5598 | 1.07...
+  - 19|@MxlShare 新加坡 | SGP 28
+  - 19|@MxlShare 新加坡 | SGP 19
+  - 53,69,73|SG_speednode_0136
+  - 19|@MxlShare 新加坡 | SGP 25
+  - 19|@MxlShare 新加坡 | SGP 29
+  - 19|@MxlShare 新加坡 | SGP 32
+  - 19|@MxlShare 新加坡 | SGP 27
+  - 19,69,73|SG_speednode_0141
   - 69,73|SG_speednode_0139
-  - 46|加拿大 006
+  - 19,69,73|SG_speednode_0140
+  - 0,3,19,47,60,67,69,73|SG_speednode_0143
+  - 19,53,69,73|SG_speednode_0135
+  - 19,69,73|SG_speednode_0134
+  - 19,23,42,69,73|SG_speednode_0138
+  - 42,53|韩国 - 首尔特别市 - Amazon Technologi...
+  - 19,53,69,73|KR_speednode_0131
+  - 19,69,73|SG_speednode_0137
+  - 53|韩国 - Gwangmyeong - SK Broadban...
+  - 19,42,53|中国 - 香港 - Akile LTD - 5
   - 53,60,61|🇩🇪 德国 V2CROSS.COM
-  - 46|加拿大 015
-  - 43|[VMess] 🇩🇪 德国 V2CROSS.COM
   - 70|VMESS-未知>日本-NF解锁日本地区非自制剧-ChatG...
-  - 0,3,35,42,53,60,61,67,69,73|HK_speednode_0119
-  - 19,42,53|中国 - 香港 - Akile LTD - 26
+  - 9,42,53,69,73|KR_speednode_0130
+  - 21,56,64|🇰🇷KR-43.202.96.177-0372 | 1.08...
+  - 0,3,42,53,60,61,67,69,73|HK_speednode_0119
   - 19,42,53|中国 - 香港 - Akile LTD - 17
-  - 19,42,53|中国 - 香港 - Akile LTD - 25
+  - 19,42,53|中国 - 香港 - Akile LTD - 22
   - 19,42,53|中国 - 香港 - Akile LTD - 24
   - 19,42,53|中国 - 香港 - Akile LTD - 21
-  - 46|加拿大 012
+  - 21,56,64|🇸🇬SG-68.183.227.45-0407 | 1.07...
+  - 21,56,64|🇸🇬SG-68.183.227.4-0395 | 1.078...
+  - 19,42,53|中国 - 香港 - Akile LTD - 26
+  - 19,42,53|中国 - 香港 - Akile LTD - 25
   - 19,42,53|中国 - 香港 - Akile LTD - 4
-  - 19,42,53|中国 - 香港 - Akile LTD - 22
-  - 19,42,53|中国 - 香港 - Akile LTD - 5
   - 9|🇰🇷 韩国 - Yongin-si - SK Broadba...
   url: https://i.ytimg.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 21,56,64|🇨🇦CA-142.4.216.225-0460 | 1.16...
-  - 21,56,64|🇨🇦CA-142.4.216.225-0467 | 1.54...
-  - 21,56,64|🇨🇦CA-149.22.95.183-0331 | 33.0...
-  - 21,56,64|CH-156.146.62.164-0417 | 15.25...
-  - 21,56,64|CH-156.146.62.161-0420 | 14.55...
-  - 21,56,64|CH-156.146.62.162-0446 | 16.21...
-  - 21,56,64|CH-156.146.62.163-0421 | 19.99...
-  - 50,51,52,60|🇳🇱NL-193.29.139.189-142
-  - 21,56,64|🇨🇦CA-79.127.233.170-0332 | 37....
-  - 21,56,64|CH-84.17.53.160-0391 | 32.477M...
-  - 9,21,50,56,64,72|🇮🇹_IT_意大利
-  - 50,70|VMESS-美国>德国-ChatGPT-TikTok-You...
-  - 21,56,64|🇩🇪DE-165.22.74.230-0386 | 32.1...
+  - 21,27,56,64|🇨🇦CA-142.4.216.225-0460 | 1.16...
+  - 70|SS->-NF解锁兰自制剧-ChatGPT-YouTube-...
+  - 27| SG_339
+  - 21,24,56,64,74|JP_Tokyo_Datacamp Limited2
   - 21,56,64,74|JP_Tokyo_Datacamp Limited1
+  - 19|@MxlShare 日本 | JPN 23
+  - 19|@MxlShare 日本 | JPN 29
   - 21,56,64|🇯🇵JP-149.22.87.204-0363 | 1.19...
   - 19|@MxlShare 日本 | JPN 17
-  - 19|@MxlShare 日本 | JPN 19
-  - 69,73|JP_speednode_0120
-  - 21,24,56,64,74|JP_Tokyo_Datacamp Limited2
-  - 19|@MxlShare 日本 | JPN 23
-  - 19|@MxlShare 日本 | JPN 24
   - 19|@MxlShare 日本 | JPN 26
-  - 19|@MxlShare 日本 | JPN 22
-  - 19|@MxlShare 日本 | JPN 20
-  - 19,53|日本 - 东京 - Amazon.com, Inc. - 1
-  - 19|@MxlShare 日本 | JPN 29
+  - 19|@MxlShare 日本 | JPN 24
   - 19|@MxlShare 日本 | JPN 18
+  - 19,53|日本 - 东京 - Amazon.com, Inc. - 1
   - 19|@MxlShare 日本 | JPN 21
-  - 19,72|🇩🇰_DK_丹麦
-  - 53|德国 - 杜塞尔多夫 - Felix Gassan - 1
-  - 9|🇩🇰 丹麦 - 哥本哈根 - ONEPROVIDER - 1
-  - 46,53|美国 - 洛杉矶 - HostPapa - 62
-  - 46|加拿大 011
+  - 19|@MxlShare 日本 | JPN 19
+  - 21,27,56,64|🇭🇰HK-141.98.234.93-5598 | 1.07...
+  - 19|@MxlShare 新加坡 | SGP 28
+  - 19|@MxlShare 新加坡 | SGP 19
+  - 53,69,73|SG_speednode_0136
+  - 19|@MxlShare 新加坡 | SGP 25
+  - 19|@MxlShare 新加坡 | SGP 29
+  - 19|@MxlShare 新加坡 | SGP 32
+  - 19|@MxlShare 新加坡 | SGP 27
+  - 19,69,73|SG_speednode_0141
   - 69,73|SG_speednode_0139
-  - 46|加拿大 006
+  - 19,69,73|SG_speednode_0140
+  - 0,3,19,47,60,67,69,73|SG_speednode_0143
+  - 19,53,69,73|SG_speednode_0135
+  - 19,69,73|SG_speednode_0134
+  - 19,23,42,69,73|SG_speednode_0138
+  - 42,53|韩国 - 首尔特别市 - Amazon Technologi...
+  - 19,53,69,73|KR_speednode_0131
+  - 19,69,73|SG_speednode_0137
+  - 53|韩国 - Gwangmyeong - SK Broadban...
+  - 19,42,53|中国 - 香港 - Akile LTD - 5
   - 53,60,61|🇩🇪 德国 V2CROSS.COM
-  - 46|加拿大 015
-  - 43|[VMess] 🇩🇪 德国 V2CROSS.COM
   - 70|VMESS-未知>日本-NF解锁日本地区非自制剧-ChatG...
-  - 0,3,35,42,53,60,61,67,69,73|HK_speednode_0119
-  - 19,42,53|中国 - 香港 - Akile LTD - 26
+  - 9,42,53,69,73|KR_speednode_0130
+  - 21,56,64|🇰🇷KR-43.202.96.177-0372 | 1.08...
+  - 0,3,42,53,60,61,67,69,73|HK_speednode_0119
   - 19,42,53|中国 - 香港 - Akile LTD - 17
-  - 19,42,53|中国 - 香港 - Akile LTD - 25
+  - 19,42,53|中国 - 香港 - Akile LTD - 22
   - 19,42,53|中国 - 香港 - Akile LTD - 24
   - 19,42,53|中国 - 香港 - Akile LTD - 21
-  - 46|加拿大 012
+  - 21,56,64|🇸🇬SG-68.183.227.45-0407 | 1.07...
+  - 21,56,64|🇸🇬SG-68.183.227.4-0395 | 1.078...
+  - 19,42,53|中国 - 香港 - Akile LTD - 26
+  - 19,42,53|中国 - 香港 - Akile LTD - 25
   - 19,42,53|中国 - 香港 - Akile LTD - 4
-  - 19,42,53|中国 - 香港 - Akile LTD - 22
-  - 19,42,53|中国 - 香港 - Akile LTD - 5
   - 9|🇰🇷 韩国 - Yongin-si - SK Broadba...
 rules:
 - DOMAIN,app.adjust.com,DIRECT
