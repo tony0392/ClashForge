@@ -2343,6 +2343,7 @@ if __name__ == '__main__':
         "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_RU.yml|links",
         "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_SG.yml|links",
         "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_redir.yml|links",
-        "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_TW.yml|links"
+        "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_TW.yml|links",
+        "https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml|links"
     ]
     work(links, check=True, only_check=False, allowed_types=["ss","vmess","trojan"])
