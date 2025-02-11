@@ -32,6 +32,91 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
+- client-fingerprint: chrome
+  delay: 624
+  name: 0,2,3,9,42,52,53,60,61,67,69,73|HK_speednode_0018
+  network: tcp
+  password: 43e5eeacbad3032bfe4c25a2f011b6b7
+  port: 443
+  server: 104.251.227.182
+  skip-cert-verify: true
+  sni: hezijiasuqi.com
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 0,3,42,47,60,67,69,73|JP_speednode_0029
+  password: amazonskr05
+  port: 443
+  server: 52.192.7.214
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19,42,69,73|JP_speednode_0025
+  password: amazonskr05
+  port: 443
+  server: 3.112.28.118
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19|@MxlShare 日本 | JPN 22
+  password: amazonskr05
+  port: 443
+  server: 3.112.5.139
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19,42,69,73|JP_speednode_0030
+  password: amazonskr05
+  port: 443
+  server: 52.68.247.21
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19,42,69,73|JP_speednode_0026
+  password: amazonskr05
+  port: 443
+  server: 54.249.114.132
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 21,56,64|🇯🇵JP-149.22.87.204-0363 | 31.8...
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
+- cipher: aes-128-gcm
+  name: 21,24,56,64,74|JP_Tokyo_Datacamp Limited2
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.240
+  type: ss
+- cipher: aes-128-gcm
+  name: 21,56,64,74|JP_Tokyo_Datacamp Limited1
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.241
+  type: ss
+- cipher: aes-256-cfb
+  name: 19,42,69,73|KR_speednode_0035
+  password: amazonskr05
+  port: 443
+  server: 52.78.5.163
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 21,42,56,64|🇰🇷KR-13.125.226.50-5816 | 29.0...
+  password: amazonskr05
+  port: 443
+  server: 13.125.226.50
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 21,56,64|🇰🇷KR-43.202.96.177-0372 | 30.7...
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  port: 443
+  server: south-korea-2.keenvpn.me
+  type: ss
 - cipher: aes-256-cfb
   country: 🇩🇪DE
   name: 27|🇪DE_198
@@ -44,6 +129,13 @@ proxies:
   name: 27|🇪DE_199
   password: ZpNDDKRu9MagNvaf
   port: 9015
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 27|🇪DE_200
+  password: BwcAUZk8hUFAkDGN
+  port: 9031
   server: 80.92.204.106
   type: ss
 - cipher: aes-256-cfb
@@ -62,9 +154,9 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   country: 🇩🇪DE
-  name: 27|🇩🇪DE_203
-  password: 4R3hUfZ2FHhDmNcP
-  port: 9061
+  name: 27|🇩🇪DE_204
+  password: cp8pRSUAyLhTfVWH
+  port: 9064
   server: 80.92.204.106
   type: ss
 - cipher: aes-256-cfb
@@ -76,36 +168,17 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   country: 🇩🇪DE
-  name: 27|🇩🇪DE_206
-  password: Sn5B7jTqr76aCJT8
-  port: 9097
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇩🇪DE
   name: 27|🇩🇪DE_207
   password: FAdUvMJUq5vDgKEq
   port: 9006
   server: 80.92.204.106
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 42,43,70|SS--NF解锁德国自制剧-ChatGPT-TikTok-Y...
-  password: OTBkYmFk
-  port: 8388
-  server: 95.164.68.37
-  tfo: false
+  name: 70|SS-德国-146.19.247.183:1443
+  password: ZTUxOTQ5
+  port: 1443
+  server: 146.19.247.183
   type: ss
-  udp: true
-- country: 🇫🇷FR
-  delay: 942
-  name: 2,9,53|法国 - 巴黎 - Amazon.com, Inc. - 1
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 15.188.205.171
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
 - cipher: aes-256-cfb
   country: 🇷FR
   name: 21,27,56,64|🇫🇷FR-195.154.185.174-0376 | 42...
@@ -120,13 +193,6 @@ proxies:
   port: 8080
   server: 45.158.171.132
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹 LT
-  name: 21,27,56,64|🇫🇷FR-45.158.171.151-0450 | 33....
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.158.171.151
-  type: ss
 - alterId: 0
   cipher: auto
   name: 21,56,64|🇫🇷FR-5.196.29.123-6186 | 14.95...
@@ -139,12 +205,6 @@ proxies:
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     path: /
-- cipher: aes-256-cfb
-  name: 21,56,64|🇫🇷FR-51.15.15.82-0510 | 14.732...
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 51.15.15.82
-  type: ss
 - cipher: aes-256-cfb
   country: 🇱NL
   name: 21,27,56,64|🇫🇷FR-51.15.27.48-0438 | 39.377...
@@ -196,13 +256,6 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 27|🇫🇷FR_224
-  password: XKFKl2rULjIp74
-  port: 8008
-  server: 54.36.174.181
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
   name: 27|🇫🇷FR_225
   password: Y6R9pAtvxxzmGC
   port: 3389
@@ -221,13 +274,6 @@ proxies:
   password: faBAoD54k87UJG7
   port: 2375
   server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_228
-  password: KixLvKzwjekG00rm
-  port: 5500
-  server: 54.36.174.181
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
@@ -308,13 +354,6 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 27|🇫🇷FR_243
-  password: e4FCWrgpkji3QY
-  port: 9102
-  server: 54.36.174.181
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
   name: 27|🇫🇷FR_244
   password: cdBIDV42DCwnfIN
   port: 8118
@@ -341,54 +380,11 @@ proxies:
   port: 5000
   server: 145.239.6.202
   type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_249
-  password: Y6R9pAtvxxzmGC
-  port: 3389
-  server: 145.239.6.202
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_250
-  password: Y6R9pAtvxxzmGC
-  port: 3306
-  server: 145.239.6.202
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_251
-  password: XKFKl2rULjIp74
-  port: 8009
-  server: 145.239.6.202
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_252
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 145.239.6.202
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_254
-  password: cdBIDV42DCwnfIN
-  port: 8118
-  server: 145.239.6.202
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_255
-  password: e4FCWrgpkji3QY
-  port: 9101
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_257
-  password: cdBIDV42DCwnfIN
-  port: 8119
-  server: 149.202.82.172
+- cipher: chacha20-ietf-poly1305
+  name: 70|SS->-NF解锁兰自制剧-ChatGPT-YouTube-...
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.87.175.58
   type: ss
 proxy-groups:
 - name: 节点选择
@@ -402,56 +398,56 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
+  - 27|🇫🇷FR_226
   - 27|🇫🇷FR_247
-  - 27|🇫🇷FR_255
+  - 27|🇫🇷FR_235
+  - 27|🇫🇷FR_246
+  - 21,27,56,64|🇫🇷FR-195.154.185.174-0376 | 42...
+  - 27|🇫🇷FR_227
+  - 27|🇫🇷FR_221
+  - 27|🇫🇷FR_234
+  - 27|🇫🇷FR_245
+  - 27|🇫🇷FR_229
+  - 27|🇫🇷FR_242
   - 21,27,56,64|🇫🇷FR-45.158.171.132-0401 | 36....
+  - 21,27,56,64|🇫🇷FR-51.15.27.48-0438 | 39.377...
+  - 27|🇫🇷FR_225
+  - 27|🇫🇷FR_232
+  - 27|🇫🇷FR_238
+  - 27|🇫🇷FR_219
   - 27|🇫🇷FR_218
+  - 27|🇫🇷FR_244
   - 27|🇫🇷FR_240
   - 27|🇫🇷FR_223
-  - 27|🇫🇷FR_235
-  - 27|🇫🇷FR_238
+  - 27|🇫🇷FR_220
+  - 27|🇫🇷FR_222
+  - 27|🇫🇷FR_230
+  - 27|🇫🇷FR_233
   - 27|🇫🇷FR_241
   - 27|🇫🇷FR_236
-  - 27|🇫🇷FR_229
-  - 27|🇫🇷FR_219
-  - 42,43,70|SS--NF解锁德国自制剧-ChatGPT-TikTok-Y...
-  - 27|🇫🇷FR_244
-  - 27|🇫🇷FR_251
-  - 27|🇫🇷FR_245
-  - 27|🇫🇷FR_249
-  - 27|🇫🇷FR_254
-  - 27|🇫🇷FR_226
-  - 27|🇫🇷FR_252
-  - 27|🇫🇷FR_250
-  - 21,27,56,64|🇫🇷FR-51.15.27.48-0438 | 39.377...
-  - 2,9,53|法国 - 巴黎 - Amazon.com, Inc. - 1
-  - 27|🇫🇷FR_233
-  - 27|🇫🇷FR_220
-  - 27|🇫🇷FR_227
-  - 27|🇫🇷FR_232
-  - 27|🇫🇷FR_221
-  - 27|🇫🇷FR_225
-  - 27|🇫🇷FR_234
-  - 27|🇫🇷FR_257
-  - 27|🇫🇷FR_246
-  - 27|🇫🇷FR_230
-  - 27|🇫🇷FR_222
-  - 21,27,56,64|🇫🇷FR-195.154.185.174-0376 | 42...
-  - 27|🇪DE_199
-  - 27|🇫🇷FR_228
-  - 27|🇪DE_198
-  - 27|🇫🇷FR_243
-  - 27|🇩🇪DE_201
-  - 27|🇫🇷FR_242
-  - 27|🇩🇪DE_202
-  - 27|🇫🇷FR_224
-  - 21,56,64|🇫🇷FR-5.196.29.123-6186 | 14.95...
-  - 27|🇩🇪DE_206
+  - 70|SS-德国-146.19.247.183:1443
+  - 70|SS->-NF解锁兰自制剧-ChatGPT-YouTube-...
+  - 21,24,56,64,74|JP_Tokyo_Datacamp Limited2
   - 27|🇩🇪DE_207
-  - 21,27,56,64|🇫🇷FR-45.158.171.151-0450 | 33....
-  - 21,56,64|🇫🇷FR-51.15.15.82-0510 | 14.732...
+  - 19,42,69,73|JP_speednode_0025
+  - 21,56,64|🇯🇵JP-149.22.87.204-0363 | 31.8...
+  - 21,56,64,74|JP_Tokyo_Datacamp Limited1
+  - 0,3,42,47,60,67,69,73|JP_speednode_0029
+  - 19,42,69,73|JP_speednode_0030
+  - 19,42,69,73|JP_speednode_0026
   - 27|🇩🇪DE_205
-  - 27|🇩🇪DE_203
+  - 19|@MxlShare 日本 | JPN 22
+  - 27|🇪DE_200
+  - 27|🇪DE_198
+  - 27|🇪DE_199
+  - 27|🇩🇪DE_204
+  - 21,42,56,64|🇰🇷KR-13.125.226.50-5816 | 29.0...
+  - 19,42,69,73|KR_speednode_0035
+  - 27|🇩🇪DE_202
+  - 21,56,64|🇫🇷FR-5.196.29.123-6186 | 14.95...
+  - 21,56,64|🇰🇷KR-43.202.96.177-0372 | 30.7...
+  - 0,2,3,9,42,52,53,60,61,67,69,73|HK_speednode_0018
+  - 27|🇩🇪DE_201
   url: https://i.ytimg.com/generate_204
   interval: 300
   tolerance: 50
@@ -459,111 +455,111 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
+  - 27|🇫🇷FR_226
   - 27|🇫🇷FR_247
-  - 27|🇫🇷FR_255
+  - 27|🇫🇷FR_235
+  - 27|🇫🇷FR_246
+  - 21,27,56,64|🇫🇷FR-195.154.185.174-0376 | 42...
+  - 27|🇫🇷FR_227
+  - 27|🇫🇷FR_221
+  - 27|🇫🇷FR_234
+  - 27|🇫🇷FR_245
+  - 27|🇫🇷FR_229
+  - 27|🇫🇷FR_242
   - 21,27,56,64|🇫🇷FR-45.158.171.132-0401 | 36....
+  - 21,27,56,64|🇫🇷FR-51.15.27.48-0438 | 39.377...
+  - 27|🇫🇷FR_225
+  - 27|🇫🇷FR_232
+  - 27|🇫🇷FR_238
+  - 27|🇫🇷FR_219
   - 27|🇫🇷FR_218
+  - 27|🇫🇷FR_244
   - 27|🇫🇷FR_240
   - 27|🇫🇷FR_223
-  - 27|🇫🇷FR_235
-  - 27|🇫🇷FR_238
+  - 27|🇫🇷FR_220
+  - 27|🇫🇷FR_222
+  - 27|🇫🇷FR_230
+  - 27|🇫🇷FR_233
   - 27|🇫🇷FR_241
   - 27|🇫🇷FR_236
-  - 27|🇫🇷FR_229
-  - 27|🇫🇷FR_219
-  - 42,43,70|SS--NF解锁德国自制剧-ChatGPT-TikTok-Y...
-  - 27|🇫🇷FR_244
-  - 27|🇫🇷FR_251
-  - 27|🇫🇷FR_245
-  - 27|🇫🇷FR_249
-  - 27|🇫🇷FR_254
-  - 27|🇫🇷FR_226
-  - 27|🇫🇷FR_252
-  - 27|🇫🇷FR_250
-  - 21,27,56,64|🇫🇷FR-51.15.27.48-0438 | 39.377...
-  - 2,9,53|法国 - 巴黎 - Amazon.com, Inc. - 1
-  - 27|🇫🇷FR_233
-  - 27|🇫🇷FR_220
-  - 27|🇫🇷FR_227
-  - 27|🇫🇷FR_232
-  - 27|🇫🇷FR_221
-  - 27|🇫🇷FR_225
-  - 27|🇫🇷FR_234
-  - 27|🇫🇷FR_257
-  - 27|🇫🇷FR_246
-  - 27|🇫🇷FR_230
-  - 27|🇫🇷FR_222
-  - 21,27,56,64|🇫🇷FR-195.154.185.174-0376 | 42...
-  - 27|🇪DE_199
-  - 27|🇫🇷FR_228
-  - 27|🇪DE_198
-  - 27|🇫🇷FR_243
-  - 27|🇩🇪DE_201
-  - 27|🇫🇷FR_242
-  - 27|🇩🇪DE_202
-  - 27|🇫🇷FR_224
-  - 21,56,64|🇫🇷FR-5.196.29.123-6186 | 14.95...
-  - 27|🇩🇪DE_206
+  - 70|SS-德国-146.19.247.183:1443
+  - 70|SS->-NF解锁兰自制剧-ChatGPT-YouTube-...
+  - 21,24,56,64,74|JP_Tokyo_Datacamp Limited2
   - 27|🇩🇪DE_207
-  - 21,27,56,64|🇫🇷FR-45.158.171.151-0450 | 33....
-  - 21,56,64|🇫🇷FR-51.15.15.82-0510 | 14.732...
+  - 19,42,69,73|JP_speednode_0025
+  - 21,56,64|🇯🇵JP-149.22.87.204-0363 | 31.8...
+  - 21,56,64,74|JP_Tokyo_Datacamp Limited1
+  - 0,3,42,47,60,67,69,73|JP_speednode_0029
+  - 19,42,69,73|JP_speednode_0030
+  - 19,42,69,73|JP_speednode_0026
   - 27|🇩🇪DE_205
-  - 27|🇩🇪DE_203
+  - 19|@MxlShare 日本 | JPN 22
+  - 27|🇪DE_200
+  - 27|🇪DE_198
+  - 27|🇪DE_199
+  - 27|🇩🇪DE_204
+  - 21,42,56,64|🇰🇷KR-13.125.226.50-5816 | 29.0...
+  - 19,42,69,73|KR_speednode_0035
+  - 27|🇩🇪DE_202
+  - 21,56,64|🇫🇷FR-5.196.29.123-6186 | 14.95...
+  - 21,56,64|🇰🇷KR-43.202.96.177-0372 | 30.7...
+  - 0,2,3,9,42,52,53,60,61,67,69,73|HK_speednode_0018
+  - 27|🇩🇪DE_201
   url: https://i.ytimg.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
+  - 27|🇫🇷FR_226
   - 27|🇫🇷FR_247
-  - 27|🇫🇷FR_255
+  - 27|🇫🇷FR_235
+  - 27|🇫🇷FR_246
+  - 21,27,56,64|🇫🇷FR-195.154.185.174-0376 | 42...
+  - 27|🇫🇷FR_227
+  - 27|🇫🇷FR_221
+  - 27|🇫🇷FR_234
+  - 27|🇫🇷FR_245
+  - 27|🇫🇷FR_229
+  - 27|🇫🇷FR_242
   - 21,27,56,64|🇫🇷FR-45.158.171.132-0401 | 36....
+  - 21,27,56,64|🇫🇷FR-51.15.27.48-0438 | 39.377...
+  - 27|🇫🇷FR_225
+  - 27|🇫🇷FR_232
+  - 27|🇫🇷FR_238
+  - 27|🇫🇷FR_219
   - 27|🇫🇷FR_218
+  - 27|🇫🇷FR_244
   - 27|🇫🇷FR_240
   - 27|🇫🇷FR_223
-  - 27|🇫🇷FR_235
-  - 27|🇫🇷FR_238
+  - 27|🇫🇷FR_220
+  - 27|🇫🇷FR_222
+  - 27|🇫🇷FR_230
+  - 27|🇫🇷FR_233
   - 27|🇫🇷FR_241
   - 27|🇫🇷FR_236
-  - 27|🇫🇷FR_229
-  - 27|🇫🇷FR_219
-  - 42,43,70|SS--NF解锁德国自制剧-ChatGPT-TikTok-Y...
-  - 27|🇫🇷FR_244
-  - 27|🇫🇷FR_251
-  - 27|🇫🇷FR_245
-  - 27|🇫🇷FR_249
-  - 27|🇫🇷FR_254
-  - 27|🇫🇷FR_226
-  - 27|🇫🇷FR_252
-  - 27|🇫🇷FR_250
-  - 21,27,56,64|🇫🇷FR-51.15.27.48-0438 | 39.377...
-  - 2,9,53|法国 - 巴黎 - Amazon.com, Inc. - 1
-  - 27|🇫🇷FR_233
-  - 27|🇫🇷FR_220
-  - 27|🇫🇷FR_227
-  - 27|🇫🇷FR_232
-  - 27|🇫🇷FR_221
-  - 27|🇫🇷FR_225
-  - 27|🇫🇷FR_234
-  - 27|🇫🇷FR_257
-  - 27|🇫🇷FR_246
-  - 27|🇫🇷FR_230
-  - 27|🇫🇷FR_222
-  - 21,27,56,64|🇫🇷FR-195.154.185.174-0376 | 42...
-  - 27|🇪DE_199
-  - 27|🇫🇷FR_228
-  - 27|🇪DE_198
-  - 27|🇫🇷FR_243
-  - 27|🇩🇪DE_201
-  - 27|🇫🇷FR_242
-  - 27|🇩🇪DE_202
-  - 27|🇫🇷FR_224
-  - 21,56,64|🇫🇷FR-5.196.29.123-6186 | 14.95...
-  - 27|🇩🇪DE_206
+  - 70|SS-德国-146.19.247.183:1443
+  - 70|SS->-NF解锁兰自制剧-ChatGPT-YouTube-...
+  - 21,24,56,64,74|JP_Tokyo_Datacamp Limited2
   - 27|🇩🇪DE_207
-  - 21,27,56,64|🇫🇷FR-45.158.171.151-0450 | 33....
-  - 21,56,64|🇫🇷FR-51.15.15.82-0510 | 14.732...
+  - 19,42,69,73|JP_speednode_0025
+  - 21,56,64|🇯🇵JP-149.22.87.204-0363 | 31.8...
+  - 21,56,64,74|JP_Tokyo_Datacamp Limited1
+  - 0,3,42,47,60,67,69,73|JP_speednode_0029
+  - 19,42,69,73|JP_speednode_0030
+  - 19,42,69,73|JP_speednode_0026
   - 27|🇩🇪DE_205
-  - 27|🇩🇪DE_203
+  - 19|@MxlShare 日本 | JPN 22
+  - 27|🇪DE_200
+  - 27|🇪DE_198
+  - 27|🇪DE_199
+  - 27|🇩🇪DE_204
+  - 21,42,56,64|🇰🇷KR-13.125.226.50-5816 | 29.0...
+  - 19,42,69,73|KR_speednode_0035
+  - 27|🇩🇪DE_202
+  - 21,56,64|🇫🇷FR-5.196.29.123-6186 | 14.95...
+  - 21,56,64|🇰🇷KR-43.202.96.177-0372 | 30.7...
+  - 0,2,3,9,42,52,53,60,61,67,69,73|HK_speednode_0018
+  - 27|🇩🇪DE_201
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
