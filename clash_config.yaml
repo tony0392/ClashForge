@@ -32,9 +32,16 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
+- cipher: chacha20-ietf-poly1305
+  country: 🇰 HK
+  name: 27|🇰 HK_259
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
+  type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  country: 🇰 HK
+  country: 🇭🇰 HK
   name: 27,42,43|[SS] 🇭🇰 香港 HostHatch数据中心
   password: 2afbc97400ca71c8f3306f9843a6e1c2
   port: 443
@@ -44,41 +51,94 @@ proxies:
   tls: true
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇰 HK
-  name: 27|🇰 HK_286
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 54|🇭🇰 香港-1C
-  network: tcp
-  port: '19901'
-  server: xg.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: 85a75ff3-4bf4-4a4d-95f4-f99dd1cc6d86
-- alterId: 0
-  cipher: auto
-  country: 🇵 JP
-  h2-opts: {}
-  http-opts: {}
-  name: 27| JP_291
-  network: ws
-  port: 14443
-  server: tls.14.node-for-bigairport.win
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  ws-path: /
 - cipher: aes-256-cfb
-  name: 69,73|JP_speednode_0027
+  client-fingerprint: chrome
+  name: 0,3,42,47,60,67,69,73|JP_speednode_0029
+  password: amazonskr05
+  port: 443
+  server: 52.192.7.214
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19,69,73|JP_speednode_0023
+  password: amazonskr05
+  port: 443
+  server: 13.115.39.161
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19,42,74|18.183.142.200_OpenAI_Claude
+  password: amazonskr05
+  port: 443
+  server: 18.183.142.200
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19,42,69,73,74|3.112.28.118_OpenAI_Claude
+  password: amazonskr05
+  port: 443
+  server: 3.112.28.118
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19,74|3.112.5.139_OpenAI_Claude
+  password: amazonskr05
+  port: 443
+  server: 3.112.5.139
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19,42,74|43.206.238.113_OpenAI_Claude
+  password: amazonskr05
+  port: 443
+  server: 43.206.238.113
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19,42,69,73|JP_speednode_0026
+  password: amazonskr05
+  port: 443
+  server: 54.249.114.132
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19,42,74|57.180.66.41_OpenAI_Claude
+  password: amazonskr05
+  port: 443
+  server: 57.180.66.41
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 21,56,64|🇯🇵JP-149.22.87.204-0363 | 31.8...
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
+- cipher: aes-128-gcm
+  name: 21,24,56,64|🇯🇵JP-149.22.87.240-0364 | 31.7...
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.240
+  type: ss
+- cipher: aes-128-gcm
+  name: 21,56,64|🇯🇵JP-149.22.87.241-0375 | 27.9...
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.241
+  type: ss
+- cipher: aes-256-cfb
+  name: 23,69,73|JP_speednode_0027
   password: amazonskr05
   port: 443
   server: 54.249.60.76
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 69,73|JP_speednode_0022
+  password: amazonskr05
+  port: 443
+  server: 52.68.141.225
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -88,16 +148,6 @@ proxies:
   server: 52.195.185.150
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 69,73|JP_speednode_0031
-  port: 46617
-  server: 46.250.253.232
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
 - alterId: 0
   cipher: auto
   h2-opts: {}
@@ -116,8 +166,16 @@ proxies:
       HOST: tokyo.899994.xyz
     path: /index
 - cipher: aes-256-cfb
+  country: 🇰🇷KR
+  delay: 1080
+  name: 9,53|韩国 - Gwangmyeong - SK Broadban...
+  password: qwerREWQ@@
+  port: 28902
+  server: 218.38.103.150
+  type: ss
+- cipher: aes-256-cfb
   delay: 907
-  name: 2,9,21,23,53,56,64|🇰🇷KR-54.180.158.248-5787 | 27....
+  name: 9,21,23,53,56,64|🇰🇷KR-54.180.158.248-5787 | 27....
   password: amazonskr05
   port: 443
   server: 54.180.158.248
@@ -125,7 +183,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   delay: 939
-  name: 2,9,42,53,69,73,74|3.34.123.239_OpenAI_Claude
+  name: 9,42,53,69,73,74|3.34.123.239_OpenAI_Claude
   password: amazonskr05
   port: 443
   server: 3.34.123.239
@@ -133,19 +191,10 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   delay: 1167
-  name: 2,9,19,42,53,69,73|KR_speednode_0033
+  name: 9,19,42,53,69,73|KR_speednode_0033
   password: amazonskr05
   port: 443
   server: 3.35.0.140
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 3,19,42,47,60,67,69|JP_4a6d7_0035
-  password: amazonskr05
-  port: 443
-  server: 13.230.68.39
-  tfo: false
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -168,180 +217,20 @@ proxies:
   server: south-korea-2.keenvpn.me
   type: ss
 - cipher: aes-256-cfb
-  delay: 2274
-  name: 2,9,19,23,42,53,69,73|SG_speednode_0056
-  password: amazonskr05
-  port: 443
-  server: 47.129.201.205
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  delay: 2997
-  name: 2,9,53|新加坡 - 新加坡 - Amazon.com, Inc. -...
-  password: amazonskr05
-  port: 443
-  server: 52.221.234.117
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 19,42,69,73|SG_speednode_0060
-  password: amazonskr05
-  port: 443
-  server: 13.212.175.124
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 19,42,69,73|SG_speednode_0054
-  password: amazonskr05
-  port: 443
-  server: 13.212.177.74
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 19,42,69,73,74|13.213.40.92_OpenAI_Claude
-  password: amazonskr05
-  port: 443
-  server: 13.213.40.92
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 19,23,42,74|SG_Singapore_Amazon Technologi...
-  password: amazonskr05
-  port: 443
-  server: 13.229.111.3
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 19|@MxlShare 新加坡 | SGP 26
-  password: amazonskr05
-  port: 443
-  server: 18.139.221.191
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 19,23,42,74|SG_Singapore_Amazon.com, Inc._...
-  password: amazonskr05
-  port: 443
-  server: 18.141.9.206
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 19,42,69|SG_4a6d7_0070
-  password: amazonskr05
-  port: 443
-  server: 18.143.140.182
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 19,42,69|SG_4a6d7_0079
-  password: amazonskr05
-  port: 443
-  server: 47.129.235.184
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 19,69,73|SG_speednode_0062
-  password: amazonskr05
-  port: 443
-  server: 52.77.248.74
-  type: ss
-  udp: true
-- cipher: rc4-md5
-  name: 21,56,64|🇸🇬SG-128.199.172.224-0413 | 28...
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 128.199.172.224
-  type: ss
-- name: 21,56,64|🇸🇬SG-139.59.119.143-0394 | 28....
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: connectwithemployers.online
-  skip-cert-verify: false
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 21,56,64|🇸🇬SG-64.176.85.73-0469 | 20.22...
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 64.176.85.73
-  type: ss
-- cipher: rc4-md5
-  name: 21,56,64|🇸🇬SG-68.183.227.236-0396 | 28....
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 68.183.227.236
-  type: ss
-- cipher: rc4-md5
-  name: 21,56,64|🇸🇬SG-68.183.227.4-0395 | 28.66...
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 68.183.227.4
-  type: ss
-- cipher: rc4-md5
-  name: 21,56,64|🇸🇬SG-68.183.227.45-0407 | 28.6...
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 68.183.227.45
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 42,74|52.77.230.72_OpenAI_Claude
-  password: amazonskr05
-  port: 443
-  server: 52.77.230.72
-  tfo: false
+  name: 42,74|154.90.63.177_OpenAI_Claude
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.63.177
   type: ss
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 42,69|SG_4a6d7_0080
-  port: 36712
-  server: 62.146.233.112
-  skip-cert-verify: false
+  name: 9|🇨🇦 加拿大 - 多伦多 - GLOBALTELEHOST ...
+  port: 20182
+  server: 23.162.200.91
+  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
-  uuid: 9266df42-0830-48c2-8509-4c57b30fe29d
-- alterId: 0
-  cipher: auto
-  name: 42,43,69,73|SG_speednode_0063
-  port: 32995
-  server: 20.188.117.201
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 27cf0b94-a09a-4c7d-9818-9696076d7b52
-- cipher: aes-256-cfb
-  name: 69,73|SG_speednode_0053
-  password: amazonskr05
-  port: 443
-  server: 54.179.36.235
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 69,73,74|18.138.252.136_OpenAI_Claude
-  password: amazonskr05
-  port: 443
-  server: 18.138.252.136
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 69,73|SG_speednode_0058
-  password: amazonskr05
-  port: 443
-  server: 3.0.17.42
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 69,73|SG_speednode_0059
-  password: amazonskr05
-  port: 443
-  server: 47.129.223.160
-  type: ss
-  udp: true
+  uuid: cc9b66b7-1de7-4aa9-9642-575a8ae3ff19
 - cipher: chacha20-ietf-poly1305
   name: 21,27,56,64|🇨🇦CA-142.4.216.225-0460 | 18.6...
   password: JIhN6rBKkaEboLNXVSv5rq
@@ -367,13 +256,22 @@ proxies:
   port: 990
   server: 79.127.233.170
   type: ss
-- name: 60,61|🇺🇸 美国 惠普HP
-  password: telegram-id-directvpn
-  port: 22222
-  server: 15.156.42.205
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 46|加拿大 004
+  network: ws
+  port: 2095
+  server: s1.db-link02.top
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-33-108-197.s1.db-link02.top
+    path: /dabai.in104.24.248.64
 - cipher: aes-128-gcm
   country: 🇸 US
   name: 21,27,56,64|CH-156.146.62.161-0420 | 32.78...
@@ -396,7 +294,7 @@ proxies:
   server: 156.146.62.163
   type: ss
 - cipher: aes-128-gcm
-  country: 🇸 US
+  country: 🇺🇸 US
   name: 21,27,56,64|CH-156.146.62.164-0417 | 33.34...
   password: shadowsocks
   port: 443
@@ -408,11 +306,102 @@ proxies:
   port: 989
   server: 84.17.53.160
   type: ss
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 19,38|_DK_
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.186.79.53
+  type: ss
+  udp: true
+- name: 21,56,64|🇩🇪DE-165.22.74.230-0386 | 39.8...
+  password: 4732adfa16c6450bbef87264e41332db
+  port: 443
+  server: nextstepcareer.online
+  skip-cert-verify: false
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 21,56,60,64,70|SS-国-NF解锁自制剧-ChatGPT-TikTok-Yo...
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 185.177.229.245
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 27|🇪DE_183
+  password: NvS8N4Vf8qAGPSCL
+  port: 9046
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 27|🇪DE_184
+  password: S7KwUu7yBy58S3Ga
+  port: 9042
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 27|🇩🇪DE_185
+  password: Sn5B7jTqr76aCJT8
+  port: 9097
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 27|🇩🇪DE_186
+  password: cp8pRSUAyLhTfVWH
+  port: 9064
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 27|🇩🇪DE_187
+  password: aLpQtfEZe445QyHk
+  port: 9098
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 27|🇩🇪DE_188
+  password: FAdUvMJUq5vDgKEq
+  port: 9006
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 27|🇩🇪DE_189
+  password: XPtzA9sCug3SPR4c
+  port: 9025
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 27|🇩🇪DE_190
+  password: BwcAUZk8hUFAkDGN
+  port: 9031
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 27|🇩🇪DE_191
+  password: 4R3hUfZ2FHhDmNcP
+  port: 9061
+  server: 80.92.204.106
+  type: ss
+- name: 60,61|🇩🇪 德国 黑森州法兰克福Amazon数据中心
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 35.157.127.63
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- cipher: aes-128-gcm
+  country: 🇹🇼 TW
+  name: 27|🇼 TW_353
+  password: 79739832-b888-415a-a454-8b53911c944a
+  port: 30332
+  server: vps.200566.xyz
   type: ss
 proxy-groups:
 - name: 节点选择
@@ -426,56 +415,56 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 21,27,56,64|🇨🇦CA-142.4.216.225-0460 | 18.6...
-  - 60,61|🇺🇸 美国 惠普HP
   - 21,56,64|🇨🇦CA-149.22.95.183-0331 | 39.3...
-  - 21,27,56,64|🇨🇦CA-142.4.216.225-0467 | 24.6...
   - 21,56,64|🇨🇦CA-79.127.233.170-0332 | 44....
-  - 21,56,60,64,70|SS-国-NF解锁自制剧-ChatGPT-TikTok-Yo...
+  - 21,27,56,64|🇨🇦CA-142.4.216.225-0460 | 18.6...
+  - 21,56,64|🇯🇵JP-149.22.87.241-0375 | 27.9...
+  - 19,42,69,73,74|3.112.28.118_OpenAI_Claude
+  - 19,74|3.112.5.139_OpenAI_Claude
+  - 23,69,73|JP_speednode_0027
+  - 21,24,56,64|🇯🇵JP-149.22.87.240-0364 | 31.7...
+  - 21,56,64|🇯🇵JP-149.22.87.204-0363 | 31.8...
+  - 19,42,74|43.206.238.113_OpenAI_Claude
+  - 19,42,74|57.180.66.41_OpenAI_Claude
+  - 69,73|JP_speednode_0028
+  - 19,42,74|18.183.142.200_OpenAI_Claude
+  - 69,73|JP_speednode_0022
+  - 0,3,42,47,60,67,69,73|JP_speednode_0029
+  - 19,69,73|JP_speednode_0023
+  - 21,27,56,64|🇨🇦CA-142.4.216.225-0467 | 24.6...
+  - 9|🇨🇦 加拿大 - 多伦多 - GLOBALTELEHOST ...
+  - 19,42,69,73|JP_speednode_0026
   - 21,27,56,64|CH-156.146.62.163-0421 | 35.56...
   - 21,27,56,64|CH-156.146.62.161-0420 | 32.78...
+  - 27|🇩🇪DE_191
   - 21,27,56,64|CH-156.146.62.164-0417 | 33.34...
+  - 27|🇩🇪DE_190
   - 21,27,56,64|CH-156.146.62.162-0446 | 35.41...
-  - 21,56,64|CH-84.17.53.160-0391 | 37.789M...
-  - 69,73|JP_speednode_0028
-  - 69,73|JP_speednode_0027
-  - 3,19,42,47,60,67,69|JP_4a6d7_0035
-  - 54|🇭🇰 香港-1C
-  - 42,43,69,73|SG_speednode_0063
-  - 19,42,69|SG_4a6d7_0079
-  - 21,56,64|🇸🇬SG-64.176.85.73-0469 | 20.22...
-  - 2,9,53|新加坡 - 新加坡 - Amazon.com, Inc. -...
-  - 19,23,42,74|SG_Singapore_Amazon.com, Inc._...
-  - 69,73|SG_speednode_0053
-  - 19,23,42,74|SG_Singapore_Amazon Technologi...
-  - 19,42,69,73|SG_speednode_0060
-  - 19,42,69,73|SG_speednode_0054
-  - 19,42,69|SG_4a6d7_0070
-  - 19,42,69,73,74|13.213.40.92_OpenAI_Claude
-  - 69,73|SG_speednode_0059
-  - 69,73|SG_speednode_0058
-  - 2,9,19,23,42,53,69,73|SG_speednode_0056
+  - 21,56,60,64,70|SS-国-NF解锁自制剧-ChatGPT-TikTok-Yo...
   - 21,42,56,64,74|13.125.226.50_OpenAI_Claude
+  - 9,19,42,53,69,73|KR_speednode_0033
+  - 21,56,64|CH-84.17.53.160-0391 | 37.789M...
   - 19,42,74|3.38.190.194_OpenAI_Claude
-  - 42,74|52.77.230.72_OpenAI_Claude
-  - 2,9,21,23,53,56,64|🇰🇷KR-54.180.158.248-5787 | 27....
-  - 27|🇰 HK_286
-  - 2,9,19,42,53,69,73|KR_speednode_0033
+  - 9,21,23,53,56,64|🇰🇷KR-54.180.158.248-5787 | 27....
   - 27,42,43|[SS] 🇭🇰 香港 HostHatch数据中心
-  - 69,73,74|18.138.252.136_OpenAI_Claude
-  - 19|@MxlShare 新加坡 | SGP 26
-  - 42,69|SG_4a6d7_0080
-  - 19,69,73|SG_speednode_0062
-  - 69,73|JP_speednode_0031
-  - 21,56,64|🇸🇬SG-128.199.172.224-0413 | 28...
-  - 21,56,64|🇰🇷KR-43.202.96.177-0372 | 30.7...
-  - 21,56,64|🇸🇬SG-68.183.227.236-0396 | 28....
-  - 21,56,64|🇸🇬SG-68.183.227.4-0395 | 28.66...
-  - 21,56,64|🇸🇬SG-68.183.227.45-0407 | 28.6...
+  - 27|🇩🇪DE_189
+  - 9,42,53,69,73,74|3.34.123.239_OpenAI_Claude
+  - 27|🇩🇪DE_188
+  - 27|🇩🇪DE_186
+  - 27|🇩🇪DE_187
+  - 27|🇩🇪DE_185
+  - 27|🇪DE_184
+  - 27|🇪DE_183
+  - 60,61|🇩🇪 德国 黑森州法兰克福Amazon数据中心
+  - 27|🇼 TW_353
+  - 9,53|韩国 - Gwangmyeong - SK Broadban...
+  - 27|🇰 HK_259
   - 70|VMESS-未知>本-NF解锁日本自制剧-ChatGPT-T...
-  - 2,9,42,53,69,73,74|3.34.123.239_OpenAI_Claude
-  - 27| JP_291
-  - 21,56,64|🇸🇬SG-139.59.119.143-0394 | 28....
+  - 42,74|154.90.63.177_OpenAI_Claude
+  - 21,56,64|🇰🇷KR-43.202.96.177-0372 | 30.7...
+  - 46|加拿大 004
+  - 21,56,64|🇩🇪DE-165.22.74.230-0386 | 39.8...
+  - 19,38|_DK_
   url: https://i.ytimg.com/generate_204
   interval: 300
   tolerance: 50
@@ -483,111 +472,111 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 21,27,56,64|🇨🇦CA-142.4.216.225-0460 | 18.6...
-  - 60,61|🇺🇸 美国 惠普HP
   - 21,56,64|🇨🇦CA-149.22.95.183-0331 | 39.3...
-  - 21,27,56,64|🇨🇦CA-142.4.216.225-0467 | 24.6...
   - 21,56,64|🇨🇦CA-79.127.233.170-0332 | 44....
-  - 21,56,60,64,70|SS-国-NF解锁自制剧-ChatGPT-TikTok-Yo...
+  - 21,27,56,64|🇨🇦CA-142.4.216.225-0460 | 18.6...
+  - 21,56,64|🇯🇵JP-149.22.87.241-0375 | 27.9...
+  - 19,42,69,73,74|3.112.28.118_OpenAI_Claude
+  - 19,74|3.112.5.139_OpenAI_Claude
+  - 23,69,73|JP_speednode_0027
+  - 21,24,56,64|🇯🇵JP-149.22.87.240-0364 | 31.7...
+  - 21,56,64|🇯🇵JP-149.22.87.204-0363 | 31.8...
+  - 19,42,74|43.206.238.113_OpenAI_Claude
+  - 19,42,74|57.180.66.41_OpenAI_Claude
+  - 69,73|JP_speednode_0028
+  - 19,42,74|18.183.142.200_OpenAI_Claude
+  - 69,73|JP_speednode_0022
+  - 0,3,42,47,60,67,69,73|JP_speednode_0029
+  - 19,69,73|JP_speednode_0023
+  - 21,27,56,64|🇨🇦CA-142.4.216.225-0467 | 24.6...
+  - 9|🇨🇦 加拿大 - 多伦多 - GLOBALTELEHOST ...
+  - 19,42,69,73|JP_speednode_0026
   - 21,27,56,64|CH-156.146.62.163-0421 | 35.56...
   - 21,27,56,64|CH-156.146.62.161-0420 | 32.78...
+  - 27|🇩🇪DE_191
   - 21,27,56,64|CH-156.146.62.164-0417 | 33.34...
+  - 27|🇩🇪DE_190
   - 21,27,56,64|CH-156.146.62.162-0446 | 35.41...
-  - 21,56,64|CH-84.17.53.160-0391 | 37.789M...
-  - 69,73|JP_speednode_0028
-  - 69,73|JP_speednode_0027
-  - 3,19,42,47,60,67,69|JP_4a6d7_0035
-  - 54|🇭🇰 香港-1C
-  - 42,43,69,73|SG_speednode_0063
-  - 19,42,69|SG_4a6d7_0079
-  - 21,56,64|🇸🇬SG-64.176.85.73-0469 | 20.22...
-  - 2,9,53|新加坡 - 新加坡 - Amazon.com, Inc. -...
-  - 19,23,42,74|SG_Singapore_Amazon.com, Inc._...
-  - 69,73|SG_speednode_0053
-  - 19,23,42,74|SG_Singapore_Amazon Technologi...
-  - 19,42,69,73|SG_speednode_0060
-  - 19,42,69,73|SG_speednode_0054
-  - 19,42,69|SG_4a6d7_0070
-  - 19,42,69,73,74|13.213.40.92_OpenAI_Claude
-  - 69,73|SG_speednode_0059
-  - 69,73|SG_speednode_0058
-  - 2,9,19,23,42,53,69,73|SG_speednode_0056
+  - 21,56,60,64,70|SS-国-NF解锁自制剧-ChatGPT-TikTok-Yo...
   - 21,42,56,64,74|13.125.226.50_OpenAI_Claude
+  - 9,19,42,53,69,73|KR_speednode_0033
+  - 21,56,64|CH-84.17.53.160-0391 | 37.789M...
   - 19,42,74|3.38.190.194_OpenAI_Claude
-  - 42,74|52.77.230.72_OpenAI_Claude
-  - 2,9,21,23,53,56,64|🇰🇷KR-54.180.158.248-5787 | 27....
-  - 27|🇰 HK_286
-  - 2,9,19,42,53,69,73|KR_speednode_0033
+  - 9,21,23,53,56,64|🇰🇷KR-54.180.158.248-5787 | 27....
   - 27,42,43|[SS] 🇭🇰 香港 HostHatch数据中心
-  - 69,73,74|18.138.252.136_OpenAI_Claude
-  - 19|@MxlShare 新加坡 | SGP 26
-  - 42,69|SG_4a6d7_0080
-  - 19,69,73|SG_speednode_0062
-  - 69,73|JP_speednode_0031
-  - 21,56,64|🇸🇬SG-128.199.172.224-0413 | 28...
-  - 21,56,64|🇰🇷KR-43.202.96.177-0372 | 30.7...
-  - 21,56,64|🇸🇬SG-68.183.227.236-0396 | 28....
-  - 21,56,64|🇸🇬SG-68.183.227.4-0395 | 28.66...
-  - 21,56,64|🇸🇬SG-68.183.227.45-0407 | 28.6...
+  - 27|🇩🇪DE_189
+  - 9,42,53,69,73,74|3.34.123.239_OpenAI_Claude
+  - 27|🇩🇪DE_188
+  - 27|🇩🇪DE_186
+  - 27|🇩🇪DE_187
+  - 27|🇩🇪DE_185
+  - 27|🇪DE_184
+  - 27|🇪DE_183
+  - 60,61|🇩🇪 德国 黑森州法兰克福Amazon数据中心
+  - 27|🇼 TW_353
+  - 9,53|韩国 - Gwangmyeong - SK Broadban...
+  - 27|🇰 HK_259
   - 70|VMESS-未知>本-NF解锁日本自制剧-ChatGPT-T...
-  - 2,9,42,53,69,73,74|3.34.123.239_OpenAI_Claude
-  - 27| JP_291
-  - 21,56,64|🇸🇬SG-139.59.119.143-0394 | 28....
+  - 42,74|154.90.63.177_OpenAI_Claude
+  - 21,56,64|🇰🇷KR-43.202.96.177-0372 | 30.7...
+  - 46|加拿大 004
+  - 21,56,64|🇩🇪DE-165.22.74.230-0386 | 39.8...
+  - 19,38|_DK_
   url: https://i.ytimg.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 21,27,56,64|🇨🇦CA-142.4.216.225-0460 | 18.6...
-  - 60,61|🇺🇸 美国 惠普HP
   - 21,56,64|🇨🇦CA-149.22.95.183-0331 | 39.3...
-  - 21,27,56,64|🇨🇦CA-142.4.216.225-0467 | 24.6...
   - 21,56,64|🇨🇦CA-79.127.233.170-0332 | 44....
-  - 21,56,60,64,70|SS-国-NF解锁自制剧-ChatGPT-TikTok-Yo...
+  - 21,27,56,64|🇨🇦CA-142.4.216.225-0460 | 18.6...
+  - 21,56,64|🇯🇵JP-149.22.87.241-0375 | 27.9...
+  - 19,42,69,73,74|3.112.28.118_OpenAI_Claude
+  - 19,74|3.112.5.139_OpenAI_Claude
+  - 23,69,73|JP_speednode_0027
+  - 21,24,56,64|🇯🇵JP-149.22.87.240-0364 | 31.7...
+  - 21,56,64|🇯🇵JP-149.22.87.204-0363 | 31.8...
+  - 19,42,74|43.206.238.113_OpenAI_Claude
+  - 19,42,74|57.180.66.41_OpenAI_Claude
+  - 69,73|JP_speednode_0028
+  - 19,42,74|18.183.142.200_OpenAI_Claude
+  - 69,73|JP_speednode_0022
+  - 0,3,42,47,60,67,69,73|JP_speednode_0029
+  - 19,69,73|JP_speednode_0023
+  - 21,27,56,64|🇨🇦CA-142.4.216.225-0467 | 24.6...
+  - 9|🇨🇦 加拿大 - 多伦多 - GLOBALTELEHOST ...
+  - 19,42,69,73|JP_speednode_0026
   - 21,27,56,64|CH-156.146.62.163-0421 | 35.56...
   - 21,27,56,64|CH-156.146.62.161-0420 | 32.78...
+  - 27|🇩🇪DE_191
   - 21,27,56,64|CH-156.146.62.164-0417 | 33.34...
+  - 27|🇩🇪DE_190
   - 21,27,56,64|CH-156.146.62.162-0446 | 35.41...
-  - 21,56,64|CH-84.17.53.160-0391 | 37.789M...
-  - 69,73|JP_speednode_0028
-  - 69,73|JP_speednode_0027
-  - 3,19,42,47,60,67,69|JP_4a6d7_0035
-  - 54|🇭🇰 香港-1C
-  - 42,43,69,73|SG_speednode_0063
-  - 19,42,69|SG_4a6d7_0079
-  - 21,56,64|🇸🇬SG-64.176.85.73-0469 | 20.22...
-  - 2,9,53|新加坡 - 新加坡 - Amazon.com, Inc. -...
-  - 19,23,42,74|SG_Singapore_Amazon.com, Inc._...
-  - 69,73|SG_speednode_0053
-  - 19,23,42,74|SG_Singapore_Amazon Technologi...
-  - 19,42,69,73|SG_speednode_0060
-  - 19,42,69,73|SG_speednode_0054
-  - 19,42,69|SG_4a6d7_0070
-  - 19,42,69,73,74|13.213.40.92_OpenAI_Claude
-  - 69,73|SG_speednode_0059
-  - 69,73|SG_speednode_0058
-  - 2,9,19,23,42,53,69,73|SG_speednode_0056
+  - 21,56,60,64,70|SS-国-NF解锁自制剧-ChatGPT-TikTok-Yo...
   - 21,42,56,64,74|13.125.226.50_OpenAI_Claude
+  - 9,19,42,53,69,73|KR_speednode_0033
+  - 21,56,64|CH-84.17.53.160-0391 | 37.789M...
   - 19,42,74|3.38.190.194_OpenAI_Claude
-  - 42,74|52.77.230.72_OpenAI_Claude
-  - 2,9,21,23,53,56,64|🇰🇷KR-54.180.158.248-5787 | 27....
-  - 27|🇰 HK_286
-  - 2,9,19,42,53,69,73|KR_speednode_0033
+  - 9,21,23,53,56,64|🇰🇷KR-54.180.158.248-5787 | 27....
   - 27,42,43|[SS] 🇭🇰 香港 HostHatch数据中心
-  - 69,73,74|18.138.252.136_OpenAI_Claude
-  - 19|@MxlShare 新加坡 | SGP 26
-  - 42,69|SG_4a6d7_0080
-  - 19,69,73|SG_speednode_0062
-  - 69,73|JP_speednode_0031
-  - 21,56,64|🇸🇬SG-128.199.172.224-0413 | 28...
-  - 21,56,64|🇰🇷KR-43.202.96.177-0372 | 30.7...
-  - 21,56,64|🇸🇬SG-68.183.227.236-0396 | 28....
-  - 21,56,64|🇸🇬SG-68.183.227.4-0395 | 28.66...
-  - 21,56,64|🇸🇬SG-68.183.227.45-0407 | 28.6...
+  - 27|🇩🇪DE_189
+  - 9,42,53,69,73,74|3.34.123.239_OpenAI_Claude
+  - 27|🇩🇪DE_188
+  - 27|🇩🇪DE_186
+  - 27|🇩🇪DE_187
+  - 27|🇩🇪DE_185
+  - 27|🇪DE_184
+  - 27|🇪DE_183
+  - 60,61|🇩🇪 德国 黑森州法兰克福Amazon数据中心
+  - 27|🇼 TW_353
+  - 9,53|韩国 - Gwangmyeong - SK Broadban...
+  - 27|🇰 HK_259
   - 70|VMESS-未知>本-NF解锁日本自制剧-ChatGPT-T...
-  - 2,9,42,53,69,73,74|3.34.123.239_OpenAI_Claude
-  - 27| JP_291
-  - 21,56,64|🇸🇬SG-139.59.119.143-0394 | 28....
+  - 42,74|154.90.63.177_OpenAI_Claude
+  - 21,56,64|🇰🇷KR-43.202.96.177-0372 | 30.7...
+  - 46|加拿大 004
+  - 21,56,64|🇩🇪DE-165.22.74.230-0386 | 39.8...
+  - 19,38|_DK_
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
