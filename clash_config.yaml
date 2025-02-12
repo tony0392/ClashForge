@@ -32,13 +32,157 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
+- cipher: aes-256-cfb
+  name: 55|🇵JP-18.182.27.23-1851
+  obfs: tls1.2_ticket_auth
+  obfs-param: ''
+  password: eAokbaDN6
+  port: 8081
+  protocol: origin
+  protocol-param: ''
+  server: jp-am48-6.eqnode.net
+  type: ssr
+- cipher: aes-256-cfb
+  country: 🇰🇷KR
+  delay: 1080
+  name: 9,53,55|🇰🇷KR-218.38.103.150-5824
+  password: qwerREWQ@@
+  port: 28902
+  server: 218.38.103.150
+  type: ss
+- cipher: aes-256-cfb
+  name: 55|🇸🇬SG-18.139.221.191-5706
+  password: amazonskr05
+  port: 443
+  server: 18.139.221.191
+  type: ss
+- cipher: aes-256-cfb
+  name: 55|🇸🇬SG-52.77.248.74-5743
+  password: amazonskr05
+  port: 443
+  server: 52.77.248.74
+  type: ss
+- cipher: aes-128-gcm
+  name: 21,55,56,64|🇨🇦CA-149.22.95.183-0345 | 37.9...
+  password: shadowsocks
+  port: 443
+  server: 149.22.95.183
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 21,55,56,64|🇨🇦CA-79.127.233.170-0330 | 32....
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 79.127.233.170
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 46|加拿大 011
+  name: 46,55|RELAY-104.19.48.236-0721
+  network: ws
+  port: 2095
+  server: s1.db-link01.top
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-105-92-158.s1.db-link01.top
+    path: /dabai.in104.24.89.11
+- alterId: 0
+  cipher: auto
+  name: 46,55|RELAY-104.19.48.236-0734
+  network: ws
+  port: 8880
+  server: s2.db-link01.top
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-177-17-45.s2.db-link01.top
+    path: /dabai.in172.67.92.156
+- alterId: 0
+  cipher: auto
+  name: 46,55|🏁RELAY-104.16.155.10-0739
+  network: ws
+  port: 2095
+  server: 104.16.155.10
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-209-47-141.s2.db-link02.top
+    path: /dabai.in104.20.27.115
+- alterId: 0
+  cipher: auto
+  name: 46,55|🏁RELAY-104.17.221.248-0740
+  network: ws
+  port: 2095
+  server: s1.db-link02.top
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-33-108-197.s1.db-link02.top
+    path: /dabai.in104.24.248.64
+- alterId: 0
+  cipher: auto
+  name: 46,55|🏁RELAY-104.17.221.248-0742
+  network: ws
+  port: 8080
+  server: s2.cn-db.top
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-152-16-179.s2.cn-db.top
+    path: /dabai.in172.67.64.151
+- alterId: 0
+  cipher: auto
+  name: 46,55|RELAY-104.19.48.236-0743
+  network: ws
+  port: 2095
+  server: s2.cn-db.top
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-119-187-44.s2.cn-db.top
+    path: /dabai.in104.20.121.88
+- alterId: 0
+  cipher: auto
+  name: 46,55|🏁RELAY-104.16.155.10-0745
+  network: ws
+  port: 2095
+  server: s2.db-link01.top
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-65-56-224.s2.db-link01.top
+    path: /dabai.in104.17.133.52
+- alterId: 0
+  cipher: auto
+  name: 46,55|RELAY-104.16.155.10-0761
   network: ws
   port: 8880
   server: s5.cn-db.top
-  skip-cert-verify: true
+  skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
@@ -48,103 +192,16 @@ proxies:
     headers:
       Host: 100-240-33-58.s5.cn-db.top
     path: /dabai.in172.67.30.35
-- cipher: aes-128-gcm
-  country: 🇸 US
-  name: 21,27,56,64|CH-156.146.62.161-0394 | 20.68...
-  password: shadowsocks
+- cipher: aes-128-cfb
+  name: 55|CA-45.154.204.13-0298
+  obfs: http_post
+  obfs-param: ''
+  password: $$Turb0VPN$$
   port: 443
-  server: 156.146.62.161
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇺🇸 US
-  name: 21,27,56,64|CH-156.146.62.162-0428 | 19.74...
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.162
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇺🇸 US
-  name: 21,27,56,64|CH-156.146.62.163-0399 | 30.10...
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.163
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇺🇸 US
-  name: 21,27,56,64|CH-156.146.62.164-0396 | 29.46...
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.164
-  type: ss
-- cipher: aes-256-cfb
-  name: 21,56,64|CH-84.17.53.160-0362 | 29.407M...
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 84.17.53.160
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 21,56,60,70|SS-国-NF解锁自制剧-ChatGPT-TikTok-Yo...
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
-  type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 26|🇩🇪 德国 | DEU 2
-  network: ws
-  port: 23451
-  server: frankfurt.faforex.eu.org
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 00c8b731-e779-4583-956f-bee05c198149
-  ws-opts:
-    headers:
-      Host: us-new03.daluquan.top
-    path: /itdog?ed=2560
-- cipher: aes-256-cfb
-  country: 🇪DE
-  name: 27|🇩🇪DE_175
-  password: 4R3hUfZ2FHhDmNcP
-  port: 9061
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇩🇪DE
-  name: 27|🇩🇪DE_177
-  password: FAdUvMJUq5vDgKEq
-  port: 9006
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇩🇪DE
-  name: 27|🇩🇪DE_178
-  password: BwcAUZk8hUFAkDGN
-  port: 9031
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇩🇪DE
-  name: 27|🇩🇪DE_180
-  password: cp8pRSUAyLhTfVWH
-  port: 9064
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇩🇪DE
-  name: 27|🇩🇪DE_182
-  password: aLpQtfEZe445QyHk
-  port: 9098
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇩🇪DE
-  name: 27|🇪DE_184
-  password: XPtzA9sCug3SPR4c
-  port: 9025
-  server: 80.92.204.106
-  type: ss
+  protocol: auth_aes128_md5
+  protocol-param: ''
+  server: ssca.irundns.net
+  type: ssr
 - alterId: 0
   cipher: auto
   h2-opts: {}
@@ -161,6 +218,12 @@ proxies:
     headers:
       HOST: yaml777.133010.xyz
     path: /yaml777
+- cipher: chacha20-ietf-poly1305
+  name: 70|SS-德国-NF解锁德国地区非自制剧-ChatGPT-Tik...
+  password: Q6mkedon57jNe3y6fvHQET
+  port: 18359
+  server: 92.246.139.24
+  type: ss
 - alterId: 0
   cipher: auto
   h2-opts: {}
@@ -178,252 +241,193 @@ proxies:
       HOST: us-new03.daluquan.top
     path: /itdog?ed=2560
 - cipher: aes-256-cfb
-  country: 🇷FR
-  name: 21,27,56,64|🇫🇷FR-195.154.185.174-0346 | 42...
+  name: 21,55,56,64|🇫🇷FR-195.154.185.174-0346 | 42...
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.185.174
   type: ss
 - cipher: aes-256-cfb
-  country: 🇱NL
-  name: 21,27,56,64|🇫🇷FR-51.15.27.48-0339 | 12.04M...
+  name: 21,55,56,64|🇫🇷FR-51.15.27.48-0339 | 12.04M...
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 51.15.27.48
   type: ss
-- cipher: aes-256-gcm
-  country: 🇷FR
-  name: 27|🇫🇷FR_190
-  password: e4FCWrgpkji3QY
-  port: 9102
-  server: 54.36.174.181
+- cipher: chacha20-ietf-poly1305
+  name: 55,64|🇫🇷FR-45.158.171.66-0359 | 34.8...
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.158.171.66
   type: ss
 - cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇷FR_191
-  password: XKFKl2rULjIp74
-  port: 8008
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_192
-  password: cdBIDV42DCwnfIN
-  port: 8119
-  server: 149.202.82.172
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_193
-  password: XKFKl2rULjIp74
-  port: 8009
-  server: 145.239.6.202
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_194
-  password: RexnBgU7EV5ADxG
-  port: 7001
-  server: 145.239.6.202
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_195
-  password: FoOiGlkAA9yPEGP
-  port: 7306
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_197
-  password: Y6R9pAtvxxzmGC
-  port: 3389
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_199
-  password: pKEW8JPByTVTLtM
-  port: 4444
-  server: 145.239.6.202
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_200
-  password: faBAoD54k87UJG7
-  port: 2375
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_202
-  password: Y6R9pAtvxxzmGC
-  port: 3306
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_203
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 149.202.82.172
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_205
-  password: Y6R9pAtvxxzmGC
-  port: 5000
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_206
-  password: PCnnH6SQSnfoS27
-  port: 8090
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_207
-  password: Y6R9pAtvxxzmGC
-  port: 5001
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_208
-  password: cdBIDV42DCwnfIN
-  port: 8119
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_209
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 149.202.82.172
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_211
-  password: pKEW8JPByTVTLtM
-  port: 4444
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_212
-  password: PCnnH6SQSnfoS27
-  port: 8091
-  server: 54.36.174.181
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_213
-  password: XKFKl2rULjIp74
-  port: 8009
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_214
+  name: 55|🇫🇷FR-149.202.82.172-0509
   password: TEzjfAYq2IjtuoS
   port: 6697
-  server: 217.182.198.219
+  server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_215
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 217.182.198.219
+  name: 55|🇷FR-149.202.82.172-0514
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_216
-  password: cdBIDV42DCwnfIN
-  port: 8118
-  server: 217.182.198.219
+  name: 55|🇷FR-149.202.82.172-1989
+  password: Y6R9pAtvxxzmGC
+  port: 5600
+  server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_217
+  name: 55|🇷FR-149.202.82.172-5173
+  password: XKFKl2rULjIp74
+  port: 8008
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇷FR-149.202.82.172-5176
+  password: PCnnH6SQSnfoS27
+  port: 8090
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇷FR-54.36.174.181-5268
   password: g5MeD6Ft3CWlJId
   port: 5004
-  server: 149.202.82.172
+  server: 54.36.174.181
   type: ss
 - cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_218
+  name: 55|🇫🇷FR-54.36.174.181-5270
   password: PCnnH6SQSnfoS27
-  port: 8091
-  server: 217.182.198.219
+  port: 8090
+  server: 54.36.174.181
   type: ss
 - cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_219
-  password: Y6R9pAtvxxzmGC
-  port: 5000
-  server: 145.239.6.202
+  name: 55|🇷FR-54.36.174.181-5285
+  password: RexnBgU7EV5ADxG
+  port: 7002
+  server: 54.36.174.181
   type: ss
 - cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_221
-  password: Y6R9pAtvxxzmGC
-  port: 3389
-  server: 145.239.6.202
+  name: 55|🇷FR-54.36.174.181-5286
+  password: zDNVedRFPQexG9v
+  port: 6379
+  server: 54.36.174.181
   type: ss
 - cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_222
+  name: 55|🇷FR-54.36.174.181-5288
   password: Y6R9pAtvxxzmGC
   port: 3306
-  server: 145.239.6.202
+  server: 54.36.174.181
   type: ss
 - cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_223
-  password: TEzjfAYq2IjtuoS
-  port: 6679
+  name: 55|🇷FR-54.36.174.181-5289
+  password: pKEW8JPByTVTLtM
+  port: 4444
+  server: 54.36.174.181
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇫🇷FR-149.202.82.172-5297
+  password: zDNVedRFPQexG9v
+  port: 6379
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_224
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 145.239.6.202
+  name: 55|🇫🇷FR-149.202.82.172-5298
+  password: XKFKl2rULjIp74
+  port: 8009
+  server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_228
+  name: 55|🇫🇷FR-149.202.82.172-5299
+  password: Y6R9pAtvxxzmGC
+  port: 5000
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇫🇷FR-149.202.82.172-5300
+  password: PCnnH6SQSnfoS27
+  port: 8091
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇷FR-149.202.82.172-5301
+  password: kDWvXYZoTBcGkC4
+  port: 8881
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇫🇷FR-149.202.82.172-5302
+  password: RexnBgU7EV5ADxG
+  port: 7002
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇫🇷FR-149.202.82.172-5304
+  password: Y6R9pAtvxxzmGC
+  port: 8888
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇫🇷FR-149.202.82.172-5305
   password: cdBIDV42DCwnfIN
   port: 8118
-  server: 145.239.6.202
+  server: 149.202.82.172
   type: ss
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  h2-opts: {}
-  http-opts: {}
-  ip-version: dual
-  name: 36,39,52,70|VMESS-美国>德国-ChatGPT-TikTok-You...
-  network: ws
-  port: 80
-  server: 151.101.194.133
-  servername: telegram-isvvpn.ir
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  udp: true
-  uuid: ca387597-d79e-48c2-89a7-e2dc66a88a70
-  ws-opts:
-    headers:
-      HOST: telegram-isvvpn.ir
-    path: /racevpn?telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn
+- cipher: aes-256-gcm
+  name: 55|🇫🇷FR-149.202.82.172-5306
+  password: e4FCWrgpkji3QY
+  port: 9102
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇷FR-149.202.82.172-5307
+  password: FoOiGlkAA9yPEGP
+  port: 7307
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇷FR-149.202.82.172-5309
+  password: FoOiGlkAA9yPEGP
+  port: 7306
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇫🇷FR-149.202.82.172-5311
+  password: KixLvKzwjekG00rm
+  port: 5500
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇫🇷FR-149.202.82.172-5312
+  password: kDWvXYZoTBcGkC4
+  port: 8882
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇫🇷FR-149.202.82.172-5314
+  password: KixLvKzwjekG00rm
+  port: 8000
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇫🇷FR-149.202.82.172-5315
+  password: Y6R9pAtvxxzmGC
+  port: 3306
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇷FR-149.202.82.172-5317
+  password: RexnBgU7EV5ADxG
+  port: 7001
+  server: 149.202.82.172
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇼 TW
-  name: 27|🇼 TW_321
+  name: 55|🇹TW-2.58.241.42-5522
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  port: 443
+  server: taiwan-2.keenvpn.me
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 55|🇹TW-2.58.241.42-5523
   password: 2afbc97400ca71c8f3306f9843a6e1c2
   port: 443
   server: 2.58.241.42
@@ -440,56 +444,56 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 27|🇫🇷FR_224
-  - 27|🇫🇷FR_194
-  - 21,27,56,64|🇫🇷FR-195.154.185.174-0346 | 42...
-  - 27|🇫🇷FR_197
-  - 27|🇫🇷FR_218
-  - 27|🇫🇷FR_223
-  - 27|🇫🇷FR_195
-  - 27|🇫🇷FR_215
-  - 27|🇫🇷FR_217
-  - 27|🇫🇷FR_203
+  - 21,55,56,64|🇨🇦CA-149.22.95.183-0345 | 37.9...
+  - 55|CA-45.154.204.13-0298
+  - 21,55,56,64|🇨🇦CA-79.127.233.170-0330 | 32....
+  - 55|🇫🇷FR-149.202.82.172-5302
+  - 55|🇫🇷FR-149.202.82.172-5312
+  - 55|🇫🇷FR-149.202.82.172-5300
+  - 55|🇫🇷FR-149.202.82.172-5304
+  - 55|🇫🇷FR-149.202.82.172-5314
+  - 55|🇷FR-149.202.82.172-5301
+  - 55|🇫🇷FR-149.202.82.172-5299
+  - 55|🇷FR-149.202.82.172-5173
+  - 55|🇫🇷FR-149.202.82.172-5315
+  - 55|🇷FR-149.202.82.172-5309
+  - 55|🇷FR-149.202.82.172-5317
+  - 55|🇷FR-149.202.82.172-1989
+  - 55|🇫🇷FR-149.202.82.172-5297
+  - 55|🇫🇷FR-149.202.82.172-5305
+  - 55|🇫🇷FR-149.202.82.172-5311
+  - 55|🇫🇷FR-149.202.82.172-0509
+  - 46,55|🏁RELAY-104.16.155.10-0739
+  - 21,55,56,64|🇫🇷FR-195.154.185.174-0346 | 42...
+  - 55|🇫🇷FR-149.202.82.172-5298
+  - 55|🇷FR-149.202.82.172-0514
+  - 21,55,56,64|🇫🇷FR-51.15.27.48-0339 | 12.04M...
+  - 55|🇷FR-149.202.82.172-5176
+  - 55|🇷FR-149.202.82.172-5307
+  - 55|🇫🇷FR-149.202.82.172-5306
+  - 46,55|RELAY-104.16.155.10-0761
+  - 46,55|RELAY-104.19.48.236-0721
+  - 70|SS-德国-NF解锁德国地区非自制剧-ChatGPT-Tik...
+  - 55|🇷FR-54.36.174.181-5285
+  - 55|🇷FR-54.36.174.181-5286
+  - 55|🇷FR-54.36.174.181-5288
+  - 46,55|🏁RELAY-104.17.221.248-0740
   - 70|VMESS-德国-NF解锁德国自制剧-ChatGPT-Tik...
-  - 21,27,56,64|CH-156.146.62.161-0394 | 20.68...
-  - 21,27,56,64|CH-156.146.62.164-0396 | 29.46...
-  - 21,27,56,64|CH-156.146.62.162-0428 | 19.74...
-  - 27|🇫🇷FR_221
-  - 27|🇫🇷FR_228
-  - 21,27,56,64|CH-156.146.62.163-0399 | 30.10...
-  - 27|🇫🇷FR_219
-  - 27|🇫🇷FR_222
-  - 21,56,64|CH-84.17.53.160-0362 | 29.407M...
-  - 27|🇫🇷FR_193
-  - 27|🇫🇷FR_199
-  - 27|🇫🇷FR_202
-  - 27|🇷FR_191
-  - 27|🇫🇷FR_214
-  - 27|🇫🇷FR_216
-  - 27|🇫🇷FR_205
-  - 27|🇫🇷FR_200
-  - 27|🇫🇷FR_208
-  - 27|🇫🇷FR_207
-  - 27|🇫🇷FR_206
-  - 27|🇫🇷FR_209
-  - 21,27,56,64|🇫🇷FR-51.15.27.48-0339 | 12.04M...
-  - 27|🇫🇷FR_192
-  - 27|🇩🇪DE_177
-  - 27|🇫🇷FR_213
-  - 27|🇩🇪DE_175
-  - 27|🇩🇪DE_180
-  - 21,56,60,70|SS-国-NF解锁自制剧-ChatGPT-TikTok-Yo...
-  - 27|🇫🇷FR_211
-  - 27|🇫🇷FR_212
-  - 36,39,52,70|VMESS-美国>德国-ChatGPT-TikTok-You...
-  - 27|🇩🇪DE_182
-  - 26|🇩🇪 德国 | DEU 2
-  - 27|🇫🇷FR_190
-  - 27|🇼 TW_321
-  - 46|加拿大 011
+  - 55|🇹TW-2.58.241.42-5523
+  - 46,55|🏁RELAY-104.16.155.10-0745
+  - 55,64|🇫🇷FR-45.158.171.66-0359 | 34.8...
+  - 55|🇷FR-54.36.174.181-5289
+  - 55|🇸🇬SG-18.139.221.191-5706
+  - 55|🇫🇷FR-54.36.174.181-5270
   - 70|VMESS-未知>德国-NF解锁德国地区非自制剧-ChatG...
-  - 27|🇩🇪DE_178
-  - 27|🇪DE_184
+  - 46,55|RELAY-104.19.48.236-0743
+  - 46,55|RELAY-104.19.48.236-0734
+  - 9,53,55|🇰🇷KR-218.38.103.150-5824
+  - 55|🇸🇬SG-52.77.248.74-5743
+  - 55|🇹TW-2.58.241.42-5522
+  - 55|🇷FR-54.36.174.181-5268
+  - 46,55|🏁RELAY-104.17.221.248-0742
+  - 55|🇵JP-18.182.27.23-1851
   url: https://i.ytimg.com/generate_204
   interval: 300
   tolerance: 50
@@ -497,111 +501,111 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 27|🇫🇷FR_224
-  - 27|🇫🇷FR_194
-  - 21,27,56,64|🇫🇷FR-195.154.185.174-0346 | 42...
-  - 27|🇫🇷FR_197
-  - 27|🇫🇷FR_218
-  - 27|🇫🇷FR_223
-  - 27|🇫🇷FR_195
-  - 27|🇫🇷FR_215
-  - 27|🇫🇷FR_217
-  - 27|🇫🇷FR_203
+  - 21,55,56,64|🇨🇦CA-149.22.95.183-0345 | 37.9...
+  - 55|CA-45.154.204.13-0298
+  - 21,55,56,64|🇨🇦CA-79.127.233.170-0330 | 32....
+  - 55|🇫🇷FR-149.202.82.172-5302
+  - 55|🇫🇷FR-149.202.82.172-5312
+  - 55|🇫🇷FR-149.202.82.172-5300
+  - 55|🇫🇷FR-149.202.82.172-5304
+  - 55|🇫🇷FR-149.202.82.172-5314
+  - 55|🇷FR-149.202.82.172-5301
+  - 55|🇫🇷FR-149.202.82.172-5299
+  - 55|🇷FR-149.202.82.172-5173
+  - 55|🇫🇷FR-149.202.82.172-5315
+  - 55|🇷FR-149.202.82.172-5309
+  - 55|🇷FR-149.202.82.172-5317
+  - 55|🇷FR-149.202.82.172-1989
+  - 55|🇫🇷FR-149.202.82.172-5297
+  - 55|🇫🇷FR-149.202.82.172-5305
+  - 55|🇫🇷FR-149.202.82.172-5311
+  - 55|🇫🇷FR-149.202.82.172-0509
+  - 46,55|🏁RELAY-104.16.155.10-0739
+  - 21,55,56,64|🇫🇷FR-195.154.185.174-0346 | 42...
+  - 55|🇫🇷FR-149.202.82.172-5298
+  - 55|🇷FR-149.202.82.172-0514
+  - 21,55,56,64|🇫🇷FR-51.15.27.48-0339 | 12.04M...
+  - 55|🇷FR-149.202.82.172-5176
+  - 55|🇷FR-149.202.82.172-5307
+  - 55|🇫🇷FR-149.202.82.172-5306
+  - 46,55|RELAY-104.16.155.10-0761
+  - 46,55|RELAY-104.19.48.236-0721
+  - 70|SS-德国-NF解锁德国地区非自制剧-ChatGPT-Tik...
+  - 55|🇷FR-54.36.174.181-5285
+  - 55|🇷FR-54.36.174.181-5286
+  - 55|🇷FR-54.36.174.181-5288
+  - 46,55|🏁RELAY-104.17.221.248-0740
   - 70|VMESS-德国-NF解锁德国自制剧-ChatGPT-Tik...
-  - 21,27,56,64|CH-156.146.62.161-0394 | 20.68...
-  - 21,27,56,64|CH-156.146.62.164-0396 | 29.46...
-  - 21,27,56,64|CH-156.146.62.162-0428 | 19.74...
-  - 27|🇫🇷FR_221
-  - 27|🇫🇷FR_228
-  - 21,27,56,64|CH-156.146.62.163-0399 | 30.10...
-  - 27|🇫🇷FR_219
-  - 27|🇫🇷FR_222
-  - 21,56,64|CH-84.17.53.160-0362 | 29.407M...
-  - 27|🇫🇷FR_193
-  - 27|🇫🇷FR_199
-  - 27|🇫🇷FR_202
-  - 27|🇷FR_191
-  - 27|🇫🇷FR_214
-  - 27|🇫🇷FR_216
-  - 27|🇫🇷FR_205
-  - 27|🇫🇷FR_200
-  - 27|🇫🇷FR_208
-  - 27|🇫🇷FR_207
-  - 27|🇫🇷FR_206
-  - 27|🇫🇷FR_209
-  - 21,27,56,64|🇫🇷FR-51.15.27.48-0339 | 12.04M...
-  - 27|🇫🇷FR_192
-  - 27|🇩🇪DE_177
-  - 27|🇫🇷FR_213
-  - 27|🇩🇪DE_175
-  - 27|🇩🇪DE_180
-  - 21,56,60,70|SS-国-NF解锁自制剧-ChatGPT-TikTok-Yo...
-  - 27|🇫🇷FR_211
-  - 27|🇫🇷FR_212
-  - 36,39,52,70|VMESS-美国>德国-ChatGPT-TikTok-You...
-  - 27|🇩🇪DE_182
-  - 26|🇩🇪 德国 | DEU 2
-  - 27|🇫🇷FR_190
-  - 27|🇼 TW_321
-  - 46|加拿大 011
+  - 55|🇹TW-2.58.241.42-5523
+  - 46,55|🏁RELAY-104.16.155.10-0745
+  - 55,64|🇫🇷FR-45.158.171.66-0359 | 34.8...
+  - 55|🇷FR-54.36.174.181-5289
+  - 55|🇸🇬SG-18.139.221.191-5706
+  - 55|🇫🇷FR-54.36.174.181-5270
   - 70|VMESS-未知>德国-NF解锁德国地区非自制剧-ChatG...
-  - 27|🇩🇪DE_178
-  - 27|🇪DE_184
+  - 46,55|RELAY-104.19.48.236-0743
+  - 46,55|RELAY-104.19.48.236-0734
+  - 9,53,55|🇰🇷KR-218.38.103.150-5824
+  - 55|🇸🇬SG-52.77.248.74-5743
+  - 55|🇹TW-2.58.241.42-5522
+  - 55|🇷FR-54.36.174.181-5268
+  - 46,55|🏁RELAY-104.17.221.248-0742
+  - 55|🇵JP-18.182.27.23-1851
   url: https://i.ytimg.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 27|🇫🇷FR_224
-  - 27|🇫🇷FR_194
-  - 21,27,56,64|🇫🇷FR-195.154.185.174-0346 | 42...
-  - 27|🇫🇷FR_197
-  - 27|🇫🇷FR_218
-  - 27|🇫🇷FR_223
-  - 27|🇫🇷FR_195
-  - 27|🇫🇷FR_215
-  - 27|🇫🇷FR_217
-  - 27|🇫🇷FR_203
+  - 21,55,56,64|🇨🇦CA-149.22.95.183-0345 | 37.9...
+  - 55|CA-45.154.204.13-0298
+  - 21,55,56,64|🇨🇦CA-79.127.233.170-0330 | 32....
+  - 55|🇫🇷FR-149.202.82.172-5302
+  - 55|🇫🇷FR-149.202.82.172-5312
+  - 55|🇫🇷FR-149.202.82.172-5300
+  - 55|🇫🇷FR-149.202.82.172-5304
+  - 55|🇫🇷FR-149.202.82.172-5314
+  - 55|🇷FR-149.202.82.172-5301
+  - 55|🇫🇷FR-149.202.82.172-5299
+  - 55|🇷FR-149.202.82.172-5173
+  - 55|🇫🇷FR-149.202.82.172-5315
+  - 55|🇷FR-149.202.82.172-5309
+  - 55|🇷FR-149.202.82.172-5317
+  - 55|🇷FR-149.202.82.172-1989
+  - 55|🇫🇷FR-149.202.82.172-5297
+  - 55|🇫🇷FR-149.202.82.172-5305
+  - 55|🇫🇷FR-149.202.82.172-5311
+  - 55|🇫🇷FR-149.202.82.172-0509
+  - 46,55|🏁RELAY-104.16.155.10-0739
+  - 21,55,56,64|🇫🇷FR-195.154.185.174-0346 | 42...
+  - 55|🇫🇷FR-149.202.82.172-5298
+  - 55|🇷FR-149.202.82.172-0514
+  - 21,55,56,64|🇫🇷FR-51.15.27.48-0339 | 12.04M...
+  - 55|🇷FR-149.202.82.172-5176
+  - 55|🇷FR-149.202.82.172-5307
+  - 55|🇫🇷FR-149.202.82.172-5306
+  - 46,55|RELAY-104.16.155.10-0761
+  - 46,55|RELAY-104.19.48.236-0721
+  - 70|SS-德国-NF解锁德国地区非自制剧-ChatGPT-Tik...
+  - 55|🇷FR-54.36.174.181-5285
+  - 55|🇷FR-54.36.174.181-5286
+  - 55|🇷FR-54.36.174.181-5288
+  - 46,55|🏁RELAY-104.17.221.248-0740
   - 70|VMESS-德国-NF解锁德国自制剧-ChatGPT-Tik...
-  - 21,27,56,64|CH-156.146.62.161-0394 | 20.68...
-  - 21,27,56,64|CH-156.146.62.164-0396 | 29.46...
-  - 21,27,56,64|CH-156.146.62.162-0428 | 19.74...
-  - 27|🇫🇷FR_221
-  - 27|🇫🇷FR_228
-  - 21,27,56,64|CH-156.146.62.163-0399 | 30.10...
-  - 27|🇫🇷FR_219
-  - 27|🇫🇷FR_222
-  - 21,56,64|CH-84.17.53.160-0362 | 29.407M...
-  - 27|🇫🇷FR_193
-  - 27|🇫🇷FR_199
-  - 27|🇫🇷FR_202
-  - 27|🇷FR_191
-  - 27|🇫🇷FR_214
-  - 27|🇫🇷FR_216
-  - 27|🇫🇷FR_205
-  - 27|🇫🇷FR_200
-  - 27|🇫🇷FR_208
-  - 27|🇫🇷FR_207
-  - 27|🇫🇷FR_206
-  - 27|🇫🇷FR_209
-  - 21,27,56,64|🇫🇷FR-51.15.27.48-0339 | 12.04M...
-  - 27|🇫🇷FR_192
-  - 27|🇩🇪DE_177
-  - 27|🇫🇷FR_213
-  - 27|🇩🇪DE_175
-  - 27|🇩🇪DE_180
-  - 21,56,60,70|SS-国-NF解锁自制剧-ChatGPT-TikTok-Yo...
-  - 27|🇫🇷FR_211
-  - 27|🇫🇷FR_212
-  - 36,39,52,70|VMESS-美国>德国-ChatGPT-TikTok-You...
-  - 27|🇩🇪DE_182
-  - 26|🇩🇪 德国 | DEU 2
-  - 27|🇫🇷FR_190
-  - 27|🇼 TW_321
-  - 46|加拿大 011
+  - 55|🇹TW-2.58.241.42-5523
+  - 46,55|🏁RELAY-104.16.155.10-0745
+  - 55,64|🇫🇷FR-45.158.171.66-0359 | 34.8...
+  - 55|🇷FR-54.36.174.181-5289
+  - 55|🇸🇬SG-18.139.221.191-5706
+  - 55|🇫🇷FR-54.36.174.181-5270
   - 70|VMESS-未知>德国-NF解锁德国地区非自制剧-ChatG...
-  - 27|🇩🇪DE_178
-  - 27|🇪DE_184
+  - 46,55|RELAY-104.19.48.236-0743
+  - 46,55|RELAY-104.19.48.236-0734
+  - 9,53,55|🇰🇷KR-218.38.103.150-5824
+  - 55|🇸🇬SG-52.77.248.74-5743
+  - 55|🇹TW-2.58.241.42-5522
+  - 55|🇷FR-54.36.174.181-5268
+  - 46,55|🏁RELAY-104.17.221.248-0742
+  - 55|🇵JP-18.182.27.23-1851
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
