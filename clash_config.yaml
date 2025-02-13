@@ -32,75 +32,89 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- cipher: aes-256-cfb
-  name: 19|@MxlShare 韩国 | KOR 2
-  password: amazonskr05
+- cipher: chacha20-ietf-poly1305
+  name: 21,56,64|🇭🇰HK-216.250.97.118-5405 | 4.0...
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
   port: 443
-  server: 13.125.220.77
+  server: hong-kong.keenvpn.me
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 21,56,64|🇭🇰HK-216.250.97.118-5404 | 3.7...
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  port: 443
+  server: 216.250.97.118
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 54|🇭🇰 香港-1C
+  network: tcp
+  port: '19901'
+  server: xg.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: f67a5b6f-d432-41cb-8c84-ed3144d590c2
+- cipher: chacha20-ietf-poly1305
+  name: 64|🇭🇰HK-141.98.234.93-5269 | 8.75...
+  password: WfmxKX2FBJRU0Ie9VLIYDL
+  port: 20012
+  server: 141.98.234.93
   type: ss
 - cipher: aes-256-cfb
-  name: 19|@MxlShare 韩国 | KOR 3
+  client-fingerprint: chrome
+  name: 19,42,64|🇯🇵JP-43.206.240.27-1367 | 13.5...
   password: amazonskr05
   port: 443
-  server: 3.38.178.204
+  server: 43.206.240.27
+  tfo: false
   type: ss
 - cipher: aes-256-cfb
-  name: 19|@MxlShare 韩国 | KOR 4
+  name: 19,42,74|52.195.215.236_OpenAI_Claude
   password: amazonskr05
   port: 443
-  server: 13.125.199.67
+  server: 52.195.215.236
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 21,56,64|🇯🇵JP-149.22.87.204-0458 | 14.1...
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
+- cipher: aes-128-gcm
+  name: 21,24,56,64|🇯🇵JP-149.22.87.240-0444 | 12.0...
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.240
+  type: ss
+- cipher: aes-128-gcm
+  name: 21,56,64|🇯🇵JP-149.22.87.241-0447 | 14.6...
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.241
   type: ss
 - cipher: aes-256-cfb
-  name: 19|@MxlShare 韩国 | KOR 5
+  name: 21,42,56,74|3.112.28.118_OpenAI_Claude
   password: amazonskr05
   port: 443
-  server: 3.36.116.31
+  server: 3.112.28.118
   type: ss
+  udp: true
 - cipher: aes-256-cfb
-  name: 19|@MxlShare 韩国 | KOR 6
+  name: 21,56,74|52.68.247.21_OpenAI_Claude
   password: amazonskr05
   port: 443
-  server: 13.125.187.128
+  server: 52.68.247.21
   type: ss
-- cipher: aes-256-cfb
-  name: 19|@MxlShare 韩国 | KOR 8
-  password: amazonskr05
+- cipher: chacha20-ietf-poly1305
+  name: 37,52,60|🇻🇳VN-160.19.78.75-081
+  password: Nk9asglDzHzjktVzTkvhaA
   port: 443
-  server: 3.36.73.26
+  server: arxfw2b78fi2q9hzylhn.freesocks.work
   type: ss
-- cipher: aes-256-cfb
-  name: 19|@MxlShare 韩国 | KOR 13
-  password: amazonskr05
-  port: 443
-  server: 52.79.166.214
-  type: ss
-- cipher: aes-256-cfb
-  name: 19|@MxlShare 韩国 | KOR 14
-  password: amazonskr05
-  port: 443
-  server: 43.202.60.105
-  type: ss
-- cipher: aes-256-cfb
-  name: 19|@MxlShare 韩国 | KOR 16
-  password: amazonskr05
-  port: 443
-  server: 13.209.11.204
-  type: ss
-- cipher: aes-256-cfb
-  name: 19|@MxlShare 韩国 | KOR 17
-  password: amazonskr05
-  port: 443
-  server: 3.36.113.40
-  type: ss
-- cipher: aes-256-cfb
-  name: 19|@MxlShare 韩国 | KOR 18
-  password: amazonskr05
-  port: 443
-  server: 3.35.135.232
-  type: ss
+  udp: true
 - cipher: aes-256-cfb
   delay: 2997
-  name: 9,42,53|新加坡 - 新加坡 - Amazon.com, Inc. -...
+  name: 9,53|新加坡 - 新加坡 - Amazon.com, Inc. -...
   password: amazonskr05
   port: 443
   server: 52.221.234.117
@@ -123,17 +137,17 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 19,23,74|SG_Singapore_Amazon.com, Inc._...
+  name: 19,42,74|SG_Singapore_Amazon.com, Inc._...
   password: amazonskr05
   port: 443
   server: 18.141.9.206
   type: ss
+  udp: true
 - cipher: aes-256-cfb
-  name: 19,64,74|52.77.230.72_OpenAI_Claude
+  name: 19|@MxlShare 新加坡 | SGP 4
   password: amazonskr05
   port: 443
-  server: 52.77.230.72
+  server: 18.143.130.71
   type: ss
 - cipher: rc4-md5
   name: 19,21,56,64|🇸🇬SG-68.183.227.45-0454 | 9.75...
@@ -160,212 +174,275 @@ proxies:
   server: 68.183.227.4
   type: ss
 - cipher: aes-256-cfb
-  name: 42,64|🇸🇬SG-54.179.36.235-5454 | 6.35...
+  name: 42,74|13.213.40.92_OpenAI_Claude
   password: amazonskr05
   port: 443
-  server: 54.179.36.235
+  server: 13.213.40.92
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_208
-  password: FoOiGlkAA9yPEGP
-  port: 7306
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_209
-  password: RexnBgU7EV5ADxG
-  port: 7001
-  server: 145.239.6.202
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_210
-  password: pKEW8JPByTVTLtM
+- cipher: aes-256-cfb
+  name: 42,64|🇸🇬SG-13.212.177.74-5350 | 7.52...
+  password: amazonskr05
   port: 443
-  server: 149.202.82.172
+  server: 13.212.177.74
   type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_211
-  password: cdBIDV42DCwnfIN
-  port: 8118
-  server: 217.182.198.219
+  udp: true
+- cipher: aes-256-cfb
+  name: 42,64,74|18.138.252.136_OpenAI_Claude
+  password: amazonskr05
+  port: 443
+  server: 18.138.252.136
   type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_212
-  password: e4FCWrgpkji3QY
-  port: 9101
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_213
-  password: cdBIDV42DCwnfIN
-  port: 8119
-  server: 149.202.82.172
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_215
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_216
-  password: pKEW8JPByTVTLtM
-  port: 4444
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_217
-  password: Y6R9pAtvxxzmGC
-  port: 3389
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_218
-  password: TEzjfAYq2IjtuoS
-  port: 6697
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_219
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 149.202.82.172
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_220
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 54.36.174.181
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_221
-  password: pKEW8JPByTVTLtM
-  port: 4444
-  server: 145.239.6.202
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_222
-  password: faBAoD54k87UJG7
-  port: 2375
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_224
-  password: Y6R9pAtvxxzmGC
-  port: 3306
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_225
-  password: PCnnH6SQSnfoS27
-  port: 8091
-  server: 54.36.174.181
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_226
-  password: XKFKl2rULjIp74
-  port: 8008
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_228
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 149.202.82.172
+- cipher: aes-128-gcm
+  name: 21,56,64|🇨🇦CA-149.22.95.183-0345 | 37.9...
+  password: shadowsocks
+  port: 443
+  server: 149.22.95.183
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 64|🇫🇷FR-185.234.64.35-0373 | 40.3...
-  password: YTNjNDY5
-  port: 8388
-  server: 185.234.64.35
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 64|🇫🇷FR-185.231.205.179-0391 | 18...
-  password: OTVlMzcy
-  port: 8388
-  server: 185.231.205.179
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 64|🇫🇷FR-185.231.205.179-0387 | 17...
-  password: OTVlMzcy
-  port: 8388
-  server: fr1.opensocks.site
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 70|SS--NF解锁法国自制剧-ChatGPT-YouTube-...
-  password: ByotRdDx1oXSurCZb9er2p
-  port: 24495
-  server: 213.176.66.228
-  type: ss
-- cipher: rc4-md5
-  name: 21,56,64|🇬🇧GB-146.70.61.18-0349 | 44.52...
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 146.70.61.18
-  type: ss
-- cipher: aes-128-gcm
-  name: 21,27,56,64|🇬🇧GB-212.102.53.193-0384 | 30....
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.193
-  type: ss
-- cipher: aes-128-gcm
-  name: 21,27,56,64|🇬🇧GB-212.102.53.194-0130 | 32....
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.194
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇬🇧GB
-  name: 21,27,56,64|🇬🇧GB-212.102.53.195-0376 | 25....
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.195
-  type: ss
-- cipher: aes-128-gcm
-  name: 21,27,56,64|🇬🇧GB-212.102.53.196-0382 | 30....
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.196
-  type: ss
-- cipher: aes-128-gcm
-  name: 21,27,56,64|🇬🇧GB-212.102.53.197-0412 | 23....
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.197
+  name: 21,56,64|🇨🇦CA-79.127.233.170-0330 | 32....
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 79.127.233.170
   type: ss
 - alterId: 0
   cipher: auto
-  name: 74|RU_Moscow_LLC Baxet_OpenAI
+  name: 46|加拿大 005
   network: ws
-  port: 80
-  server: eedp257bubu2wefy2.lovebaipiao.net
+  port: 2095
+  server: s1.db-link01.top
+  tls: false
   type: vmess
-  udp: true
-  uuid: 6f42cfe5-64f1-466d-8860-859d8e0f0a98
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
   ws-opts:
     headers:
-      Host: www.apple.com
-    path: /iphone
+      Host: 100-105-92-158.s1.db-link01.top
+    path: /dabai.in104.24.89.11
+- alterId: 0
+  cipher: auto
+  name: 46|加拿大 015
+  network: ws
+  port: 8880
+  server: s2.db-link01.top
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-177-17-45.s2.db-link01.top
+    path: /dabai.in172.67.92.156
+- alterId: 0
+  cipher: auto
+  name: 46|加拿大 001
+  network: ws
+  port: 2095
+  server: 104.16.155.10
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-209-47-141.s2.db-link02.top
+    path: /dabai.in104.20.27.115
+- alterId: 0
+  cipher: auto
+  name: 46,61|🇺🇸 美国 CloudFlare节点
+  network: ws
+  port: '2095'
+  server: s1.db-link02.top
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-33-108-197.s1.db-link02.top
+    path: /dabai.in104.24.248.64
+- alterId: 0
+  cipher: auto
+  name: 46|加拿大 006
+  network: ws
+  port: 8080
+  server: s2.cn-db.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-152-16-179.s2.cn-db.top
+    path: /dabai.in172.67.64.151
+- alterId: 0
+  cipher: auto
+  name: 46|加拿大 007
+  network: ws
+  port: 2095
+  server: s2.cn-db.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-119-187-44.s2.cn-db.top
+    path: /dabai.in104.20.121.88
+- alterId: 0
+  cipher: auto
+  name: 46|加拿大 008
+  network: ws
+  port: 2095
+  server: s2.db-link01.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-65-56-224.s2.db-link01.top
+    path: /dabai.in104.17.133.52
+- alterId: 0
+  cipher: auto
+  name: 46|加拿大 011
+  network: ws
+  port: 8880
+  server: s5.cn-db.top
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-240-33-58.s5.cn-db.top
+    path: /dabai.in172.67.30.35
+- cipher: aes-128-gcm
+  name: 21,56,64|CH-156.146.62.161-0394 | 20.68...
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.161
+  type: ss
+- cipher: aes-128-gcm
+  name: 21,56,64|CH-156.146.62.162-0428 | 19.74...
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.162
+  type: ss
+- cipher: aes-128-gcm
+  name: 21,56,64|CH-156.146.62.163-0399 | 30.10...
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.163
+  type: ss
+- cipher: aes-128-gcm
+  name: 21,56,64|CH-156.146.62.164-0396 | 29.46...
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.164
+  type: ss
+- cipher: aes-256-cfb
+  name: 21,56,64|CH-84.17.53.160-0362 | 29.407M...
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 84.17.53.160
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 21,56,60,70|SS-国-NF解锁自制剧-ChatGPT-TikTok-Yo...
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 70,74|95.164.68.37_OpenAI
+  password: OTBkYmFk
+  port: 8388
+  server: 95.164.68.37
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 70|SS-德国-NF解锁德国地区非自制剧-ChatGPT-Tik...
+  password: Q6mkedon57jNe3y6fvHQET
+  port: 18359
+  server: 92.246.139.24
+  type: ss
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 70|VMESS-德国-NF解锁德国自制剧-ChatGPT-Tik...
+  network: ws
+  port: 23451
+  server: 158.180.48.19
+  servername: us-new03.daluquan.top
+  skip-cert-verify: true
+  type: vmess
+  uuid: 7318bc15-4bff-4e22-aac3-4d9f849930db
+  ws-opts:
+    headers:
+      HOST: us-new03.daluquan.top
+    path: /itdog?ed=2560
+- cipher: chacha20-ietf-poly1305
+  name: 21,56,64|🇫🇷FR-45.158.171.110-0369 | 31....
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.158.171.110
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 21,56,64|🇫🇷FR-45.158.171.132-0350 | 19....
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.158.171.132
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 21,56,64|🇫🇷FR-45.158.171.141-0420 | 34....
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.158.171.141
+  type: ss
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 38,39|🇷_RU_罗_1
+  password: Lp27rqyJq72bZsqX
+  port: 9045
+  server: 217.30.10.18
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 38|🇺_RU_俄罗斯_7
+  password: rNBfNuuANFCAk7KB
+  port: 9056
+  server: 217.30.10.18
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 39|🇷🇺_RU_俄罗斯_4
+  password: ueLXVkvh4hckhErQ
+  port: 9060
+  server: 217.30.10.18
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 46|俄罗斯 001
+  network: ws
+  port: 8443
+  server: 193.9.49.89
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
+  ws-opts:
+    headers:
+      Host: lax1.ibgfw.top
+    path: /xrenvws
 proxy-groups:
 - name: 节点选择
   type: select
@@ -378,56 +455,56 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 64|🇫🇷FR-185.234.64.35-0373 | 40.3...
-  - 64|🇫🇷FR-185.231.205.179-0391 | 18...
-  - 27|🇫🇷FR_209
-  - 21,27,56,64|🇬🇧GB-212.102.53.193-0384 | 30....
-  - 21,27,56,64|🇬🇧GB-212.102.53.196-0382 | 30....
-  - 27|🇫🇷FR_222
-  - 21,27,56,64|🇬🇧GB-212.102.53.197-0412 | 23....
-  - 27|🇫🇷FR_213
-  - 27|🇫🇷FR_228
-  - 21,27,56,64|🇬🇧GB-212.102.53.195-0376 | 25....
-  - 21,27,56,64|🇬🇧GB-212.102.53.194-0130 | 32....
-  - 70|SS--NF解锁法国自制剧-ChatGPT-YouTube-...
-  - 27|🇫🇷FR_221
-  - 21,56,64|🇬🇧GB-146.70.61.18-0349 | 44.52...
-  - 27|🇫🇷FR_219
-  - 64|🇫🇷FR-185.231.205.179-0387 | 17...
-  - 27|🇫🇷FR_208
-  - 27|🇫🇷FR_226
-  - 27|🇫🇷FR_218
-  - 27|🇫🇷FR_210
-  - 27|🇫🇷FR_211
-  - 27|🇫🇷FR_216
-  - 27|🇫🇷FR_217
-  - 27|🇫🇷FR_215
-  - 27|🇫🇷FR_224
-  - 27|🇫🇷FR_212
-  - 27|🇫🇷FR_220
-  - 27|🇫🇷FR_225
-  - 42,64|🇸🇬SG-54.179.36.235-5454 | 6.35...
-  - 9,42,53|新加坡 - 新加坡 - Amazon.com, Inc. -...
-  - 19,23,74|SG_Singapore_Amazon.com, Inc._...
+  - 21,56,64|🇨🇦CA-79.127.233.170-0330 | 32....
+  - 21,56,64|🇨🇦CA-149.22.95.183-0345 | 37.9...
+  - 21,56,60,70|SS-国-NF解锁自制剧-ChatGPT-TikTok-Yo...
+  - 21,56,64|🇫🇷FR-45.158.171.132-0350 | 19....
+  - 21,56,64|🇫🇷FR-45.158.171.110-0369 | 31....
+  - 21,56,64|🇫🇷FR-45.158.171.141-0420 | 34....
+  - 21,56,64|CH-156.146.62.162-0428 | 19.74...
+  - 21,56,64|CH-156.146.62.163-0399 | 30.10...
+  - 21,56,64|CH-156.146.62.161-0394 | 20.68...
+  - 70|SS-德国-NF解锁德国地区非自制剧-ChatGPT-Tik...
+  - 21,56,64|CH-156.146.62.164-0396 | 29.46...
+  - 46|加拿大 001
+  - 70|VMESS-德国-NF解锁德国自制剧-ChatGPT-Tik...
+  - 21,56,64|CH-84.17.53.160-0362 | 29.407M...
+  - 46|俄罗斯 001
+  - 46|加拿大 011
+  - 39|🇷🇺_RU_俄罗斯_4
+  - 46|加拿大 008
+  - 70,74|95.164.68.37_OpenAI
+  - 38|🇺_RU_俄罗斯_7
+  - 38,39|🇷_RU_罗_1
+  - 21,56,64|🇯🇵JP-149.22.87.204-0458 | 14.1...
+  - 21,24,56,64|🇯🇵JP-149.22.87.240-0444 | 12.0...
+  - 46,61|🇺🇸 美国 CloudFlare节点
+  - 21,56,74|52.68.247.21_OpenAI_Claude
+  - 46|加拿大 015
+  - 19,42,74|52.195.215.236_OpenAI_Claude
+  - 21,56,64|🇯🇵JP-149.22.87.241-0447 | 14.6...
+  - 21,42,56,74|3.112.28.118_OpenAI_Claude
+  - 46|加拿大 006
+  - 19,42,64|🇯🇵JP-43.206.240.27-1367 | 13.5...
+  - 46|加拿大 007
+  - 64|🇭🇰HK-141.98.234.93-5269 | 8.75...
+  - 54|🇭🇰 香港-1C
+  - 19|@MxlShare 新加坡 | SGP 4
+  - 19,42,74|SG_Singapore_Amazon.com, Inc._...
   - 19,42,74|SG_Singapore_Amazon Technologi...
-  - 19,64,74|52.77.230.72_OpenAI_Claude
+  - 46|加拿大 005
+  - 9,53|新加坡 - 新加坡 - Amazon.com, Inc. -...
+  - 42,64|🇸🇬SG-13.212.177.74-5350 | 7.52...
+  - 42,74|13.213.40.92_OpenAI_Claude
+  - 42,64,74|18.138.252.136_OpenAI_Claude
+  - 21,56,64|🇭🇰HK-216.250.97.118-5404 | 3.7...
   - 9|🇸🇬 新加坡 - 新加坡 - Contabo Asia Pr...
-  - 19|@MxlShare 韩国 | KOR 14
-  - 19|@MxlShare 韩国 | KOR 17
-  - 19|@MxlShare 韩国 | KOR 18
-  - 19|@MxlShare 韩国 | KOR 16
-  - 19|@MxlShare 韩国 | KOR 6
-  - 19|@MxlShare 韩国 | KOR 4
-  - 19|@MxlShare 韩国 | KOR 8
-  - 19|@MxlShare 韩国 | KOR 3
-  - 19|@MxlShare 韩国 | KOR 5
-  - 19|@MxlShare 韩国 | KOR 2
-  - 19|@MxlShare 韩国 | KOR 13
-  - 74|RU_Moscow_LLC Baxet_OpenAI
-  - 21,56,64|🇸🇬SG-128.199.172.224-0461 | 6....
+  - 21,56,64|🇭🇰HK-216.250.97.118-5405 | 4.0...
+  - 37,52,60|🇻🇳VN-160.19.78.75-081
+  - 19,21,56,64|🇸🇬SG-68.183.227.45-0454 | 9.75...
   - 21,56,64|🇸🇬SG-68.183.227.236-0463 | 9.6...
   - 21,56,64|🇸🇬SG-68.183.227.4-0456 | 9.725...
-  - 19,21,56,64|🇸🇬SG-68.183.227.45-0454 | 9.75...
+  - 21,56,64|🇸🇬SG-128.199.172.224-0461 | 6....
   url: https://i.ytimg.com/generate_204
   interval: 300
   tolerance: 50
@@ -435,111 +512,111 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 64|🇫🇷FR-185.234.64.35-0373 | 40.3...
-  - 64|🇫🇷FR-185.231.205.179-0391 | 18...
-  - 27|🇫🇷FR_209
-  - 21,27,56,64|🇬🇧GB-212.102.53.193-0384 | 30....
-  - 21,27,56,64|🇬🇧GB-212.102.53.196-0382 | 30....
-  - 27|🇫🇷FR_222
-  - 21,27,56,64|🇬🇧GB-212.102.53.197-0412 | 23....
-  - 27|🇫🇷FR_213
-  - 27|🇫🇷FR_228
-  - 21,27,56,64|🇬🇧GB-212.102.53.195-0376 | 25....
-  - 21,27,56,64|🇬🇧GB-212.102.53.194-0130 | 32....
-  - 70|SS--NF解锁法国自制剧-ChatGPT-YouTube-...
-  - 27|🇫🇷FR_221
-  - 21,56,64|🇬🇧GB-146.70.61.18-0349 | 44.52...
-  - 27|🇫🇷FR_219
-  - 64|🇫🇷FR-185.231.205.179-0387 | 17...
-  - 27|🇫🇷FR_208
-  - 27|🇫🇷FR_226
-  - 27|🇫🇷FR_218
-  - 27|🇫🇷FR_210
-  - 27|🇫🇷FR_211
-  - 27|🇫🇷FR_216
-  - 27|🇫🇷FR_217
-  - 27|🇫🇷FR_215
-  - 27|🇫🇷FR_224
-  - 27|🇫🇷FR_212
-  - 27|🇫🇷FR_220
-  - 27|🇫🇷FR_225
-  - 42,64|🇸🇬SG-54.179.36.235-5454 | 6.35...
-  - 9,42,53|新加坡 - 新加坡 - Amazon.com, Inc. -...
-  - 19,23,74|SG_Singapore_Amazon.com, Inc._...
+  - 21,56,64|🇨🇦CA-79.127.233.170-0330 | 32....
+  - 21,56,64|🇨🇦CA-149.22.95.183-0345 | 37.9...
+  - 21,56,60,70|SS-国-NF解锁自制剧-ChatGPT-TikTok-Yo...
+  - 21,56,64|🇫🇷FR-45.158.171.132-0350 | 19....
+  - 21,56,64|🇫🇷FR-45.158.171.110-0369 | 31....
+  - 21,56,64|🇫🇷FR-45.158.171.141-0420 | 34....
+  - 21,56,64|CH-156.146.62.162-0428 | 19.74...
+  - 21,56,64|CH-156.146.62.163-0399 | 30.10...
+  - 21,56,64|CH-156.146.62.161-0394 | 20.68...
+  - 70|SS-德国-NF解锁德国地区非自制剧-ChatGPT-Tik...
+  - 21,56,64|CH-156.146.62.164-0396 | 29.46...
+  - 46|加拿大 001
+  - 70|VMESS-德国-NF解锁德国自制剧-ChatGPT-Tik...
+  - 21,56,64|CH-84.17.53.160-0362 | 29.407M...
+  - 46|俄罗斯 001
+  - 46|加拿大 011
+  - 39|🇷🇺_RU_俄罗斯_4
+  - 46|加拿大 008
+  - 70,74|95.164.68.37_OpenAI
+  - 38|🇺_RU_俄罗斯_7
+  - 38,39|🇷_RU_罗_1
+  - 21,56,64|🇯🇵JP-149.22.87.204-0458 | 14.1...
+  - 21,24,56,64|🇯🇵JP-149.22.87.240-0444 | 12.0...
+  - 46,61|🇺🇸 美国 CloudFlare节点
+  - 21,56,74|52.68.247.21_OpenAI_Claude
+  - 46|加拿大 015
+  - 19,42,74|52.195.215.236_OpenAI_Claude
+  - 21,56,64|🇯🇵JP-149.22.87.241-0447 | 14.6...
+  - 21,42,56,74|3.112.28.118_OpenAI_Claude
+  - 46|加拿大 006
+  - 19,42,64|🇯🇵JP-43.206.240.27-1367 | 13.5...
+  - 46|加拿大 007
+  - 64|🇭🇰HK-141.98.234.93-5269 | 8.75...
+  - 54|🇭🇰 香港-1C
+  - 19|@MxlShare 新加坡 | SGP 4
+  - 19,42,74|SG_Singapore_Amazon.com, Inc._...
   - 19,42,74|SG_Singapore_Amazon Technologi...
-  - 19,64,74|52.77.230.72_OpenAI_Claude
+  - 46|加拿大 005
+  - 9,53|新加坡 - 新加坡 - Amazon.com, Inc. -...
+  - 42,64|🇸🇬SG-13.212.177.74-5350 | 7.52...
+  - 42,74|13.213.40.92_OpenAI_Claude
+  - 42,64,74|18.138.252.136_OpenAI_Claude
+  - 21,56,64|🇭🇰HK-216.250.97.118-5404 | 3.7...
   - 9|🇸🇬 新加坡 - 新加坡 - Contabo Asia Pr...
-  - 19|@MxlShare 韩国 | KOR 14
-  - 19|@MxlShare 韩国 | KOR 17
-  - 19|@MxlShare 韩国 | KOR 18
-  - 19|@MxlShare 韩国 | KOR 16
-  - 19|@MxlShare 韩国 | KOR 6
-  - 19|@MxlShare 韩国 | KOR 4
-  - 19|@MxlShare 韩国 | KOR 8
-  - 19|@MxlShare 韩国 | KOR 3
-  - 19|@MxlShare 韩国 | KOR 5
-  - 19|@MxlShare 韩国 | KOR 2
-  - 19|@MxlShare 韩国 | KOR 13
-  - 74|RU_Moscow_LLC Baxet_OpenAI
-  - 21,56,64|🇸🇬SG-128.199.172.224-0461 | 6....
+  - 21,56,64|🇭🇰HK-216.250.97.118-5405 | 4.0...
+  - 37,52,60|🇻🇳VN-160.19.78.75-081
+  - 19,21,56,64|🇸🇬SG-68.183.227.45-0454 | 9.75...
   - 21,56,64|🇸🇬SG-68.183.227.236-0463 | 9.6...
   - 21,56,64|🇸🇬SG-68.183.227.4-0456 | 9.725...
-  - 19,21,56,64|🇸🇬SG-68.183.227.45-0454 | 9.75...
+  - 21,56,64|🇸🇬SG-128.199.172.224-0461 | 6....
   url: https://i.ytimg.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 64|🇫🇷FR-185.234.64.35-0373 | 40.3...
-  - 64|🇫🇷FR-185.231.205.179-0391 | 18...
-  - 27|🇫🇷FR_209
-  - 21,27,56,64|🇬🇧GB-212.102.53.193-0384 | 30....
-  - 21,27,56,64|🇬🇧GB-212.102.53.196-0382 | 30....
-  - 27|🇫🇷FR_222
-  - 21,27,56,64|🇬🇧GB-212.102.53.197-0412 | 23....
-  - 27|🇫🇷FR_213
-  - 27|🇫🇷FR_228
-  - 21,27,56,64|🇬🇧GB-212.102.53.195-0376 | 25....
-  - 21,27,56,64|🇬🇧GB-212.102.53.194-0130 | 32....
-  - 70|SS--NF解锁法国自制剧-ChatGPT-YouTube-...
-  - 27|🇫🇷FR_221
-  - 21,56,64|🇬🇧GB-146.70.61.18-0349 | 44.52...
-  - 27|🇫🇷FR_219
-  - 64|🇫🇷FR-185.231.205.179-0387 | 17...
-  - 27|🇫🇷FR_208
-  - 27|🇫🇷FR_226
-  - 27|🇫🇷FR_218
-  - 27|🇫🇷FR_210
-  - 27|🇫🇷FR_211
-  - 27|🇫🇷FR_216
-  - 27|🇫🇷FR_217
-  - 27|🇫🇷FR_215
-  - 27|🇫🇷FR_224
-  - 27|🇫🇷FR_212
-  - 27|🇫🇷FR_220
-  - 27|🇫🇷FR_225
-  - 42,64|🇸🇬SG-54.179.36.235-5454 | 6.35...
-  - 9,42,53|新加坡 - 新加坡 - Amazon.com, Inc. -...
-  - 19,23,74|SG_Singapore_Amazon.com, Inc._...
+  - 21,56,64|🇨🇦CA-79.127.233.170-0330 | 32....
+  - 21,56,64|🇨🇦CA-149.22.95.183-0345 | 37.9...
+  - 21,56,60,70|SS-国-NF解锁自制剧-ChatGPT-TikTok-Yo...
+  - 21,56,64|🇫🇷FR-45.158.171.132-0350 | 19....
+  - 21,56,64|🇫🇷FR-45.158.171.110-0369 | 31....
+  - 21,56,64|🇫🇷FR-45.158.171.141-0420 | 34....
+  - 21,56,64|CH-156.146.62.162-0428 | 19.74...
+  - 21,56,64|CH-156.146.62.163-0399 | 30.10...
+  - 21,56,64|CH-156.146.62.161-0394 | 20.68...
+  - 70|SS-德国-NF解锁德国地区非自制剧-ChatGPT-Tik...
+  - 21,56,64|CH-156.146.62.164-0396 | 29.46...
+  - 46|加拿大 001
+  - 70|VMESS-德国-NF解锁德国自制剧-ChatGPT-Tik...
+  - 21,56,64|CH-84.17.53.160-0362 | 29.407M...
+  - 46|俄罗斯 001
+  - 46|加拿大 011
+  - 39|🇷🇺_RU_俄罗斯_4
+  - 46|加拿大 008
+  - 70,74|95.164.68.37_OpenAI
+  - 38|🇺_RU_俄罗斯_7
+  - 38,39|🇷_RU_罗_1
+  - 21,56,64|🇯🇵JP-149.22.87.204-0458 | 14.1...
+  - 21,24,56,64|🇯🇵JP-149.22.87.240-0444 | 12.0...
+  - 46,61|🇺🇸 美国 CloudFlare节点
+  - 21,56,74|52.68.247.21_OpenAI_Claude
+  - 46|加拿大 015
+  - 19,42,74|52.195.215.236_OpenAI_Claude
+  - 21,56,64|🇯🇵JP-149.22.87.241-0447 | 14.6...
+  - 21,42,56,74|3.112.28.118_OpenAI_Claude
+  - 46|加拿大 006
+  - 19,42,64|🇯🇵JP-43.206.240.27-1367 | 13.5...
+  - 46|加拿大 007
+  - 64|🇭🇰HK-141.98.234.93-5269 | 8.75...
+  - 54|🇭🇰 香港-1C
+  - 19|@MxlShare 新加坡 | SGP 4
+  - 19,42,74|SG_Singapore_Amazon.com, Inc._...
   - 19,42,74|SG_Singapore_Amazon Technologi...
-  - 19,64,74|52.77.230.72_OpenAI_Claude
+  - 46|加拿大 005
+  - 9,53|新加坡 - 新加坡 - Amazon.com, Inc. -...
+  - 42,64|🇸🇬SG-13.212.177.74-5350 | 7.52...
+  - 42,74|13.213.40.92_OpenAI_Claude
+  - 42,64,74|18.138.252.136_OpenAI_Claude
+  - 21,56,64|🇭🇰HK-216.250.97.118-5404 | 3.7...
   - 9|🇸🇬 新加坡 - 新加坡 - Contabo Asia Pr...
-  - 19|@MxlShare 韩国 | KOR 14
-  - 19|@MxlShare 韩国 | KOR 17
-  - 19|@MxlShare 韩国 | KOR 18
-  - 19|@MxlShare 韩国 | KOR 16
-  - 19|@MxlShare 韩国 | KOR 6
-  - 19|@MxlShare 韩国 | KOR 4
-  - 19|@MxlShare 韩国 | KOR 8
-  - 19|@MxlShare 韩国 | KOR 3
-  - 19|@MxlShare 韩国 | KOR 5
-  - 19|@MxlShare 韩国 | KOR 2
-  - 19|@MxlShare 韩国 | KOR 13
-  - 74|RU_Moscow_LLC Baxet_OpenAI
-  - 21,56,64|🇸🇬SG-128.199.172.224-0461 | 6....
+  - 21,56,64|🇭🇰HK-216.250.97.118-5405 | 4.0...
+  - 37,52,60|🇻🇳VN-160.19.78.75-081
+  - 19,21,56,64|🇸🇬SG-68.183.227.45-0454 | 9.75...
   - 21,56,64|🇸🇬SG-68.183.227.236-0463 | 9.6...
   - 21,56,64|🇸🇬SG-68.183.227.4-0456 | 9.725...
-  - 19,21,56,64|🇸🇬SG-68.183.227.45-0454 | 9.75...
+  - 21,56,64|🇸🇬SG-128.199.172.224-0461 | 6....
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
