@@ -33,130 +33,22 @@ dns:
     - 0.0.0.0/32
 proxies:
 - cipher: chacha20-ietf-poly1305
-  country: 🇰 HK
-  name: 27,68|SS-伊朗-NF解锁德国地区非自制剧-ChatGPT-Tik...
-  password: d3D4Q561Cq996yvjp9qHf4
-  port: 64552
-  server: 62.60.217.17
-  type: ss
-- cipher: chacha20-ietf-poly1305
   country: 🇭🇰 HK
-  name: 27|🇰 HK_278
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  port: 443
-  server: 216.250.97.118
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇰 HK
-  name: 27|🇭🇰 HK_279
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  port: 443
-  server: hong-kong.keenvpn.me
-  type: ss
-- cipher: aes-256-cfb
-  name: 19,72|JP_Tokyo_Amazon Technologies I...
-  password: amazonskr05
-  port: 443
-  server: 52.195.215.236
-  type: ss
-- cipher: aes-128-gcm
-  name: 21,54,55,62|🇯🇵JP-149.22.87.204-0387 | 31.6...
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
-  type: ss
-- cipher: aes-128-gcm
-  name: 21,24,54,55,62|🇯🇵JP-149.22.87.240-0385 | 31.7...
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.240
-  type: ss
-- cipher: aes-128-gcm
-  name: 21,54,55,62|🇯🇵JP-149.22.87.241-0382 | 31.9...
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.241
-  type: ss
-- cipher: aes-256-cfb
-  name: 41,72|35.77.91.116_OpenAI_Claude
-  password: amazonskr05
-  port: 443
-  server: 35.77.91.116
-  type: ss
-- cipher: aes-256-cfb
-  name: 41,69,72|JP_Tokyo_Amazon.com, Inc._Clau...
-  password: amazonskr05
-  port: 443
-  server: 57.180.31.56
-  tfo: false
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 41,72|52.195.220.7_Claude
-  password: amazonskr05
-  port: 443
-  server: 52.195.220.7
+  name: 27|🇰 HK_273
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
   type: ss
 - alterId: 0
   cipher: auto
-  name: 46,56,58,59|🇯🇵 11|11,16|日本|@ripaojiedian
+  name: 72|HK_Hong Kong_Lshiy LLC_OpenAI_...
   network: tcp
-  port: '550'
-  server: 20.78.127.141
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 9e11e992-c3a4-45fb-bb67-5f4f42fcd551
-  ws-headers:
-    Host: 20.78.127.141
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 69|🇯🇵 11,16|日本|@ripaojiedian
-  port: 550
-  server: 20.78.127.141
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 9e11e992-c3a4-45fb-bb67-5f4f42fcd551
-- cipher: aes-256-cfb
-  country: 🇰🇷KR
-  delay: 1323
-  name: 2,9,52|韩国 - Yongin-si - SK Broadband ...
-  password: qwerREWQ@@
-  port: 51633
-  server: 211.178.105.134
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 21,54,55,62|🇰🇷KR-43.202.96.177-0399 | 31.2...
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
   port: 443
-  server: south-korea-2.keenvpn.me
-  type: ss
-- cipher: aes-256-cfb
-  name: 41,72|KR_Seoul_Kaopu Cloud HK Limite...
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.63.177
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  delay: 1816
-  name: 0,2,3,9,41,46,49,52,58,65,69,72|103.106.229.219_Claude
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 103.106.229.219
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  name: 19,41,72|SG_Singapore_Amazon Technologi...
-  password: amazonskr05
-  port: 443
-  server: 13.229.111.3
-  type: ss
-  udp: true
+  server: node-hkg-ph11.suvip.xyz
+  servername: node-hkg-ph11.suvip.xyz
+  tls: true
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
 - cipher: aes-256-cfb
   name: 19,41,72|SG_Singapore_Amazon.com, Inc._...
   password: amazonskr05
@@ -165,217 +57,358 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 21,54,55,62|🇸🇬SG-128.199.172.224-0409 | 29...
+  name: 21,54,55,62|🇸🇬SG-128.199.172.224-0428 | 31...
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 128.199.172.224
   type: ss
-- name: 21,54,55,62|🇸🇬SG-139.59.119.143-0406 | 30....
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: connectwithemployers.online
-  skip-cert-verify: false
-  type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 21,54,55,62|🇸🇬SG-64.176.85.73-0442 | 19.91...
+  name: 21,54,55,62|🇸🇬SG-64.176.85.73-0461 | 21.18...
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 64.176.85.73
   type: ss
 - cipher: rc4-md5
-  name: 21,54,55,62|🇸🇬SG-68.183.227.236-0404 | 29....
+  name: 21,54,55,62|🇸🇬SG-68.183.227.236-0426 | 31....
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 68.183.227.236
   type: ss
 - cipher: rc4-md5
-  name: 21,54,55,62|🇸🇬SG-68.183.227.4-0427 | 30.00...
+  name: 21,54,55,62|🇸🇬SG-68.183.227.4-0425 | 30.87...
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 68.183.227.4
   type: ss
 - cipher: rc4-md5
-  name: 21,54,55,62|🇸🇬SG-68.183.227.45-0407 | 29.3...
+  name: 21,54,55,62|🇸🇬SG-68.183.227.45-0429 | 30.4...
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 68.183.227.45
   type: ss
 - cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 23,41,72|SG_Singapore_Amazon Technologi...
+  password: amazonskr05
+  port: 443
+  server: 13.229.111.3
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 21,54,55,62|🇨🇦CA-149.22.95.183-0344 | 89.0...
+  password: shadowsocks
+  port: 443
+  server: 149.22.95.183
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 21,54,55,62|🇨🇦CA-79.127.233.170-0372 | 84....
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 79.127.233.170
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 45|加拿大 001
+  network: ws
+  port: 2052
+  server: 104.16.155.10
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-102-247-92.s1.db-link02.top
+    path: /dabai.in104.25.175.137
+- alterId: 0
+  cipher: auto
+  name: 45|加拿大 002
+  network: ws
+  port: 80
+  server: s1.cn-db.top
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-215-151-174.s1.cn-db.top
+    path: /dabai.in172.64.34.18
+- alterId: 0
+  cipher: auto
+  delay: 2287
+  name: 45|加拿大 011
+  network: ws
+  port: 8880
+  server: s1.cn-db.top
+  servername: 100-171-52-115.s1.cn-db.top
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-171-52-115.s1.cn-db.top
+    path: /dabai.in104.19.138.212
+- alterId: 0
+  cipher: auto
+  name: 72|CA_Toronto_Akamai Technologies...
+  network: ws
+  port: 2086
+  server: digitalocean.com
+  type: vmess
+  udp: true
+  uuid: 6f42cfe5-64f1-466d-8860-859d8e0f0a98
+  ws-opts:
+    headers:
+      Host: cae3mg9qsg55eo5lhq.lovebaipiao.com
+    path: /
+- cipher: aes-256-cfb
+  delay: 728
+  name: 2,9,19,21,49,52,54,55,62|CH-84.17.53.160-0358 | 31.694M...
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 84.17.53.160
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇸 US
+  name: 21,27,54,55,62|CH-156.146.62.161-0406 | 29.46...
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.161
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇸 US
+  name: 21,27,54,55,62|CH-156.146.62.162-0374 | 28.94...
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.162
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇺🇸 US
+  name: 21,27,54,55,62|CH-156.146.62.163-0396 | 29.84...
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.163
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇺🇸 US
+  name: 21,27,54,55,62|CH-156.146.62.164-0377 | 29.46...
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.164
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇱🇹 LT
+  name: 20,27|🇱🇹 LT_318
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: beesyar.org
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇱🇹 LT
+  ip-version: dual
+  name: 20,27,50|🇩🇪_DE_德国->🇦🇷_AR_阿根廷
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.87.175.154
+  type: ss
+  udp: true
+- name: 21,54,55,62|🇩🇪DE-165.22.74.230-6046 | 32.1...
+  password: 4732adfa16c6450bbef87264e41332db
+  port: 443
+  server: nextstepcareer.online
+  skip-cert-verify: false
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 21,54,55,62,68|SS-国-NF解锁自制剧-ChatGPT-TikTok-Yo...
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  type: ss
+- cipher: rc4-md5
+  name: 21,54,55,62|🇩🇪DE-193.108.119.230-0439 | 24...
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇪DE
+  name: 27|🇩🇪DE_187
+  password: aLpQtfEZe445QyHk
+  port: 9098
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
   country: 🇩🇪DE
-  name: 27|🇩🇪DE_199
+  name: 27|🇪DE_188
+  password: S7KwUu7yBy58S3Ga
+  port: 9042
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 27|🇪DE_189
   password: NvS8N4Vf8qAGPSCL
   port: 9046
   server: 80.92.204.106
   type: ss
 - cipher: aes-256-cfb
   country: 🇩🇪DE
-  name: 27|🇩🇪DE_200
+  name: 27|🇩🇪DE_191
+  password: cp8pRSUAyLhTfVWH
+  port: 9064
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 27|🇩🇪DE_192
   password: 4R3hUfZ2FHhDmNcP
   port: 9061
   server: 80.92.204.106
   type: ss
-- name: 58,59|🇩🇪 德国 黑森州法兰克福Amazon数据中心
-  password: telegram-id-directvpn
-  port: 22222
-  server: 35.158.75.57
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 27|🇩🇪DE_193
+  password: FAdUvMJUq5vDgKEq
+  port: 9006
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 27|🇩🇪DE_194
+  password: ZpNDDKRu9MagNvaf
+  port: 9015
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 27|🇩🇪DE_195
+  password: BwcAUZk8hUFAkDGN
+  port: 9031
+  server: 80.92.204.106
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 68,72|DE_Frankfurt am Main_Stark Ind...
   password: OTBkYmFk
   port: 8388
   server: 95.164.68.37
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 20,49|🇷_FR_国
-  password: MzZjN
-  port: 8388
-  server: 146.19.106.5
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 21,54,55,62|🇫🇷FR-185.231.205.179-1146 | 18...
-  password: OTVlMzcy
-  port: 8388
-  server: 185.231.205.179
-  type: ss
+- cipher: rc4-md5
+  name: 68|SSR-德国-NF解锁德国自制剧-ChatGPT-TikTo...
+  obfs: plain
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  protocol: origin
+  server: 193.108.119.230
+  type: ssr
 - cipher: aes-256-cfb
-  name: 21,27,54,55,62|🇫🇷FR-195.154.169.198-0330 | 42...
+  name: 21,27,54,55,62|🇫🇷FR-195.154.169.198-0337 | 32...
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.169.198
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  country: 🇫🇷FR
-  name: 21,27,54,55,62|🇫🇷FR-195.154.185.174-0379 | 42...
+  country: 🇷FR
+  name: 21,27,54,55,62|🇫🇷FR-195.154.185.174-0341 | 32...
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.185.174
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹 LT
-  name: 21,27,54,55,62|🇫🇷FR-45.158.171.132-0344 | 37....
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.158.171.132
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹 LT
-  name: 21,27,54,55,62|🇫🇷FR-45.158.171.141-0331 | 42....
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.158.171.141
-  type: ss
 - cipher: aes-256-cfb
   country: 🇱NL
-  name: 21,27,54,55,62|🇫🇷FR-51.15.27.48-0334 | 40.162...
+  name: 21,27,54,55,62|🇫🇷FR-51.15.27.48-0343 | 31.816...
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 51.15.27.48
   type: ss
 - cipher: aes-256-gcm
   country: 🇷FR
-  name: 27|🇫🇷FR_212
-  password: XKFKl2rULjIp74
-  port: 8009
-  server: 145.239.6.202
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_213
+  name: 27|🇫🇷FR_205
   password: e4FCWrgpkji3QY
-  port: 9102
-  server: 54.36.174.181
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_214
-  password: pKEW8JPByTVTLtM
-  port: 443
-  server: 149.202.82.172
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_215
-  password: Y6R9pAtvxxzmGC
-  port: 3389
-  server: 145.239.6.202
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_217
-  password: Y6R9pAtvxxzmGC
-  port: 5000
-  server: 145.239.6.202
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 27|🇫🇷FR_219
-  password: PCnnH6SQSnfoS27
-  port: 8091
+  port: 9101
   server: 217.182.198.219
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 27|🇫🇷FR_220
+  name: 27|🇫🇷FR_206
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 217.182.198.219
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 27|🇫🇷FR_207
+  password: PCnnH6SQSnfoS27
+  port: 8090
+  server: 217.182.198.219
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 27|🇫🇷FR_208
+  password: Y6R9pAtvxxzmGC
+  port: 5000
+  server: 217.182.198.219
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 27|🇫🇷FR_210
+  password: TEzjfAYq2IjtuoS
+  port: 6697
+  server: 54.36.174.181
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 27|🇫🇷FR_211
+  password: FoOiGlkAA9yPEGP
+  port: 7306
+  server: 217.182.198.219
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 27|🇫🇷FR_216
   password: XKFKl2rULjIp74
   port: 8008
   server: 217.182.198.219
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 58,68|SS-国-NF解锁国自制剧-ChatGPT-TikTok-Y...
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 64.176.184.129
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 68|SS-英国-NF解锁兰地区非自制剧-ChatGPT-TikT...
-  password: AQMByekkuegA3NbF9PnhTO
-  port: 65078
-  server: 77.239.100.183
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: 27| RU_360
-  password: 0zyDRZ1XmNXaaCAN7KEA8a
-  port: 28825
-  server: 45.151.62.54
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: 27|🇺 RU_363
-  password: C6m8khVsu41VcuiUta0bLF
-  port: 443
-  server: 77.83.246.74
+  country: 🇷 RU
+  name: 27|🇺 RU_360
+  password: WfmxKX2FBJRU0Ie9VLIYDL
+  port: 20012
+  server: 141.98.234.93
   type: ss
 - cipher: aes-256-cfb
   country: 🇺RU
-  name: 27|🇷🇺RU_365
-  password: JdmRK9gMEqFgs8nP
-  port: 9003
-  server: 45.89.52.66
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇷🇺RU
-  name: 27|🇺RU_366
+  name: 27|🇺RU_362
   password: PeHSHm5SqEjBuEXE
   port: 9065
   server: 45.89.52.66
   type: ss
 - cipher: aes-256-cfb
   country: 🇷🇺RU
-  name: 27|🇺RU_367
-  password: ZET59LF6DvCC8KVt
-  port: 9005
+  name: 27|🇺RU_363
+  password: JdmRK9gMEqFgs8nP
+  port: 9003
   server: 45.89.52.66
   type: ss
-- cipher: aes-128-gcm
-  country: 🇹 TW
-  name: 27| TW_375
-  password: 79739832-b888-415a-a454-8b53911c944a
-  port: 30332
-  server: vps.200566.xyz
+- cipher: aes-256-cfb
+  country: 🇷🇺RU
+  name: 27|🇺RU_364
+  password: M3t2ZEQcMGRWBjRa
+  port: 9011
+  server: 45.89.52.66
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇷🇺RU
+  name: 27|🇺RU_365
+  password: S7KwUu7yBy58S3Ga
+  port: 9042
+  server: 45.89.52.66
   type: ss
 proxy-groups:
 - name: 节点选择
@@ -389,56 +422,56 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 20,49|🇷_FR_国
-  - 69|🇯🇵 11,16|日本|@ripaojiedian
-  - 46,56,58,59|🇯🇵 11|11,16|日本|@ripaojiedian
-  - 21,54,55,62|🇯🇵JP-149.22.87.204-0387 | 31.6...
-  - 41,72|52.195.220.7_Claude
-  - 21,24,54,55,62|🇯🇵JP-149.22.87.240-0385 | 31.7...
-  - 19,72|JP_Tokyo_Amazon Technologies I...
-  - 41,72|35.77.91.116_OpenAI_Claude
-  - 21,54,55,62|🇯🇵JP-149.22.87.241-0382 | 31.9...
-  - 41,69,72|JP_Tokyo_Amazon.com, Inc._Clau...
-  - 27|🇫🇷FR_212
-  - 21,54,55,62|🇫🇷FR-185.231.205.179-1146 | 18...
-  - 21,27,54,55,62|🇫🇷FR-195.154.185.174-0379 | 42...
-  - 21,27,54,55,62|🇫🇷FR-45.158.171.141-0331 | 42....
-  - 58,68|SS-国-NF解锁国自制剧-ChatGPT-TikTok-Y...
-  - 27|🇫🇷FR_219
-  - 27|🇫🇷FR_214
-  - 21,27,54,55,62|🇫🇷FR-195.154.169.198-0330 | 42...
-  - 27|🇫🇷FR_220
+  - 21,54,55,62|🇨🇦CA-149.22.95.183-0344 | 89.0...
+  - 21,54,55,62|🇨🇦CA-79.127.233.170-0372 | 84....
+  - 45|加拿大 011
+  - 45|加拿大 001
+  - 21,27,54,55,62|🇫🇷FR-195.154.185.174-0341 | 32...
   - 68,72|DE_Frankfurt am Main_Stark Ind...
-  - 19,41,72|SG_Singapore_Amazon Technologi...
-  - 21,54,55,62|🇸🇬SG-64.176.85.73-0442 | 19.91...
+  - 20,27,50|🇩🇪_DE_德国->🇦🇷_AR_阿根廷
+  - 21,27,54,55,62|CH-156.146.62.164-0377 | 29.46...
+  - 27|🇫🇷FR_216
+  - 21,27,54,55,62|CH-156.146.62.161-0406 | 29.46...
+  - 21,27,54,55,62|CH-156.146.62.162-0374 | 28.94...
+  - 21,27,54,55,62|CH-156.146.62.163-0396 | 29.84...
+  - 27|🇫🇷FR_208
+  - 27|🇫🇷FR_211
+  - 2,9,19,21,49,52,54,55,62|CH-84.17.53.160-0358 | 31.694M...
+  - 27|🇫🇷FR_207
+  - 27|🇫🇷FR_205
+  - 27|🇫🇷FR_206
+  - 45|加拿大 002
+  - 21,27,54,55,62|🇫🇷FR-51.15.27.48-0343 | 31.816...
+  - 27|🇺 RU_360
+  - 27|🇫🇷FR_210
+  - 21,54,55,62|🇸🇬SG-64.176.85.73-0461 | 21.18...
   - 19,41,72|SG_Singapore_Amazon.com, Inc._...
-  - 21,27,54,55,62|🇫🇷FR-45.158.171.132-0344 | 37....
-  - 68|SS-英国-NF解锁兰地区非自制剧-ChatGPT-TikT...
-  - 27| TW_375
-  - 27|🇫🇷FR_213
-  - 27|🇰 HK_278
-  - 27|🇫🇷FR_215
-  - 27|🇫🇷FR_217
-  - 0,2,3,9,41,46,49,52,58,65,69,72|103.106.229.219_Claude
-  - 21,27,54,55,62|🇫🇷FR-51.15.27.48-0334 | 40.162...
-  - 2,9,52|韩国 - Yongin-si - SK Broadband ...
-  - 58,59|🇩🇪 德国 黑森州法兰克福Amazon数据中心
-  - 21,54,55,62|🇸🇬SG-128.199.172.224-0409 | 29...
-  - 21,54,55,62|🇸🇬SG-68.183.227.45-0407 | 29.3...
-  - 27|🇭🇰 HK_279
-  - 21,54,55,62|🇸🇬SG-68.183.227.4-0427 | 30.00...
-  - 21,54,55,62|🇸🇬SG-68.183.227.236-0404 | 29....
-  - 27|🇩🇪DE_200
-  - 27|🇩🇪DE_199
-  - 21,54,55,62|🇰🇷KR-43.202.96.177-0399 | 31.2...
-  - 27|🇺RU_366
-  - 27| RU_360
-  - 27,68|SS-伊朗-NF解锁德国地区非自制剧-ChatGPT-Tik...
-  - 21,54,55,62|🇸🇬SG-139.59.119.143-0406 | 30....
-  - 27|🇺 RU_363
-  - 27|🇺RU_367
-  - 27|🇷🇺RU_365
-  - 41,72|KR_Seoul_Kaopu Cloud HK Limite...
+  - 27|🇩🇪DE_191
+  - 23,41,72|SG_Singapore_Amazon Technologi...
+  - 27|🇩🇪DE_192
+  - 21,27,54,55,62|🇫🇷FR-195.154.169.198-0337 | 32...
+  - 21,54,55,62,68|SS-国-NF解锁自制剧-ChatGPT-TikTok-Yo...
+  - 27|🇪DE_188
+  - 27|🇩🇪DE_195
+  - 27|🇩🇪DE_187
+  - 27|🇪DE_189
+  - 27|🇩🇪DE_194
+  - 68|SSR-德国-NF解锁德国自制剧-ChatGPT-TikTo...
+  - 21,54,55,62|🇩🇪DE-193.108.119.230-0439 | 24...
+  - 20,27|🇱🇹 LT_318
+  - 21,54,55,62|🇸🇬SG-68.183.227.4-0425 | 30.87...
+  - 21,54,55,62|🇸🇬SG-128.199.172.224-0428 | 31...
+  - 21,54,55,62|🇸🇬SG-68.183.227.45-0429 | 30.4...
+  - 21,54,55,62|🇸🇬SG-68.183.227.236-0426 | 31....
+  - 27|🇩🇪DE_193
+  - 27|🇰 HK_273
+  - 27|🇺RU_365
+  - 27|🇺RU_364
+  - 27|🇺RU_363
+  - 21,54,55,62|🇩🇪DE-165.22.74.230-6046 | 32.1...
+  - 72|CA_Toronto_Akamai Technologies...
+  - 27|🇺RU_362
+  - 72|HK_Hong Kong_Lshiy LLC_OpenAI_...
   url: https://i.ytimg.com/generate_204
   interval: 300
   tolerance: 50
@@ -446,111 +479,111 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 20,49|🇷_FR_国
-  - 69|🇯🇵 11,16|日本|@ripaojiedian
-  - 46,56,58,59|🇯🇵 11|11,16|日本|@ripaojiedian
-  - 21,54,55,62|🇯🇵JP-149.22.87.204-0387 | 31.6...
-  - 41,72|52.195.220.7_Claude
-  - 21,24,54,55,62|🇯🇵JP-149.22.87.240-0385 | 31.7...
-  - 19,72|JP_Tokyo_Amazon Technologies I...
-  - 41,72|35.77.91.116_OpenAI_Claude
-  - 21,54,55,62|🇯🇵JP-149.22.87.241-0382 | 31.9...
-  - 41,69,72|JP_Tokyo_Amazon.com, Inc._Clau...
-  - 27|🇫🇷FR_212
-  - 21,54,55,62|🇫🇷FR-185.231.205.179-1146 | 18...
-  - 21,27,54,55,62|🇫🇷FR-195.154.185.174-0379 | 42...
-  - 21,27,54,55,62|🇫🇷FR-45.158.171.141-0331 | 42....
-  - 58,68|SS-国-NF解锁国自制剧-ChatGPT-TikTok-Y...
-  - 27|🇫🇷FR_219
-  - 27|🇫🇷FR_214
-  - 21,27,54,55,62|🇫🇷FR-195.154.169.198-0330 | 42...
-  - 27|🇫🇷FR_220
+  - 21,54,55,62|🇨🇦CA-149.22.95.183-0344 | 89.0...
+  - 21,54,55,62|🇨🇦CA-79.127.233.170-0372 | 84....
+  - 45|加拿大 011
+  - 45|加拿大 001
+  - 21,27,54,55,62|🇫🇷FR-195.154.185.174-0341 | 32...
   - 68,72|DE_Frankfurt am Main_Stark Ind...
-  - 19,41,72|SG_Singapore_Amazon Technologi...
-  - 21,54,55,62|🇸🇬SG-64.176.85.73-0442 | 19.91...
+  - 20,27,50|🇩🇪_DE_德国->🇦🇷_AR_阿根廷
+  - 21,27,54,55,62|CH-156.146.62.164-0377 | 29.46...
+  - 27|🇫🇷FR_216
+  - 21,27,54,55,62|CH-156.146.62.161-0406 | 29.46...
+  - 21,27,54,55,62|CH-156.146.62.162-0374 | 28.94...
+  - 21,27,54,55,62|CH-156.146.62.163-0396 | 29.84...
+  - 27|🇫🇷FR_208
+  - 27|🇫🇷FR_211
+  - 2,9,19,21,49,52,54,55,62|CH-84.17.53.160-0358 | 31.694M...
+  - 27|🇫🇷FR_207
+  - 27|🇫🇷FR_205
+  - 27|🇫🇷FR_206
+  - 45|加拿大 002
+  - 21,27,54,55,62|🇫🇷FR-51.15.27.48-0343 | 31.816...
+  - 27|🇺 RU_360
+  - 27|🇫🇷FR_210
+  - 21,54,55,62|🇸🇬SG-64.176.85.73-0461 | 21.18...
   - 19,41,72|SG_Singapore_Amazon.com, Inc._...
-  - 21,27,54,55,62|🇫🇷FR-45.158.171.132-0344 | 37....
-  - 68|SS-英国-NF解锁兰地区非自制剧-ChatGPT-TikT...
-  - 27| TW_375
-  - 27|🇫🇷FR_213
-  - 27|🇰 HK_278
-  - 27|🇫🇷FR_215
-  - 27|🇫🇷FR_217
-  - 0,2,3,9,41,46,49,52,58,65,69,72|103.106.229.219_Claude
-  - 21,27,54,55,62|🇫🇷FR-51.15.27.48-0334 | 40.162...
-  - 2,9,52|韩国 - Yongin-si - SK Broadband ...
-  - 58,59|🇩🇪 德国 黑森州法兰克福Amazon数据中心
-  - 21,54,55,62|🇸🇬SG-128.199.172.224-0409 | 29...
-  - 21,54,55,62|🇸🇬SG-68.183.227.45-0407 | 29.3...
-  - 27|🇭🇰 HK_279
-  - 21,54,55,62|🇸🇬SG-68.183.227.4-0427 | 30.00...
-  - 21,54,55,62|🇸🇬SG-68.183.227.236-0404 | 29....
-  - 27|🇩🇪DE_200
-  - 27|🇩🇪DE_199
-  - 21,54,55,62|🇰🇷KR-43.202.96.177-0399 | 31.2...
-  - 27|🇺RU_366
-  - 27| RU_360
-  - 27,68|SS-伊朗-NF解锁德国地区非自制剧-ChatGPT-Tik...
-  - 21,54,55,62|🇸🇬SG-139.59.119.143-0406 | 30....
-  - 27|🇺 RU_363
-  - 27|🇺RU_367
-  - 27|🇷🇺RU_365
-  - 41,72|KR_Seoul_Kaopu Cloud HK Limite...
+  - 27|🇩🇪DE_191
+  - 23,41,72|SG_Singapore_Amazon Technologi...
+  - 27|🇩🇪DE_192
+  - 21,27,54,55,62|🇫🇷FR-195.154.169.198-0337 | 32...
+  - 21,54,55,62,68|SS-国-NF解锁自制剧-ChatGPT-TikTok-Yo...
+  - 27|🇪DE_188
+  - 27|🇩🇪DE_195
+  - 27|🇩🇪DE_187
+  - 27|🇪DE_189
+  - 27|🇩🇪DE_194
+  - 68|SSR-德国-NF解锁德国自制剧-ChatGPT-TikTo...
+  - 21,54,55,62|🇩🇪DE-193.108.119.230-0439 | 24...
+  - 20,27|🇱🇹 LT_318
+  - 21,54,55,62|🇸🇬SG-68.183.227.4-0425 | 30.87...
+  - 21,54,55,62|🇸🇬SG-128.199.172.224-0428 | 31...
+  - 21,54,55,62|🇸🇬SG-68.183.227.45-0429 | 30.4...
+  - 21,54,55,62|🇸🇬SG-68.183.227.236-0426 | 31....
+  - 27|🇩🇪DE_193
+  - 27|🇰 HK_273
+  - 27|🇺RU_365
+  - 27|🇺RU_364
+  - 27|🇺RU_363
+  - 21,54,55,62|🇩🇪DE-165.22.74.230-6046 | 32.1...
+  - 72|CA_Toronto_Akamai Technologies...
+  - 27|🇺RU_362
+  - 72|HK_Hong Kong_Lshiy LLC_OpenAI_...
   url: https://i.ytimg.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 20,49|🇷_FR_国
-  - 69|🇯🇵 11,16|日本|@ripaojiedian
-  - 46,56,58,59|🇯🇵 11|11,16|日本|@ripaojiedian
-  - 21,54,55,62|🇯🇵JP-149.22.87.204-0387 | 31.6...
-  - 41,72|52.195.220.7_Claude
-  - 21,24,54,55,62|🇯🇵JP-149.22.87.240-0385 | 31.7...
-  - 19,72|JP_Tokyo_Amazon Technologies I...
-  - 41,72|35.77.91.116_OpenAI_Claude
-  - 21,54,55,62|🇯🇵JP-149.22.87.241-0382 | 31.9...
-  - 41,69,72|JP_Tokyo_Amazon.com, Inc._Clau...
-  - 27|🇫🇷FR_212
-  - 21,54,55,62|🇫🇷FR-185.231.205.179-1146 | 18...
-  - 21,27,54,55,62|🇫🇷FR-195.154.185.174-0379 | 42...
-  - 21,27,54,55,62|🇫🇷FR-45.158.171.141-0331 | 42....
-  - 58,68|SS-国-NF解锁国自制剧-ChatGPT-TikTok-Y...
-  - 27|🇫🇷FR_219
-  - 27|🇫🇷FR_214
-  - 21,27,54,55,62|🇫🇷FR-195.154.169.198-0330 | 42...
-  - 27|🇫🇷FR_220
+  - 21,54,55,62|🇨🇦CA-149.22.95.183-0344 | 89.0...
+  - 21,54,55,62|🇨🇦CA-79.127.233.170-0372 | 84....
+  - 45|加拿大 011
+  - 45|加拿大 001
+  - 21,27,54,55,62|🇫🇷FR-195.154.185.174-0341 | 32...
   - 68,72|DE_Frankfurt am Main_Stark Ind...
-  - 19,41,72|SG_Singapore_Amazon Technologi...
-  - 21,54,55,62|🇸🇬SG-64.176.85.73-0442 | 19.91...
+  - 20,27,50|🇩🇪_DE_德国->🇦🇷_AR_阿根廷
+  - 21,27,54,55,62|CH-156.146.62.164-0377 | 29.46...
+  - 27|🇫🇷FR_216
+  - 21,27,54,55,62|CH-156.146.62.161-0406 | 29.46...
+  - 21,27,54,55,62|CH-156.146.62.162-0374 | 28.94...
+  - 21,27,54,55,62|CH-156.146.62.163-0396 | 29.84...
+  - 27|🇫🇷FR_208
+  - 27|🇫🇷FR_211
+  - 2,9,19,21,49,52,54,55,62|CH-84.17.53.160-0358 | 31.694M...
+  - 27|🇫🇷FR_207
+  - 27|🇫🇷FR_205
+  - 27|🇫🇷FR_206
+  - 45|加拿大 002
+  - 21,27,54,55,62|🇫🇷FR-51.15.27.48-0343 | 31.816...
+  - 27|🇺 RU_360
+  - 27|🇫🇷FR_210
+  - 21,54,55,62|🇸🇬SG-64.176.85.73-0461 | 21.18...
   - 19,41,72|SG_Singapore_Amazon.com, Inc._...
-  - 21,27,54,55,62|🇫🇷FR-45.158.171.132-0344 | 37....
-  - 68|SS-英国-NF解锁兰地区非自制剧-ChatGPT-TikT...
-  - 27| TW_375
-  - 27|🇫🇷FR_213
-  - 27|🇰 HK_278
-  - 27|🇫🇷FR_215
-  - 27|🇫🇷FR_217
-  - 0,2,3,9,41,46,49,52,58,65,69,72|103.106.229.219_Claude
-  - 21,27,54,55,62|🇫🇷FR-51.15.27.48-0334 | 40.162...
-  - 2,9,52|韩国 - Yongin-si - SK Broadband ...
-  - 58,59|🇩🇪 德国 黑森州法兰克福Amazon数据中心
-  - 21,54,55,62|🇸🇬SG-128.199.172.224-0409 | 29...
-  - 21,54,55,62|🇸🇬SG-68.183.227.45-0407 | 29.3...
-  - 27|🇭🇰 HK_279
-  - 21,54,55,62|🇸🇬SG-68.183.227.4-0427 | 30.00...
-  - 21,54,55,62|🇸🇬SG-68.183.227.236-0404 | 29....
-  - 27|🇩🇪DE_200
-  - 27|🇩🇪DE_199
-  - 21,54,55,62|🇰🇷KR-43.202.96.177-0399 | 31.2...
-  - 27|🇺RU_366
-  - 27| RU_360
-  - 27,68|SS-伊朗-NF解锁德国地区非自制剧-ChatGPT-Tik...
-  - 21,54,55,62|🇸🇬SG-139.59.119.143-0406 | 30....
-  - 27|🇺 RU_363
-  - 27|🇺RU_367
-  - 27|🇷🇺RU_365
-  - 41,72|KR_Seoul_Kaopu Cloud HK Limite...
+  - 27|🇩🇪DE_191
+  - 23,41,72|SG_Singapore_Amazon Technologi...
+  - 27|🇩🇪DE_192
+  - 21,27,54,55,62|🇫🇷FR-195.154.169.198-0337 | 32...
+  - 21,54,55,62,68|SS-国-NF解锁自制剧-ChatGPT-TikTok-Yo...
+  - 27|🇪DE_188
+  - 27|🇩🇪DE_195
+  - 27|🇩🇪DE_187
+  - 27|🇪DE_189
+  - 27|🇩🇪DE_194
+  - 68|SSR-德国-NF解锁德国自制剧-ChatGPT-TikTo...
+  - 21,54,55,62|🇩🇪DE-193.108.119.230-0439 | 24...
+  - 20,27|🇱🇹 LT_318
+  - 21,54,55,62|🇸🇬SG-68.183.227.4-0425 | 30.87...
+  - 21,54,55,62|🇸🇬SG-128.199.172.224-0428 | 31...
+  - 21,54,55,62|🇸🇬SG-68.183.227.45-0429 | 30.4...
+  - 21,54,55,62|🇸🇬SG-68.183.227.236-0426 | 31....
+  - 27|🇩🇪DE_193
+  - 27|🇰 HK_273
+  - 27|🇺RU_365
+  - 27|🇺RU_364
+  - 27|🇺RU_363
+  - 21,54,55,62|🇩🇪DE-165.22.74.230-6046 | 32.1...
+  - 72|CA_Toronto_Akamai Technologies...
+  - 27|🇺RU_362
+  - 72|HK_Hong Kong_Lshiy LLC_OpenAI_...
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
