@@ -32,6 +32,116 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
+- cipher: aes-256-cfb
+  name: 15,29,48|52.195.215.236_OpenAI
+  password: amazonskr05
+  port: 443
+  server: 52.195.215.236
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 15,29,48|18.181.176.166_OpenAI
+  password: amazonskr05
+  port: 443
+  server: 18.181.176.166
+  type: ss
+- cipher: aes-128-gcm
+  name: 17|🇯🇵
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.240
+  type: ss
+- alterId: 1
+  cipher: auto
+  country: 🇯🇵JP
+  h2-opts: {}
+  http-opts: {}
+  name: 20|🇵JP_277
+  network: tcp
+  port: 21583
+  server: jp01-alt-vm0.entry.srthdw.art
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: c4b2e7ea-1a0e-316f-8e28-0717cc087534
+- cipher: aes-256-cfb
+  name: 29,48|52.194.186.197_OpenAI_Claude
+  password: amazonskr05
+  port: 443
+  server: 52.194.186.197
+  type: ss
+- cipher: aes-256-cfb
+  name: 29,48|43.206.216.94_OpenAI
+  password: amazonskr05
+  port: 443
+  server: 43.206.216.94
+  type: ss
+- name: 33|日本 001
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 103.116.7.133
+  skip-cert-verify: true
+  sni: agept.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: agept.ambercc.filegear-sg.me
+    path: /?ed=2560
+- cipher: aes-256-cfb
+  name: 15|@MxlShare 韩国 | KOR
+  password: amazonskr05
+  port: 443
+  server: 13.124.66.120
+  type: ss
+- cipher: aes-256-cfb
+  name: 15|@MxlShare 韩国 | KOR 7
+  password: amazonskr05
+  port: 443
+  server: 43.203.240.54
+  type: ss
+- cipher: aes-256-cfb
+  name: 15|@MxlShare 韩国 | KOR 10
+  password: amazonskr05
+  port: 443
+  server: 52.79.101.162
+  type: ss
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 25,36|🇰🇷_KR_韩国
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.16.212
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29,48|43.202.60.105_OpenAI_Claude
+  password: amazonskr05
+  port: 443
+  server: 43.202.60.105
+  type: ss
+- cipher: aes-256-cfb
+  name: 15,29,48|18.141.9.206_OpenAI_Claude
+  password: amazonskr05
+  port: 443
+  server: 18.141.9.206
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: 33|新加坡 002
+  network: ws
+  password: Aimer
+  port: 2222
+  server: 20.184.3.9
+  skip-cert-verify: true
+  sni: agepy.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: agepy.ambercc.filegear-sg.me
+    path: /?ed=2560
 - cipher: chacha20-ietf-poly1305
   country: 🇦CA
   name: 20|🇨🇦CA_176
@@ -39,6 +149,22 @@ proxies:
   port: 80
   server: ca225.vpnbook.com
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 33|加拿大 001
+  network: ws
+  port: 2052
+  server: s2.db-link01.top
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-189-132-241.s2.db-link01.top
+    path: /dabai.in104.24.227.22
 - alterId: 0
   cipher: auto
   delay: 2097
@@ -54,23 +180,17 @@ proxies:
     headers:
       Host: 100-139-204-73.s1.cn-db.top
     path: /dabai.in104.25.132.97
-- cipher: aes-256-cfb
-  name: 15,35|🇨_CH_->🇪_BE_时
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 84.17.53.160
-  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19|🇩🇪 德国 | DEU 6
+  name: 19|🇩🇪 德国 | DEU
   network: ws
   port: 23451
   server: frankfurt.faforex.eu.org
   tls: false
   type: vmess
   udp: true
-  uuid: 5198ac49-27de-42e4-acff-0a495e4f086c
+  uuid: 48394d3a-4971-4e53-a2f3-4d0b0103de75
   ws-opts:
     headers:
       Host: us-new03.daluquan.top
@@ -126,6 +246,13 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   country: 🇩🇪DE
+  name: 20|🇩🇪DE_196
+  password: S7KwUu7yBy58S3Ga
+  port: 9042
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
   name: 20|🇩🇪DE_197
   password: aLpQtfEZe445QyHk
   port: 9098
@@ -167,13 +294,6 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 20|🇫🇷FR_208
-  password: e4FCWrgpkji3QY
-  port: 9101
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
   name: 20|🇫🇷FR_209
   password: pKEW8JPByTVTLtM
   port: 4444
@@ -188,10 +308,10 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 20|🇫🇷FR_212
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 145.239.6.202
+  name: 20|🇫🇷FR_211
+  password: FoOiGlkAA9yPEGP
+  port: 7307
+  server: 54.36.174.181
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
@@ -199,104 +319,6 @@ proxies:
   password: XKFKl2rULjIp74
   port: 8009
   server: 145.239.6.202
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 20|🇫🇷FR_214
-  password: pKEW8JPByTVTLtM
-  port: 443
-  server: 149.202.82.172
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 20|🇫🇷FR_215
-  password: pKEW8JPByTVTLtM
-  port: 4444
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 20|🇫🇷FR_216
-  password: cdBIDV42DCwnfIN
-  port: 8119
-  server: 149.202.82.172
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 20|🇫🇷FR_217
-  password: TEzjfAYq2IjtuoS
-  port: 6679
-  server: 149.202.82.172
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 20|🇫🇷FR_218
-  password: g5MeD6Ft3CWlJId
-  port: 5004
-  server: 149.202.82.172
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 20|🇫🇷FR_219
-  password: cdBIDV42DCwnfIN
-  port: 8119
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 20|🇫🇷FR_221
-  password: Y6R9pAtvxxzmGC
-  port: 3389
-  server: 217.182.198.219
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 20| GB_251
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.47.255.22
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 20|🇧 GB_253
-  password: 2EmWRS1TkS3TkxKApnrihb3aHjDSXRvT1T1K9U2Bruxrnp5A8zmpTxwwTNje6BkVqmn9BgRF6pq8qoRHCfZdcah7BLbjrpT1
-  port: 55988
-  server: 185.5.38.111
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 20|🇬🇧 GB_254
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.47.253.227
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 20|🇧 GB_255
-  password: BpFieMT6SobpqRiKFefvYu7eXk99XfCeWfjpntzSh81FfMx9R7rJW6LTmzH78StTEhCd7w32ZMxbGJZS98gpn1ozr9jAbMoa
-  port: 55988
-  server: 185.5.38.111
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 20|🇧 GB_256
-  password: iZDJs2CDckHKqJ5W7cpvCq2veqsqWn95iqs6Kr6F3YNnyMsk2uPdRrChQfShvH1v56Br1qWEW44qJna5QcMcZF7RCJmdvwuq
-  port: 55988
-  server: 185.5.38.111
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 20|🇬🇧 GB_257
-  password: FjgGNNHQiELzxXmaHRxxtQbxDDvGXFxYdTbYe91JKZsjvKLHoY9rn9ruYE45377WjtU3m4kmXQZDXiHBJsgVfhmpawEoGvq9
-  port: 55988
-  server: mx2.drawnrisha.one
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 20|🇬🇧 GB_258
-  password: 4ju873evpjeaAi8Zq12YoRHWp63o5exdnZ71aUg1YEChiPTc2HkasYhUBxRz7UGi4K6cLrsGaU6b44H4Qa6f4cJn3zBp2cnX
-  port: 55988
-  server: 185.5.38.111
   type: ss
 - cipher: aes-128-gcm
   country: 🇧 GB
@@ -341,18 +363,18 @@ proxies:
   server: 89.23.103.125
   type: ss
 - cipher: chacha20-ietf-poly1305
+  country: 🇷 RU
+  name: 20|🇺 RU_354
+  password: CLphyEMQT8nbG8EImX0A2D
+  port: 45635
+  server: 5.35.47.122
+  type: ss
+- cipher: chacha20-ietf-poly1305
   country: 🇺 RU
   name: 20|🇷🇺 RU_355
   password: 0zyDRZ1XmNXaaCAN7KEA8a
   port: 28825
   server: 45.151.62.54
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇷 RU
-  name: 20|🇺 RU_356
-  password: WfmxKX2FBJRU0Ie9VLIYDL
-  port: 20012
-  server: 141.98.234.93
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
@@ -366,13 +388,6 @@ proxies:
   name: 20|🇺RU_359
   password: M3t2ZEQcMGRWBjRa
   port: 9011
-  server: 45.89.52.66
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇷🇺RU
-  name: 20|🇷🇺RU_360
-  password: PeHSHm5SqEjBuEXE
-  port: 9065
   server: 45.89.52.66
   type: ss
 - cipher: aes-256-cfb
@@ -409,6 +424,13 @@ proxies:
     headers:
       Host: agepy.ambercc.filegear-sg.me
     path: /?ed=2560
+- ip-version: dual
+  name: 36|🇩🇪_DE_德国->🇬🇧_GB_英国
+  password: 4732adfa16c6450bbef87264e41332db
+  port: 443
+  server: nextstepcareer.online
+  type: trojan
+  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -421,56 +443,56 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 20|🇨🇦CA_176
-  - 20|🇫🇷FR_212
-  - 20|🇫🇷FR_210
-  - 20|🇫🇷FR_209
-  - 20|🇬🇧GB_263
-  - 20|🇬🇧GB_262
-  - 20|🇫🇷FR_206
-  - 20|🇫🇷FR_221
-  - 20|🇫🇷FR_218
   - 33|俄罗斯 003
-  - 20|🇫🇷FR_217
-  - 20|🇫🇷FR_214
-  - 20|🇫🇷FR_213
-  - 20|🇫🇷FR_216
-  - 20|🇫🇷FR_208
-  - 20|🇷FR_207
-  - 33|德国 005
-  - 20|🇫🇷FR_215
-  - 20|🇫🇷FR_219
-  - 20|🇪DE_190
-  - 20|🇪DE_189
-  - 20| GB_251
-  - 20|🇬🇧 GB_254
-  - 20|🇩🇪DE_193
-  - 20|🇬🇧 GB_259
-  - 15,35|🇨_CH_->🇪_BE_时
-  - 20| RU_353
-  - 20| DE_188
-  - 20|🇩🇪DE_191
-  - 20|🇧 GB_256
-  - 20|🇧 GB_255
-  - 20|🇷🇺 RU_355
-  - 20|🇬🇧 GB_258
-  - 19|🇩🇪 德国 | DEU 6
-  - 20|🇩🇪DE_192
+  - 33|日本 001
   - 20|🇷🇺 RU_357
-  - 20|🇩🇪DE_195
+  - 29,48|43.206.216.94_OpenAI
+  - 17|🇯🇵
+  - 15,29,48|52.195.215.236_OpenAI
+  - 29,48|52.194.186.197_OpenAI_Claude
   - 33|加拿大 003
-  - 20|🇷🇺RU_360
-  - 20|🇺RU_363
-  - 20|🇺RU_362
-  - 20|🇺RU_361
-  - 20|🇺RU_359
+  - 20|🇺 RU_354
+  - 20|🇨🇦CA_176
+  - 20|🇫🇷FR_213
+  - 20|🇬🇧GB_262
+  - 20|🇬🇧 GB_259
+  - 33|加拿大 001
+  - 20|🇬🇧GB_263
+  - 15,29,48|18.181.176.166_OpenAI
+  - 15,29,48|18.141.9.206_OpenAI_Claude
+  - 20|🇫🇷FR_211
+  - 29,48|43.202.60.105_OpenAI_Claude
+  - 20|🇫🇷FR_206
+  - 15|@MxlShare 韩国 | KOR
+  - 20| RU_353
+  - 20|🇩🇪DE_191
+  - 20|🇩🇪DE_195
+  - 20|🇫🇷FR_210
+  - 20|🇪DE_190
+  - 33|德国 005
+  - 20|🇫🇷FR_209
+  - 20|🇩🇪DE_192
+  - 20|🇷FR_207
   - 33|德国 001
-  - 20|🇬🇧 GB_261
-  - 20|🇺 RU_356
-  - 20|🇬🇧 GB_257
+  - 15|@MxlShare 韩国 | KOR 7
+  - 20| DE_188
+  - 20|🇵JP_277
+  - 20|🇺RU_363
+  - 15|@MxlShare 韩国 | KOR 10
   - 20|🇩🇪DE_197
+  - 19|🇩🇪 德国 | DEU
+  - 36|🇩🇪_DE_德国->🇬🇧_GB_英国
+  - 20|🇺RU_361
+  - 20|🇪DE_189
+  - 20|🇺RU_359
+  - 20|🇩🇪DE_196
+  - 25,36|🇰🇷_KR_韩国
+  - 20|🇺RU_362
+  - 20|🇷🇺 RU_355
   - 20|🇧 GB_260
-  - 20|🇧 GB_253
+  - 20|🇬🇧 GB_261
+  - 20|🇩🇪DE_193
+  - 33|新加坡 002
   url: https://i.ytimg.com/generate_204
   interval: 300
   tolerance: 50
@@ -478,111 +500,111 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 20|🇨🇦CA_176
-  - 20|🇫🇷FR_212
-  - 20|🇫🇷FR_210
-  - 20|🇫🇷FR_209
-  - 20|🇬🇧GB_263
-  - 20|🇬🇧GB_262
-  - 20|🇫🇷FR_206
-  - 20|🇫🇷FR_221
-  - 20|🇫🇷FR_218
   - 33|俄罗斯 003
-  - 20|🇫🇷FR_217
-  - 20|🇫🇷FR_214
-  - 20|🇫🇷FR_213
-  - 20|🇫🇷FR_216
-  - 20|🇫🇷FR_208
-  - 20|🇷FR_207
-  - 33|德国 005
-  - 20|🇫🇷FR_215
-  - 20|🇫🇷FR_219
-  - 20|🇪DE_190
-  - 20|🇪DE_189
-  - 20| GB_251
-  - 20|🇬🇧 GB_254
-  - 20|🇩🇪DE_193
-  - 20|🇬🇧 GB_259
-  - 15,35|🇨_CH_->🇪_BE_时
-  - 20| RU_353
-  - 20| DE_188
-  - 20|🇩🇪DE_191
-  - 20|🇧 GB_256
-  - 20|🇧 GB_255
-  - 20|🇷🇺 RU_355
-  - 20|🇬🇧 GB_258
-  - 19|🇩🇪 德国 | DEU 6
-  - 20|🇩🇪DE_192
+  - 33|日本 001
   - 20|🇷🇺 RU_357
-  - 20|🇩🇪DE_195
+  - 29,48|43.206.216.94_OpenAI
+  - 17|🇯🇵
+  - 15,29,48|52.195.215.236_OpenAI
+  - 29,48|52.194.186.197_OpenAI_Claude
   - 33|加拿大 003
-  - 20|🇷🇺RU_360
-  - 20|🇺RU_363
-  - 20|🇺RU_362
-  - 20|🇺RU_361
-  - 20|🇺RU_359
+  - 20|🇺 RU_354
+  - 20|🇨🇦CA_176
+  - 20|🇫🇷FR_213
+  - 20|🇬🇧GB_262
+  - 20|🇬🇧 GB_259
+  - 33|加拿大 001
+  - 20|🇬🇧GB_263
+  - 15,29,48|18.181.176.166_OpenAI
+  - 15,29,48|18.141.9.206_OpenAI_Claude
+  - 20|🇫🇷FR_211
+  - 29,48|43.202.60.105_OpenAI_Claude
+  - 20|🇫🇷FR_206
+  - 15|@MxlShare 韩国 | KOR
+  - 20| RU_353
+  - 20|🇩🇪DE_191
+  - 20|🇩🇪DE_195
+  - 20|🇫🇷FR_210
+  - 20|🇪DE_190
+  - 33|德国 005
+  - 20|🇫🇷FR_209
+  - 20|🇩🇪DE_192
+  - 20|🇷FR_207
   - 33|德国 001
-  - 20|🇬🇧 GB_261
-  - 20|🇺 RU_356
-  - 20|🇬🇧 GB_257
+  - 15|@MxlShare 韩国 | KOR 7
+  - 20| DE_188
+  - 20|🇵JP_277
+  - 20|🇺RU_363
+  - 15|@MxlShare 韩国 | KOR 10
   - 20|🇩🇪DE_197
+  - 19|🇩🇪 德国 | DEU
+  - 36|🇩🇪_DE_德国->🇬🇧_GB_英国
+  - 20|🇺RU_361
+  - 20|🇪DE_189
+  - 20|🇺RU_359
+  - 20|🇩🇪DE_196
+  - 25,36|🇰🇷_KR_韩国
+  - 20|🇺RU_362
+  - 20|🇷🇺 RU_355
   - 20|🇧 GB_260
-  - 20|🇧 GB_253
+  - 20|🇬🇧 GB_261
+  - 20|🇩🇪DE_193
+  - 33|新加坡 002
   url: https://i.ytimg.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 20|🇨🇦CA_176
-  - 20|🇫🇷FR_212
-  - 20|🇫🇷FR_210
-  - 20|🇫🇷FR_209
-  - 20|🇬🇧GB_263
-  - 20|🇬🇧GB_262
-  - 20|🇫🇷FR_206
-  - 20|🇫🇷FR_221
-  - 20|🇫🇷FR_218
   - 33|俄罗斯 003
-  - 20|🇫🇷FR_217
-  - 20|🇫🇷FR_214
-  - 20|🇫🇷FR_213
-  - 20|🇫🇷FR_216
-  - 20|🇫🇷FR_208
-  - 20|🇷FR_207
-  - 33|德国 005
-  - 20|🇫🇷FR_215
-  - 20|🇫🇷FR_219
-  - 20|🇪DE_190
-  - 20|🇪DE_189
-  - 20| GB_251
-  - 20|🇬🇧 GB_254
-  - 20|🇩🇪DE_193
-  - 20|🇬🇧 GB_259
-  - 15,35|🇨_CH_->🇪_BE_时
-  - 20| RU_353
-  - 20| DE_188
-  - 20|🇩🇪DE_191
-  - 20|🇧 GB_256
-  - 20|🇧 GB_255
-  - 20|🇷🇺 RU_355
-  - 20|🇬🇧 GB_258
-  - 19|🇩🇪 德国 | DEU 6
-  - 20|🇩🇪DE_192
+  - 33|日本 001
   - 20|🇷🇺 RU_357
-  - 20|🇩🇪DE_195
+  - 29,48|43.206.216.94_OpenAI
+  - 17|🇯🇵
+  - 15,29,48|52.195.215.236_OpenAI
+  - 29,48|52.194.186.197_OpenAI_Claude
   - 33|加拿大 003
-  - 20|🇷🇺RU_360
-  - 20|🇺RU_363
-  - 20|🇺RU_362
-  - 20|🇺RU_361
-  - 20|🇺RU_359
+  - 20|🇺 RU_354
+  - 20|🇨🇦CA_176
+  - 20|🇫🇷FR_213
+  - 20|🇬🇧GB_262
+  - 20|🇬🇧 GB_259
+  - 33|加拿大 001
+  - 20|🇬🇧GB_263
+  - 15,29,48|18.181.176.166_OpenAI
+  - 15,29,48|18.141.9.206_OpenAI_Claude
+  - 20|🇫🇷FR_211
+  - 29,48|43.202.60.105_OpenAI_Claude
+  - 20|🇫🇷FR_206
+  - 15|@MxlShare 韩国 | KOR
+  - 20| RU_353
+  - 20|🇩🇪DE_191
+  - 20|🇩🇪DE_195
+  - 20|🇫🇷FR_210
+  - 20|🇪DE_190
+  - 33|德国 005
+  - 20|🇫🇷FR_209
+  - 20|🇩🇪DE_192
+  - 20|🇷FR_207
   - 33|德国 001
-  - 20|🇬🇧 GB_261
-  - 20|🇺 RU_356
-  - 20|🇬🇧 GB_257
+  - 15|@MxlShare 韩国 | KOR 7
+  - 20| DE_188
+  - 20|🇵JP_277
+  - 20|🇺RU_363
+  - 15|@MxlShare 韩国 | KOR 10
   - 20|🇩🇪DE_197
+  - 19|🇩🇪 德国 | DEU
+  - 36|🇩🇪_DE_德国->🇬🇧_GB_英国
+  - 20|🇺RU_361
+  - 20|🇪DE_189
+  - 20|🇺RU_359
+  - 20|🇩🇪DE_196
+  - 25,36|🇰🇷_KR_韩国
+  - 20|🇺RU_362
+  - 20|🇷🇺 RU_355
   - 20|🇧 GB_260
-  - 20|🇧 GB_253
+  - 20|🇬🇧 GB_261
+  - 20|🇩🇪DE_193
+  - 33|新加坡 002
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
