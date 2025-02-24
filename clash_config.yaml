@@ -38,9 +38,17 @@ proxies:
   port: 443
   server: 54.180.133.38
   type: ss
+- cipher: aes-256-cfb
+  name: 29,32,48|47.129.37.234_OpenAI_Claude
+  password: amazonskr05
+  port: 443
+  server: 47.129.37.234
+  tfo: false
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇦CA
-  name: 20|🇨🇦CA_181
+  name: 20|🇦CA_180
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
@@ -48,51 +56,58 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19|🇩🇪 德国 | DEU 7
+  name: 19|🇩🇪 德国 | DEU 6
   network: ws
   port: 23451
   server: frankfurt.faforex.eu.org
   tls: false
   type: vmess
   udp: true
-  uuid: 08b6fb01-f520-46f1-a7ac-24990174c225
+  uuid: 00c8b731-e779-4583-956f-bee05c198149
   ws-opts:
     headers:
       Host: us-new03.daluquan.top
     path: /itdog?ed=2560
 - cipher: chacha20-ietf-poly1305
   country: 🇪 DE
-  name: 20|🇪 DE_192
+  name: 20|🇪 DE_193
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 92.118.205.228
   type: ss
 - cipher: aes-256-cfb
-  country: 🇪DE
-  name: 20|🇪DE_193
-  password: cp8pRSUAyLhTfVWH
-  port: 9064
+  country: 🇩🇪DE
+  name: 20|🇪DE_194
+  password: 4R3hUfZ2FHhDmNcP
+  port: 9061
   server: 80.92.204.106
   type: ss
 - cipher: aes-256-cfb
   country: 🇩🇪DE
-  name: 20|🇩🇪DE_195
+  name: 20|🇪DE_195
+  password: S7KwUu7yBy58S3Ga
+  port: 9042
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 20|🇩🇪DE_196
   password: Sn5B7jTqr76aCJT8
   port: 9097
   server: 80.92.204.106
   type: ss
 - cipher: aes-256-cfb
   country: 🇩🇪DE
-  name: 20|🇩🇪DE_196
-  password: BwcAUZk8hUFAkDGN
-  port: 9031
+  name: 20|🇩🇪DE_197
+  password: cp8pRSUAyLhTfVWH
+  port: 9064
   server: 80.92.204.106
   type: ss
 - cipher: aes-256-cfb
   country: 🇩🇪DE
   name: 20|🇩🇪DE_198
-  password: S7KwUu7yBy58S3Ga
-  port: 9042
+  password: FAdUvMJUq5vDgKEq
+  port: 9006
   server: 80.92.204.106
   type: ss
 - cipher: aes-256-cfb
@@ -105,8 +120,22 @@ proxies:
 - cipher: aes-256-cfb
   country: 🇩🇪DE
   name: 20|🇩🇪DE_200
-  password: 4R3hUfZ2FHhDmNcP
-  port: 9061
+  password: XPtzA9sCug3SPR4c
+  port: 9025
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 20|🇩🇪DE_201
+  password: aLpQtfEZe445QyHk
+  port: 9098
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 20|🇩🇪DE_202
+  password: BwcAUZk8hUFAkDGN
+  port: 9031
   server: 80.92.204.106
   type: ss
 - alterId: 0
@@ -122,87 +151,73 @@ proxies:
   uuid: f74e277e-84b3-46a2-8abd-2777fa5e4af9
 - cipher: aes-256-gcm
   country: 🇷FR
-  name: 20|🇷FR_210
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 149.202.82.172
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
   name: 20|🇫🇷FR_211
-  password: faBAoD54k87UJG7
-  port: 2376
+  password: Y6R9pAtvxxzmGC
+  port: 3306
   server: 217.182.198.219
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
   name: 20|🇫🇷FR_212
+  password: PCnnH6SQSnfoS27
+  port: 8091
+  server: 54.36.174.181
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_213
   password: e4FCWrgpkji3QY
   port: 9101
   server: 217.182.198.219
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 20|🇫🇷FR_213
+  name: 20|🇫🇷FR_214
   password: cdBIDV42DCwnfIN
   port: 8118
   server: 145.239.6.202
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 20|🇫🇷FR_214
-  password: FoOiGlkAA9yPEGP
-  port: 7307
-  server: 54.36.174.181
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 20|🇫🇷FR_215
+  name: 20|🇫🇷FR_216
   password: faBAoD54k87UJG7
   port: 2376
   server: 145.239.6.202
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 20|🇫🇷FR_216
+  name: 20|🇫🇷FR_217
   password: XKFKl2rULjIp74
   port: 8009
   server: 145.239.6.202
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 20|🇫🇷FR_217
+  name: 20|🇫🇷FR_218
   password: Y6R9pAtvxxzmGC
   port: 3306
   server: 145.239.6.202
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 20|🇫🇷FR_218
+  name: 20|🇫🇷FR_219
   password: Y6R9pAtvxxzmGC
   port: 3389
   server: 145.239.6.202
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 20|🇫🇷FR_219
+  name: 20|🇫🇷FR_220
   password: Y6R9pAtvxxzmGC
   port: 5001
   server: 54.36.174.181
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 20|🇫🇷FR_220
+  name: 20|🇫🇷FR_221
   password: Y6R9pAtvxxzmGC
   port: 5000
   server: 145.239.6.202
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 20|🇫🇷FR_221
-  password: FoOiGlkAA9yPEGP
-  port: 7306
-  server: 217.182.198.219
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
@@ -214,58 +229,37 @@ proxies:
 - cipher: aes-256-gcm
   country: 🇫🇷FR
   name: 20|🇫🇷FR_223
-  password: pKEW8JPByTVTLtM
-  port: 4444
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 20|🇫🇷FR_224
-  password: PCnnH6SQSnfoS27
-  port: 8091
-  server: 54.36.174.181
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 20|🇫🇷FR_225
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 149.202.82.172
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 20|🇫🇷FR_226
-  password: PCnnH6SQSnfoS27
-  port: 8090
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 20|🇫🇷FR_227
-  password: Y6R9pAtvxxzmGC
-  port: 5000
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 20|🇫🇷FR_228
   password: RexnBgU7EV5ADxG
   port: 7001
   server: 145.239.6.202
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 20|🇫🇷FR_229
+  name: 20|🇫🇷FR_224
   password: cdBIDV42DCwnfIN
   port: 8118
   server: 217.182.198.219
   type: ss
-- cipher: aes-256-cfb
-  country: 🇷FR
-  name: 20|🇫🇷FR_230
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 195.154.185.174
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_226
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 217.182.198.219
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_228
+  password: TEzjfAYq2IjtuoS
+  port: 6697
+  server: 217.182.198.219
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_229
+  password: XKFKl2rULjIp74
+  port: 8009
+  server: 217.182.198.219
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
@@ -274,97 +268,89 @@ proxies:
   port: 8008
   server: 217.182.198.219
   type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
+- cipher: aes-256-cfb
+  country: 🇷FR
   name: 20|🇫🇷FR_232
-  password: e4FCWrgpkji3QY
-  port: 9102
-  server: 54.36.174.181
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 195.154.185.174
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
   name: 20|🇫🇷FR_233
-  password: Y6R9pAtvxxzmGC
-  port: 5001
-  server: 217.182.198.219
+  password: g5MeD6Ft3CWlJId
+  port: 5003
+  server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
   name: 20|🇫🇷FR_234
-  password: TEzjfAYq2IjtuoS
-  port: 6679
-  server: 54.36.174.181
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 20|🇫🇷FR_235
-  password: TEzjfAYq2IjtuoS
-  port: 6697
+  password: FoOiGlkAA9yPEGP
+  port: 7306
   server: 217.182.198.219
   type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 20|🇫🇷FR_236
-  password: pKEW8JPByTVTLtM
-  port: 443
-  server: 149.202.82.172
+- cipher: chacha20-ietf-poly1305
+  country: 🇷 RU
+  name: 20|🇷🇺 RU_372
+  password: WfmxKX2FBJRU0Ie9VLIYDL
+  port: 20012
+  server: 141.98.234.93
   type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 20|🇫🇷FR_237
-  password: XKFKl2rULjIp74
-  port: 8009
-  server: 217.182.198.219
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 20|🇺 RU_373
+  password: gmYDzSG6K35s8b19oY4fGz
+  port: 18622
+  server: 92.118.112.111
   type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 20|🇫🇷FR_238
-  password: cdBIDV42DCwnfIN
-  port: 8119
-  server: 149.202.82.172
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 20,30|[SS] 亚太地区 V2CROSS.COM 5
+  password: 72bb3072-7efd-4d67-9beb-2cd9c18e69f4
+  port: 40031
+  server: ru.fastsoonlink.com
+  tfo: false
   type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 20|🇫🇷FR_239
-  password: TEzjfAYq2IjtuoS
-  port: 6679
-  server: 149.202.82.172
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 20|🇺 RU_376
+  password: 0zyDRZ1XmNXaaCAN7KEA8a
+  port: 28825
+  server: 45.151.62.54
   type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 20|🇫🇷FR_240
-  password: g5MeD6Ft3CWlJId
-  port: 5004
-  server: 149.202.82.172
+- cipher: chacha20-ietf-poly1305
+  country: 🇷🇺 RU
+  name: 20,29,30|[SS] 🇺🇸 美国 V2CROSS.COM
+  password: PPXb8J2ciDybokWl7kxKab
+  port: 51587
+  server: 45.144.54.156
+  tfo: false
   type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 20|🇫🇷FR_241
-  password: cdBIDV42DCwnfIN
-  port: 8119
-  server: 217.182.198.219
+  udp: true
+- cipher: aes-256-cfb
+  country: 🇷🇺RU
+  name: 20|🇷🇺RU_383
+  password: PeHSHm5SqEjBuEXE
+  port: 9065
+  server: 45.89.52.66
   type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 20|🇫🇷FR_243
-  password: Y6R9pAtvxxzmGC
-  port: 3389
-  server: 217.182.198.219
+- cipher: aes-256-cfb
+  country: 🇷🇺RU
+  name: 20|🇷🇺RU_384
+  password: JdmRK9gMEqFgs8nP
+  port: 9003
+  server: 45.89.52.66
   type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 20|🇫🇷FR_245
-  password: pKEW8JPByTVTLtM
-  port: 4444
-  server: 145.239.6.202
+- cipher: chacha20-ietf-poly1305
+  ip-version: dual
+  name: 25,27,46,48|89.221.224.166_OpenAI_Claude1
+  password: NjBlZDlk
+  port: 8388
+  server: 89.221.224.166
+  tls: false
   type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 20|🇫🇷FR_246
-  password: faBAoD54k87UJG7
-  port: 2375
-  server: 217.182.198.219
-  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 26,48|89.221.224.166_OpenAI_Claude2
   password: NjBlZDlk
@@ -373,15 +359,15 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 35|🇷_RU_罗
-  password: UTJA57ypk2XKQpnm
-  port: 9033
-  server: 217.30.10.18
-  type: ss
-- cipher: aes-256-cfb
   name: 35|🇷_RU_俄罗斯_1
   password: QWDDvVE9npNurQfA
   port: 9026
+  server: 217.30.10.18
+  type: ss
+- cipher: aes-256-cfb
+  name: 35|🇷🇺_RU_俄罗斯_2
+  password: UkXRsXvR6buDMG2Y
+  port: 9001
   server: 217.30.10.18
   type: ss
 - cipher: aes-256-cfb
@@ -390,6 +376,30 @@ proxies:
   port: 9025
   server: 217.30.10.18
   type: ss
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 36|🇷🇺_RU_俄罗斯
+  password: ueLXVkvh4hckhErQ
+  port: 9060
+  server: 217.30.10.18
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 15,45,47|TW_speednode_0068
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.20.79
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: ' TW'
+  name: 20,29,30|[SS] 乌克兰 V2CROSS.COM 2
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  port: 443
+  server: taiwan-2.keenvpn.me
+  tfo: false
+  type: ss
+  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -402,56 +412,56 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 20|🇨🇦CA_181
-  - 20|🇫🇷FR_230
+  - 20|🇦CA_180
   - 20|🇫🇷FR_216
-  - 20|🇫🇷FR_243
-  - 20|🇫🇷FR_226
-  - 20|🇫🇷FR_222
   - 20|🇫🇷FR_221
-  - 20|🇫🇷FR_227
-  - 20|🇫🇷FR_236
-  - 20|🇫🇷FR_225
-  - 20|🇫🇷FR_233
-  - 20|🇫🇷FR_238
-  - 20|🇫🇷FR_239
-  - 20|🇫🇷FR_217
-  - 20|🇫🇷FR_245
-  - 20|🇫🇷FR_218
-  - 20|🇫🇷FR_228
-  - 20|🇫🇷FR_215
-  - 20|🇫🇷FR_220
-  - 20|🇫🇷FR_213
-  - 20|🇫🇷FR_219
-  - 20|🇫🇷FR_214
-  - 20|🇩🇪DE_198
-  - 20|🇫🇷FR_231
   - 20|🇫🇷FR_223
-  - 20|🇫🇷FR_235
-  - 20|🇫🇷FR_241
-  - 20|🇩🇪DE_199
-  - 20|🇫🇷FR_212
-  - 20|🇫🇷FR_211
-  - 20|🇫🇷FR_246
-  - 20|🇫🇷FR_229
-  - 20|🇪DE_193
-  - 20|🇫🇷FR_240
-  - 20|🇫🇷FR_237
-  - 20|🇷FR_210
-  - 20|🇩🇪DE_196
-  - 33|德国 001
-  - 35|🇷🇺_RU_俄罗斯_3
+  - 20|🇫🇷FR_218
+  - 20|🇫🇷FR_214
+  - 20|🇫🇷FR_219
   - 20|🇫🇷FR_232
-  - 35|🇷_RU_俄罗斯_1
   - 20|🇫🇷FR_234
-  - 35|🇷_RU_罗
-  - 20|🇪 DE_192
+  - 20|🇫🇷FR_211
+  - 20|🇫🇷FR_231
+  - 20|🇫🇷FR_226
+  - 20|🇫🇷FR_213
+  - 20|🇺 RU_373
+  - 20|🇫🇷FR_217
+  - 20|🇩🇪DE_202
+  - 35|🇷🇺_RU_俄罗斯_3
+  - 20|🇫🇷FR_222
   - 20|🇫🇷FR_224
-  - 26,48|89.221.224.166_OpenAI_Claude2
+  - 20|🇫🇷FR_229
+  - 20|🇫🇷FR_228
   - 20|🇩🇪DE_200
-  - 20|🇩🇪DE_195
-  - 19|🇩🇪 德国 | DEU 7
+  - 20|🇫🇷FR_233
+  - 35|🇷_RU_俄罗斯_1
+  - 20|🇩🇪DE_199
+  - 25,27,46,48|89.221.224.166_OpenAI_Claude1
+  - 20|🇩🇪DE_197
+  - 35|🇷🇺_RU_俄罗斯_2
+  - 19|🇩🇪 德国 | DEU 6
+  - 20|🇫🇷FR_220
+  - 20|🇪 DE_193
+  - 26,48|89.221.224.166_OpenAI_Claude2
+  - 33|德国 001
+  - 36|🇷🇺_RU_俄罗斯
+  - 20|🇷🇺RU_384
+  - 20|🇫🇷FR_212
+  - 20|🇩🇪DE_201
+  - 20,29,30|[SS] 🇺🇸 美国 V2CROSS.COM
+  - 20|🇷🇺 RU_372
+  - 29,32,48|47.129.37.234_OpenAI_Claude
+  - 20|🇷🇺RU_383
+  - 20,30|[SS] 亚太地区 V2CROSS.COM 5
+  - 20|🇪DE_195
   - 15|@MxlShare 韩国 | KOR 5
+  - 20|🇪DE_194
+  - 20|🇺 RU_376
+  - 20|🇩🇪DE_198
+  - 15,45,47|TW_speednode_0068
+  - 20,29,30|[SS] 乌克兰 V2CROSS.COM 2
+  - 20|🇩🇪DE_196
   url: https://i.ytimg.com/generate_204
   interval: 300
   tolerance: 50
@@ -459,111 +469,111 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 20|🇨🇦CA_181
-  - 20|🇫🇷FR_230
+  - 20|🇦CA_180
   - 20|🇫🇷FR_216
-  - 20|🇫🇷FR_243
-  - 20|🇫🇷FR_226
-  - 20|🇫🇷FR_222
   - 20|🇫🇷FR_221
-  - 20|🇫🇷FR_227
-  - 20|🇫🇷FR_236
-  - 20|🇫🇷FR_225
-  - 20|🇫🇷FR_233
-  - 20|🇫🇷FR_238
-  - 20|🇫🇷FR_239
-  - 20|🇫🇷FR_217
-  - 20|🇫🇷FR_245
-  - 20|🇫🇷FR_218
-  - 20|🇫🇷FR_228
-  - 20|🇫🇷FR_215
-  - 20|🇫🇷FR_220
-  - 20|🇫🇷FR_213
-  - 20|🇫🇷FR_219
-  - 20|🇫🇷FR_214
-  - 20|🇩🇪DE_198
-  - 20|🇫🇷FR_231
   - 20|🇫🇷FR_223
-  - 20|🇫🇷FR_235
-  - 20|🇫🇷FR_241
-  - 20|🇩🇪DE_199
-  - 20|🇫🇷FR_212
-  - 20|🇫🇷FR_211
-  - 20|🇫🇷FR_246
-  - 20|🇫🇷FR_229
-  - 20|🇪DE_193
-  - 20|🇫🇷FR_240
-  - 20|🇫🇷FR_237
-  - 20|🇷FR_210
-  - 20|🇩🇪DE_196
-  - 33|德国 001
-  - 35|🇷🇺_RU_俄罗斯_3
+  - 20|🇫🇷FR_218
+  - 20|🇫🇷FR_214
+  - 20|🇫🇷FR_219
   - 20|🇫🇷FR_232
-  - 35|🇷_RU_俄罗斯_1
   - 20|🇫🇷FR_234
-  - 35|🇷_RU_罗
-  - 20|🇪 DE_192
+  - 20|🇫🇷FR_211
+  - 20|🇫🇷FR_231
+  - 20|🇫🇷FR_226
+  - 20|🇫🇷FR_213
+  - 20|🇺 RU_373
+  - 20|🇫🇷FR_217
+  - 20|🇩🇪DE_202
+  - 35|🇷🇺_RU_俄罗斯_3
+  - 20|🇫🇷FR_222
   - 20|🇫🇷FR_224
-  - 26,48|89.221.224.166_OpenAI_Claude2
+  - 20|🇫🇷FR_229
+  - 20|🇫🇷FR_228
   - 20|🇩🇪DE_200
-  - 20|🇩🇪DE_195
-  - 19|🇩🇪 德国 | DEU 7
+  - 20|🇫🇷FR_233
+  - 35|🇷_RU_俄罗斯_1
+  - 20|🇩🇪DE_199
+  - 25,27,46,48|89.221.224.166_OpenAI_Claude1
+  - 20|🇩🇪DE_197
+  - 35|🇷🇺_RU_俄罗斯_2
+  - 19|🇩🇪 德国 | DEU 6
+  - 20|🇫🇷FR_220
+  - 20|🇪 DE_193
+  - 26,48|89.221.224.166_OpenAI_Claude2
+  - 33|德国 001
+  - 36|🇷🇺_RU_俄罗斯
+  - 20|🇷🇺RU_384
+  - 20|🇫🇷FR_212
+  - 20|🇩🇪DE_201
+  - 20,29,30|[SS] 🇺🇸 美国 V2CROSS.COM
+  - 20|🇷🇺 RU_372
+  - 29,32,48|47.129.37.234_OpenAI_Claude
+  - 20|🇷🇺RU_383
+  - 20,30|[SS] 亚太地区 V2CROSS.COM 5
+  - 20|🇪DE_195
   - 15|@MxlShare 韩国 | KOR 5
+  - 20|🇪DE_194
+  - 20|🇺 RU_376
+  - 20|🇩🇪DE_198
+  - 15,45,47|TW_speednode_0068
+  - 20,29,30|[SS] 乌克兰 V2CROSS.COM 2
+  - 20|🇩🇪DE_196
   url: https://i.ytimg.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 20|🇨🇦CA_181
-  - 20|🇫🇷FR_230
+  - 20|🇦CA_180
   - 20|🇫🇷FR_216
-  - 20|🇫🇷FR_243
-  - 20|🇫🇷FR_226
-  - 20|🇫🇷FR_222
   - 20|🇫🇷FR_221
-  - 20|🇫🇷FR_227
-  - 20|🇫🇷FR_236
-  - 20|🇫🇷FR_225
-  - 20|🇫🇷FR_233
-  - 20|🇫🇷FR_238
-  - 20|🇫🇷FR_239
-  - 20|🇫🇷FR_217
-  - 20|🇫🇷FR_245
-  - 20|🇫🇷FR_218
-  - 20|🇫🇷FR_228
-  - 20|🇫🇷FR_215
-  - 20|🇫🇷FR_220
-  - 20|🇫🇷FR_213
-  - 20|🇫🇷FR_219
-  - 20|🇫🇷FR_214
-  - 20|🇩🇪DE_198
-  - 20|🇫🇷FR_231
   - 20|🇫🇷FR_223
-  - 20|🇫🇷FR_235
-  - 20|🇫🇷FR_241
-  - 20|🇩🇪DE_199
-  - 20|🇫🇷FR_212
-  - 20|🇫🇷FR_211
-  - 20|🇫🇷FR_246
-  - 20|🇫🇷FR_229
-  - 20|🇪DE_193
-  - 20|🇫🇷FR_240
-  - 20|🇫🇷FR_237
-  - 20|🇷FR_210
-  - 20|🇩🇪DE_196
-  - 33|德国 001
-  - 35|🇷🇺_RU_俄罗斯_3
+  - 20|🇫🇷FR_218
+  - 20|🇫🇷FR_214
+  - 20|🇫🇷FR_219
   - 20|🇫🇷FR_232
-  - 35|🇷_RU_俄罗斯_1
   - 20|🇫🇷FR_234
-  - 35|🇷_RU_罗
-  - 20|🇪 DE_192
+  - 20|🇫🇷FR_211
+  - 20|🇫🇷FR_231
+  - 20|🇫🇷FR_226
+  - 20|🇫🇷FR_213
+  - 20|🇺 RU_373
+  - 20|🇫🇷FR_217
+  - 20|🇩🇪DE_202
+  - 35|🇷🇺_RU_俄罗斯_3
+  - 20|🇫🇷FR_222
   - 20|🇫🇷FR_224
-  - 26,48|89.221.224.166_OpenAI_Claude2
+  - 20|🇫🇷FR_229
+  - 20|🇫🇷FR_228
   - 20|🇩🇪DE_200
-  - 20|🇩🇪DE_195
-  - 19|🇩🇪 德国 | DEU 7
+  - 20|🇫🇷FR_233
+  - 35|🇷_RU_俄罗斯_1
+  - 20|🇩🇪DE_199
+  - 25,27,46,48|89.221.224.166_OpenAI_Claude1
+  - 20|🇩🇪DE_197
+  - 35|🇷🇺_RU_俄罗斯_2
+  - 19|🇩🇪 德国 | DEU 6
+  - 20|🇫🇷FR_220
+  - 20|🇪 DE_193
+  - 26,48|89.221.224.166_OpenAI_Claude2
+  - 33|德国 001
+  - 36|🇷🇺_RU_俄罗斯
+  - 20|🇷🇺RU_384
+  - 20|🇫🇷FR_212
+  - 20|🇩🇪DE_201
+  - 20,29,30|[SS] 🇺🇸 美国 V2CROSS.COM
+  - 20|🇷🇺 RU_372
+  - 29,32,48|47.129.37.234_OpenAI_Claude
+  - 20|🇷🇺RU_383
+  - 20,30|[SS] 亚太地区 V2CROSS.COM 5
+  - 20|🇪DE_195
   - 15|@MxlShare 韩国 | KOR 5
+  - 20|🇪DE_194
+  - 20|🇺 RU_376
+  - 20|🇩🇪DE_198
+  - 15,45,47|TW_speednode_0068
+  - 20,29,30|[SS] 乌克兰 V2CROSS.COM 2
+  - 20|🇩🇪DE_196
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
