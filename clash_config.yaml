@@ -33,42 +33,12 @@ dns:
     - 0.0.0.0/32
 proxies:
 - cipher: chacha20-ietf-poly1305
-  country: 🇰 HK
-  name: 20|🇰 HK_270
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
-  type: ss
-- cipher: aes-128-gcm
-  name: 17|🇯🇵
-  password: shadowsocks
+  country: ' TW'
+  name: 15,20|🇹 TW_366
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
   port: 443
-  server: 149.22.87.240
+  server: 2.58.241.42
   type: ss
-- alterId: 0
-  cipher: auto
-  country: 🇵 JP
-  h2-opts: {}
-  http-opts: {}
-  name: 20| JP_276
-  network: ws
-  port: 22357
-  server: 0000000000000000000000000073.cgroup-node-for-bigairport.sbs
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  ws-path: /
-- alterId: 0
-  cipher: none
-  name: 38|11|11|11|11|11|11,16|日本|@ripao...
-  network: tcp
-  port: '550'
-  server: 20.78.127.141
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9e11e992-c3a4-45fb-bb67-5f4f42fcd551
 - cipher: aes-128-gcm
   ip-version: dual
   name: 15,20,36|🇬🇧_GB_英国->🇺🇸_US_美国
@@ -77,72 +47,309 @@ proxies:
   server: 212.102.53.197
   type: ss
   udp: true
-- cipher: aes-128-gcm
-  country: 🇧 GB
-  name: 20|🇧 GB_255
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 20|🇧 GB_256
-  password: iZDJs2CDckHKqJ5W7cpvCq2veqsqWn95iqs6Kr6F3YNnyMsk2uPdRrChQfShvH1v56Br1qWEW44qJna5QcMcZF7RCJmdvwuq
-  port: 55988
-  server: 185.5.38.111
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 20|🇬🇧 GB_260
-  password: 4ju873evpjeaAi8Zq12YoRHWp63o5exdnZ71aUg1YEChiPTc2HkasYhUBxRz7UGi4K6cLrsGaU6b44H4Qa6f4cJn3zBp2cnX
-  port: 55988
-  server: 185.5.38.111
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇬🇧GB
-  name: 20|🇬🇧GB_261
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.198
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇬🇧GB
-  name: 20|🇬🇧GB_262
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.195
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 26|GB英国(mibei77.com 米贝节点分享)
-  password: 6edTuN9WSufTkYhvfJD0js
-  port: 2239
-  server: 77.239.122.39
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 15,36|🇮🇸_IS_冰岛
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 37.235.49.152
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  ip-version: dual
-  name: 27,29,48|US_Portland_Amazon.com, Inc._O...
-  password: amazonskr05
+  name: 15|@MxlShare 葡萄牙 | PRT 2
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.231.233.112
+  type: ss
+- cipher: aes-128-cfb
+  name: 17,20|_107
+  password: shadowsocks
   port: 443
-  server: 54.244.78.72
-  tls: false
+  server: 109.201.152.181
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 27|🇺🇸_US_美国->🇺_RU_俄罗斯
-  password: amazonskr05
+- cipher: aes-128-gcm
+  name: 17|🇬🇧 uk
+  password: shadowsocks
   port: 443
-  server: 18.236.132.239
-  tls: false
+  server: 141.98.101.179
   type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  country: ' TW'
-  name: 15,20|🇹 TW_366
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  port: 443
-  server: 2.58.241.42
+  name: 20|_07
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|_09
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|_10
+  password: lGqs95QkFHo2NV
+  port: 5499
+  server: 23.154.136.51
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇱🇹 LT
+  name: 20|🇱🇹 LT_306
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: 8080
+  server: 45.87.175.188
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇱🇹 LT
+  name: 20|🇱🇹 LT_307
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.87.175.181
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇱🇹 LT
+  name: 20|🇱🇹 LT_309
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.192
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇱🇹 LT
+  name: 20|🇱🇹 LT_310
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.188
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇱🇹 LT
+  name: 20|🇱🇹 LT_312
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.157
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇱🇹 LT
+  name: 20|🇱🇹 LT_313
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: 8080
+  server: 45.87.175.181
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇱🇹 LT
+  name: 20|🇱🇹 LT_314
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.171
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇱 NL
+  name: 20| NL_317
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 103.104.247.47
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇱 NL
+  name: 20|🇱 NL_318
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 193.29.139.189
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇳🇱 NL
+  name: 20|🇱 NL_319
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 193.29.139.189
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇳🇱 NL
+  name: 20|🇱 NL_321
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 193.29.139.138
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇱 NL
+  name: 20|🇳🇱 NL_322
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 103.104.247.49
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇱 NL
+  name: 20|🇳🇱 NL_323
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 193.29.139.179
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇱NL
+  name: 20|🇳🇱NL_324
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 193.29.139.251
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇳🇱NL
+  name: 20|🇳🇱NL_325
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 193.29.139.202
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇱NL
+  name: 20|🇳🇱NL_326
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.27.48
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇱PL
+  name: 20|🇱PL_330
+  password: RexnBgU7EV5ADxG
+  port: 7002
+  server: 51.77.53.200
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇵🇱PL
+  name: 20|🇱PL_331
+  password: KixLvKzwjekG00rm
+  port: 8000
+  server: 51.77.53.200
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇵🇱PL
+  name: 20|🇱PL_332
+  password: Y6R9pAtvxxzmGC
+  port: 5001
+  server: 51.77.53.200
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇵🇱PL
+  name: 20|🇱PL_333
+  password: PCnnH6SQSnfoS27
+  port: 8091
+  server: 51.77.53.200
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇵🇱PL
+  name: 20|🇱PL_334
+  password: PCnnH6SQSnfoS27
+  port: 8090
+  server: 51.77.53.200
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇵🇱PL
+  name: 20|🇱PL_335
+  password: kDWvXYZoTBcGkC4
+  port: 8881
+  server: 51.77.53.200
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇵🇱PL
+  name: 20|🇵🇱PL_336
+  password: Y6R9pAtvxxzmGC
+  port: 5601
+  server: 51.77.53.200
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇵🇱PL
+  name: 20|🇱PL_337
+  password: e4FCWrgpkji3QY
+  port: 9101
+  server: 51.77.53.200
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇵🇱PL
+  name: 20|🇱PL_338
+  password: cdBIDV42DCwnfIN
+  port: 8118
+  server: 51.77.53.200
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇵🇱PL
+  name: 20|🇱PL_339
+  password: XKFKl2rULjIp74
+  port: 8009
+  server: 51.77.53.200
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇵🇱PL
+  name: 20|🇱PL_340
+  password: XKFKl2rULjIp74
+  port: 8008
+  server: 51.77.53.200
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇵🇱PL
+  name: 20|🇱PL_341
+  password: KixLvKzwjekG00rm
+  port: 5500
+  server: 51.77.53.200
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇵🇱PL
+  name: 20|🇱PL_342
+  password: RexnBgU7EV5ADxG
+  port: 7001
+  server: 51.77.53.200
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇵🇱PL
+  name: 20|🇱PL_343
+  password: FoOiGlkAA9yPEGP
+  port: 7307
+  server: 51.77.53.200
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇵🇱PL
+  name: 20|🇱PL_344
+  password: g5MeD6Ft3CWlJId
+  port: 5004
+  server: 51.77.53.200
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇵🇱PL
+  name: 20|🇱PL_345
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 51.77.53.200
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇵🇱PL
+  name: 20|🇱PL_346
+  password: TEzjfAYq2IjtuoS
+  port: 6697
+  server: 51.77.53.200
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇵🇱PL
+  name: 20|🇱PL_347
+  password: cdBIDV42DCwnfIN
+  port: 8119
+  server: 51.77.53.200
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇵🇱PL
+  name: 20|🇱PL_348
+  password: Y6R9pAtvxxzmGC
+  port: 5000
+  server: 51.77.53.200
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇵🇱PL
+  name: 20|🇱PL_349
+  password: pKEW8JPByTVTLtM
+  port: 4444
+  server: 51.77.53.200
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇵🇱PL
+  name: 20|🇱PL_350
+  password: FoOiGlkAA9yPEGP
+  port: 7306
+  server: 51.77.53.200
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇼 TW
@@ -151,13 +358,27 @@ proxies:
   port: 443
   server: taiwan-2.keenvpn.me
   type: ss
-- cipher: aes-256-cfb
-  name: 45,47|TW_speednode_0055
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.223.20.79
+- cipher: aes-256-gcm
+  country: ZZ
+  name: 20|🏁ZZ_457
+  password: TEzjfAYq2IjtuoS
+  port: 6697
+  server: 23.154.136.51
   type: ss
-  udp: true
+- cipher: aes-256-gcm
+  country: 🏁ZZ
+  name: 20|ZZ_458
+  password: cdBIDV42DCwnfIN
+  port: 8118
+  server: 23.154.136.51
+  type: ss
+- cipher: aes-256-gcm
+  country: 🏁ZZ
+  name: 20|ZZ_459
+  password: Y6R9pAtvxxzmGC
+  port: 8888
+  server: 23.154.136.51
+  type: ss
 proxy-groups:
 - name: 节点选择
   type: select
@@ -170,22 +391,56 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 27,29,48|US_Portland_Amazon.com, Inc._O...
-  - 27|🇺🇸_US_美国->🇺_RU_俄罗斯
-  - 17|🇯🇵
-  - 15,20|🇹 TW_366
-  - 38|11|11|11|11|11|11,16|日本|@ripao...
+  - 20|🏁ZZ_457
+  - 20|_10
+  - 20|ZZ_458
+  - 20|_09
+  - 20|ZZ_459
+  - 20|_07
+  - 17,20|_107
+  - 20|🇱🇹 LT_313
+  - 20|🇳🇱NL_325
+  - 20|🇱🇹 LT_307
+  - 20|🇱 NL_321
   - 15,20,36|🇬🇧_GB_英国->🇺🇸_US_美国
-  - 20|🇬🇧GB_262
-  - 20|🇬🇧GB_261
-  - 20|🇧 GB_255
+  - 17|🇬🇧 uk
+  - 20|🇱🇹 LT_310
+  - 20|🇵🇱PL_336
+  - 20|🇱PL_349
+  - 20|🇳🇱NL_326
+  - 20|🇱PL_341
+  - 20|🇱PL_339
+  - 20|🇱🇹 LT_312
+  - 20|🇱PL_342
+  - 20|🇱PL_330
+  - 20|🇳🇱 NL_323
+  - 20|🇱PL_343
+  - 20|🇱PL_346
+  - 20|🇱PL_331
+  - 20|🇱PL_338
+  - 20|🇱PL_340
+  - 20|🇱PL_335
+  - 20|🇱PL_334
+  - 20|🇱PL_333
+  - 20|🇱PL_337
+  - 15,20|🇹 TW_366
   - 20|🇼 TW_367
-  - 45,47|TW_speednode_0055
-  - 26|GB英国(mibei77.com 米贝节点分享)
-  - 20| JP_276
-  - 20|🇰 HK_270
-  - 20|🇧 GB_256
-  - 20|🇬🇧 GB_260
+  - 20|🇱PL_347
+  - 20|🇱PL_345
+  - 20|🇱🇹 LT_306
+  - 15|@MxlShare 葡萄牙 | PRT 2
+  - 20|🇱PL_348
+  - 20|🇱PL_344
+  - 20|🇱PL_350
+  - 20|🇱PL_332
+  - 20| NL_317
+  - 20|🇳🇱 NL_322
+  - 15,36|🇮🇸_IS_冰岛
+  - 20|🇱 NL_319
+  - 20|🇱 NL_318
+  - 20|🇱🇹 LT_309
+  - 20|🇱🇹 LT_314
+  - 20|🇳🇱NL_324
   url: https://i.ytimg.com/generate_204
   interval: 300
   tolerance: 50
@@ -193,43 +448,111 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 27,29,48|US_Portland_Amazon.com, Inc._O...
-  - 27|🇺🇸_US_美国->🇺_RU_俄罗斯
-  - 17|🇯🇵
-  - 15,20|🇹 TW_366
-  - 38|11|11|11|11|11|11,16|日本|@ripao...
+  - 20|🏁ZZ_457
+  - 20|_10
+  - 20|ZZ_458
+  - 20|_09
+  - 20|ZZ_459
+  - 20|_07
+  - 17,20|_107
+  - 20|🇱🇹 LT_313
+  - 20|🇳🇱NL_325
+  - 20|🇱🇹 LT_307
+  - 20|🇱 NL_321
   - 15,20,36|🇬🇧_GB_英国->🇺🇸_US_美国
-  - 20|🇬🇧GB_262
-  - 20|🇬🇧GB_261
-  - 20|🇧 GB_255
+  - 17|🇬🇧 uk
+  - 20|🇱🇹 LT_310
+  - 20|🇵🇱PL_336
+  - 20|🇱PL_349
+  - 20|🇳🇱NL_326
+  - 20|🇱PL_341
+  - 20|🇱PL_339
+  - 20|🇱🇹 LT_312
+  - 20|🇱PL_342
+  - 20|🇱PL_330
+  - 20|🇳🇱 NL_323
+  - 20|🇱PL_343
+  - 20|🇱PL_346
+  - 20|🇱PL_331
+  - 20|🇱PL_338
+  - 20|🇱PL_340
+  - 20|🇱PL_335
+  - 20|🇱PL_334
+  - 20|🇱PL_333
+  - 20|🇱PL_337
+  - 15,20|🇹 TW_366
   - 20|🇼 TW_367
-  - 45,47|TW_speednode_0055
-  - 26|GB英国(mibei77.com 米贝节点分享)
-  - 20| JP_276
-  - 20|🇰 HK_270
-  - 20|🇧 GB_256
-  - 20|🇬🇧 GB_260
+  - 20|🇱PL_347
+  - 20|🇱PL_345
+  - 20|🇱🇹 LT_306
+  - 15|@MxlShare 葡萄牙 | PRT 2
+  - 20|🇱PL_348
+  - 20|🇱PL_344
+  - 20|🇱PL_350
+  - 20|🇱PL_332
+  - 20| NL_317
+  - 20|🇳🇱 NL_322
+  - 15,36|🇮🇸_IS_冰岛
+  - 20|🇱 NL_319
+  - 20|🇱 NL_318
+  - 20|🇱🇹 LT_309
+  - 20|🇱🇹 LT_314
+  - 20|🇳🇱NL_324
   url: https://i.ytimg.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 27,29,48|US_Portland_Amazon.com, Inc._O...
-  - 27|🇺🇸_US_美国->🇺_RU_俄罗斯
-  - 17|🇯🇵
-  - 15,20|🇹 TW_366
-  - 38|11|11|11|11|11|11,16|日本|@ripao...
+  - 20|🏁ZZ_457
+  - 20|_10
+  - 20|ZZ_458
+  - 20|_09
+  - 20|ZZ_459
+  - 20|_07
+  - 17,20|_107
+  - 20|🇱🇹 LT_313
+  - 20|🇳🇱NL_325
+  - 20|🇱🇹 LT_307
+  - 20|🇱 NL_321
   - 15,20,36|🇬🇧_GB_英国->🇺🇸_US_美国
-  - 20|🇬🇧GB_262
-  - 20|🇬🇧GB_261
-  - 20|🇧 GB_255
+  - 17|🇬🇧 uk
+  - 20|🇱🇹 LT_310
+  - 20|🇵🇱PL_336
+  - 20|🇱PL_349
+  - 20|🇳🇱NL_326
+  - 20|🇱PL_341
+  - 20|🇱PL_339
+  - 20|🇱🇹 LT_312
+  - 20|🇱PL_342
+  - 20|🇱PL_330
+  - 20|🇳🇱 NL_323
+  - 20|🇱PL_343
+  - 20|🇱PL_346
+  - 20|🇱PL_331
+  - 20|🇱PL_338
+  - 20|🇱PL_340
+  - 20|🇱PL_335
+  - 20|🇱PL_334
+  - 20|🇱PL_333
+  - 20|🇱PL_337
+  - 15,20|🇹 TW_366
   - 20|🇼 TW_367
-  - 45,47|TW_speednode_0055
-  - 26|GB英国(mibei77.com 米贝节点分享)
-  - 20| JP_276
-  - 20|🇰 HK_270
-  - 20|🇧 GB_256
-  - 20|🇬🇧 GB_260
+  - 20|🇱PL_347
+  - 20|🇱PL_345
+  - 20|🇱🇹 LT_306
+  - 15|@MxlShare 葡萄牙 | PRT 2
+  - 20|🇱PL_348
+  - 20|🇱PL_344
+  - 20|🇱PL_350
+  - 20|🇱PL_332
+  - 20| NL_317
+  - 20|🇳🇱 NL_322
+  - 15,36|🇮🇸_IS_冰岛
+  - 20|🇱 NL_319
+  - 20|🇱 NL_318
+  - 20|🇱🇹 LT_309
+  - 20|🇱🇹 LT_314
+  - 20|🇳🇱NL_324
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
