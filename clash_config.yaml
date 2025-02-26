@@ -46,6 +46,20 @@ proxies:
   server: 149.22.87.240
   type: ss
 - alterId: 0
+  cipher: auto
+  country: 🇵 JP
+  h2-opts: {}
+  http-opts: {}
+  name: 20| JP_276
+  network: ws
+  port: 22357
+  server: 0000000000000000000000000073.cgroup-node-for-bigairport.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  ws-path: /
+- alterId: 0
   cipher: none
   name: 38|11|11|11|11|11|11,16|日本|@ripao...
   network: tcp
@@ -63,27 +77,6 @@ proxies:
   server: 212.102.53.197
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 20|🇧 GB_251
-  password: 2EmWRS1TkS3TkxKApnrihb3aHjDSXRvT1T1K9U2Bruxrnp5A8zmpTxwwTNje6BkVqmn9BgRF6pq8qoRHCfZdcah7BLbjrpT1
-  port: 55988
-  server: 185.5.38.111
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 20|🇬🇧 GB_253
-  password: FjgGNNHQiELzxXmaHRxxtQbxDDvGXFxYdTbYe91JKZsjvKLHoY9rn9ruYE45377WjtU3m4kmXQZDXiHBJsgVfhmpawEoGvq9
-  port: 55988
-  server: mx2.drawnrisha.one
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 20|🇬🇧 GB_254
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.47.255.22
-  type: ss
 - cipher: aes-128-gcm
   country: 🇧 GB
   name: 20|🇧 GB_255
@@ -95,20 +88,6 @@ proxies:
   country: 🇬🇧 GB
   name: 20|🇧 GB_256
   password: iZDJs2CDckHKqJ5W7cpvCq2veqsqWn95iqs6Kr6F3YNnyMsk2uPdRrChQfShvH1v56Br1qWEW44qJna5QcMcZF7RCJmdvwuq
-  port: 55988
-  server: 185.5.38.111
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 20|🇬🇧 GB_258
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.47.253.227
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 20|🇬🇧 GB_259
-  password: BpFieMT6SobpqRiKFefvYu7eXk99XfCeWfjpntzSh81FfMx9R7rJW6LTmzH78StTEhCd7w32ZMxbGJZS98gpn1ozr9jAbMoa
   port: 55988
   server: 185.5.38.111
   type: ss
@@ -140,164 +119,15 @@ proxies:
   server: 77.239.122.39
   type: ss
   udp: true
-- name: '@MxlShare 巴西 | BRA'
-  server: br.bethebest.eu.org
-  port: 30102
-  type: hysteria2
-  password: d839f04d-3879-46f5-82fa-feb8b4162f9f
-  auth: d839f04d-3879-46f5-82fa-feb8b4162f9f
-  skip-cert-verify: true
-- name: '@MxlShare 巴西 | BRA 2'
-  server: 31.22.116.38
-  port: 443
-  type: vless
-  uuid: 7671069f-ce73-4977-be03-414e79f1d7cd
-  tls: true
-  servername: usd.kobtty.me
-  network: ws
-  ws-opts:
-    path: /bing
-    headers:
-      Host: usd.kobtty.me
-- name: '@MxlShare 加拿大 | CAN'
-  server: ca11.bethebest.eu.org
-  port: 30102
-  type: hysteria2
-  password: d839f04d-3879-46f5-82fa-feb8b4162f9f
-  auth: d839f04d-3879-46f5-82fa-feb8b4162f9f
-  sni: du.wish.ml
-  skip-cert-verify: true
-- name: '@MxlShare 台湾 | TWN 5'
-  server: 2.58.241.42
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-- name: '@MxlShare 德国 | DEU'
-  server: 195.201.25.40
-  port: 21313
-  type: vless
-  uuid: 59275d0a-c803-4d85-ce13-ba14edc710e8
-  tls: true
-  reality-opts:
-    public-key: AlUKGYa7aLWaZ2AGBHmt9pcqT8uNYMmByNrIN_bwfwI
-    short-id: db99da70
-  servername: yahoo.com
-  client-fingerprint: chrome
-  network: tcp
-- name: '@MxlShare 法国 | FRA'
-  server: 195.154.33.70
-  port: 13861
-  type: hysteria2
-  password: dongtaiwang.com
-  auth: dongtaiwang.com
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: '@MxlShare 荷兰 | NLD'
-  server: 95.179.153.250
-  port: 47221
-  type: vless
-  uuid: 3373fe14-47b8-42e5-8a18-7ab3e0dd02b3
-  tls: true
-  reality-opts:
-    public-key: iwsj4xiBztuBQ3I1YsrBBUhnlu7mhhPFozP7bkgaal0
-    short-id: 47ff9b6c
-  servername: yahoo.com
-  client-fingerprint: chrome
-  network: tcp
-- name: '@MxlShare 葡萄牙 | PRT'
-  server: 185.231.233.112
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: '@MxlShare 俄罗斯 | RUS'
-  server: 185.231.233.173
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: '@MxlShare 俄罗斯 | RUS 2'
-  server: 46.17.41.189
-  port: 51224
-  type: hysteria2
-  password: dongtaiwang.com
-  auth: dongtaiwang.com
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: '@MxlShare 美国 | USA 4'
-  server: 52.34.200.48
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 27,29,48|US_Portland_Amazon.com, Inc._O...
   password: amazonskr05
-- name: '@MxlShare 美国 | USA 9'
-  server: 52.33.5.226
   port: 443
+  server: 54.244.78.72
+  tls: false
   type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: '@MxlShare 美国 | USA 10'
-  server: 34.218.246.115
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: '@MxlShare 美国 | USA 11'
-  server: 54.244.204.173
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: '@MxlShare 美国 | USA 12'
-  server: 35.91.187.73
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: '@MxlShare 美国 | USA 15'
-  server: 34.211.97.239
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: '@MxlShare 美国 | USA 16'
-  server: 34.217.75.205
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: '@MxlShare 美国 | USA 19'
-  server: 45.62.114.221
-  port: 443
-  type: vless
-  uuid: dd0d29f2-c6fd-4518-bed6-618ef8b12e86
-  tls: true
-  servername: usb.sevco.me
-  network: ws
-  ws-opts:
-    path: /bing
-    headers:
-      Host: usb.sevco.me
-- name: '@MxlShare 美国 | USA 20'
-  server: 50.114.152.111
-  port: 10002
-  type: hysteria2
-  password: b546e98f-967a-4e95-aa67-4cdd6c1b9677
-  auth: b546e98f-967a-4e95-aa67-4cdd6c1b9677
-  skip-cert-verify: true
-- name: '@MxlShare 美国 | USA 24'
-  server: 154.26.179.89
-  port: 443
-  type: vless
-  uuid: 81789df0-7311-46fc-848b-10b923231000
-  tls: true
-  servername: usc.kobtty.me
-  network: ws
-  ws-opts:
-    path: /bing
-    headers:
-      Host: usc.kobtty.me
+  udp: true
 - cipher: aes-256-cfb
   ip-version: dual
   name: 27|🇺🇸_US_美国->🇺_RU_俄罗斯
@@ -307,6 +137,13 @@ proxies:
   tls: false
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  country: ' TW'
+  name: 15,20|🇹 TW_366
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  port: 443
+  server: 2.58.241.42
+  type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇼 TW
   name: 20|🇼 TW_367
@@ -333,44 +170,22 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - '@MxlShare 美国 | USA 10'
-  - '@MxlShare 美国 | USA 11'
-  - '@MxlShare 美国 | USA 9'
-  - '@MxlShare 美国 | USA 12'
-  - '@MxlShare 美国 | USA 16'
-  - '@MxlShare 美国 | USA 15'
-  - '@MxlShare 美国 | USA 4'
+  - 27,29,48|US_Portland_Amazon.com, Inc._O...
+  - 27|🇺🇸_US_美国->🇺_RU_俄罗斯
   - 17|🇯🇵
+  - 15,20|🇹 TW_366
   - 38|11|11|11|11|11|11,16|日本|@ripao...
-  - '@MxlShare 巴西 | BRA 2'
-  - '@MxlShare 美国 | USA 19'
-  - '@MxlShare 美国 | USA 24'
-  - '@MxlShare 台湾 | TWN 5'
+  - 15,20,36|🇬🇧_GB_英国->🇺🇸_US_美国
   - 20|🇬🇧GB_262
   - 20|🇬🇧GB_261
-  - 15,20,36|🇬🇧_GB_英国->🇺🇸_US_美国
   - 20|🇧 GB_255
-  - 20|🇬🇧 GB_254
-  - '@MxlShare 美国 | USA 20'
-  - '@MxlShare 加拿大 | CAN'
-  - 26|GB英国(mibei77.com 米贝节点分享)
-  - 27|🇺🇸_US_美国->🇺_RU_俄罗斯
   - 20|🇼 TW_367
-  - 20|🇬🇧 GB_260
+  - 45,47|TW_speednode_0055
+  - 26|GB英国(mibei77.com 米贝节点分享)
+  - 20| JP_276
   - 20|🇰 HK_270
   - 20|🇧 GB_256
-  - 20|🇬🇧 GB_259
-  - '@MxlShare 俄罗斯 | RUS'
-  - 45,47|TW_speednode_0055
-  - '@MxlShare 葡萄牙 | PRT'
-  - '@MxlShare 法国 | FRA'
-  - 20|🇧 GB_251
-  - '@MxlShare 俄罗斯 | RUS 2'
-  - '@MxlShare 荷兰 | NLD'
-  - '@MxlShare 德国 | DEU'
-  - 20|🇬🇧 GB_253
-  - '@MxlShare 巴西 | BRA'
-  - 20|🇬🇧 GB_258
+  - 20|🇬🇧 GB_260
   url: https://i.ytimg.com/generate_204
   interval: 300
   tolerance: 50
@@ -378,87 +193,43 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - '@MxlShare 美国 | USA 10'
-  - '@MxlShare 美国 | USA 11'
-  - '@MxlShare 美国 | USA 9'
-  - '@MxlShare 美国 | USA 12'
-  - '@MxlShare 美国 | USA 16'
-  - '@MxlShare 美国 | USA 15'
-  - '@MxlShare 美国 | USA 4'
+  - 27,29,48|US_Portland_Amazon.com, Inc._O...
+  - 27|🇺🇸_US_美国->🇺_RU_俄罗斯
   - 17|🇯🇵
+  - 15,20|🇹 TW_366
   - 38|11|11|11|11|11|11,16|日本|@ripao...
-  - '@MxlShare 巴西 | BRA 2'
-  - '@MxlShare 美国 | USA 19'
-  - '@MxlShare 美国 | USA 24'
-  - '@MxlShare 台湾 | TWN 5'
+  - 15,20,36|🇬🇧_GB_英国->🇺🇸_US_美国
   - 20|🇬🇧GB_262
   - 20|🇬🇧GB_261
-  - 15,20,36|🇬🇧_GB_英国->🇺🇸_US_美国
   - 20|🇧 GB_255
-  - 20|🇬🇧 GB_254
-  - '@MxlShare 美国 | USA 20'
-  - '@MxlShare 加拿大 | CAN'
-  - 26|GB英国(mibei77.com 米贝节点分享)
-  - 27|🇺🇸_US_美国->🇺_RU_俄罗斯
   - 20|🇼 TW_367
-  - 20|🇬🇧 GB_260
+  - 45,47|TW_speednode_0055
+  - 26|GB英国(mibei77.com 米贝节点分享)
+  - 20| JP_276
   - 20|🇰 HK_270
   - 20|🇧 GB_256
-  - 20|🇬🇧 GB_259
-  - '@MxlShare 俄罗斯 | RUS'
-  - 45,47|TW_speednode_0055
-  - '@MxlShare 葡萄牙 | PRT'
-  - '@MxlShare 法国 | FRA'
-  - 20|🇧 GB_251
-  - '@MxlShare 俄罗斯 | RUS 2'
-  - '@MxlShare 荷兰 | NLD'
-  - '@MxlShare 德国 | DEU'
-  - 20|🇬🇧 GB_253
-  - '@MxlShare 巴西 | BRA'
-  - 20|🇬🇧 GB_258
+  - 20|🇬🇧 GB_260
   url: https://i.ytimg.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - '@MxlShare 美国 | USA 10'
-  - '@MxlShare 美国 | USA 11'
-  - '@MxlShare 美国 | USA 9'
-  - '@MxlShare 美国 | USA 12'
-  - '@MxlShare 美国 | USA 16'
-  - '@MxlShare 美国 | USA 15'
-  - '@MxlShare 美国 | USA 4'
+  - 27,29,48|US_Portland_Amazon.com, Inc._O...
+  - 27|🇺🇸_US_美国->🇺_RU_俄罗斯
   - 17|🇯🇵
+  - 15,20|🇹 TW_366
   - 38|11|11|11|11|11|11,16|日本|@ripao...
-  - '@MxlShare 巴西 | BRA 2'
-  - '@MxlShare 美国 | USA 19'
-  - '@MxlShare 美国 | USA 24'
-  - '@MxlShare 台湾 | TWN 5'
+  - 15,20,36|🇬🇧_GB_英国->🇺🇸_US_美国
   - 20|🇬🇧GB_262
   - 20|🇬🇧GB_261
-  - 15,20,36|🇬🇧_GB_英国->🇺🇸_US_美国
   - 20|🇧 GB_255
-  - 20|🇬🇧 GB_254
-  - '@MxlShare 美国 | USA 20'
-  - '@MxlShare 加拿大 | CAN'
-  - 26|GB英国(mibei77.com 米贝节点分享)
-  - 27|🇺🇸_US_美国->🇺_RU_俄罗斯
   - 20|🇼 TW_367
-  - 20|🇬🇧 GB_260
+  - 45,47|TW_speednode_0055
+  - 26|GB英国(mibei77.com 米贝节点分享)
+  - 20| JP_276
   - 20|🇰 HK_270
   - 20|🇧 GB_256
-  - 20|🇬🇧 GB_259
-  - '@MxlShare 俄罗斯 | RUS'
-  - 45,47|TW_speednode_0055
-  - '@MxlShare 葡萄牙 | PRT'
-  - '@MxlShare 法国 | FRA'
-  - 20|🇧 GB_251
-  - '@MxlShare 俄罗斯 | RUS 2'
-  - '@MxlShare 荷兰 | NLD'
-  - '@MxlShare 德国 | DEU'
-  - 20|🇬🇧 GB_253
-  - '@MxlShare 巴西 | BRA'
-  - 20|🇬🇧 GB_258
+  - 20|🇬🇧 GB_260
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
