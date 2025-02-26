@@ -33,6 +33,221 @@ dns:
     - 0.0.0.0/32
 proxies:
 - cipher: aes-128-gcm
+  name: 17|🇯🇵
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.240
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_241
+  password: Y6R9pAtvxxzmGC
+  port: 3389
+  server: 145.239.6.202
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_242
+  password: Y6R9pAtvxxzmGC
+  port: 3306
+  server: 145.239.6.202
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_243
+  password: XKFKl2rULjIp74
+  port: 8009
+  server: 145.239.6.202
+  type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  http-opts:
+    headers:
+      Host:
+      - dir.mirza-film.ir
+    path:
+    - /ZHRUeZLCZMQKiL3vNkc8r2oJ0
+  name: 16,33|德国 001
+  network: http
+  port: 80
+  server: 91.107.171.73
+  tls: false
+  type: vmess
+  uuid: 5d904885-74c5-4c07-95cf-e0989d287c37
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 20|🇷🇺 RU_353
+  password: 0zyDRZ1XmNXaaCAN7KEA8a
+  port: 28825
+  server: 45.151.62.54
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇷 RU
+  name: 20|🇺 RU_354
+  password: WfmxKX2FBJRU0Ie9VLIYDL
+  port: 20012
+  server: 141.98.234.93
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇷🇺 RU
+  name: 20|🇷🇺 RU_357
+  password: uQS5ntVqC00sSKkeNzUiD3
+  port: 42090
+  server: 89.23.103.125
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇷🇺RU
+  name: 20|🇺RU_361
+  password: M3t2ZEQcMGRWBjRa
+  port: 9011
+  server: 45.89.52.66
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 26,48|89.221.224.166_OpenAI_Claude2
+  password: NjBlZDlk
+  port: 8388
+  server: is3.opensocks.site
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 27|🇷🇺_RU_俄罗斯_2
+  password: QWDDvVE9npNurQfA
+  port: 9026
+  server: 217.30.10.18
+  tls: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 27,36|🇷🇺_RU_俄罗斯_3
+  password: XPtzA9sCug3SPR4c
+  port: 9025
+  server: 217.30.10.18
+  tls: false
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 39|🇷🇺 _俄罗斯
+  network: tcp
+  port: '22946'
+  server: 188.130.154.56
+  tls: false
+  type: vmess
+  uuid: 7ed1d138-37f7-41f7-843d-d4f2bdbba913
+- cipher: chacha20-ietf-poly1305
+  country: 🇪 SE
+  name: 20| SE_364
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 45.154.206.192
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 5|CDN优选-1
+  network: ws
+  port: 80
+  server: 1.cdn.5468936.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: be9cf152-7cf1-46f9-88ed-a55b343c927b
+  ws-opts:
+    path: /linuxdo
+- alterId: 0
+  cipher: auto
+  name: 5|CDN优选-2
+  network: ws
+  port: 80
+  server: 2.cdn.5468936.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: be9cf152-7cf1-46f9-88ed-a55b343c927b
+  ws-opts:
+    path: /linuxdo
+- alterId: 0
+  cipher: auto
+  name: 5|CDN优选-3
+  network: ws
+  port: 80
+  server: 3.cdn.5468936.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: be9cf152-7cf1-46f9-88ed-a55b343c927b
+  ws-opts:
+    path: /linuxdo
+- alterId: 0
+  cipher: auto
+  name: 5|CDN优选-4
+  network: ws
+  port: 80
+  server: 4.cdn.5468936.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: be9cf152-7cf1-46f9-88ed-a55b343c927b
+  ws-opts:
+    path: /linuxdo
+- alterId: 0
+  cipher: auto
+  name: 5|CDN优选-5
+  network: ws
+  port: 80
+  server: 5.cdn.5468936.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: be9cf152-7cf1-46f9-88ed-a55b343c927b
+  ws-opts:
+    path: /linuxdo
+- alterId: 0
+  cipher: auto
+  name: 5|CDN优选-6
+  network: ws
+  port: 80
+  server: 6.cdn.5468936.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: be9cf152-7cf1-46f9-88ed-a55b343c927b
+  ws-opts:
+    path: /linuxdo
+- alterId: 0
+  cipher: auto
+  name: 5|CDN优选-7
+  network: ws
+  port: 80
+  server: 7.cdn.5468936.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: be9cf152-7cf1-46f9-88ed-a55b343c927b
+  ws-opts:
+    path: /linuxdo
+- alterId: 0
+  cipher: auto
+  name: 5|CDN优选-8
+  network: ws
+  port: 80
+  server: 8.cdn.5468936.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: be9cf152-7cf1-46f9-88ed-a55b343c927b
+  ws-opts:
+    path: /linuxdo
+- cipher: chacha20-ietf-poly1305
+  country: ' TW'
+  name: 15,20|🇹 TW_366
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  port: 443
+  server: 2.58.241.42
+  type: ss
+- cipher: aes-128-gcm
   name: 17|🇺🇸 us
   password: shadowsocks
   port: 443
@@ -51,201 +266,37 @@ proxies:
   port: 443
   server: 141.98.101.179
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 19|🇺🇲 美国 | USA
-  network: ws
-  port: 443
-  server: biazh.mmzhk.website
-  tls: true
-  type: vmess
-  udp: true
-  uuid: df784264-5d85-469a-a4aa-9b0293c69454
-  ws-opts:
-    headers:
-      Host: biazh.mmzhk.website
-    path: /
 - cipher: aes-256-gcm
-  country: 🇵🇱PL
-  name: 20|🇱PL_333
-  password: PCnnH6SQSnfoS27
-  port: 8091
-  server: 51.77.53.200
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇵🇱PL
-  name: 20|🇱PL_334
-  password: PCnnH6SQSnfoS27
-  port: 8090
-  server: 51.77.53.200
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇵🇱PL
-  name: 20|🇱PL_335
-  password: kDWvXYZoTBcGkC4
-  port: 8881
-  server: 51.77.53.200
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇵🇱PL
-  name: 20|🇵🇱PL_336
-  password: Y6R9pAtvxxzmGC
-  port: 5601
-  server: 51.77.53.200
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇵🇱PL
-  name: 20|🇱PL_337
-  password: e4FCWrgpkji3QY
-  port: 9101
-  server: 51.77.53.200
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇵🇱PL
-  name: 20|🇱PL_338
-  password: cdBIDV42DCwnfIN
-  port: 8118
-  server: 51.77.53.200
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇵🇱PL
-  name: 20|🇱PL_339
-  password: XKFKl2rULjIp74
-  port: 8009
-  server: 51.77.53.200
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇵🇱PL
-  name: 20|🇱PL_340
-  password: XKFKl2rULjIp74
-  port: 8008
-  server: 51.77.53.200
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇵🇱PL
-  name: 20|🇱PL_341
-  password: KixLvKzwjekG00rm
-  port: 5500
-  server: 51.77.53.200
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇵🇱PL
-  name: 20|🇱PL_342
-  password: RexnBgU7EV5ADxG
-  port: 7001
-  server: 51.77.53.200
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇵🇱PL
-  name: 20|🇱PL_343
-  password: FoOiGlkAA9yPEGP
-  port: 7307
-  server: 51.77.53.200
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇵🇱PL
-  name: 20|🇱PL_344
-  password: g5MeD6Ft3CWlJId
-  port: 5004
-  server: 51.77.53.200
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇵🇱PL
-  name: 20|🇱PL_345
+  name: 20|_139
   password: faBAoD54k87UJG7
-  port: 2375
-  server: 51.77.53.200
+  port: 2376
+  server: 38.114.114.143
   type: ss
 - cipher: aes-256-gcm
-  country: 🇵🇱PL
-  name: 20|🇱PL_346
+  country: ZZ
+  name: 20|🏁ZZ_457
   password: TEzjfAYq2IjtuoS
   port: 6697
-  server: 51.77.53.200
+  server: 23.154.136.51
   type: ss
-- cipher: aes-256-gcm
-  country: 🇵🇱PL
-  name: 20|🇱PL_347
-  password: cdBIDV42DCwnfIN
-  port: 8119
-  server: 51.77.53.200
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇵🇱PL
-  name: 20|🇱PL_348
-  password: Y6R9pAtvxxzmGC
-  port: 5000
-  server: 51.77.53.200
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇵🇱PL
-  name: 20|🇱PL_349
-  password: pKEW8JPByTVTLtM
-  port: 4444
-  server: 51.77.53.200
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇵🇱PL
-  name: 20|🇱PL_350
-  password: FoOiGlkAA9yPEGP
-  port: 7306
-  server: 51.77.53.200
-  type: ss
-- cipher: aes-128-gcm
-  country: ' US'
-  name: 20|🇺 US_371
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.161
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇸 US
-  name: 20|🇸 US_374
-  password: TEzjfAYq2IjtuoS
-  port: 6679
-  server: 142.202.49.84
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸 US
-  name: 20|🇸 US_375
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 142.202.49.84
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸 US
-  name: 20|🇸 US_377
-  password: g5MeD6Ft3CWlJId
-  port: 5004
-  server: 142.202.49.84
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇸 US
-  name: 20|🇸 US_378
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.163
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇸 US
-  name: 20|🇺🇸 US_380
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.170
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇺🇸 US
-  name: 20|🇺🇸 US_381
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.167
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇸 US
-  name: 20|🇺🇸 US_382
-  password: e4FCWrgpkji3QY
-  port: 9102
-  server: 142.202.49.122
+- alterId: 0
+  cipher: auto
+  name: 39|🇺🇸 美国 CloudFlare节点
+  network: ws
+  port: '80'
+  server: 172.67.172.168
+  tls: false
+  type: vmess
+  uuid: 4bf074f4-7e9c-4e4b-a10d-156e26199729
+  ws-opts:
+    headers:
+      Host: us03s.5d8ecf82.cfd
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 48|89.221.224.166_OpenAI_Claude1
+  password: NjBlZDlk
+  port: 8388
+  server: 89.221.224.166
   type: ss
 proxy-groups:
 - name: 节点选择
@@ -259,36 +310,36 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 20|🇺🇸 US_381
-  - 20|🇺🇸 US_380
-  - 20|🇺🇸 US_382
+  - 20|🏁ZZ_457
   - 17|🇺🇸 us
-  - 20|🇸 US_375
-  - 20|🇸 US_377
-  - 20|🇸 US_374
+  - 20|_139
   - 17,20|_107
-  - 19|🇺🇲 美国 | USA
-  - 20|🇸 US_378
-  - 20|🇱PL_349
-  - 20|🇱PL_340
-  - 20|🇱PL_347
-  - 20|🇱PL_335
-  - 20|🇱PL_338
-  - 20|🇱PL_337
-  - 20|🇺 US_371
+  - 39|🇺🇸 美国 CloudFlare节点
+  - 20|🇫🇷FR_241
+  - 16,33|德国 001
+  - 20|🇫🇷FR_242
+  - 20|🇫🇷FR_243
+  - 39|🇷🇺 _俄罗斯
+  - 27,36|🇷🇺_RU_俄罗斯_3
+  - 27|🇷🇺_RU_俄罗斯_2
   - 17|🇬🇧 uk
-  - 20|🇱PL_344
-  - 20|🇱PL_345
-  - 20|🇵🇱PL_336
-  - 20|🇱PL_346
-  - 20|🇱PL_341
-  - 20|🇱PL_342
-  - 20|🇱PL_334
-  - 20|🇱PL_348
-  - 20|🇱PL_333
-  - 20|🇱PL_343
-  - 20|🇱PL_350
-  - 20|🇱PL_339
+  - 20|🇷🇺 RU_357
+  - 48|89.221.224.166_OpenAI_Claude1
+  - 26,48|89.221.224.166_OpenAI_Claude2
+  - 20| SE_364
+  - 17|🇯🇵
+  - 5|CDN优选-5
+  - 5|CDN优选-6
+  - 5|CDN优选-3
+  - 5|CDN优选-4
+  - 5|CDN优选-2
+  - 20|🇷🇺 RU_353
+  - 5|CDN优选-7
+  - 20|🇺RU_361
+  - 20|🇺 RU_354
+  - 5|CDN优选-8
+  - 15,20|🇹 TW_366
+  - 5|CDN优选-1
   url: https://i.ytimg.com/generate_204
   interval: 300
   tolerance: 50
@@ -296,71 +347,71 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 20|🇺🇸 US_381
-  - 20|🇺🇸 US_380
-  - 20|🇺🇸 US_382
+  - 20|🏁ZZ_457
   - 17|🇺🇸 us
-  - 20|🇸 US_375
-  - 20|🇸 US_377
-  - 20|🇸 US_374
+  - 20|_139
   - 17,20|_107
-  - 19|🇺🇲 美国 | USA
-  - 20|🇸 US_378
-  - 20|🇱PL_349
-  - 20|🇱PL_340
-  - 20|🇱PL_347
-  - 20|🇱PL_335
-  - 20|🇱PL_338
-  - 20|🇱PL_337
-  - 20|🇺 US_371
+  - 39|🇺🇸 美国 CloudFlare节点
+  - 20|🇫🇷FR_241
+  - 16,33|德国 001
+  - 20|🇫🇷FR_242
+  - 20|🇫🇷FR_243
+  - 39|🇷🇺 _俄罗斯
+  - 27,36|🇷🇺_RU_俄罗斯_3
+  - 27|🇷🇺_RU_俄罗斯_2
   - 17|🇬🇧 uk
-  - 20|🇱PL_344
-  - 20|🇱PL_345
-  - 20|🇵🇱PL_336
-  - 20|🇱PL_346
-  - 20|🇱PL_341
-  - 20|🇱PL_342
-  - 20|🇱PL_334
-  - 20|🇱PL_348
-  - 20|🇱PL_333
-  - 20|🇱PL_343
-  - 20|🇱PL_350
-  - 20|🇱PL_339
+  - 20|🇷🇺 RU_357
+  - 48|89.221.224.166_OpenAI_Claude1
+  - 26,48|89.221.224.166_OpenAI_Claude2
+  - 20| SE_364
+  - 17|🇯🇵
+  - 5|CDN优选-5
+  - 5|CDN优选-6
+  - 5|CDN优选-3
+  - 5|CDN优选-4
+  - 5|CDN优选-2
+  - 20|🇷🇺 RU_353
+  - 5|CDN优选-7
+  - 20|🇺RU_361
+  - 20|🇺 RU_354
+  - 5|CDN优选-8
+  - 15,20|🇹 TW_366
+  - 5|CDN优选-1
   url: https://i.ytimg.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 20|🇺🇸 US_381
-  - 20|🇺🇸 US_380
-  - 20|🇺🇸 US_382
+  - 20|🏁ZZ_457
   - 17|🇺🇸 us
-  - 20|🇸 US_375
-  - 20|🇸 US_377
-  - 20|🇸 US_374
+  - 20|_139
   - 17,20|_107
-  - 19|🇺🇲 美国 | USA
-  - 20|🇸 US_378
-  - 20|🇱PL_349
-  - 20|🇱PL_340
-  - 20|🇱PL_347
-  - 20|🇱PL_335
-  - 20|🇱PL_338
-  - 20|🇱PL_337
-  - 20|🇺 US_371
+  - 39|🇺🇸 美国 CloudFlare节点
+  - 20|🇫🇷FR_241
+  - 16,33|德国 001
+  - 20|🇫🇷FR_242
+  - 20|🇫🇷FR_243
+  - 39|🇷🇺 _俄罗斯
+  - 27,36|🇷🇺_RU_俄罗斯_3
+  - 27|🇷🇺_RU_俄罗斯_2
   - 17|🇬🇧 uk
-  - 20|🇱PL_344
-  - 20|🇱PL_345
-  - 20|🇵🇱PL_336
-  - 20|🇱PL_346
-  - 20|🇱PL_341
-  - 20|🇱PL_342
-  - 20|🇱PL_334
-  - 20|🇱PL_348
-  - 20|🇱PL_333
-  - 20|🇱PL_343
-  - 20|🇱PL_350
-  - 20|🇱PL_339
+  - 20|🇷🇺 RU_357
+  - 48|89.221.224.166_OpenAI_Claude1
+  - 26,48|89.221.224.166_OpenAI_Claude2
+  - 20| SE_364
+  - 17|🇯🇵
+  - 5|CDN优选-5
+  - 5|CDN优选-6
+  - 5|CDN优选-3
+  - 5|CDN优选-4
+  - 5|CDN优选-2
+  - 20|🇷🇺 RU_353
+  - 5|CDN优选-7
+  - 20|🇺RU_361
+  - 20|🇺 RU_354
+  - 5|CDN优选-8
+  - 15,20|🇹 TW_366
+  - 5|CDN优选-1
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
