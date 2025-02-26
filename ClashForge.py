@@ -37,10 +37,10 @@ CLASH_API_HOST = "127.0.0.1"
 CLASH_API_SECRET = ""
 TIMEOUT = 5
 MAX_CONCURRENT_TESTS = 50
-LIMIT = 30 # 最多保留LIMIT个节点
+LIMIT = 90 # 最多保留LIMIT个节点
 CONFIG_FILE = 'clash_config.yaml'
 INPUT = "input" # 从文件中加载代理节点，支持yaml/yml、txt(每条代理链接占一行)
-BAN = ["China", "CN", "电信", "移动", "US", "联通",]
+BAN = ["China", "CN", "电信", "移动", "US", "us", "联通",]
 headers = {
     'Accept-Charset': 'utf-8',
     'Accept': 'text/html,application/x-yaml,*/*',
