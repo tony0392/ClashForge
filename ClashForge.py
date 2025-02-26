@@ -2337,8 +2337,6 @@ if __name__ == '__main__':
         "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_SG.yml|links",
         "https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash|links",
         "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_GB.yml|links",
-        "https://raw.githubusercontent.com/mgit0001/test_clash/refs/heads/main/heima.txt|links",
-        "https://api.mxlweb.xyz/sub?target=clash&url=https://mxlsub.me/free&insert=false|links",
         "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_redir.yml|links",
         "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_TW.yml|links"
        
