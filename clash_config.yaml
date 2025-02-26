@@ -32,6 +32,13 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
+- cipher: chacha20-ietf-poly1305
+  country: 🇰 HK
+  name: 20|🇰 HK_270
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
+  type: ss
 - cipher: aes-128-gcm
   name: 17|🇯🇵
   password: shadowsocks
@@ -69,41 +76,28 @@ proxies:
   port: 20012
   server: 141.98.234.93
   type: ss
-- cipher: aes-256-cfb
-  country: 🇷🇺RU
-  name: 20|🇺RU_360
-  password: KnJGad3FqTvjqbaX
-  port: 9014
-  server: 45.89.52.66
+- cipher: chacha20-ietf-poly1305
+  country: 🇷🇺 RU
+  name: 20|🇷🇺 RU_357
+  password: uQS5ntVqC00sSKkeNzUiD3
+  port: 42090
+  server: 89.23.103.125
   type: ss
-- cipher: aes-256-cfb
-  country: 🇷🇺RU
-  name: 20|🇺RU_361
-  password: M3t2ZEQcMGRWBjRa
-  port: 9011
-  server: 45.89.52.66
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 39|🇷🇺 _俄罗斯
+  network: tcp
+  port: '22946'
+  server: 188.130.154.56
+  tls: false
+  type: vmess
+  uuid: 7ed1d138-37f7-41f7-843d-d4f2bdbba913
 - cipher: chacha20-ietf-poly1305
   country: 🇪 SE
   name: 20| SE_364
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 45.154.206.192
-  type: ss
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 15,35,36,46|🇺🇸_US_美国->🇷🇺_RU_俄罗斯_5
-  password: amazonskr05
-  port: 443
-  server: 52.32.166.45
-  tls: false
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 15|@MxlShare 美国 | USA 9
-  password: amazonskr05
-  port: 443
-  server: 52.33.5.226
   type: ss
 - cipher: aes-128-gcm
   name: 17|🇺🇸 us
@@ -504,6 +498,15 @@ proxies:
   port: 8881
   server: 38.121.43.71
   type: ss
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 29,35,46|🇺🇸_US_美国_10
+  password: amazonskr05
+  port: 443
+  server: 44.243.45.146
+  tls: false
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   delay: 2889
@@ -569,17 +572,24 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
-  name: 20| GB_250
-  password: LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj
-  port: 52952
-  server: 185.24.151.214
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
   name: 20|🇧 GB_251
   password: 2EmWRS1TkS3TkxKApnrihb3aHjDSXRvT1T1K9U2Bruxrnp5A8zmpTxwwTNje6BkVqmn9BgRF6pq8qoRHCfZdcah7BLbjrpT1
   port: 55988
   server: 185.5.38.111
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 20|🇬🇧 GB_252
+  password: bZ87amPpdG7KuWM62bKtm1KHoowuVjnV8CKtq653ymHcg2dPYcPJfnaQ61stuAjr2ZiLDaqH56XpkxEYuwDzzRrMWieebWGt
+  port: 55988
+  server: mx2.drawnrisha.one
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 20|🇬🇧 GB_253
+  password: FjgGNNHQiELzxXmaHRxxtQbxDDvGXFxYdTbYe91JKZsjvKLHoY9rn9ruYE45377WjtU3m4kmXQZDXiHBJsgVfhmpawEoGvq9
+  port: 55988
+  server: mx2.drawnrisha.one
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧 GB
@@ -601,6 +611,34 @@ proxies:
   password: iZDJs2CDckHKqJ5W7cpvCq2veqsqWn95iqs6Kr6F3YNnyMsk2uPdRrChQfShvH1v56Br1qWEW44qJna5QcMcZF7RCJmdvwuq
   port: 55988
   server: 185.5.38.111
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 20|🇬🇧 GB_258
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.47.253.227
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 20|🇬🇧 GB_259
+  password: BpFieMT6SobpqRiKFefvYu7eXk99XfCeWfjpntzSh81FfMx9R7rJW6LTmzH78StTEhCd7w32ZMxbGJZS98gpn1ozr9jAbMoa
+  port: 55988
+  server: 185.5.38.111
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 20|🇬🇧 GB_260
+  password: 4ju873evpjeaAi8Zq12YoRHWp63o5exdnZ71aUg1YEChiPTc2HkasYhUBxRz7UGi4K6cLrsGaU6b44H4Qa6f4cJn3zBp2cnX
+  port: 55988
+  server: 185.5.38.111
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇬🇧GB
+  name: 20|🇬🇧GB_261
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.198
   type: ss
 - cipher: aes-128-gcm
   country: 🇬🇧GB
@@ -651,84 +689,89 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 20|🇸 US_374
-  - 20|🇸 US_395
   - 20|🇸 US_392
-  - 20|🇸 US_376
-  - 20|🇺🇸 US_382
-  - 20|🇺🇸 US_381
-  - 20|🇸US_438
-  - 20|🇸US_435
-  - 20|🇺🇸 US_380
-  - 20|🇸US_426
-  - 20|🇸 US_396
-  - 20|🇺🇸US_433
   - 20|🇺🇸US_432
-  - 20|🇸 US_393
-  - 17|🇺🇸 us
-  - 20|🇸 US_377
-  - 20|🇸 US_375
+  - 20|🇸 US_395
+  - 20|🇸 US_376
   - 20|🇸 US_394
+  - 20|🇸 US_396
   - 20|🇺🇸 US_386
-  - 20|🇺🇸US_441
+  - 20|🇸 US_377
+  - 20|🇺🇸 US_382
+  - 20|🇸 US_375
+  - 20|🇸 US_393
+  - 20|🇸 US_383
+  - 20|🇸 US_374
+  - 17|🇺🇸 us
   - 20|🇺🇸US_442
+  - 20|🇺🇸US_441
+  - 20|🇺🇸US_433
+  - 20|🇸US_435
+  - 20|🇸US_438
   - 20|🇸US_445
-  - 20|🇺🇸US_434
-  - 20|🇸US_444
-  - 20|🇸US_425
-  - 20|🇸US_422
-  - 20|🇺🇸US_427
-  - 20|🇸US_439
-  - 20|🇺🇸US_446
   - 20|🇸US_437
+  - 20|🇺🇸US_427
+  - 20|🇸US_444
+  - 20|🇸US_426
+  - 20|🇸US_439
+  - 20|🇺🇸US_434
+  - 20|🇸US_425
+  - 20|🇺🇸US_446
   - 20|🇸US_440
-  - 20|🇺🇸US_443
-  - 20|🇺🇸US_436
-  - 20| RU_352
-  - 20|🇺🇸 US_385
+  - 20|🇸US_422
+  - 20|🇺🇸 US_381
+  - 20|🇺🇸 US_380
   - 20|🇸US_431
   - 20|🇸US_423
+  - 20|🇺🇸US_429
+  - 20|🇺🇸US_436
+  - 20|🇺🇸US_443
+  - 20| RU_352
   - 20|🇸US_428
   - 20|🇺🇸US_424
   - 20|🇨🇦CA_176
-  - 27,29,48|US_Portland_Amazon.com, Inc._O...
+  - 20|🇺🇸 US_385
   - 20|🇺🇸 US_401
-  - 39|🇺🇸 美国 CloudFlare节点
-  - 33|美国 030
-  - 20|🇸 US_383
-  - 15,20,36|🇬🇧_GB_英国->🇺🇸_US_美国
   - 20|🇬🇧GB_262
-  - 15|@MxlShare 美国 | USA 9
   - 20|🇺🇸US_421
-  - 15,35,36,46|🇺🇸_US_美国->🇷🇺_RU_俄罗斯_5
+  - 15,20,36|🇬🇧_GB_英国->🇺🇸_US_美国
+  - 27,29,48|US_Portland_Amazon.com, Inc._O...
+  - 29,35,46|🇺🇸_US_美国_10
+  - 20|🇬🇧GB_261
   - 20|🇧 GB_255
+  - 33|美国 030
   - 20|🇸 US_378
+  - 20|🇺 US_371
   - 20|🇸 US_384
   - 20|🇺🇸 US_379
-  - 20|🇺 US_371
-  - 19|🇺🇲 美国 | USA
-  - 20|🇸 US_387
-  - 37|🇺🇸 美国-拉斯维加斯-002-1B
-  - 37|🇺🇸 美国-拉斯维加斯-001-1A
-  - 17|🇯🇵
+  - 20|🇷🇺 RU_357
   - 20|🇺🇸 US_391
-  - 38|11|11|11|11|11|11,16|日本|@ripao...
-  - 20| SE_364
-  - 20|🇺RU_361
-  - 20|🇺🇸 US_412
-  - 20|🇺 RU_354
-  - 15,20|🇹 TW_366
-  - 20|🇸 US_389
-  - 20|🇧 GB_256
-  - 20|🇺🇸US_429
-  - 20|🇼 TW_367
-  - 19|🇺🇲 美国 | USA 5
-  - 20|🇸 US_372
-  - 20|🇧 GB_251
+  - 20|🇸 US_387
+  - 39|🇺🇸 美国 CloudFlare节点
   - 20|🇬🇧 GB_254
-  - 20|🇺RU_360
-  - 20| GB_250
+  - 37|🇺🇸 美国-拉斯维加斯-001-1A
+  - 20| SE_364
+  - 17|🇯🇵
+  - 38|11|11|11|11|11|11,16|日本|@ripao...
+  - 20|🇬🇧 GB_260
+  - 19|🇺🇲 美国 | USA
+  - 20|🇬🇧 GB_259
+  - 37|🇺🇸 美国-拉斯维加斯-002-1B
+  - 20|🇬🇧 GB_258
+  - 20|🇺🇸 US_412
+  - 20|🇧 GB_251
+  - 20|🇺 RU_354
+  - 19|🇺🇲 美国 | USA 5
+  - 20|🇧 GB_256
+  - 20|🇸 US_389
+  - 39|🇷🇺 _俄罗斯
+  - 15,20|🇹 TW_366
+  - 20|🇬🇧 GB_253
+  - 20|🇸 US_372
   - 45,47|TW_speednode_0055
+  - 20|🇬🇧 GB_252
+  - 20|🇼 TW_367
+  - 20|🇰 HK_270
   url: https://i.ytimg.com/generate_204
   interval: 300
   tolerance: 50
@@ -736,167 +779,177 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 20|🇸 US_374
-  - 20|🇸 US_395
   - 20|🇸 US_392
-  - 20|🇸 US_376
-  - 20|🇺🇸 US_382
-  - 20|🇺🇸 US_381
-  - 20|🇸US_438
-  - 20|🇸US_435
-  - 20|🇺🇸 US_380
-  - 20|🇸US_426
-  - 20|🇸 US_396
-  - 20|🇺🇸US_433
   - 20|🇺🇸US_432
-  - 20|🇸 US_393
-  - 17|🇺🇸 us
-  - 20|🇸 US_377
-  - 20|🇸 US_375
+  - 20|🇸 US_395
+  - 20|🇸 US_376
   - 20|🇸 US_394
+  - 20|🇸 US_396
   - 20|🇺🇸 US_386
-  - 20|🇺🇸US_441
+  - 20|🇸 US_377
+  - 20|🇺🇸 US_382
+  - 20|🇸 US_375
+  - 20|🇸 US_393
+  - 20|🇸 US_383
+  - 20|🇸 US_374
+  - 17|🇺🇸 us
   - 20|🇺🇸US_442
+  - 20|🇺🇸US_441
+  - 20|🇺🇸US_433
+  - 20|🇸US_435
+  - 20|🇸US_438
   - 20|🇸US_445
-  - 20|🇺🇸US_434
-  - 20|🇸US_444
-  - 20|🇸US_425
-  - 20|🇸US_422
-  - 20|🇺🇸US_427
-  - 20|🇸US_439
-  - 20|🇺🇸US_446
   - 20|🇸US_437
+  - 20|🇺🇸US_427
+  - 20|🇸US_444
+  - 20|🇸US_426
+  - 20|🇸US_439
+  - 20|🇺🇸US_434
+  - 20|🇸US_425
+  - 20|🇺🇸US_446
   - 20|🇸US_440
-  - 20|🇺🇸US_443
-  - 20|🇺🇸US_436
-  - 20| RU_352
-  - 20|🇺🇸 US_385
+  - 20|🇸US_422
+  - 20|🇺🇸 US_381
+  - 20|🇺🇸 US_380
   - 20|🇸US_431
   - 20|🇸US_423
+  - 20|🇺🇸US_429
+  - 20|🇺🇸US_436
+  - 20|🇺🇸US_443
+  - 20| RU_352
   - 20|🇸US_428
   - 20|🇺🇸US_424
   - 20|🇨🇦CA_176
-  - 27,29,48|US_Portland_Amazon.com, Inc._O...
+  - 20|🇺🇸 US_385
   - 20|🇺🇸 US_401
-  - 39|🇺🇸 美国 CloudFlare节点
-  - 33|美国 030
-  - 20|🇸 US_383
-  - 15,20,36|🇬🇧_GB_英国->🇺🇸_US_美国
   - 20|🇬🇧GB_262
-  - 15|@MxlShare 美国 | USA 9
   - 20|🇺🇸US_421
-  - 15,35,36,46|🇺🇸_US_美国->🇷🇺_RU_俄罗斯_5
+  - 15,20,36|🇬🇧_GB_英国->🇺🇸_US_美国
+  - 27,29,48|US_Portland_Amazon.com, Inc._O...
+  - 29,35,46|🇺🇸_US_美国_10
+  - 20|🇬🇧GB_261
   - 20|🇧 GB_255
+  - 33|美国 030
   - 20|🇸 US_378
+  - 20|🇺 US_371
   - 20|🇸 US_384
   - 20|🇺🇸 US_379
-  - 20|🇺 US_371
-  - 19|🇺🇲 美国 | USA
-  - 20|🇸 US_387
-  - 37|🇺🇸 美国-拉斯维加斯-002-1B
-  - 37|🇺🇸 美国-拉斯维加斯-001-1A
-  - 17|🇯🇵
+  - 20|🇷🇺 RU_357
   - 20|🇺🇸 US_391
-  - 38|11|11|11|11|11|11,16|日本|@ripao...
-  - 20| SE_364
-  - 20|🇺RU_361
-  - 20|🇺🇸 US_412
-  - 20|🇺 RU_354
-  - 15,20|🇹 TW_366
-  - 20|🇸 US_389
-  - 20|🇧 GB_256
-  - 20|🇺🇸US_429
-  - 20|🇼 TW_367
-  - 19|🇺🇲 美国 | USA 5
-  - 20|🇸 US_372
-  - 20|🇧 GB_251
+  - 20|🇸 US_387
+  - 39|🇺🇸 美国 CloudFlare节点
   - 20|🇬🇧 GB_254
-  - 20|🇺RU_360
-  - 20| GB_250
+  - 37|🇺🇸 美国-拉斯维加斯-001-1A
+  - 20| SE_364
+  - 17|🇯🇵
+  - 38|11|11|11|11|11|11,16|日本|@ripao...
+  - 20|🇬🇧 GB_260
+  - 19|🇺🇲 美国 | USA
+  - 20|🇬🇧 GB_259
+  - 37|🇺🇸 美国-拉斯维加斯-002-1B
+  - 20|🇬🇧 GB_258
+  - 20|🇺🇸 US_412
+  - 20|🇧 GB_251
+  - 20|🇺 RU_354
+  - 19|🇺🇲 美国 | USA 5
+  - 20|🇧 GB_256
+  - 20|🇸 US_389
+  - 39|🇷🇺 _俄罗斯
+  - 15,20|🇹 TW_366
+  - 20|🇬🇧 GB_253
+  - 20|🇸 US_372
   - 45,47|TW_speednode_0055
+  - 20|🇬🇧 GB_252
+  - 20|🇼 TW_367
+  - 20|🇰 HK_270
   url: https://i.ytimg.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 20|🇸 US_374
-  - 20|🇸 US_395
   - 20|🇸 US_392
-  - 20|🇸 US_376
-  - 20|🇺🇸 US_382
-  - 20|🇺🇸 US_381
-  - 20|🇸US_438
-  - 20|🇸US_435
-  - 20|🇺🇸 US_380
-  - 20|🇸US_426
-  - 20|🇸 US_396
-  - 20|🇺🇸US_433
   - 20|🇺🇸US_432
-  - 20|🇸 US_393
-  - 17|🇺🇸 us
-  - 20|🇸 US_377
-  - 20|🇸 US_375
+  - 20|🇸 US_395
+  - 20|🇸 US_376
   - 20|🇸 US_394
+  - 20|🇸 US_396
   - 20|🇺🇸 US_386
-  - 20|🇺🇸US_441
+  - 20|🇸 US_377
+  - 20|🇺🇸 US_382
+  - 20|🇸 US_375
+  - 20|🇸 US_393
+  - 20|🇸 US_383
+  - 20|🇸 US_374
+  - 17|🇺🇸 us
   - 20|🇺🇸US_442
+  - 20|🇺🇸US_441
+  - 20|🇺🇸US_433
+  - 20|🇸US_435
+  - 20|🇸US_438
   - 20|🇸US_445
-  - 20|🇺🇸US_434
-  - 20|🇸US_444
-  - 20|🇸US_425
-  - 20|🇸US_422
-  - 20|🇺🇸US_427
-  - 20|🇸US_439
-  - 20|🇺🇸US_446
   - 20|🇸US_437
+  - 20|🇺🇸US_427
+  - 20|🇸US_444
+  - 20|🇸US_426
+  - 20|🇸US_439
+  - 20|🇺🇸US_434
+  - 20|🇸US_425
+  - 20|🇺🇸US_446
   - 20|🇸US_440
-  - 20|🇺🇸US_443
-  - 20|🇺🇸US_436
-  - 20| RU_352
-  - 20|🇺🇸 US_385
+  - 20|🇸US_422
+  - 20|🇺🇸 US_381
+  - 20|🇺🇸 US_380
   - 20|🇸US_431
   - 20|🇸US_423
+  - 20|🇺🇸US_429
+  - 20|🇺🇸US_436
+  - 20|🇺🇸US_443
+  - 20| RU_352
   - 20|🇸US_428
   - 20|🇺🇸US_424
   - 20|🇨🇦CA_176
-  - 27,29,48|US_Portland_Amazon.com, Inc._O...
+  - 20|🇺🇸 US_385
   - 20|🇺🇸 US_401
-  - 39|🇺🇸 美国 CloudFlare节点
-  - 33|美国 030
-  - 20|🇸 US_383
-  - 15,20,36|🇬🇧_GB_英国->🇺🇸_US_美国
   - 20|🇬🇧GB_262
-  - 15|@MxlShare 美国 | USA 9
   - 20|🇺🇸US_421
-  - 15,35,36,46|🇺🇸_US_美国->🇷🇺_RU_俄罗斯_5
+  - 15,20,36|🇬🇧_GB_英国->🇺🇸_US_美国
+  - 27,29,48|US_Portland_Amazon.com, Inc._O...
+  - 29,35,46|🇺🇸_US_美国_10
+  - 20|🇬🇧GB_261
   - 20|🇧 GB_255
+  - 33|美国 030
   - 20|🇸 US_378
+  - 20|🇺 US_371
   - 20|🇸 US_384
   - 20|🇺🇸 US_379
-  - 20|🇺 US_371
-  - 19|🇺🇲 美国 | USA
-  - 20|🇸 US_387
-  - 37|🇺🇸 美国-拉斯维加斯-002-1B
-  - 37|🇺🇸 美国-拉斯维加斯-001-1A
-  - 17|🇯🇵
+  - 20|🇷🇺 RU_357
   - 20|🇺🇸 US_391
-  - 38|11|11|11|11|11|11,16|日本|@ripao...
-  - 20| SE_364
-  - 20|🇺RU_361
-  - 20|🇺🇸 US_412
-  - 20|🇺 RU_354
-  - 15,20|🇹 TW_366
-  - 20|🇸 US_389
-  - 20|🇧 GB_256
-  - 20|🇺🇸US_429
-  - 20|🇼 TW_367
-  - 19|🇺🇲 美国 | USA 5
-  - 20|🇸 US_372
-  - 20|🇧 GB_251
+  - 20|🇸 US_387
+  - 39|🇺🇸 美国 CloudFlare节点
   - 20|🇬🇧 GB_254
-  - 20|🇺RU_360
-  - 20| GB_250
+  - 37|🇺🇸 美国-拉斯维加斯-001-1A
+  - 20| SE_364
+  - 17|🇯🇵
+  - 38|11|11|11|11|11|11,16|日本|@ripao...
+  - 20|🇬🇧 GB_260
+  - 19|🇺🇲 美国 | USA
+  - 20|🇬🇧 GB_259
+  - 37|🇺🇸 美国-拉斯维加斯-002-1B
+  - 20|🇬🇧 GB_258
+  - 20|🇺🇸 US_412
+  - 20|🇧 GB_251
+  - 20|🇺 RU_354
+  - 19|🇺🇲 美国 | USA 5
+  - 20|🇧 GB_256
+  - 20|🇸 US_389
+  - 39|🇷🇺 _俄罗斯
+  - 15,20|🇹 TW_366
+  - 20|🇬🇧 GB_253
+  - 20|🇸 US_372
   - 45,47|TW_speednode_0055
+  - 20|🇬🇧 GB_252
+  - 20|🇼 TW_367
+  - 20|🇰 HK_270
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
