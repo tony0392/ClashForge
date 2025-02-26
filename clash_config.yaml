@@ -32,13 +32,6 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- cipher: chacha20-ietf-poly1305
-  country: 🇰 HK
-  name: 20|🇰 HK_270
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
-  type: ss
 - cipher: aes-128-gcm
   name: 17|🇯🇵
   password: shadowsocks
@@ -70,11 +63,11 @@ proxies:
   server: 92.118.112.111
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇷 RU
-  name: 20|🇺 RU_354
-  password: WfmxKX2FBJRU0Ie9VLIYDL
-  port: 20012
-  server: 141.98.234.93
+  country: 🇺 RU
+  name: 20|🇷🇺 RU_353
+  password: 0zyDRZ1XmNXaaCAN7KEA8a
+  port: 28825
+  server: 45.151.62.54
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇷🇺 RU
@@ -83,15 +76,29 @@ proxies:
   port: 42090
   server: 89.23.103.125
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 39|🇷🇺 _俄罗斯
-  network: tcp
-  port: '22946'
-  server: 188.130.154.56
+- cipher: chacha20-ietf-poly1305
+  country: 🇷🇺 RU
+  name: 20|🇺 RU_358
+  password: CLphyEMQT8nbG8EImX0A2D
+  port: 45635
+  server: 5.35.47.122
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇷🇺RU
+  name: 20|🇺RU_360
+  password: KnJGad3FqTvjqbaX
+  port: 9014
+  server: 45.89.52.66
+  type: ss
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 27,36|🇷🇺_RU_俄罗斯_3
+  password: XPtzA9sCug3SPR4c
+  port: 9025
+  server: 217.30.10.18
   tls: false
-  type: vmess
-  uuid: 7ed1d138-37f7-41f7-843d-d4f2bdbba913
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇪 SE
   name: 20| SE_364
@@ -99,469 +106,311 @@ proxies:
   port: 990
   server: 45.154.206.192
   type: ss
-- cipher: aes-128-gcm
-  name: 17|🇺🇸 us
-  password: shadowsocks
-  port: 443
-  server: 37.19.198.160
-  type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇺🇲 美国 | USA
-  network: ws
-  port: 443
-  server: biazh.mmzhk.website
-  tls: true
-  type: vmess
-  udp: true
-  uuid: df784264-5d85-469a-a4aa-9b0293c69454
-  ws-opts:
-    headers:
-      Host: biazh.mmzhk.website
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇺🇲 美国 | USA 5
-  network: ws
-  port: 443
-  server: pdizy.whmvmkwuey.store
-  tls: true
-  type: vmess
-  udp: true
-  uuid: beaad91b-40cb-4aa5-9bc8-b412a023f1ca
-  ws-opts:
-    headers:
-      Host: pdizy.whmvmkwuey.store
-    path: /
-- cipher: aes-128-gcm
-  country: ' US'
-  name: 20|🇺 US_371
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.161
-  type: ss
 - cipher: aes-256-gcm
-  country: 🇸 US
-  name: 20|🇸 US_372
-  password: ef713649-c164-4a36-9fc2-ebf93d76e14f
-  port: 8443
-  server: 170.64.237.214
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇸 US
-  name: 20|🇸 US_374
-  password: TEzjfAYq2IjtuoS
-  port: 6679
-  server: 142.202.49.84
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸 US
-  name: 20|🇸 US_375
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 142.202.49.84
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸 US
-  name: 20|🇸 US_376
-  password: XKFKl2rULjIp74
-  port: 8008
-  server: 142.202.49.84
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸 US
-  name: 20|🇸 US_377
-  password: g5MeD6Ft3CWlJId
-  port: 5004
-  server: 142.202.49.84
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇸 US
-  name: 20|🇸 US_378
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.163
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇺🇸 US
-  name: 20|🇺🇸 US_379
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.164
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇸 US
-  name: 20|🇺🇸 US_380
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.170
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇺🇸 US
-  name: 20|🇺🇸 US_381
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.167
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇸 US
-  name: 20|🇺🇸 US_382
-  password: e4FCWrgpkji3QY
-  port: 9102
-  server: 142.202.49.122
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸 US
-  name: 20|🇸 US_383
-  password: Y6R9pAtvxxzmGC
-  port: 5001
-  server: 142.202.49.84
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇸 US
-  name: 20|🇸 US_384
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.162
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇺🇸 US
-  name: 20|🇺🇸 US_385
-  password: shadowsocks
-  port: 443
-  server: 212.102.47.130
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸 US
-  name: 20|🇺🇸 US_386
-  password: PCnnH6SQSnfoS27
-  port: 8090
-  server: 142.202.49.84
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇺🇸 US
-  name: 20|🇸 US_387
-  password: nq96KftrZAj3LuFQESqmn44Mo5oCuo2cipoEsae25mrmHG2oJ4VT37scBfVBpN5DWtUELZutVhhXs8Le5B8fZ9hLn9ytwvbf
-  port: 42501
-  server: 208.67.105.87
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇸 US
-  name: 20|🇸 US_389
-  password: eSHEdJz96rqNkOCAzd5Csv
-  port: 7383
-  server: 94.131.123.147
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇸 US
-  name: 20|🇺🇸 US_391
-  password: SjdGCHwafjktt1rzpGxTKYTvVBWb8Xa6E5DTr6MzbdHQSwvpLiDczj3n6MBjy2uyFSzgqgvCWsDQmpM4VQzfPzyGYF58wdyD
-  port: 42029
-  server: 208.67.105.196
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸 US
-  name: 20|🇸 US_392
-  password: KixLvKzwjekG00rm
-  port: 5500
-  server: 142.202.49.122
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸 US
-  name: 20|🇸 US_393
-  password: FoOiGlkAA9yPEGP
-  port: 7306
-  server: 142.202.49.122
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸 US
-  name: 20|🇸 US_394
-  password: e4FCWrgpkji3QY
-  port: 9101
-  server: 142.202.49.122
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸 US
-  name: 20|🇸 US_395
-  password: cdBIDV42DCwnfIN
-  port: 8118
-  server: 142.202.49.122
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸 US
-  name: 20|🇸 US_396
-  password: XKFKl2rULjIp74
-  port: 8008
-  server: 142.202.49.122
-  type: ss
-- alterId: 64
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 20|🇺🇸 US_401
-  network: tcp
-  port: 52143
-  server: 142.4.104.33
-  skip-cert-verify: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-path: /
-- alterId: 64
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 20|🇺🇸 US_412
-  network: tcp
-  port: 48712
-  server: 107.148.207.249
-  servername: appsvs.shop
-  skip-cert-verify: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-path: /
-- cipher: chacha20-ietf-poly1305
-  country: 🇸US
-  name: 20|🇺🇸US_421
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.158.171.66
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇸US
-  name: 20|🇸US_422
-  password: cdBIDV42DCwnfIN
-  port: 8118
-  server: 38.121.43.71
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 20|🇸US_423
-  password: g5MeD6Ft3CWlJId
-  port: 5004
-  server: 142.202.48.105
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇸US
-  name: 20|🇺🇸US_424
-  password: RexnBgU7EV5ADxG
-  port: 7002
-  server: 38.114.114.143
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 20|🇸US_425
-  password: KixLvKzwjekG00rm
-  port: 8080
-  server: 38.121.43.71
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 20|🇸US_426
-  password: FoOiGlkAA9yPEGP
-  port: 7306
-  server: 38.121.43.97
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 20|🇺🇸US_427
-  password: pKEW8JPByTVTLtM
-  port: 4444
-  server: 38.121.43.71
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 20|🇸US_428
-  password: pKEW8JPByTVTLtM
-  port: 4444
-  server: 38.114.114.143
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 20|🇺🇸US_429
-  password: Y6R9pAtvxxzmGC
-  port: 3389
-  server: 142.202.48.105
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇸US
-  name: 20|🇸US_431
-  password: Y6R9pAtvxxzmGC
-  port: 8888
-  server: 38.68.135.18
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 20|🇺🇸US_432
-  password: KixLvKzwjekG00rm
-  port: 8080
-  server: 38.86.135.211
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 20|🇺🇸US_433
-  password: FoOiGlkAA9yPEGP
-  port: 7307
-  server: 38.121.43.97
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 20|🇺🇸US_434
-  password: cdBIDV42DCwnfIN
-  port: 8119
-  server: 38.121.43.97
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 20|🇸US_435
-  password: KixLvKzwjekG00rm
-  port: 5500
-  server: 38.121.43.97
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 20|🇺🇸US_436
-  password: KixLvKzwjekG00rm
-  port: 8000
-  server: 38.68.135.18
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 20|🇸US_437
-  password: Y6R9pAtvxxzmGC
-  port: 5601
-  server: 38.121.43.71
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 20|🇸US_438
-  password: Y6R9pAtvxxzmGC
-  port: 5000
-  server: 38.121.43.97
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 20|🇸US_439
+  country: 🇷FR
+  name: 20|🇫🇷FR_204
   password: XKFKl2rULjIp74
   port: 8009
-  server: 38.121.43.71
+  server: 217.182.198.219
   type: ss
 - cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 20|🇸US_440
-  password: zDNVedRFPQexG9v
-  port: 6379
-  server: 38.121.43.71
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_205
+  password: FoOiGlkAA9yPEGP
+  port: 7306
+  server: 217.182.198.219
   type: ss
 - cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 20|🇺🇸US_441
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_206
+  password: e4FCWrgpkji3QY
+  port: 9101
+  server: 217.182.198.219
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_207
   password: PCnnH6SQSnfoS27
   port: 8090
-  server: 38.121.43.71
+  server: 217.182.198.219
   type: ss
 - cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 20|🇺🇸US_442
-  password: e4FCWrgpkji3QY
-  port: 9102
-  server: 38.121.43.71
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_208
+  password: cdBIDV42DCwnfIN
+  port: 8118
+  server: 145.239.6.202
   type: ss
 - cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 20|🇺🇸US_443
-  password: KixLvKzwjekG00rm
-  port: 8000
-  server: 69.50.92.116
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_209
+  password: FoOiGlkAA9yPEGP
+  port: 7307
+  server: 54.36.174.181
   type: ss
 - cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 20|🇸US_444
-  password: RexnBgU7EV5ADxG
-  port: 7001
-  server: 38.121.43.97
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_211
+  password: Y6R9pAtvxxzmGC
+  port: 5001
+  server: 217.182.198.219
   type: ss
 - cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 20|🇸US_445
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_212
+  password: cdBIDV42DCwnfIN
+  port: 8119
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_213
+  password: TEzjfAYq2IjtuoS
+  port: 6679
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_214
+  password: g5MeD6Ft3CWlJId
+  port: 5004
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_215
+  password: cdBIDV42DCwnfIN
+  port: 8119
+  server: 217.182.198.219
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_216
+  password: XKFKl2rULjIp74
+  port: 8008
+  server: 54.36.174.181
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_217
+  password: Y6R9pAtvxxzmGC
+  port: 3389
+  server: 217.182.198.219
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_218
   password: faBAoD54k87UJG7
   port: 2376
-  server: 38.121.43.97
+  server: 54.36.174.181
   type: ss
 - cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 20|🇺🇸US_446
-  password: kDWvXYZoTBcGkC4
-  port: 8881
-  server: 38.121.43.71
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_219
+  password: pKEW8JPByTVTLtM
+  port: 4444
+  server: 145.239.6.202
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_220
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 217.182.198.219
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_221
+  password: KixLvKzwjekG00rm
+  port: 5500
+  server: 54.36.174.181
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_222
+  password: Y6R9pAtvxxzmGC
+  port: 3306
+  server: 217.182.198.219
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_223
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_225
+  password: Y6R9pAtvxxzmGC
+  port: 5000
+  server: 217.182.198.219
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_226
+  password: pKEW8JPByTVTLtM
+  port: 4444
+  server: 217.182.198.219
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_227
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 145.239.6.202
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_228
+  password: g5MeD6Ft3CWlJId
+  port: 5003
+  server: 149.202.82.172
   type: ss
 - cipher: aes-256-cfb
-  ip-version: dual
-  name: 29,35,46|🇺🇸_US_美国_10
-  password: amazonskr05
-  port: 443
-  server: 44.243.45.146
-  tls: false
+  country: 🇷FR
+  name: 20|🇫🇷FR_229
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 195.154.185.174
   type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  delay: 2889
-  name: 33|美国 030
-  network: ws
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_230
+  password: XKFKl2rULjIp74
+  port: 8008
+  server: 217.182.198.219
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_232
+  password: TEzjfAYq2IjtuoS
+  port: 6697
+  server: 217.182.198.219
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_234
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 217.182.198.219
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_235
+  password: pKEW8JPByTVTLtM
   port: 443
-  server: 104.18.149.76
-  servername: us.kkp.me.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
-  ws-opts:
-    headers:
-      Host: us.kkp.me.eu.org
-    path: /aa
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_236
+  password: cdBIDV42DCwnfIN
+  port: 8118
+  server: 217.182.198.219
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_237
+  password: RexnBgU7EV5ADxG
+  port: 7001
+  server: 145.239.6.202
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_238
+  password: PCnnH6SQSnfoS27
+  port: 8091
+  server: 217.182.198.219
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_239
+  password: Y6R9pAtvxxzmGC
+  port: 5000
+  server: 145.239.6.202
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_240
+  password: Y6R9pAtvxxzmGC
+  port: 5001
+  server: 54.36.174.181
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_241
+  password: Y6R9pAtvxxzmGC
+  port: 3389
+  server: 145.239.6.202
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_242
+  password: Y6R9pAtvxxzmGC
+  port: 3306
+  server: 145.239.6.202
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 20|🇫🇷FR_243
+  password: XKFKl2rULjIp74
+  port: 8009
+  server: 145.239.6.202
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 37|🇺🇸 美国-拉斯维加斯-001-1A
+  client-fingerprint: chrome
+  name: 19|🇩🇪 德国 | DEU
   network: ws
-  port: '443'
-  server: biazh.mmzhk.website
-  tls: true
-  type: vmess
-  uuid: f219c5fa-4110-40c9-94a5-950f1e41668e
-  ws-opts:
-    headers:
-      Host: biazh.mmzhk.website
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 37|🇺🇸 美国-拉斯维加斯-002-1B
-  network: ws
-  port: '443'
-  server: pdizy.whmvmkwuey.store
-  tls: true
-  type: vmess
-  uuid: a2db66d4-3f39-4103-890a-e2d7c5f44e17
-  ws-opts:
-    headers:
-      Host: pdizy.whmvmkwuey.store
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 39|🇺🇸 美国 CloudFlare节点
-  network: ws
-  port: '80'
-  server: 172.67.172.168
+  port: 23451
+  server: frankfurt.faforex.eu.org
   tls: false
   type: vmess
-  uuid: 4bf074f4-7e9c-4e4b-a10d-156e26199729
+  udp: true
+  uuid: 506063ef-d307-40e5-8846-b1f7006349a6
   ws-opts:
     headers:
-      Host: us03s.5d8ecf82.cfd
-    path: /
+      Host: us-new03.daluquan.top
+    path: /itdog?ed=2560
+- cipher: chacha20-ietf-poly1305
+  country: 🇪 DE
+  name: 20| DE_186
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 92.118.205.228
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 20|🇩🇪DE_189
+  password: cp8pRSUAyLhTfVWH
+  port: 9064
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 20|🇩🇪DE_192
+  password: 4R3hUfZ2FHhDmNcP
+  port: 9061
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 20|🇩🇪DE_193
+  password: Sn5B7jTqr76aCJT8
+  port: 9097
+  server: 80.92.204.106
+  type: ss
+- alterId: 0
+  cipher: auto
+  delay: 1001
+  name: 33|德国 005
+  network: raw
+  port: 100
+  server: 91.107.183.68
+  skip-cert-verify: true
+  type: vmess
+  uuid: 3f650cc4-39d3-4eb5-82f1-149cca0c342b
 - cipher: aes-128-gcm
   ip-version: dual
   name: 15,20,36|🇬🇧_GB_英国->🇺🇸_US_美国
@@ -572,24 +421,17 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
+  name: 20| GB_250
+  password: LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj
+  port: 52952
+  server: 185.24.151.214
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
   name: 20|🇧 GB_251
   password: 2EmWRS1TkS3TkxKApnrihb3aHjDSXRvT1T1K9U2Bruxrnp5A8zmpTxwwTNje6BkVqmn9BgRF6pq8qoRHCfZdcah7BLbjrpT1
   port: 55988
   server: 185.5.38.111
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 20|🇬🇧 GB_252
-  password: bZ87amPpdG7KuWM62bKtm1KHoowuVjnV8CKtq653ymHcg2dPYcPJfnaQ61stuAjr2ZiLDaqH56XpkxEYuwDzzRrMWieebWGt
-  port: 55988
-  server: mx2.drawnrisha.one
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 20|🇬🇧 GB_253
-  password: FjgGNNHQiELzxXmaHRxxtQbxDDvGXFxYdTbYe91JKZsjvKLHoY9rn9ruYE45377WjtU3m4kmXQZDXiHBJsgVfhmpawEoGvq9
-  port: 55988
-  server: mx2.drawnrisha.one
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧 GB
@@ -614,10 +456,10 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧 GB
-  name: 20|🇬🇧 GB_258
+  name: 20|🇬🇧 GB_257
   password: f8f7aCzcPKbsF8p3
   port: 990
-  server: 185.47.253.227
+  server: 185.126.239.250
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧 GB
@@ -689,89 +531,73 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 20|🇸 US_392
-  - 20|🇺🇸US_432
-  - 20|🇸 US_395
-  - 20|🇸 US_376
-  - 20|🇸 US_394
-  - 20|🇸 US_396
-  - 20|🇺🇸 US_386
-  - 20|🇸 US_377
-  - 20|🇺🇸 US_382
-  - 20|🇸 US_375
-  - 20|🇸 US_393
-  - 20|🇸 US_383
-  - 20|🇸 US_374
-  - 17|🇺🇸 us
-  - 20|🇺🇸US_442
-  - 20|🇺🇸US_441
-  - 20|🇺🇸US_433
-  - 20|🇸US_435
-  - 20|🇸US_438
-  - 20|🇸US_445
-  - 20|🇸US_437
-  - 20|🇺🇸US_427
-  - 20|🇸US_444
-  - 20|🇸US_426
-  - 20|🇸US_439
-  - 20|🇺🇸US_434
-  - 20|🇸US_425
-  - 20|🇺🇸US_446
-  - 20|🇸US_440
-  - 20|🇸US_422
-  - 20|🇺🇸 US_381
-  - 20|🇺🇸 US_380
-  - 20|🇸US_431
-  - 20|🇸US_423
-  - 20|🇺🇸US_429
-  - 20|🇺🇸US_436
-  - 20|🇺🇸US_443
   - 20| RU_352
-  - 20|🇸US_428
-  - 20|🇺🇸US_424
   - 20|🇨🇦CA_176
-  - 20|🇺🇸 US_385
-  - 20|🇺🇸 US_401
-  - 20|🇬🇧GB_262
-  - 20|🇺🇸US_421
-  - 15,20,36|🇬🇧_GB_英国->🇺🇸_US_美国
   - 27,29,48|US_Portland_Amazon.com, Inc._O...
-  - 29,35,46|🇺🇸_US_美国_10
+  - 20|🇫🇷FR_243
+  - 20|🇫🇷FR_227
+  - 20|🇺 RU_358
+  - 20|🇫🇷FR_237
+  - 20|🇫🇷FR_242
+  - 20|🇫🇷FR_241
+  - 15,20,36|🇬🇧_GB_英国->🇺🇸_US_美国
   - 20|🇬🇧GB_261
+  - 20|🇬🇧GB_262
+  - 20|🇫🇷FR_204
+  - 20|🇫🇷FR_215
+  - 20|🇫🇷FR_230
+  - 20|🇫🇷FR_217
+  - 20|🇫🇷FR_235
+  - 20|🇫🇷FR_228
+  - 20|🇫🇷FR_206
+  - 20|🇫🇷FR_214
+  - 20|🇫🇷FR_234
+  - 20|🇫🇷FR_213
+  - 20|🇫🇷FR_212
+  - 20|🇫🇷FR_239
+  - 20|🇫🇷FR_216
+  - 20|🇫🇷FR_219
+  - 33|德国 005
+  - 20|🇫🇷FR_208
   - 20|🇧 GB_255
-  - 33|美国 030
-  - 20|🇸 US_378
-  - 20|🇺 US_371
-  - 20|🇸 US_384
-  - 20|🇺🇸 US_379
-  - 20|🇷🇺 RU_357
-  - 20|🇺🇸 US_391
-  - 20|🇸 US_387
-  - 39|🇺🇸 美国 CloudFlare节点
-  - 20|🇬🇧 GB_254
-  - 37|🇺🇸 美国-拉斯维加斯-001-1A
-  - 20| SE_364
-  - 17|🇯🇵
+  - 20|🇫🇷FR_205
+  - 20|🇫🇷FR_225
+  - 20|🇫🇷FR_232
+  - 20|🇫🇷FR_238
+  - 20|🇫🇷FR_207
+  - 20|🇫🇷FR_229
+  - 20|🇫🇷FR_222
+  - 20|🇫🇷FR_211
+  - 20|🇫🇷FR_226
+  - 20|🇫🇷FR_223
+  - 20|🇫🇷FR_236
+  - 20|🇫🇷FR_220
   - 38|11|11|11|11|11|11,16|日本|@ripao...
-  - 20|🇬🇧 GB_260
-  - 19|🇺🇲 美国 | USA
-  - 20|🇬🇧 GB_259
-  - 37|🇺🇸 美国-拉斯维加斯-002-1B
-  - 20|🇬🇧 GB_258
-  - 20|🇺🇸 US_412
-  - 20|🇧 GB_251
-  - 20|🇺 RU_354
-  - 19|🇺🇲 美国 | USA 5
-  - 20|🇧 GB_256
-  - 20|🇸 US_389
-  - 39|🇷🇺 _俄罗斯
+  - 17|🇯🇵
+  - 20|🇫🇷FR_240
+  - 20|🇫🇷FR_218
+  - 20| DE_186
+  - 20|🇷🇺 RU_357
+  - 20|🇫🇷FR_209
   - 15,20|🇹 TW_366
-  - 20|🇬🇧 GB_253
-  - 20|🇸 US_372
-  - 45,47|TW_speednode_0055
-  - 20|🇬🇧 GB_252
+  - 20| SE_364
+  - 19|🇩🇪 德国 | DEU
+  - 20|🇬🇧 GB_254
+  - 20|🇩🇪DE_193
+  - 20|🇫🇷FR_221
   - 20|🇼 TW_367
-  - 20|🇰 HK_270
+  - 20|🇺RU_360
+  - 20|🇬🇧 GB_259
+  - 20|🇧 GB_256
+  - 20|🇬🇧 GB_257
+  - 27,36|🇷🇺_RU_俄罗斯_3
+  - 20|🇬🇧 GB_260
+  - 45,47|TW_speednode_0055
+  - 20|🇩🇪DE_189
+  - 20|🇧 GB_251
+  - 20| GB_250
+  - 20|🇷🇺 RU_353
+  - 20|🇩🇪DE_192
   url: https://i.ytimg.com/generate_204
   interval: 300
   tolerance: 50
@@ -779,177 +605,145 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 20|🇸 US_392
-  - 20|🇺🇸US_432
-  - 20|🇸 US_395
-  - 20|🇸 US_376
-  - 20|🇸 US_394
-  - 20|🇸 US_396
-  - 20|🇺🇸 US_386
-  - 20|🇸 US_377
-  - 20|🇺🇸 US_382
-  - 20|🇸 US_375
-  - 20|🇸 US_393
-  - 20|🇸 US_383
-  - 20|🇸 US_374
-  - 17|🇺🇸 us
-  - 20|🇺🇸US_442
-  - 20|🇺🇸US_441
-  - 20|🇺🇸US_433
-  - 20|🇸US_435
-  - 20|🇸US_438
-  - 20|🇸US_445
-  - 20|🇸US_437
-  - 20|🇺🇸US_427
-  - 20|🇸US_444
-  - 20|🇸US_426
-  - 20|🇸US_439
-  - 20|🇺🇸US_434
-  - 20|🇸US_425
-  - 20|🇺🇸US_446
-  - 20|🇸US_440
-  - 20|🇸US_422
-  - 20|🇺🇸 US_381
-  - 20|🇺🇸 US_380
-  - 20|🇸US_431
-  - 20|🇸US_423
-  - 20|🇺🇸US_429
-  - 20|🇺🇸US_436
-  - 20|🇺🇸US_443
   - 20| RU_352
-  - 20|🇸US_428
-  - 20|🇺🇸US_424
   - 20|🇨🇦CA_176
-  - 20|🇺🇸 US_385
-  - 20|🇺🇸 US_401
-  - 20|🇬🇧GB_262
-  - 20|🇺🇸US_421
-  - 15,20,36|🇬🇧_GB_英国->🇺🇸_US_美国
   - 27,29,48|US_Portland_Amazon.com, Inc._O...
-  - 29,35,46|🇺🇸_US_美国_10
+  - 20|🇫🇷FR_243
+  - 20|🇫🇷FR_227
+  - 20|🇺 RU_358
+  - 20|🇫🇷FR_237
+  - 20|🇫🇷FR_242
+  - 20|🇫🇷FR_241
+  - 15,20,36|🇬🇧_GB_英国->🇺🇸_US_美国
   - 20|🇬🇧GB_261
+  - 20|🇬🇧GB_262
+  - 20|🇫🇷FR_204
+  - 20|🇫🇷FR_215
+  - 20|🇫🇷FR_230
+  - 20|🇫🇷FR_217
+  - 20|🇫🇷FR_235
+  - 20|🇫🇷FR_228
+  - 20|🇫🇷FR_206
+  - 20|🇫🇷FR_214
+  - 20|🇫🇷FR_234
+  - 20|🇫🇷FR_213
+  - 20|🇫🇷FR_212
+  - 20|🇫🇷FR_239
+  - 20|🇫🇷FR_216
+  - 20|🇫🇷FR_219
+  - 33|德国 005
+  - 20|🇫🇷FR_208
   - 20|🇧 GB_255
-  - 33|美国 030
-  - 20|🇸 US_378
-  - 20|🇺 US_371
-  - 20|🇸 US_384
-  - 20|🇺🇸 US_379
-  - 20|🇷🇺 RU_357
-  - 20|🇺🇸 US_391
-  - 20|🇸 US_387
-  - 39|🇺🇸 美国 CloudFlare节点
-  - 20|🇬🇧 GB_254
-  - 37|🇺🇸 美国-拉斯维加斯-001-1A
-  - 20| SE_364
-  - 17|🇯🇵
+  - 20|🇫🇷FR_205
+  - 20|🇫🇷FR_225
+  - 20|🇫🇷FR_232
+  - 20|🇫🇷FR_238
+  - 20|🇫🇷FR_207
+  - 20|🇫🇷FR_229
+  - 20|🇫🇷FR_222
+  - 20|🇫🇷FR_211
+  - 20|🇫🇷FR_226
+  - 20|🇫🇷FR_223
+  - 20|🇫🇷FR_236
+  - 20|🇫🇷FR_220
   - 38|11|11|11|11|11|11,16|日本|@ripao...
-  - 20|🇬🇧 GB_260
-  - 19|🇺🇲 美国 | USA
-  - 20|🇬🇧 GB_259
-  - 37|🇺🇸 美国-拉斯维加斯-002-1B
-  - 20|🇬🇧 GB_258
-  - 20|🇺🇸 US_412
-  - 20|🇧 GB_251
-  - 20|🇺 RU_354
-  - 19|🇺🇲 美国 | USA 5
-  - 20|🇧 GB_256
-  - 20|🇸 US_389
-  - 39|🇷🇺 _俄罗斯
+  - 17|🇯🇵
+  - 20|🇫🇷FR_240
+  - 20|🇫🇷FR_218
+  - 20| DE_186
+  - 20|🇷🇺 RU_357
+  - 20|🇫🇷FR_209
   - 15,20|🇹 TW_366
-  - 20|🇬🇧 GB_253
-  - 20|🇸 US_372
-  - 45,47|TW_speednode_0055
-  - 20|🇬🇧 GB_252
+  - 20| SE_364
+  - 19|🇩🇪 德国 | DEU
+  - 20|🇬🇧 GB_254
+  - 20|🇩🇪DE_193
+  - 20|🇫🇷FR_221
   - 20|🇼 TW_367
-  - 20|🇰 HK_270
+  - 20|🇺RU_360
+  - 20|🇬🇧 GB_259
+  - 20|🇧 GB_256
+  - 20|🇬🇧 GB_257
+  - 27,36|🇷🇺_RU_俄罗斯_3
+  - 20|🇬🇧 GB_260
+  - 45,47|TW_speednode_0055
+  - 20|🇩🇪DE_189
+  - 20|🇧 GB_251
+  - 20| GB_250
+  - 20|🇷🇺 RU_353
+  - 20|🇩🇪DE_192
   url: https://i.ytimg.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 20|🇸 US_392
-  - 20|🇺🇸US_432
-  - 20|🇸 US_395
-  - 20|🇸 US_376
-  - 20|🇸 US_394
-  - 20|🇸 US_396
-  - 20|🇺🇸 US_386
-  - 20|🇸 US_377
-  - 20|🇺🇸 US_382
-  - 20|🇸 US_375
-  - 20|🇸 US_393
-  - 20|🇸 US_383
-  - 20|🇸 US_374
-  - 17|🇺🇸 us
-  - 20|🇺🇸US_442
-  - 20|🇺🇸US_441
-  - 20|🇺🇸US_433
-  - 20|🇸US_435
-  - 20|🇸US_438
-  - 20|🇸US_445
-  - 20|🇸US_437
-  - 20|🇺🇸US_427
-  - 20|🇸US_444
-  - 20|🇸US_426
-  - 20|🇸US_439
-  - 20|🇺🇸US_434
-  - 20|🇸US_425
-  - 20|🇺🇸US_446
-  - 20|🇸US_440
-  - 20|🇸US_422
-  - 20|🇺🇸 US_381
-  - 20|🇺🇸 US_380
-  - 20|🇸US_431
-  - 20|🇸US_423
-  - 20|🇺🇸US_429
-  - 20|🇺🇸US_436
-  - 20|🇺🇸US_443
   - 20| RU_352
-  - 20|🇸US_428
-  - 20|🇺🇸US_424
   - 20|🇨🇦CA_176
-  - 20|🇺🇸 US_385
-  - 20|🇺🇸 US_401
-  - 20|🇬🇧GB_262
-  - 20|🇺🇸US_421
-  - 15,20,36|🇬🇧_GB_英国->🇺🇸_US_美国
   - 27,29,48|US_Portland_Amazon.com, Inc._O...
-  - 29,35,46|🇺🇸_US_美国_10
+  - 20|🇫🇷FR_243
+  - 20|🇫🇷FR_227
+  - 20|🇺 RU_358
+  - 20|🇫🇷FR_237
+  - 20|🇫🇷FR_242
+  - 20|🇫🇷FR_241
+  - 15,20,36|🇬🇧_GB_英国->🇺🇸_US_美国
   - 20|🇬🇧GB_261
+  - 20|🇬🇧GB_262
+  - 20|🇫🇷FR_204
+  - 20|🇫🇷FR_215
+  - 20|🇫🇷FR_230
+  - 20|🇫🇷FR_217
+  - 20|🇫🇷FR_235
+  - 20|🇫🇷FR_228
+  - 20|🇫🇷FR_206
+  - 20|🇫🇷FR_214
+  - 20|🇫🇷FR_234
+  - 20|🇫🇷FR_213
+  - 20|🇫🇷FR_212
+  - 20|🇫🇷FR_239
+  - 20|🇫🇷FR_216
+  - 20|🇫🇷FR_219
+  - 33|德国 005
+  - 20|🇫🇷FR_208
   - 20|🇧 GB_255
-  - 33|美国 030
-  - 20|🇸 US_378
-  - 20|🇺 US_371
-  - 20|🇸 US_384
-  - 20|🇺🇸 US_379
-  - 20|🇷🇺 RU_357
-  - 20|🇺🇸 US_391
-  - 20|🇸 US_387
-  - 39|🇺🇸 美国 CloudFlare节点
-  - 20|🇬🇧 GB_254
-  - 37|🇺🇸 美国-拉斯维加斯-001-1A
-  - 20| SE_364
-  - 17|🇯🇵
+  - 20|🇫🇷FR_205
+  - 20|🇫🇷FR_225
+  - 20|🇫🇷FR_232
+  - 20|🇫🇷FR_238
+  - 20|🇫🇷FR_207
+  - 20|🇫🇷FR_229
+  - 20|🇫🇷FR_222
+  - 20|🇫🇷FR_211
+  - 20|🇫🇷FR_226
+  - 20|🇫🇷FR_223
+  - 20|🇫🇷FR_236
+  - 20|🇫🇷FR_220
   - 38|11|11|11|11|11|11,16|日本|@ripao...
-  - 20|🇬🇧 GB_260
-  - 19|🇺🇲 美国 | USA
-  - 20|🇬🇧 GB_259
-  - 37|🇺🇸 美国-拉斯维加斯-002-1B
-  - 20|🇬🇧 GB_258
-  - 20|🇺🇸 US_412
-  - 20|🇧 GB_251
-  - 20|🇺 RU_354
-  - 19|🇺🇲 美国 | USA 5
-  - 20|🇧 GB_256
-  - 20|🇸 US_389
-  - 39|🇷🇺 _俄罗斯
+  - 17|🇯🇵
+  - 20|🇫🇷FR_240
+  - 20|🇫🇷FR_218
+  - 20| DE_186
+  - 20|🇷🇺 RU_357
+  - 20|🇫🇷FR_209
   - 15,20|🇹 TW_366
-  - 20|🇬🇧 GB_253
-  - 20|🇸 US_372
-  - 45,47|TW_speednode_0055
-  - 20|🇬🇧 GB_252
+  - 20| SE_364
+  - 19|🇩🇪 德国 | DEU
+  - 20|🇬🇧 GB_254
+  - 20|🇩🇪DE_193
+  - 20|🇫🇷FR_221
   - 20|🇼 TW_367
-  - 20|🇰 HK_270
+  - 20|🇺RU_360
+  - 20|🇬🇧 GB_259
+  - 20|🇧 GB_256
+  - 20|🇬🇧 GB_257
+  - 27,36|🇷🇺_RU_俄罗斯_3
+  - 20|🇬🇧 GB_260
+  - 45,47|TW_speednode_0055
+  - 20|🇩🇪DE_189
+  - 20|🇧 GB_251
+  - 20| GB_250
+  - 20|🇷🇺 RU_353
+  - 20|🇩🇪DE_192
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
