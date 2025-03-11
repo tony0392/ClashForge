@@ -32,6 +32,42 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
+- cipher: aes-256-cfb
+  name: 18|@MxlShare 日本 | JPN
+  password: amazonskr05
+  port: 443
+  server: 54.249.187.223
+  type: ss
+- cipher: aes-256-cfb
+  name: 18|@MxlShare 日本 | JPN 2
+  password: amazonskr05
+  port: 443
+  server: 18.183.167.187
+  type: ss
+- cipher: aes-256-cfb
+  name: 18|@MxlShare 日本 | JPN 3
+  password: amazonskr05
+  port: 443
+  server: 43.206.222.219
+  type: ss
+- cipher: aes-256-cfb
+  name: 18|@MxlShare 日本 | JPN 5
+  password: amazonskr05
+  port: 443
+  server: 43.207.153.78
+  type: ss
+- cipher: aes-256-cfb
+  name: 18|@MxlShare 日本 | JPN 8
+  password: amazonskr05
+  port: 443
+  server: 13.115.162.137
+  type: ss
+- cipher: aes-256-cfb
+  name: 18|@MxlShare 日本 | JPN 9
+  password: amazonskr05
+  port: 443
+  server: 3.112.205.40
+  type: ss
 - cipher: aes-128-gcm
   name: 20|🇯🇵
   password: shadowsocks
@@ -49,35 +85,75 @@ proxies:
   type: vmess
   uuid: 9e11e992-c3a4-45fb-bb67-5f4f42fcd551
 - cipher: aes-256-cfb
-  name: 32,51|KR_Seoul_Amazon Technologies I...
+  name: 18|@MxlShare 韩国 | KOR 11
   password: amazonskr05
   port: 443
-  server: 52.78.120.105
+  server: 43.203.193.109
   type: ss
-  udp: true
 - cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 32,45,46,51|KR_Seoul_Amazon.com, Inc._Open...
+  name: 18|@MxlShare 韩国 | KOR 4
   password: amazonskr05
   port: 443
-  server: 43.201.0.67
-  tfo: false
+  server: 13.124.76.28
   type: ss
-  udp: true
+- cipher: aes-256-cfb
+  name: 18|@MxlShare 韩国 | KOR 5
+  password: amazonskr05
+  port: 443
+  server: 13.124.103.7
+  type: ss
+- cipher: aes-256-cfb
+  name: 18|@MxlShare 韩国 | KOR 6
+  password: amazonskr05
+  port: 443
+  server: 43.203.229.162
+  type: ss
+- cipher: aes-256-cfb
+  name: 18|@MxlShare 韩国 | KOR 7
+  password: amazonskr05
+  port: 443
+  server: 3.36.61.71
+  type: ss
+- cipher: aes-256-cfb
+  name: 18|@MxlShare 新加坡 | SGP 2
+  password: amazonskr05
+  port: 443
+  server: 54.169.255.43
+  type: ss
+- cipher: aes-256-cfb
+  name: 18|@MxlShare 新加坡 | SGP 23
+  password: amazonskr05
+  port: 443
+  server: 54.179.23.249
+  type: ss
+- cipher: aes-256-cfb
+  name: 18|@MxlShare 新加坡 | SGP 5
+  password: amazonskr05
+  port: 443
+  server: 18.141.140.120
+  type: ss
+- cipher: aes-256-cfb
+  name: 18|@MxlShare 新加坡 | SGP 24
+  password: amazonskr05
+  port: 443
+  server: 18.140.1.105
+  type: ss
 - alterId: 0
   cipher: auto
-  ip-version: dual
-  name: 36|加拿大 006
+  name: 36|加拿大 003
   network: ws
-  port: 80
-  server: 51.79.102.253
+  port: 8080
+  server: 104.16.155.10
+  skip-cert-verify: true
+  tfo: false
+  tls: false
   type: vmess
   udp: true
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
   ws-opts:
     headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    path: /IOebhLMhl1CTbFHbL95myfRX2
+      Host: 100-149-191-2.s5.db-link02.top
+    path: /dabai.in104.20.16.209
 - alterId: 0
   cipher: auto
   ip-version: dual
@@ -92,6 +168,19 @@ proxies:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /IOebhLMhl1CTbFHbL95myfRX2
+- alterId: 0
+  cipher: auto
+  delay: 2329
+  name: 36|加拿大 012
+  network: ws
+  port: 2086
+  server: s5.cn-db.top
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-164-83-9.s5.cn-db.top
+    path: /dabai.in172.64.19.89
 - alterId: 0
   cipher: auto
   name: 36|加拿大 015
@@ -124,22 +213,6 @@ proxies:
     headers:
       Host: lax1.ibgfw.top
     path: /xrenvws
-- alterId: 0
-  cipher: auto
-  name: 36|俄罗斯 005
-  network: ws
-  port: 443
-  server: 185.221.160.163
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
-  ws-opts:
-    headers:
-      Host: worker-mute-bar-1719.nifotok993.workers.dev
-    path: /glweidf.cfd/linkws
 - cipher: aes-256-cfb
   name: 38|🇺_RU_
   password: BejrQvtu9sqUeNuZ
@@ -147,15 +220,9 @@ proxies:
   server: 217.30.10.18
   type: ss
 - cipher: aes-256-cfb
-  name: 38|🇷🇺_RU_俄罗斯_4
-  password: ZET59LF6DvCC8KVt
-  port: 9005
-  server: 217.30.10.18
-  type: ss
-- cipher: aes-256-cfb
-  name: 38|🇺_RU_俄罗斯_5
-  password: f63gg8EruDnUrmz4
-  port: 9010
+  name: 38|🇷🇺_RU_俄罗斯_3
+  password: GA9KzeEgvfxNrgmM
+  port: 9019
   server: 217.30.10.18
   type: ss
 - cipher: aes-256-cfb
@@ -166,24 +233,17 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 40|🇷🇺 俄罗斯-莫斯科-F3-001-1C
+  name: 40|🇷🇺 俄罗斯-莫斯科-F3-001-1B
   network: ws
-  port: '23008'
+  port: '23009'
   server: 185.22.152.236
   tls: false
   type: vmess
-  uuid: 814aaddc-66ee-4c5d-b350-7ce7fa651086
+  uuid: 2685187c-1aee-430e-97e8-4f6c236ee64e
   ws-opts:
     headers:
       Host: ''
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 18,29|US美国(mibei77.com 米贝节点分享) 20
-  password: 70Xwg0SbHSL8CuCkiLuGhO
-  port: 15128
-  server: sto2.g.edgeservers.org
-  type: ss
-  udp: true
 - cipher: aes-256-cfb
   name: 38|_SE_
   password: f8f7aCzcPKbsF8p3
@@ -241,34 +301,18 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 22|🇩🇪 德国 | DEU
+  name: 22|🇩🇪 德国 | DEU 2
   network: ws
   port: 23451
   server: frankfurt.faforex.eu.org
   tls: false
   type: vmess
   udp: true
-  uuid: 2d383b64-3bd8-4558-b272-7a357fa9644f
+  uuid: 3dec410e-95ce-482c-bb55-be2874156a5d
   ws-opts:
     headers:
       Host: us-new03.daluquan.top
     path: /itdog?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 36|德国 001
-  network: ws
-  port: 443
-  server: irhms03.dongfeng.cfd
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: fa5b55cd-cafc-4de0-a4c8-722e02a9f58e
-  ws-opts:
-    headers:
-      Host: hms03.dongfeng.cfd
-    path: /linkws
 - alterId: 0
   cipher: auto
   name: 36|德国 002
@@ -300,12 +344,6 @@ proxies:
     headers:
       Host: afrhms07.xfixedfloat.cfd
     path: /linkws
-- cipher: aes-128-gcm
-  name: 38|_GB_国_1
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.196
-  type: ss
 - cipher: aes-256-cfb
   name: 48,50|TW_speednode_0055
   password: f8f7aCzcPKbsF8p3
@@ -325,31 +363,40 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 38|_GB_国_1
-  - 36|俄罗斯 002
-  - 36|法国 005
-  - 38|🇷🇺_RU_俄罗斯_4
-  - 38|🇺_RU_俄罗斯_5
-  - 18,29|US美国(mibei77.com 米贝节点分享) 20
+  - 38|🇷🇺_RU_俄罗斯_3
   - 38|🇷🇺_RU_俄罗斯_6
+  - 38|🇺_RU_
   - 36|加拿大 015
-  - 22|🇩🇪 德国 | DEU
-  - 36|俄罗斯 005
-  - 36|法国 006
   - 36|法国 002
-  - 38|_SE_
-  - 20|🇯🇵
+  - 36|法国 006
   - 41|11|11|11|11|11|11,16|日本|@ripao...
+  - 18|@MxlShare 日本 | JPN 3
+  - 18|@MxlShare 日本 | JPN
+  - 18|@MxlShare 日本 | JPN 2
+  - 18|@MxlShare 日本 | JPN 9
+  - 20|🇯🇵
+  - 18|@MxlShare 日本 | JPN 8
+  - 22|🇩🇪 德国 | DEU 2
+  - 18|@MxlShare 日本 | JPN 5
   - 36|加拿大 007
   - 36|德国 004
-  - 36|德国 001
+  - 36|俄罗斯 002
   - 36|德国 002
-  - 38|🇺_RU_
-  - 40|🇷🇺 俄罗斯-莫斯科-F3-001-1C
-  - 32,51|KR_Seoul_Amazon Technologies I...
-  - 32,45,46,51|KR_Seoul_Amazon.com, Inc._Open...
-  - 36|加拿大 006
+  - 36|加拿大 012
+  - 40|🇷🇺 俄罗斯-莫斯科-F3-001-1B
+  - 18|@MxlShare 新加坡 | SGP 2
+  - 18|@MxlShare 新加坡 | SGP 24
+  - 18|@MxlShare 新加坡 | SGP 5
+  - 18|@MxlShare 韩国 | KOR 6
+  - 18|@MxlShare 韩国 | KOR 7
+  - 18|@MxlShare 韩国 | KOR 11
+  - 18|@MxlShare 韩国 | KOR 4
+  - 18|@MxlShare 韩国 | KOR 5
+  - 38|_SE_
+  - 18|@MxlShare 新加坡 | SGP 23
+  - 36|法国 005
   - 48,50|TW_speednode_0055
+  - 36|加拿大 003
   url: https://i.ytimg.com/generate_204
   interval: 300
   tolerance: 50
@@ -357,61 +404,79 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 38|_GB_国_1
-  - 36|俄罗斯 002
-  - 36|法国 005
-  - 38|🇷🇺_RU_俄罗斯_4
-  - 38|🇺_RU_俄罗斯_5
-  - 18,29|US美国(mibei77.com 米贝节点分享) 20
+  - 38|🇷🇺_RU_俄罗斯_3
   - 38|🇷🇺_RU_俄罗斯_6
+  - 38|🇺_RU_
   - 36|加拿大 015
-  - 22|🇩🇪 德国 | DEU
-  - 36|俄罗斯 005
-  - 36|法国 006
   - 36|法国 002
-  - 38|_SE_
-  - 20|🇯🇵
+  - 36|法国 006
   - 41|11|11|11|11|11|11,16|日本|@ripao...
+  - 18|@MxlShare 日本 | JPN 3
+  - 18|@MxlShare 日本 | JPN
+  - 18|@MxlShare 日本 | JPN 2
+  - 18|@MxlShare 日本 | JPN 9
+  - 20|🇯🇵
+  - 18|@MxlShare 日本 | JPN 8
+  - 22|🇩🇪 德国 | DEU 2
+  - 18|@MxlShare 日本 | JPN 5
   - 36|加拿大 007
   - 36|德国 004
-  - 36|德国 001
+  - 36|俄罗斯 002
   - 36|德国 002
-  - 38|🇺_RU_
-  - 40|🇷🇺 俄罗斯-莫斯科-F3-001-1C
-  - 32,51|KR_Seoul_Amazon Technologies I...
-  - 32,45,46,51|KR_Seoul_Amazon.com, Inc._Open...
-  - 36|加拿大 006
+  - 36|加拿大 012
+  - 40|🇷🇺 俄罗斯-莫斯科-F3-001-1B
+  - 18|@MxlShare 新加坡 | SGP 2
+  - 18|@MxlShare 新加坡 | SGP 24
+  - 18|@MxlShare 新加坡 | SGP 5
+  - 18|@MxlShare 韩国 | KOR 6
+  - 18|@MxlShare 韩国 | KOR 7
+  - 18|@MxlShare 韩国 | KOR 11
+  - 18|@MxlShare 韩国 | KOR 4
+  - 18|@MxlShare 韩国 | KOR 5
+  - 38|_SE_
+  - 18|@MxlShare 新加坡 | SGP 23
+  - 36|法国 005
   - 48,50|TW_speednode_0055
+  - 36|加拿大 003
   url: https://i.ytimg.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 38|_GB_国_1
-  - 36|俄罗斯 002
-  - 36|法国 005
-  - 38|🇷🇺_RU_俄罗斯_4
-  - 38|🇺_RU_俄罗斯_5
-  - 18,29|US美国(mibei77.com 米贝节点分享) 20
+  - 38|🇷🇺_RU_俄罗斯_3
   - 38|🇷🇺_RU_俄罗斯_6
+  - 38|🇺_RU_
   - 36|加拿大 015
-  - 22|🇩🇪 德国 | DEU
-  - 36|俄罗斯 005
-  - 36|法国 006
   - 36|法国 002
-  - 38|_SE_
-  - 20|🇯🇵
+  - 36|法国 006
   - 41|11|11|11|11|11|11,16|日本|@ripao...
+  - 18|@MxlShare 日本 | JPN 3
+  - 18|@MxlShare 日本 | JPN
+  - 18|@MxlShare 日本 | JPN 2
+  - 18|@MxlShare 日本 | JPN 9
+  - 20|🇯🇵
+  - 18|@MxlShare 日本 | JPN 8
+  - 22|🇩🇪 德国 | DEU 2
+  - 18|@MxlShare 日本 | JPN 5
   - 36|加拿大 007
   - 36|德国 004
-  - 36|德国 001
+  - 36|俄罗斯 002
   - 36|德国 002
-  - 38|🇺_RU_
-  - 40|🇷🇺 俄罗斯-莫斯科-F3-001-1C
-  - 32,51|KR_Seoul_Amazon Technologies I...
-  - 32,45,46,51|KR_Seoul_Amazon.com, Inc._Open...
-  - 36|加拿大 006
+  - 36|加拿大 012
+  - 40|🇷🇺 俄罗斯-莫斯科-F3-001-1B
+  - 18|@MxlShare 新加坡 | SGP 2
+  - 18|@MxlShare 新加坡 | SGP 24
+  - 18|@MxlShare 新加坡 | SGP 5
+  - 18|@MxlShare 韩国 | KOR 6
+  - 18|@MxlShare 韩国 | KOR 7
+  - 18|@MxlShare 韩国 | KOR 11
+  - 18|@MxlShare 韩国 | KOR 4
+  - 18|@MxlShare 韩国 | KOR 5
+  - 38|_SE_
+  - 18|@MxlShare 新加坡 | SGP 23
+  - 36|法国 005
   - 48,50|TW_speednode_0055
+  - 36|加拿大 003
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
