@@ -32,19 +32,31 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 5
-  network: ws
-  port: 22017
-  server: 103.136.150.144
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 76f43b37-5d71-4508-b47d-3fc6dc81612b
-  ws-opts:
-    path: /
+- name: 18|@MxlShare 香港 | HKG 6
+  password: 0979046d-90cc-4f58-9595-75ba19550d1c
+  port: 10465
+  server: aafrtpfxr.hkl03i9zjfegelp.5xfsur8v62.gosdk.xyz
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- cipher: aes-256-gcm
+  name: 18|@MxlShare 香港 | HKG 11
+  password: V5BYNOVDJ25VGN5B
+  port: 15012
+  server: 156.245.190.21
+  type: ss
+- name: 18|@MxlShare 香港 | HKG 16
+  password: 0979046d-90cc-4f58-9595-75ba19550d1c
+  port: 27103
+  server: aafrtpfxr.hkl04i9zjfegelp.5xfsur8v62.gosdk.xyz
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  country: 🇰 HK
+  name: 23| HK_280
+  password: d0fa3a9b-2115-4cc0-a8f5-7f4f7caf6ec1
+  port: 8080
+  server: 156.244.36.170
+  type: ss
 - alterId: 0
   cipher: auto
   name: 40|🇭🇰 香港-1B
@@ -53,97 +65,40 @@ proxies:
   server: xg.dashuai.cyou
   tls: false
   type: vmess
-  uuid: aa27b094-1633-44cb-9d6c-41cb8337c204
-- cipher: aes-256-cfb
-  name: 18|@MxlShare 日本 | JPN
-  password: amazonskr05
+  uuid: 361fc746-20b8-4a00-a358-28a1355a072f
+- name: 18,32,42,45|13|日本6|@ripaojiedian
+  network: tcp
+  password: TOZA9E6pyq4z3pFYeIeOC3ApaSDjR2wFueaO8uNDx0czDF3YCSwa3xjZ3qZAyB4YCKCZS
   port: 443
-  server: 35.77.94.139
-  type: ss
-- cipher: aes-256-cfb
-  name: 18|@MxlShare 日本 | JPN 2
-  password: amazonskr05
-  port: 443
-  server: 18.181.194.77
-  type: ss
-- name: 18|@MxlShare 日本 | JPN 24
-  password: l3ESwpOSN3FYFAR93RYe6SAyxa0XSFC2zlSaqTClDZ4OAanXOxweCDZznRc28DyY3yTID
-  port: 28334
-  server: sakoku.meijireform.com
-  skip-cert-verify: true
-  sni: sakoku.meijireform.com
-  type: trojan
-- name: 18|@MxlShare 日本 | JPN 25
-  password: 88K4yE6e3Za9YxCXR53paOnlqDy5qYIa4OczBTaFAyS0gZjS083Dz3YRCxuwOScXOFNYD
-  port: 28341
-  server: fearow.superpokemon.com
-  skip-cert-verify: true
-  sni: fearow.superpokemon.com
-  type: trojan
-- name: 18|@MxlShare 日本 | JPN 26
-  password: B3Kyp23AXFw95RaAwzlXZDASNeNDZz9ROEEpxBFae2yAR4O6Sc0YqCluOY3CxTDp83KxD
-  port: 28335
-  server: national.meijireform.com
-  skip-cert-verify: true
-  sni: national.meijireform.com
-  type: trojan
-- name: 18|@MxlShare 日本 | JPN 27
-  password: 6aqnYj7NA2CAeSeZpY34RIC3KzNzDO33aOOaZSxFSc5ETBcwXeyaDF3qC9A907y2nXT8S
-  port: 443
-  server: visual.superpokemon.com
-  skip-cert-verify: true
-  sni: visual.superpokemon.com
-  type: trojan
-- name: 18|@MxlShare 日本 | JPN 28
-  password: 85aDyYZY30RxnpAD38lSCKaue9CDDTDOAASycaExR9OEZxOD8c25CXeSCF33lN3q43BeI
-  port: 443
-  server: gharial.superpokemon.com
-  skip-cert-verify: true
-  sni: gharial.superpokemon.com
-  type: trojan
-- name: 18|@MxlShare 日本 | JPN 30
-  password: SKaAERe4n9a8DBCFeSSSzOBxNNC33T5x6RyDnlYuz8K3YpwjC8FC3XCFxXIAZ0OpRa3IY
-  port: 28344
-  server: shogunate.meijireform.com
-  skip-cert-verify: true
-  sni: shogunate.meijireform.com
-  type: trojan
-- name: 18|@MxlShare 日本 | JPN 31
-  password: OZy4RCjByzeYDSZR38Cep8uXA5a8jxxCCATE7B9qnx6N33O28epwa3AOSDw7IFK3YlllC
-  port: 18332
-  server: sniffle.meijireform.com
-  skip-cert-verify: true
-  sni: sniffle.meijireform.com
+  server: swiftly.meijireform.com
+  skip-cert-verify: false
   type: trojan
 - cipher: aes-256-cfb
-  name: 18,32,35|🇯🇵 12|🇯🇵 日本特殊|@ripaojiedian
+  name: 18|@MxlShare 日本 | JPN 33
   password: amazonskr05
   port: 443
-  server: 54.238.186.53
+  server: 13.230.168.61
   type: ss
-  udp: true
 - cipher: aes-128-gcm
   name: 20|🇯🇵
   password: shadowsocks
   port: 443
   server: 149.22.87.240
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇵 JP
-  name: 23| JP_281
-  password: F6ODQ19joWb6ztUEWLI2EQ
-  port: 42342
-  server: 3.112.28.59
-  type: ss
-- name: 27,33|[Trojan] 🇯🇵 日本东京都 cogentco.com
-  password: lCnTqRDYyYzSCwCaa9euS0BO2KlaepCyyepSOSN8ACB86DZl3aZ3c0n8xOxTI55w3O4SX
-  port: 28340
-  server: 154.31.115.16
+- alterId: 0
+  cipher: auto
+  country: 🇯🇵 JP
+  h2-opts: {}
+  http-opts: {}
+  name: 23|🇵 JP_285
+  network: ws
+  port: 11443
+  server: tls.01.node-for-bigairport.win
   skip-cert-verify: true
-  sni: social.meijireform.com
-  tfo: false
-  type: trojan
-  udp: true
+  tls: true
+  type: vmess
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  ws-path: /
 - alterId: 0
   cipher: none
   name: 41|11|11|11|11|11|11,16|日本|@ripao...
@@ -154,79 +109,25 @@ proxies:
   tls: false
   type: vmess
   uuid: 9e11e992-c3a4-45fb-bb67-5f4f42fcd551
-- country: 🇷 KR
-  name: 23|🇷 KR_285
-  password: 7Rn3apKRaY3ceZYDn3DlKSBNT0aEC08y6zADl84FI9waq8CF2yxO2X9u8jegx5uAODjcE
-  port: 443
-  server: 52.78.39.86
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - cipher: aes-256-cfb
-  name: 18|@MxlShare 新加坡 | SGP 6
+  name: 18|@MxlShare 韩国 | KOR
   password: amazonskr05
   port: 443
-  server: 54.179.179.201
+  server: 43.203.196.43
   type: ss
 - cipher: aes-256-cfb
-  name: 18|@MxlShare 新加坡 | SGP 7
+  name: 18|@MxlShare 新加坡 | SGP 26
   password: amazonskr05
   port: 443
-  server: 54.251.193.0
+  server: 54.151.230.240
   type: ss
-- country: 🇬 SG
-  name: 23| SG_381
-  password: OCxO7za3SXnwpEacKD7AZxujyISD840CZgSCSFFp6Z3eXFeOZDyzlTy3lA8AgBea3SDEC
-  port: 443
-  server: 18.139.226.245
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: 32,35|🇸🇬 12|🇸🇬 狮城特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 3.0.54.96
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇦CA
-  name: 23|🇨🇦CA_186
+  name: 23|🇨🇦CA_192
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
   type: ss
-- alterId: 0
-  cipher: auto
-  delay: 1166
-  name: 36|加拿大 001
-  network: ws
-  port: 2052
-  server: s1.db-link01.top
-  servername: 100-151-164-47.s1.db-link01.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-151-164-47.s1.db-link01.top
-    path: /dabai.in172.67.2.142
-- alterId: 0
-  cipher: auto
-  name: 36|加拿大 002
-  network: ws
-  port: 8880
-  server: s4.db-link02.top
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-128-12-180.s4.db-link02.top
-    path: /dabai.in104.25.239.131
 - alterId: 0
   cipher: auto
   ip-version: dual
@@ -234,20 +135,6 @@ proxies:
   network: ws
   port: 80
   server: 51.79.102.253
-  type: vmess
-  udp: true
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-  ws-opts:
-    headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    path: /IOebhLMhl1CTbFHbL95myfRX2
-- alterId: 0
-  cipher: auto
-  ip-version: dual
-  name: 36|加拿大 007
-  network: ws
-  port: 80
-  server: 51.79.103.76
   type: vmess
   udp: true
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
@@ -273,10 +160,10 @@ proxies:
     path: /dabai.in172.67.8.3
 - alterId: 0
   cipher: auto
-  name: 36|加拿大 014
+  name: 36|加拿大 013
   network: ws
-  port: 8880
-  server: s1.db-link01.top
+  port: 2052
+  server: s4.db-link02.top
   skip-cert-verify: true
   tfo: false
   tls: false
@@ -285,55 +172,48 @@ proxies:
   uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
   ws-opts:
     headers:
-      Host: 100-250-32-53.s1.db-link01.top
-    path: /dabai.in172.67.95.35
-- cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: 23| RU_368
-  password: gmYDzSG6K35s8b19oY4fGz
-  port: 18622
-  server: 92.118.112.111
-  type: ss
+      Host: 100-145-217-186.s4.db-link02.top
+    path: /dabai.in172.64.8.26
 - cipher: chacha20-ietf-poly1305
   country: 🇷 RU
-  name: 23|🇷🇺 RU_370
-  password: uQS5ntVqC00sSKkeNzUiD3
-  port: 42090
-  server: 89.23.103.125
+  name: 23| RU_371
+  password: WfmxKX2FBJRU0Ie9VLIYDL
+  port: 20012
+  server: 141.98.234.93
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: 23|🇺 RU_371
+  name: 23|🇷🇺 RU_372
   password: 0zyDRZ1XmNXaaCAN7KEA8a
   port: 28825
   server: 45.151.62.54
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇷🇺 RU
-  name: 23|🇺 RU_372
+  country: 🇺 RU
+  name: 23|🇷🇺 RU_374
   password: xmuaeFtNoxEcfCkARy21ss
   port: 18622
   server: 92.118.112.111
   type: ss
 - cipher: chacha20-ietf-poly1305
+  country: 🇷🇺 RU
+  name: 23|🇷🇺 RU_375
+  password: gmYDzSG6K35s8b19oY4fGz
+  port: 18622
+  server: 92.118.112.111
+  type: ss
+- cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: 23|🇷🇺 RU_373
-  password: LqlPI19oqnunGNSLMvdXyB
-  port: 16356
-  server: 147.45.60.33
+  name: 23|🇷🇺 RU_376
+  password: LImHx1dnA2LDu5oleP99kb
+  port: 443
+  server: 77.83.246.74
   type: ss
 - cipher: aes-256-cfb
-  country: 🇺RU
-  name: 23|🇺RU_374
-  password: JdmRK9gMEqFgs8nP
-  port: 9003
-  server: 45.89.52.66
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇷🇺RU
-  name: 23|🇺RU_375
-  password: S7KwUu7yBy58S3Ga
-  port: 9042
+  country: 🇷RU
+  name: 23|🇺RU_378
+  password: PeHSHm5SqEjBuEXE
+  port: 9065
   server: 45.89.52.66
   type: ss
 - alterId: 0
@@ -352,136 +232,178 @@ proxies:
     headers:
       Host: lax1.ibgfw.top
     path: /xrenvws
-- alterId: 0
-  cipher: auto
-  name: 40|🇷🇺 俄罗斯-莫斯科-F3-001-1B
-  network: ws
-  port: '23017'
-  server: 185.22.152.236
-  tls: false
-  type: vmess
-  uuid: 9930e1e2-e45d-4fef-878a-356fd7280271
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 40|🇷🇺 俄罗斯-莫斯科-F2-001-1B
-  network: ws
-  port: '22010'
-  server: 46.17.43.122
-  tls: false
-  type: vmess
-  uuid: 9930e1e2-e45d-4fef-878a-356fd7280271
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
+- cipher: aes-256-gcm
+  name: 18|@MxlShare 瑞典 | SWE
+  password: WOEWKVXVNJAN5HG2
+  port: 20035
+  server: 185.186.78.220
+  type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇪 SE
-  name: 23| SE_380
+  name: 23| SE_381
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 45.154.206.192
   type: ss
 - cipher: aes-256-gcm
-  name: 18|@MxlShare 英国 | GBR 15
-  password: 15534N30ZTFY6XK1
+  name: 18|@MxlShare 英国 | GBR
+  password: 0MN0I0XF6AYU7KFP
+  port: 19001
+  server: 206.245.211.11
+  type: ss
+- cipher: aes-256-gcm
+  name: 18|@MxlShare 英国 | GBR 2
+  password: XC59UJNNVHRM7SMJ
+  port: 19014
+  server: 206.245.211.24
+  type: ss
+- cipher: aes-256-gcm
+  name: 18|@MxlShare 英国 | GBR 3
+  password: Z8UFO0STVCN8T2X7
+  port: 19007
+  server: 206.245.211.17
+  type: ss
+- cipher: aes-256-gcm
+  name: 18|@MxlShare 英国 | GBR 4
+  password: NK8N3PNWYYVODPGE
+  port: 19010
+  server: 206.245.211.20
+  type: ss
+- cipher: aes-256-gcm
+  name: 18|@MxlShare 英国 | GBR 5
+  password: JCJLOH66GFE00CKK
+  port: 19008
+  server: 206.245.211.18
+  type: ss
+- cipher: aes-256-gcm
+  name: 18|@MxlShare 英国 | GBR 6
+  password: XX1B99AMND843DGZ
+  port: 19004
+  server: 206.245.211.14
+  type: ss
+- cipher: aes-256-gcm
+  name: 18|@MxlShare 英国 | GBR 7
+  password: YRA7UO9KUVDQTL05
+  port: 19006
+  server: 206.245.211.16
+  type: ss
+- cipher: aes-256-gcm
+  name: 18|@MxlShare 英国 | GBR 8
+  password: XSIFX3W572U3H8C2
+  port: 19012
+  server: 206.245.211.22
+  type: ss
+- cipher: aes-256-gcm
+  name: 18|@MxlShare 英国 | GBR 9
+  password: LHAKU29MFI984LF5
   port: 19005
   server: 206.245.211.15
   type: ss
+- cipher: aes-256-gcm
+  name: 18|@MxlShare 英国 | GBR 10
+  password: XIE6VBQQ1WJMLG9M
+  port: 19002
+  server: 206.245.211.12
+  type: ss
+- cipher: aes-256-gcm
+  name: 18|@MxlShare 英国 | GBR 11
+  password: WG3TPH6W7SYUTTBV
+  port: 19009
+  server: 206.245.211.19
+  type: ss
+- cipher: aes-256-gcm
+  name: 18|@MxlShare 英国 | GBR 12
+  password: 2S69VK81R2HSW7EM
+  port: 19013
+  server: 206.245.211.23
+  type: ss
+- cipher: aes-256-gcm
+  name: 18|@MxlShare 英国 | GBR 13
+  password: 3IR0A73S2NGBQ1WI
+  port: 19015
+  server: 206.245.211.25
+  type: ss
+- cipher: aes-256-gcm
+  name: 18|@MxlShare 英国 | GBR 14
+  password: 22OMVO2JQAANJI6J
+  port: 19011
+  server: 206.245.211.21
+  type: ss
+- name: 18|@MxlShare 英国 | GBR 15
+  password: C2BDSDZgnA7zxXFwEB3Dc8aaZ5SnRlAZaN3eSSIaFyY03NTR0l382Yce3OTS93Rp4jS6Z
+  port: 443
+  server: scarily.golfland.club
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
-  name: 23| GB_259
+  name: 23|🇬🇧 GB_264
+  password: LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj
+  port: 52952
+  server: 185.24.151.214
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 23|🇧 GB_266
   password: 318d575434212e48
   port: 11208
   server: 82.197.66.69
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 23|🇧 GB_260
-  password: BpFieMT6SobpqRiKFefvYu7eXk99XfCeWfjpntzSh81FfMx9R7rJW6LTmzH78StTEhCd7w32ZMxbGJZS98gpn1ozr9jAbMoa
-  port: 55988
-  server: 185.5.38.111
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 23|🇧 GB_261
-  password: 4ju873evpjeaAi8Zq12YoRHWp63o5exdnZ71aUg1YEChiPTc2HkasYhUBxRz7UGi4K6cLrsGaU6b44H4Qa6f4cJn3zBp2cnX
-  port: 55988
-  server: 185.5.38.111
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 23|🇬🇧 GB_262
-  password: 2EmWRS1TkS3TkxKApnrihb3aHjDSXRvT1T1K9U2Bruxrnp5A8zmpTxwwTNje6BkVqmn9BgRF6pq8qoRHCfZdcah7BLbjrpT1
-  port: 55988
-  server: 185.5.38.111
-  type: ss
 - cipher: aes-128-gcm
   country: 🇧 GB
-  name: 23|🇧 GB_264
+  name: 23|🇬🇧 GB_267
   password: shadowsocks
   port: 443
   server: 141.98.101.178
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧 GB
-  name: 23|🇧 GB_265
-  password: bZ87amPpdG7KuWM62bKtm1KHoowuVjnV8CKtq653ymHcg2dPYcPJfnaQ61stuAjr2ZiLDaqH56XpkxEYuwDzzRrMWieebWGt
-  port: 55988
-  server: mx2.drawnrisha.one
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 23|🇬🇧 GB_266
-  password: iZDJs2CDckHKqJ5W7cpvCq2veqsqWn95iqs6Kr6F3YNnyMsk2uPdRrChQfShvH1v56Br1qWEW44qJna5QcMcZF7RCJmdvwuq
+  name: 23|🇧 GB_268
+  password: BpFieMT6SobpqRiKFefvYu7eXk99XfCeWfjpntzSh81FfMx9R7rJW6LTmzH78StTEhCd7w32ZMxbGJZS98gpn1ozr9jAbMoa
   port: 55988
   server: 185.5.38.111
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧 GB
-  name: 23|🇬🇧 GB_267
+  name: 23|🇧 GB_269
   password: FjgGNNHQiELzxXmaHRxxtQbxDDvGXFxYdTbYe91JKZsjvKLHoY9rn9ruYE45377WjtU3m4kmXQZDXiHBJsgVfhmpawEoGvq9
   port: 55988
   server: mx2.drawnrisha.one
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧 GB
-  name: 23|🇬🇧 GB_268
-  password: d0fa3a9b-2115-4cc0-a8f5-7f4f7caf6ec1
-  port: 8080
-  server: 5.252.25.61
+  name: 23|🇬🇧 GB_270
+  password: iZDJs2CDckHKqJ5W7cpvCq2veqsqWn95iqs6Kr6F3YNnyMsk2uPdRrChQfShvH1v56Br1qWEW44qJna5QcMcZF7RCJmdvwuq
+  port: 55988
+  server: 185.5.38.111
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧 GB
-  name: 23|🇬🇧 GB_269
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.47.255.22
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 23|🇬🇧 GB_270
-  password: LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj
-  port: 52952
-  server: 185.24.151.214
+  name: 23|🇬🇧 GB_272
+  password: 4ju873evpjeaAi8Zq12YoRHWp63o5exdnZ71aUg1YEChiPTc2HkasYhUBxRz7UGi4K6cLrsGaU6b44H4Qa6f4cJn3zBp2cnX
+  port: 55988
+  server: 185.5.38.111
   type: ss
 - cipher: aes-128-gcm
   country: 🇬🇧GB
-  name: 23|🇧GB_272
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.195
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇬🇧GB
-  name: 23|🇬🇧GB_273
+  name: 23|🇧GB_275
   password: shadowsocks
   port: 443
   server: 212.102.53.198
   type: ss
+- cipher: aes-128-gcm
+  country: 🇬🇧GB
+  name: 23|🇬🇧GB_276
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.195
+  type: ss
+- cipher: aes-256-cfb
+  name: 48,50|TW_speednode_0055
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.20.79
+  type: ss
+  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -494,59 +416,56 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 23| GB_259
+  - 23|🇧 GB_266
   - 36|加拿大 006
-  - 23|🇺 RU_372
-  - 23|🇨🇦CA_186
-  - 23| RU_368
-  - 23|🇧GB_272
-  - 23|🇬🇧GB_273
-  - 23|🇧 GB_264
-  - 23|🇬🇧 GB_268
-  - 23|🇬🇧 GB_269
+  - 23|🇨🇦CA_192
   - 36|俄罗斯 002
-  - 36|加拿大 007
-  - 36|加拿大 001
-  - 23|🇺 RU_371
-  - 36|加拿大 008
-  - 23|🇷🇺 RU_373
-  - 23|🇬🇧 GB_270
-  - 23| SE_380
-  - 18|@MxlShare 英国 | GBR 15
+  - 23|🇷🇺 RU_375
+  - 18|@MxlShare 英国 | GBR 2
+  - 18|@MxlShare 英国 | GBR 11
+  - 18|@MxlShare 英国 | GBR 7
+  - 18|@MxlShare 英国 | GBR
+  - 23|🇬🇧GB_276
+  - 23|🇧GB_275
+  - 18|@MxlShare 英国 | GBR 9
+  - 18|@MxlShare 英国 | GBR 6
+  - 23|🇷🇺 RU_374
+  - 18|@MxlShare 英国 | GBR 5
+  - 23|🇬🇧 GB_264
+  - 23|🇷🇺 RU_376
+  - 18|@MxlShare 瑞典 | SWE
+  - 23|🇵 JP_285
+  - 18|@MxlShare 英国 | GBR 8
   - 20|🇯🇵
-  - 23| JP_281
-  - 36|加拿大 002
-  - 23|🇺RU_375
-  - 23|🇧 GB_260
-  - 23|🇧 GB_261
-  - 23|🇬🇧 GB_262
-  - 41|11|11|11|11|11|11,16|日本|@ripao...
-  - 23|🇬🇧 GB_266
-  - 18|@MxlShare 日本 | JPN 2
-  - 40|🇭🇰 香港-1B
   - 23|🇬🇧 GB_267
-  - 18|@MxlShare 新加坡 | SGP 6
-  - 40|🇷🇺 俄罗斯-莫斯科-F2-001-1B
-  - 27,33|[Trojan] 🇯🇵 日本东京都 cogentco.com
-  - 32,35|🇸🇬 12|🇸🇬 狮城特殊|@ripaojiedian
-  - 18|@MxlShare 新加坡 | SGP 7
-  - 23|🇷🇺 RU_370
-  - 18,32,35|🇯🇵 12|🇯🇵 日本特殊|@ripaojiedian
-  - 23|🇧 GB_265
-  - 18|@MxlShare 日本 | JPN
-  - 40|🇷🇺 俄罗斯-莫斯科-F3-001-1B
-  - 18|@MxlShare 日本 | JPN 31
-  - 18|@MxlShare 日本 | JPN 27
-  - 18|@MxlShare 日本 | JPN 28
-  - 18|@MxlShare 日本 | JPN 25
-  - 18|@MxlShare 日本 | JPN 30
-  - 18|@MxlShare 日本 | JPN 24
-  - 18|@MxlShare 日本 | JPN 26
-  - 23| SG_381
-  - 23|🇺RU_374
-  - 23|🇷 KR_285
-  - 36|加拿大 014
-  - 22|🇭🇰 香港 | HKG 5
+  - 18|@MxlShare 英国 | GBR 14
+  - 18|@MxlShare 英国 | GBR 12
+  - 18|@MxlShare 英国 | GBR 10
+  - 41|11|11|11|11|11|11,16|日本|@ripao...
+  - 18|@MxlShare 日本 | JPN 33
+  - 18|@MxlShare 英国 | GBR 15
+  - 23| SE_381
+  - 23|🇷🇺 RU_372
+  - 23|🇧 GB_269
+  - 23|🇧 GB_268
+  - 40|🇭🇰 香港-1B
+  - 23|🇬🇧 GB_270
+  - 18|@MxlShare 英国 | GBR 13
+  - 18|@MxlShare 新加坡 | SGP 26
+  - 23|🇬🇧 GB_272
+  - 36|加拿大 008
+  - 36|加拿大 013
+  - 23| RU_371
+  - 18|@MxlShare 韩国 | KOR
+  - 18|@MxlShare 英国 | GBR 3
+  - 18|@MxlShare 英国 | GBR 4
+  - 18|@MxlShare 香港 | HKG 11
+  - 23|🇺RU_378
+  - 48,50|TW_speednode_0055
+  - 18|@MxlShare 香港 | HKG 16
+  - 18|@MxlShare 香港 | HKG 6
+  - 23| HK_280
+  - 18,32,42,45|13|日本6|@ripaojiedian
   url: https://i.ytimg.com/generate_204
   interval: 300
   tolerance: 50
@@ -554,117 +473,111 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 23| GB_259
+  - 23|🇧 GB_266
   - 36|加拿大 006
-  - 23|🇺 RU_372
-  - 23|🇨🇦CA_186
-  - 23| RU_368
-  - 23|🇧GB_272
-  - 23|🇬🇧GB_273
-  - 23|🇧 GB_264
-  - 23|🇬🇧 GB_268
-  - 23|🇬🇧 GB_269
+  - 23|🇨🇦CA_192
   - 36|俄罗斯 002
-  - 36|加拿大 007
-  - 36|加拿大 001
-  - 23|🇺 RU_371
-  - 36|加拿大 008
-  - 23|🇷🇺 RU_373
-  - 23|🇬🇧 GB_270
-  - 23| SE_380
-  - 18|@MxlShare 英国 | GBR 15
+  - 23|🇷🇺 RU_375
+  - 18|@MxlShare 英国 | GBR 2
+  - 18|@MxlShare 英国 | GBR 11
+  - 18|@MxlShare 英国 | GBR 7
+  - 18|@MxlShare 英国 | GBR
+  - 23|🇬🇧GB_276
+  - 23|🇧GB_275
+  - 18|@MxlShare 英国 | GBR 9
+  - 18|@MxlShare 英国 | GBR 6
+  - 23|🇷🇺 RU_374
+  - 18|@MxlShare 英国 | GBR 5
+  - 23|🇬🇧 GB_264
+  - 23|🇷🇺 RU_376
+  - 18|@MxlShare 瑞典 | SWE
+  - 23|🇵 JP_285
+  - 18|@MxlShare 英国 | GBR 8
   - 20|🇯🇵
-  - 23| JP_281
-  - 36|加拿大 002
-  - 23|🇺RU_375
-  - 23|🇧 GB_260
-  - 23|🇧 GB_261
-  - 23|🇬🇧 GB_262
-  - 41|11|11|11|11|11|11,16|日本|@ripao...
-  - 23|🇬🇧 GB_266
-  - 18|@MxlShare 日本 | JPN 2
-  - 40|🇭🇰 香港-1B
   - 23|🇬🇧 GB_267
-  - 18|@MxlShare 新加坡 | SGP 6
-  - 40|🇷🇺 俄罗斯-莫斯科-F2-001-1B
-  - 27,33|[Trojan] 🇯🇵 日本东京都 cogentco.com
-  - 32,35|🇸🇬 12|🇸🇬 狮城特殊|@ripaojiedian
-  - 18|@MxlShare 新加坡 | SGP 7
-  - 23|🇷🇺 RU_370
-  - 18,32,35|🇯🇵 12|🇯🇵 日本特殊|@ripaojiedian
-  - 23|🇧 GB_265
-  - 18|@MxlShare 日本 | JPN
-  - 40|🇷🇺 俄罗斯-莫斯科-F3-001-1B
-  - 18|@MxlShare 日本 | JPN 31
-  - 18|@MxlShare 日本 | JPN 27
-  - 18|@MxlShare 日本 | JPN 28
-  - 18|@MxlShare 日本 | JPN 25
-  - 18|@MxlShare 日本 | JPN 30
-  - 18|@MxlShare 日本 | JPN 24
-  - 18|@MxlShare 日本 | JPN 26
-  - 23| SG_381
-  - 23|🇺RU_374
-  - 23|🇷 KR_285
-  - 36|加拿大 014
-  - 22|🇭🇰 香港 | HKG 5
+  - 18|@MxlShare 英国 | GBR 14
+  - 18|@MxlShare 英国 | GBR 12
+  - 18|@MxlShare 英国 | GBR 10
+  - 41|11|11|11|11|11|11,16|日本|@ripao...
+  - 18|@MxlShare 日本 | JPN 33
+  - 18|@MxlShare 英国 | GBR 15
+  - 23| SE_381
+  - 23|🇷🇺 RU_372
+  - 23|🇧 GB_269
+  - 23|🇧 GB_268
+  - 40|🇭🇰 香港-1B
+  - 23|🇬🇧 GB_270
+  - 18|@MxlShare 英国 | GBR 13
+  - 18|@MxlShare 新加坡 | SGP 26
+  - 23|🇬🇧 GB_272
+  - 36|加拿大 008
+  - 36|加拿大 013
+  - 23| RU_371
+  - 18|@MxlShare 韩国 | KOR
+  - 18|@MxlShare 英国 | GBR 3
+  - 18|@MxlShare 英国 | GBR 4
+  - 18|@MxlShare 香港 | HKG 11
+  - 23|🇺RU_378
+  - 48,50|TW_speednode_0055
+  - 18|@MxlShare 香港 | HKG 16
+  - 18|@MxlShare 香港 | HKG 6
+  - 23| HK_280
+  - 18,32,42,45|13|日本6|@ripaojiedian
   url: https://i.ytimg.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 23| GB_259
+  - 23|🇧 GB_266
   - 36|加拿大 006
-  - 23|🇺 RU_372
-  - 23|🇨🇦CA_186
-  - 23| RU_368
-  - 23|🇧GB_272
-  - 23|🇬🇧GB_273
-  - 23|🇧 GB_264
-  - 23|🇬🇧 GB_268
-  - 23|🇬🇧 GB_269
+  - 23|🇨🇦CA_192
   - 36|俄罗斯 002
-  - 36|加拿大 007
-  - 36|加拿大 001
-  - 23|🇺 RU_371
-  - 36|加拿大 008
-  - 23|🇷🇺 RU_373
-  - 23|🇬🇧 GB_270
-  - 23| SE_380
-  - 18|@MxlShare 英国 | GBR 15
+  - 23|🇷🇺 RU_375
+  - 18|@MxlShare 英国 | GBR 2
+  - 18|@MxlShare 英国 | GBR 11
+  - 18|@MxlShare 英国 | GBR 7
+  - 18|@MxlShare 英国 | GBR
+  - 23|🇬🇧GB_276
+  - 23|🇧GB_275
+  - 18|@MxlShare 英国 | GBR 9
+  - 18|@MxlShare 英国 | GBR 6
+  - 23|🇷🇺 RU_374
+  - 18|@MxlShare 英国 | GBR 5
+  - 23|🇬🇧 GB_264
+  - 23|🇷🇺 RU_376
+  - 18|@MxlShare 瑞典 | SWE
+  - 23|🇵 JP_285
+  - 18|@MxlShare 英国 | GBR 8
   - 20|🇯🇵
-  - 23| JP_281
-  - 36|加拿大 002
-  - 23|🇺RU_375
-  - 23|🇧 GB_260
-  - 23|🇧 GB_261
-  - 23|🇬🇧 GB_262
-  - 41|11|11|11|11|11|11,16|日本|@ripao...
-  - 23|🇬🇧 GB_266
-  - 18|@MxlShare 日本 | JPN 2
-  - 40|🇭🇰 香港-1B
   - 23|🇬🇧 GB_267
-  - 18|@MxlShare 新加坡 | SGP 6
-  - 40|🇷🇺 俄罗斯-莫斯科-F2-001-1B
-  - 27,33|[Trojan] 🇯🇵 日本东京都 cogentco.com
-  - 32,35|🇸🇬 12|🇸🇬 狮城特殊|@ripaojiedian
-  - 18|@MxlShare 新加坡 | SGP 7
-  - 23|🇷🇺 RU_370
-  - 18,32,35|🇯🇵 12|🇯🇵 日本特殊|@ripaojiedian
-  - 23|🇧 GB_265
-  - 18|@MxlShare 日本 | JPN
-  - 40|🇷🇺 俄罗斯-莫斯科-F3-001-1B
-  - 18|@MxlShare 日本 | JPN 31
-  - 18|@MxlShare 日本 | JPN 27
-  - 18|@MxlShare 日本 | JPN 28
-  - 18|@MxlShare 日本 | JPN 25
-  - 18|@MxlShare 日本 | JPN 30
-  - 18|@MxlShare 日本 | JPN 24
-  - 18|@MxlShare 日本 | JPN 26
-  - 23| SG_381
-  - 23|🇺RU_374
-  - 23|🇷 KR_285
-  - 36|加拿大 014
-  - 22|🇭🇰 香港 | HKG 5
+  - 18|@MxlShare 英国 | GBR 14
+  - 18|@MxlShare 英国 | GBR 12
+  - 18|@MxlShare 英国 | GBR 10
+  - 41|11|11|11|11|11|11,16|日本|@ripao...
+  - 18|@MxlShare 日本 | JPN 33
+  - 18|@MxlShare 英国 | GBR 15
+  - 23| SE_381
+  - 23|🇷🇺 RU_372
+  - 23|🇧 GB_269
+  - 23|🇧 GB_268
+  - 40|🇭🇰 香港-1B
+  - 23|🇬🇧 GB_270
+  - 18|@MxlShare 英国 | GBR 13
+  - 18|@MxlShare 新加坡 | SGP 26
+  - 23|🇬🇧 GB_272
+  - 36|加拿大 008
+  - 36|加拿大 013
+  - 23| RU_371
+  - 18|@MxlShare 韩国 | KOR
+  - 18|@MxlShare 英国 | GBR 3
+  - 18|@MxlShare 英国 | GBR 4
+  - 18|@MxlShare 香港 | HKG 11
+  - 23|🇺RU_378
+  - 48,50|TW_speednode_0055
+  - 18|@MxlShare 香港 | HKG 16
+  - 18|@MxlShare 香港 | HKG 6
+  - 23| HK_280
+  - 18,32,42,45|13|日本6|@ripaojiedian
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
