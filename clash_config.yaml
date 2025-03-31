@@ -32,12 +32,37 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
+- alterId: 0
+  cipher: auto
+  name: 19,51|HK_Kwu Tung_PCCW IMS Limited_O...
+  network: tcp
+  port: 4138
+  server: e4928977-su2dc0-sv9ymy-dezg.c.volczijie.com
+  tls: false
+  type: vmess
+  uuid: 952f0a9a-097d-11f0-aa52-f23c93136cb3
+- alterId: 0
+  cipher: auto
+  name: 40|🇭🇰 香港-1B
+  network: tcp
+  port: '19901'
+  server: xg.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: 85b2f076-263e-497e-95f2-cf14d9c1756b
 - cipher: aes-128-gcm
   name: 20|🇯🇵
   password: shadowsocks
   port: 443
   server: 149.22.87.240
   type: ss
+- cipher: aes-256-cfb
+  name: 35|🇯🇵 12|🇯🇵 日本特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 54.169.64.23
+  type: ss
+  udp: true
 - alterId: 0
   cipher: none
   name: 41|11|11|11|11|11|11,16|日本|@ripao...
@@ -61,13 +86,28 @@ proxies:
     headers:
       Host: uswuxian.pai50288.uk
     path: /?maps.app.goo.gl/K3hM5xrwZV7bQVBa7?ed=2560
-- cipher: chacha20-ietf-poly1305
-  country: 🇦CA
-  name: 23|🇦CA_177
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: ca225.vpnbook.com
+- cipher: aes-256-cfb
+  name: 35|🇰🇷 12|🇰🇷 韩国特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 54.169.103.201
   type: ss
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 32,38,39|🇸🇬_SG_新加坡
+  password: amazonskr05
+  port: 443
+  server: 18.140.70.168
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 35|🇸🇬 12|🇸🇬 狮城特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 52.76.22.133
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   ip-version: dual
@@ -82,34 +122,6 @@ proxies:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /IOebhLMhl1CTbFHbL95myfRX2
-- alterId: 0
-  cipher: auto
-  name: 42|🇨🇦 _加拿大
-  network: ws
-  port: '80'
-  server: 51.79.102.253
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-  ws-opts:
-    headers:
-      Host: 51.79.102.253
-    path: /IOebhLMhl1CTbFHbL95myfRX2
-- cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: 23|🇷🇺 RU_351
-  password: LqlPI19oqnunGNSLMvdXyB
-  port: 16356
-  server: 147.45.60.33
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇷🇺RU
-  name: 23|🇺RU_356
-  password: ZET59LF6DvCC8KVt
-  port: 9005
-  server: 45.89.52.66
-  type: ss
 - alterId: 0
   cipher: auto
   name: 36|俄罗斯 002
@@ -128,75 +140,18 @@ proxies:
     path: /xrenvws
 - alterId: 0
   cipher: auto
-  name: 42|🇸🇪 _瑞典
+  client-fingerprint: chrome
+  name: 32,42|🇦🇿 _阿塞拜疆
   network: ws
-  port: '443'
-  server: 185.146.173.95
+  port: '8443'
+  server: 5.10.246.166
   tls: true
   type: vmess
-  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
   ws-opts:
     headers:
-      Host: jahfkjha.cfd
-    path: /linkws
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 23| GB_247
-  password: bZ87amPpdG7KuWM62bKtm1KHoowuVjnV8CKtq653ymHcg2dPYcPJfnaQ61stuAjr2ZiLDaqH56XpkxEYuwDzzRrMWieebWGt
-  port: 55988
-  server: mx2.drawnrisha.one
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 23|🇧 GB_248
-  password: 2EmWRS1TkS3TkxKApnrihb3aHjDSXRvT1T1K9U2Bruxrnp5A8zmpTxwwTNje6BkVqmn9BgRF6pq8qoRHCfZdcah7BLbjrpT1
-  port: 55988
-  server: 185.5.38.111
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 23|🇧 GB_249
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.47.253.227
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 23|🇧 GB_250
-  password: BpFieMT6SobpqRiKFefvYu7eXk99XfCeWfjpntzSh81FfMx9R7rJW6LTmzH78StTEhCd7w32ZMxbGJZS98gpn1ozr9jAbMoa
-  port: 55988
-  server: 185.5.38.111
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇬🇧GB
-  name: 23|🇧GB_257
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.195
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇬🇧GB
-  name: 23|🇧GB_258
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.198
-  type: ss
-- name: 27,33|[Trojan] 🇬🇧 英国 社会保险安全部
-  password: 4a4768d0-f93b-11ef-b57f-1239d0255272
-  port: 443
-  server: fr1.test3.net
-  skip-cert-verify: true
-  tfo: false
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 30|🇺🇸_US_美国->🇮🇷_IR_伊朗_2
-  password: amazonskr05
-  port: 443
-  server: 35.94.124.230
-  tls: false
-  type: ss
+      Host: lax1.ibgfw.top
+    path: /xrenvws
 proxy-groups:
 - name: 节点选择
   type: select
@@ -209,24 +164,18 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 23|🇦CA_177
-  - 23|🇧GB_258
-  - 23|🇧GB_257
-  - 42|🇯🇵 _日本
-  - 30|🇺🇸_US_美国->🇮🇷_IR_伊朗_2
-  - 42|🇸🇪 _瑞典
+  - 32,42|🇦🇿 _阿塞拜疆
   - 20|🇯🇵
   - 41|11|11|11|11|11|11,16|日本|@ripao...
-  - 23|🇧 GB_249
-  - 27,33|[Trojan] 🇬🇧 英国 社会保险安全部
-  - 42|🇨🇦 _加拿大
-  - 36|加拿大 006
+  - 40|🇭🇰 香港-1B
   - 36|俄罗斯 002
-  - 23|🇧 GB_248
-  - 23|🇺RU_356
-  - 23| GB_247
-  - 23|🇧 GB_250
-  - 23|🇷🇺 RU_351
+  - 35|🇸🇬 12|🇸🇬 狮城特殊|@ripaojiedian
+  - 35|🇯🇵 12|🇯🇵 日本特殊|@ripaojiedian
+  - 35|🇰🇷 12|🇰🇷 韩国特殊|@ripaojiedian
+  - 32,38,39|🇸🇬_SG_新加坡
+  - 42|🇯🇵 _日本
+  - 19,51|HK_Kwu Tung_PCCW IMS Limited_O...
+  - 36|加拿大 006
   url: https://i.ytimg.com/generate_204
   interval: 300
   tolerance: 50
@@ -234,47 +183,35 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 23|🇦CA_177
-  - 23|🇧GB_258
-  - 23|🇧GB_257
-  - 42|🇯🇵 _日本
-  - 30|🇺🇸_US_美国->🇮🇷_IR_伊朗_2
-  - 42|🇸🇪 _瑞典
+  - 32,42|🇦🇿 _阿塞拜疆
   - 20|🇯🇵
   - 41|11|11|11|11|11|11,16|日本|@ripao...
-  - 23|🇧 GB_249
-  - 27,33|[Trojan] 🇬🇧 英国 社会保险安全部
-  - 42|🇨🇦 _加拿大
-  - 36|加拿大 006
+  - 40|🇭🇰 香港-1B
   - 36|俄罗斯 002
-  - 23|🇧 GB_248
-  - 23|🇺RU_356
-  - 23| GB_247
-  - 23|🇧 GB_250
-  - 23|🇷🇺 RU_351
+  - 35|🇸🇬 12|🇸🇬 狮城特殊|@ripaojiedian
+  - 35|🇯🇵 12|🇯🇵 日本特殊|@ripaojiedian
+  - 35|🇰🇷 12|🇰🇷 韩国特殊|@ripaojiedian
+  - 32,38,39|🇸🇬_SG_新加坡
+  - 42|🇯🇵 _日本
+  - 19,51|HK_Kwu Tung_PCCW IMS Limited_O...
+  - 36|加拿大 006
   url: https://i.ytimg.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 23|🇦CA_177
-  - 23|🇧GB_258
-  - 23|🇧GB_257
-  - 42|🇯🇵 _日本
-  - 30|🇺🇸_US_美国->🇮🇷_IR_伊朗_2
-  - 42|🇸🇪 _瑞典
+  - 32,42|🇦🇿 _阿塞拜疆
   - 20|🇯🇵
   - 41|11|11|11|11|11|11,16|日本|@ripao...
-  - 23|🇧 GB_249
-  - 27,33|[Trojan] 🇬🇧 英国 社会保险安全部
-  - 42|🇨🇦 _加拿大
-  - 36|加拿大 006
+  - 40|🇭🇰 香港-1B
   - 36|俄罗斯 002
-  - 23|🇧 GB_248
-  - 23|🇺RU_356
-  - 23| GB_247
-  - 23|🇧 GB_250
-  - 23|🇷🇺 RU_351
+  - 35|🇸🇬 12|🇸🇬 狮城特殊|@ripaojiedian
+  - 35|🇯🇵 12|🇯🇵 日本特殊|@ripaojiedian
+  - 35|🇰🇷 12|🇰🇷 韩国特殊|@ripaojiedian
+  - 32,38,39|🇸🇬_SG_新加坡
+  - 42|🇯🇵 _日本
+  - 19,51|HK_Kwu Tung_PCCW IMS Limited_O...
+  - 36|加拿大 006
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
