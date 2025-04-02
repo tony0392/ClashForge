@@ -32,41 +32,12 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 40|🇭🇰 香港-1B
-  network: tcp
-  port: '19901'
-  server: xg.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: 6a816fcb-ab49-45e2-b672-bef93bd3f332
 - cipher: aes-128-gcm
   name: 20|🇯🇵
   password: shadowsocks
   port: 443
   server: 149.22.87.240
   type: ss
-- alterId: 1
-  cipher: auto
-  country: 🇯🇵JP
-  h2-opts: {}
-  http-opts: {}
-  name: 23|🇯🇵JP_346
-  network: tcp
-  port: 21585
-  server: jp01-alt-vm0.entry.srthdw.art
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
-- cipher: aes-256-cfb
-  name: 32,48,50|JP_speednode_0022
-  password: amazonskr05
-  port: 443
-  server: 54.199.103.26
-  type: ss
-  udp: true
 - alterId: 0
   cipher: none
   name: 41|11|11|11|11|11|11,16|日本|@ripao...
@@ -78,15 +49,36 @@ proxies:
   type: vmess
   uuid: 9e11e992-c3a4-45fb-bb67-5f4f42fcd551
 - cipher: aes-256-cfb
-  name: 48,50|JP_speednode_0020
+  name: 35|🇰🇷 12|🇰🇷 韩国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 13.112.73.126
+  server: 43.201.54.89
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 50|KR_speednode_0047
+  password: amazonskr05
+  port: 443
+  server: 3.38.92.181
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 32,35,38|_SG_
+  password: amazonskr05
+  port: 443
+  server: 54.179.52.175
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 50|SG_speednode_0074
+  password: amazonskr05
+  port: 443
+  server: 13.212.77.19
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇦CA
-  name: 23|🇦CA_242
+  name: 23|🇦CA_144
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
@@ -107,150 +99,185 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: 23| RU_436
+  name: 23| RU_300
+  password: 0zyDRZ1XmNXaaCAN7KEA8a
+  port: 28825
+  server: 45.151.62.54
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 23|🇺 RU_301
+  password: xmuaeFtNoxEcfCkARy21ss
+  port: 18622
+  server: 92.118.112.111
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 23|🇷🇺 RU_302
+  password: CLphyEMQT8nbG8EImX0A2D
+  port: 45635
+  server: 5.35.47.122
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 23|🇷🇺 RU_303
+  password: WfmxKX2FBJRU0Ie9VLIYDL
+  port: 20012
+  server: 141.98.234.93
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 23|🇷🇺 RU_304
   password: uQS5ntVqC00sSKkeNzUiD3
   port: 42090
   server: 89.23.103.125
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: 23|🇷🇺 RU_437
+  name: 23|🇺 RU_305
   password: LqlPI19oqnunGNSLMvdXyB
   port: 16356
   server: 147.45.60.33
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: 23|🇺 RU_438
-  password: xmuaeFtNoxEcfCkARy21ss
-  port: 18622
-  server: 92.118.112.111
-  type: ss
-- cipher: chacha20-ietf-poly1305
   country: 🇷🇺 RU
-  name: 23|🇷🇺 RU_442
+  name: 23|🇷🇺 RU_306
   password: gmYDzSG6K35s8b19oY4fGz
   port: 18622
   server: 92.118.112.111
   type: ss
 - cipher: aes-256-cfb
   country: 🇺RU
-  name: 23|🇷🇺RU_443
-  password: PeHSHm5SqEjBuEXE
-  port: 9065
-  server: 45.89.52.66
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇷🇺RU
-  name: 23|🇺RU_444
+  name: 23|🇷🇺RU_307
   password: M3t2ZEQcMGRWBjRa
   port: 9011
   server: 45.89.52.66
   type: ss
 - cipher: aes-256-cfb
   country: 🇷🇺RU
-  name: 23|🇷🇺RU_445
+  name: 23|🇺RU_308
   password: S7KwUu7yBy58S3Ga
   port: 9042
   server: 45.89.52.66
   type: ss
 - cipher: aes-256-cfb
   country: 🇷🇺RU
-  name: 23|🇷🇺RU_448
+  name: 23|🇷🇺RU_310
+  password: PeHSHm5SqEjBuEXE
+  port: 9065
+  server: 45.89.52.66
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇷🇺RU
+  name: 23|🇷🇺RU_311
   password: JdmRK9gMEqFgs8nP
   port: 9003
   server: 45.89.52.66
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 40|🇷🇺 俄罗斯-莫斯科-F3-001-1A
-  network: ws
-  port: '23039'
-  server: 195.133.5.127
-  tls: false
-  type: vmess
-  uuid: e557738a-bf8e-4bfc-a7ad-d234deb8b90d
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - cipher: chacha20-ietf-poly1305
   country: 🇪 SE
-  name: 23| SE_451
+  name: 23| SE_314
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 45.154.206.192
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 23| GB_308
-  password: FjgGNNHQiELzxXmaHRxxtQbxDDvGXFxYdTbYe91JKZsjvKLHoY9rn9ruYE45377WjtU3m4kmXQZDXiHBJsgVfhmpawEoGvq9
-  port: 55988
-  server: mx2.drawnrisha.one
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 23|🇧 GB_309
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.47.255.22
-  type: ss
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-128-gcm
   country: 🇬🇧 GB
-  name: 23|🇧 GB_310
-  password: bZ87amPpdG7KuWM62bKtm1KHoowuVjnV8CKtq653ymHcg2dPYcPJfnaQ61stuAjr2ZiLDaqH56XpkxEYuwDzzRrMWieebWGt
-  port: 55988
-  server: mx2.drawnrisha.one
+  name: 23|🇧 GB_201
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
-  name: 23|🇬🇧 GB_311
-  password: iZDJs2CDckHKqJ5W7cpvCq2veqsqWn95iqs6Kr6F3YNnyMsk2uPdRrChQfShvH1v56Br1qWEW44qJna5QcMcZF7RCJmdvwuq
+  name: 23|🇬🇧 GB_202
+  password: BpFieMT6SobpqRiKFefvYu7eXk99XfCeWfjpntzSh81FfMx9R7rJW6LTmzH78StTEhCd7w32ZMxbGJZS98gpn1ozr9jAbMoa
   port: 55988
   server: 185.5.38.111
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧 GB
-  name: 23|🇬🇧 GB_313
-  password: 2EmWRS1TkS3TkxKApnrihb3aHjDSXRvT1T1K9U2Bruxrnp5A8zmpTxwwTNje6BkVqmn9BgRF6pq8qoRHCfZdcah7BLbjrpT1
-  port: 55988
-  server: 185.5.38.111
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 23|🇬🇧 GB_314
+  name: 23|🇧 GB_203
   password: 4ju873evpjeaAi8Zq12YoRHWp63o5exdnZ71aUg1YEChiPTc2HkasYhUBxRz7UGi4K6cLrsGaU6b44H4Qa6f4cJn3zBp2cnX
   port: 55988
   server: 185.5.38.111
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧 GB
-  name: 23|🇬🇧 GB_315
-  password: BpFieMT6SobpqRiKFefvYu7eXk99XfCeWfjpntzSh81FfMx9R7rJW6LTmzH78StTEhCd7w32ZMxbGJZS98gpn1ozr9jAbMoa
+  name: 23|🇬🇧 GB_206
+  password: bZ87amPpdG7KuWM62bKtm1KHoowuVjnV8CKtq653ymHcg2dPYcPJfnaQ61stuAjr2ZiLDaqH56XpkxEYuwDzzRrMWieebWGt
+  port: 55988
+  server: mx2.drawnrisha.one
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 23|🇬🇧 GB_209
+  password: 2EmWRS1TkS3TkxKApnrihb3aHjDSXRvT1T1K9U2Bruxrnp5A8zmpTxwwTNje6BkVqmn9BgRF6pq8qoRHCfZdcah7BLbjrpT1
   port: 55988
   server: 185.5.38.111
   type: ss
 - cipher: aes-128-gcm
-  country: 🇧 GB
-  name: 23|🇬🇧 GB_316
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.178
-  type: ss
-- cipher: aes-128-gcm
   country: 🇬🇧GB
-  name: 23|🇬🇧GB_318
+  name: 23|🇧GB_211
   password: shadowsocks
   port: 443
   server: 212.102.53.198
   type: ss
 - cipher: aes-128-gcm
   country: 🇬🇧GB
-  name: 23|🇬🇧GB_319
+  name: 23|🇬🇧GB_212
   password: shadowsocks
   port: 443
   server: 212.102.53.195
   type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  ip-version: dual
+  name: 3,5,23,35,38|_GB_国->🇺_RU_俄罗斯
+  password: sojzFfZN5WMHqzvVJcDJJ9
+  port: 28694
+  server: 77.239.117.121
+  type: ss
+  udp: true
+- alpn:
+  - http/1.1
+  name: 38|🇺🇸_US_美国->_SE_
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.159.217.6
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- cipher: aes-128-gcm
+  ip-version: dual
+  name: 39|🇧🇬_BG_保加利亚->🇺🇸_US_美国
+  password: shadowsocks
+  port: 443
+  server: 149.34.244.80
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  ip-version: dual
+  name: 39,48|MD_bd9a6_0066
+  password: w2HdZnGb5ibh
+  port: 443
+  server: 89.221.225.88
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  country: 🇼 TW
+  name: 23| TW_318
+  password: 79739832-b888-415a-a454-8b53911c944a
+  port: 30332
+  server: vps.200566.xyz
+  type: ss
+- cipher: aes-256-cfb
+  name: 48|TW_bd9a6_0083
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.20.79
+  type: ss
+  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -263,34 +290,39 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 23|🇷🇺 RU_442
-  - 42|VMESS-加拿大-NF解锁加拿大自制剧-ChatGPT-T...
-  - 23|🇦CA_242
-  - 23|🇺 RU_438
-  - 23|🇬🇧GB_318
-  - 23|🇬🇧GB_319
-  - 23|🇬🇧 GB_316
-  - 23| SE_451
+  - 23|🇺 RU_301
+  - 23|🇷🇺 RU_306
+  - 23|🇦CA_144
+  - 23|🇧GB_211
+  - 23|🇬🇧GB_212
+  - 23|🇷🇺 RU_302
+  - 39|🇧🇬_BG_保加利亚->🇺🇸_US_美国
+  - 23|🇧 GB_201
+  - 3,5,23,35,38|_GB_国->🇺_RU_俄罗斯
+  - 38|🇺🇸_US_美国->_SE_
+  - 39,48|MD_bd9a6_0066
   - 20|🇯🇵
-  - 32,48,50|JP_speednode_0022
+  - 23| SE_314
+  - 42|VMESS-加拿大-NF解锁加拿大自制剧-ChatGPT-T...
+  - 23|🇬🇧 GB_209
   - 41|11|11|11|11|11|11,16|日本|@ripao...
-  - 48,50|JP_speednode_0020
-  - 23| RU_436
-  - 23|🇬🇧 GB_313
-  - 23|🇷🇺RU_445
-  - 23|🇬🇧 GB_315
-  - 23|🇬🇧 GB_314
-  - 40|🇷🇺 俄罗斯-莫斯科-F3-001-1A
-  - 23|🇷🇺RU_443
-  - 23|🇬🇧 GB_311
-  - 23|🇺RU_444
-  - 40|🇭🇰 香港-1B
-  - 23|🇷🇺RU_448
-  - 23|🇯🇵JP_346
-  - 23|🇷🇺 RU_437
-  - 23|🇧 GB_310
-  - 23| GB_308
-  - 23|🇧 GB_309
+  - 23|🇺 RU_305
+  - 23|🇧 GB_203
+  - 23|🇷🇺RU_311
+  - 23|🇷🇺RU_310
+  - 50|SG_speednode_0074
+  - 23| RU_300
+  - 23|🇬🇧 GB_202
+  - 50|KR_speednode_0047
+  - 23|🇷🇺 RU_303
+  - 32,35,38|_SG_
+  - 23|🇷🇺RU_307
+  - 23| TW_318
+  - 23|🇬🇧 GB_206
+  - 23|🇺RU_308
+  - 23|🇷🇺 RU_304
+  - 35|🇰🇷 12|🇰🇷 韩国特殊|@ripaojiedian
+  - 48|TW_bd9a6_0083
   url: https://i.ytimg.com/generate_204
   interval: 300
   tolerance: 50
@@ -298,67 +330,77 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 23|🇷🇺 RU_442
-  - 42|VMESS-加拿大-NF解锁加拿大自制剧-ChatGPT-T...
-  - 23|🇦CA_242
-  - 23|🇺 RU_438
-  - 23|🇬🇧GB_318
-  - 23|🇬🇧GB_319
-  - 23|🇬🇧 GB_316
-  - 23| SE_451
+  - 23|🇺 RU_301
+  - 23|🇷🇺 RU_306
+  - 23|🇦CA_144
+  - 23|🇧GB_211
+  - 23|🇬🇧GB_212
+  - 23|🇷🇺 RU_302
+  - 39|🇧🇬_BG_保加利亚->🇺🇸_US_美国
+  - 23|🇧 GB_201
+  - 3,5,23,35,38|_GB_国->🇺_RU_俄罗斯
+  - 38|🇺🇸_US_美国->_SE_
+  - 39,48|MD_bd9a6_0066
   - 20|🇯🇵
-  - 32,48,50|JP_speednode_0022
+  - 23| SE_314
+  - 42|VMESS-加拿大-NF解锁加拿大自制剧-ChatGPT-T...
+  - 23|🇬🇧 GB_209
   - 41|11|11|11|11|11|11,16|日本|@ripao...
-  - 48,50|JP_speednode_0020
-  - 23| RU_436
-  - 23|🇬🇧 GB_313
-  - 23|🇷🇺RU_445
-  - 23|🇬🇧 GB_315
-  - 23|🇬🇧 GB_314
-  - 40|🇷🇺 俄罗斯-莫斯科-F3-001-1A
-  - 23|🇷🇺RU_443
-  - 23|🇬🇧 GB_311
-  - 23|🇺RU_444
-  - 40|🇭🇰 香港-1B
-  - 23|🇷🇺RU_448
-  - 23|🇯🇵JP_346
-  - 23|🇷🇺 RU_437
-  - 23|🇧 GB_310
-  - 23| GB_308
-  - 23|🇧 GB_309
+  - 23|🇺 RU_305
+  - 23|🇧 GB_203
+  - 23|🇷🇺RU_311
+  - 23|🇷🇺RU_310
+  - 50|SG_speednode_0074
+  - 23| RU_300
+  - 23|🇬🇧 GB_202
+  - 50|KR_speednode_0047
+  - 23|🇷🇺 RU_303
+  - 32,35,38|_SG_
+  - 23|🇷🇺RU_307
+  - 23| TW_318
+  - 23|🇬🇧 GB_206
+  - 23|🇺RU_308
+  - 23|🇷🇺 RU_304
+  - 35|🇰🇷 12|🇰🇷 韩国特殊|@ripaojiedian
+  - 48|TW_bd9a6_0083
   url: https://i.ytimg.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 23|🇷🇺 RU_442
-  - 42|VMESS-加拿大-NF解锁加拿大自制剧-ChatGPT-T...
-  - 23|🇦CA_242
-  - 23|🇺 RU_438
-  - 23|🇬🇧GB_318
-  - 23|🇬🇧GB_319
-  - 23|🇬🇧 GB_316
-  - 23| SE_451
+  - 23|🇺 RU_301
+  - 23|🇷🇺 RU_306
+  - 23|🇦CA_144
+  - 23|🇧GB_211
+  - 23|🇬🇧GB_212
+  - 23|🇷🇺 RU_302
+  - 39|🇧🇬_BG_保加利亚->🇺🇸_US_美国
+  - 23|🇧 GB_201
+  - 3,5,23,35,38|_GB_国->🇺_RU_俄罗斯
+  - 38|🇺🇸_US_美国->_SE_
+  - 39,48|MD_bd9a6_0066
   - 20|🇯🇵
-  - 32,48,50|JP_speednode_0022
+  - 23| SE_314
+  - 42|VMESS-加拿大-NF解锁加拿大自制剧-ChatGPT-T...
+  - 23|🇬🇧 GB_209
   - 41|11|11|11|11|11|11,16|日本|@ripao...
-  - 48,50|JP_speednode_0020
-  - 23| RU_436
-  - 23|🇬🇧 GB_313
-  - 23|🇷🇺RU_445
-  - 23|🇬🇧 GB_315
-  - 23|🇬🇧 GB_314
-  - 40|🇷🇺 俄罗斯-莫斯科-F3-001-1A
-  - 23|🇷🇺RU_443
-  - 23|🇬🇧 GB_311
-  - 23|🇺RU_444
-  - 40|🇭🇰 香港-1B
-  - 23|🇷🇺RU_448
-  - 23|🇯🇵JP_346
-  - 23|🇷🇺 RU_437
-  - 23|🇧 GB_310
-  - 23| GB_308
-  - 23|🇧 GB_309
+  - 23|🇺 RU_305
+  - 23|🇧 GB_203
+  - 23|🇷🇺RU_311
+  - 23|🇷🇺RU_310
+  - 50|SG_speednode_0074
+  - 23| RU_300
+  - 23|🇬🇧 GB_202
+  - 50|KR_speednode_0047
+  - 23|🇷🇺 RU_303
+  - 32,35,38|_SG_
+  - 23|🇷🇺RU_307
+  - 23| TW_318
+  - 23|🇬🇧 GB_206
+  - 23|🇺RU_308
+  - 23|🇷🇺 RU_304
+  - 35|🇰🇷 12|🇰🇷 韩国特殊|@ripaojiedian
+  - 48|TW_bd9a6_0083
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
