@@ -32,6 +32,15 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
+- alterId: 0
+  cipher: auto
+  name: 40|🇭🇰 香港-1B
+  network: tcp
+  port: '19901'
+  server: xg.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: f625f61d-2f2f-4286-8d6c-ad372c1bea71
 - cipher: aes-128-gcm
   name: 20|🇯🇵
   password: shadowsocks
@@ -48,29 +57,118 @@ proxies:
   tls: false
   type: vmess
   uuid: 9e11e992-c3a4-45fb-bb67-5f4f42fcd551
-- alterId: 0
-  cipher: auto
-  name: 42|VMESS-加拿大-NF解锁加拿大自制剧-ChatGPT-T...
-  network: ws
-  port: 80
-  server: 51.79.102.253
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-  ws-opts:
-    headers:
-      Host: 51.79.102.253
-    path: /IOebhLMhl1CTbFHbL95myfRX2
 - cipher: chacha20-ietf-poly1305
-  ip-version: dual
-  name: 3,5,38,49|🇩🇪_DE_德国->🇸🇬_SG_新加坡
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 45.87.175.166
-  tls: false
+  country: 🇦CA
+  name: 23|🇦CA_110
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: ca225.vpnbook.com
   type: ss
-  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 23|🇷🇺 RU_202
+  password: 0zyDRZ1XmNXaaCAN7KEA8a
+  port: 28825
+  server: 45.151.62.54
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 23|🇷🇺 RU_206
+  password: uQS5ntVqC00sSKkeNzUiD3
+  port: 42090
+  server: 89.23.103.125
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇷🇺RU
+  name: 23|🇷🇺RU_207
+  password: S7KwUu7yBy58S3Ga
+  port: 9042
+  server: 45.89.52.66
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇷🇺RU
+  name: 23|🇷RU_209
+  password: JdmRK9gMEqFgs8nP
+  port: 9003
+  server: 45.89.52.66
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇷🇺RU
+  name: 23|🇺RU_210
+  password: PeHSHm5SqEjBuEXE
+  port: 9065
+  server: 45.89.52.66
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇪 SE
+  name: 23| SE_213
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 45.154.206.192
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 23| GB_138
+  password: iZDJs2CDckHKqJ5W7cpvCq2veqsqWn95iqs6Kr6F3YNnyMsk2uPdRrChQfShvH1v56Br1qWEW44qJna5QcMcZF7RCJmdvwuq
+  port: 55988
+  server: 185.5.38.111
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 23|🇧 GB_139
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.47.255.22
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 23|🇬🇧 GB_142
+  password: 4ju873evpjeaAi8Zq12YoRHWp63o5exdnZ71aUg1YEChiPTc2HkasYhUBxRz7UGi4K6cLrsGaU6b44H4Qa6f4cJn3zBp2cnX
+  port: 55988
+  server: 185.5.38.111
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 23|🇧 GB_143
+  password: 2EmWRS1TkS3TkxKApnrihb3aHjDSXRvT1T1K9U2Bruxrnp5A8zmpTxwwTNje6BkVqmn9BgRF6pq8qoRHCfZdcah7BLbjrpT1
+  port: 55988
+  server: 185.5.38.111
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 23|🇬🇧 GB_144
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.47.253.227
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇬🇧 GB
+  name: 23|🇬🇧 GB_145
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇧GB
+  name: 23|🇧GB_148
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.198
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇬🇧GB
+  name: 23|🇬🇧GB_149
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.195
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇼 TW
+  name: 23| TW_216
+  password: 79739832-b888-415a-a454-8b53911c944a
+  port: 30332
+  server: vps.200566.xyz
+  type: ss
 proxy-groups:
 - name: 节点选择
   type: select
@@ -83,10 +181,25 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 41|11|11|11|11|11|11,16|日本|@ripao...
+  - 23|🇦CA_110
+  - 23|🇧GB_148
+  - 23|🇬🇧GB_149
+  - 23|🇬🇧 GB_145
+  - 23| SE_213
+  - 23|🇷🇺 RU_206
+  - 23|🇷🇺 RU_202
   - 20|🇯🇵
-  - 3,5,38,49|🇩🇪_DE_德国->🇸🇬_SG_新加坡
-  - 42|VMESS-加拿大-NF解锁加拿大自制剧-ChatGPT-T...
+  - 41|11|11|11|11|11|11,16|日本|@ripao...
+  - 23|🇷RU_209
+  - 23|🇷🇺RU_207
+  - 40|🇭🇰 香港-1B
+  - 23|🇬🇧 GB_144
+  - 23|🇺RU_210
+  - 23|🇧 GB_143
+  - 23| TW_216
+  - 23|🇬🇧 GB_142
+  - 23|🇧 GB_139
+  - 23| GB_138
   url: https://i.ytimg.com/generate_204
   interval: 300
   tolerance: 50
@@ -94,19 +207,49 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 41|11|11|11|11|11|11,16|日本|@ripao...
+  - 23|🇦CA_110
+  - 23|🇧GB_148
+  - 23|🇬🇧GB_149
+  - 23|🇬🇧 GB_145
+  - 23| SE_213
+  - 23|🇷🇺 RU_206
+  - 23|🇷🇺 RU_202
   - 20|🇯🇵
-  - 3,5,38,49|🇩🇪_DE_德国->🇸🇬_SG_新加坡
-  - 42|VMESS-加拿大-NF解锁加拿大自制剧-ChatGPT-T...
+  - 41|11|11|11|11|11|11,16|日本|@ripao...
+  - 23|🇷RU_209
+  - 23|🇷🇺RU_207
+  - 40|🇭🇰 香港-1B
+  - 23|🇬🇧 GB_144
+  - 23|🇺RU_210
+  - 23|🇧 GB_143
+  - 23| TW_216
+  - 23|🇬🇧 GB_142
+  - 23|🇧 GB_139
+  - 23| GB_138
   url: https://i.ytimg.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 41|11|11|11|11|11|11,16|日本|@ripao...
+  - 23|🇦CA_110
+  - 23|🇧GB_148
+  - 23|🇬🇧GB_149
+  - 23|🇬🇧 GB_145
+  - 23| SE_213
+  - 23|🇷🇺 RU_206
+  - 23|🇷🇺 RU_202
   - 20|🇯🇵
-  - 3,5,38,49|🇩🇪_DE_德国->🇸🇬_SG_新加坡
-  - 42|VMESS-加拿大-NF解锁加拿大自制剧-ChatGPT-T...
+  - 41|11|11|11|11|11|11,16|日本|@ripao...
+  - 23|🇷RU_209
+  - 23|🇷🇺RU_207
+  - 40|🇭🇰 香港-1B
+  - 23|🇬🇧 GB_144
+  - 23|🇺RU_210
+  - 23|🇧 GB_143
+  - 23| TW_216
+  - 23|🇬🇧 GB_142
+  - 23|🇧 GB_139
+  - 23| GB_138
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
