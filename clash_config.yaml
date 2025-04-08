@@ -32,15 +32,13 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 40|🇭🇰 香港-1B
-  network: tcp
-  port: '19901'
-  server: xg.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: 04971f4c-b798-4a33-96cb-8306d155494c
+- cipher: chacha20-ietf-poly1305
+  country: 🇰 HK
+  name: 23| HK_147
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
+  type: ss
 - alterId: 0
   cipher: auto
   name: 42,45|13|香港6|@ripaojiedian
@@ -69,7 +67,7 @@ proxies:
   uuid: 9e11e992-c3a4-45fb-bb67-5f4f42fcd551
 - cipher: chacha20-ietf-poly1305
   country: 🇦CA
-  name: 23|🇦CA_105
+  name: 23|🇦CA_103
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
@@ -88,135 +86,43 @@ proxies:
     headers:
       Host: us2vmess.rnmcnm.com
     path: /123qwe
-- cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: 23| RU_218
-  password: xmuaeFtNoxEcfCkARy21ss
-  port: 18622
-  server: 92.118.112.111
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇷🇺 RU
-  name: 23|🇺 RU_220
-  password: gmYDzSG6K35s8b19oY4fGz
-  port: 18622
-  server: 92.118.112.111
+- cipher: aes-256-cfb
+  name: 19,28|_CH_->🇪_BE_
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 84.17.53.160
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: 23|🇷🇺 RU_221
-  password: 0zyDRZ1XmNXaaCAN7KEA8a
-  port: 28825
-  server: 45.151.62.54
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇺RU
-  name: 23|🇷🇺RU_224
-  password: S7KwUu7yBy58S3Ga
-  port: 9042
-  server: 45.89.52.66
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇷🇺RU
-  name: 23|🇺RU_225
-  password: M3t2ZEQcMGRWBjRa
-  port: 9011
-  server: 45.89.52.66
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇷🇺RU
-  name: 23|🇺RU_226
-  password: ZET59LF6DvCC8KVt
-  port: 9005
-  server: 45.89.52.66
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇷🇺RU
-  name: 23|🇺RU_227
-  password: PeHSHm5SqEjBuEXE
-  port: 9065
-  server: 45.89.52.66
+  name: 23|🇺 RU_202
+  password: LqlPI19oqnunGNSLMvdXyB
+  port: 16356
+  server: 147.45.60.33
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇪 SE
-  name: 23| SE_230
+  name: 23| SE_208
   password: zCbrIk12Qlg9YcERdnzjoh
   port: 39649
   server: sto2.a.edgeservers.org
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇪 SE
-  name: 23|🇪 SE_231
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 45.154.206.192
-  type: ss
 - cipher: aes-128-gcm
   country: 🇧 GB
-  name: 23| GB_134
+  name: 23|🇬🇧 GB_134
   password: shadowsocks
   port: 443
   server: 141.98.101.178
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 23|🇬🇧 GB_135
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.47.255.22
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 23|🇧 GB_136
-  password: 2EmWRS1TkS3TkxKApnrihb3aHjDSXRvT1T1K9U2Bruxrnp5A8zmpTxwwTNje6BkVqmn9BgRF6pq8qoRHCfZdcah7BLbjrpT1
-  port: 55988
-  server: 185.5.38.111
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 23|🇬🇧 GB_138
-  password: BpFieMT6SobpqRiKFefvYu7eXk99XfCeWfjpntzSh81FfMx9R7rJW6LTmzH78StTEhCd7w32ZMxbGJZS98gpn1ozr9jAbMoa
-  port: 55988
-  server: 185.5.38.111
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 23|🇧 GB_139
-  password: bZ87amPpdG7KuWM62bKtm1KHoowuVjnV8CKtq653ymHcg2dPYcPJfnaQ61stuAjr2ZiLDaqH56XpkxEYuwDzzRrMWieebWGt
-  port: 55988
-  server: mx2.drawnrisha.one
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 23|🇬🇧 GB_140
-  password: iZDJs2CDckHKqJ5W7cpvCq2veqsqWn95iqs6Kr6F3YNnyMsk2uPdRrChQfShvH1v56Br1qWEW44qJna5QcMcZF7RCJmdvwuq
-  port: 55988
-  server: 185.5.38.111
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 23|🇬🇧 GB_141
-  password: 4ju873evpjeaAi8Zq12YoRHWp63o5exdnZ71aUg1YEChiPTc2HkasYhUBxRz7UGi4K6cLrsGaU6b44H4Qa6f4cJn3zBp2cnX
-  port: 55988
-  server: 185.5.38.111
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 23|🇬🇧 GB_143
-  password: FjgGNNHQiELzxXmaHRxxtQbxDDvGXFxYdTbYe91JKZsjvKLHoY9rn9ruYE45377WjtU3m4kmXQZDXiHBJsgVfhmpawEoGvq9
-  port: 55988
-  server: mx2.drawnrisha.one
-  type: ss
 - cipher: aes-128-gcm
   country: 🇬🇧GB
-  name: 23|🇧GB_146
+  name: 23|🇧GB_140
   password: shadowsocks
   port: 443
   server: 212.102.53.195
   type: ss
 - cipher: aes-128-gcm
   country: 🇧GB
-  name: 23|🇬🇧GB_147
+  name: 23|🇬🇧GB_141
   password: shadowsocks
   port: 443
   server: 212.102.53.198
@@ -228,51 +134,21 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 36|英国 002
-  network: ws
-  port: 23451
-  server: frankfurt.faforex.eu.org
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4e309c18-ee5f-45f3-8f28-66467d1e0c4f
-  ws-opts:
-    headers:
-      Host: us-new03.daluquan.top
-    path: /itdog?ed=2560
-- allowInsecure: ''
-  name: 36|英国 009
-  network: tcp
-  password: eG92F3gh09
-  port: 1935
-  server: 51.15.86.181
+- name: 33,42|🇬🇧 英国 社会保险安全部
+  password: telegram-id-directvpn
+  port: 22222
+  server: 51.44.194.36
   skip-cert-verify: false
-  sni: x1ams-scaleway.devefun.net
-  tls: true
+  sni: trojan.burgerip.co.uk
+  tfo: false
   type: trojan
-- cipher: aes-256-cfb
-  name: 28|_CH_->🇪_BE_
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 84.17.53.160
-  type: ss
+  udp: true
 - cipher: aes-128-gcm
   ip-version: dual
-  name: 30,49|🇧🇬_BG_保加利亚->🇺🇸_US_美国
+  name: 30,45,49|🇧🇬_BG_保加利亚->🇺🇸_US_美国
   password: shadowsocks
   port: 443
   server: 149.34.244.80
-  tls: false
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 30,49|🇬🇧_GB_英国->🇯🇵_JP_日本
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 51.15.15.82
   tls: false
   type: ss
   udp: true
@@ -289,36 +165,20 @@ proxy-groups:
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
   - 42|VMESS-未知>乌克兰-NF解锁加拿大地区非自制剧-Cha...
-  - 23|🇦CA_105
-  - 23|🇧GB_146
-  - 23|🇬🇧GB_147
-  - 30,49|🇧🇬_BG_保加利亚->🇺🇸_US_美国
-  - 23| GB_134
-  - 36|英国 009
-  - 28|_CH_->🇪_BE_
-  - 23|🇬🇧 GB_135
-  - 29|GB英国(mibei77.com 米贝节点分享)
-  - 23|🇬🇧 GB_141
-  - 23| SE_230
-  - 23|🇬🇧 GB_140
-  - 23| RU_218
-  - 23|🇬🇧 GB_138
-  - 23|🇧 GB_136
-  - 23|🇺RU_227
-  - 41|11|11|11|11|11|11,16|日本|@ripao...
   - 20|🇯🇵
-  - 23|🇷🇺RU_224
-  - 23|🇷🇺 RU_221
-  - 40|🇭🇰 香港-1B
+  - 41|11|11|11|11|11|11,16|日本|@ripao...
+  - 23|🇦CA_103
+  - 23|🇬🇧GB_141
+  - 23|🇧GB_140
+  - 30,45,49|🇧🇬_BG_保加利亚->🇺🇸_US_美国
+  - 23|🇬🇧 GB_134
   - 42,45|13|香港6|@ripaojiedian
-  - 23|🇺RU_225
-  - 23|🇺 RU_220
-  - 36|英国 002
-  - 23|🇬🇧 GB_143
-  - 30,49|🇬🇧_GB_英国->🇯🇵_JP_日本
-  - 23|🇧 GB_139
-  - 23|🇺RU_226
-  - 23|🇪 SE_231
+  - 19,28|_CH_->🇪_BE_
+  - 23|🇺 RU_202
+  - 29|GB英国(mibei77.com 米贝节点分享)
+  - 33,42|🇬🇧 英国 社会保险安全部
+  - 23| SE_208
+  - 23| HK_147
   url: https://i.ytimg.com/generate_204
   interval: 300
   tolerance: 50
@@ -327,72 +187,40 @@ proxy-groups:
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
   - 42|VMESS-未知>乌克兰-NF解锁加拿大地区非自制剧-Cha...
-  - 23|🇦CA_105
-  - 23|🇧GB_146
-  - 23|🇬🇧GB_147
-  - 30,49|🇧🇬_BG_保加利亚->🇺🇸_US_美国
-  - 23| GB_134
-  - 36|英国 009
-  - 28|_CH_->🇪_BE_
-  - 23|🇬🇧 GB_135
-  - 29|GB英国(mibei77.com 米贝节点分享)
-  - 23|🇬🇧 GB_141
-  - 23| SE_230
-  - 23|🇬🇧 GB_140
-  - 23| RU_218
-  - 23|🇬🇧 GB_138
-  - 23|🇧 GB_136
-  - 23|🇺RU_227
-  - 41|11|11|11|11|11|11,16|日本|@ripao...
   - 20|🇯🇵
-  - 23|🇷🇺RU_224
-  - 23|🇷🇺 RU_221
-  - 40|🇭🇰 香港-1B
+  - 41|11|11|11|11|11|11,16|日本|@ripao...
+  - 23|🇦CA_103
+  - 23|🇬🇧GB_141
+  - 23|🇧GB_140
+  - 30,45,49|🇧🇬_BG_保加利亚->🇺🇸_US_美国
+  - 23|🇬🇧 GB_134
   - 42,45|13|香港6|@ripaojiedian
-  - 23|🇺RU_225
-  - 23|🇺 RU_220
-  - 36|英国 002
-  - 23|🇬🇧 GB_143
-  - 30,49|🇬🇧_GB_英国->🇯🇵_JP_日本
-  - 23|🇧 GB_139
-  - 23|🇺RU_226
-  - 23|🇪 SE_231
+  - 19,28|_CH_->🇪_BE_
+  - 23|🇺 RU_202
+  - 29|GB英国(mibei77.com 米贝节点分享)
+  - 33,42|🇬🇧 英国 社会保险安全部
+  - 23| SE_208
+  - 23| HK_147
   url: https://i.ytimg.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
   - 42|VMESS-未知>乌克兰-NF解锁加拿大地区非自制剧-Cha...
-  - 23|🇦CA_105
-  - 23|🇧GB_146
-  - 23|🇬🇧GB_147
-  - 30,49|🇧🇬_BG_保加利亚->🇺🇸_US_美国
-  - 23| GB_134
-  - 36|英国 009
-  - 28|_CH_->🇪_BE_
-  - 23|🇬🇧 GB_135
-  - 29|GB英国(mibei77.com 米贝节点分享)
-  - 23|🇬🇧 GB_141
-  - 23| SE_230
-  - 23|🇬🇧 GB_140
-  - 23| RU_218
-  - 23|🇬🇧 GB_138
-  - 23|🇧 GB_136
-  - 23|🇺RU_227
-  - 41|11|11|11|11|11|11,16|日本|@ripao...
   - 20|🇯🇵
-  - 23|🇷🇺RU_224
-  - 23|🇷🇺 RU_221
-  - 40|🇭🇰 香港-1B
+  - 41|11|11|11|11|11|11,16|日本|@ripao...
+  - 23|🇦CA_103
+  - 23|🇬🇧GB_141
+  - 23|🇧GB_140
+  - 30,45,49|🇧🇬_BG_保加利亚->🇺🇸_US_美国
+  - 23|🇬🇧 GB_134
   - 42,45|13|香港6|@ripaojiedian
-  - 23|🇺RU_225
-  - 23|🇺 RU_220
-  - 36|英国 002
-  - 23|🇬🇧 GB_143
-  - 30,49|🇬🇧_GB_英国->🇯🇵_JP_日本
-  - 23|🇧 GB_139
-  - 23|🇺RU_226
-  - 23|🇪 SE_231
+  - 19,28|_CH_->🇪_BE_
+  - 23|🇺 RU_202
+  - 29|GB英国(mibei77.com 米贝节点分享)
+  - 33,42|🇬🇧 英国 社会保险安全部
+  - 23| SE_208
+  - 23| HK_147
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
