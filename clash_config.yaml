@@ -32,6 +32,38 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
+- name: 0,1,31|🇫🇷_FR_法国_1
+  type: trojan
+  server: 141.227.138.29
+  port: 1935
+  password: hZ7JkYVAfB
+  sni: x1ch-ovh.devefun.net
+  skip-cert-verify: false
+- name: 0,1,30,31|🇫🇷_FR_法国_2
+  type: trojan
+  server: 141.227.160.167
+  port: 1935
+  password: AXpQXM4vNh
+  sni: x2swe-ovh.devefun.net
+  skip-cert-verify: false
+- name: 11,28|捷克 001
+  type: vmess
+  server: 185.189.32.179
+  port: 48737
+  uuid: 3680a006-d824-4574-90f3-21226dae6903
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  sni: ''
+  ws-opts: {}
+- name: 11,25|[Trojan]
+  type: trojan
+  server: 18.175.71.57
+  port: 22222
+  password: telegram-id-privatevpns
+  sni: trojan.burgerip.co.uk
+  skip-cert-verify: false
 - name: 12|🇺🇸
   type: ss
   server: 37.19.198.160
@@ -39,7 +71,7 @@ proxies:
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 12,15|_50
+- name: 12,15|_56
   type: ss
   server: 109.201.152.181
   port: 443
@@ -74,47 +106,61 @@ proxies:
     path: /itdog?ed=2560
     headers:
       Host: us-new03.daluquan.top
-- name: 15,20|_IT_利->🇷🇺_RU_俄罗斯
+- name: 15|_01
   type: ss
-  server: 37.143.129.230
-  port: 989
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
+  server: 38.110.1.88
+  port: 5600
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
   udp: true
 - name: 15|_02
   type: ss
-  server: 212.102.53.197
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  server: 5.188.181.201
+  port: 9054
+  cipher: aes-256-cfb
+  password: VcFuyXvND2yQWSFY
   udp: true
-- name: 15|_04
+- name: 15|_03
   type: ss
   server: uk-dc1.yangon.club
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 15|_05
+- name: 15|_04
   type: ss
   server: 142.4.216.225
   port: 80
   cipher: chacha20-ietf-poly1305
   password: JIhN6rBKkaEboLNXVSv5rq
   udp: true
-- name: 15|_06
+- name: 15|_05
   type: ss
   server: 38.121.43.71
   port: 2376
   cipher: aes-256-gcm
   password: faBAoD54k87UJG7
   udp: true
-- name: 15|_07
+- name: 15|_06
   type: ss
   server: 80.92.204.106
   port: 9000
   cipher: aes-256-cfb
   password: a3GFYt36Sm82Vys9
+  udp: true
+- name: 15|_07
+  type: ss
+  server: 80.92.204.106
+  port: 9024
+  cipher: aes-256-cfb
+  password: BejrQvtu9sqUeNuZ
+  udp: true
+- name: 15|_08
+  type: ss
+  server: 80.92.204.106
+  port: 9005
+  cipher: aes-256-cfb
+  password: ZET59LF6DvCC8KVt
   udp: true
 - name: 15|_09
   type: ss
@@ -123,315 +169,336 @@ proxies:
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 15|_11
+- name: 15|_10
   type: ss
   server: 45.144.48.63
   port: 57456
   cipher: chacha20-ietf-poly1305
   password: d3837224ed465f00
   udp: true
-- name: 15|_12
+- name: 15|_11
   type: ss
   server: 38.121.43.71
   port: 8008
   cipher: aes-256-gcm
   password: XKFKl2rULjIp74
   udp: true
-- name: 15|_13
+- name: 15|_12
   type: ss
   server: war.ssvpnapp.win
   port: 57456
   cipher: chacha20-ietf-poly1305
   password: d3837224ed465f00
   udp: true
-- name: 15|_14
+- name: 15|_13
   type: ss
   server: 38.121.43.71
   port: 8000
   cipher: aes-256-gcm
   password: KixLvKzwjekG00rm
   udp: true
-- name: 15|_17
+- name: 15|_15
   type: ss
   server: 80.92.204.106
-  port: 9094
+  port: 9010
   cipher: aes-256-cfb
-  password: rpgbNnU9rDDU4aWZ
+  password: f63gg8EruDnUrmz4
   udp: true
-- name: 15|_19
+- name: 15|_17
   type: ss
   server: 80.92.204.106
   port: 9020
   cipher: aes-256-cfb
   password: BNmAXXxAHYpTRdzu
   udp: true
-- name: 15|_21
-  type: ss
-  server: 38.121.43.71
-  port: 6697
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
-  udp: true
-- name: 15|_22
-  type: ss
-  server: 38.121.43.71
-  port: 5003
-  cipher: aes-256-gcm
-  password: g5MeD6Ft3CWlJId
-  udp: true
-- name: 15|_23
-  type: ss
-  server: 38.121.43.71
-  port: 7307
-  cipher: aes-256-gcm
-  password: FoOiGlkAA9yPEGP
-  udp: true
-- name: 15|_27
-  type: ss
-  server: 38.121.43.71
-  port: 5001
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 15|_28
-  type: ss
-  server: 38.110.1.88
-  port: 5499
-  cipher: aes-256-gcm
-  password: lGqs95QkFHo2NV
-  udp: true
-- name: 15|_29
-  type: ss
-  server: 38.121.43.71
-  port: 7002
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
-- name: 15|_30
-  type: ss
-  server: 38.121.43.71
-  port: 6679
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
-  udp: true
-- name: 15|_31
-  type: ss
-  server: 38.121.43.71
-  port: 5004
-  cipher: aes-256-gcm
-  password: g5MeD6Ft3CWlJId
-  udp: true
-- name: 15|_32
-  type: ss
-  server: 38.121.43.71
-  port: 443
-  cipher: aes-256-gcm
-  password: pKEW8JPByTVTLtM
-  udp: true
-- name: 15|_33
-  type: ss
-  server: 38.121.43.71
-  port: 3306
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 15|_34
-  type: ss
-  server: 38.121.43.71
-  port: 5000
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 15|_35
-  type: ss
-  server: 38.121.43.71
-  port: 5600
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 15|_36
-  type: ss
-  server: 38.121.43.71
-  port: 8888
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 15|_37
-  type: ss
-  server: 38.121.43.71
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
-- name: 15|_38
-  type: ss
-  server: 38.110.1.197
-  port: 5003
-  cipher: aes-256-gcm
-  password: g5MeD6Ft3CWlJId
-  udp: true
-- name: 15|_39
-  type: ss
-  server: 38.121.43.71
-  port: 8091
-  cipher: aes-256-gcm
-  password: PCnnH6SQSnfoS27
-  udp: true
-- name: 15|_40
-  type: ss
-  server: 38.114.114.143
-  port: 443
-  cipher: aes-256-gcm
-  password: pKEW8JPByTVTLtM
-  udp: true
-- name: 15|_41
-  type: ss
-  server: 38.121.43.71
-  port: 9101
-  cipher: aes-256-gcm
-  password: e4FCWrgpkji3QY
-  udp: true
-- name: 15|_42
-  type: ss
-  server: 38.110.1.88
-  port: 5600
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 15|_43
+- name: 15|_20
   type: ss
   server: 38.121.43.71
   port: 3389
   cipher: aes-256-gcm
   password: Y6R9pAtvxxzmGC
   udp: true
-- name: 15|_44
+- name: 15|_21
+  type: ss
+  server: 38.121.43.71
+  port: 7307
+  cipher: aes-256-gcm
+  password: FoOiGlkAA9yPEGP
+  udp: true
+- name: 15|_28
   type: ss
   server: 38.121.43.71
   port: 2375
   cipher: aes-256-gcm
   password: faBAoD54k87UJG7
   udp: true
+- name: 15|_29
+  type: ss
+  server: 5.188.181.201
+  port: 9014
+  cipher: aes-256-cfb
+  password: KnJGad3FqTvjqbaX
+  udp: true
+- name: 15|_31
+  type: ss
+  server: 38.121.43.71
+  port: 5001
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 15|_32
+  type: ss
+  server: 38.110.1.88
+  port: 5499
+  cipher: aes-256-gcm
+  password: lGqs95QkFHo2NV
+  udp: true
+- name: 15|_33
+  type: ss
+  server: 38.121.43.71
+  port: 7002
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
+- name: 15|_34
+  type: ss
+  server: 38.121.43.71
+  port: 6679
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+  udp: true
+- name: 15|_35
+  type: ss
+  server: 38.121.43.71
+  port: 5004
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+  udp: true
+- name: 15|_36
+  type: ss
+  server: 38.121.43.71
+  port: 443
+  cipher: aes-256-gcm
+  password: pKEW8JPByTVTLtM
+  udp: true
+- name: 15|_37
+  type: ss
+  server: 38.121.43.71
+  port: 3306
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 15|_38
+  type: ss
+  server: 38.121.43.71
+  port: 5500
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+  udp: true
+- name: 15|_39
+  type: ss
+  server: 38.121.43.71
+  port: 5000
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 15|_40
+  type: ss
+  server: 38.121.43.71
+  port: 5600
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 15|_41
+  type: ss
+  server: 38.121.43.71
+  port: 8888
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 15|_42
+  type: ss
+  server: 38.121.43.71
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
+- name: 15|_43
+  type: ss
+  server: 38.110.1.197
+  port: 5003
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+  udp: true
+- name: 15|_44
+  type: ss
+  server: 38.121.43.71
+  port: 8091
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
+  udp: true
 - name: 15|_45
+  type: ss
+  server: 38.114.114.143
+  port: 443
+  cipher: aes-256-gcm
+  password: pKEW8JPByTVTLtM
+  udp: true
+- name: 15|_46
+  type: ss
+  server: 38.121.43.71
+  port: 9101
+  cipher: aes-256-gcm
+  password: e4FCWrgpkji3QY
+  udp: true
+- name: 15,20,22,41|🇩🇪_DE_德国->🇨🇷_CR_哥斯达黎加
+  type: ss
+  server: 193.108.119.230
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+  udp: true
+- name: 15|_48
+  type: ss
+  server: 38.121.43.71
+  port: 5003
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+  udp: true
+- name: 15|_49
+  type: ss
+  server: 212.102.53.197
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 15|_50
   type: ss
   server: 38.110.1.88
   port: 2376
   cipher: aes-256-gcm
   password: faBAoD54k87UJG7
   udp: true
-- name: 15|_47
-  type: ss
-  server: 95.164.9.144
-  port: 2927
-  cipher: chacha20-ietf-poly1305
-  password: ug4Fu79SEREdFGlt2sUyT4
-  udp: true
-- name: 15|_48
+- name: 15|_52
   type: ss
   server: 45.89.52.66
+  port: 9001
+  cipher: aes-256-cfb
+  password: UkXRsXvR6buDMG2Y
+  udp: true
+- name: 15|_53
+  type: ss
+  server: 5.188.181.201
   port: 9030
   cipher: aes-256-cfb
   password: GeregetR8cvQHzYr
   udp: true
-- name: 15|_49
+- name: 15|_55
   type: ss
   server: 38.121.43.71
   port: 8882
   cipher: aes-256-gcm
   password: kDWvXYZoTBcGkC4
   udp: true
-- name: 15|_52
+- name: 15,41|🇺🇸_US_美国_1
+  type: ss
+  server: 184.170.241.194
+  port: 443
+  cipher: aes-128-cfb
+  password: shadowsocks
+  udp: true
+- name: 15|_58
   type: ss
   server: 212.102.53.79
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 15|_53
+- name: 15|_59
   type: ss
   server: 38.114.114.143
   port: 2376
   cipher: aes-256-gcm
   password: faBAoD54k87UJG7
   udp: true
-- name: 15|_54
+- name: 15|_60
   type: ss
   server: 45.55.2.232
   port: 14293
   cipher: aes-256-cfb
   password: 2170f8
   udp: true
-- name: 15|_55
+- name: 15|_61
   type: ss
   server: 38.121.43.71
   port: 8119
   cipher: aes-256-gcm
   password: cdBIDV42DCwnfIN
   udp: true
-- name: 15|_56
+- name: 15|_62
   type: ss
   server: 212.102.53.193
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 15|_57
+- name: 15|_63
   type: ss
   server: 212.102.53.80
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 15|_58
+- name: 15|_64
   type: ss
   server: 212.102.53.81
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 15|_59
+- name: 15|_65
   type: ss
   server: 212.102.53.196
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 15|_60
+- name: 15|_66
   type: ss
   server: 212.102.53.78
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 15|_61
+- name: 15|_68
+  type: ss
+  server: 5.188.181.201
+  port: 9000
+  cipher: aes-256-cfb
+  password: a3GFYt36Sm82Vys9
+  udp: true
+- name: 15|_71
+  type: ss
+  server: 37.143.129.230
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+  udp: true
+- name: 15|_74
   type: ss
   server: 185.123.101.241
   port: 989
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
   udp: true
-- name: 15|_62
+- name: 15|_76
   type: ss
   server: 194.71.126.31
   port: 989
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
   udp: true
-- name: 15,37,38|🇹🇼
-  type: ss
-  server: 154.223.20.79
-  port: 989
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-  udp: true
-- name: 15|_65
-  type: ss
-  server: 151.115.88.168
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: jVfvb6hLeWi0qvVekVRz3p
-  udp: true
-- name: 15|_66
+- name: 15|_77
   type: vmess
   server: 152.69.197.60
   port: 1069
@@ -442,89 +509,117 @@ proxies:
   tls: false
   sni: ''
   ws-opts: {}
-- name: 15|_80
+- name: 15|_81
   type: trojan
-  server: 43.167.160.4
-  port: 443
-  password: oIwjHDXpKePvYIg8
-  sni: myvps.cfd
+  server: 80.225.222.181
+  port: 10230
+  password: b19c4375-d847-4c40-9824-4767c88b5f38
+  sni: www.hk-jd.top
   skip-cert-verify: false
-- name: 15|-ldox
+- name: 15|🇪-2KDN
   type: ss
-  server: 103.106.1.92
-  port: 23492
+  server: sto2.a.edgeservers.org
+  port: 39649
   cipher: chacha20-ietf-poly1305
-  password: yMX9WGPgUEcRZmlaa0YHHC
+  password: zCbrIk12Qlg9YcERdnzjoh
   udp: true
-- name: 15|🇦CA_96
+- name: 15|-oKc4
   type: ss
-  server: ca225.vpnbook.com
-  port: 80
-  cipher: chacha20-ietf-poly1305
-  password: JIhN6rBKkaEboLNXVSv5rq
-  udp: true
-- name: 15|-3Mp7
-  type: ss
-  server: 195.181.160.6
+  server: 185.123.101.241
   port: 990
   cipher: chacha20-ietf-poly1305
   password: f8f7aCzcPKbsF8p3
   udp: true
-- name: 15|-bgPJ
+- name: 15|🇸-GlDa
   type: ss
-  server: 92.118.205.228
-  port: 990
-  cipher: chacha20-ietf-poly1305
-  password: f8f7aCzcPKbsF8p3
+  server: 142.202.49.84
+  port: 6679
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
   udp: true
-- name: 15|🇩🇪DE_109
+- name: 15|🇺🇸
   type: ss
-  server: 80.92.204.106
-  port: 9061
-  cipher: aes-256-cfb
-  password: 4R3hUfZ2FHhDmNcP
-  udp: true
-- name: 15|🇩🇪DE_114
-  type: ss
-  server: 80.92.204.106
-  port: 9025
-  cipher: aes-256-cfb
-  password: XPtzA9sCug3SPR4c
-  udp: true
-- name: 15|-rAKx
-  type: ss
-  server: mx2.drawnrisha.one
-  port: 55988
-  cipher: chacha20-ietf-poly1305
-  password: bZ87amPpdG7KuWM62bKtm1KHoowuVjnV8CKtq653ymHcg2dPYcPJfnaQ61stuAjr2ZiLDaqH56XpkxEYuwDzzRrMWieebWGt
-  udp: true
-- name: 15|🇧-d5P2
-  type: ss
-  server: 185.126.239.250
-  port: 990
-  cipher: chacha20-ietf-poly1305
-  password: f8f7aCzcPKbsF8p3
-  udp: true
-- name: 15|🇬🇧-ARnw
-  type: ss
-  server: 185.5.38.111
-  port: 55988
-  cipher: chacha20-ietf-poly1305
-  password: 2EmWRS1TkS3TkxKApnrihb3aHjDSXRvT1T1K9U2Bruxrnp5A8zmpTxwwTNje6BkVqmn9BgRF6pq8qoRHCfZdcah7BLbjrpT1
-  udp: true
-- name: 15|🇬🇧-KXNw
-  type: ss
-  server: 185.5.38.111
-  port: 55988
-  cipher: chacha20-ietf-poly1305
-  password: 4ju873evpjeaAi8Zq12YoRHWp63o5exdnZ71aUg1YEChiPTc2HkasYhUBxRz7UGi4K6cLrsGaU6b44H4Qa6f4cJn3zBp2cnX
-  udp: true
-- name: 15|🇧-IRED
-  type: ss
-  server: 141.98.101.178
+  server: 156.146.62.164
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
+  udp: true
+- name: 15|🇺🇸-Kzal
+  type: ss
+  server: 208.67.105.196
+  port: 42029
+  cipher: chacha20-ietf-poly1305
+  password: SjdGCHwafjktt1rzpGxTKYTvVBWb8Xa6E5DTr6MzbdHQSwvpLiDczj3n6MBjy2uyFSzgqgvCWsDQmpM4VQzfPzyGYF58wdyD
+  udp: true
+- name: 15|🇸-wmqw
+  type: ss
+  server: 156.146.62.161
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 15|🇺🇸-86Ba
+  type: ss
+  server: 142.202.49.84
+  port: 5003
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+  udp: true
+- name: 15|🇺🇸-Lhgz
+  type: ss
+  server: 156.146.62.162
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 15|🇺🇸-LglP
+  type: ss
+  server: 156.146.38.170
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 15|🇺🇸-OD34
+  type: ss
+  server: 208.67.105.87
+  port: 42501
+  cipher: chacha20-ietf-poly1305
+  password: nq96KftrZAj3LuFQESqmn44Mo5oCuo2cipoEsae25mrmHG2oJ4VT37scBfVBpN5DWtUELZutVhhXs8Le5B8fZ9hLn9ytwvbf
+  udp: true
+- name: 15|🇸-QU8l
+  type: ss
+  server: 142.202.49.84
+  port: 5004
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+  udp: true
+- name: 15|🇺🇸-Lz62
+  type: ss
+  server: 156.146.38.167
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 15|🇺🇸-cMhF
+  type: ss
+  server: 142.202.49.84
+  port: 8090
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
+  udp: true
+- name: 15|🇺🇸-VHhr
+  type: ss
+  server: 142.202.49.84
+  port: 5001
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 15|🇺🇸-HVDK
+  type: ss
+  server: 154.90.63.193
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: f8f7aCzcPKbsF8p3
   udp: true
 - name: 15,28|美国 324
   type: vmess
@@ -537,297 +632,125 @@ proxies:
   tls: false
   sni: appsvs.shop
   ws-opts: {}
-- name: 15|🇺🇸US_277
+- name: 15|🇸US_281
   type: ss
   server: 38.121.43.71
-  port: 6379
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
-  udp: true
-- name: 15|🇺🇸US_278
-  type: ss
-  server: 38.114.114.143
-  port: 4444
-  cipher: aes-256-gcm
-  password: pKEW8JPByTVTLtM
-  udp: true
-- name: 15|🇺🇸US_279
-  type: ss
-  server: 23.157.40.101
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 15|🇺🇸US_280
-  type: ss
-  server: 23.157.40.101
   port: 8009
   cipher: aes-256-gcm
   password: XKFKl2rULjIp74
   udp: true
-- name: 15|🇺🇸US_281
-  type: ss
-  server: 38.121.43.97
-  port: 7306
-  cipher: aes-256-gcm
-  password: FoOiGlkAA9yPEGP
-  udp: true
-- name: 15|🇺🇸US_283
+- name: 15|🇺🇸US_282
   type: ss
   server: 23.157.40.101
   port: 8000
   cipher: aes-256-gcm
   password: KixLvKzwjekG00rm
   udp: true
-- name: 21|US美国(mibei77.com-Tkh0
+- name: 15|🇺🇸US_283
   type: ss
-  server: 38.110.1.146
-  port: 8882
+  server: 45.158.171.66
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 15|🇺🇸US_286
+  type: ss
+  server: 38.114.114.143
+  port: 7002
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
+- name: 15|🇺🇸US_287
+  type: ss
+  server: 38.121.43.71
+  port: 8080
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+  udp: true
+- name: 15|🇺🇸US_289
+  type: ss
+  server: 23.157.40.101
+  port: 8009
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 15|🇺🇸US_293
+  type: ss
+  server: 38.114.114.143
+  port: 4444
+  cipher: aes-256-gcm
+  password: pKEW8JPByTVTLtM
+  udp: true
+- name: 15|🇺🇸US_294
+  type: ss
+  server: 38.121.43.71
+  port: 8881
   cipher: aes-256-gcm
   password: kDWvXYZoTBcGkC4
   udp: true
-- name: 22|_BG_->🇺🇸_US_美国
+- name: 15|🇺🇸US_295
   type: ss
-  server: 149.34.244.80
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  server: 38.121.43.71
+  port: 8090
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
   udp: true
-- name: 24,28|美国 465
-  type: vmess
-  server: sanjose05.852224.ggff.net
-  port: 443
-  uuid: 89c1aea7-4d0d-4013-b663-0f94a3e6bdbd
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  sni: sanjose05.852224.ggff.net
-  ws-opts:
-    path: /YfB29GXf4cThJQeJb
-    headers:
-      Host: sanjose05.852224.ggff.net
-- name: 28|美国 030
-  type: vmess
-  server: 104.18.149.76
-  port: 443
-  uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  sni: us.kkp.me.eu.org
-  ws-opts:
-    path: /aa
-    headers:
-      Host: us.kkp.me.eu.org
-- name: 28|美国 338
-  type: vmess
-  server: 104.17.137.127
-  port: 443
-  uuid: 56529ad8-61d2-4bfa-aa0b-a800719cb5fe
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  sni: tw.niskakowski.ggff.net
-  ws-opts:
-    path: /aa
-    headers:
-      Host: tw.niskakowski.ggff.net
-- name: 28|美国 342
-  type: vmess
-  server: 104.21.21.226
-  port: 80
-  uuid: a8fce442-ae9a-4cc1-a0cc-20308ff0a0db
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: false
-  sni: ''
-  ws-opts:
-    path: /lsUVr8VBxF4ylXngZ
-    headers:
-      Host: 1c.890689.xyz
-- name: 28|捷克 001
-  type: vmess
-  server: 185.189.32.179
-  port: 48737
-  uuid: 3680a006-d824-4574-90f3-21226dae6903
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  sni: ''
-  ws-opts: {}
-- name: 28|法国
-  type: trojan
-  server: 141.227.128.69
-  port: 1935
-  password: utF6JLQd2x
-  sni: x1es-ovh.devefun.net
-  skip-cert-verify: false
-- name: 28|英国-ayG7
-  type: trojan
-  server: 51.15.86.181
-  port: 1935
-  password: eG92F3gh09
-  sni: x1ams-scaleway.devefun.net
-  skip-cert-verify: false
-- name: 28|美国 391
-  type: vmess
-  server: 1743919941.tencentapp.cn
-  port: 2096
-  uuid: 3bb3c730-e107-49c5-a0b2-b576d1b26a5e
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  sni: 1743919978.speed.adl.cccp.freefly.pp.ua
-  ws-opts:
-    path: /
-    headers:
-      Host: 1743919978.speed.adl.cccp.freefly.pp.ua
-- name: 28|美国 392
-  type: vmess
-  server: 1743919941.tencentapp.cn
-  port: 8443
-  uuid: 3bb3c730-e107-49c5-a0b2-b576d1b26a5e
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  sni: 1743919978.speed.laxha.cccp.freefly.pp.ua
-  ws-opts:
-    path: /
-    headers:
-      Host: 1743919978.speed.laxha.cccp.freefly.pp.ua
-- name: 28|美国 397
-  type: vmess
-  server: 141.101.120.195
-  port: 2096
-  uuid: 3bb3c730-e107-49c5-a0b2-b576d1b26a5e
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  sni: 1743919978.speed.adl.cccp.freefly.pp.ua
-  ws-opts:
-    path: /
-    headers:
-      Host: 1743919978.speed.adl.cccp.freefly.pp.ua
-- name: 28|美国 414
-  type: vmess
-  server: 1744007541.tencentapp.cn
-  port: 8443
-  uuid: 381cb6d1-6ad4-4909-8494-b8d786cf78ce
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  sni: 1744007578.speed.adl.cccp.freefly.pp.ua
-  ws-opts:
-    path: /
-    headers:
-      Host: 1744007578.speed.adl.cccp.freefly.pp.ua
-- name: 28|美国 421
-  type: vmess
-  server: 141.101.120.64
-  port: 2053
-  uuid: 381cb6d1-6ad4-4909-8494-b8d786cf78ce
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  sni: ''
-  ws-opts:
-    path: /
-    headers:
-      Host: 1744007578.speed.zjgza.cccp.freefly.pp.ua
-- name: 28|美国 422
-  type: vmess
-  server: 104.18.119.222
-  port: 2096
-  uuid: 3bb3c730-e107-49c5-a0b2-b576d1b26a5e
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  sni: ''
-  ws-opts:
-    path: /
-    headers:
-      Host: 1743256978.speed.adl.cccp.freefly.pp.ua
-- name: 28|印度
-  type: trojan
-  server: supreme-penguin.shiner427.skin
-  port: 443
-  password: '74260698218909400'
-  sni: supreme-penguin.shiner427.skin
-  skip-cert-verify: false
-- name: 28|英国-dXHy
-  type: trojan
-  server: 85.234.65.11
-  port: 443
-  password: '74260698218909400'
-  sni: happy-bluebird.shiner427.skin
-  skip-cert-verify: false
-- name: 28|英国-X0Hs
-  type: trojan
-  server: smooth-imp.shiner427.skin
-  port: 443
-  password: '74260698218909400'
-  sni: smooth-imp.shiner427.skin
-  skip-cert-verify: false
-- name: 28|英国-EAph
-  type: trojan
-  server: 85.234.83.133
-  port: 443
-  password: '74260698218909400'
-  sni: smooth-imp.shiner427.skin
-  skip-cert-verify: false
-- name: 28|约旦
-  type: trojan
-  server: 109.107.159.122
-  port: 443
-  password: '74260698218909400'
-  sni: electric-mallard.shiner427.skin
-  skip-cert-verify: false
-- name: 28|印度-bWJI
-  type: trojan
-  server: 202.78.163.140
-  port: 443
-  password: '74260698218909400'
-  sni: supreme-penguin.shiner427.skin
-  skip-cert-verify: false
-- name: 28|英国-yBH3
-  type: trojan
-  server: happy-bluebird.shiner427.skin
-  port: 443
-  password: '74260698218909400'
-  sni: happy-bluebird.shiner427.skin
-  skip-cert-verify: false
-- name: 28|印度-G5p2
-  type: trojan
-  server: 202.78.163.116
-  port: 443
-  password: '74260698218909400'
-  sni: patient-crawdad.shiner427.skin
-  skip-cert-verify: false
-- name: 28|美国 459
-  type: vmess
-  server: icook.hk
-  port: 443
-  uuid: 2faaf996-d2b0-440d-8258-81f2b05dd0e4
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  sni: ''
-  ws-opts:
-    path: /vmess-argo?ed=2560
-    headers:
-      Host: glitch.nnuu.nyc.mn
+- name: 15|🇺🇸US_296
+  type: ss
+  server: 38.121.43.71
+  port: 8118
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+  udp: true
+- name: 15|🇺🇸US_297
+  type: ss
+  server: 38.121.43.71
+  port: 6379
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+  udp: true
+- name: 15|🇺🇸US_298
+  type: ss
+  server: 23.157.40.101
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 15|🇺🇸US_301
+  type: ss
+  server: 23.157.40.101
+  port: 7307
+  cipher: aes-256-gcm
+  password: FoOiGlkAA9yPEGP
+  udp: true
+- name: 15|🇺🇸US_302
+  type: ss
+  server: 216.39.248.133
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
+- name: 15|🇺🇸US_303
+  type: ss
+  server: 38.121.43.71
+  port: 9102
+  cipher: aes-256-gcm
+  password: e4FCWrgpkji3QY
+  udp: true
+- name: 15|🇺🇸US_304
+  type: ss
+  server: 38.121.43.71
+  port: 5601
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 15|-LlyR
+  type: ss
+  server: 213.109.147.242
+  port: 62685
+  cipher: chacha20-ietf-poly1305
+  password: VpKABcOpNNA0l5G2AVOmw8
+  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -840,106 +763,106 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 15,28|美国 324
-  - 15|_54
-  - 15|🇺🇸US_278
-  - 15|_40
-  - 15|_53
-  - 15|🇺🇸US_279
-  - 15|🇺🇸US_280
-  - 15|🇺🇸US_283
-  - 28|美国 030
-  - 28|美国 342
-  - 28|美国 392
-  - 15|_23
-  - 15|_21
-  - 15|_49
-  - 15|_06
-  - 12|🇺🇸
-  - 15|_33
-  - 15|🇺🇸US_277
-  - 15|🇺🇸US_281
-  - 28|捷克 001
-  - 15|_22
-  - 15|_14
-  - 15|_35
-  - 15|_32
-  - 28|美国 397
-  - 15|_44
-  - 15|_29
-  - 15|_36
-  - 28|美国 422
-  - 15|_12
-  - 15|_39
-  - 15|_43
-  - 15|_41
-  - 15|_38
-  - 15|_55
-  - 15|_05
-  - 15|🇦CA_96
-  - 15|_27
-  - 12|🇯🇵
-  - 28|美国 391
-  - 28|美国 421
-  - 21|US美国(mibei77.com-Tkh0
-  - 15|_59
-  - 15|_58
-  - 15|_45
-  - 15|_52
-  - 15|_56
-  - 15|_28
-  - 15|_57
-  - 15|_02
   - 15|_60
-  - 15|_09
-  - 12,15|_50
-  - 22|_BG_->🇺🇸_US_美国
-  - 28|美国 459
-  - 28|英国-EAph
-  - 12|🇬🇧
-  - 15|-ldox
-  - 15|🇧-IRED
-  - 15|_37
-  - 15|_34
-  - 15|_66
-  - 15|_30
-  - 15|_04
-  - 15|_65
-  - 28|美国 414
-  - 28|英国-X0Hs
-  - 15|_42
-  - 24,28|美国 465
-  - 15|_31
-  - 15,20|_IT_利->🇷🇺_RU_俄罗斯
-  - 14|🇩🇪 德国 | DEU 25
-  - 28|英国-ayG7
-  - 15|_47
-  - 28|英国-dXHy
-  - 28|约旦
-  - 15|_19
-  - 15|_11
-  - 28|印度-G5p2
-  - 28|印度-bWJI
-  - 28|法国
-  - 15|🇩🇪DE_114
-  - 15|-bgPJ
-  - 28|英国-yBH3
+  - 15,28|美国 324
+  - 15|🇺🇸US_293
+  - 15|_45
+  - 15|🇺🇸US_286
+  - 15|_59
+  - 15|🇺🇸US_289
+  - 15|🇺🇸US_301
+  - 15|🇺🇸US_298
+  - 15|🇺🇸US_282
+  - 15,41|🇺🇸_US_美国_1
+  - 15|🇺🇸-LglP
+  - 15|🇺🇸-Lz62
+  - 15|🇺🇸US_302
+  - 15|_44
+  - 15|_41
+  - 15|_46
   - 15|_13
-  - 15|-3Mp7
-  - 15|🇬🇧-KXNw
-  - 28|美国 338
-  - 15|_62
-  - 15|🇬🇧-ARnw
-  - 15|_61
-  - 15|_80
+  - 15|_40
+  - 15|_20
+  - 15|_39
+  - 12|🇺🇸
+  - 11,28|捷克 001
+  - 15|🇺🇸US_297
+  - 15|🇸-QU8l
+  - 15|_04
   - 15|_48
-  - 15|_17
+  - 15|_31
+  - 15|🇺🇸US_304
+  - 15|_21
+  - 15|_28
+  - 15|_33
+  - 15|_34
+  - 15|_05
+  - 15|_42
+  - 15|_61
+  - 15|🇸-GlDa
+  - 15|🇺🇸-86Ba
+  - 15|_36
+  - 15|_38
+  - 15|_11
+  - 15|🇸US_281
+  - 15|_55
+  - 15|_37
+  - 15|🇺🇸-cMhF
+  - 15|🇺🇸US_303
+  - 15|🇺🇸US_294
+  - 15|🇺🇸US_287
+  - 12|🇯🇵
+  - 15|_50
+  - 15|_43
+  - 15|_09
+  - 15|_65
+  - 15|_49
+  - 15|_58
+  - 15|_64
+  - 15|_62
+  - 15|_66
+  - 15|_63
+  - 15|_32
+  - 15|_68
+  - 12,15|_56
+  - 15|_53
+  - 15|🇺🇸US_283
+  - 15|_02
+  - 12|🇬🇧
+  - 15|🇺🇸
+  - 15|🇺🇸-Lhgz
+  - 15|🇸-wmqw
+  - 15|_77
+  - 15|_29
+  - 15|_03
+  - 15|_01
+  - 15|🇺🇸-VHhr
+  - 15|-LlyR
+  - 15|🇺🇸US_296
+  - 15|_10
+  - 15,20,22,41|🇩🇪_DE_德国->🇨🇷_CR_哥斯达黎加
+  - 15|_08
   - 15|_07
-  - 15,37,38|🇹🇼
-  - 15|🇩🇪DE_109
-  - 15|🇧-d5P2
-  - 15|-rAKx
-  - 28|印度
+  - 11,25|[Trojan]
+  - 15|_17
+  - 15|🇺🇸-OD34
+  - 15|_35
+  - 14|🇩🇪 德国 | DEU 25
+  - 15|🇪-2KDN
+  - 15|_06
+  - 15|_15
+  - 0,1,31|🇫🇷_FR_法国_1
+  - 0,1,30,31|🇫🇷_FR_法国_2
+  - 15|🇺🇸-HVDK
+  - 15|_12
+  - 15|_71
+  - 15|_76
+  - 15|🇺🇸-Kzal
+  - 15|-oKc4
+  - 15|_74
+  - 15|🇺🇸US_295
+  - 15|_81
+  - 15|_52
   url: https://i.ytimg.com/generate_204
   interval: 300
   tolerance: 50
@@ -947,211 +870,211 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 15,28|美国 324
-  - 15|_54
-  - 15|🇺🇸US_278
-  - 15|_40
-  - 15|_53
-  - 15|🇺🇸US_279
-  - 15|🇺🇸US_280
-  - 15|🇺🇸US_283
-  - 28|美国 030
-  - 28|美国 342
-  - 28|美国 392
-  - 15|_23
-  - 15|_21
-  - 15|_49
-  - 15|_06
-  - 12|🇺🇸
-  - 15|_33
-  - 15|🇺🇸US_277
-  - 15|🇺🇸US_281
-  - 28|捷克 001
-  - 15|_22
-  - 15|_14
-  - 15|_35
-  - 15|_32
-  - 28|美国 397
-  - 15|_44
-  - 15|_29
-  - 15|_36
-  - 28|美国 422
-  - 15|_12
-  - 15|_39
-  - 15|_43
-  - 15|_41
-  - 15|_38
-  - 15|_55
-  - 15|_05
-  - 15|🇦CA_96
-  - 15|_27
-  - 12|🇯🇵
-  - 28|美国 391
-  - 28|美国 421
-  - 21|US美国(mibei77.com-Tkh0
-  - 15|_59
-  - 15|_58
-  - 15|_45
-  - 15|_52
-  - 15|_56
-  - 15|_28
-  - 15|_57
-  - 15|_02
   - 15|_60
-  - 15|_09
-  - 12,15|_50
-  - 22|_BG_->🇺🇸_US_美国
-  - 28|美国 459
-  - 28|英国-EAph
-  - 12|🇬🇧
-  - 15|-ldox
-  - 15|🇧-IRED
-  - 15|_37
-  - 15|_34
-  - 15|_66
-  - 15|_30
-  - 15|_04
-  - 15|_65
-  - 28|美国 414
-  - 28|英国-X0Hs
-  - 15|_42
-  - 24,28|美国 465
-  - 15|_31
-  - 15,20|_IT_利->🇷🇺_RU_俄罗斯
-  - 14|🇩🇪 德国 | DEU 25
-  - 28|英国-ayG7
-  - 15|_47
-  - 28|英国-dXHy
-  - 28|约旦
-  - 15|_19
-  - 15|_11
-  - 28|印度-G5p2
-  - 28|印度-bWJI
-  - 28|法国
-  - 15|🇩🇪DE_114
-  - 15|-bgPJ
-  - 28|英国-yBH3
+  - 15,28|美国 324
+  - 15|🇺🇸US_293
+  - 15|_45
+  - 15|🇺🇸US_286
+  - 15|_59
+  - 15|🇺🇸US_289
+  - 15|🇺🇸US_301
+  - 15|🇺🇸US_298
+  - 15|🇺🇸US_282
+  - 15,41|🇺🇸_US_美国_1
+  - 15|🇺🇸-LglP
+  - 15|🇺🇸-Lz62
+  - 15|🇺🇸US_302
+  - 15|_44
+  - 15|_41
+  - 15|_46
   - 15|_13
-  - 15|-3Mp7
-  - 15|🇬🇧-KXNw
-  - 28|美国 338
-  - 15|_62
-  - 15|🇬🇧-ARnw
-  - 15|_61
-  - 15|_80
+  - 15|_40
+  - 15|_20
+  - 15|_39
+  - 12|🇺🇸
+  - 11,28|捷克 001
+  - 15|🇺🇸US_297
+  - 15|🇸-QU8l
+  - 15|_04
   - 15|_48
-  - 15|_17
+  - 15|_31
+  - 15|🇺🇸US_304
+  - 15|_21
+  - 15|_28
+  - 15|_33
+  - 15|_34
+  - 15|_05
+  - 15|_42
+  - 15|_61
+  - 15|🇸-GlDa
+  - 15|🇺🇸-86Ba
+  - 15|_36
+  - 15|_38
+  - 15|_11
+  - 15|🇸US_281
+  - 15|_55
+  - 15|_37
+  - 15|🇺🇸-cMhF
+  - 15|🇺🇸US_303
+  - 15|🇺🇸US_294
+  - 15|🇺🇸US_287
+  - 12|🇯🇵
+  - 15|_50
+  - 15|_43
+  - 15|_09
+  - 15|_65
+  - 15|_49
+  - 15|_58
+  - 15|_64
+  - 15|_62
+  - 15|_66
+  - 15|_63
+  - 15|_32
+  - 15|_68
+  - 12,15|_56
+  - 15|_53
+  - 15|🇺🇸US_283
+  - 15|_02
+  - 12|🇬🇧
+  - 15|🇺🇸
+  - 15|🇺🇸-Lhgz
+  - 15|🇸-wmqw
+  - 15|_77
+  - 15|_29
+  - 15|_03
+  - 15|_01
+  - 15|🇺🇸-VHhr
+  - 15|-LlyR
+  - 15|🇺🇸US_296
+  - 15|_10
+  - 15,20,22,41|🇩🇪_DE_德国->🇨🇷_CR_哥斯达黎加
+  - 15|_08
   - 15|_07
-  - 15,37,38|🇹🇼
-  - 15|🇩🇪DE_109
-  - 15|🇧-d5P2
-  - 15|-rAKx
-  - 28|印度
+  - 11,25|[Trojan]
+  - 15|_17
+  - 15|🇺🇸-OD34
+  - 15|_35
+  - 14|🇩🇪 德国 | DEU 25
+  - 15|🇪-2KDN
+  - 15|_06
+  - 15|_15
+  - 0,1,31|🇫🇷_FR_法国_1
+  - 0,1,30,31|🇫🇷_FR_法国_2
+  - 15|🇺🇸-HVDK
+  - 15|_12
+  - 15|_71
+  - 15|_76
+  - 15|🇺🇸-Kzal
+  - 15|-oKc4
+  - 15|_74
+  - 15|🇺🇸US_295
+  - 15|_81
+  - 15|_52
   url: https://i.ytimg.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 15,28|美国 324
-  - 15|_54
-  - 15|🇺🇸US_278
-  - 15|_40
-  - 15|_53
-  - 15|🇺🇸US_279
-  - 15|🇺🇸US_280
-  - 15|🇺🇸US_283
-  - 28|美国 030
-  - 28|美国 342
-  - 28|美国 392
-  - 15|_23
-  - 15|_21
-  - 15|_49
-  - 15|_06
-  - 12|🇺🇸
-  - 15|_33
-  - 15|🇺🇸US_277
-  - 15|🇺🇸US_281
-  - 28|捷克 001
-  - 15|_22
-  - 15|_14
-  - 15|_35
-  - 15|_32
-  - 28|美国 397
-  - 15|_44
-  - 15|_29
-  - 15|_36
-  - 28|美国 422
-  - 15|_12
-  - 15|_39
-  - 15|_43
-  - 15|_41
-  - 15|_38
-  - 15|_55
-  - 15|_05
-  - 15|🇦CA_96
-  - 15|_27
-  - 12|🇯🇵
-  - 28|美国 391
-  - 28|美国 421
-  - 21|US美国(mibei77.com-Tkh0
-  - 15|_59
-  - 15|_58
-  - 15|_45
-  - 15|_52
-  - 15|_56
-  - 15|_28
-  - 15|_57
-  - 15|_02
   - 15|_60
-  - 15|_09
-  - 12,15|_50
-  - 22|_BG_->🇺🇸_US_美国
-  - 28|美国 459
-  - 28|英国-EAph
-  - 12|🇬🇧
-  - 15|-ldox
-  - 15|🇧-IRED
-  - 15|_37
-  - 15|_34
-  - 15|_66
-  - 15|_30
-  - 15|_04
-  - 15|_65
-  - 28|美国 414
-  - 28|英国-X0Hs
-  - 15|_42
-  - 24,28|美国 465
-  - 15|_31
-  - 15,20|_IT_利->🇷🇺_RU_俄罗斯
-  - 14|🇩🇪 德国 | DEU 25
-  - 28|英国-ayG7
-  - 15|_47
-  - 28|英国-dXHy
-  - 28|约旦
-  - 15|_19
-  - 15|_11
-  - 28|印度-G5p2
-  - 28|印度-bWJI
-  - 28|法国
-  - 15|🇩🇪DE_114
-  - 15|-bgPJ
-  - 28|英国-yBH3
+  - 15,28|美国 324
+  - 15|🇺🇸US_293
+  - 15|_45
+  - 15|🇺🇸US_286
+  - 15|_59
+  - 15|🇺🇸US_289
+  - 15|🇺🇸US_301
+  - 15|🇺🇸US_298
+  - 15|🇺🇸US_282
+  - 15,41|🇺🇸_US_美国_1
+  - 15|🇺🇸-LglP
+  - 15|🇺🇸-Lz62
+  - 15|🇺🇸US_302
+  - 15|_44
+  - 15|_41
+  - 15|_46
   - 15|_13
-  - 15|-3Mp7
-  - 15|🇬🇧-KXNw
-  - 28|美国 338
-  - 15|_62
-  - 15|🇬🇧-ARnw
-  - 15|_61
-  - 15|_80
+  - 15|_40
+  - 15|_20
+  - 15|_39
+  - 12|🇺🇸
+  - 11,28|捷克 001
+  - 15|🇺🇸US_297
+  - 15|🇸-QU8l
+  - 15|_04
   - 15|_48
-  - 15|_17
+  - 15|_31
+  - 15|🇺🇸US_304
+  - 15|_21
+  - 15|_28
+  - 15|_33
+  - 15|_34
+  - 15|_05
+  - 15|_42
+  - 15|_61
+  - 15|🇸-GlDa
+  - 15|🇺🇸-86Ba
+  - 15|_36
+  - 15|_38
+  - 15|_11
+  - 15|🇸US_281
+  - 15|_55
+  - 15|_37
+  - 15|🇺🇸-cMhF
+  - 15|🇺🇸US_303
+  - 15|🇺🇸US_294
+  - 15|🇺🇸US_287
+  - 12|🇯🇵
+  - 15|_50
+  - 15|_43
+  - 15|_09
+  - 15|_65
+  - 15|_49
+  - 15|_58
+  - 15|_64
+  - 15|_62
+  - 15|_66
+  - 15|_63
+  - 15|_32
+  - 15|_68
+  - 12,15|_56
+  - 15|_53
+  - 15|🇺🇸US_283
+  - 15|_02
+  - 12|🇬🇧
+  - 15|🇺🇸
+  - 15|🇺🇸-Lhgz
+  - 15|🇸-wmqw
+  - 15|_77
+  - 15|_29
+  - 15|_03
+  - 15|_01
+  - 15|🇺🇸-VHhr
+  - 15|-LlyR
+  - 15|🇺🇸US_296
+  - 15|_10
+  - 15,20,22,41|🇩🇪_DE_德国->🇨🇷_CR_哥斯达黎加
+  - 15|_08
   - 15|_07
-  - 15,37,38|🇹🇼
-  - 15|🇩🇪DE_109
-  - 15|🇧-d5P2
-  - 15|-rAKx
-  - 28|印度
+  - 11,25|[Trojan]
+  - 15|_17
+  - 15|🇺🇸-OD34
+  - 15|_35
+  - 14|🇩🇪 德国 | DEU 25
+  - 15|🇪-2KDN
+  - 15|_06
+  - 15|_15
+  - 0,1,31|🇫🇷_FR_法国_1
+  - 0,1,30,31|🇫🇷_FR_法国_2
+  - 15|🇺🇸-HVDK
+  - 15|_12
+  - 15|_71
+  - 15|_76
+  - 15|🇺🇸-Kzal
+  - 15|-oKc4
+  - 15|_74
+  - 15|🇺🇸US_295
+  - 15|_81
+  - 15|_52
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
