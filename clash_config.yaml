@@ -67,20 +67,6 @@ proxies:
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 13|🇩🇪 德国 | DEU
-  type: vmess
-  server: de01.sh-cloudflare.sbs
-  port: 2096
-  uuid: 43598593-b7af-43e6-a21b-879f0fd5324f
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  sni: de01.sh-cloudflare.sbs
-  ws-opts:
-    path: /
-    headers:
-      Host: de01.sh-cloudflare.sbs
 proxy-groups:
 - name: 节点选择
   type: select
@@ -94,9 +80,8 @@ proxy-groups:
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
   - 11|🇺🇸
-  - 10|🇬🇧3
   - 11|🇯🇵
-  - 13|🇩🇪 德国 | DEU
+  - 10|🇬🇧3
   - 10,22|[SS]
   - 0,1,27,38|🇺🇸_US_美国_1
   url: https://i.ytimg.com/generate_204
@@ -107,9 +92,8 @@ proxy-groups:
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
   - 11|🇺🇸
-  - 10|🇬🇧3
   - 11|🇯🇵
-  - 13|🇩🇪 德国 | DEU
+  - 10|🇬🇧3
   - 10,22|[SS]
   - 0,1,27,38|🇺🇸_US_美国_1
   url: https://i.ytimg.com/generate_204
@@ -118,9 +102,8 @@ proxy-groups:
   type: select
   proxies:
   - 11|🇺🇸
-  - 10|🇬🇧3
   - 11|🇯🇵
-  - 13|🇩🇪 德国 | DEU
+  - 10|🇬🇧3
   - 10,22|[SS]
   - 0,1,27,38|🇺🇸_US_美国_1
 rules:
