@@ -2331,10 +2331,21 @@ def work(links,check=False,allowed_types=[],only_check=False):
 
 if __name__ == '__main__':
     links = [
-        "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/list_raw.txt|links",
-        "https://raw.githubusercontent.com/mfbpn/tg_mfbpn_sub/refs/heads/main/trial.yaml|links"
+        "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_HK.yml|links",
+        "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_JP.yml|links",
+        "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_KR.yml|links",
+        "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_SG.yml|links",
+        "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_CA.yml|links",
+        "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_CH.yml|links",
+        "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_DE.yml|links",
+        "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_FR.yml|links",
+        "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_RU.yml|links",
+        "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_SE.yml|links",
+        "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_GB.yml|links",
+        "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_redir.yml|links",
+        "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_TW.yml|links",
+        "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_US.yml|links"
         
-        
-       
+    
     ]
     work(links, check=True, only_check=False, allowed_types=["ss","vmess","trojan"])
