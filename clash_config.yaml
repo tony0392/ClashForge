@@ -40,13 +40,6 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 21|HK香港(mibei77.com 米贝节点分享) 12
-  password: RexnBgU7EV5ADxG
-  port: 7002
-  server: 23.150.248.199
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
   name: 21|HK香港(mibei77.com 米贝节点分享) 21
   password: kDWvXYZoTBcGkC4
   port: 8881
@@ -69,18 +62,9 @@ proxies:
   tls: false
   type: vmess
   uuid: 9e11e992-c3a4-45fb-bb67-5f4f42fcd551
-- name: 19,25|[Trojan] 🇸🇬 新加坡 Microsoft数据中心
-  password: dQUWbcwECl
-  port: 443
-  server: 20.191.138.47
-  skip-cert-verify: true
-  sni: automq4-proxy.automq-sg.com
-  tfo: false
-  type: trojan
-  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇦CA
-  name: 15|🇦CA_125
+  name: 15|🇦CA_120
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
@@ -116,185 +100,140 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - cipher: chacha20-ietf-poly1305
   country: 🇪 DE
-  name: 15|🇪 DE_140
+  name: 15|🇪 DE_129
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 92.118.205.228
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇪 DE
-  name: 15|🇪 DE_141
-  password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3
-  port: 54075
-  server: beta.mattenadene.org
-  type: ss
 - cipher: aes-256-cfb
   country: 🇩🇪DE
-  name: 15|🇪DE_143
-  password: XPtzA9sCug3SPR4c
-  port: 9025
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇩🇪DE
-  name: 15|🇪DE_144
-  password: 4R3hUfZ2FHhDmNcP
-  port: 9061
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇩🇪DE
-  name: 15|🇪DE_145
-  password: BwcAUZk8hUFAkDGN
-  port: 9031
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇩🇪DE
-  name: 15|🇩🇪DE_146
-  password: aLpQtfEZe445QyHk
-  port: 9098
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇩🇪DE
-  name: 15|🇩🇪DE_147
-  password: ZpNDDKRu9MagNvaf
-  port: 9015
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇩🇪DE
-  name: 15|🇩🇪DE_148
-  password: NvS8N4Vf8qAGPSCL
-  port: 9046
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇩🇪DE
-  name: 15|🇩🇪DE_149
-  password: S7KwUu7yBy58S3Ga
-  port: 9042
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇩🇪DE
-  name: 15|🇩🇪DE_150
-  password: cp8pRSUAyLhTfVWH
-  port: 9064
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇩🇪DE
-  name: 15|🇩🇪DE_151
+  name: 15|🇪DE_132
   password: Sn5B7jTqr76aCJT8
   port: 9097
   server: 80.92.204.106
   type: ss
 - cipher: aes-256-cfb
   country: 🇩🇪DE
-  name: 15|🇩🇪DE_152
-  password: FAdUvMJUq5vDgKEq
-  port: 9006
+  name: 15|🇪DE_133
+  password: 4R3hUfZ2FHhDmNcP
+  port: 9061
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 15|🇩🇪DE_135
+  password: aLpQtfEZe445QyHk
+  port: 9098
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 15|🇩🇪DE_137
+  password: XPtzA9sCug3SPR4c
+  port: 9025
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 15|🇩🇪DE_138
+  password: cp8pRSUAyLhTfVWH
+  port: 9064
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 15|🇩🇪DE_140
+  password: NvS8N4Vf8qAGPSCL
+  port: 9046
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 15|🇩🇪DE_141
+  password: ZpNDDKRu9MagNvaf
+  port: 9015
   server: 80.92.204.106
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: 15| RU_247
+  name: 15|🇷🇺 RU_237
+  password: xmuaeFtNoxEcfCkARy21ss
+  port: 18622
+  server: 92.118.112.111
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇷 RU
+  name: 15|🇷 RU_238
+  password: LqlPI19oqnunGNSLMvdXyB
+  port: 16356
+  server: 147.45.60.33
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 15|🇷🇺 RU_239
   password: 0zyDRZ1XmNXaaCAN7KEA8a
   port: 28825
   server: 45.151.62.54
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: 15|🇺 RU_248
+  name: 15|🇺 RU_240
+  password: uQS5ntVqC00sSKkeNzUiD3
+  port: 42090
+  server: 89.23.103.125
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇷🇺 RU
+  name: 15|🇷🇺 RU_242
   password: gmYDzSG6K35s8b19oY4fGz
   port: 18622
   server: 92.118.112.111
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: 15|🇷 RU_249
-  password: LqlPI19oqnunGNSLMvdXyB
-  port: 16356
-  server: 147.45.60.33
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇷 RU
-  name: 15|🇷🇺 RU_250
+  country: 🇷🇺 RU
+  name: 15|🇷🇺 RU_243
   password: WfmxKX2FBJRU0Ie9VLIYDL
   port: 20012
   server: 141.98.234.93
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇷🇺 RU
-  name: 15|🇷🇺 RU_251
-  password: xmuaeFtNoxEcfCkARy21ss
-  port: 18622
-  server: 92.118.112.111
-  type: ss
 - cipher: aes-256-cfb
   country: 🇷🇺RU
-  name: 15|🇷🇺RU_255
-  password: M3t2ZEQcMGRWBjRa
-  port: 9011
-  server: 45.89.52.66
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇷🇺RU
-  name: 15|🇺RU_257
-  password: PeHSHm5SqEjBuEXE
-  port: 9065
+  name: 15|🇷RU_248
+  password: ZET59LF6DvCC8KVt
+  port: 9005
   server: 45.89.52.66
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇪 SE
-  name: 15| SE_262
+  name: 15| SE_251
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 45.154.206.192
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
-  name: 15| GB_165
-  password: bZ87amPpdG7KuWM62bKtm1KHoowuVjnV8CKtq653ymHcg2dPYcPJfnaQ61stuAjr2ZiLDaqH56XpkxEYuwDzzRrMWieebWGt
-  port: 55988
-  server: mx2.drawnrisha.one
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 15|🇧 GB_166
+  name: 15|🇧 GB_156
   password: f8f7aCzcPKbsF8p3
   port: 990
-  server: 185.47.253.227
+  server: 185.126.239.250
   type: ss
 - cipher: aes-128-gcm
-  country: 🇬🇧GB
-  name: 15|🇬🇧GB_171
+  country: 🇧GB
+  name: 15|🇧GB_160
   password: shadowsocks
   port: 443
   server: 212.102.53.195
   type: ss
 - cipher: aes-128-gcm
   country: 🇧GB
-  name: 15|🇧GB_172
+  name: 15|🇧GB_161
   password: shadowsocks
   port: 443
   server: 212.102.53.198
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 19,34|🇬🇧 英国 V2CROSS.COM
-  network: tcp
-  port: '16369'
-  server: 46.250.237.48
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 11aa4614-bb63-45fe-9d4b-f3b215c639e5
 - cipher: aes-128-gcm
   country: 🇼 TW
-  name: 15| TW_267
+  name: 15| TW_256
   password: 79739832-b888-415a-a454-8b53911c944a
   port: 30332
   server: vps.200566.xyz
@@ -311,41 +250,33 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 21|HK香港(mibei77.com 米贝节点分享) 21
+  - 15|🇷🇺 RU_242
+  - 15|🇷🇺 RU_237
   - 21|HK香港(mibei77.com 米贝节点分享) 4
-  - 15|🇺 RU_248
-  - 15|🇷🇺 RU_251
-  - 21|HK香港(mibei77.com 米贝节点分享) 12
-  - 34|VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP...
-  - 28|加拿大 001
-  - 15|🇦CA_125
+  - 15|🇦CA_120
+  - 21|HK香港(mibei77.com 米贝节点分享) 21
   - 12|🇯🇵
   - 33|11|11|11|11|11|11,16|日本|@ripao...
-  - 15| TW_267
-  - 15|🇧GB_172
-  - 15|🇬🇧GB_171
-  - 15|🇷🇺 RU_250
-  - 15|🇷 RU_249
-  - 19,34|🇬🇧 英国 V2CROSS.COM
-  - 15|🇩🇪DE_150
-  - 15|🇧 GB_166
-  - 15|🇩🇪DE_148
-  - 15|🇪DE_144
-  - 15|🇪DE_143
-  - 15|🇩🇪DE_149
-  - 15|🇪 DE_141
-  - 15|🇩🇪DE_147
-  - 15| RU_247
-  - 15|🇪DE_145
-  - 15|🇩🇪DE_146
-  - 15|🇩🇪DE_151
-  - 19,25|[Trojan] 🇸🇬 新加坡 Microsoft数据中心
-  - 15|🇩🇪DE_152
-  - 15|🇪 DE_140
-  - 15| SE_262
-  - 15|🇷🇺RU_255
-  - 15| GB_165
-  - 15|🇺RU_257
+  - 15|🇧GB_161
+  - 15|🇧GB_160
+  - 15| TW_256
+  - 15|🇷🇺 RU_243
+  - 15|🇷 RU_238
+  - 15|🇩🇪DE_141
+  - 34|VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP...
+  - 15|🇷🇺 RU_239
+  - 15|🇺 RU_240
+  - 15|🇩🇪DE_137
+  - 15|🇪DE_133
+  - 15|🇩🇪DE_138
+  - 15|🇪 DE_129
+  - 15| SE_251
+  - 15|🇪DE_132
+  - 15|🇷RU_248
+  - 15|🇧 GB_156
+  - 15|🇩🇪DE_140
+  - 28|加拿大 001
+  - 15|🇩🇪DE_135
   url: https://i.ytimg.com/generate_204
   interval: 300
   tolerance: 50
@@ -353,81 +284,65 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 21|HK香港(mibei77.com 米贝节点分享) 21
+  - 15|🇷🇺 RU_242
+  - 15|🇷🇺 RU_237
   - 21|HK香港(mibei77.com 米贝节点分享) 4
-  - 15|🇺 RU_248
-  - 15|🇷🇺 RU_251
-  - 21|HK香港(mibei77.com 米贝节点分享) 12
-  - 34|VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP...
-  - 28|加拿大 001
-  - 15|🇦CA_125
+  - 15|🇦CA_120
+  - 21|HK香港(mibei77.com 米贝节点分享) 21
   - 12|🇯🇵
   - 33|11|11|11|11|11|11,16|日本|@ripao...
-  - 15| TW_267
-  - 15|🇧GB_172
-  - 15|🇬🇧GB_171
-  - 15|🇷🇺 RU_250
-  - 15|🇷 RU_249
-  - 19,34|🇬🇧 英国 V2CROSS.COM
-  - 15|🇩🇪DE_150
-  - 15|🇧 GB_166
-  - 15|🇩🇪DE_148
-  - 15|🇪DE_144
-  - 15|🇪DE_143
-  - 15|🇩🇪DE_149
-  - 15|🇪 DE_141
-  - 15|🇩🇪DE_147
-  - 15| RU_247
-  - 15|🇪DE_145
-  - 15|🇩🇪DE_146
-  - 15|🇩🇪DE_151
-  - 19,25|[Trojan] 🇸🇬 新加坡 Microsoft数据中心
-  - 15|🇩🇪DE_152
-  - 15|🇪 DE_140
-  - 15| SE_262
-  - 15|🇷🇺RU_255
-  - 15| GB_165
-  - 15|🇺RU_257
+  - 15|🇧GB_161
+  - 15|🇧GB_160
+  - 15| TW_256
+  - 15|🇷🇺 RU_243
+  - 15|🇷 RU_238
+  - 15|🇩🇪DE_141
+  - 34|VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP...
+  - 15|🇷🇺 RU_239
+  - 15|🇺 RU_240
+  - 15|🇩🇪DE_137
+  - 15|🇪DE_133
+  - 15|🇩🇪DE_138
+  - 15|🇪 DE_129
+  - 15| SE_251
+  - 15|🇪DE_132
+  - 15|🇷RU_248
+  - 15|🇧 GB_156
+  - 15|🇩🇪DE_140
+  - 28|加拿大 001
+  - 15|🇩🇪DE_135
   url: https://i.ytimg.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 21|HK香港(mibei77.com 米贝节点分享) 21
+  - 15|🇷🇺 RU_242
+  - 15|🇷🇺 RU_237
   - 21|HK香港(mibei77.com 米贝节点分享) 4
-  - 15|🇺 RU_248
-  - 15|🇷🇺 RU_251
-  - 21|HK香港(mibei77.com 米贝节点分享) 12
-  - 34|VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP...
-  - 28|加拿大 001
-  - 15|🇦CA_125
+  - 15|🇦CA_120
+  - 21|HK香港(mibei77.com 米贝节点分享) 21
   - 12|🇯🇵
   - 33|11|11|11|11|11|11,16|日本|@ripao...
-  - 15| TW_267
-  - 15|🇧GB_172
-  - 15|🇬🇧GB_171
-  - 15|🇷🇺 RU_250
-  - 15|🇷 RU_249
-  - 19,34|🇬🇧 英国 V2CROSS.COM
-  - 15|🇩🇪DE_150
-  - 15|🇧 GB_166
-  - 15|🇩🇪DE_148
-  - 15|🇪DE_144
-  - 15|🇪DE_143
-  - 15|🇩🇪DE_149
-  - 15|🇪 DE_141
-  - 15|🇩🇪DE_147
-  - 15| RU_247
-  - 15|🇪DE_145
-  - 15|🇩🇪DE_146
-  - 15|🇩🇪DE_151
-  - 19,25|[Trojan] 🇸🇬 新加坡 Microsoft数据中心
-  - 15|🇩🇪DE_152
-  - 15|🇪 DE_140
-  - 15| SE_262
-  - 15|🇷🇺RU_255
-  - 15| GB_165
-  - 15|🇺RU_257
+  - 15|🇧GB_161
+  - 15|🇧GB_160
+  - 15| TW_256
+  - 15|🇷🇺 RU_243
+  - 15|🇷 RU_238
+  - 15|🇩🇪DE_141
+  - 34|VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP...
+  - 15|🇷🇺 RU_239
+  - 15|🇺 RU_240
+  - 15|🇩🇪DE_137
+  - 15|🇪DE_133
+  - 15|🇩🇪DE_138
+  - 15|🇪 DE_129
+  - 15| SE_251
+  - 15|🇪DE_132
+  - 15|🇷RU_248
+  - 15|🇧 GB_156
+  - 15|🇩🇪DE_140
+  - 28|加拿大 001
+  - 15|🇩🇪DE_135
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
