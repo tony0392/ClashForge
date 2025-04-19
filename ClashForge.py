@@ -2344,8 +2344,7 @@ if __name__ == '__main__':
         "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_GB.yml|links",
         "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_redir.yml|links",
         "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_TW.yml|links",
+        "https://raw.githubusercontent.com/peasoft/NoMoreWalls/refs/heads/master/list_raw.txt|links",
         "http://103.67.52.65|links"
-        
-    
     ]
     work(links, check=True, only_check=False, allowed_types=["ss","vmess","trojan"])
