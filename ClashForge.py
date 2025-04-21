@@ -30,17 +30,22 @@ import warnings
 warnings.filterwarnings('ignore')
 from requests_html import HTMLSession
 
-# TEST_URL = "http://www.gstatic.com/generate_204"
-TEST_URL = "https://i.ytimg.com/generate_204"
+
+TEST_URL = "http://www.gstatic.com/generate_204"
+# TEST_URL = "http://www.pinterest.com"
 CLASH_API_PORTS = [9090]
 CLASH_API_HOST = "127.0.0.1"
 CLASH_API_SECRET = ""
-TIMEOUT = 5
-MAX_CONCURRENT_TESTS = 10
-LIMIT = 50 # 最多保留LIMIT个节点
+TIMEOUT = 3
+# 存储所有节点的速度测试结果
+SPEED_TEST = True
+SPEED_TEST_LIMIT = 50 # 只测试前30个节点的下行速度，每个节点测试5秒
+results_speed = []
+MAX_CONCURRENT_TESTS = 100
+LIMIT = 100 # 最多保留LIMIT个节点
 CONFIG_FILE = 'clash_config.yaml'
 INPUT = "input" # 从文件中加载代理节点，支持yaml/yml、txt(每条代理链接占一行)
-BAN = ["China", "CN", "电信", "移动", "联通",]
+BAN = ["中国", "China", "CN", "电信", "移动", "联通"]
 headers = {
     'Accept-Charset': 'utf-8',
     'Accept': 'text/html,application/x-yaml,*/*',
@@ -57,7 +62,7 @@ clash_config_template = {
     "log-level": "info",
     "external-controller": "127.0.0.1:9090",
     "geodata-mode": True,
-    'geox-url': {'geoip': 'https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip.dat', 'mmdb': 'https://raw.githubusercontent.com/Loyalsoldier/geoip/release/GeoLite2-Country.mmdb'},
+    'geox-url': {'geoip': 'https://slink.ltd/https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip.dat', 'mmdb': 'https://slink.ltd/https://raw.githubusercontent.com/Loyalsoldier/geoip/release/GeoLite2-Country.mmdb'},
     "dns": {
         "enable": True,
         "ipv6": False,
@@ -104,7 +109,7 @@ clash_config_template = {
             "exclude-filter": "(?i)中国|China|CN|电信|移动|联通",
             "proxies": [],
             # "url": "http://www.gstatic.com/generate_204",
-            "url": "https://i.ytimg.com/generate_204",
+            "url": "http://www.pinterest.com",
             "interval": 300,
             "tolerance": 50
         },
@@ -113,7 +118,7 @@ clash_config_template = {
             "type": "fallback",
             "exclude-filter": "(?i)中国|China|CN|电信|移动|联通",
             "proxies": [],
-            "url": "https://i.ytimg.com/generate_204",
+            "url": "http://www.gstatic.com/generate_204",
             "interval": 300
         },
         {
@@ -1297,7 +1302,6 @@ def parse_vless_link(link):
     host, query = host_info.split('?', 1) if '?' in host_info else (host_info, "")
     port = host.split(':')[-1] if ':' in host else ""
     host = host.split(':')[0] if ':' in host else ""
-
     return {
         "name": urllib.parse.unquote(name),
         "type": "vless",
@@ -1457,17 +1461,20 @@ def process_url(url):
 
 # 解析不同的代理链接
 def parse_proxy_link(link):
-    if link.startswith("hysteria2://") or link.startswith("hy2://"):
-        return parse_hysteria2_link(link)
-    elif link.startswith("trojan://"):
-        return parse_trojan_link(link)
-    elif link.startswith("ss://"):
-        return parse_ss_link(link)
-    elif link.startswith("vless://"):
-        return parse_vless_link(link)
-    elif link.startswith("vmess://"):
-        return parse_vmess_link(link)
-    return None
+    try:
+        if link.startswith("hysteria2://") or link.startswith("hy2://"):
+            return parse_hysteria2_link(link)
+        elif link.startswith("trojan://"):
+            return parse_trojan_link(link)
+        elif link.startswith("ss://"):
+            return parse_ss_link(link)
+        elif link.startswith("vless://"):
+            return parse_vless_link(link)
+        elif link.startswith("vmess://"):
+            return parse_vmess_link(link)
+    except Exception as e:
+        # print(e)
+        return None
 
 # 根据server和port共同约束去重
 def deduplicate_proxies(proxies_list):
@@ -1562,6 +1569,10 @@ def generate_clash_config(links,load_nodes):
 
     # 名称已存在的节点加随机后缀
     def resolve_name_conflicts(node):
+        server = node.get("server")
+        if not server:
+            # print(f'不存在sever，非节点')
+            return
         name = str(node["name"])
         if not_contains(name):
             if name in existing_names:
@@ -1577,6 +1588,8 @@ def generate_clash_config(links,load_nodes):
     for link in links:
         if link.startswith(("hysteria2://", "hy2://","trojan://", "ss://", "vless://", "vmess://")):
             node = parse_proxy_link(link)
+            if not node:
+                continue
             resolve_name_conflicts(node)
         else:
             if '|links' in link or '.md' in link:
@@ -1592,7 +1605,11 @@ def generate_clash_config(links,load_nodes):
                 link = resolve_template_url(link)
             print(f'当前正在处理link: {link}')
             # 处理非特定协议的链接
-            new_links,isyaml = process_url(link)
+            try:
+                new_links,isyaml = process_url(link)
+            except Exception as e:
+                print(f"error: {e}")
+                continue
             if isyaml:
                 for node in new_links:
                     resolve_name_conflicts(node)
@@ -2022,10 +2039,12 @@ class ClashConfig:
         valid_results.sort(key=lambda x: x.delay)
 
         # 更新代理组
+        proxy_names = [r.name for r in valid_results]
         for group in self.proxy_groups:
             if group["name"] == group_name:
-                group["proxies"] = [r.name for r in valid_results]
+                group["proxies"] = proxy_names
                 break
+        return proxy_names
 
     def save(self):
         """保存配置到文件"""
@@ -2156,7 +2175,7 @@ async def proxy_clean():
                 proxy_names.add(r.name)
 
             for group_name in groups_to_test:
-                config.update_group_proxies(group_name, group_results)
+                proxy_names = config.update_group_proxies(group_name, group_results)
                 print(f"'{group_name}'已按延迟大小重新排序")
 
             if LIMIT:
@@ -2164,6 +2183,28 @@ async def proxy_clean():
 
             # 保存更新后的配置
             config.save()
+
+            if SPEED_TEST:
+                # 测速
+                print('\n===================检测节点速度======================\n')
+                sorted_proxy_names = start_download_test(proxy_names)
+                # 按测试重新排序
+                new_list = sorted_proxy_names.copy()
+                # 创建一个集合来跟踪已添加的元素
+                added_elements = set(new_list)
+                # 遍历 group_proxies，将不在 added_elements 中的元素添加到 new_list
+                group_proxies = config.get_group_proxies(group_name)
+                for item in group_proxies:
+                    if item not in added_elements:
+                        new_list.append(item)
+                        added_elements.add(item)  # 将新添加的元素加入集合中
+                # 排序好的节点名放入group-proxies
+                for group_name in groups_to_test:
+                    for group in config.proxy_groups:
+                        if group["name"] == group_name:
+                            group["proxies"] = new_list
+                # 保存更新后的配置
+                config.save()
 
             # 显示总耗时
             total_time = (datetime.now() - start_time).total_seconds()
@@ -2224,7 +2265,7 @@ def get_github_filename(github_url, file_suffix):
 
     response = requests.get(api_url)
     if response.status_code != 200:
-        raise Exception(f"GitHub API请求失败: {response.status_code}")
+        raise Exception(f"GitHub API请求失败: {response.status_code} {response.text}")
 
     files = response.json()
     matching_files = [f['name'] for f in files if f['name'].endswith(file_suffix)]
@@ -2294,6 +2335,77 @@ def resolve_template_url(template_url):
 
     return resolved_url
 
+def start_download_test(proxy_names,speed_limit=0.1):
+    """
+    开始下载测试
+
+    """
+    # 第一步：测试所有节点的下载速度
+    test_all_proxies(proxy_names[:SPEED_TEST_LIMIT])
+
+    # 过滤出速度大于等于 speed_limit 的节点
+    filtered_list = [item for item in results_speed if float(item[1]) >= float(f'{speed_limit}')]
+
+    # 按下载速度从大到小排序
+    sorted_proxy_names = []
+    sorted_list = sorted(filtered_list, key=lambda x: float(x[1]), reverse=True)
+    print(f'节点速度统计:')
+    for i, result in enumerate(sorted_list[:LIMIT], 1):
+        sorted_proxy_names.append(result[0])
+        print(f"{i}. {result[0]}: {result[1]}Mb/s")
+
+    return sorted_proxy_names
+
+# 测试所有代理节点的下载速度，并排序结果
+def test_all_proxies(proxy_names):
+    try:
+        # 单线程节点速度下载测试
+        i = 0
+        for proxy_name in proxy_names:
+            i += 1
+            print(f"\r正在测速节点【{i}】: {proxy_name}", flush=True, end='')
+            test_proxy_speed(proxy_name)
+
+        print("\r" + " " * 50 + "\r", end='')  # 清空行并返回行首
+    except Exception as e:
+        print(f"测试节点速度时出错: {e}")
+
+# 测试指定代理节点的下载速度（下载5秒后停止）
+def test_proxy_speed(proxy_name):
+    # 切换到该代理节点
+    switch_proxy(proxy_name)
+    # 设置代理
+    proxies = {
+        "http": 'http://127.0.0.1:7890',
+        "https": 'http://127.0.0.1:7890',
+    }
+
+    # 开始下载并测量时间
+    start_time = time.time()
+    # 计算总下载量
+    total_length = 0
+    # 测试下载时间（秒）
+    test_duration = 5  # 逐块下载，直到达到5秒钟为止
+
+    # 不断发起请求直到达到时间限制
+    while time.time() - start_time < test_duration:
+        try:
+            response = requests.get("https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb", stream=True, proxies=proxies, headers={'Cache-Control': 'no-cache'},
+                                    timeout=test_duration)
+            for data in response.iter_content(chunk_size=524288):
+                total_length += len(data)
+                if time.time() - start_time >= test_duration:
+                    break
+        except Exception as e:
+            print(f"测试节点 {proxy_name} 下载失败: {e}")
+
+    # 计算速度：Bps -> MB/s
+    elapsed_time = time.time() - start_time
+    speed = total_length / elapsed_time if elapsed_time > 0 else 0
+
+    results_speed.append((proxy_name, f"{speed / 1024 / 1024:.2f}"))  # 记录速度测试结果
+    return speed / 1024 / 1024  # 返回 MB/s
+
 def work(links,check=False,allowed_types=[],only_check=False):
     try:
         if not only_check:
@@ -2329,6 +2441,7 @@ def work(links,check=False,allowed_types=[],only_check=False):
         sys.exit(1)
 
 
+
 if __name__ == '__main__':
     links = [
         "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_HK.yml|links",
@@ -2347,3 +2460,5 @@ if __name__ == '__main__':
         "http://103.67.52.65|links"
     ]
     work(links, check=True, only_check=False, allowed_types=["ss","vmess","trojan"])
+
+
