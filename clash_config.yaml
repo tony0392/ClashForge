@@ -32,19 +32,54 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
+- cipher: chacha20-ietf
+  country: 🇰 HK
+  name: 15| HK_160
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇰 HK
+  name: 15|🇰 HK_161
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇰 HK
+  name: 15,27|🇭🇰 11|🇭🇰 香港3|@ripaojiedian
+  password: W7fIo8Gp6TLb1YHZNH1fu5
+  port: 39008
+  server: 62.60.231.81
+  type: ss
+  udp: true
 - alterId: 2
   cipher: auto
   country: 🇭🇰 HK
   h2-opts: {}
   http-opts: {}
-  name: 15|🇭🇰 HK_237
+  name: 15|🇰 HK_164
   network: ws
-  port: 80
-  server: 57a489e6-sv6hs0-t9azkv-17xn0.hk.p5pv.com
+  port: 8080
+  server: 5baf2986-svc1s0-swjbgr-1kcpe.hk3.p5pv.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 3f514ea2-4662-11ed-a8bf-f23c91cfbbc9
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 15|🇰 HK_166
+  network: ws
+  port: 8080
+  server: b79bda8c-svc1s0-t65a3e-tqgz.hk3.p5pv.com
   servername: broadcastlv.chat.bilibili.com
   skip-cert-verify: true
   type: vmess
-  uuid: 4faf123a-572a-11eb-8684-f23c913c8d2b
+  uuid: 88da0d21-b25d-11ec-b9f7-f23c91cfbbc9
   ws-headers:
     HOST: broadcastlv.chat.bilibili.com
   ws-path: /
@@ -53,14 +88,14 @@ proxies:
   country: 🇭🇰 HK
   h2-opts: {}
   http-opts: {}
-  name: 15|🇭🇰 HK_238
+  name: 15|🇭🇰 HK_167
   network: ws
-  port: 80
-  server: 53c6690b-sv2sg0-sz3ckv-19esv.hk.p5pv.com
+  port: 8080
+  server: 51ee4d03-svdwg0-tdwxjg-vmdo.hk3.p5pv.com
   servername: broadcastlv.chat.bilibili.com
   skip-cert-verify: true
   type: vmess
-  uuid: 86735fe4-967a-11eb-86a4-f23c913c8d2b
+  uuid: 24e32978-4858-11eb-8684-f23c913c8d2b
   ws-headers:
     HOST: broadcastlv.chat.bilibili.com
   ws-path: /
@@ -69,14 +104,14 @@ proxies:
   country: 🇭🇰 HK
   h2-opts: {}
   http-opts: {}
-  name: 15|🇭🇰 HK_239
+  name: 15|🇭🇰 HK_168
   network: ws
-  port: 80
-  server: 381f4f41-sv2sg0-t8x4vo-12ujz.hk.p5pv.com
+  port: 8080
+  server: 8e1113bf-svc1s0-t9hghw-1sdoq.hk3.p5pv.com
   servername: broadcastlv.chat.bilibili.com
   skip-cert-verify: true
   type: vmess
-  uuid: e5b57156-3c81-11ec-a8bf-f23c91cfbbc9
+  uuid: 7c077572-6da9-11ef-b786-f23c91cfbbc9
   ws-headers:
     HOST: broadcastlv.chat.bilibili.com
   ws-path: /
@@ -85,14 +120,14 @@ proxies:
   country: 🇭🇰 HK
   h2-opts: {}
   http-opts: {}
-  name: 15|🇭🇰 HK_240
+  name: 15|🇭🇰 HK_169
   network: ws
-  port: 80
-  server: 3aeac334-sv2sg0-t2nkut-jx5r.hk.p5pv.com
+  port: 8080
+  server: d4fe37ac-svdwg0-sxx3hh-1m7j8.hk3.p5pv.com
   servername: broadcastlv.chat.bilibili.com
   skip-cert-verify: true
   type: vmess
-  uuid: 73bfcc1c-5814-5f2a-b43a-3ef6af011db8
+  uuid: 91acf762-a4ea-11ef-b090-f23c91cfbbc9
   ws-headers:
     HOST: broadcastlv.chat.bilibili.com
   ws-path: /
@@ -101,14 +136,14 @@ proxies:
   country: 🇭🇰 HK
   h2-opts: {}
   http-opts: {}
-  name: 15|🇭🇰 HK_241
+  name: 15|🇭🇰 HK_170
   network: ws
-  port: 80
-  server: bd12944a-sv0xs0-t2lc1c-1mim2.hk.p5pv.com
+  port: 8080
+  server: 2b1f9bf3-svdwg0-t83wtx-2rrb.hk3.p5pv.com
   servername: broadcastlv.chat.bilibili.com
   skip-cert-verify: true
   type: vmess
-  uuid: 6e3ee1de-381f-11ee-87f9-f23c91cfbbc9
+  uuid: ba64cdc5-c79a-326d-8e63-6903be8183a1
   ws-headers:
     HOST: broadcastlv.chat.bilibili.com
   ws-path: /
@@ -117,14 +152,14 @@ proxies:
   country: 🇭🇰 HK
   h2-opts: {}
   http-opts: {}
-  name: 15|🇭🇰 HK_242
+  name: 15|🇭🇰 HK_173
   network: ws
-  port: 80
-  server: b9b89e0f-sv6hs0-t917sa-12ach.hk.p5pv.com
+  port: 8080
+  server: c4901ce4-svdwg0-swasv3-luwe.hk3.p5pv.com
   servername: broadcastlv.chat.bilibili.com
   skip-cert-verify: true
   type: vmess
-  uuid: fc5ba91a-acd7-11ef-97e0-f23c9164ca5d
+  uuid: a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a
   ws-headers:
     HOST: broadcastlv.chat.bilibili.com
   ws-path: /
@@ -133,78 +168,14 @@ proxies:
   country: 🇭🇰 HK
   h2-opts: {}
   http-opts: {}
-  name: 15|🇭🇰 HK_244
+  name: 15|🇭🇰 HK_176
   network: ws
-  port: 80
-  server: 74b3f780-sv0xs0-tdb09u-1thl3.hk.p5pv.com
+  port: 8080
+  server: 73b0ccfb-svdwg0-sw1w5j-1a3sy.hk3.p5pv.com
   servername: broadcastlv.chat.bilibili.com
   skip-cert-verify: true
   type: vmess
-  uuid: 15d92b4e-fd53-11ef-bea4-f23c91cfbbc9
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 15|🇭🇰 HK_249
-  network: ws
-  port: 80
-  server: 1554dc02-sv2sg0-syu0n5-1hd7v.hk.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: f73c64bc-9e8c-11ec-bd7c-f23c913c8d2b
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 15|🇭🇰 HK_250
-  network: ws
-  port: 80
-  server: 2a6fa823-sv6hs0-szeqpq-sbt2.hk.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: b88ebf3a-b6b7-11ea-82ef-f23c9164ca5d
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 15|🇭🇰 HK_251
-  network: ws
-  port: 80
-  server: dcf99c60-sv0xs0-tasors-1tdqt.hk.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 167db97c-ee01-11ef-b737-f23c91cfbbc9
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 15|🇭🇰 HK_252
-  network: ws
-  port: 80
-  server: d1480796-sv2sg0-t7hu58-1q1la.hk.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 25b46954-9a33-11ee-8b86-f23c91cfbbc9
+  uuid: b93c66cc-00ed-11ec-8673-f23c9164ca5d
   ws-headers:
     HOST: broadcastlv.chat.bilibili.com
   ws-path: /
@@ -214,56 +185,48 @@ proxies:
   port: 443
   server: 149.22.87.240
   type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 14|🇯🇵 日本 | JPN 3
-  network: ws
-  port: 443
-  server: www.visa.com
-  servername: jpv.xiaoqi555.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: e3e9d77c-f0b5-4260-823d-4c10ac572c57
-  ws-opts:
-    headers:
-      Host: jpv.xiaoqi555.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 14|🇯🇵 日本 | JPN 10
-  network: ws
-  port: 443
-  server: bookmyshow.com
-  servername: jpv.xiaoqi555.xyz
-  tls: true
-  type: vmess
-  udp: true
-  uuid: e3e9d77c-f0b5-4260-823d-4c10ac572c57
-  ws-opts:
-    headers:
-      Host: jpv.xiaoqi555.xyz
-    path: /
 - cipher: aes-256-cfb
-  name: 40,42|KR_speednode_0012
+  name: 40,42|KR_speednode_0043
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.62.168
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 40,42|KR_speednode_0013
+  name: 40,42|KR_speednode_0044
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
   type: ss
   udp: true
+- name: 19,25,37,40,42|SG_speednode_0063
+  password: '!!str 74260667533381300'
+  port: 443
+  server: loving-piranha.shiner427.skin
+  skip-cert-verify: false
+  sni: loving-piranha.shiner427.skin
+  tfo: false
+  type: trojan
+  udp: true
+- name: 37,40,42|SG_speednode_0060
+  password: '!!str 74260667533381300'
+  port: 443
+  server: just-buck.shiner427.skin
+  skip-cert-verify: true
+  sni: just-buck.shiner427.skin
+  type: trojan
+  udp: true
+- name: 37,40,42|SG_speednode_0062
+  password: '!!str 74260667533381300'
+  port: 443
+  server: live-serval.shiner427.skin
+  skip-cert-verify: false
+  sni: live-serval.shiner427.skin
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇦CA
-  name: 15|🇦CA_119
+  name: 15|🇦CA_112
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
@@ -291,68 +254,85 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  fingerprint: ''
-  ip-version: dual
-  name: 0,1,34|🇩🇪 _德国
-  network: tcp
-  port: '23890'
-  server: 157.90.117.244
-  sni: ''
-  tls: false
+  client-fingerprint: chrome
+  name: 14|🇩🇪 德国 | DEU
+  network: ws
+  port: 2096
+  server: de01.sh-cloudflare.sbs
+  servername: de01.sh-cloudflare.sbs
+  tls: true
   type: vmess
   udp: true
-  uuid: d8fdf0b6-9a13-426d-b42b-089cace63d4e
+  uuid: 754d0473-1338-4740-a633-07aafbc2dda7
+  ws-opts:
+    headers:
+      Host: de01.sh-cloudflare.sbs
+    path: /
 - cipher: chacha20-ietf-poly1305
   country: 🇪 DE
-  name: 15|🇪 DE_126
+  name: 15|🇪 DE_119
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 92.118.205.228
   type: ss
-- cipher: aes-256-cfb
-  country: 🇪DE
-  name: 15|🇪DE_129
-  password: Sn5B7jTqr76aCJT8
-  port: 9097
-  server: 80.92.204.106
+- cipher: chacha20-ietf-poly1305
+  country: 🇩🇪 DE
+  name: 15|🇩🇪 DE_120
+  password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3
+  port: 54075
+  server: beta.mattenadene.org
   type: ss
 - cipher: aes-256-cfb
   country: 🇩🇪DE
-  name: 15|🇪DE_130
-  password: S7KwUu7yBy58S3Ga
-  port: 9042
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇩🇪DE
-  name: 15|🇩🇪DE_131
-  password: 4R3hUfZ2FHhDmNcP
-  port: 9061
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇩🇪DE
-  name: 15|🇩🇪DE_132
-  password: BwcAUZk8hUFAkDGN
-  port: 9031
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇩🇪DE
-  name: 15|🇩🇪DE_133
+  name: 15|🇩🇪DE_123
   password: FAdUvMJUq5vDgKEq
   port: 9006
   server: 80.92.204.106
   type: ss
 - cipher: aes-256-cfb
   country: 🇩🇪DE
-  name: 15|🇩🇪DE_135
+  name: 15|🇩🇪DE_124
+  password: S7KwUu7yBy58S3Ga
+  port: 9042
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 15|🇩🇪DE_125
+  password: Sn5B7jTqr76aCJT8
+  port: 9097
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 15|🇩🇪DE_126
   password: ZpNDDKRu9MagNvaf
   port: 9015
   server: 80.92.204.106
   type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 15|🇩🇪DE_127
+  password: cp8pRSUAyLhTfVWH
+  port: 9064
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 15|🇩🇪DE_128
+  password: aLpQtfEZe445QyHk
+  port: 9098
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 15|🇩🇪DE_129
+  password: BwcAUZk8hUFAkDGN
+  port: 9031
+  server: 80.92.204.106
+  type: ss
 - country: 🇩🇪DE
-  name: 15|🇩🇪DE_137
+  name: 15|🇩🇪DE_130
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
   server: 139.162.158.172
@@ -362,13 +342,13 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇷 FR
-  name: 15| FR_141
+  name: 15| FR_133
   password: qXvO7zYU7KeaB0Md7DQLow
   port: 1080
   server: 51.195.119.47
   type: ss
 - country: 🇷FR
-  name: 15|🇫🇷FR_148
+  name: 15|🇫🇷FR_140
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
@@ -377,28 +357,28 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇷 RU
-  name: 15|🇺 RU_372
-  password: RiPuKJJl18ZgvLpTjWxBwSfKiPkt9gzFKyxGCY8eHtOcDb2X
-  port: 31348
-  server: 5.189.201.250
+  name: 15| RU_229
+  password: CLphyEMQT8nbG8EImX0A2D
+  port: 45635
+  server: 5.35.47.122
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇷🇺 RU
-  name: 15|🇷 RU_373
-  password: WfmxKX2FBJRU0Ie9VLIYDL
-  port: 20012
-  server: 141.98.234.93
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: 15|🇷🇺 RU_374
+  name: 15|🇷🇺 RU_231
   password: 0zyDRZ1XmNXaaCAN7KEA8a
   port: 28825
   server: 45.151.62.54
   type: ss
 - cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 15|🇺 RU_232
+  password: uQS5ntVqC00sSKkeNzUiD3
+  port: 42090
+  server: 89.23.103.125
+  type: ss
+- cipher: chacha20-ietf-poly1305
   country: 🇷🇺 RU
-  name: 15|🇷🇺 RU_376
+  name: 15|🇷🇺 RU_233
   password: pV5BAzqLZosOfuIrkyoadT
   port: 18660
   server: 5.181.21.194
@@ -408,10 +388,11 @@ proxies:
   country: 🇺 RU
   h2-opts: {}
   http-opts: {}
-  name: 15|🇷🇺 RU_377
+  name: 15|🇷🇺 RU_235
   network: tcp
-  port: 45215
-  server: fa.fxlcn.com
+  port: 45245
+  server: ye.fxlcn.com
+  servername: ye.fxlcn.com
   skip-cert-verify: true
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
@@ -421,116 +402,96 @@ proxies:
   country: 🇷🇺 RU
   h2-opts: {}
   http-opts: {}
-  name: 15|🇺 RU_378
+  name: 15|🇺 RU_236
   network: tcp
-  port: 45245
-  server: ye.fxlcn.com
-  servername: ye.fxlcn.com
+  port: 45215
+  server: fa.fxlcn.com
   skip-cert-verify: true
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
   ws-path: /
 - cipher: aes-256-cfb
-  country: 🇺RU
-  name: 15|🇺RU_379
-  password: JdmRK9gMEqFgs8nP
-  port: 9003
-  server: 45.89.52.66
-  type: ss
-- cipher: aes-256-cfb
   country: 🇷🇺RU
-  name: 15|🇷🇺RU_381
-  password: PeHSHm5SqEjBuEXE
-  port: 9065
-  server: 45.89.52.66
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇷🇺RU
-  name: 15|🇷🇺RU_383
+  name: 15|🇷🇺RU_237
   password: KnJGad3FqTvjqbaX
   port: 9014
   server: 45.89.52.66
   type: ss
+- cipher: aes-256-cfb
+  country: 🇷🇺RU
+  name: 15|🇺RU_241
+  password: JdmRK9gMEqFgs8nP
+  port: 9003
+  server: 45.89.52.66
+  type: ss
 - country: 🇺RU
-  name: 15|🇷🇺RU_384
-  password: e299faed-cb72-4c62-bb2e-f0a218aed72a
-  port: 443
-  server: hk-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇺RU
-  name: 15|🇺RU_385
+  name: 15|🇺RU_243
   password: e299faed-cb72-4c62-bb2e-f0a218aed72a
   port: 443
   server: 194.246.114.54
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇪 SE
-  name: 15| SE_386
-  password: UDcjYQ6Z6AIWxViZpqyOmO
-  port: 44013
-  server: 46.246.98.155
+- cipher: aes-256-gcm
+  name: 40,42|RU_speednode_0052
+  password: 76f22412bc0dbdf6
+  port: 30112
+  server: 185.22.153.14
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇪 SE
-  name: 15|🇪 SE_387
+  name: 15| SE_244
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 45.154.206.192
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
-  name: 15|🇧 GB_150
-  password: F6MAAXTSLfz6ZSTk9gGabh
-  port: 1843
-  server: 91.84.100.42
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 15|🇬🇧 GB_151
+  name: 15|🇧 GB_144
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.126.239.250
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 15|🇬🇧 GB_153
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.47.255.22
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 15|🇬🇧 GB_154
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.47.253.227
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 15|🇬🇧 GB_156
-  password: BpFieMT6SobpqRiKFefvYu7eXk99XfCeWfjpntzSh81FfMx9R7rJW6LTmzH78StTEhCd7w32ZMxbGJZS98gpn1ozr9jAbMoa
-  port: 55988
-  server: 185.5.38.111
-  type: ss
 - cipher: aes-128-gcm
   country: 🇧GB
-  name: 15|🇧GB_160
+  name: 15|🇧GB_153
   password: shadowsocks
   port: 443
   server: 212.102.53.198
   type: ss
+- cipher: aes-128-gcm
+  country: 🇬🇧GB
+  name: 15|🇧GB_154
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.195
+  type: ss
 - country: 🇧GB
-  name: 15|🇬🇧GB_162
+  name: 15|🇬🇧GB_155
   password: 30761083-5dcd-49d6-85b5-33756ef1f7ed
   port: 443
   server: uk2-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 20,21|CA加拿大(mibei77.com 米贝节点分享) 2
+  password: Lcc1lw8IP2KI
+  port: 443
+  server: 77.91.103.73
+  type: ss
+  udp: true
+- name: 30|🇸_US_美国->_unKnow_
+  network: ws
+  password: 15b24b56-d667-4fa8-b548-f3dc942fb461
+  port: 443
+  server: 104.21.34.159
+  sni: 2qwert.2031.pp.ua
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /4p35eUnmGxQ8YJFJxz
 proxy-groups:
 - name: 节点选择
   type: select
@@ -543,56 +504,56 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 12|🇯🇵
-  - 40,42|KR_speednode_0012
-  - 15|🇺 RU_378
-  - 15|🇺RU_385
-  - 15|🇩🇪DE_133
-  - 40,42|KR_speednode_0013
-  - 15|🇬🇧 GB_156
-  - 15|🇷🇺RU_381
-  - 15|🇷🇺 RU_374
-  - 15|🇷🇺 RU_377
-  - 15|🇭🇰 HK_242
-  - 15|🇧GB_160
-  - 15| FR_141
-  - 15|🇭🇰 HK_240
-  - 15|🇭🇰 HK_241
-  - 15|🇩🇪DE_135
-  - 15|🇷 RU_373
-  - 15|🇬🇧 GB_151
-  - 15|🇪 DE_126
-  - 14|🇯🇵 日本 | JPN 3
-  - 15|🇪 SE_387
-  - 15| SE_386
-  - 15|🇺 RU_372
-  - 15|🇭🇰 HK_250
-  - 0,1,34|🇩🇪 _德国
-  - 15|🇭🇰 HK_238
-  - 15|🇩🇪DE_137
-  - 15|🇬🇧 GB_154
-  - 15|🇭🇰 HK_251
-  - 15|🇭🇰 HK_249
-  - 15|🇭🇰 HK_244
-  - 15|🇭🇰 HK_239
-  - 15|🇷🇺RU_384
-  - 21|瑞士(mibei77.com 米贝节点分享)
-  - 15|🇬🇧 GB_153
+  - 15|🇭🇰 HK_169
+  - 15|🇩🇪DE_125
   - 34|VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP...
-  - 15|🇦CA_119
-  - 15|🇪DE_129
-  - 15|🇧 GB_150
-  - 15|🇭🇰 HK_237
-  - 15|🇺RU_379
-  - 15|🇷🇺 RU_376
-  - 15|🇬🇧GB_162
-  - 15|🇫🇷FR_148
-  - 14|🇯🇵 日本 | JPN 10
-  - 15|🇩🇪DE_131
-  - 15|🇷🇺RU_383
-  - 15|🇪DE_130
-  - 15|🇭🇰 HK_252
-  - 15|🇩🇪DE_132
+  - 19,25,37,40,42|SG_speednode_0063
+  - 40,42|KR_speednode_0043
+  - 15|🇰 HK_164
+  - 15|🇰 HK_161
+  - 15|🇷🇺RU_237
+  - 40,42|RU_speednode_0052
+  - 15|🇷🇺 RU_235
+  - 15|🇩🇪 DE_120
+  - 37,40,42|SG_speednode_0062
+  - 37,40,42|SG_speednode_0060
+  - 15|🇩🇪DE_128
+  - 15|🇩🇪DE_127
+  - 15|🇩🇪DE_126
+  - 15|🇭🇰 HK_173
+  - 15|🇧GB_153
+  - 15| SE_244
+  - 15|🇬🇧GB_155
+  - 15| HK_160
+  - 15| RU_229
+  - 15|🇫🇷FR_140
+  - 21|瑞士(mibei77.com 米贝节点分享)
+  - 15|🇧GB_154
+  - 15|🇩🇪DE_123
+  - 15|🇷🇺 RU_233
+  - 15|🇦CA_112
+  - 15|🇩🇪DE_129
+  - 15|🇺RU_241
+  - 15|🇪 DE_119
+  - 15|🇩🇪DE_124
+  - 15|🇭🇰 HK_168
+  - 15|🇺 RU_232
+  - 15|🇭🇰 HK_170
+  - 15|🇩🇪DE_130
+  - 15|🇧 GB_144
+  - 14|🇩🇪 德国 | DEU
+  - 15|🇭🇰 HK_167
+  - 30|🇸_US_美国->_unKnow_
+  - 15|🇺RU_243
+  - 20,21|CA加拿大(mibei77.com 米贝节点分享) 2
+  - 15|🇺 RU_236
+  - 15,27|🇭🇰 11|🇭🇰 香港3|@ripaojiedian
+  - 15|🇭🇰 HK_176
+  - 15|🇰 HK_166
+  - 15| FR_133
+  - 15|🇷🇺 RU_231
+  - 40,42|KR_speednode_0044
+  - 12|🇯🇵
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
