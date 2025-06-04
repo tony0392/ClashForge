@@ -32,16 +32,6 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 34,37|14|香港6|@ripaojiedian
-  network: tcp
-  port: '50412'
-  server: 103.30.78.122
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 086124a3-0084-405b-aea4-39b69d3836f3
 - cipher: chacha20-ietf-poly1305
   name: 21|JP日本(mibei77.com 米贝节点分享) 5
   password: Nk9asglDzHzjktVzTkvhaA
@@ -90,11 +80,10 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 20|_GB_国
-  - 20|_DE_国
   - 34|VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP...
-  - 34,37|14|香港6|@ripaojiedian
   - 21|JP日本(mibei77.com 米贝节点分享) 5
+  - 20|_DE_国
+  - 20|_GB_国
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
