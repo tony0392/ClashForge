@@ -32,43 +32,361 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
+- cipher: chacha20-ietf-poly1305
+  country: 🇰 HK
+  name: 15| HK_122
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇭🇰 HK
+  name: 15|🇰 HK_124
+  password: rGDbiF7gtx5TWt4r4VjneQ==
+  port: 552
+  server: 156.225.22.213
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇭🇰 HK
+  name: 15|🇭🇰 HK_125
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.16.212
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇰 HK
+  name: 15|🇭🇰 HK_126
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.21.221
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 15,30|🇸_US_美国
+  network: tcp
+  port: 34625
+  server: 45.207.201.15
+  skip-cert-verify: true
+  type: vmess
+  uuid: 35510df4-9899-4427-e826-d005f0aabc6c
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  flow: ''
+  name: 18|🇭🇰👖TG频道@stymei1丨14
+  network: ws
+  port: 443
+  server: 66.179.48.171
+  servername: rs-sg3.lzjnb.shop
+  skip-cert-verify: true
+  sni: rs-sg3.lzjnb.shop
+  tls: true
+  type: vmess
+  uuid: 6337837a-2b47-4e0d-a695-75c5a4a8ad51
+  ws-opts:
+    headers:
+      Host: rs-sg3.lzjnb.shop
+    path: /lzjjjjjjj666666
+- alterId: 0
+  cipher: auto
+  flow: ''
+  name: 18|🇭🇰👖TG频道@stymei1丨16
+  network: ws
+  port: 443
+  server: 5.10.245.89
+  servername: us1.lzjnb.shop
+  skip-cert-verify: true
+  sni: us1.lzjnb.shop
+  tls: true
+  type: vmess
+  uuid: 8913bd2c-fd6b-4253-9076-753edbbbc90c
+  ws-opts:
+    headers:
+      Host: us1.lzjnb.shop
+    path: /fd6b
+- alpn:
+  - http%2F1.1
+  name: 18|🇭🇰👖TG频道@stymei1丨18
+  network: ws
+  password: 512d9674-db12-44ca-a1b5-654244549b65
+  port: 443
+  server: cccvffgty.444752.xyz
+  servername: cccvffgty.444752.xyz
+  skip-cert-verify: true
+  sni: cccvffgty.444752.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: cccvffgty.444752.xyz
+    path: /HOi2k5ElZdeML7Ua7dX3JIrYk7zm
+- alpn:
+  - http%2F1.1
+  name: 18|🇭🇰👖TG频道@stymei1丨19
+  network: ws
+  password: 512d9674-db12-44ca-a1b5-654244549b65
+  port: 443
+  server: sssxxcvfty.444752.xyz
+  servername: sssxxcvfty.444752.xyz
+  skip-cert-verify: true
+  sni: sssxxcvfty.444752.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: sssxxcvfty.444752.xyz
+    path: /HOi2k5ElZdeML7Ua7dX3JIrYk7zm
+- alpn:
+  - http%2F1.1
+  name: 18|🇭🇰👖TG频道@stymei1丨20
+  network: ws
+  password: 512d9674-db12-44ca-a1b5-654244549b65
+  port: 443
+  server: gghui.4444936.xyz
+  servername: gghui.4444936.xyz
+  skip-cert-verify: true
+  sni: gghui.4444936.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: gghui.4444936.xyz
+    path: /HOi2k5ElZdeML7Ua7dX3JIrYk7zm
 - cipher: aes-128-gcm
   name: 12|🇯🇵
   password: shadowsocks
   port: 443
   server: 149.22.87.240
   type: ss
-- cipher: rc4-md5
-  name: 20|_DE_国
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
+- cipher: aes-256-cfb
+  country: 🇷 KR
+  name: 15| KR_131
+  password: qwerREWQ@@
+  port: 4652
+  server: 218.237.185.230
   type: ss
-- name: 20|_FR_国
-  network: tcp
-  password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
+- country: 🇬SG
+  name: 15|SG_186
+  password: d4bdfc72-7f0c-4ff0-aa4d-3530736f4088
   port: 443
-  server: 146.19.106.154
+  server: sg-full.privateip.net
   skip-cert-verify: true
-  sni: both-cramp-banjo.stark-industries.solutions
   type: trojan
-- cipher: aes-256-gcm
-  name: 25|[SS] 🇷🇺 俄罗斯 Rubtsovsk Branch o...
-  password: 7e1dd4c55bf85da5
-  port: 2029
-  server: 212.192.12.22
-  tfo: false
-  type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇪 DE
+  name: 15| DE_93
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 92.118.205.228
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇩🇪 DE
+  name: 15|🇪 DE_94
+  password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3
+  port: 54075
+  server: beta.mattenadene.org
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇪DE
+  name: 15|🇪DE_95
+  password: Sn5B7jTqr76aCJT8
+  port: 9097
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 15|🇩🇪DE_98
+  password: aLpQtfEZe445QyHk
+  port: 9098
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 15|🇩🇪DE_99
+  password: BwcAUZk8hUFAkDGN
+  port: 9031
+  server: 80.92.204.106
+  type: ss
+- country: 🇩🇪DE
+  name: 15|🇩🇪DE_100
+  password: 665c944d-047d-4659-80d5-3eaac70241a9
+  port: 443
+  server: 139.162.158.172
+  skip-cert-verify: true
+  sni: de2-full.privateip.net
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇷 FR
+  name: 15| FR_104
+  password: qXvO7zYU7KeaB0Md7DQLow
+  port: 1080
+  server: 51.195.119.47
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇷FR
+  name: 15|🇷FR_105
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 195.154.185.174
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 15|🇺 RU_176
+  password: uQS5ntVqC00sSKkeNzUiD3
+  port: 42090
+  server: 89.23.103.125
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 15|🇷🇺 RU_177
+  password: pV5BAzqLZosOfuIrkyoadT
+  port: 18660
+  server: 5.181.21.194
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 15|🇺 RU_179
+  password: RiPuKJJl18ZgvLpTjWxBwSfKiPkt9gzFKyxGCY8eHtOcDb2X
+  port: 31348
+  server: 5.189.201.250
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 15|🇷🇺 RU_180
+  password: 0zyDRZ1XmNXaaCAN7KEA8a
+  port: 28825
+  server: 45.151.62.54
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 30,34|🇳🇱 _荷兰
+  country: 🇺 RU
+  h2-opts: {}
+  http-opts: {}
+  name: 15|🇺 RU_181
   network: tcp
-  port: '58819'
-  server: 194.5.193.95
-  tls: false
+  port: 45215
+  server: fa.fxlcn.com
+  skip-cert-verify: true
   type: vmess
-  uuid: b0bf81e1-0b18-4253-a278-d516f580240a
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇷🇺 RU
+  h2-opts: {}
+  http-opts: {}
+  name: 15|🇺 RU_182
+  network: tcp
+  port: 45245
+  server: ye.fxlcn.com
+  servername: ye.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- cipher: aes-256-cfb
+  country: 🇺RU
+  name: 15|🇺RU_183
+  password: PeHSHm5SqEjBuEXE
+  port: 9065
+  server: 45.89.52.66
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 15|🇧 GB_108
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.47.253.227
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 15|🇧 GB_110
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.126.239.250
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 15|🇬🇧 GB_111
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.47.255.22
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 15|🇬🇧 GB_114
+  password: oHOP1bWFMkQVx3PdbhRlOk
+  port: 8315
+  server: 77.239.116.76
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇬🇧 GB
+  name: 15|🇬🇧 GB_116
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
+  type: ss
+- country: 🇬🇧 GB
+  name: 15|🇬🇧 GB_118
+  password: dd6dcb10-4683-11f0-ae79-1239d0255272
+  port: 443
+  server: 51.38.65.155
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇬🇧 GB
+  name: 15|🇬🇧 GB_119
+  password: 255a0a50-3f10-11f0-b0d6-1239d0255272
+  port: 443
+  server: 51.38.65.155
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- cipher: aes-128-gcm
+  country: 🇧GB
+  name: 15|🇬🇧GB_120
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.195
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇧GB
+  name: 15|🇬🇧GB_121
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.198
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇷🇺 RU
+  ip-version: dual
+  name: 0,1,15,24,30,31,40,42|MD_speednode_0117
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.153.197.5
+  type: ss
+  udp: true
+- name: 30|🇸_US_美国->🇷_FR_国
+  network: ws
+  password: 4a3ee276-f50f-46f6-ba4d-13571732ab70
+  port: 443
+  server: 172.67.204.120
+  sni: ddcDe.890603.XYz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: ddcde.890603.xyz
+    path: /COp52Dbu3dvwvDWUxOqxq
+- country: 🇼 TW
+  name: 15|🇼 TW_190
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  port: 443
+  server: taifo03a.kbservice.club
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -81,11 +399,46 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
+  - 15|🇩🇪DE_100
+  - 15|🇭🇰 HK_126
+  - 15|🇧 GB_110
+  - 15|🇼 TW_190
+  - 15|SG_186
+  - 15|🇬🇧 GB_118
+  - 0,1,15,24,30,31,40,42|MD_speednode_0117
+  - 15|🇷🇺 RU_180
+  - 18|🇭🇰👖TG频道@stymei1丨19
+  - 15|🇪 DE_94
+  - 15| DE_93
+  - 18|🇭🇰👖TG频道@stymei1丨18
+  - 15|🇺 RU_176
+  - 15|🇺RU_183
+  - 18|🇭🇰👖TG频道@stymei1丨20
+  - 15| KR_131
+  - 15|🇪DE_95
+  - 15|🇬🇧 GB_114
+  - 15|🇩🇪DE_98
+  - 30|🇸_US_美国->🇷_FR_国
+  - 15|🇺 RU_181
+  - 15|🇬🇧 GB_119
+  - 15|🇬🇧 GB_116
+  - 15|🇺 RU_182
+  - 15| FR_104
+  - 15| HK_122
+  - 18|🇭🇰👖TG频道@stymei1丨14
+  - 15|🇩🇪DE_99
+  - 15|🇧 GB_108
+  - 15|🇷🇺 RU_177
+  - 15,30|🇸_US_美国
+  - 15|🇺 RU_179
+  - 15|🇭🇰 HK_125
+  - 15|🇬🇧 GB_111
   - 12|🇯🇵
-  - 20|_DE_国
-  - 20|_FR_国
-  - 25|[SS] 🇷🇺 俄罗斯 Rubtsovsk Branch o...
-  - 30,34|🇳🇱 _荷兰
+  - 15|🇷FR_105
+  - 18|🇭🇰👖TG频道@stymei1丨16
+  - 15|🇬🇧GB_120
+  - 15|🇰 HK_124
+  - 15|🇬🇧GB_121
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
