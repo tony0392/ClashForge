@@ -1741,7 +1741,7 @@ def download_and_extract_latest_release():
             break
 
     if download_url:
-        download_url = f"https://slink.ltd/{download_url}"
+        download_url = f"{download_url}"
         print(f"Downloading file from {download_url}")
         filename = download_url.split('/')[-1]
         response = requests.get(download_url)
