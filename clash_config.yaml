@@ -38,46 +38,103 @@ proxies:
   port: 443
   server: 149.22.87.240
   type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 34,37|🇯🇵 日本2|@stairnode
-  password: 823e135ed103
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jp7v1.lingjfjkm002.com
-    mode: websocket
-    mux: true
-    path: /dchlbvrbbotc
-    skip-cert-verify: false
-    tls: true
-  port: 636
-  server: 137.220.191.40
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 22,34,37|🇸🇬 新加坡3|@stairnode
-  password: 24Wk2NSszrfHn22zem1lYV
-  port: 37708
-  server: 188.166.220.70
-  tfo: false
-  type: ss
+- name: 26|日本 001
+  network: ws
+  password: trojan
+  port: 443
+  server: 91.193.58.0
+  sni: wahaha.yingyangkuaixian.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: wahaha.yingyangkuaixian.dpdns.org
+    path: /
+- name: 17|🇩🇪👖TG频道@stymei1丨8
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 8443
+  server: 154.83.2.61
+  servername: vle.amclubdns.dpdns.org
+  skip-cert-verify: true
+  sni: vle.amclubdns.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: vle.amclubdns.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan
+- name: 17|🇩🇪👖TG频道@stymei1丨10
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2053
+  server: 103.160.204.26
+  servername: vle.amclubdns.dpdns.org
+  skip-cert-verify: true
+  sni: vle.amclubdns.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: vle.amclubdns.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan
+- name: 17|🇩🇪👖TG频道@stymei1丨11
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 8443
+  server: 156.238.18.220
+  servername: vle.amclubdns.dpdns.org
+  skip-cert-verify: true
+  sni: vle.amclubdns.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: vle.amclubdns.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan
+- alterId: 0
+  cipher: auto
+  flow: ''
+  name: 17|🇩🇪👖TG频道@stymei1丨24
+  port: 43585
+  server: 185.142.53.63
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 2babf34a-16f5-4e38-a885-738fdfc8eabf
+- name: 17|🇩🇪👖TG频道@stymei1丨32
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 27.50.48.126
+  servername: tyep.esslh.filegear-sg.me
+  skip-cert-verify: true
+  sni: tyep.esslh.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: tyep.esslh.filegear-sg.me
+    path: /?ed=2560
 - cipher: chacha20-ietf-poly1305
   name: 19|_DE_国
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 45.87.175.22
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 36,38|GB_speednode_0106
-  port: 8080
-  server: 185.189.58.195
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 0d1da504-fd3d-5192-8a52-90c87bc5e5ca
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇷🇺_RU_俄罗斯_1
+  password: c40641c1f89e7acb
+  port: 57456
+  server: 62.133.63.212
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇷🇺_RU_俄罗斯_2
+  password: c40641c1f89e7acb
+  port: 57456
+  server: tr.vpnsparta.pro
+  type: ss
+- cipher: aes-256-cfb
+  name: 19|_GB_国->_NL_
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.23.63
+  type: ss
 - cipher: aes-256-cfb
   name: 19|🇬🇧_GB_英国->🇸_US_美国
   password: f8f7aCzcPKbsF8p3
@@ -96,12 +153,18 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 22,34,37|🇸🇬 新加坡3|@stairnode
-  - 19|🇬🇧_GB_英国->🇸_US_美国
-  - 19|_DE_国
-  - 36,38|GB_speednode_0106
-  - 34,37|🇯🇵 日本2|@stairnode
+  - 28|🇷🇺_RU_俄罗斯_1
+  - 28|🇷🇺_RU_俄罗斯_2
   - 11|🇯🇵
+  - 19|_GB_国->_NL_
+  - 17|🇩🇪👖TG频道@stymei1丨24
+  - 17|🇩🇪👖TG频道@stymei1丨11
+  - 19|_DE_国
+  - 17|🇩🇪👖TG频道@stymei1丨8
+  - 19|🇬🇧_GB_英国->🇸_US_美国
+  - 17|🇩🇪👖TG频道@stymei1丨32
+  - 17|🇩🇪👖TG频道@stymei1丨10
+  - 26|日本 001
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
