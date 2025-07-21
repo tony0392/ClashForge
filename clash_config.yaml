@@ -32,11 +32,68 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 17|🇭🇰👖TG频道stymei1丨28
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 193.29.139.235
+  skip-cert-verify: true
+  tfo: false
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: 17|🇭🇰👖TG频道stymei1丨29
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 27.50.48.126
+  servername: tyep.esslh.filegear-sg.me
+  skip-cert-verify: true
+  sni: tyep.esslh.filegear-sg.me
+  tfo: false
+  tls: true
+  type: trojan
+  udp: true
+  ws-opts:
+    headers: {}
+    path: /?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 18,23,30|🇭🇰 香港 电讯盈科有限公司
+  network: ws
+  port: '80'
+  server: a600f817-szt5s0-t167d0-ggww.hkt.tcpbbr.net
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: bcc58e88-e147-11ec-b286-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
 - cipher: aes-128-gcm
   name: 11|🇯🇵
   password: shadowsocks
   port: 443
   server: 149.22.87.240
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 22,34,37|🇯🇵 日本2|@stairnode
+  password: 823e135ed103
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp7v1.lingjfjkm002.com
+    mode: websocket
+    mux: true
+    path: /dchlbvrbbotc
+    skip-cert-verify: false
+    tls: true
+  port: 636
+  server: 137.220.191.40
+  tfo: false
   type: ss
 - name: 26|日本 001
   network: ws
@@ -49,92 +106,38 @@ proxies:
     headers:
       Host: wahaha.yingyangkuaixian.dpdns.org
     path: /
-- name: 17|🇩🇪👖TG频道@stymei1丨8
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 8443
-  server: 154.83.2.61
-  servername: vle.amclubdns.dpdns.org
-  skip-cert-verify: true
-  sni: vle.amclubdns.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: vle.amclubdns.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan
-- name: 17|🇩🇪👖TG频道@stymei1丨10
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2053
-  server: 103.160.204.26
-  servername: vle.amclubdns.dpdns.org
-  skip-cert-verify: true
-  sni: vle.amclubdns.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: vle.amclubdns.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan
-- name: 17|🇩🇪👖TG频道@stymei1丨11
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 8443
-  server: 156.238.18.220
-  servername: vle.amclubdns.dpdns.org
-  skip-cert-verify: true
-  sni: vle.amclubdns.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: vle.amclubdns.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan
-- alterId: 0
-  cipher: auto
-  flow: ''
-  name: 17|🇩🇪👖TG频道@stymei1丨24
-  port: 43585
-  server: 185.142.53.63
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 2babf34a-16f5-4e38-a885-738fdfc8eabf
-- name: 17|🇩🇪👖TG频道@stymei1丨32
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 27.50.48.126
-  servername: tyep.esslh.filegear-sg.me
-  skip-cert-verify: true
-  sni: tyep.esslh.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: tyep.esslh.filegear-sg.me
-    path: /?ed=2560
 - cipher: chacha20-ietf-poly1305
   name: 19|_DE_国
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 45.87.175.22
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇷🇺_RU_俄罗斯_1
-  password: c40641c1f89e7acb
-  port: 57456
-  server: 62.133.63.212
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇷🇺_RU_俄罗斯_2
-  password: c40641c1f89e7acb
-  port: 57456
-  server: tr.vpnsparta.pro
-  type: ss
-- cipher: aes-256-cfb
-  name: 19|_GB_国->_NL_
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 51.15.23.63
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 30|🇫🇷 VMESS-未知>法国-ChatGPT-1a2d514...
+  network: ws
+  port: '443'
+  server: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
+  tls: true
+  type: vmess
+  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
+  ws-opts:
+    headers:
+      Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
+    path: /azumase.ren
+- alterId: 0
+  cipher: auto
+  name: 30|🇬🇧 VMESS-未知>英国-NF解锁波兰地区非自制剧-Ch...
+  network: ws
+  port: '443'
+  server: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
+  tls: true
+  type: vmess
+  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
+  ws-opts:
+    headers:
+      Host: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
+    path: /azumase.ren
 - cipher: aes-256-cfb
   name: 19|🇬🇧_GB_英国->🇸_US_美国
   password: f8f7aCzcPKbsF8p3
@@ -153,17 +156,15 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 28|🇷🇺_RU_俄罗斯_1
-  - 28|🇷🇺_RU_俄罗斯_2
+  - 17|🇭🇰👖TG频道stymei1丨28
   - 11|🇯🇵
-  - 19|_GB_国->_NL_
-  - 17|🇩🇪👖TG频道@stymei1丨24
-  - 17|🇩🇪👖TG频道@stymei1丨11
+  - 17|🇭🇰👖TG频道stymei1丨29
+  - 18,23,30|🇭🇰 香港 电讯盈科有限公司
   - 19|_DE_国
-  - 17|🇩🇪👖TG频道@stymei1丨8
   - 19|🇬🇧_GB_英国->🇸_US_美国
-  - 17|🇩🇪👖TG频道@stymei1丨32
-  - 17|🇩🇪👖TG频道@stymei1丨10
+  - 22,34,37|🇯🇵 日本2|@stairnode
+  - 30|🇫🇷 VMESS-未知>法国-ChatGPT-1a2d514...
+  - 30|🇬🇧 VMESS-未知>英国-NF解锁波兰地区非自制剧-Ch...
   - 26|日本 001
   url: http://www.pinterest.com
   interval: 300
