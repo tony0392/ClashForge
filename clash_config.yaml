@@ -32,23 +32,16 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- cipher: chacha20-ietf
-  country: 🇰 HK
-  name: 14| HK_76
-  password: asd123456
-  port: 8388
-  server: 103.36.91.23
-  type: ss
 - cipher: aes-256-cfb
-  country: 🇭🇰 HK
-  name: 14|🇰 HK_77
+  country: 🇰 HK
+  name: 14| HK_82
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.16.212
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇭🇰 HK
-  name: 14|🇰 HK_78
+  name: 14|🇰 HK_85
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 203.23.128.33
@@ -60,7 +53,7 @@ proxies:
   server: 149.22.87.240
   type: ss
 - country: 🇬 SG
-  name: 14| SG_156
+  name: 14| SG_165
   password: ZYYSlSORYq6KXDCpCS3XC4zRnK73BDzIp0FaNynya9Dg5AEAeOgDaaFFO3e8w5NZ3Bexw
   port: 443
   server: 18.141.191.2
@@ -69,20 +62,34 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇪 DE
-  name: 14|🇪 DE_58
+  name: 14|🇪 DE_59
   password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3
   port: 54075
   server: beta.mattenadene.org
   type: ss
 - cipher: aes-256-cfb
   country: 🇪DE
-  name: 14|🇪DE_59
-  password: Sn5B7jTqr76aCJT8
-  port: 9097
+  name: 14|🇪DE_60
+  password: ZpNDDKRu9MagNvaf
+  port: 9015
   server: 80.92.204.106
   type: ss
-- country: 🇪DE
-  name: 14|🇪DE_60
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 14|🇪DE_61
+  password: FAdUvMJUq5vDgKEq
+  port: 9006
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 14|🇩🇪DE_62
+  password: cp8pRSUAyLhTfVWH
+  port: 9064
+  server: 80.92.204.106
+  type: ss
+- country: 🇩🇪DE
+  name: 14|🇩🇪DE_63
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
   server: 139.162.158.172
@@ -90,79 +97,38 @@ proxies:
   sni: de2-full.privateip.net
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  name: 17|🇩🇪👖TG频道@stymei1丨1
-  network: ws
-  password: trojan
-  port: 8443
-  server: 109.234.211.66
-  servername: store.timimi.dpdns.org
-  skip-cert-verify: true
-  sni: store.timimi.dpdns.org
-  tfo: false
-  tls: true
-  type: trojan
-  udp: true
-  ws-opts:
-    headers: {}
-    path: /
-- client-fingerprint: chrome
-  name: 17|🇩🇪👖TG频道@stymei1丨2
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2083
-  server: 194.53.53.249
-  servername: vle.amclubdns.dpdns.org
-  skip-cert-verify: true
-  sni: vle.amclubdns.dpdns.org
-  tfo: false
-  tls: true
-  type: trojan
-  udp: true
-  ws-opts:
-    headers: {}
-    path: /?ed=2560&PROT_TYPE=trojan
-- cipher: chacha20-ietf-poly1305
-  name: 17|🇩🇪👖TG频道@stymei1丨11
-  password: ae6e933b-8874-4bf4-a384-0de216ef2bf4
-  port: 40030
-  server: pr.fastsoonlink.com
-  skip-cert-verify: true
-  tfo: false
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇷 FR
-  name: 14| FR_61
+  name: 14| FR_64
   password: qXvO7zYU7KeaB0Md7DQLow
   port: 1080
   server: 51.195.119.47
   type: ss
 - cipher: aes-256-cfb
   country: 🇷FR
-  name: 14|🇷FR_62
+  name: 14|🇷FR_66
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.185.174
   type: ss
-- country: 🇫🇷FR
-  name: 14|🇷FR_63
-  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
-  port: 443
-  server: uk-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - country: 🇷FR
-  name: 14|🇷FR_64
+  name: 14|🇷FR_67
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
   skip-cert-verify: true
   type: trojan
   udp: true
+- country: 🇷FR
+  name: 14|🇷FR_68
+  password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
+  port: 443
+  server: de-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - country: 🇫🇷FR
-  name: 14|🇫🇷FR_65
+  name: 14|🇫🇷FR_69
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
@@ -170,51 +136,63 @@ proxies:
   type: trojan
   udp: true
 - country: 🇫🇷FR
-  name: 14|🇫🇷FR_66
-  password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
+  name: 14|🇫🇷FR_70
+  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
-  server: de-full.privateip.net
+  server: uk-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 30|🇫🇷 VMESS-未知>法国-ChatGPT-1a2d514...
+  network: ws
+  port: '443'
+  server: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
+  tls: true
+  type: vmess
+  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
+  ws-opts:
+    headers:
+      Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
+    path: /azumase.ren
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: 14| RU_148
+  name: 14|🇺 RU_157
   password: qscavF5UviIL-8V-E4raBA
   port: 2222
   server: 194.87.71.228
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: 14|🇺 RU_149
-  password: qscavF5UviIL-8V-E4raBA
-  port: 2222
-  server: 2.59.163.104
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇺 RU
-  name: 14|🇷🇺 RU_150
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.153.197.5
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇷🇺 RU
-  name: 14|🇷🇺 RU_151
+  name: 14|🇺 RU_159
   password: 360e21d21977dc11
   port: 57456
   server: 45.139.24.24
   type: ss
 - alterId: 0
   cipher: auto
-  country: 🇷🇺 RU
+  country: 🇺 RU
   h2-opts: {}
   http-opts: {}
-  name: 14|🇺 RU_153
+  name: 14|🇺 RU_160
   network: tcp
   port: 45245
   server: ye.fxlcn.com
   servername: ye.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇷🇺 RU
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺 RU_161
+  network: tcp
+  port: 45215
+  server: fa.fxlcn.com
   skip-cert-verify: true
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
@@ -232,28 +210,35 @@ proxies:
     path: '%2F'
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
-  name: 14| GB_67
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.47.255.22
+  name: 14|🇬🇧 GB_73
+  password: Bog0ELmMM9DSxDdQ
+  port: 443
+  server: 85.210.120.237
   type: ss
 - cipher: aes-128-gcm
   country: 🇬🇧 GB
-  name: 14|🇬🇧 GB_69
+  name: 14|🇧 GB_74
   password: shadowsocks
   port: 443
   server: 141.98.101.178
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
-  name: 14|🇧 GB_70
-  password: Bog0ELmMM9DSxDdQ
-  port: 443
-  server: 85.210.120.237
+  name: 14|🇧 GB_75
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.47.253.227
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 14|🇧 GB_76
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.126.237.38
   type: ss
 - cipher: aes-256-cfb
   country: 🇧 GB
-  name: 14|🇧 GB_71
+  name: 14|🇬🇧 GB_77
   obfs: plain
   password: f8f7aCzcPKbsF8p3
   port: 989
@@ -261,7 +246,7 @@ proxies:
   server: 62.100.205.48
   type: ssr
 - country: 🇧 GB
-  name: 14|🇧 GB_72
+  name: 14|🇧 GB_78
   password: dd6dcb10-4683-11f0-ae79-1239d0255272
   port: 443
   server: 51.38.65.155
@@ -269,7 +254,7 @@ proxies:
   type: trojan
   udp: true
 - country: 🇬🇧 GB
-  name: 14|🇬🇧 GB_73
+  name: 14|🇧 GB_79
   password: 255a0a50-3f10-11f0-b0d6-1239d0255272
   port: 443
   server: 51.38.65.155
@@ -278,23 +263,17 @@ proxies:
   udp: true
 - cipher: aes-128-gcm
   country: 🇬🇧GB
-  name: 14|🇬🇧GB_74
+  name: 14|🇬🇧GB_80
   password: shadowsocks
   port: 443
   server: 212.102.53.198
   type: ss
 - cipher: aes-128-gcm
   country: 🇬🇧GB
-  name: 14|🇬🇧GB_75
+  name: 14|🇬🇧GB_81
   password: shadowsocks
   port: 443
   server: 212.102.53.195
-  type: ss
-- cipher: aes-256-cfb
-  name: 27|_GB_国
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 51.15.17.169
   type: ss
 - alterId: 0
   cipher: auto
@@ -310,7 +289,7 @@ proxies:
       Host: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
     path: /azumase.ren
 - country: 🇼 TW
-  name: 14| TW_158
+  name: 14| TW_167
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 443
   server: taifo03a.kbservice.club
@@ -329,40 +308,38 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 14|🇧 GB_70
-  - 14|🇰 HK_77
-  - 27|_GB_国
-  - 14|🇬🇧GB_74
-  - 17|🇩🇪👖TG频道@stymei1丨1
-  - 14|🇪DE_59
-  - 14| TW_158
-  - 18,33|美国|@ripaojiedian
-  - 14| GB_67
-  - 14| HK_76
-  - 14|🇪 DE_58
-  - 14|🇬🇧GB_75
-  - 14|🇺 RU_153
-  - 14|🇷FR_62
-  - 14| SG_156
-  - 14|🇧 GB_71
+  - 14|🇺 RU_161
+  - 14|🇷FR_68
+  - 14|🇰 HK_85
+  - 14| TW_167
+  - 14|🇪 DE_59
   - 30|🇬🇧 VMESS-未知>英国-NF解锁波兰地区非自制剧-Ch...
-  - 14|🇬🇧 GB_73
-  - 14|🇰 HK_78
+  - 14| SG_165
+  - 14|🇺 RU_159
+  - 14|🇫🇷FR_70
+  - 14|🇺 RU_160
+  - 30|🇫🇷 VMESS-未知>法国-ChatGPT-1a2d514...
+  - 14|🇧 GB_76
+  - 14|🇩🇪DE_63
+  - 14|🇧 GB_79
+  - 14|🇷FR_67
+  - 14|🇧 GB_74
+  - 14|🇫🇷FR_69
   - 11|🇯🇵
-  - 14|🇬🇧 GB_69
-  - 17|🇩🇪👖TG频道@stymei1丨2
-  - 14|🇷🇺 RU_150
-  - 14|🇷🇺 RU_151
-  - 14|🇷FR_64
-  - 14|🇺 RU_149
-  - 14| RU_148
-  - 14|🇫🇷FR_65
-  - 14|🇧 GB_72
+  - 14|🇧 GB_75
+  - 14|🇺 RU_157
+  - 14|🇷FR_66
+  - 14|🇬🇧 GB_77
+  - 14|🇪DE_61
+  - 14| FR_64
+  - 14|🇧 GB_78
+  - 14|🇬🇧GB_80
   - 14|🇪DE_60
-  - 14|🇷FR_63
-  - 14|🇫🇷FR_66
-  - 14| FR_61
-  - 17|🇩🇪👖TG频道@stymei1丨11
+  - 18,33|美国|@ripaojiedian
+  - 14|🇬🇧GB_81
+  - 14|🇩🇪DE_62
+  - 14|🇬🇧 GB_73
+  - 14| HK_82
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
