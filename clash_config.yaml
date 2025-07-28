@@ -38,12 +38,6 @@ proxies:
   port: 443
   server: 149.22.87.240
   type: ss
-- cipher: aes-256-cfb
-  name: 27|🇷_KR_国
-  password: qwerREWQ@@
-  port: 15098
-  server: p222.panda001.net
-  type: ss
 - alterId: 0
   cipher: auto
   name: 30|🇫🇷 VMESS-未知>法国-ChatGPT-1a2d514...
@@ -68,24 +62,6 @@ proxies:
     headers:
       Host: torjan.xn--xhq44j.eu.org
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 27|_RU_
-  password: eUh4lSpi7nOYj0vSrqLUh0
-  port: 8506
-  server: 95.163.176.37
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 27|🇷🇺_RU_俄罗斯_1
-  password: c40641c1f89e7acb
-  port: 57456
-  server: tr.vpnsparta.pro
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 27|🇷🇺_RU_俄罗斯_2
-  password: c40641c1f89e7acb
-  port: 57456
-  server: 62.133.63.212
-  type: ss
 - alterId: 0
   cipher: auto
   name: 30|🇬🇧 VMESS-未知>英国-NF解锁波兰地区非自制剧-Ch...
@@ -111,14 +87,10 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 27|_RU_
-  - 27|🇷🇺_RU_俄罗斯_2
-  - 30|🇫🇷 VMESS-未知>法国-ChatGPT-1a2d514...
-  - 30|🇬🇧 VMESS-未知>英国-NF解锁波兰地区非自制剧-Ch...
-  - 27|🇷_KR_国
-  - 27|🇷🇺_RU_俄罗斯_1
   - 26|俄罗斯 005
+  - 30|🇬🇧 VMESS-未知>英国-NF解锁波兰地区非自制剧-Ch...
   - 11|🇯🇵
+  - 30|🇫🇷 VMESS-未知>法国-ChatGPT-1a2d514...
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
