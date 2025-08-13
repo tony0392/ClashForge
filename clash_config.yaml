@@ -32,283 +32,197 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- cipher: chacha20-ietf
-  country: 🇰 HK
-  name: 14| HK_87
-  password: asd123456
-  port: 8388
-  server: 103.36.91.23
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇭🇰 HK
-  name: 14|🇰 HK_88
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.223.16.212
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇭🇰 HK
-  name: 14|🇰 HK_89
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
-  type: ss
-- alterId: 2
-  cipher: auto
-  name: 23,30|🇭🇰 香港 电讯盈科有限公司
+- name: 36,38|HK_speednode_0061
   network: ws
-  port: '80'
-  server: hkt.gotochinatown.net
+  password: Aimer
+  port: 2087
+  server: 154.211.8.227
   skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
   udp: true
-  uuid: 336501b6-51d2-11ee-a993-f23c9164ca5d
   ws-opts:
     headers:
-      Host: hkt.gotochinatown.net
-    path: /
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 36,38|HK_speednode_0062
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 154.211.8.150
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
 - cipher: aes-128-gcm
   name: 11|🇯🇵
   password: shadowsocks
   port: 443
   server: 149.22.87.240
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 13|🇯🇵 日本 | JPN
-  password: 1b794282-37a1-400c-a12f-1e0b5395972b
-  port: 23472
-  server: 23.27.201.149
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇬 SG
-  name: 14| SG_178
-  password: 24Wk2NSszrfHn22zem1lYV
-  port: 37708
-  server: 188.166.220.70
-  type: ss
-- country: 🇬SG
-  name: 14|🇬SG_179
-  password: d4bdfc72-7f0c-4ff0-aa4d-3530736f4088
-  port: 443
-  server: sg-full.privateip.net
+- name: 36,38|JP_speednode_0067
+  network: ws
+  password: Aimer
+  port: 8080
+  server: 34.85.77.183
   skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
   type: trojan
   udp: true
-- country: 🇬SG
-  name: 14|🇬SG_180
-  password: c3d6d2e4-05a5-4a48-b91a-070b5e9fcdfb
-  port: 443
-  server: sg2-full.privateip.net
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 36,38|JP_speednode_0069
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 103.116.7.67
   skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 13|🇩🇪 德国 | DEU
-  password: 1b794282-37a1-400c-a12f-1e0b5395972b
-  port: 1569
-  server: 31.22.10.139
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 13|🇩🇪 德国 | DEU 2
-  password: 1b794282-37a1-400c-a12f-1e0b5395972b
-  port: 5968
-  server: 185.183.181.242
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇪 DE
-  name: 14|🇪 DE_59
-  password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3
-  port: 54075
-  server: beta.mattenadene.org
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇩🇪DE
-  name: 14|🇪DE_61
-  password: FAdUvMJUq5vDgKEq
-  port: 9006
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇩🇪DE
-  name: 14|🇩🇪DE_62
-  password: Sn5B7jTqr76aCJT8
-  port: 9097
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇩🇪DE
-  name: 14|🇩🇪DE_63
-  password: cp8pRSUAyLhTfVWH
-  port: 9064
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇩🇪DE
-  name: 14|🇩🇪DE_64
-  password: ZpNDDKRu9MagNvaf
-  port: 9015
-  server: 80.92.204.106
-  type: ss
-- country: 🇩🇪DE
-  name: 14|🇩🇪DE_65
-  password: 665c944d-047d-4659-80d5-3eaac70241a9
-  port: 443
-  server: 139.162.158.172
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 36,38|SG_speednode_0171
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 92.243.74.23
   skip-cert-verify: true
-  sni: de2-full.privateip.net
+  sni: epgb.aimercc.dpdns.org
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇷 FR
-  name: 14| FR_68
-  password: qXvO7zYU7KeaB0Md7DQLow
-  port: 1080
-  server: 51.195.119.47
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇷FR
-  name: 14|🇫🇷FR_69
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 195.154.185.174
-  type: ss
-- country: 🇷FR
-  name: 14|🇷FR_70
-  password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
-  port: 443
-  server: fr-full.privateip.net
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 36,38|SG_speednode_0173
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 27.50.49.37
   skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
   type: trojan
   udp: true
-- country: 🇷FR
-  name: 14|🇷FR_71
-  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 36,38|SG_speednode_0174
+  network: ws
+  password: Aimer
   port: 443
-  server: uk-full.privateip.net
+  server: 27.50.49.136
   skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
   type: trojan
   udp: true
-- country: 🇷FR
-  name: 14|🇫🇷FR_72
-  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
-  port: 443
-  server: 198.244.190.189
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 23,36,38|SG_speednode_0175
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 92.243.74.239
   skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  tfo: false
   type: trojan
   udp: true
-- country: 🇫🇷FR
-  name: 14|🇫🇷FR_73
-  password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
-  port: 443
-  server: de-full.privateip.net
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 23,36,38|SG_speednode_0172
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 92.243.74.3
   skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  tfo: false
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: 14| RU_170
-  password: mSQiuT5jR17nyWgcXOPrTW
-  port: 8594
-  server: 77.105.166.12
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: 14|🇺 RU_171
-  password: eUh4lSpi7nOYj0vSrqLUh0
-  port: 8506
-  server: 95.163.176.37
-  type: ss
-- alterId: 0
-  cipher: auto
-  country: 🇺 RU
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺 RU_174
-  network: tcp
-  port: 45215
-  server: fa.fxlcn.com
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 23,36,38|RU_speednode_0159
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 46.254.93.251
   skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇷🇺 RU
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺 RU_175
-  network: tcp
-  port: 45245
-  server: ye.fxlcn.com
-  servername: ye.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 14|🇧 GB_75
-  password: Bog0ELmMM9DSxDdQ
-  port: 443
-  server: 85.210.120.237
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 14|🇧 GB_78
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.47.255.22
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 14|🇬🇧 GB_79
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.126.237.38
-  type: ss
-- country: 🇧 GB
-  name: 14|🇧 GB_82
-  password: dd6dcb10-4683-11f0-ae79-1239d0255272
-  port: 443
-  server: 51.38.65.155
-  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  tfo: false
   type: trojan
   udp: true
-- country: 🇬🇧 GB
-  name: 14|🇬🇧 GB_83
-  password: 255a0a50-3f10-11f0-b0d6-1239d0255272
-  port: 443
-  server: 51.38.65.155
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 36,38|RU_speednode_0157
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 46.254.92.142
   skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
   type: trojan
   udp: true
-- cipher: aes-128-gcm
-  country: 🇬🇧GB
-  name: 14|🇬🇧GB_84
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.198
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇬🇧GB
-  name: 14|🇬🇧GB_85
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.195
-  type: ss
-- country: 🇬🇧GB
-  name: 14|🇬🇧GB_86
-  password: 30761083-5dcd-49d6-85b5-33756ef1f7ed
-  port: 443
-  server: uk2-full.privateip.net
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 36,38|RU_speednode_0160
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 176.124.223.40
   skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
   type: trojan
   udp: true
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 36,38|RU_speednode_0161
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 5.182.84.50
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 36,38|RU_speednode_0163
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 46.254.93.211
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
 - alterId: 0
   cipher: auto
   name: 30|🇬🇧 VMESS-未知>英国-NF解锁波兰地区非自制剧-Ch...
@@ -322,27 +236,6 @@ proxies:
     headers:
       Host: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
     path: /azumase.ren
-- alterId: 0
-  cipher: auto
-  country: 🇼 TW
-  h2-opts: {}
-  http-opts: {}
-  name: 14| TW_182
-  network: ws
-  port: 20521
-  server: 103.61.139.137
-  skip-cert-verify: true
-  type: vmess
-  uuid: f8d93cfb-3d5d-447c-a697-16496dd74697
-  ws-path: /
-- country: 🇼 TW
-  name: 14|🇼 TW_183
-  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
-  port: 443
-  server: taifo03a.kbservice.club
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -355,44 +248,22 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 14| TW_182
-  - 14|🇬🇧GB_86
-  - 14| FR_68
-  - 14|🇼 TW_183
-  - 14|🇩🇪DE_62
-  - 14|🇧 GB_82
-  - 14|🇬🇧 GB_79
-  - 14|🇫🇷FR_72
-  - 14|🇷FR_71
-  - 14| SG_178
-  - 14|🇪DE_61
-  - 14|🇺 RU_175
-  - 14|🇩🇪DE_65
-  - 14| RU_170
-  - 14|🇬🇧 GB_83
-  - 14|🇪 DE_59
-  - 13|🇩🇪 德国 | DEU
-  - 14|🇬SG_180
-  - 14|🇬SG_179
-  - 14|🇺 RU_171
-  - 13|🇯🇵 日本 | JPN
-  - 13|🇩🇪 德国 | DEU 2
-  - 14|🇰 HK_88
-  - 14|🇫🇷FR_69
-  - 14|🇫🇷FR_73
-  - 23,30|🇭🇰 香港 电讯盈科有限公司
-  - 14|🇰 HK_89
   - 30|🇬🇧 VMESS-未知>英国-NF解锁波兰地区非自制剧-Ch...
-  - 14|🇬🇧GB_84
-  - 14|🇺 RU_174
-  - 14|🇧 GB_78
-  - 14|🇧 GB_75
   - 11|🇯🇵
-  - 14|🇩🇪DE_64
-  - 14|🇷FR_70
-  - 14|🇬🇧GB_85
-  - 14|🇩🇪DE_63
-  - 14| HK_87
+  - 36,38|JP_speednode_0067
+  - 23,36,38|SG_speednode_0175
+  - 36,38|HK_speednode_0061
+  - 36,38|RU_speednode_0163
+  - 23,36,38|RU_speednode_0159
+  - 23,36,38|SG_speednode_0172
+  - 36,38|RU_speednode_0161
+  - 36,38|RU_speednode_0160
+  - 36,38|RU_speednode_0157
+  - 36,38|SG_speednode_0173
+  - 36,38|JP_speednode_0069
+  - 36,38|SG_speednode_0174
+  - 36,38|SG_speednode_0171
+  - 36,38|HK_speednode_0062
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
