@@ -32,29 +32,251 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
+- cipher: aes-256-cfb
+  country: 🇰 HK
+  name: 14| HK_74
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.16.212
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇭🇰 HK
+  name: 14|🇰 HK_75
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
+  type: ss
+- name: 25,36|HK_71b99_0080
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 154.211.8.220
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 25,36|HK_71b99_0081
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 154.211.8.209
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 25,36|HK_71b99_0082
+  network: ws
+  password: Aimer
+  port: 443
+  server: 154.211.8.90
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 25,36|HK_71b99_0083
+  network: ws
+  password: Aimer
+  port: 443
+  server: 154.211.8.155
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
 - cipher: aes-128-gcm
   name: 11|🇯🇵
   password: shadowsocks
   port: 443
   server: 149.22.87.240
   type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 22,25,34,37|🇯🇵 日本2|@stairnode
-  password: 823e135ed103
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jp7v1.lingjfjkm002.com
-    mode: websocket
-    mux: true
-    path: /dchlbvrbbotc
-    skip-cert-verify: false
-    tls: true
-  port: 636
-  server: 137.220.191.40
-  tfo: false
-  type: ss
+- name: 25,26,36,38|JP_speednode_0077
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 103.116.7.100
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
   udp: true
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 25,26,36,38|JP_speednode_0078
+  network: ws
+  password: Aimer
+  port: 443
+  server: 103.116.7.189
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 25,26,36,38|JP_speednode_0076
+  network: ws
+  password: Aimer
+  port: 443
+  server: 103.116.7.235
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 25,26,36,38|JP_speednode_0079
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 103.116.7.103
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 36|JP_71b99_0094
+  port: 43722
+  server: 172.104.98.192
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 71dc43f8-dc50-4bb6-93e2-95dd5149d7fd
+- cipher: aes-256-cfb
+  country: 🇷 KR
+  name: 14|🇰🇷 KR_88
+  password: qwerREWQ@@
+  port: 4652
+  server: 218.237.185.230
+  type: ss
+- name: 25,36|SG_71b99_0225
+  network: ws
+  password: Aimer
+  port: 443
+  server: 27.50.48.21
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 25,26,36,38|SG_speednode_0200
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 92.243.74.23
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 25,36|SG_71b99_0227
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 27.50.48.115
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 25,26,36,38|SG_speednode_0198
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 92.243.75.49
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 25,36|SG_71b99_0229
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 27.50.49.74
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 25,36|SG_71b99_0230
+  network: ws
+  password: Aimer
+  port: 443
+  server: 27.50.49.208
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 25,36|SG_71b99_0231
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 27.50.49.251
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 25,26,36,38|SG_speednode_0199
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 92.243.74.3
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
 - client-fingerprint: chrome
   name: 26|德国 001
   network: ws
@@ -107,8 +329,21 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
+- name: 25,26,36,38|FR_speednode_0051
+  network: ws
+  password: Aimer
+  port: 443
+  server: 141.11.203.168
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
 - client-fingerprint: chrome
-  name: 26|法国 001
+  name: 26|法国 002
   network: ws
   password: ttfang
   port: 2096
@@ -120,34 +355,73 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 26|法国 002
+- name: 25,26,36,38|RU_speednode_0187
   network: ws
-  password: ttfang
-  port: 2096
-  server: 45.80.110.216
+  password: Aimer
+  port: 2053
+  server: 77.232.140.114
   skip-cert-verify: true
-  sni: ttfang.fange.me
+  sni: epgc.aimercc.dpdns.org
   type: trojan
+  udp: true
   ws-opts:
     headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 26|法国 003
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 25,26,36,38|RU_speednode_0186
   network: ws
-  password: ttfang
+  password: Aimer
   port: 2096
-  server: 45.80.111.216
+  server: 5.182.85.255
   skip-cert-verify: true
-  sni: ttfang.fange.me
+  sni: epgc.aimercc.dpdns.org
   type: trojan
+  udp: true
   ws-opts:
     headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 25,26,33,36,38|RU_speednode_0189
+  network: ws
+  password: tg-fq521free
+  port: 443
+  server: 45.67.215.95
+  skip-cert-verify: false
+  sni: torjan.xn--xhq44j.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: torjan.xn--xhq44j.eu.org
+    path: /
+- name: 25,26,36,38|RU_speednode_0190
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 5.182.84.229
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 25,26,36,38|RU_speednode_0188
+  network: ws
+  password: Aimer
+  port: 443
+  server: 176.124.223.92
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
 - client-fingerprint: chrome
-  name: 26|俄罗斯 011
+  name: 26|俄罗斯 012
   network: ws
   password: ttfang
   port: 2096
@@ -160,7 +434,7 @@ proxies:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
 - client-fingerprint: chrome
-  name: 26|俄罗斯 012
+  name: 26|俄罗斯 013
   network: ws
   password: ttfang
   port: 2096
@@ -172,8 +446,67 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 14| GB_63
+  password: Bog0ELmMM9DSxDdQ
+  port: 443
+  server: 85.210.120.237
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇧 GB
+  name: 14|🇧 GB_64
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 14|🇧 GB_66
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.126.237.38
+  type: ss
+- country: 🇧 GB
+  name: 14|🇧 GB_69
+  password: dd6dcb10-4683-11f0-ae79-1239d0255272
+  port: 443
+  server: 51.38.65.155
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇬🇧 GB
+  name: 14|🇧 GB_70
+  password: 255a0a50-3f10-11f0-b0d6-1239d0255272
+  port: 443
+  server: 51.38.65.155
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- cipher: aes-128-gcm
+  country: 🇧GB
+  name: 14|🇬🇧GB_71
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.195
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_72
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.198
+  type: ss
+- country: 🇬🇧GB
+  name: 14|🇬🇧GB_73
+  password: 30761083-5dcd-49d6-85b5-33756ef1f7ed
+  port: 443
+  server: uk2-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - client-fingerprint: chrome
-  name: 26|英国 002
+  name: 26|英国 001
   network: ws
   password: ttfang
   port: 2096
@@ -186,7 +519,7 @@ proxies:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
 - client-fingerprint: chrome
-  name: 26|英国 003
+  name: 26|英国 002
   network: ws
   password: ttfang
   port: 2096
@@ -199,7 +532,7 @@ proxies:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
 - client-fingerprint: chrome
-  name: 26|英国 004
+  name: 26|英国 003
   network: ws
   password: ttfang
   port: 2096
@@ -212,7 +545,7 @@ proxies:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
 - client-fingerprint: chrome
-  name: 26|英国 005
+  name: 26|英国 004
   network: ws
   password: ttfang
   port: 2096
@@ -225,7 +558,7 @@ proxies:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
 - client-fingerprint: chrome
-  name: 26|英国 006
+  name: 26|英国 005
   network: ws
   password: ttfang
   port: 2096
@@ -238,7 +571,7 @@ proxies:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
 - client-fingerprint: chrome
-  name: 26|英国 007
+  name: 26|英国 006
   network: ws
   password: ttfang
   port: 2096
@@ -251,7 +584,7 @@ proxies:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
 - client-fingerprint: chrome
-  name: 26|英国 008
+  name: 26|英国 007
   network: ws
   password: ttfang
   port: 2096
@@ -263,19 +596,14 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- alterId: 0
-  cipher: auto
-  name: 30|🇬🇧 VMESS-未知>英国-NF解锁波兰地区非自制剧-Ch...
-  network: ws
-  port: '443'
-  server: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
-  tls: true
-  type: vmess
-  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
-  ws-opts:
-    headers:
-      Host: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
-    path: /azumase.ren
+- country: 🇼 TW
+  name: 14|🇼 TW_160
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  port: 443
+  server: taifo03a.kbservice.club
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -288,25 +616,56 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 26|英国 002
-  - 22,25,34,37|🇯🇵 日本2|@stairnode
-  - 26|英国 005
-  - 11|🇯🇵
-  - 26|法国 003
-  - 26|英国 004
-  - 26|英国 008
-  - 26|英国 003
-  - 26|德国 003
+  - 25,26,36,38|JP_speednode_0079
+  - 25,36|SG_71b99_0230
+  - 14|🇧 GB_66
+  - 26|俄罗斯 013
+  - 14| GB_63
   - 26|英国 006
-  - 26|德国 004
-  - 26|德国 002
-  - 26|英国 007
-  - 26|俄罗斯 011
+  - 25,26,36,38|SG_speednode_0199
+  - 14|🇧 GB_69
+  - 25,26,36,38|RU_speednode_0186
   - 26|俄罗斯 012
-  - 30|🇬🇧 VMESS-未知>英国-NF解锁波兰地区非自制剧-Ch...
-  - 26|法国 001
-  - 26|法国 002
+  - 25,36|SG_71b99_0225
+  - 14|🇧 GB_70
+  - 25,26,36,38|RU_speednode_0187
+  - 25,26,36,38|RU_speednode_0190
+  - 26|德国 002
+  - 14|🇰🇷 KR_88
+  - 36|JP_71b99_0094
+  - 25,36|HK_71b99_0081
+  - 14|🇬🇧GB_71
+  - 26|德国 004
+  - 25,26,33,36,38|RU_speednode_0189
+  - 25,36|SG_71b99_0227
+  - 25,26,36,38|RU_speednode_0188
+  - 25,26,36,38|FR_speednode_0051
+  - 25,36|HK_71b99_0082
+  - 26|英国 005
+  - 26|英国 003
+  - 14|🇰 HK_75
+  - 26|英国 007
+  - 26|德国 003
+  - 14|🇼 TW_160
+  - 26|英国 002
+  - 25,36|HK_71b99_0080
+  - 25,26,36,38|JP_speednode_0078
+  - 14| HK_74
+  - 26|英国 004
+  - 25,26,36,38|SG_speednode_0198
+  - 26|英国 001
+  - 14|🇬🇧GB_72
+  - 25,26,36,38|JP_speednode_0076
+  - 25,26,36,38|SG_speednode_0200
+  - 25,36|SG_71b99_0229
+  - 25,26,36,38|JP_speednode_0077
+  - 14|🇬🇧GB_73
+  - 25,36|HK_71b99_0083
+  - 25,36|SG_71b99_0231
   - 26|德国 001
+  - 26|法国 002
+  - 11|🇯🇵
+  - 14|🇧 GB_64
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
