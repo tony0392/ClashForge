@@ -32,20 +32,6 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- cipher: chacha20-ietf
-  country: 🇰 HK
-  name: 14| HK_75
-  password: asd123456
-  port: 8388
-  server: 154.197.26.237
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇰 HK
-  name: 14|🇰 HK_76
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.223.16.212
-  type: ss
 - cipher: aes-128-gcm
   name: 11|🇯🇵
   password: shadowsocks
@@ -91,54 +77,6 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- cipher: aes-256-cfb
-  country: 🇷 KR
-  name: 14,25|🇰🇷 韩国2|@ripaojiedian
-  password: qwerREWQ@@
-  port: 4652
-  server: p141.panda001.net
-  type: ss
-  udp: true
-- country: 🇷 KR
-  name: 14|🇰🇷 KR_89
-  password: '!!str 0588'
-  port: 50000
-  server: 175.203.30.93
-  skip-cert-verify: true
-  sni: 888.uskm.dpdns.org
-  type: trojan
-  udp: true
-- country: 🇬SG
-  name: 14|SG_153
-  password: c3d6d2e4-05a5-4a48-b91a-070b5e9fcdfb
-  port: 443
-  server: sg2-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇪 DE
-  name: 14|🇪 DE_54
-  password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3
-  port: 54075
-  server: beta.mattenadene.org
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇪 DE
-  name: 14|🇩🇪 DE_57
-  password: qscavF5UviIL-8V-E4raBA
-  port: 2222
-  server: 185.245.107.61
-  type: ss
-- country: 🇪DE
-  name: 14|🇩🇪DE_58
-  password: 665c944d-047d-4659-80d5-3eaac70241a9
-  port: 443
-  server: 139.162.158.172
-  skip-cert-verify: true
-  sni: de2-full.privateip.net
-  type: trojan
-  udp: true
 - client-fingerprint: chrome
   name: 26|德国 001
   network: ws
@@ -217,36 +155,6 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- cipher: chacha20-ietf-poly1305
-  country: 🇷 FR
-  name: 14| FR_60
-  password: qXvO7zYU7KeaB0Md7DQLow
-  port: 1080
-  server: 51.195.119.47
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇷FR
-  name: 14|🇫🇷FR_61
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 195.154.185.174
-  type: ss
-- country: 🇷FR
-  name: 14|🇷FR_62
-  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
-  port: 443
-  server: 198.244.190.189
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇷FR
-  name: 14|🇷FR_63
-  password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
-  port: 443
-  server: de-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - client-fingerprint: chrome
   name: 26|法国 001
   network: ws
@@ -299,40 +207,6 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- cipher: chacha20-ietf-poly1305
-  country: 🇷 RU
-  name: 14| RU_144
-  password: qscavF5UviIL-8V-E4raBA
-  port: 2222
-  server: 2.59.163.104
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: 14|🇺 RU_146
-  password: eUh4lSpi7nOYj0vSrqLUh0
-  port: 8506
-  server: 95.163.176.37
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: 14|🇺 RU_147
-  password: mSQiuT5jR17nyWgcXOPrTW
-  port: 8594
-  server: 77.105.166.12
-  type: ss
-- name: 25|RU_speednode_0175
-  network: ws
-  password: tg-fq521free
-  port: 443
-  server: 45.67.215.95
-  skip-cert-verify: false
-  sni: torjan.xn--xhq44j.eu.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: torjan.xn--xhq44j.eu.org
-    path: /
 - client-fingerprint: chrome
   name: 26|俄罗斯 001
   network: ws
@@ -450,12 +324,11 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 14|🇧 GB_66
-  password: Bog0ELmMM9DSxDdQ
-  port: 443
-  server: 85.210.120.237
+- cipher: aes-256-cfb
+  name: 27|🇷🇺_RU_俄罗斯_1
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.231.233.112
   type: ss
 - client-fingerprint: chrome
   name: 26|英国 001
@@ -574,14 +447,19 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- country: 🇼 TW
-  name: 14| TW_154
-  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
-  port: 443
-  server: taifo03a.kbservice.club
-  skip-cert-verify: true
-  type: trojan
-  udp: true
+- alterId: 0
+  cipher: auto
+  name: 30|🇬🇧 VMESS-未知>英国-NF解锁波兰地区非自制剧-Ch...
+  network: ws
+  port: '443'
+  server: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
+  tls: true
+  type: vmess
+  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
+  ws-opts:
+    headers:
+      Host: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
+    path: /azumase.ren
 proxy-groups:
 - name: 节点选择
   type: select
@@ -594,56 +472,40 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 14| TW_154
-  - 14|🇩🇪 DE_57
-  - 14|🇷FR_63
-  - 14,25|🇰🇷 韩国2|@ripaojiedian
-  - 14|🇧 GB_66
-  - 14|🇩🇪DE_58
-  - 14|🇰 HK_76
-  - 14| RU_144
-  - 14| HK_75
-  - 26|俄罗斯 006
-  - 11|🇯🇵
-  - 26|俄罗斯 005
-  - 26|英国 005
-  - 14|🇺 RU_147
-  - 26|日本 002
-  - 26|法国 002
-  - 26|德国 005
-  - 26|英国 007
-  - 26|德国 003
-  - 26|俄罗斯 004
-  - 26|法国 004
-  - 14|🇺 RU_146
-  - 26|俄罗斯 007
-  - 26|英国 009
-  - 26|俄罗斯 002
-  - 26|日本 003
-  - 26|法国 003
-  - 14|SG_153
-  - 26|德国 001
-  - 26|俄罗斯 003
-  - 26|英国 006
-  - 26|英国 003
-  - 26|德国 004
-  - 26|英国 004
-  - 26|英国 002
-  - 14|🇷FR_62
   - 26|德国 006
-  - 26|英国 001
-  - 14|🇫🇷FR_61
-  - 26|日本 001
-  - 26|俄罗斯 009
+  - 26|德国 001
   - 26|法国 001
-  - 14|🇰🇷 KR_89
-  - 14|🇪 DE_54
-  - 26|俄罗斯 008
-  - 14| FR_60
-  - 25|RU_speednode_0175
+  - 26|英国 002
   - 26|德国 002
-  - 26|俄罗斯 001
+  - 26|法国 003
+  - 26|法国 002
+  - 26|俄罗斯 009
+  - 26|法国 004
+  - 26|日本 002
+  - 26|英国 004
+  - 26|俄罗斯 006
+  - 26|日本 003
+  - 26|德国 005
+  - 26|日本 001
+  - 26|俄罗斯 008
+  - 26|俄罗斯 007
+  - 26|德国 003
+  - 26|俄罗斯 005
+  - 26|英国 009
+  - 26|英国 006
+  - 26|俄罗斯 003
+  - 26|俄罗斯 002
+  - 26|英国 001
+  - 30|🇬🇧 VMESS-未知>英国-NF解锁波兰地区非自制剧-Ch...
+  - 26|俄罗斯 004
+  - 26|英国 007
+  - 26|德国 004
+  - 11|🇯🇵
   - 26|英国 008
+  - 26|英国 005
+  - 26|俄罗斯 001
+  - 26|英国 003
+  - 27|🇷🇺_RU_俄罗斯_1
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
