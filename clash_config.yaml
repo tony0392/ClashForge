@@ -32,28 +32,29 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- cipher: aes-256-cfb
+- cipher: chacha20-ietf-poly1305
   country: 🇰 HK
-  name: 14| HK_76
+  name: 14| HK_80
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇭🇰 HK
+  name: 14|🇰 HK_82
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.16.212
   type: ss
-- client-fingerprint: chrome
-  name: 26|日本 001
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 103.116.7.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
+- cipher: aes-256-cfb
+  country: 🇷 KR
+  name: 14|🇷 KR_95
+  password: qwerREWQ@@
+  port: 4652
+  server: 218.237.185.230
+  type: ss
 - country: 🇷 KR
-  name: 14|🇰🇷 KR_89
+  name: 14|🇰🇷 KR_96
   password: '!!str 0588'
   port: 50000
   server: 175.203.30.93
@@ -61,22 +62,49 @@ proxies:
   sni: 888.uskm.dpdns.org
   type: trojan
   udp: true
+- country: 🇬SG
+  name: 14|SG_165
+  password: c3d6d2e4-05a5-4a48-b91a-070b5e9fcdfb
+  port: 443
+  server: sg2-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 26|新加坡 001
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 185.18.184.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
 - cipher: chacha20-ietf-poly1305
-  country: 🇪 DE
-  name: 14|🇪 DE_54
+  country: 🇩🇪 DE
+  name: 14|🇪 DE_58
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 92.118.205.228
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇩🇪 DE
+  name: 14|🇪 DE_59
   password: qscavF5UviIL-8V-E4raBA
   port: 2222
   server: 185.245.107.61
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇪 DE
-  name: 14|🇪 DE_55
-  password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3
-  port: 54075
-  server: beta.mattenadene.org
+  name: 14|🇩🇪 DE_60
+  password: qscavF5UviIL-8V-E4raBA
+  port: 2222
+  server: 185.245.107.250
   type: ss
 - country: 🇩🇪DE
-  name: 14|🇩🇪DE_58
+  name: 14|🇩🇪DE_62
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
   server: 139.162.158.172
@@ -84,12 +112,11 @@ proxies:
   sni: de2-full.privateip.net
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  name: 26|德国 001
+- name: 26|德国 001
   network: ws
   password: ttfang
   port: 2096
-  server: 5.10.214.194
+  server: 185.158.133.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -97,12 +124,11 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 26|德国 002
+- name: 26|德国 002
   network: ws
   password: ttfang
   port: 2096
-  server: 5.10.215.194
+  server: 185.135.9.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -110,51 +136,11 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 26|德国 003
+- name: 26|德国 003
   network: ws
   password: ttfang
   port: 2096
-  server: 5.175.141.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 26|德国 004
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 31.185.108.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 26|德国 005
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 77.37.33.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 26|德国 006
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 91.206.71.194
+  server: 185.16.110.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -164,36 +150,36 @@ proxies:
     path: Telegram🇨🇳
 - cipher: chacha20-ietf-poly1305
   country: 🇷 FR
-  name: 14| FR_59
+  name: 14| FR_64
   password: qXvO7zYU7KeaB0Md7DQLow
   port: 1080
   server: 51.195.119.47
   type: ss
 - cipher: aes-256-cfb
   country: 🇷FR
-  name: 14|🇷FR_60
+  name: 14|🇷FR_65
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.185.174
   type: ss
 - country: 🇷FR
-  name: 14|🇷FR_61
-  password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
-  port: 443
-  server: fr-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇫🇷FR
-  name: 14|🇷FR_62
+  name: 14|🇷FR_66
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
+- country: 🇫🇷FR
+  name: 14|🇷FR_67
+  password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
+  port: 443
+  server: fr-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - country: 🇷FR
-  name: 14|🇫🇷FR_63
+  name: 14|🇫🇷FR_68
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
@@ -201,58 +187,18 @@ proxies:
   type: trojan
   udp: true
 - country: 🇫🇷FR
-  name: 14|🇫🇷FR_64
+  name: 14|🇫🇷FR_69
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  name: 26|法国 001
+- name: 26|法国 001
   network: ws
   password: ttfang
   port: 2096
-  server: 45.80.108.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 26|法国 002
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 45.80.110.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 26|法国 003
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 45.80.111.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 26|法国 004
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 94.140.0.194
+  server: 185.7.240.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -262,58 +208,30 @@ proxies:
     path: Telegram🇨🇳
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: 14| RU_147
-  password: qscavF5UviIL-8V-E4raBA
-  port: 2222
-  server: 2.59.163.104
+  name: 14| RU_156
+  password: mSQiuT5jR17nyWgcXOPrTW
+  port: 8594
+  server: 77.105.166.12
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: 14|🇺 RU_150
+  name: 14|🇺 RU_157
   password: eUh4lSpi7nOYj0vSrqLUh0
   port: 8506
   server: 95.163.176.37
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: 14|🇺 RU_151
-  password: mSQiuT5jR17nyWgcXOPrTW
-  port: 8594
-  server: 77.105.166.12
+  name: 14|🇷🇺 RU_158
+  password: qscavF5UviIL-8V-E4raBA
+  port: 2222
+  server: 2.59.163.104
   type: ss
-- alterId: 0
-  cipher: auto
-  country: 🇷🇺 RU
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺 RU_153
-  network: tcp
-  port: 45245
-  server: ye.fxlcn.com
-  servername: ye.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- name: 25,26,33,36,38|RU_speednode_0065
-  network: ws
-  password: tg-fq521free
-  port: 443
-  server: 45.67.215.95
-  skip-cert-verify: false
-  sni: torjan.xn--xhq44j.eu.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: torjan.xn--xhq44j.eu.org
-    path: /
-- client-fingerprint: chrome
-  name: 26|俄罗斯 002
+- name: 26|俄罗斯 002
   network: ws
   password: ttfang
   port: 2096
-  server: 5.182.84.194
+  server: 213.241.198.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -321,12 +239,11 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 26|俄罗斯 003
+- name: 26|俄罗斯 003
   network: ws
   password: ttfang
   port: 2096
-  server: 5.182.85.194
+  server: 195.13.54.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -334,12 +251,11 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 26|俄罗斯 004
+- name: 26|俄罗斯 004
   network: ws
   password: ttfang
   port: 2096
-  server: 46.254.92.194
+  server: 195.13.45.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -347,12 +263,11 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 26|俄罗斯 005
+- name: 26|俄罗斯 005
   network: ws
   password: ttfang
   port: 2096
-  server: 46.254.93.194
+  server: 195.13.44.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -360,12 +275,11 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 26|俄罗斯 006
+- name: 26|俄罗斯 006
   network: ws
   password: ttfang
   port: 2096
-  server: 77.105.163.194
+  server: 194.76.18.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -373,12 +287,11 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 26|俄罗斯 007
+- name: 26|俄罗斯 007
   network: ws
   password: ttfang
   port: 2096
-  server: 77.232.140.194
+  server: 193.124.18.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -386,12 +299,11 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 26|俄罗斯 008
+- name: 26|俄罗斯 008
   network: ws
   password: ttfang
   port: 2096
-  server: 92.243.74.194
+  server: 193.9.49.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -399,12 +311,11 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 26|俄罗斯 009
+- name: 26|俄罗斯 009
   network: ws
   password: ttfang
   port: 2096
-  server: 92.243.75.194
+  server: 185.221.160.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -412,12 +323,35 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 26|俄罗斯 010
+- name: 26|俄罗斯 010
   network: ws
   password: ttfang
   port: 2096
-  server: 94.247.142.194
+  server: 185.174.138.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 26|俄罗斯 011
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 185.59.218.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 26|俄罗斯 012
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 176.124.223.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -426,46 +360,65 @@ proxies:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
 - cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 14|🇧 GB_66
-  password: Bog0ELmMM9DSxDdQ
+  name: 27|🇺_RU_
+  password: aObvLFQBhTQ1
   port: 443
-  server: 85.210.120.237
+  server: 81.177.214.214
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇧 GB
+  name: 14| GB_70
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
-  name: 14|🇧 GB_67
+  name: 14|🇧 GB_71
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.47.253.227
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 14|🇧 GB_72
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.126.237.38
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 14|🇬🇧 GB_73
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.126.239.250
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 14|🇬🇧 GB_75
   password: qscavF5UviIL-8V-E4raBA
   port: 2222
   server: 185.21.14.103
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 14|🇧 GB_71
-  password: qscavF5UviIL-8V-E4raBA
-  port: 2222
-  server: 91.84.104.133
-  type: ss
 - cipher: aes-128-gcm
   country: 🇬🇧GB
-  name: 14|🇧GB_73
+  name: 14|🇧GB_77
   password: shadowsocks
   port: 443
   server: 212.102.53.195
   type: ss
 - cipher: aes-128-gcm
   country: 🇬🇧GB
-  name: 14|🇬🇧GB_74
+  name: 14|🇬🇧GB_78
   password: shadowsocks
   port: 443
   server: 212.102.53.198
   type: ss
-- client-fingerprint: chrome
-  name: 26|英国 001
+- name: 26|英国 001
   network: ws
   password: ttfang
   port: 2096
-  server: 25.25.25.194
+  server: 195.26.229.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -473,12 +426,11 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 26|英国 002
+- name: 26|英国 002
   network: ws
   password: ttfang
   port: 2096
-  server: 25.26.27.194
+  server: 194.36.55.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -486,12 +438,11 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 26|英国 003
+- name: 26|英国 003
   network: ws
   password: ttfang
   port: 2096
-  server: 45.8.211.194
+  server: 193.124.224.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -499,12 +450,11 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 26|英国 004
+- name: 26|英国 004
   network: ws
   password: ttfang
   port: 2096
-  server: 45.12.30.194
+  server: 188.244.122.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -512,12 +462,11 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 26|英国 005
+- name: 26|英国 005
   network: ws
   password: ttfang
   port: 2096
-  server: 45.12.31.194
+  server: 185.162.229.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -525,12 +474,11 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 26|英国 006
+- name: 26|英国 006
   network: ws
   password: ttfang
   port: 2096
-  server: 45.85.118.194
+  server: 185.162.228.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -538,12 +486,11 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 26|英国 007
+- name: 26|英国 007
   network: ws
   password: ttfang
   port: 2096
-  server: 45.85.119.194
+  server: 185.156.19.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -551,32 +498,14 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 26|英国 008
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 77.75.199.194
+- country: 🇼 TW
+  name: 14|🇼 TW_170
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  port: 443
+  server: taifo03a.kbservice.club
   skip-cert-verify: true
-  sni: ttfang.fange.me
   type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 26|英国 009
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 80.93.202.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
+  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -589,56 +518,56 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 14|🇧GB_73
-  - 14| RU_147
+  - 14| FR_64
+  - 14|🇫🇷FR_68
+  - 14|🇷FR_66
+  - 14|🇩🇪DE_62
+  - 27|🇺_RU_
+  - 14|🇬🇧 GB_75
+  - 14|🇷🇺 RU_158
+  - 14|🇺 RU_157
+  - 14|🇬🇧 GB_73
+  - 14| RU_156
+  - 14|🇷FR_65
+  - 14|🇼 TW_170
   - 14|🇧 GB_71
-  - 14|🇪 DE_54
-  - 14| HK_76
-  - 26|俄罗斯 007
-  - 14|🇧 GB_66
-  - 14|🇷FR_60
-  - 26|日本 001
-  - 26|德国 003
-  - 26|英国 004
-  - 26|英国 007
-  - 25,26,33,36,38|RU_speednode_0065
-  - 26|德国 004
-  - 26|俄罗斯 002
-  - 14|🇩🇪DE_58
-  - 14|🇺 RU_153
-  - 26|德国 006
-  - 26|法国 001
-  - 26|英国 008
-  - 14|🇪 DE_55
-  - 26|俄罗斯 008
-  - 26|英国 001
-  - 26|法国 003
-  - 26|英国 009
-  - 26|德国 002
-  - 14|🇬🇧GB_74
+  - 14|🇩🇪 DE_60
+  - 14|🇫🇷FR_69
+  - 14|🇧 GB_72
+  - 14|🇪 DE_59
+  - 14|🇷FR_67
+  - 14|🇰 HK_82
+  - 14| HK_80
+  - 14|🇷 KR_95
+  - 14|🇬🇧GB_78
+  - 14| GB_70
+  - 14|🇧GB_77
   - 26|俄罗斯 006
-  - 14|🇺 RU_151
-  - 14|🇺 RU_150
-  - 26|德国 001
-  - 26|俄罗斯 005
-  - 26|英国 005
-  - 26|法国 002
-  - 26|俄罗斯 010
-  - 26|法国 004
+  - 26|英国 004
   - 26|英国 002
+  - 26|英国 007
   - 26|俄罗斯 004
-  - 14|🇰🇷 KR_89
-  - 14| FR_59
-  - 14|🇫🇷FR_63
+  - 26|英国 001
+  - 14|🇪 DE_58
+  - 14|SG_165
+  - 14|🇰🇷 KR_96
+  - 26|英国 005
+  - 26|俄罗斯 007
+  - 26|俄罗斯 002
   - 26|俄罗斯 003
-  - 26|英国 003
-  - 14|🇷FR_62
-  - 14|🇷FR_61
-  - 26|俄罗斯 009
-  - 14|🇫🇷FR_64
-  - 26|德国 005
-  - 14|🇧 GB_67
+  - 26|俄罗斯 010
+  - 26|俄罗斯 005
+  - 26|俄罗斯 011
+  - 26|德国 001
+  - 26|德国 002
   - 26|英国 006
+  - 26|俄罗斯 009
+  - 26|俄罗斯 012
+  - 26|英国 003
+  - 26|新加坡 001
+  - 26|德国 003
+  - 26|俄罗斯 008
+  - 26|法国 001
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
