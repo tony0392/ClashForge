@@ -32,27 +32,33 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- cipher: chacha20-ietf-poly1305
-  country: 🇰 HK
-  name: 14| HK_68
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
-  type: ss
 - cipher: aes-256-cfb
   country: 🇰 HK
-  name: 14|🇰 HK_69
+  name: 14| HK_67
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.16.212
   type: ss
-- cipher: chacha20-ietf
-  country: 🇰 HK
-  name: 14|🇰 HK_70
-  password: asd123456
-  port: 8388
-  server: 154.197.26.237
+- cipher: chacha20-ietf-poly1305
+  country: 🇭🇰 HK
+  name: 14|🇰 HK_69
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
   type: ss
+- alterId: 2
+  cipher: auto
+  country: 🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇰 HK_70
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  skip-cert-verify: true
+  type: vmess
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-path: /
 - cipher: aes-128-gcm
   name: 11|🇯🇵
   password: shadowsocks
@@ -60,7 +66,7 @@ proxies:
   server: 149.22.87.240
   type: ss
 - country: 🇷 KR
-  name: 14|🇷 KR_81
+  name: 14|🇷 KR_78
   password: '!!str 0588'
   port: 50000
   server: 175.203.30.93
@@ -81,35 +87,14 @@ proxies:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
 - cipher: chacha20-ietf-poly1305
-  country: 🇪 DE
-  name: 14| DE_51
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 92.118.205.228
-  type: ss
-- cipher: chacha20-ietf-poly1305
   country: 🇩🇪 DE
-  name: 14|🇪 DE_52
+  name: 14|🇪 DE_53
   password: 5ZQh4pssSk4aK1JG1XhBRg
   port: 1080
   server: 84.200.91.228
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇪 DE
-  name: 14|🇪 DE_53
-  password: qscavF5UviIL-8V-E4raBA
-  port: 2222
-  server: 185.245.107.250
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇩🇪 DE
-  name: 14|🇩🇪 DE_54
-  password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3
-  port: 54075
-  server: beta.mattenadene.org
-  type: ss
-- country: 🇪DE
-  name: 14|🇩🇪DE_55
+- country: 🇩🇪DE
+  name: 14|🇩🇪DE_54
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
   server: 139.162.158.172
@@ -155,28 +140,28 @@ proxies:
     path: Telegram🇨🇳
 - cipher: chacha20-ietf-poly1305
   country: 🇷 FR
-  name: 14| FR_56
+  name: 14| FR_55
   password: qXvO7zYU7KeaB0Md7DQLow
   port: 1080
   server: 51.195.119.47
   type: ss
 - cipher: aes-256-cfb
   country: 🇷FR
-  name: 14|🇷FR_57
+  name: 14|🇷FR_56
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.185.174
   type: ss
-- country: 🇷FR
-  name: 14|🇷FR_58
-  password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
+- country: 🇫🇷FR
+  name: 14|🇷FR_57
+  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
-  server: de-full.privateip.net
+  server: uk-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
 - country: 🇷FR
-  name: 14|🇷FR_59
+  name: 14|🇷FR_58
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
@@ -184,10 +169,10 @@ proxies:
   type: trojan
   udp: true
 - country: 🇫🇷FR
-  name: 14|🇫🇷FR_60
-  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
+  name: 14|🇫🇷FR_59
+  password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
-  server: uk-full.privateip.net
+  server: de-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
@@ -205,31 +190,24 @@ proxies:
     path: Telegram🇨🇳
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: 14| RU_142
+  name: 14|🇷🇺 RU_124
   password: mSQiuT5jR17nyWgcXOPrTW
   port: 8594
   server: 77.105.166.12
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: 14|🇺 RU_143
+  name: 14|🇺 RU_125
   password: eUh4lSpi7nOYj0vSrqLUh0
   port: 8506
   server: 95.163.176.37
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇷🇺 RU
-  name: 14|🇺 RU_145
-  password: qscavF5UviIL-8V-E4raBA
-  port: 2222
-  server: 2.59.163.104
   type: ss
 - alterId: 0
   cipher: auto
   country: 🇺 RU
   h2-opts: {}
   http-opts: {}
-  name: 14|🇺 RU_146
+  name: 14|🇷🇺 RU_126
   network: tcp
   port: 45245
   server: ye.fxlcn.com
@@ -243,7 +221,7 @@ proxies:
   country: 🇷🇺 RU
   h2-opts: {}
   http-opts: {}
-  name: 14|🇺 RU_147
+  name: 14|🇺 RU_127
   network: tcp
   port: 45215
   server: fa.fxlcn.com
@@ -383,56 +361,41 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 14| GB_61
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.47.253.227
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 14|🇧 GB_62
-  password: qscavF5UviIL-8V-E4raBA
-  port: 2222
-  server: 91.84.104.133
-  type: ss
 - cipher: aes-128-gcm
   country: 🇧 GB
-  name: 14|🇧 GB_63
+  name: 14|🇧 GB_61
   password: shadowsocks
   port: 443
   server: 141.98.101.178
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
-  name: 14|🇧 GB_64
+  name: 14|🇧 GB_62
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.47.253.227
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 14|🇧 GB_63
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.126.237.38
   type: ss
 - cipher: aes-128-gcm
   country: 🇬🇧GB
-  name: 14|🇧GB_66
+  name: 14|🇧GB_65
   password: shadowsocks
   port: 443
   server: 212.102.53.198
   type: ss
 - cipher: aes-128-gcm
-  country: 🇬🇧GB
-  name: 14|🇬🇧GB_67
+  country: 🇧GB
+  name: 14|🇬🇧GB_66
   password: shadowsocks
   port: 443
   server: 212.102.53.195
   type: ss
-- name: 18,23|[Trojan] 🇬🇧 英国 社会保险安全部
-  password: 1ce1df7962f71c6f
-  port: 8443
-  server: uk-03.allhubb.info
-  skip-cert-verify: true
-  tfo: false
-  type: trojan
-  udp: true
 - name: 26|英国 001
   network: ws
   password: ttfang
@@ -517,6 +480,27 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 30|🇬🇧 VMESS-未知>英国-NF解锁波兰地区非自制剧-Ch...
+  network: ws
+  port: '443'
+  server: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
+  tls: true
+  type: vmess
+  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
+  ws-opts:
+    headers:
+      Host: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
+    path: /azumase.ren
+- country: 🇼 TW
+  name: 14|🇼 TW_131
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  port: 443
+  server: taifo03a.kbservice.club
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -529,56 +513,52 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 14|🇷 KR_81
-  - 14|🇰 HK_70
-  - 14|🇧 GB_62
-  - 14|🇧GB_66
-  - 26|俄罗斯 012
-  - 14|🇷FR_59
-  - 26|俄罗斯 009
-  - 14| RU_142
-  - 14|🇷FR_58
-  - 14|🇷FR_57
-  - 14| FR_56
-  - 26|英国 005
-  - 14|🇧 GB_64
-  - 11|🇯🇵
-  - 14| GB_61
-  - 14| HK_68
-  - 26|俄罗斯 007
-  - 14|🇩🇪DE_55
-  - 26|俄罗斯 011
-  - 14|🇫🇷FR_60
-  - 26|俄罗斯 005
-  - 14|🇧 GB_63
-  - 14|🇰 HK_69
-  - 18,23|[Trojan] 🇬🇧 英国 社会保险安全部
-  - 14|🇺 RU_145
-  - 14|🇺 RU_147
-  - 14|🇩🇪 DE_54
-  - 14| DE_51
-  - 14|🇺 RU_143
-  - 14|🇺 RU_146
-  - 14|🇪 DE_52
-  - 26|俄罗斯 003
-  - 14|🇬🇧GB_67
+  - 14|🇷🇺 RU_126
+  - 14| FR_55
+  - 14|🇧 GB_61
+  - 14|🇫🇷FR_59
+  - 14|🇺 RU_127
   - 14|🇪 DE_53
+  - 14|🇧 GB_63
+  - 14|🇷🇺 RU_124
+  - 14|🇷FR_58
   - 26|德国 001
-  - 26|德国 003
-  - 26|英国 007
+  - 14|🇷 KR_78
+  - 14|🇰 HK_69
+  - 14|🇧 GB_62
+  - 14|🇷FR_57
+  - 14| HK_67
+  - 14|🇰 HK_70
+  - 14|🇼 TW_131
+  - 26|德国 002
+  - 14|🇩🇪DE_54
+  - 26|俄罗斯 005
+  - 30|🇬🇧 VMESS-未知>英国-NF解锁波兰地区非自制剧-Ch...
+  - 14|🇺 RU_125
+  - 26|俄罗斯 010
   - 26|英国 004
-  - 26|俄罗斯 002
-  - 26|俄罗斯 008
+  - 14|🇬🇧GB_66
+  - 26|英国 005
+  - 11|🇯🇵
+  - 26|英国 003
   - 26|英国 001
-  - 26|英国 006
+  - 14|🇧GB_65
+  - 26|英国 007
   - 26|俄罗斯 004
   - 26|俄罗斯 006
-  - 26|新加坡 001
   - 26|英国 002
-  - 26|英国 003
-  - 26|俄罗斯 010
+  - 26|俄罗斯 012
+  - 26|俄罗斯 007
+  - 26|俄罗斯 003
+  - 14|🇷FR_56
+  - 26|俄罗斯 002
+  - 26|德国 003
+  - 26|英国 006
+  - 26|新加坡 001
+  - 26|俄罗斯 008
+  - 26|俄罗斯 009
+  - 26|俄罗斯 011
   - 26|法国 001
-  - 26|德国 002
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
