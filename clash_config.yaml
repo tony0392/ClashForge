@@ -50,19 +50,6 @@ proxies:
     headers:
       Host: hkt.gotochinatown.net
     path: /
-- alterId: 0
-  cipher: auto
-  name: 30|🇭🇰 香港 电讯盈科有限公司
-  network: ws
-  port: '80'
-  server: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
-  tls: false
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
 - alterId: 2
   cipher: auto
   name: 36,38|HK_speednode_0020
@@ -85,7 +72,7 @@ proxies:
   port: 443
   server: 149.22.87.240
   type: ss
-- name: 26|俄罗斯 004
+- name: 26|俄罗斯 005
   network: ws
   password: slch2024
   port: 2096
@@ -98,7 +85,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: 26|俄罗斯 005
+- name: 26|俄罗斯 006
   network: ws
   password: slch2024
   port: 2096
@@ -243,15 +230,32 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  fingerprint: ''
+  name: 0,1,28,30|XX(AzadNet.t.me) (17)
+  network: tcp
+  port: '443'
+  server: 103.57.249.204
+  sni: ''
+  tls: false
+  type: vmess
+  uuid: f13143a7-542d-49ec-9428-098142b6977c
 - alterId: 64
   cipher: auto
-  name: 0,1,30|US_189
+  name: 0,1,28,30|US_189
   network: tcp
   port: '30002'
   server: 38.12.83.217
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: aes-256-cfb
+  name: 27|_GB_国->🇷_FR_国
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.23.63
+  type: ss
 proxy-groups:
 - name: 节点选择
   type: select
@@ -264,24 +268,25 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 26|英国 006
-  - 26|俄罗斯 013
-  - 26|俄罗斯 009
+  - 26|英国 009
+  - 0,1,28,30|XX(AzadNet.t.me) (17)
   - 26|俄罗斯 005
-  - 11|🇯🇵
-  - 26|俄罗斯 010
-  - 26|俄罗斯 007
-  - 36,38|HK_speednode_0020
-  - 26|俄罗斯 004
   - 26|俄罗斯 012
+  - 36,38|HK_speednode_0020
   - 26|英国 007
-  - 0,1,30|US_189
-  - 30|🇭🇰 香港 电讯盈科有限公司
+  - 26|俄罗斯 008
+  - 11|🇯🇵
+  - 26|俄罗斯 009
+  - 26|俄罗斯 013
+  - 27|_GB_国->🇷_FR_国
   - 25,30,33,34,36,37,38|HK_speednode_0022
   - 26|英国 008
+  - 26|英国 006
+  - 26|俄罗斯 010
+  - 26|俄罗斯 007
   - 26|俄罗斯 011
-  - 26|俄罗斯 008
-  - 26|英国 009
+  - 26|俄罗斯 006
+  - 0,1,28,30|US_189
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
