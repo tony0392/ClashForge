@@ -32,40 +32,6 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: 25,30,33,34,36,37,38|HK_speednode_0022
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: hkt.gotochinatown.net
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 36,38|HK_speednode_0020
-  network: ws
-  port: 80
-  server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-    path: /
 - cipher: aes-128-gcm
   name: 11|🇯🇵
   password: shadowsocks
@@ -230,17 +196,6 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  name: 0,1,28,30|XX(AzadNet.t.me) (17)
-  network: tcp
-  port: '443'
-  server: 103.57.249.204
-  sni: ''
-  tls: false
-  type: vmess
-  uuid: f13143a7-542d-49ec-9428-098142b6977c
 - alterId: 64
   cipher: auto
   name: 0,1,28,30|US_189
@@ -250,12 +205,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-256-cfb
-  name: 27|_GB_国->🇷_FR_国
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 51.15.23.63
-  type: ss
 proxy-groups:
 - name: 节点选择
   type: select
@@ -269,24 +218,20 @@ proxy-groups:
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
   - 26|英国 009
-  - 0,1,28,30|XX(AzadNet.t.me) (17)
-  - 26|俄罗斯 005
-  - 26|俄罗斯 012
-  - 36,38|HK_speednode_0020
   - 26|英国 007
-  - 26|俄罗斯 008
   - 11|🇯🇵
-  - 26|俄罗斯 009
-  - 26|俄罗斯 013
-  - 27|_GB_国->🇷_FR_国
-  - 25,30,33,34,36,37,38|HK_speednode_0022
+  - 26|俄罗斯 012
   - 26|英国 008
-  - 26|英国 006
+  - 26|俄罗斯 013
   - 26|俄罗斯 010
-  - 26|俄罗斯 007
-  - 26|俄罗斯 011
-  - 26|俄罗斯 006
   - 0,1,28,30|US_189
+  - 26|俄罗斯 006
+  - 26|英国 006
+  - 26|俄罗斯 011
+  - 26|俄罗斯 009
+  - 26|俄罗斯 005
+  - 26|俄罗斯 007
+  - 26|俄罗斯 008
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
