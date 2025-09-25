@@ -32,36 +32,39 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- alterId: 2
-  cipher: auto
-  name: 18,23|[VMess] 🇭🇰 香港 电讯盈科有限公司
-  network: ws
-  port: 30807
-  server: v10.heduian.link
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /oooo
 - cipher: aes-128-gcm
   name: 11|🇯🇵
   password: shadowsocks
   port: 443
   server: 149.22.87.240
   type: ss
-- name: 26|日本 011
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 3294
-  server: 160.16.72.33
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
+- cipher: aes-256-gcm
+  name: 17|Japan
+  password: 0690659746980c46
+  port: 50101
+  server: 103.115.18.36
+  skip-cert-verify: true
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 17|🇰🇷 韩国家宽 01-165
+  password: qwerREWQ@@
+  port: 2520
+  server: 121.170.203.147
+  skip-cert-verify: true
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 17|South Korea
+  password: 017c7384fc99638d
+  port: 20281
+  server: 167.17.183.59
+  skip-cert-verify: true
+  tfo: false
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
   name: 36,38|KR_speednode_0030
   password: f8f7aCzcPKbsF8p3
@@ -80,6 +83,28 @@ proxies:
   type: vmess
   udp: true
   uuid: b01c7ef9-33ec-41f6-bfbf-77ddc4d21649
+- alterId: 0
+  cipher: auto
+  name: 26|法国 002
+  network: ws
+  port: 443
+  server: 51.75.161.102
+  tls: true
+  type: vmess
+  uuid: 1805c3ae-ed84-4e7e-8ca2-fe9acd0897b0
+  ws-opts:
+    headers:
+      Host: bLAZe-UK-102.bLaZESErvErS1.Site
+    path: /linkvkwss
+- cipher: aes-256-gcm
+  name: 17|Russia
+  password: 9ca2803c16de72cd
+  port: 20291
+  server: 45.135.135.89
+  skip-cert-verify: true
+  tfo: false
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 26|英国 001
@@ -103,12 +128,15 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
+  - 17|South Korea
   - 26|德国 001
-  - 18,23|[VMess] 🇭🇰 香港 电讯盈科有限公司
-  - 26|日本 011
-  - 36,38|KR_speednode_0030
-  - 11|🇯🇵
+  - 17|Japan
   - 26|英国 001
+  - 17|🇰🇷 韩国家宽 01-165
+  - 11|🇯🇵
+  - 36,38|KR_speednode_0030
+  - 17|Russia
+  - 26|法国 002
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
