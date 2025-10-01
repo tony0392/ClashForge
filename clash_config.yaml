@@ -46,22 +46,6 @@ proxies:
   port: 989
   server: 154.223.16.212
   type: ss
-- alterId: 0
-  cipher: auto
-  country: 🇭🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇭🇰 HK_59
-  network: ws
-  port: 80
-  server: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  ws-path: /
 - cipher: aes-128-gcm
   name: 11|🇯🇵
   password: shadowsocks
@@ -142,19 +126,6 @@ proxies:
   port: 1080
   server: 51.195.119.47
   type: ss
-- alterId: 0
-  cipher: auto
-  country: 🇷 FR
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇷 FR_43
-  network: ws
-  port: 20521
-  server: 45.136.12.37
-  skip-cert-verify: true
-  type: vmess
-  uuid: 090d0bd9-f9c4-4c3b-8aae-ffa678765935
-  ws-path: /
 - cipher: aes-256-cfb
   country: 🇫🇷FR
   name: 14|🇷FR_44
@@ -278,20 +249,6 @@ proxies:
   port: 57456
   server: 45.139.24.24
   type: ss
-- name: 26|俄罗斯 001
-  network: ws
-  password: wb6368
-  port: 2087
-  server: 92.243.75.49
-  skip-cert-verify: true
-  sni: hsdgbuys.pages.dev
-  tfo: true
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: hsdgbuys.pages.dev
-    path: /
 - alterId: 0
   cipher: auto
   name: 26|俄罗斯 055
@@ -301,26 +258,12 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: 314185f7-931d-4656-922d-0857e7afd224
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 14|🇧 GB_49
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.47.253.227
-  type: ss
 - cipher: aes-128-gcm
   country: 🇧 GB
   name: 14|🇬🇧 GB_50
   password: shadowsocks
   port: 443
   server: 141.98.101.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 14|🇧 GB_51
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.126.239.250
   type: ss
 - cipher: aes-256-cfb
   name: 19|_GB_
@@ -360,39 +303,34 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 26|德国 050
-  - 14|🇪DE_40
-  - 26|法国 056
-  - 26|俄罗斯 055
-  - 26|法国 051
-  - 26|英国 015
-  - 26|法国 053
   - 14|🇷FR_46
-  - 26|法国 055
-  - 14,22,35|Shadow_Proxy
-  - 26|英国 001
-  - 14|🇭🇰 HK_59
-  - 26|法国 054
+  - 14|🇷FR_45
+  - 14|🇫🇷FR_47
   - 14|SG_132
-  - 14|🇧 GB_51
-  - 26|德国 001
+  - 11|🇯🇵
+  - 26|俄罗斯 055
+  - 26|法国 055
+  - 26|法国 051
+  - 26|英国 001
+  - 14|🇪DE_40
+  - 26|德国 049
+  - 26|法国 053
   - 14|🇰 HK_55
   - 14|🇬🇧 GB_50
-  - 14| FR_42
+  - 26|德国 001
   - 14|🇪 DE_38
-  - 14|🇫🇷FR_47
-  - 14| RU_126
+  - 14,22,35|Shadow_Proxy
   - 14|🇷FR_44
-  - 14|🇷FR_45
-  - 14|🇷 FR_43
-  - 26|德国 059
-  - 26|德国 049
-  - 14|🇺 RU_128
+  - 14| FR_42
+  - 26|法国 054
+  - 26|英国 015
+  - 14| RU_126
   - 19|_GB_
-  - 14|🇧 GB_49
+  - 26|法国 056
+  - 26|德国 050
+  - 26|德国 059
+  - 14|🇺 RU_128
   - 14|🇰 HK_56
-  - 11|🇯🇵
-  - 26|俄罗斯 001
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
