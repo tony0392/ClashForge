@@ -32,135 +32,329 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
+- cipher: aes-256-cfb
+  country: 🇰 HK
+  name: 14| HK_54
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.16.212
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇰 HK
+  name: 14|🇰 HK_55
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
+  type: ss
+- cipher: chacha20-ietf
+  country: 🇭🇰 HK
+  name: 14|🇰 HK_56
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
+  type: ss
 - alterId: 2
   cipher: auto
-  name: 18,23,26,30,38|HK_speednode_0011
+  country: 🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇭🇰 HK_57
   network: ws
   port: 80
   server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-  skip-cert-verify: false
-  tfo: false
-  tls: false
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
   type: vmess
-  udp: true
   uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇰 HK_59
+  network: ws
+  port: 80
+  server: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alpn: null
+  flow: ''
+  name: 17|👖🇭🇰永久套餐赠送IPLC专线
+  network: tcp
+  password: f34966cd-2c76-48cd-94d5-90293682e14c
+  port: 30002
+  server: lazy.rsqpq.cn
+  skip-cert-verify: true
+  sni: 'null'
+  type: trojan
+  udp: true
+- alpn: []
+  flow: ''
+  name: 17|06-HK02香港
+  network: tcp
+  password: 53ff4df4-1951-4e5e-8c4d-340b5c693ae8
+  port: 30002
+  server: lazy.rsqpq.cn
+  skip-cert-verify: true
+  sni: ''
+  type: trojan
+  udp: true
+- alpn: []
+  flow: ''
+  name: 17|07-HK02香港
+  network: tcp
+  password: 6f2d40d8-f47a-4ae0-9ca8-c1d46cc6bc8b
+  port: 30002
+  server: lazy.rsqpq.cn
+  skip-cert-verify: true
+  sni: ''
+  type: trojan
+  udp: true
+- alpn: []
+  flow: ''
+  name: 17|08-HK02香港
+  network: tcp
+  password: 57e41491-08ec-4798-ab19-8398d921e0f7
+  port: 30002
+  server: lazy.rsqpq.cn
+  skip-cert-verify: true
+  sni: ''
+  type: trojan
+  udp: true
+- alpn: []
+  flow: ''
+  name: 17|01-HK03香港
+  network: tcp
+  password: ef43453f-1eae-4501-8c9e-5c17e9f50758
+  port: 30003
+  server: lazy.rsqpq.cn
+  skip-cert-verify: true
+  sni: ''
+  type: trojan
+  udp: true
+- alpn: []
+  flow: ''
+  name: 17|03-HK03香港
+  network: tcp
+  password: f0f66b33-35d5-4d0e-bed3-f75b3d41267d
+  port: 30003
+  server: lazy.rsqpq.cn
+  skip-cert-verify: true
+  sni: ''
+  type: trojan
+  udp: true
+- alpn: []
+  flow: ''
+  name: 17|04-HK03香港
+  network: tcp
+  password: 0ea82d15-8bb2-4223-9602-fd09698cea48
+  port: 30003
+  server: lazy.rsqpq.cn
+  skip-cert-verify: true
+  sni: ''
+  type: trojan
+  udp: true
+- alpn: []
+  flow: ''
+  name: 17|05-HK03香港
+  network: tcp
+  password: f34966cd-2c76-48cd-94d5-90293682e14c
+  port: 30003
+  server: lazy.rsqpq.cn
+  skip-cert-verify: true
+  sni: ''
+  type: trojan
+  udp: true
+- alpn: []
+  flow: ''
+  name: 17|06-HK03香港
+  network: tcp
+  password: 53ff4df4-1951-4e5e-8c4d-340b5c693ae8
+  port: 30003
+  server: lazy.rsqpq.cn
+  skip-cert-verify: true
+  sni: ''
+  type: trojan
+  udp: true
+- alpn: []
+  flow: ''
+  name: 17|07-HK03香港
+  network: tcp
+  password: 6f2d40d8-f47a-4ae0-9ca8-c1d46cc6bc8b
+  port: 30003
+  server: lazy.rsqpq.cn
+  skip-cert-verify: true
+  sni: ''
+  type: trojan
+  udp: true
+- alpn: []
+  flow: ''
+  name: 17|08-HK03香港
+  network: tcp
+  password: 57e41491-08ec-4798-ab19-8398d921e0f7
+  port: 30003
+  server: lazy.rsqpq.cn
+  skip-cert-verify: true
+  sni: ''
+  type: trojan
+  udp: true
+- alpn: []
+  flow: ''
+  name: 17|01-HK04香港
+  network: tcp
+  password: ef43453f-1eae-4501-8c9e-5c17e9f50758
+  port: 30004
+  server: lazy.rsqpq.cn
+  skip-cert-verify: true
+  sni: ''
+  type: trojan
+  udp: true
+- alpn: []
+  flow: ''
+  name: 17|03-HK04香港
+  network: tcp
+  password: f0f66b33-35d5-4d0e-bed3-f75b3d41267d
+  port: 30004
+  server: lazy.rsqpq.cn
+  skip-cert-verify: true
+  sni: ''
+  type: trojan
+  udp: true
+- alpn: []
+  flow: ''
+  name: 17|05-HK04香港
+  network: tcp
+  password: f34966cd-2c76-48cd-94d5-90293682e14c
+  port: 30004
+  server: lazy.rsqpq.cn
+  skip-cert-verify: true
+  sni: ''
+  type: trojan
+  udp: true
+- alpn: []
+  flow: ''
+  name: 17|06-HK04香港
+  network: tcp
+  password: 53ff4df4-1951-4e5e-8c4d-340b5c693ae8
+  port: 30004
+  server: lazy.rsqpq.cn
+  skip-cert-verify: true
+  sni: ''
+  type: trojan
+  udp: true
+- alpn: []
+  flow: ''
+  name: 17|07-HK04香港
+  network: tcp
+  password: 6f2d40d8-f47a-4ae0-9ca8-c1d46cc6bc8b
+  port: 30004
+  server: lazy.rsqpq.cn
+  skip-cert-verify: true
+  sni: ''
+  type: trojan
+  udp: true
+- alpn: []
+  flow: ''
+  name: 17|08-HK04香港
+  network: tcp
+  password: 57e41491-08ec-4798-ab19-8398d921e0f7
+  port: 30004
+  server: lazy.rsqpq.cn
+  skip-cert-verify: true
+  sni: ''
+  type: trojan
+  udp: true
+- alpn: []
+  flow: ''
+  name: 17|01-HK05香港
+  network: tcp
+  password: ef43453f-1eae-4501-8c9e-5c17e9f50758
+  port: 30005
+  server: lazy.rsqpq.cn
+  skip-cert-verify: true
+  sni: ''
+  type: trojan
+  udp: true
+- alpn: []
+  flow: ''
+  name: 17|03-HK05香港
+  network: tcp
+  password: f0f66b33-35d5-4d0e-bed3-f75b3d41267d
+  port: 30005
+  server: lazy.rsqpq.cn
+  skip-cert-verify: true
+  sni: ''
+  type: trojan
+  udp: true
+- alpn: []
+  flow: ''
+  name: 17|04-HK05香港
+  network: tcp
+  password: 0ea82d15-8bb2-4223-9602-fd09698cea48
+  port: 30005
+  server: lazy.rsqpq.cn
+  skip-cert-verify: true
+  sni: ''
+  type: trojan
+  udp: true
+- alpn: []
+  flow: ''
+  name: 17|05-HK05香港
+  network: tcp
+  password: f34966cd-2c76-48cd-94d5-90293682e14c
+  port: 30005
+  server: lazy.rsqpq.cn
+  skip-cert-verify: true
+  sni: ''
+  type: trojan
+  udp: true
+- alpn: []
+  flow: ''
+  name: 17|06-HK05香港
+  network: tcp
+  password: 53ff4df4-1951-4e5e-8c4d-340b5c693ae8
+  port: 30005
+  server: lazy.rsqpq.cn
+  skip-cert-verify: true
+  sni: ''
+  type: trojan
+  udp: true
+- alpn: []
+  flow: ''
+  name: 17|07-HK05香港
+  network: tcp
+  password: 6f2d40d8-f47a-4ae0-9ca8-c1d46cc6bc8b
+  port: 30005
+  server: lazy.rsqpq.cn
+  skip-cert-verify: true
+  sni: ''
+  type: trojan
+  udp: true
+- alpn: []
+  flow: ''
+  name: 17|08-HK05香港
+  network: tcp
+  password: 57e41491-08ec-4798-ab19-8398d921e0f7
+  port: 30005
+  server: lazy.rsqpq.cn
+  skip-cert-verify: true
+  sni: ''
+  type: trojan
+  udp: true
 - cipher: aes-128-gcm
   name: 11|🇯🇵
   password: shadowsocks
   port: 443
   server: 149.22.87.240
   type: ss
-- name: 26|日本 003
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 409
-  server: 153.121.51.29
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 26|德国 001
-  network: tcp
-  port: 10534
-  server: 94.136.185.230
-  skip-cert-verify: true
-  tfo: true
-  type: vmess
-  udp: true
-  uuid: b01c7ef9-33ec-41f6-bfbf-77ddc4d21649
-- alterId: 0
-  cipher: auto
-  name: 26|德国 049
-  network: tcp
-  port: 28011
-  server: 62.146.235.193
-  skip-cert-verify: true
-  type: vmess
-  uuid: cfc5a87f-3c13-4e25-b556-176cdd6b5c6a
-- alterId: 0
-  cipher: auto
-  name: 26|德国 050
-  network: ws
-  port: 443
-  server: 141.94.155.228
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: kampong.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 26|德国 059
-  network: tcp
-  port: 40878
-  server: 85.195.101.122
-  skip-cert-verify: true
-  type: vmess
-  uuid: f3d4167e-b15e-4e46-82e9-9286ef93fda7
-- alterId: 0
-  cipher: auto
-  name: 26|德国 061
-  network: ws
-  port: 443
-  server: 141.95.126.134
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: jamekk.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 26|德国 064
-  network: ws
-  port: 443
-  server: 141.94.155.224
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: fapeng.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 26|法国 051
-  network: ws
-  port: 443
-  server: serkat.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: serkat.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 26|法国 052
-  network: ws
-  port: 443
-  server: 91.134.8.88
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: lammaland.org
-    path: linkvws
 - alterId: 0
   cipher: auto
   name: 26|法国 055
@@ -203,11 +397,53 @@ proxies:
     headers:
       Host: kampong.org
     path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 26|法国 082
+  network: ws
+  port: 443
+  server: 146.59.70.146
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: yichueng.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 30|🇫🇷 VMESS-未知>法国-ChatGPT-1a2d514...
+  network: ws
+  port: '443'
+  server: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
+  tls: true
+  type: vmess
+  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
+  ws-opts:
+    headers:
+      Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
+    path: /azumase.ren
 - cipher: chacha20-ietf-poly1305
-  name: 20|RU俄罗斯(mibei77.com 米贝节点分享)
-  password: RP767jpZVarzQ0iI0vbTuA
-  port: 37538
-  server: 78.40.117.109
+  country: 🇺 RU
+  name: 14|🇺 RU_115
+  password: 360e21d21977dc11
+  port: 57456
+  server: 45.139.24.24
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 14|🇺 RU_116
+  password: eUh4lSpi7nOYj0vSrqLUh0
+  port: 8506
+  server: 95.163.176.37
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇷 RU
+  name: 14,22,27,35|Shadow_Proxy
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.153.197.5
   type: ss
   udp: true
 - name: 26|俄罗斯 001
@@ -233,6 +469,13 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: 314185f7-931d-4656-922d-0857e7afd224
+- cipher: aes-128-gcm
+  country: 🇧 GB
+  name: 14|🇧 GB_51
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
+  type: ss
 - alterId: 0
   cipher: auto
   name: 26|英国 001
@@ -262,6 +505,72 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: a75f3f95-ad4e-4498-fc72-dd740dd02bfc
+- alpn: []
+  flow: ''
+  name: 17|01-TW02台湾
+  network: tcp
+  password: ef43453f-1eae-4501-8c9e-5c17e9f50758
+  port: 38002
+  server: lazy.rsqpq.cn
+  skip-cert-verify: true
+  sni: ''
+  type: trojan
+  udp: true
+- alpn: []
+  flow: ''
+  name: 17|03-TW02台湾
+  network: tcp
+  password: f0f66b33-35d5-4d0e-bed3-f75b3d41267d
+  port: 38002
+  server: lazy.rsqpq.cn
+  skip-cert-verify: true
+  sni: ''
+  type: trojan
+  udp: true
+- alpn: []
+  flow: ''
+  name: 17|04-TW02台湾
+  network: tcp
+  password: 0ea82d15-8bb2-4223-9602-fd09698cea48
+  port: 38002
+  server: lazy.rsqpq.cn
+  skip-cert-verify: true
+  sni: ''
+  type: trojan
+  udp: true
+- alpn: []
+  flow: ''
+  name: 17|05-TW02台湾
+  network: tcp
+  password: f34966cd-2c76-48cd-94d5-90293682e14c
+  port: 38002
+  server: lazy.rsqpq.cn
+  skip-cert-verify: true
+  sni: ''
+  type: trojan
+  udp: true
+- alpn: []
+  flow: ''
+  name: 17|06-TW02台湾
+  network: tcp
+  password: 53ff4df4-1951-4e5e-8c4d-340b5c693ae8
+  port: 38002
+  server: lazy.rsqpq.cn
+  skip-cert-verify: true
+  sni: ''
+  type: trojan
+  udp: true
+- alpn: []
+  flow: ''
+  name: 17|07-TW02台湾
+  network: tcp
+  password: 6f2d40d8-f47a-4ae0-9ca8-c1d46cc6bc8b
+  port: 38002
+  server: lazy.rsqpq.cn
+  skip-cert-verify: true
+  sni: ''
+  type: trojan
+  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -274,26 +583,56 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 26|法国 056
   - 26|英国 001
-  - 26|英国 017
-  - 18,23,26,30,38|HK_speednode_0011
+  - 17|03-HK03香港
+  - 17|05-TW02台湾
+  - 17|07-TW02台湾
+  - 14|🇺 RU_115
+  - 17|01-HK04香港
+  - 17|01-TW02台湾
+  - 14|🇰 HK_55
+  - 14|🇰 HK_56
+  - 17|06-HK04香港
+  - 17|06-HK02香港
+  - 26|法国 082
+  - 17|03-HK04香港
   - 26|法国 055
-  - 26|德国 061
-  - 26|德国 049
-  - 26|德国 001
-  - 26|日本 003
+  - 26|法国 056
+  - 17|03-TW02台湾
+  - 17|07-HK04香港
+  - 17|05-HK03香港
+  - 17|08-HK03香港
+  - 17|08-HK04香港
+  - 17|06-HK03香港
+  - 17|08-HK02香港
+  - 17|05-HK04香港
+  - 26|英国 017
+  - 17|04-TW02台湾
+  - 17|04-HK05香港
+  - 17|07-HK03香港
+  - 17|👖🇭🇰永久套餐赠送IPLC专线
+  - 17|07-HK02香港
+  - 17|04-HK03香港
+  - 17|01-HK03香港
+  - 30|🇫🇷 VMESS-未知>法国-ChatGPT-1a2d514...
   - 26|英国 015
-  - 26|法国 051
-  - 26|德国 064
-  - 26|法国 052
+  - 14,22,27,35|Shadow_Proxy
+  - 14|🇰 HK_59
+  - 17|06-TW02台湾
   - 26|法国 073
-  - 26|德国 050
-  - 20|RU俄罗斯(mibei77.com 米贝节点分享)
+  - 17|03-HK05香港
   - 11|🇯🇵
+  - 17|05-HK05香港
+  - 17|01-HK05香港
   - 26|俄罗斯 055
-  - 26|德国 059
+  - 14|🇺 RU_116
+  - 17|06-HK05香港
+  - 17|08-HK05香港
+  - 14|🇧 GB_51
+  - 14| HK_54
+  - 17|07-HK05香港
   - 26|俄罗斯 001
+  - 14|🇭🇰 HK_57
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
