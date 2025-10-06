@@ -34,24 +34,24 @@ dns:
 proxies:
 - cipher: chacha20-ietf-poly1305
   country: 🇰 HK
-  name: 14| HK_54
+  name: 14| HK_55
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 203.23.128.33
   type: ss
-- cipher: chacha20-ietf
-  country: 🇭🇰 HK
-  name: 14|🇰 HK_55
-  password: asd123456
-  port: 8388
-  server: 103.36.91.23
-  type: ss
 - cipher: aes-256-cfb
-  country: 🇭🇰 HK
-  name: 14|🇭🇰 HK_56
+  country: 🇰 HK
+  name: 14|🇰 HK_56
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.16.212
+  type: ss
+- cipher: chacha20-ietf
+  country: 🇭🇰 HK
+  name: 14|🇰 HK_57
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
   type: ss
 - alterId: 2
   cipher: auto
@@ -74,22 +74,6 @@ proxies:
   name: 14|🇰 HK_59
   network: ws
   port: 80
-  server: 54d2d7fc-t3kcg0-tdnzz0-1qtp7.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 3653c708-df72-11ee-aec1-f23c9164ca5d
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇭🇰 HK_60
-  network: ws
-  port: 80
   server: hkt.gotochinatown.net
   skip-cert-verify: true
   type: vmess
@@ -100,7 +84,7 @@ proxies:
   country: 🇭🇰 HK
   h2-opts: {}
   http-opts: {}
-  name: 14|🇭🇰 HK_61
+  name: 14|🇭🇰 HK_60
   network: ws
   port: 80
   server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
@@ -119,13 +103,13 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇪 DE
-  name: 14|🇪 DE_38
+  name: 14|🇪 DE_40
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 92.118.205.228
   type: ss
-- country: 🇪DE
-  name: 14|🇪DE_40
+- country: 🇩🇪DE
+  name: 14|🇪DE_42
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
   server: 139.162.158.172
@@ -166,42 +150,55 @@ proxies:
   uuid: cfc5a87f-3c13-4e25-b556-176cdd6b5c6a
 - cipher: chacha20-ietf-poly1305
   country: 🇷 FR
-  name: 14| FR_42
+  name: 14| FR_44
   password: qXvO7zYU7KeaB0Md7DQLow
   port: 1080
   server: 51.195.119.47
   type: ss
 - cipher: aes-256-cfb
   country: 🇷FR
-  name: 14|🇷FR_44
+  name: 14|🇷FR_46
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.185.174
   type: ss
-- country: 🇫🇷FR
-  name: 14|🇷FR_45
-  password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
-  port: 443
-  server: de-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇫🇷FR
-  name: 14|🇷FR_46
+- country: 🇷FR
+  name: 14|🇷FR_47
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
+- country: 🇫🇷FR
+  name: 14|🇷FR_48
+  password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
+  port: 443
+  server: de-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - country: 🇷FR
-  name: 14|🇫🇷FR_47
+  name: 14|🇫🇷FR_49
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
   skip-cert-verify: true
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 30|🇫🇷 VMESS-未知>法国-ChatGPT-1a2d514...
+  network: ws
+  port: '443'
+  server: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
+  tls: true
+  type: vmess
+  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
+  ws-opts:
+    headers:
+      Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
+    path: /azumase.ren
 - cipher: aes-256-cfb
   country: 🇺 RU
   name: 14,22,35|Shadow_Proxy
@@ -212,14 +209,14 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: 14|🇷🇺 RU_125
+  name: 14|🇷🇺 RU_124
   password: eUh4lSpi7nOYj0vSrqLUh0
   port: 8506
   server: 95.163.176.37
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: 14|🇺 RU_126
+  name: 14|🇺 RU_125
   password: 360e21d21977dc11
   port: 57456
   server: 45.139.24.24
@@ -238,23 +235,18 @@ proxies:
     headers:
       Host: hsdgbuys.pages.dev
     path: /
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 14|🇧 GB_49
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.47.255.22
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 14|🇬🇧 GB_51
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.47.253.227
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 26|俄罗斯 064
+  network: tcp
+  port: 11052
+  server: 45.67.230.79
+  skip-cert-verify: true
+  type: vmess
+  uuid: 314185f7-931d-4656-922d-0857e7afd224
 - cipher: aes-128-gcm
   country: 🇧 GB
-  name: 14|🇬🇧 GB_52
+  name: 14|🇬🇧 GB_53
   password: shadowsocks
   port: 443
   server: 141.98.101.178
@@ -270,20 +262,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 44537595-9ccc-4b83-8936-5f9ad3229019
-- alterId: 32
-  cipher: auto
-  name: 26|英属印度洋领地 001
-  network: ws
-  port: 443
-  server: vc.fly.dev
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
-  ws-opts:
-    headers:
-      Host: vc.fly.dev
-    path: /vc
 - alterId: 0
   cipher: auto
   name: 26|英国 017
@@ -302,6 +280,16 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: a75f3f95-ad4e-4498-fc72-dd740dd02bfc
+- name: 27|🇺🇸_US_美国->_unKnow_未知
+  network: ws
+  password: YwuvGJk36B
+  port: 2053
+  server: creativecommons.org
+  sni: kotlet.arshiacomplus.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /yamtekodasayahhh
 - alterId: 0
   cipher: auto
   country: 🇼 TW
@@ -327,36 +315,35 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 14|🇭🇰 HK_61
-  - 14|🇭🇰 HK_58
-  - 26|德国 001
-  - 14|🇫🇷FR_47
-  - 14|🇰 HK_55
-  - 14|🇬🇧 GB_51
-  - 14|🇺 RU_126
-  - 26|英属印度洋领地 001
-  - 14| FR_42
-  - 26|英国 003
-  - 14|🇧 GB_49
-  - 14| TW_131
-  - 14|🇪DE_40
   - 14|🇭🇰 HK_60
-  - 26|德国 054
+  - 14| TW_131
+  - 14| FR_44
+  - 14|🇰 HK_57
+  - 30|🇫🇷 VMESS-未知>法国-ChatGPT-1a2d514...
+  - 14|🇭🇰 HK_58
+  - 27|🇺🇸_US_美国->_unKnow_未知
   - 14|🇰 HK_59
-  - 26|德国 014
-  - 14|🇭🇰 HK_56
-  - 26|英国 017
-  - 14|🇬🇧 GB_52
   - 14,22,35|Shadow_Proxy
+  - 26|英国 003
+  - 14| HK_55
+  - 26|德国 054
+  - 14|🇪 DE_40
   - 26|英国 019
+  - 14|🇫🇷FR_49
+  - 14|🇬🇧 GB_53
+  - 14|🇷🇺 RU_124
   - 11|🇯🇵
-  - 14|🇷FR_44
-  - 14|🇪 DE_38
-  - 26|俄罗斯 027
-  - 14|🇷FR_45
-  - 14|🇷🇺 RU_125
+  - 26|德国 001
+  - 26|俄罗斯 064
   - 14|🇷FR_46
-  - 14| HK_54
+  - 14|🇪DE_42
+  - 14|🇷FR_48
+  - 14|🇺 RU_125
+  - 14|🇷FR_47
+  - 26|英国 017
+  - 26|德国 014
+  - 14|🇰 HK_56
+  - 26|俄罗斯 027
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
