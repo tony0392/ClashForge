@@ -32,69 +32,6 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- cipher: chacha20-ietf-poly1305
-  country: 🇰 HK
-  name: 14| HK_55
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇰 HK
-  name: 14|🇰 HK_56
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.223.16.212
-  type: ss
-- cipher: chacha20-ietf
-  country: 🇭🇰 HK
-  name: 14|🇰 HK_57
-  password: asd123456
-  port: 8388
-  server: 103.36.91.23
-  type: ss
-- alterId: 2
-  cipher: auto
-  country: 🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇭🇰 HK_58
-  network: ws
-  port: 80
-  server: 697dc551-t1i9s0-tm53cm-1ol97.hk3.p5pv.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇰 HK_59
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  skip-cert-verify: true
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇭🇰 HK_60
-  network: ws
-  port: 80
-  server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  ws-path: /
 - cipher: aes-128-gcm
   name: 11|🇯🇵
   password: shadowsocks
@@ -102,20 +39,18 @@ proxies:
   server: 149.22.87.240
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇪 DE
-  name: 14|🇪 DE_40
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 92.118.205.228
-  type: ss
-- country: 🇩🇪DE
-  name: 14|🇪DE_42
-  password: 665c944d-047d-4659-80d5-3eaac70241a9
+  name: 20|JP日本(mibei77.com 米贝节点分享)
+  password: Nk9asglDzHzjktVzTkvhaA
   port: 443
-  server: 139.162.158.172
-  skip-cert-verify: true
-  sni: de2-full.privateip.net
-  type: trojan
+  server: arxfw2b78fi2q9hzylhn.freesocks.work
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 36,38|KR_speednode_0014
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
+  type: ss
   udp: true
 - alterId: 0
   cipher: auto
@@ -148,44 +83,6 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: cfc5a87f-3c13-4e25-b556-176cdd6b5c6a
-- cipher: chacha20-ietf-poly1305
-  country: 🇷 FR
-  name: 14| FR_44
-  password: qXvO7zYU7KeaB0Md7DQLow
-  port: 1080
-  server: 51.195.119.47
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇷FR
-  name: 14|🇷FR_46
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 195.154.185.174
-  type: ss
-- country: 🇷FR
-  name: 14|🇷FR_47
-  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
-  port: 443
-  server: uk-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇫🇷FR
-  name: 14|🇷FR_48
-  password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
-  port: 443
-  server: de-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇷FR
-  name: 14|🇫🇷FR_49
-  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
-  port: 443
-  server: 198.244.190.189
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 30|🇫🇷 VMESS-未知>法国-ChatGPT-1a2d514...
@@ -199,42 +96,6 @@ proxies:
     headers:
       Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
     path: /azumase.ren
-- cipher: aes-256-cfb
-  country: 🇺 RU
-  name: 14,22,35|Shadow_Proxy
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.153.197.5
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: 14|🇷🇺 RU_124
-  password: eUh4lSpi7nOYj0vSrqLUh0
-  port: 8506
-  server: 95.163.176.37
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: 14|🇺 RU_125
-  password: 360e21d21977dc11
-  port: 57456
-  server: 45.139.24.24
-  type: ss
-- name: 26|俄罗斯 027
-  network: ws
-  password: wb6368
-  port: 2087
-  server: 92.243.75.49
-  skip-cert-verify: true
-  sni: hsdgbuys.pages.dev
-  tfo: true
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: hsdgbuys.pages.dev
-    path: /
 - alterId: 0
   cipher: auto
   name: 26|俄罗斯 064
@@ -244,13 +105,6 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: 314185f7-931d-4656-922d-0857e7afd224
-- cipher: aes-128-gcm
-  country: 🇧 GB
-  name: 14|🇬🇧 GB_53
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.178
-  type: ss
 - alterId: 0
   cipher: auto
   name: 26|英国 003
@@ -271,16 +125,7 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: 5a89386a-827b-4f54-8778-2f1b5122c6ef
-- alterId: 0
-  cipher: auto
-  name: 26|英国 019
-  network: tcp
-  port: 50394
-  server: 46.250.243.56
-  skip-cert-verify: true
-  type: vmess
-  uuid: a75f3f95-ad4e-4498-fc72-dd740dd02bfc
-- name: 27|🇺🇸_US_美国->_unKnow_未知
+- name: 27|🇺🇸_US_美国->_IR_
   network: ws
   password: YwuvGJk36B
   port: 2053
@@ -290,19 +135,6 @@ proxies:
   udp: true
   ws-opts:
     path: /yamtekodasayahhh
-- alterId: 0
-  cipher: auto
-  country: 🇼 TW
-  h2-opts: {}
-  http-opts: {}
-  name: 14| TW_131
-  network: ws
-  port: 20521
-  server: 103.61.139.137
-  skip-cert-verify: true
-  type: vmess
-  uuid: f8d93cfb-3d5d-447c-a697-16496dd74697
-  ws-path: /
 proxy-groups:
 - name: 节点选择
   type: select
@@ -315,35 +147,17 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 14|🇭🇰 HK_60
-  - 14| TW_131
-  - 14| FR_44
-  - 14|🇰 HK_57
-  - 30|🇫🇷 VMESS-未知>法国-ChatGPT-1a2d514...
-  - 14|🇭🇰 HK_58
-  - 27|🇺🇸_US_美国->_unKnow_未知
-  - 14|🇰 HK_59
-  - 14,22,35|Shadow_Proxy
-  - 26|英国 003
-  - 14| HK_55
-  - 26|德国 054
-  - 14|🇪 DE_40
-  - 26|英国 019
-  - 14|🇫🇷FR_49
-  - 14|🇬🇧 GB_53
-  - 14|🇷🇺 RU_124
-  - 11|🇯🇵
-  - 26|德国 001
+  - 20|JP日本(mibei77.com 米贝节点分享)
   - 26|俄罗斯 064
-  - 14|🇷FR_46
-  - 14|🇪DE_42
-  - 14|🇷FR_48
-  - 14|🇺 RU_125
-  - 14|🇷FR_47
+  - 26|德国 001
+  - 36,38|KR_speednode_0014
+  - 27|🇺🇸_US_美国->_IR_
+  - 26|德国 054
+  - 26|英国 003
   - 26|英国 017
   - 26|德国 014
-  - 14|🇰 HK_56
-  - 26|俄罗斯 027
+  - 30|🇫🇷 VMESS-未知>法国-ChatGPT-1a2d514...
+  - 11|🇯🇵
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
