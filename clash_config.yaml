@@ -32,136 +32,35 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- cipher: chacha20-ietf-poly1305
-  country: 🇰 HK
-  name: 14| HK_60
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
-  type: ss
-- cipher: chacha20-ietf
-  country: 🇭🇰 HK
-  name: 14|🇰 HK_62
-  password: asd123456
-  port: 8388
-  server: 103.36.91.23
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇰 HK
-  name: 14|🇭🇰 HK_63
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.223.16.212
-  type: ss
-- alterId: 2
-  cipher: auto
-  country: 🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇭🇰 HK_65
-  network: ws
-  port: 80
-  server: 09f05870-t35j40-tdnzz0-1qtp7.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
+- name: 25,26,30,33|香港4|@ripaojiedian
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 4419
+  server: 221.128.195.221
   skip-cert-verify: true
-  type: vmess
-  uuid: 3653c708-df72-11ee-aec1-f23c9164ca5d
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇭🇰 HK_66
-  network: ws
-  port: 80
-  server: eb362f92-svukg0-t12cnj-1ol97.hk.p5pv.com
-  servername: eb362f92-svukg0-t12cnj-1ol97.hk.p5pv.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-headers:
-    HOST: eb362f92-svukg0-t12cnj-1ol97.hk.p5pv.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇭🇰 HK_67
-  network: ws
-  port: 80
-  server: 38721ce7-t3rr40-tdnzz0-1qtp7.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 3653c708-df72-11ee-aec1-f23c9164ca5d
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇭🇰 HK_68
-  network: ws
-  port: 80
-  server: be4fe2f9-t3gn40-tdnzz0-1qtp7.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 3653c708-df72-11ee-aec1-f23c9164ca5d
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇭🇰 HK_69
-  network: ws
-  port: 80
-  server: 9def5c5d-t398g0-tdnzz0-1qtp7.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 3653c708-df72-11ee-aec1-f23c9164ca5d
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇭🇰 HK_70
-  network: ws
-  port: 80
-  server: 54d2d7fc-t3kcg0-tdnzz0-1qtp7.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 3653c708-df72-11ee-aec1-f23c9164ca5d
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  ws-path: /
-- name: 18,23|[Trojan] 🇭🇰 香港 UCloud
-  password: 1640ef52-2db0-44ab-b3f3-8690b762ebc9
-  port: 12000
-  server: 165.154.112.107
-  skip-cert-verify: true
-  tfo: false
+  sni: www.nintendogames.net
   type: trojan
-  udp: true
 - cipher: aes-128-gcm
   name: 11|🇯🇵
   password: shadowsocks
   port: 443
   server: 149.22.87.240
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 20|JP日本(mibei77.com 米贝节点分享)
+  password: Nk9asglDzHzjktVzTkvhaA
+  port: 443
+  server: arxfw2b78fi2q9hzylhn.freesocks.work
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  country: 🇺🇸 US
+  name: 22,25,34,37|🇰🇷 韩国|@stairnode
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.63.177
+  tfo: false
   type: ss
 - alterId: 0
   cipher: auto
@@ -172,16 +71,8 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: d1de8433-692d-47fd-9a8d-6ccb02ea39bd
-- country: 🇬SG
-  name: 14|SG_146
-  password: c3d6d2e4-05a5-4a48-b91a-070b5e9fcdfb
-  port: 443
-  server: sg2-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 36,38|SG_speednode_0019
+  name: 22,36,38|SG_speednode_0019
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
@@ -192,33 +83,30 @@ proxies:
   server: 5.44.249.42
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇪 DE
-  name: 14|🇪 DE_44
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 92.118.205.228
-  type: ss
-- country: 🇪DE
-  name: 14|🇪DE_46
-  password: 665c944d-047d-4659-80d5-3eaac70241a9
-  port: 443
-  server: 139.162.158.172
-  skip-cert-verify: true
-  sni: de2-full.privateip.net
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 26|德国 008
+  name: 26|新加坡 010
+  network: ws
+  port: 80
+  server: waifu.kurumi.biz.id
+  skip-cert-verify: true
+  type: vmess
+  uuid: 3393cc9e-7498-4942-9bc4-c6da73080fd9
+  ws-opts:
+    headers:
+      Host: discord.com
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 26|德国 007
   network: tcp
-  port: 10534
-  server: 94.136.185.230
+  port: 28011
+  server: 62.146.235.193
   skip-cert-verify: true
   tfo: true
   type: vmess
   udp: true
-  uuid: b01c7ef9-33ec-41f6-bfbf-77ddc4d21649
+  uuid: cfc5a87f-3c13-4e25-b556-176cdd6b5c6a
 - alterId: 0
   cipher: auto
   name: 26|德国 011
@@ -255,44 +143,6 @@ proxies:
     headers:
       Host: pelang.org
     path: linkvws
-- cipher: chacha20-ietf-poly1305
-  country: 🇷 FR
-  name: 14| FR_50
-  password: qXvO7zYU7KeaB0Md7DQLow
-  port: 1080
-  server: 51.195.119.47
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇷FR
-  name: 14|🇷FR_51
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 195.154.185.174
-  type: ss
-- country: 🇷FR
-  name: 14|🇷FR_52
-  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
-  port: 443
-  server: uk-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇷FR
-  name: 14|🇷FR_53
-  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
-  port: 443
-  server: 198.244.190.189
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇫🇷FR
-  name: 14|🇫🇷FR_54
-  password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
-  port: 443
-  server: fr-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 26|法国 018
@@ -304,63 +154,43 @@ proxies:
   type: vmess
   udp: true
   uuid: 96db7e57-5314-4560-b708-2446670dfa29
-- cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: 14| RU_138
-  password: eUh4lSpi7nOYj0vSrqLUh0
-  port: 8506
-  server: 95.163.176.37
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: 14|🇺 RU_139
-  password: piv97XS1Cval86vfwHPD5j
-  port: 443
-  server: 194.87.216.121
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: 14,23,27|_NL_
-  password: x0jth8z56Dd4ghs1Dh7twU
-  port: 19805
-  server: 178.208.91.118
-  tfo: false
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  country: 🇺 RU
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺 RU_142
-  network: tcp
-  port: 45215
-  server: fa.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 14| GB_55
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.126.237.38
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇧 GB
-  name: 14|🇬🇧 GB_57
-  password: shadowsocks
+  name: 26|法国 140
+  network: ws
   port: 443
-  server: 141.98.101.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 14|🇧 GB_58
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.47.253.227
-  type: ss
+  server: 91.134.8.93
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: pelang.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 26|法国 141
+  network: ws
+  port: 443
+  server: 146.59.85.226
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: pelang.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 30|🇷🇺 俄罗斯 V2CROSS.COM
+  network: tcp
+  port: '100'
+  server: cpanel.erade32.ir
+  tls: false
+  type: vmess
+  uuid: 0888adea-086c-4783-9989-85df86819c1f
 - alterId: 0
   cipher: auto
   name: 26|英国 001
@@ -383,20 +213,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 44537595-9ccc-4b83-8936-5f9ad3229019
-- alterId: 32
-  cipher: auto
-  name: 26|英属印度洋领地 001
-  network: ws
-  port: 443
-  server: vc.fly.dev
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
-  ws-opts:
-    headers:
-      Host: vc.fly.dev
-    path: /vc
 - name: 19|🇸_US_美国->_unKnow_未知
   network: ws
   password: YwuvGJk36B
@@ -419,43 +235,24 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 26|德国 012
-  - 14|🇭🇰 HK_66
-  - 14|🇺 RU_139
-  - 14|🇰 HK_62
-  - 14| GB_55
-  - 14|🇭🇰 HK_63
-  - 14|🇭🇰 HK_67
-  - 14|🇷FR_51
-  - 14|🇪 DE_44
+  - 26|新加坡 010
   - 19|🇸_US_美国->_unKnow_未知
-  - 14|🇫🇷FR_54
-  - 14|🇭🇰 HK_68
+  - 20|JP日本(mibei77.com 米贝节点分享)
+  - 26|德国 012
+  - 30|🇷🇺 俄罗斯 V2CROSS.COM
+  - 25,26,30,33|香港4|@ripaojiedian
+  - 26|法国 140
   - 26|法国 018
-  - 36,38|SG_speednode_0019
-  - 14|🇧 GB_58
-  - 14| FR_50
-  - 26|德国 011
-  - 14| RU_138
-  - 26|德国 008
-  - 14|🇭🇰 HK_65
-  - 11|🇯🇵
-  - 26|德国 051
-  - 18,23|[Trojan] 🇭🇰 香港 UCloud
-  - 26|英国 001
-  - 14|SG_146
-  - 14| HK_60
+  - 22,36,38|SG_speednode_0019
+  - 26|法国 141
+  - 22,25,34,37|🇰🇷 韩国|@stairnode
+  - 26|德国 007
   - 26|英国 007
-  - 14|🇭🇰 HK_69
-  - 14|🇺 RU_142
-  - 14,23,27|_NL_
-  - 26|英属印度洋领地 001
-  - 14|🇪DE_46
-  - 14|🇷FR_52
-  - 14|🇭🇰 HK_70
-  - 14|🇬🇧 GB_57
-  - 14|🇷FR_53
   - 26|韩国 006
+  - 26|德国 011
+  - 26|英国 001
+  - 26|德国 051
+  - 11|🇯🇵
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
