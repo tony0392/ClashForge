@@ -32,35 +32,80 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- name: 25,26,30,33|香港4|@ripaojiedian
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 4419
-  server: 221.128.195.221
+- cipher: chacha20-ietf
+  country: 🇰 HK
+  name: 14| HK_57
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇰 HK
+  name: 14|🇭🇰 HK_58
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.16.212
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇭🇰 HK
+  name: 14|🇰 HK_60
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
+  type: ss
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇭🇰 HK_63
+  network: ws
+  port: 80
+  server: 09f05870-t35j40-tdnzz0-1qtp7.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
   skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
+  type: vmess
+  uuid: 3653c708-df72-11ee-aec1-f23c9164ca5d
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇭🇰 HK_69
+  network: ws
+  port: 80
+  server: 9def5c5d-t398g0-tdnzz0-1qtp7.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 3653c708-df72-11ee-aec1-f23c9164ca5d
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇭🇰 HK_70
+  network: ws
+  port: 80
+  server: eb362f92-svukg0-t12cnj-1ol97.hk.p5pv.com
+  servername: eb362f92-svukg0-t12cnj-1ol97.hk.p5pv.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-headers:
+    HOST: eb362f92-svukg0-t12cnj-1ol97.hk.p5pv.com
+  ws-path: /
 - cipher: aes-128-gcm
   name: 11|🇯🇵
   password: shadowsocks
   port: 443
   server: 149.22.87.240
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 20|JP日本(mibei77.com 米贝节点分享)
-  password: Nk9asglDzHzjktVzTkvhaA
-  port: 443
-  server: arxfw2b78fi2q9hzylhn.freesocks.work
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  country: 🇺🇸 US
-  name: 22,25,34,37|🇰🇷 韩国|@stairnode
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.63.177
-  tfo: false
   type: ss
 - alterId: 0
   cipher: auto
@@ -71,6 +116,21 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: d1de8433-692d-47fd-9a8d-6ccb02ea39bd
+- cipher: chacha20-ietf-poly1305
+  country: 🇬 SG
+  name: 14| SG_150
+  password: GjUtzQIjhyYSzhdN2ZMRft
+  port: 80
+  server: 167.71.205.112
+  type: ss
+- country: 🇬SG
+  name: 14|🇸🇬SG_153
+  password: c3d6d2e4-05a5-4a48-b91a-070b5e9fcdfb
+  port: 443
+  server: sg2-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 22,36,38|SG_speednode_0019
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
@@ -96,6 +156,22 @@ proxies:
     headers:
       Host: discord.com
     path: /vmess
+- cipher: chacha20-ietf-poly1305
+  country: 🇪 DE
+  name: 14|🇪 DE_40
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 92.118.205.228
+  type: ss
+- country: 🇪DE
+  name: 14|🇪DE_42
+  password: 665c944d-047d-4659-80d5-3eaac70241a9
+  port: 443
+  server: 139.162.158.172
+  skip-cert-verify: true
+  sni: de2-full.privateip.net
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 26|德国 007
@@ -143,6 +219,52 @@ proxies:
     headers:
       Host: pelang.org
     path: linkvws
+- cipher: chacha20-ietf-poly1305
+  country: 🇷 FR
+  name: 14| FR_45
+  password: qXvO7zYU7KeaB0Md7DQLow
+  port: 1080
+  server: 51.195.119.47
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇷FR
+  name: 14|🇷FR_46
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 195.154.185.174
+  type: ss
+- country: 🇷FR
+  name: 14|🇷FR_47
+  password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
+  port: 443
+  server: de-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇫🇷FR
+  name: 14|🇷FR_48
+  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
+  port: 443
+  server: uk-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇫🇷FR
+  name: 14|🇫🇷FR_49
+  password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
+  port: 443
+  server: fr-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇷FR
+  name: 14|🇫🇷FR_50
+  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
+  port: 443
+  server: 198.244.190.189
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 26|法国 018
@@ -182,15 +304,82 @@ proxies:
     headers:
       Host: pelang.org
     path: linkvws
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 14| RU_140
+  password: JTzjwNa8A8ajiqtD6sdytP
+  port: 443
+  server: 147.45.51.30
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 14|🇷🇺 RU_142
+  password: eUh4lSpi7nOYj0vSrqLUh0
+  port: 8506
+  server: 95.163.176.37
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇺 RU
+  name: 14,22,27|🇩_MD_->🇺_RU_
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.153.197.5
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇷🇺 RU
+  name: 14|🇺 RU_144
+  password: 360e21d21977dc11
+  port: 57456
+  server: 45.139.24.24
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇷🇺 RU
+  name: 14|🇷🇺 RU_146
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 45.159.250.190
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 30|🇷🇺 俄罗斯 V2CROSS.COM
+  country: 🇺 RU
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺 RU_147
   network: tcp
-  port: '100'
-  server: cpanel.erade32.ir
-  tls: false
+  port: 45215
+  server: fa.fxlcn.com
+  skip-cert-verify: true
   type: vmess
-  uuid: 0888adea-086c-4783-9989-85df86819c1f
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 14| GB_51
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.47.255.22
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 14|🇬🇧 GB_53
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.126.239.250
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇬🇧 GB
+  name: 14|🇬🇧 GB_54
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 14|🇧 GB_55
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.47.253.227
+  type: ss
 - alterId: 0
   cipher: auto
   name: 26|英国 001
@@ -204,6 +393,21 @@ proxies:
   uuid: 5a89386a-827b-4f54-8778-2f1b5122c6ef
 - alterId: 0
   cipher: auto
+  name: 26|英国 006
+  network: ws
+  port: 80
+  server: 51.68.191.233
+  skip-cert-verify: true
+  tfo: true
+  type: vmess
+  udp: true
+  uuid: f0eda072-9ae8-494c-a495-215fa5729467
+  ws-opts:
+    headers:
+      Host: 51.68.191.233
+    path: /vmess/
+- alterId: 0
+  cipher: auto
   name: 26|英国 007
   network: tcp
   port: 443
@@ -213,16 +417,18 @@ proxies:
   type: vmess
   udp: true
   uuid: 44537595-9ccc-4b83-8936-5f9ad3229019
-- name: 19|🇸_US_美国->_unKnow_未知
-  network: ws
-  password: YwuvGJk36B
-  port: 2053
-  server: creativecommons.org
-  sni: kotlet.arshiacomplus.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    path: /yamtekodasayahhh
+- cipher: aes-256-cfb
+  name: 19,22,27|_GB_国
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.17.169
+  type: ss
+- cipher: aes-256-cfb
+  name: 19|🇬🇧_GB_英国->_DE_国
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.23.63
+  type: ss
 proxy-groups:
 - name: 节点选择
   type: select
@@ -235,24 +441,48 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 26|新加坡 010
-  - 19|🇸_US_美国->_unKnow_未知
-  - 20|JP日本(mibei77.com 米贝节点分享)
-  - 26|德国 012
-  - 30|🇷🇺 俄罗斯 V2CROSS.COM
-  - 25,26,30,33|香港4|@ripaojiedian
-  - 26|法国 140
-  - 26|法国 018
-  - 22,36,38|SG_speednode_0019
+  - 14|🇪 DE_40
+  - 14|🇺 RU_144
+  - 19|🇬🇧_GB_英国->_DE_国
   - 26|法国 141
-  - 22,25,34,37|🇰🇷 韩国|@stairnode
-  - 26|德国 007
+  - 22,36,38|SG_speednode_0019
+  - 14|🇰 HK_60
+  - 14|🇷FR_47
   - 26|英国 007
-  - 26|韩国 006
-  - 26|德国 011
+  - 14|🇫🇷FR_50
+  - 14| HK_57
+  - 26|法国 140
+  - 14|🇭🇰 HK_69
+  - 14|🇬🇧 GB_53
+  - 14|🇪DE_42
+  - 14,22,27|🇩_MD_->🇺_RU_
+  - 26|德国 012
+  - 14|🇷🇺 RU_146
+  - 14| FR_45
+  - 14| GB_51
+  - 14|🇷FR_48
   - 26|英国 001
+  - 14|🇺 RU_147
   - 26|德国 051
+  - 14|🇸🇬SG_153
   - 11|🇯🇵
+  - 14|🇭🇰 HK_70
+  - 26|英国 006
+  - 14| SG_150
+  - 14|🇧 GB_55
+  - 26|新加坡 010
+  - 19,22,27|_GB_国
+  - 14|🇫🇷FR_49
+  - 14|🇭🇰 HK_63
+  - 26|德国 007
+  - 14|🇷🇺 RU_142
+  - 14|🇬🇧 GB_54
+  - 14| RU_140
+  - 26|韩国 006
+  - 26|法国 018
+  - 14|🇷FR_46
+  - 26|德国 011
+  - 14|🇭🇰 HK_58
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
