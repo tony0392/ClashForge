@@ -38,22 +38,15 @@ proxies:
   port: 443
   server: 149.22.87.240
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇪 DE
-  name: 14|🇪 DE_44
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 92.118.205.228
-  type: ss
-- country: 🇪DE
-  name: 14|🇪DE_46
-  password: 665c944d-047d-4659-80d5-3eaac70241a9
-  port: 443
-  server: 139.162.158.172
+- alterId: 0
+  cipher: auto
+  name: 26|韩国 006
+  network: tcp
+  port: 46418
+  server: 154.223.19.117
   skip-cert-verify: true
-  sni: de2-full.privateip.net
-  type: trojan
-  udp: true
+  type: vmess
+  uuid: d1de8433-692d-47fd-9a8d-6ccb02ea39bd
 - alterId: 0
   cipher: auto
   name: 26|德国 007
@@ -89,17 +82,6 @@ proxies:
   uuid: f3d4167e-b15e-4e46-82e9-9286ef93fda7
 - alterId: 0
   cipher: auto
-  name: 26|德国 012
-  network: tcp
-  port: 550
-  server: 62.146.235.12
-  skip-cert-verify: true
-  tfo: true
-  type: vmess
-  udp: true
-  uuid: 48b986d8-7da2-47a2-85de-2306c9259953
-- alterId: 0
-  cipher: auto
   name: 26|德国 051
   network: ws
   port: 443
@@ -112,44 +94,6 @@ proxies:
     headers:
       Host: pelang.org
     path: linkvws
-- cipher: chacha20-ietf-poly1305
-  country: 🇷 FR
-  name: 14| FR_50
-  password: qXvO7zYU7KeaB0Md7DQLow
-  port: 1080
-  server: 51.195.119.47
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇷FR
-  name: 14|🇷FR_51
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 195.154.185.174
-  type: ss
-- country: 🇷FR
-  name: 14|🇷FR_52
-  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
-  port: 443
-  server: uk-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇷FR
-  name: 14|🇷FR_53
-  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
-  port: 443
-  server: 198.244.190.189
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇫🇷FR
-  name: 14|🇫🇷FR_54
-  password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
-  port: 443
-  server: de-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 26|法国 018
@@ -189,55 +133,56 @@ proxies:
     headers:
       Host: pelang.org
     path: linkvws
-- cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: 14| RU_153
-  password: eUh4lSpi7nOYj0vSrqLUh0
-  port: 8506
-  server: 95.163.176.37
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: 14|🇺 RU_154
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 45.159.250.190
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇺 RU
-  name: 14,22,27|_MD_->_RU_
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.153.197.5
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇺RU
-  name: 14|🇺RU_158
-  password: JdmRK9gMEqFgs8nP
-  port: 9003
-  server: 45.89.52.66
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇷🇺RU
-  name: 14|🇺RU_159
-  password: ZET59LF6DvCC8KVt
-  port: 9005
-  server: 45.89.52.66
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇷🇺RU
-  name: 14|🇷🇺RU_160
-  password: KnJGad3FqTvjqbaX
-  port: 9014
-  server: 45.89.52.66
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 14| GB_55
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.47.253.227
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 26|英国 001
+  network: tcp
+  port: 39674
+  server: 82.197.69.131
+  skip-cert-verify: true
+  tfo: true
+  type: vmess
+  udp: true
+  uuid: 5a89386a-827b-4f54-8778-2f1b5122c6ef
+- alterId: 0
+  cipher: auto
+  name: 26|英国 006
+  network: ws
+  port: 80
+  server: 51.68.191.233
+  skip-cert-verify: true
+  tfo: true
+  type: vmess
+  udp: true
+  uuid: f0eda072-9ae8-494c-a495-215fa5729467
+  ws-opts:
+    headers:
+      Host: 51.68.191.233
+    path: /vmess/
+- alterId: 0
+  cipher: auto
+  name: 26|英国 007
+  network: tcp
+  port: 443
+  server: 89.31.120.192
+  skip-cert-verify: true
+  tfo: true
+  type: vmess
+  udp: true
+  uuid: 44537595-9ccc-4b83-8936-5f9ad3229019
+- alterId: 0
+  cipher: auto
+  name: 30|🇬🇧 VMESS-未知>英国-NF解锁波兰地区非自制剧-Ch...
+  network: ws
+  port: '443'
+  server: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
+  tls: true
+  type: vmess
+  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
+  ws-opts:
+    headers:
+      Host: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
+    path: /azumase.ren
 - cipher: aes-256-cfb
   name: 19|_GB_国->_unKnow_
   password: f8f7aCzcPKbsF8p3
@@ -250,181 +195,6 @@ proxies:
   port: 989
   server: 51.15.23.63
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 38|TW_speednode_0060
-  password: 9a9dc807-d040-4bec-9e00-c7ebe712717e
-  port: 10056
-  server: 125.231.82.112
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 38|TW_speednode_0061
-  password: a7d8b05e-d5ab-4ee2-89c3-983c8cbab06b
-  port: 10133
-  server: 36.235.0.122
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 38|TW_speednode_0062
-  password: 8d5c4680-9dd0-43d4-9ea1-2b0e3dbb4684
-  port: 10056
-  server: 125.231.82.112
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 38|TW_speednode_0063
-  password: add8049a-647b-43fc-8de1-97b9261c6be5
-  port: 10079
-  server: 114.46.81.116
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 38|TW_speednode_0064
-  password: 8d93c1c0-f724-4db2-bc20-d6c10e17255c
-  port: 10150
-  server: 36.232.67.5
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 38|TW_speednode_0065
-  password: 9a9dc807-d040-4bec-9e00-c7ebe712717e
-  port: 10051
-  server: 114.46.77.45
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 38|TW_speednode_0066
-  password: 8d5c4680-9dd0-43d4-9ea1-2b0e3dbb4684
-  port: 10067
-  server: 114.46.76.16
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 38|TW_speednode_0068
-  password: 719adfec-6f6a-468b-a693-61c00002ab9f
-  port: 10057
-  server: 36.234.118.252
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 38|TW_speednode_0069
-  password: 719adfec-6f6a-468b-a693-61c00002ab9f
-  port: 10129
-  server: 114.35.114.182
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 38|TW_speednode_0070
-  password: ce7b4539-2ad6-474d-9461-7f135ff6e55f
-  port: 10120
-  server: 36.235.0.236
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 38|TW_speednode_0071
-  password: 9a9dc807-d040-4bec-9e00-c7ebe712717e
-  port: 10120
-  server: 36.235.0.236
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 38|TW_speednode_0072
-  password: add8049a-647b-43fc-8de1-97b9261c6be5
-  port: 10067
-  server: 114.46.76.16
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 38|TW_speednode_0074
-  password: a7d8b05e-d5ab-4ee2-89c3-983c8cbab06b
-  port: 10055
-  server: 36.234.97.128
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 38|TW_speednode_0075
-  password: fc278668-11a9-435a-b025-0bcee442deb5
-  port: 10125
-  server: 36.232.110.221
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 38|TW_speednode_0076
-  password: fc278668-11a9-435a-b025-0bcee442deb5
-  port: 10046
-  server: 36.234.69.213
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 38|TW_speednode_0077
-  password: 8d5c4680-9dd0-43d4-9ea1-2b0e3dbb4684
-  port: 10051
-  server: 114.46.77.45
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 38|TW_speednode_0078
-  password: fc278668-11a9-435a-b025-0bcee442deb5
-  port: 10133
-  server: 36.235.0.122
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 38|TW_speednode_0079
-  password: 8d5c4680-9dd0-43d4-9ea1-2b0e3dbb4684
-  port: 10149
-  server: 111.253.216.71
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 38|TW_speednode_0081
-  password: 8d93c1c0-f724-4db2-bc20-d6c10e17255c
-  port: 10012
-  server: 36.234.99.83
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 38|TW_speednode_0082
-  password: fc278668-11a9-435a-b025-0bcee442deb5
-  port: 10051
-  server: 114.46.77.45
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 38|TW_speednode_0083
-  password: 8d93c1c0-f724-4db2-bc20-d6c10e17255c
-  port: 10071
-  server: 36.234.125.34
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 38|TW_speednode_0084
-  password: a7d8b05e-d5ab-4ee2-89c3-983c8cbab06b
-  port: 10052
-  server: 36.234.70.142
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 38|TW_speednode_0086
-  password: 8d5c4680-9dd0-43d4-9ea1-2b0e3dbb4684
-  port: 10125
-  server: 36.232.110.221
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 38|TW_speednode_0087
-  password: a7d8b05e-d5ab-4ee2-89c3-983c8cbab06b
-  port: 10039
-  server: 118.170.222.232
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 38|TW_speednode_0088
-  password: ce7b4539-2ad6-474d-9461-7f135ff6e55f
-  port: 10016
-  server: 1.165.120.20
-  type: ss
-  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -437,56 +207,21 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 14|🇷FR_52
-  - 14|🇫🇷FR_54
-  - 19|🇬🇧_GB_英国->_DE_国
-  - 14|🇺 RU_154
-  - 38|TW_speednode_0081
-  - 26|法国 141
-  - 14|🇺RU_159
-  - 38|TW_speednode_0065
-  - 14|🇷🇺RU_160
-  - 38|TW_speednode_0069
-  - 14|🇪DE_46
-  - 38|TW_speednode_0072
-  - 14,22,27|_MD_->_RU_
-  - 38|TW_speednode_0066
-  - 14|🇷FR_51
   - 26|德国 051
+  - 30|🇬🇧 VMESS-未知>英国-NF解锁波兰地区非自制剧-Ch...
   - 26|法国 140
-  - 19|_GB_国->_unKnow_
-  - 14|🇺RU_158
-  - 14|🇷FR_53
-  - 38|TW_speednode_0064
-  - 14|🇪 DE_44
-  - 38|TW_speednode_0074
-  - 26|德国 012
-  - 26|德国 007
-  - 38|TW_speednode_0071
-  - 38|TW_speednode_0068
-  - 14| RU_153
-  - 38|TW_speednode_0083
   - 26|德国 008
-  - 38|TW_speednode_0087
-  - 14| FR_50
+  - 26|德国 007
+  - 19|🇬🇧_GB_英国->_DE_国
+  - 19|_GB_国->_unKnow_
+  - 26|英国 007
+  - 26|英国 001
+  - 26|英国 006
+  - 26|韩国 006
   - 26|德国 011
-  - 38|TW_speednode_0088
-  - 38|TW_speednode_0079
-  - 38|TW_speednode_0075
-  - 38|TW_speednode_0061
   - 26|法国 018
-  - 38|TW_speednode_0070
-  - 38|TW_speednode_0084
-  - 38|TW_speednode_0086
-  - 38|TW_speednode_0060
-  - 38|TW_speednode_0062
-  - 38|TW_speednode_0076
-  - 38|TW_speednode_0077
-  - 38|TW_speednode_0078
-  - 14| GB_55
-  - 38|TW_speednode_0082
-  - 38|TW_speednode_0063
   - 11|🇯🇵
+  - 26|法国 141
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
