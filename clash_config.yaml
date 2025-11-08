@@ -32,27 +32,24 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- name: 18,23|[Trojan] 🇭🇰 香港 电讯盈科有限公司
-  password: BxceQaOe
-  port: 443
-  server: 203.198.122.129
-  skip-cert-verify: true
-  tfo: false
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 30|🇭🇰 香港 阿里云
-  network: ws
-  port: '14044'
-  server: 47.86.85.95
+  http-opts:
+    headers:
+      Host:
+      - 43.247.135.64
+    method: GET
+    path:
+    - /
+  name: 36,38|HK_speednode_0014
+  network: http
+  port: 54804
+  server: 43.247.135.64
+  skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 74475bf0-0267-4a04-b431-54752e31994b
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
+  udp: true
+  uuid: 4f8db425-47ac-420e-b2d7-6e85bbc25562
 - cipher: aes-128-gcm
   name: 11|🇯🇵
   password: shadowsocks
@@ -160,20 +157,25 @@ proxies:
   type: vmess
   udp: true
   uuid: 44537595-9ccc-4b83-8936-5f9ad3229019
-- alterId: 32
+- alterId: 0
   cipher: auto
-  name: 26|英属印度洋领地 001
+  name: 30|🇬🇧 VMESS-未知>英国-NF解锁波兰地区非自制剧-Ch...
   network: ws
-  port: 443
-  server: vc.fly.dev
-  skip-cert-verify: true
+  port: '443'
+  server: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
   tls: true
   type: vmess
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
   ws-opts:
     headers:
-      Host: vc.fly.dev
-    path: /vc
+      Host: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
+    path: /azumase.ren
+- cipher: aes-256-cfb
+  name: 27|_MD_->🇺_RU_
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.153.197.5
+  type: ss
 proxy-groups:
 - name: 节点选择
   type: select
@@ -186,18 +188,18 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 18,23|[Trojan] 🇭🇰 香港 电讯盈科有限公司
-  - 30|🇭🇰 香港 阿里云
-  - 26|法国 141
-  - 26|法国 140
+  - 36,38|HK_speednode_0014
   - 26|德国 051
-  - 26|德国 011
-  - 26|英属印度洋领地 001
-  - 26|英国 006
-  - 26|德国 007
-  - 26|英国 007
+  - 26|法国 141
   - 26|英国 001
+  - 26|英国 007
+  - 26|德国 007
+  - 26|法国 140
+  - 30|🇬🇧 VMESS-未知>英国-NF解锁波兰地区非自制剧-Ch...
+  - 27|_MD_->🇺_RU_
+  - 26|英国 006
   - 11|🇯🇵
+  - 26|德国 011
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
