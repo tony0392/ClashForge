@@ -34,50 +34,27 @@ dns:
 proxies:
 - cipher: chacha20-ietf-poly1305
   country: 🇰 HK
-  name: 14| HK_67
+  name: 14| HK_73
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 203.23.128.33
   type: ss
 - cipher: aes-256-cfb
   country: 🇰 HK
-  name: 14|🇰 HK_68
+  name: 14|🇰 HK_74
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.16.212
   type: ss
 - cipher: chacha20-ietf
   country: 🇭🇰 HK
-  name: 14|🇰 HK_69
+  name: 14|🇰 HK_75
   password: asd123456
   port: 8388
   server: 103.36.91.23
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 18,30,33|香港6|@ripaojiedian
-  network: tcp
-  port: '28034'
-  server: 175.29.22.101
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d2540325-9ad6-33d7-be86-259b5bba4ef8
-- cipher: aes-128-gcm
-  name: 11|🇯🇵
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.240
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇷 KR
-  name: 14|🇰🇷 KR_85
-  password: qwerREWQ@@
-  port: 4652
-  server: 218.237.185.230
-  type: ss
 - country: 🇬SG
-  name: 14|🇸🇬SG_162
+  name: 14|🇸🇬SG_167
   password: d4bdfc72-7f0c-4ff0-aa4d-3530736f4088
   port: 443
   server: sg-full.privateip.net
@@ -85,7 +62,7 @@ proxies:
   type: trojan
   udp: true
 - country: 🇪DE
-  name: 14|🇪DE_49
+  name: 14|🇪DE_54
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
   server: 139.162.158.172
@@ -131,20 +108,49 @@ proxies:
     path: linkvws
 - cipher: chacha20-ietf-poly1305
   country: 🇷 FR
-  name: 14| FR_53
+  name: 14| FR_58
   password: qXvO7zYU7KeaB0Md7DQLow
   port: 1080
   server: 51.195.119.47
   type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇷 FR
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇷 FR_59
+  network: ws
+  port: 20521
+  server: 45.136.12.37
+  skip-cert-verify: true
+  type: vmess
+  uuid: 090d0bd9-f9c4-4c3b-8aae-ffa678765935
+  ws-path: /
 - cipher: aes-256-cfb
   country: 🇷FR
-  name: 14|🇷FR_54
+  name: 14|🇷FR_60
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.185.174
   type: ss
 - country: 🇷FR
-  name: 14|🇷FR_55
+  name: 14|🇷FR_61
+  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
+  port: 443
+  server: 198.244.190.189
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇷FR
+  name: 14|🇷FR_62
+  password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
+  port: 443
+  server: de-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇫🇷FR
+  name: 14|🇫🇷FR_63
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
@@ -152,26 +158,10 @@ proxies:
   type: trojan
   udp: true
 - country: 🇫🇷FR
-  name: 14|🇷FR_56
+  name: 14|🇫🇷FR_64
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇷FR
-  name: 14|🇫🇷FR_57
-  password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
-  port: 443
-  server: de-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇷FR
-  name: 14|🇫🇷FR_58
-  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
-  port: 443
-  server: 198.244.190.189
   skip-cert-verify: true
   type: trojan
   udp: true
@@ -203,6 +193,13 @@ proxies:
     headers:
       Host: pelang.org
     path: linkvws
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 14| RU_158
+  password: 7kJQs2RYHhViTYWaf1RobB
+  port: 7749
+  server: 77.246.97.187
+  type: ss
 - cipher: aes-256-cfb
   country: 🇺 RU
   name: 14,27|_MD_->🇺_RU_
@@ -210,51 +207,65 @@ proxies:
   port: 989
   server: 185.153.197.5
   type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 14|🇺 RU_160
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 45.159.250.190
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇷🇺 RU
+  name: 14|🇺 RU_161
+  password: KgcKQpFCkXnOJXceV68o12
+  port: 1580
+  server: 62.133.63.230
+  type: ss
 - country: 🇺RU
-  name: 14|🇺RU_157
+  name: 14|🇷🇺RU_162
   password: e299faed-cb72-4c62-bb2e-f0a218aed72a
   port: 443
   server: hk-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: aes-128-gcm
-  country: 🇧 GB
-  name: 14| GB_59
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.178
-  type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
-  name: 14|🇧 GB_60
+  name: 14| GB_65
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.47.253.227
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
-  name: 14|🇧 GB_61
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.47.255.22
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 14|🇬🇧 GB_62
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.126.237.38
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 14|🇬🇧 GB_63
+  name: 14|🇧 GB_66
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.126.239.250
   type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 14|🇬🇧 GB_67
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.47.255.22
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇬🇧 GB
+  name: 14|🇬🇧 GB_68
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 14|🇧 GB_69
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.126.237.38
+  type: ss
 - country: 🇬🇧 GB
-  name: 14|🇬🇧 GB_64
+  name: 14|🇧 GB_70
   password: dd6dcb10-4683-11f0-ae79-1239d0255272
   port: 443
   server: 51.38.65.155
@@ -262,7 +273,7 @@ proxies:
   type: trojan
   udp: true
 - country: 🇬🇧 GB
-  name: 14|🇧 GB_65
+  name: 14|🇬🇧 GB_71
   password: 255a0a50-3f10-11f0-b0d6-1239d0255272
   port: 443
   server: 51.38.65.155
@@ -270,7 +281,7 @@ proxies:
   type: trojan
   udp: true
 - country: 🇧GB
-  name: 14|🇬🇧GB_66
+  name: 14|🇬🇧GB_72
   password: 30761083-5dcd-49d6-85b5-33756ef1f7ed
   port: 443
   server: uk2-full.privateip.net
@@ -299,19 +310,20 @@ proxies:
   type: vmess
   udp: true
   uuid: 44537595-9ccc-4b83-8936-5f9ad3229019
-- alterId: 0
+- alterId: 32
   cipher: auto
-  name: 30|🇬🇧 VMESS-未知>英国-NF解锁波兰地区非自制剧-Ch...
+  name: 26|英属印度洋领地 001
   network: ws
-  port: '443'
-  server: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
+  port: 443
+  server: vc.fly.dev
+  skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
   ws-opts:
     headers:
-      Host: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
-    path: /azumase.ren
+      Host: vc.fly.dev
+    path: /vc
 proxy-groups:
 - name: 节点选择
   type: select
@@ -324,38 +336,39 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 14|🇰 HK_69
-  - 14|🇸🇬SG_162
-  - 14|🇰 HK_68
-  - 14|🇷FR_56
-  - 14|🇺RU_157
-  - 14| HK_67
-  - 26|法国 141
-  - 14|🇫🇷FR_57
-  - 26|德国 051
-  - 26|英国 001
-  - 14,27|_MD_->🇺_RU_
-  - 26|法国 140
-  - 30|🇬🇧 VMESS-未知>英国-NF解锁波兰地区非自制剧-Ch...
-  - 26|德国 007
-  - 18,30,33|香港6|@ripaojiedian
   - 26|英国 007
-  - 14|🇬🇧 GB_63
-  - 14|🇪DE_49
-  - 14|🇬🇧 GB_62
-  - 14|🇷FR_55
-  - 14|🇷FR_54
-  - 11|🇯🇵
-  - 14|🇧 GB_65
-  - 14|🇧 GB_60
-  - 14| GB_59
+  - 14|🇺 RU_161
+  - 26|德国 051
+  - 14|🇷🇺RU_162
+  - 26|法国 140
+  - 14|🇧 GB_66
+  - 14,27|_MD_->🇺_RU_
+  - 26|英属印度洋领地 001
+  - 14|🇷 FR_59
+  - 14|🇷FR_62
+  - 14|🇺 RU_160
+  - 26|英国 001
+  - 14|🇫🇷FR_63
+  - 14|🇬🇧 GB_71
+  - 14|🇪DE_54
+  - 26|法国 141
+  - 14|🇧 GB_69
+  - 26|德国 007
+  - 14|🇫🇷FR_64
+  - 14|🇬🇧 GB_68
+  - 14|🇰 HK_75
+  - 14| FR_58
+  - 14| HK_73
+  - 14|🇧 GB_70
+  - 14|🇷FR_61
+  - 14|🇷FR_60
+  - 14|🇬🇧GB_72
+  - 14|🇸🇬SG_167
+  - 14| RU_158
   - 26|德国 011
-  - 14| FR_53
-  - 14|🇬🇧GB_66
-  - 14|🇫🇷FR_58
-  - 14|🇧 GB_61
-  - 14|🇬🇧 GB_64
-  - 14|🇰🇷 KR_85
+  - 14| GB_65
+  - 14|🇬🇧 GB_67
+  - 14|🇰 HK_74
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
