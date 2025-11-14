@@ -33,61 +33,34 @@ dns:
     - 0.0.0.0/32
 proxies:
 - cipher: chacha20-ietf-poly1305
-  country: 🇭🇰 HK
-  name: 14|🇰 HK_62
+  country: 🇰 HK
+  name: 14| HK_63
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 203.23.128.33
   type: ss
+- cipher: chacha20-ietf
+  country: 🇭🇰 HK
+  name: 14|🇰 HK_64
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
+  type: ss
 - cipher: aes-256-cfb
   country: 🇰 HK
-  name: 14|🇰 HK_63
+  name: 14|🇰 HK_65
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.16.212
   type: ss
-- alterId: 0
-  cipher: auto
-  country: 🇵 JP
-  h2-opts: {}
-  http-opts: {}
-  name: 14| JP_77
-  network: tcp
-  port: 53231
-  server: cgroup.node1.v.nodelist-airport.com
-  servername: cgroup.node1.v.nodelist-airport.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 8f3a835c-8a45-480d-ae35-1deb2c52dcae
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇬 SG
-  h2-opts: {}
-  http-opts: {}
-  name: 14| SG_149
-  network: none
-  port: 43158
-  server: 66.42.63.36
-  skip-cert-verify: true
-  type: vmess
-  uuid: 63a77789-8d8f-46f0-b00a-7ef1dbdea6f1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇸🇬 SG
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇬 SG_150
-  network: none
-  port: 37189
-  server: 66.42.63.36
-  skip-cert-verify: true
-  type: vmess
-  uuid: 3bd93acb-71bb-4088-88d4-09638ed9febd
-  ws-path: /
+- cipher: aes-128-gcm
+  name: 11|🇯🇵
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.240
+  type: ss
 - country: 🇪DE
-  name: 14|🇪DE_42
+  name: 14|🇪DE_44
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
   server: 139.162.158.172
@@ -133,20 +106,20 @@ proxies:
     path: linkvws
 - cipher: chacha20-ietf-poly1305
   country: 🇷 FR
-  name: 14| FR_46
+  name: 14| FR_48
   password: qXvO7zYU7KeaB0Md7DQLow
   port: 1080
   server: 51.195.119.47
   type: ss
 - cipher: aes-256-cfb
   country: 🇷FR
-  name: 14|🇷FR_48
+  name: 14|🇷FR_50
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.185.174
   type: ss
 - country: 🇷FR
-  name: 14|🇷FR_49
+  name: 14|🇷FR_51
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
@@ -154,7 +127,7 @@ proxies:
   type: trojan
   udp: true
 - country: 🇫🇷FR
-  name: 14|🇷FR_50
+  name: 14|🇷FR_52
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
@@ -162,7 +135,7 @@ proxies:
   type: trojan
   udp: true
 - country: 🇫🇷FR
-  name: 14|🇫🇷FR_51
+  name: 14|🇫🇷FR_53
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
@@ -170,7 +143,7 @@ proxies:
   type: trojan
   udp: true
 - country: 🇷FR
-  name: 14|🇫🇷FR_52
+  name: 14|🇫🇷FR_54
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
@@ -217,7 +190,7 @@ proxies:
   country: 🇺 RU
   h2-opts: {}
   http-opts: {}
-  name: 14|🇺 RU_146
+  name: 14|🇺 RU_147
   network: tcp
   port: 45245
   server: ye.fxlcn.com
@@ -226,7 +199,15 @@ proxies:
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
   ws-path: /
-- name: 25,36,38|RU_speednode_0009
+- country: 🇺RU
+  name: 14|🇷🇺RU_148
+  password: e299faed-cb72-4c62-bb2e-f0a218aed72a
+  port: 443
+  server: hk-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 25,36,38|RU_speednode_0044
   network: ws
   password: 14d6efcf-b0d3-4054-9d4e-e1347e3ceaa2
   port: 2053
@@ -241,34 +222,41 @@ proxies:
     path: /Free-VPN-CF-Geo-Project/213.159.208.88=2053
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
-  name: 14| GB_53
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.47.255.22
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 14|🇬🇧 GB_55
+  name: 14| GB_55
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.126.239.250
   type: ss
 - cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 14|🇧 GB_56
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.126.237.38
+  type: ss
+- cipher: chacha20-ietf-poly1305
   country: 🇧 GB
-  name: 14|🇬🇧 GB_56
+  name: 14|🇬🇧 GB_57
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.47.253.227
   type: ss
 - cipher: aes-128-gcm
-  country: 🇧 GB
-  name: 14|🇬🇧 GB_57
+  country: 🇬🇧 GB
+  name: 14|🇬🇧 GB_58
   password: shadowsocks
   port: 443
   server: 141.98.101.178
   type: ss
-- country: 🇧 GB
-  name: 14|🇧 GB_58
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 14|🇧 GB_59
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.47.255.22
+  type: ss
+- country: 🇬🇧 GB
+  name: 14|🇬🇧 GB_60
   password: dd6dcb10-4683-11f0-ae79-1239d0255272
   port: 443
   server: 51.38.65.155
@@ -276,7 +264,7 @@ proxies:
   type: trojan
   udp: true
 - country: 🇬🇧 GB
-  name: 14|🇧 GB_59
+  name: 14|🇧 GB_61
   password: 255a0a50-3f10-11f0-b0d6-1239d0255272
   port: 443
   server: 51.38.65.155
@@ -284,7 +272,7 @@ proxies:
   type: trojan
   udp: true
 - country: 🇧GB
-  name: 14|🇬🇧GB_60
+  name: 14|🇬🇧GB_62
   password: 30761083-5dcd-49d6-85b5-33756ef1f7ed
   port: 443
   server: uk2-full.privateip.net
@@ -327,35 +315,36 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 14| SG_149
-  - 14|🇫🇷FR_51
-  - 14|🇰 HK_62
-  - 14,27|_MD_->🇺_RU_
-  - 14|🇬 SG_150
-  - 30|🇬🇧 VMESS-未知>英国-NF解锁波兰地区非自制剧-Ch...
-  - 26|德国 051
-  - 26|英国 007
-  - 14| JP_77
-  - 25,36,38|RU_speednode_0009
-  - 14|🇺 RU_146
-  - 14|🇷FR_50
-  - 26|法国 140
-  - 26|德国 007
-  - 14|🇷FR_48
-  - 14| FR_46
-  - 14|🇬🇧 GB_57
-  - 14|🇬🇧GB_60
-  - 14|🇧 GB_59
-  - 14|🇪DE_42
-  - 14|🇧 GB_58
-  - 26|法国 141
-  - 14|🇫🇷FR_52
   - 26|德国 011
-  - 14|🇬🇧 GB_56
-  - 14|🇷FR_49
-  - 14|🇬🇧 GB_55
-  - 14| GB_53
-  - 14|🇰 HK_63
+  - 14|🇬🇧 GB_57
+  - 11|🇯🇵
+  - 14|🇧 GB_61
+  - 14| FR_48
+  - 14| HK_63
+  - 14|🇬🇧 GB_60
+  - 14|🇷FR_50
+  - 14|🇪DE_44
+  - 14|🇺 RU_147
+  - 26|法国 140
+  - 14|🇷FR_51
+  - 14|🇬🇧GB_62
+  - 26|英国 007
+  - 14|🇷🇺RU_148
+  - 14|🇫🇷FR_53
+  - 30|🇬🇧 VMESS-未知>英国-NF解锁波兰地区非自制剧-Ch...
+  - 14|🇰 HK_64
+  - 14,27|_MD_->🇺_RU_
+  - 14|🇰 HK_65
+  - 14| GB_55
+  - 26|德国 051
+  - 14|🇷FR_52
+  - 26|法国 141
+  - 14|🇧 GB_56
+  - 14|🇬🇧 GB_58
+  - 26|德国 007
+  - 25,36,38|RU_speednode_0044
+  - 14|🇧 GB_59
+  - 14|🇫🇷FR_54
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
