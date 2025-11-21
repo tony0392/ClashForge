@@ -32,6 +32,13 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
+- cipher: chacha20-ietf
+  country: 🇰 HK
+  name: 14| HK_63
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
+  type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇰 HK
   name: 14|🇰 HK_64
@@ -39,32 +46,42 @@ proxies:
   port: 990
   server: 203.23.128.33
   type: ss
-- cipher: chacha20-ietf
-  country: 🇭🇰 HK
+- cipher: aes-256-cfb
+  country: 🇰 HK
   name: 14|🇰 HK_65
-  password: asd123456
-  port: 8388
-  server: 103.36.91.23
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.16.212
   type: ss
-- cipher: aes-128-gcm
-  name: 11|🇯🇵
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.240
+- name: 26|日本 028
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 1331
+  server: 160.16.116.227
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: 26|日本 064
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 1331
+  server: 153.121.51.29
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- cipher: aes-256-cfb
+  country: 🇷 KR
+  name: 14|🇰🇷 KR_83
+  password: qwerREWQ@@
+  port: 4652
+  server: 218.237.185.230
   type: ss
-- cipher: aes-256-gcm
-  name: 36,38|KR_speednode_0019
-  password: dada0801
-  port: 80
-  server: 13.124.194.133
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  country: 🇸🇬 SG
+  country: 🇬 SG
   h2-opts: {}
   http-opts: {}
-  name: 14|🇬 SG_153
+  name: 14| SG_153
   network: none
   port: 43158
   server: 66.42.63.36
@@ -85,14 +102,6 @@ proxies:
   type: vmess
   uuid: 3bd93acb-71bb-4088-88d4-09638ed9febd
   ws-path: /
-- country: 🇬SG
-  name: 14|🇸🇬SG_155
-  password: d4bdfc72-7f0c-4ff0-aa4d-3530736f4088
-  port: 443
-  server: sg-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - country: 🇪DE
   name: 14|🇪DE_45
   password: 665c944d-047d-4659-80d5-3eaac70241a9
@@ -173,6 +182,19 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- name: 25,36,38|FR_speednode_0011
+  network: ws
+  password: e6f0e8b0-3dc5-4d53-a23a-86c02d5ba098
+  port: 443
+  server: 51.15.210.1
+  skip-cert-verify: false
+  sni: joss.gpj1.web.id
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: joss.gpj1.web.id
+    path: /Free-VPN-CF-Geo-Project/51.15.210.1=443
 - alterId: 0
   cipher: auto
   name: 26|法国 140
@@ -187,32 +209,26 @@ proxies:
     headers:
       Host: pelang.org
     path: linkvws
-- name: 36,38|FR_speednode_0011
-  network: ws
-  password: e6f0e8b0-3dc5-4d53-a23a-86c02d5ba098
-  port: 443
-  server: 51.15.210.1
-  skip-cert-verify: false
-  sni: joss.gpj1.web.id
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: joss.gpj1.web.id
-    path: /Free-VPN-CF-Geo-Project/51.15.210.1=443
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: 14|🇺 RU_147
+  name: 14| RU_147
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 45.159.250.190
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇷🇺 RU
+  name: 14,22,27|_MD_->🇺_RU_
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.153.197.5
   type: ss
 - alterId: 0
   cipher: auto
   country: 🇺 RU
   h2-opts: {}
   http-opts: {}
-  name: 14|🇺 RU_148
+  name: 14|🇺 RU_149
   network: tcp
   port: 45245
   server: ye.fxlcn.com
@@ -221,14 +237,6 @@ proxies:
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
   ws-path: /
-- country: 🇺RU
-  name: 14|🇺RU_149
-  password: e299faed-cb72-4c62-bb2e-f0a218aed72a
-  port: 443
-  server: hk-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
   name: 14| GB_55
@@ -250,8 +258,15 @@ proxies:
   port: 990
   server: 185.47.253.227
   type: ss
+- cipher: aes-128-gcm
+  country: 🇧 GB
+  name: 14|🇬🇧 GB_58
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
+  country: 🇧 GB
   name: 14|🇧 GB_59
   password: f8f7aCzcPKbsF8p3
   port: 990
@@ -283,6 +298,21 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: 26|英国 006
+  network: ws
+  port: 80
+  server: 51.68.191.233
+  skip-cert-verify: true
+  tfo: true
+  type: vmess
+  udp: true
+  uuid: f0eda072-9ae8-494c-a495-215fa5729467
+  ws-opts:
+    headers:
+      Host: 51.68.191.233
+    path: /vmess/
+- alterId: 0
+  cipher: auto
   name: 26|英国 007
   network: tcp
   port: 443
@@ -304,34 +334,37 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 14|🇬 SG_154
-  - 14|🇧 GB_56
-  - 14|🇬 SG_153
-  - 14|🇰 HK_65
-  - 14|🇧 GB_59
-  - 14|🇸🇬SG_155
-  - 14|🇺 RU_148
-  - 14|🇫🇷FR_54
-  - 11|🇯🇵
-  - 14|🇺RU_149
-  - 14|🇧 GB_61
-  - 14|🇧 GB_60
-  - 14|🇪DE_45
-  - 14|🇷FR_50
-  - 36,38|FR_speednode_0011
-  - 36,38|KR_speednode_0019
-  - 14|🇷FR_52
-  - 14|🇫🇷FR_53
-  - 26|德国 007
-  - 14|🇷FR_51
-  - 26|德国 051
-  - 14|🇰 HK_64
-  - 26|英国 007
-  - 14|🇬🇧 GB_57
-  - 14|🇺 RU_147
-  - 26|法国 140
-  - 14|🇬🇧GB_62
   - 14| FR_49
+  - 26|日本 064
+  - 26|法国 140
+  - 14|🇧 GB_60
+  - 26|德国 007
+  - 14|🇫🇷FR_53
+  - 14|🇪DE_45
+  - 26|英国 007
+  - 14|🇷FR_52
+  - 14| RU_147
+  - 14|🇷FR_50
+  - 14|🇰🇷 KR_83
+  - 25,36,38|FR_speednode_0011
+  - 14|🇺 RU_149
+  - 14|🇰 HK_64
+  - 14|🇬 SG_154
+  - 14| HK_63
+  - 14,22,27|_MD_->🇺_RU_
+  - 14|🇧 GB_61
+  - 14|🇫🇷FR_54
+  - 26|德国 051
+  - 14|🇷FR_51
+  - 14|🇧 GB_59
+  - 14| SG_153
+  - 14|🇬🇧 GB_58
+  - 26|日本 028
+  - 26|英国 006
+  - 14|🇬🇧 GB_57
+  - 14|🇬🇧GB_62
+  - 14|🇧 GB_56
+  - 14|🇰 HK_65
   - 14| GB_55
   url: http://www.pinterest.com
   interval: 300
