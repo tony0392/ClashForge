@@ -32,55 +32,40 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- cipher: chacha20-ietf-poly1305
-  country: 🇰 HK
-  name: 14| HK_64
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
-  type: ss
 - cipher: aes-256-cfb
   country: 🇰 HK
-  name: 14|🇰 HK_65
+  name: 14| HK_69
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.16.212
   type: ss
+- cipher: chacha20-ietf
+  country: 🇰 HK
+  name: 14|🇰 HK_70
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇭🇰 HK
+  name: 14|🇰 HK_71
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
+  type: ss
 - alterId: 2
   cipher: auto
-  country: 🇭🇰 HK
+  country: 🇰 HK
   h2-opts: {}
   http-opts: {}
-  name: 14|🇭🇰 HK_68
+  name: 14|🇭🇰 HK_74
   network: ws
   port: 80
   server: hkt.gotochinatown.net
   skip-cert-verify: true
   type: vmess
-  uuid: 384d1b42-655f-11ed-a8bf-f23c91cfbbc9
+  uuid: 1b9c460e-f026-11ef-b737-f23c91cfbbc9
   ws-path: /
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇰 HK_69
-  network: ws
-  port: 80
-  server: 4b718efc-sv2sg0-t65a3e-tqgz.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 88da0d21-b25d-11ec-b9f7-f23c91cfbbc9
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  ws-path: /
-- cipher: aes-128-gcm
-  name: 11|🇯🇵
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.240
-  type: ss
 - name: 26|日本 028
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -113,8 +98,51 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
+- alterId: 0
+  cipher: auto
+  country: 🇬 SG
+  h2-opts: {}
+  http-opts: {}
+  name: 14| SG_160
+  network: ws
+  port: 58607
+  server: 68.183.178.131
+  servername: www.12333.monster
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: c11c32cb-27b3-4afa-c0f3-fb250aa4959e
+  ws-headers:
+    HOST: www.12333.monster
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇸🇬 SG
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇸🇬 SG_162
+  network: none
+  port: 37189
+  server: 66.42.63.36
+  skip-cert-verify: true
+  type: vmess
+  uuid: 3bd93acb-71bb-4088-88d4-09638ed9febd
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇸🇬 SG
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇬 SG_163
+  network: none
+  port: 43158
+  server: 66.42.63.36
+  skip-cert-verify: true
+  type: vmess
+  uuid: 63a77789-8d8f-46f0-b00a-7ef1dbdea6f1
+  ws-path: /
 - country: 🇬SG
-  name: 14|🇸🇬SG_151
+  name: 14|🇸🇬SG_164
   password: c3d6d2e4-05a5-4a48-b91a-070b5e9fcdfb
   port: 443
   server: sg2-full.privateip.net
@@ -122,7 +150,7 @@ proxies:
   type: trojan
   udp: true
 - country: 🇪DE
-  name: 14|🇪DE_47
+  name: 14|🇪DE_49
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
   server: 139.162.158.172
@@ -168,63 +196,50 @@ proxies:
     path: linkvws
 - cipher: chacha20-ietf-poly1305
   country: 🇷 FR
-  name: 14| FR_50
+  name: 14| FR_53
   password: qXvO7zYU7KeaB0Md7DQLow
   port: 1080
   server: 51.195.119.47
   type: ss
 - cipher: aes-256-cfb
   country: 🇷FR
-  name: 14|🇫🇷FR_51
+  name: 14|🇷FR_55
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.185.174
   type: ss
 - country: 🇷FR
-  name: 14|🇷FR_52
-  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
-  port: 443
-  server: 198.244.190.189
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇷FR
-  name: 14|🇷FR_53
+  name: 14|🇷FR_56
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
-- country: 🇫🇷FR
-  name: 14|🇫🇷FR_54
+- country: 🇷FR
+  name: 14|🇷FR_57
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
+- country: 🇷FR
+  name: 14|🇫🇷FR_58
+  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
+  port: 443
+  server: 198.244.190.189
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - country: 🇫🇷FR
-  name: 14|🇫🇷FR_55
+  name: 14|🇫🇷FR_59
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 25,36,38|FR_speednode_0012
-  network: ws
-  password: e6f0e8b0-3dc5-4d53-a23a-86c02d5ba098
-  port: 443
-  server: 51.15.210.1
-  skip-cert-verify: false
-  sni: joss.gpj1.web.id
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: joss.gpj1.web.id
-    path: /Free-VPN-CF-Geo-Project/51.15.210.1=443
 - alterId: 0
   cipher: auto
   name: 26|法国 140
@@ -253,6 +268,13 @@ proxies:
     headers:
       Host: pelang.org
     path: linkvws
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 14| RU_154
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 45.159.250.190
+  type: ss
 - cipher: aes-256-cfb
   country: 🇺 RU
   name: 14,22,27|_MD_->🇺_RU_
@@ -265,7 +287,7 @@ proxies:
   country: 🇺 RU
   h2-opts: {}
   http-opts: {}
-  name: 14|🇺 RU_145
+  name: 14|🇺 RU_156
   network: tcp
   port: 45245
   server: ye.fxlcn.com
@@ -274,67 +296,108 @@ proxies:
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
   ws-path: /
-- name: 18,23|[Trojan] 🇷🇺 俄罗斯 V2CROSS.COM
-  password: Qzy7tgpRhu
+- country: 🇺RU
+  name: 14|🇺RU_157
+  password: e299faed-cb72-4c62-bb2e-f0a218aed72a
   port: 443
-  server: 37.18.14.33
+  server: hk-full.privateip.net
   skip-cert-verify: true
-  sni: m.vk.com
-  tfo: false
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 18,22,23|[VMess] 🇷🇺 俄罗斯 V2CROSS.COM
+  network: ws
+  port: 15745
+  server: 62.192.173.86
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b564b504-17bf-4ff3-fe42-17569844e526
+  ws-opts:
+    path: /
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
-  name: 14| GB_56
+  name: 14| GB_60
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.47.253.227
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 14|🇧 GB_57
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.126.237.38
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇧 GB
-  name: 14|🇬🇧 GB_58
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
   country: 🇬🇧 GB
-  name: 14|🇧 GB_59
+  name: 14|🇬🇧 GB_62
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.47.255.22
   type: ss
-- country: 🇬🇧 GB
-  name: 14|🇧 GB_61
-  password: dd6dcb10-4683-11f0-ae79-1239d0255272
+- cipher: aes-128-gcm
+  country: 🇧 GB
+  name: 14|🇬🇧 GB_63
+  password: shadowsocks
   port: 443
-  server: 51.38.65.155
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇬🇧 GB
-  name: 14|🇬🇧 GB_62
+  server: 141.98.101.178
+  type: ss
+- country: 🇧 GB
+  name: 14|🇧 GB_66
   password: 255a0a50-3f10-11f0-b0d6-1239d0255272
   port: 443
   server: 51.38.65.155
   skip-cert-verify: true
   type: trojan
   udp: true
-- country: 🇧GB
-  name: 14|🇬🇧GB_63
+- country: 🇬🇧 GB
+  name: 14|🇬🇧 GB_67
+  password: dd6dcb10-4683-11f0-ae79-1239d0255272
+  port: 443
+  server: 51.38.65.155
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇬🇧GB
+  name: 14|🇬🇧GB_68
   password: 30761083-5dcd-49d6-85b5-33756ef1f7ed
   port: 443
   server: uk2-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 18,22,30|🇬🇧 英国 V2CROSS.COM
+  network: none
+  port: '53858'
+  server: 91.228.186.242
+  tls: false
+  type: vmess
+  uuid: 17c6ee92-0c6d-43be-851b-ff5415a0b067
+- alterId: 0
+  cipher: auto
+  name: 26|英国 001
+  network: tcp
+  port: 39674
+  server: 82.197.69.131
+  skip-cert-verify: true
+  tfo: true
+  type: vmess
+  udp: true
+  uuid: 5a89386a-827b-4f54-8778-2f1b5122c6ef
+- alterId: 0
+  cipher: auto
+  name: 26|英国 006
+  network: ws
+  port: 80
+  server: 51.68.191.233
+  skip-cert-verify: true
+  tfo: true
+  type: vmess
+  udp: true
+  uuid: f0eda072-9ae8-494c-a495-215fa5729467
+  ws-opts:
+    headers:
+      Host: 51.68.191.233
+    path: /vmess/
 - alterId: 0
   cipher: auto
   name: 26|英国 007
@@ -358,40 +421,45 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 26|日本 062
-  - 26|德国 051
-  - 14|🇰 HK_65
-  - 14|🇰 HK_69
-  - 14|🇸🇬SG_151
-  - 25,36,38|FR_speednode_0012
-  - 14|🇬🇧 GB_62
-  - 11|🇯🇵
-  - 14|🇧 GB_61
-  - 14|🇭🇰 HK_68
-  - 18,23|[Trojan] 🇷🇺 俄罗斯 V2CROSS.COM
-  - 14|🇧 GB_59
-  - 26|法国 140
-  - 26|日本 064
-  - 14| FR_50
-  - 14|🇧 GB_57
-  - 14|🇪DE_47
-  - 14|🇷FR_53
-  - 14|🇫🇷FR_55
-  - 14|🇺 RU_145
-  - 14| GB_56
-  - 14| HK_64
-  - 26|英国 007
-  - 26|日本 028
+  - 26|英国 001
+  - 14|🇸🇬SG_164
   - 26|法国 141
+  - 14|🇰 HK_70
+  - 26|日本 064
+  - 14|🇷FR_56
+  - 14|🇬🇧GB_68
+  - 14|🇪DE_49
+  - 14|🇺 RU_156
   - 14,22,27|_MD_->🇺_RU_
-  - 14|🇬🇧GB_63
-  - 14|🇫🇷FR_54
-  - 26|日本 053
-  - 14|🇷FR_52
-  - 14|🇫🇷FR_51
-  - 26|德国 007
-  - 14|🇬🇧 GB_58
+  - 14|🇭🇰 HK_74
+  - 14|🇰 HK_71
+  - 14|🇺RU_157
+  - 14|🇬🇧 GB_63
+  - 14|🇧 GB_66
+  - 18,22,30|🇬🇧 英国 V2CROSS.COM
+  - 14| SG_160
+  - 26|德国 051
+  - 14|🇬 SG_163
+  - 14|🇷FR_55
+  - 14|🇷FR_57
+  - 14|🇸🇬 SG_162
+  - 14| HK_69
+  - 26|英国 006
   - 26|德国 011
+  - 14| RU_154
+  - 26|法国 140
+  - 14|🇬🇧 GB_62
+  - 14| FR_53
+  - 14|🇫🇷FR_58
+  - 14|🇬🇧 GB_67
+  - 26|日本 062
+  - 26|英国 007
+  - 14|🇫🇷FR_59
+  - 26|德国 007
+  - 14| GB_60
+  - 26|日本 028
+  - 26|日本 053
+  - 18,22,23|[VMess] 🇷🇺 俄罗斯 V2CROSS.COM
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
