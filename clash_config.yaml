@@ -32,63 +32,11 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- cipher: chacha20-ietf-poly1305
-  country: 🇰 HK
-  name: 14| HK_62
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇰 HK
-  name: 14|🇰 HK_63
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.223.16.212
-  type: ss
-- alterId: 2
-  cipher: auto
-  country: 🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇰 HK_64
-  network: ws
-  port: 80
-  server: 88788ee2-sv4n40-t61ki5-1smhu.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 62f2374c-891b-11ef-a3f6-f23c9164ca5d
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇰 HK_65
-  network: ws
-  port: 80
-  server: 72e6fdd1-sv2sg0-t61ki5-1smhu.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 62f2374c-891b-11ef-a3f6-f23c9164ca5d
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  ws-path: /
 - cipher: aes-256-gcm
   name: 25|[SS] 🇭🇰 HK SS-80@free-nodes
   password: g5MeD6Ft3CWlJId
   port: 5003
   server: 188.116.22.96
-  type: ss
-- cipher: aes-128-gcm
-  name: 11|🇯🇵
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.240
   type: ss
 - name: 26|日本 053
   network: tcp
@@ -98,48 +46,19 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- alterId: 0
-  cipher: auto
-  country: 🇬 SG
-  h2-opts: {}
-  http-opts: {}
-  name: 14| SG_144
-  network: ws
-  port: 58607
-  server: 68.183.178.131
-  servername: www.12333.monster
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: c11c32cb-27b3-4afa-c0f3-fb250aa4959e
-  ws-headers:
-    HOST: www.12333.monster
-  ws-path: /
 - cipher: chacha20-ietf-poly1305
   name: 25|[SS] 🇸🇬 SG SS-125@free-nodes
   password: pJtDFXMfdW9VNdJpaf4e2LfFkXdWgxrz
   port: 443
   server: 167.150.100.115
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 30|🇸🇬 SG新加坡(mibei77.com 米贝节点分享)
-  network: ws
-  port: '443'
-  server: singapore02.zgjok.com
-  tls: true
-  type: vmess
-  uuid: 780c7671-e8c8-45ab-922b-4fdfc4310aa0
-  ws-opts:
-    headers:
-      Host: singapore02.zgjok.com
-    path: /
 - cipher: chacha20-ietf-poly1305
-  name: 25|[SS] 🇩🇪 DE SS-57@free-nodes
-  password: tp-0hp5AJTakVyCDj9xRYQ
-  port: 1080
-  server: 91.107.186.156
+  name: 19,20|NL荷兰(mibei77.com 米贝节点分享)-clone...
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: 443
+  server: 45.87.175.166
   type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 26|德国 007
@@ -176,42 +95,12 @@ proxies:
     headers:
       Host: pelang.org
     path: linkvws
-- alterId: 0
-  cipher: auto
-  country: 🇷 FR
-  h2-opts: {}
-  http-opts: {}
-  name: 14| FR_48
-  network: ws
-  port: 20521
-  server: 45.136.12.37
-  skip-cert-verify: true
-  type: vmess
-  uuid: 090d0bd9-f9c4-4c3b-8aae-ffa678765935
-  ws-path: /
 - cipher: aes-256-cfb
-  country: 🇷FR
-  name: 14|🇷FR_49
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 195.154.185.174
+  name: 19|🇫🇷_FR_国
+  password: amazonskr05
+  port: 443
+  server: 35.181.172.34
   type: ss
-- country: 🇷FR
-  name: 14,25|[Trojan] 未知 TROJAN-592@free-no...
-  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
-  port: 443
-  server: uk-full.privateip.net
-  skip-cert-verify: false
-  type: trojan
-  udp: true
-- country: 🇷FR
-  name: 14|🇫🇷FR_52
-  password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
-  port: 443
-  server: de-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 26|法国 140
@@ -240,27 +129,6 @@ proxies:
     headers:
       Host: pelang.org
     path: linkvws
-- cipher: aes-256-cfb
-  country: 🇺 RU
-  name: 14,22,27|_MD_->🇺_RU_
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.153.197.5
-  type: ss
-- alterId: 0
-  cipher: auto
-  country: 🇺 RU
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺 RU_142
-  network: tcp
-  port: 45245
-  server: ye.fxlcn.com
-  servername: ye.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
 - cipher: chacha20-ietf-poly1305
   name: 25|[SS] 🇷🇺 RU SS-76@free-nodes
   password: yYLiE0LOsr0CwIjbiCSLy2
@@ -269,63 +137,15 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 30|🇷🇺 RU俄罗斯(mibei77.com 米贝节点分享)
-  network: tcp
-  port: '49934'
-  server: 45.136.244.201
+  name: 20,23|[VMess] 🇬🇧 英国 V2CROSS.COM 2
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: true
+  tfo: false
   tls: false
   type: vmess
-  uuid: 90afa47d-341a-497d-ae25-1d81258804d5
-- cipher: aes-128-gcm
-  country: 🇧 GB
-  name: 14| GB_54
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 14|🇧 GB_55
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.47.253.227
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 14|🇧 GB_56
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.47.255.22
-  type: ss
-- country: 🇬🇧 GB
-  name: 14|🇧 GB_59
-  password: dd6dcb10-4683-11f0-ae79-1239d0255272
-  port: 443
-  server: 51.38.65.155
-  skip-cert-verify: true
-  type: trojan
   udp: true
-- cipher: aes-256-gcm
-  name: 25|[SS] 🇬🇧 GB SS-16@free-nodes
-  password: 8JCsPssfgS8tiRwiMlhARg==
-  port: 12000
-  server: 144.217.164.29
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 26|英国 006
-  network: ws
-  port: 80
-  server: 51.68.191.233
-  skip-cert-verify: true
-  tfo: true
-  type: vmess
-  udp: true
-  uuid: f0eda072-9ae8-494c-a495-215fa5729467
-  ws-opts:
-    headers:
-      Host: 51.68.191.233
-    path: /vmess/
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
   name: 26|英国 007
@@ -337,6 +157,20 @@ proxies:
   type: vmess
   udp: true
   uuid: 44537595-9ccc-4b83-8936-5f9ad3229019
+- alterId: 32
+  cipher: auto
+  name: 26|英属印度洋领地 001
+  network: ws
+  port: 443
+  server: vc.fly.dev
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  ws-opts:
+    headers:
+      Host: vc.fly.dev
+    path: /vc
 proxy-groups:
 - name: 节点选择
   type: select
@@ -349,37 +183,20 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 26|日本 053
-  - 14|🇧 GB_59
-  - 14| GB_54
-  - 25|[SS] 🇩🇪 DE SS-57@free-nodes
-  - 14| SG_144
-  - 25|[SS] 🇸🇬 SG SS-125@free-nodes
-  - 26|德国 011
-  - 30|🇷🇺 RU俄罗斯(mibei77.com 米贝节点分享)
-  - 26|英国 007
-  - 14,22,27|_MD_->🇺_RU_
-  - 14|🇧 GB_55
-  - 14|🇰 HK_65
-  - 26|德国 007
-  - 14,25|[Trojan] 未知 TROJAN-592@free-no...
-  - 14|🇷FR_49
-  - 14|🇫🇷FR_52
-  - 14|🇰 HK_64
-  - 14|🇰 HK_63
-  - 26|法国 141
-  - 14|🇺 RU_142
-  - 14| FR_48
-  - 30|🇸🇬 SG新加坡(mibei77.com 米贝节点分享)
-  - 14|🇧 GB_56
-  - 26|英国 006
-  - 14| HK_62
-  - 25|[SS] 🇭🇰 HK SS-80@free-nodes
-  - 11|🇯🇵
-  - 25|[SS] 🇷🇺 RU SS-76@free-nodes
-  - 25|[SS] 🇬🇧 GB SS-16@free-nodes
   - 26|德国 051
+  - 25|[SS] 🇷🇺 RU SS-76@free-nodes
+  - 19,20|NL荷兰(mibei77.com 米贝节点分享)-clone...
+  - 26|法国 141
+  - 26|德国 011
+  - 26|德国 007
+  - 26|英国 007
+  - 26|日本 053
   - 26|法国 140
+  - 25|[SS] 🇭🇰 HK SS-80@free-nodes
+  - 19|🇫🇷_FR_国
+  - 25|[SS] 🇸🇬 SG SS-125@free-nodes
+  - 26|英属印度洋领地 001
+  - 20,23|[VMess] 🇬🇧 英国 V2CROSS.COM 2
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
