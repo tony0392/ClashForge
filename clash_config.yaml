@@ -32,12 +32,392 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- cipher: aes-256-gcm
-  name: 25|[SS] 🇭🇰 HK SS-80@free-nodes
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 188.116.22.96
+- cipher: aes-256-cfb
+  country: 🇰 HK
+  name: 14| HK_60
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.16.212
   type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇰 HK
+  name: 14|🇰 HK_61
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
+  type: ss
+- cipher: chacha20-ietf
+  country: 🇭🇰 HK
+  name: 14|🇰 HK_62
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
+  type: ss
+- alterId: 2
+  cipher: auto
+  country: 🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇰 HK_64
+  network: ws
+  port: 80
+  server: bca6ef41-sv4n40-t5wcb1-13x18.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: e4499a62-0cfe-11eb-ad8c-f23c9164ca5d
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇭🇰 HK_97
+  network: ws
+  port: 80
+  server: 1716e7d1-sucv40-tcum62-se45.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: d076280a-0d5f-11f0-8a7b-f23c913c8d2b
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇭🇰 HK_98
+  network: ws
+  port: 80
+  server: 45c56923-sucv40-tcop2n-tl32.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 5c02ab88-7b9c-11ea-8fc9-f23c913c8d2b
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇭🇰 HK_101
+  network: ws
+  port: 80
+  server: aeb50015-t02f40-t9byd7-1jfvb.hk3.p5pv.com
+  servername: aeb50015-t02f40-t9byd7-1jfvb.hk3.p5pv.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 06b2ac52-fcc6-11ec-bb74-f23c9164ca5d
+  ws-headers:
+    HOST: aeb50015-t02f40-t9byd7-1jfvb.hk3.p5pv.com
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇭🇰 HK_102
+  network: ws
+  port: 80
+  server: 486a4149-t0bog0-t14dgl-duku.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 8e0f8ef2-5fe3-11ec-a8bf-f23c91cfbbc9
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇭🇰 HK_104
+  network: ws
+  port: 80
+  server: 9d27188f-t00kg0-t9byd7-1jfvb.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 06b2ac52-fcc6-11ec-bb74-f23c9164ca5d
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇭🇰 HK_107
+  network: ws
+  port: 80
+  server: 7c1bd545-sz8sg0-t0opzi-19xg1.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: e1dee7c0-cff7-11eb-a8bf-f23c91cfbbc9
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇭🇰 HK_108
+  network: ws
+  port: 80
+  server: 80f0806d-szg740-t41p4y-1hpo0.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: c3dc8d26-ab2b-11ec-a8bf-f23c91cfbbc9
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇭🇰 HK_111
+  network: ws
+  port: 80
+  server: 30451d6f-sv2sg0-t8ivpf-z65w.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: a2313fba-74a6-11ed-a8bf-f23c91cfbbc9
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇭🇰 HK_112
+  network: ws
+  port: 80
+  server: 73cc68dd-sv0xs0-t76x2i-wj6v.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 847c03b2-0a9d-11eb-a8bf-f23c91cfbbc9
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇭🇰 HK_116
+  network: ws
+  port: 80
+  server: 8685e774-sv2sg0-svq7uu-1gevg.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: f02ee2b4-d760-11ec-bd7c-f23c913c8d2b
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇭🇰 HK_117
+  network: ws
+  port: 80
+  server: 814047e3-sv2sg0-t09t13-z7a1.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 3bd247a8-993e-11ec-a8bf-f23c91cfbbc9
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇭🇰 HK_122
+  network: ws
+  port: 80
+  server: a7cf5f1e-sva740-tc67m2-1tjc4.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: fac704ae-0304-11f0-a2ef-f23c91cfbbc9
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇭🇰 HK_125
+  network: ws
+  port: 80
+  server: c25c61db-sv2sg0-tbpu76-1thmd.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 2d8c38cc-fc12-11ef-94aa-f23c913c8d2b
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇭🇰 HK_143
+  network: ws
+  port: 80
+  server: 7fdab67a-sv2sg0-tct1rd-1o0ch.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: d49e545e-0daf-11ee-a91f-f23c913c8d2b
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇭🇰 HK_144
+  network: ws
+  port: 80
+  server: c5765779-sv2sg0-syu0n5-1hd7v.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: f73c64bc-9e8c-11ec-bd7c-f23c913c8d2b
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇭🇰 HK_169
+  network: ws
+  port: 80
+  server: 865c5c01-sv4n40-t65a3e-tqgz.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 88da0d21-b25d-11ec-b9f7-f23c91cfbbc9
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇭🇰 HK_170
+  network: ws
+  port: 80
+  server: ac1aede0-sv2sg0-t5qfe2-1khwf.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 92bd8c68-6434-11ee-b644-f23c91cfbbc9
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇭🇰 HK_171
+  network: ws
+  port: 80
+  server: 4020d7a1-sv0xs0-swkmdk-1imi4.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 40fb1315-191a-11ed-b0ca-f23c91cfbbc9
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇭🇰 HK_172
+  network: ws
+  port: 80
+  server: 4c2c02b9-sv2sg0-sv75lj-1swf9.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 2bb1edc8-fa5d-11ef-9dd9-f23c9164ca5d
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇭🇰 HK_173
+  network: ws
+  port: 80
+  server: f92a4a6b-sv2sg0-swkmdk-1imi4.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 40fb1315-191a-11ed-b0ca-f23c91cfbbc9
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇭🇰 HK_174
+  network: ws
+  port: 80
+  server: 14269f63-t049s0-t1kmeg-mv7m.hk3.p5pv.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 94d40708-8273-11ea-8fc9-f23c913c8d2b
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇭🇰 HK_182
+  network: ws
+  port: 80
+  server: 5f0f42e9-sv4n40-t7udc0-1pqhp.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: b02327ac-a49a-11ef-a673-f23c913c8d2b
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
 - name: 26|日本 053
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -46,30 +426,29 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+- alterId: 0
+  cipher: auto
+  country: 🇬 SG
+  h2-opts: {}
+  http-opts: {}
+  name: 14| SG_289
+  network: ws
+  port: 58607
+  server: 68.183.178.131
+  servername: www.12333.monster
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: c11c32cb-27b3-4afa-c0f3-fb250aa4959e
+  ws-headers:
+    HOST: www.12333.monster
+  ws-path: /
 - cipher: chacha20-ietf-poly1305
   name: 25|[SS] 🇸🇬 SG SS-125@free-nodes
   password: pJtDFXMfdW9VNdJpaf4e2LfFkXdWgxrz
   port: 443
   server: 167.150.100.115
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 19,20|NL荷兰(mibei77.com 米贝节点分享)-clone...
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 443
-  server: 45.87.175.166
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 26|德国 007
-  network: tcp
-  port: 28011
-  server: 62.146.235.193
-  skip-cert-verify: true
-  tfo: true
-  type: vmess
-  udp: true
-  uuid: cfc5a87f-3c13-4e25-b556-176cdd6b5c6a
 - alterId: 0
   cipher: auto
   name: 26|德国 011
@@ -95,6 +474,53 @@ proxies:
     headers:
       Host: pelang.org
     path: linkvws
+- cipher: aes-256-cfb
+  country: 🇷FR
+  name: 14|🇷FR_48
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 195.154.185.174
+  type: ss
+- country: 🇷FR
+  name: 14|🇷FR_50
+  password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
+  port: 443
+  server: de-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇫🇷FR
+  name: 14|🇫🇷FR_51
+  password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
+  port: 443
+  server: fr-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇫🇷FR
+  name: 14,25|[Trojan] 未知 TROJAN-592@free-no...
+  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
+  port: 443
+  server: uk-full.privateip.net
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 18,23,30|🇫🇷 法国 OVH SAS
+  network: ws
+  port: '443'
+  server: 91.134.8.101
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
 - cipher: aes-256-cfb
   name: 19|🇫🇷_FR_国
   password: amazonskr05
@@ -129,15 +555,72 @@ proxies:
     headers:
       Host: pelang.org
     path: linkvws
+- cipher: aes-256-cfb
+  country: 🇺 RU
+  name: 14,22,27|_MD_->🇺_RU_
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.153.197.5
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 14|🇺 RU_286
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 45.159.250.190
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇺 RU
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺 RU_287
+  network: tcp
+  port: 45245
+  server: ye.fxlcn.com
+  servername: ye.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
 - cipher: chacha20-ietf-poly1305
   name: 25|[SS] 🇷🇺 RU SS-76@free-nodes
   password: yYLiE0LOsr0CwIjbiCSLy2
   port: 49115
   server: 147.45.235.63
   type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 14|🇧 GB_55
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.47.255.22
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 20,23|[VMess] 🇬🇧 英国 V2CROSS.COM 2
+  country: 🇧 GB
+  h2-opts: {}
+  http-opts: {}
+  name: 14,18,30|🇬🇧 英国 V2CROSS.COM
+  network: tcp
+  port: '180'
+  server: 82.198.246.97
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  ws-path: /
+- country: 🇬🇧 GB
+  name: 14|🇧 GB_58
+  password: dd6dcb10-4683-11f0-ae79-1239d0255272
+  port: 443
+  server: 51.38.65.155
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 20,22,23|[VMess] 🇬🇧 英国 V2CROSS.COM
   port: 180
   server: 82.198.246.97
   skip-cert-verify: true
@@ -146,17 +629,27 @@ proxies:
   type: vmess
   udp: true
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- cipher: aes-256-gcm
+  name: 25|[SS] 🇬🇧 GB SS-16@free-nodes
+  password: 8JCsPssfgS8tiRwiMlhARg==
+  port: 12000
+  server: 144.217.164.29
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 26|英国 007
-  network: tcp
-  port: 443
-  server: 89.31.120.192
+  name: 26|英国 006
+  network: ws
+  port: 80
+  server: 51.68.191.233
   skip-cert-verify: true
   tfo: true
   type: vmess
   udp: true
-  uuid: 44537595-9ccc-4b83-8936-5f9ad3229019
+  uuid: f0eda072-9ae8-494c-a495-215fa5729467
+  ws-opts:
+    headers:
+      Host: 51.68.191.233
+    path: /vmess/
 - alterId: 32
   cipher: auto
   name: 26|英属印度洋领地 001
@@ -183,20 +676,56 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 26|德国 051
-  - 25|[SS] 🇷🇺 RU SS-76@free-nodes
-  - 19,20|NL荷兰(mibei77.com 米贝节点分享)-clone...
-  - 26|法国 141
-  - 26|德国 011
-  - 26|德国 007
-  - 26|英国 007
+  - 14|🇧 GB_55
+  - 14|🇭🇰 HK_112
+  - 14|🇭🇰 HK_172
+  - 14,25|[Trojan] 未知 TROJAN-592@free-no...
   - 26|日本 053
-  - 26|法国 140
-  - 25|[SS] 🇭🇰 HK SS-80@free-nodes
-  - 19|🇫🇷_FR_国
+  - 14|🇫🇷FR_51
+  - 14|🇷FR_50
+  - 14|🇭🇰 HK_97
+  - 14|🇭🇰 HK_122
+  - 14|🇭🇰 HK_108
+  - 14|🇭🇰 HK_101
+  - 26|英国 006
   - 25|[SS] 🇸🇬 SG SS-125@free-nodes
+  - 26|德国 011
+  - 14|🇭🇰 HK_116
+  - 14|🇭🇰 HK_111
+  - 14| SG_289
+  - 14|🇭🇰 HK_98
+  - 18,23,30|🇫🇷 法国 OVH SAS
+  - 26|法国 140
+  - 14|🇰 HK_61
+  - 14|🇭🇰 HK_125
+  - 14|🇭🇰 HK_182
+  - 14|🇭🇰 HK_117
+  - 25|[SS] 🇷🇺 RU SS-76@free-nodes
+  - 14|🇧 GB_58
+  - 14|🇭🇰 HK_143
+  - 19|🇫🇷_FR_国
+  - 26|法国 141
+  - 14|🇺 RU_287
+  - 14|🇭🇰 HK_173
+  - 14|🇺 RU_286
+  - 26|德国 051
   - 26|英属印度洋领地 001
-  - 20,23|[VMess] 🇬🇧 英国 V2CROSS.COM 2
+  - 14|🇭🇰 HK_170
+  - 14|🇭🇰 HK_169
+  - 14|🇭🇰 HK_107
+  - 14| HK_60
+  - 25|[SS] 🇬🇧 GB SS-16@free-nodes
+  - 14|🇷FR_48
+  - 14|🇭🇰 HK_171
+  - 14|🇭🇰 HK_104
+  - 14,18,30|🇬🇧 英国 V2CROSS.COM
+  - 14|🇭🇰 HK_174
+  - 14|🇭🇰 HK_144
+  - 14|🇰 HK_64
+  - 14|🇰 HK_62
+  - 14|🇭🇰 HK_102
+  - 14,22,27|_MD_->🇺_RU_
+  - 20,22,23|[VMess] 🇬🇧 英国 V2CROSS.COM
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
