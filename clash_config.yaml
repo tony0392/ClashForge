@@ -34,47 +34,31 @@ dns:
 proxies:
 - cipher: chacha20-ietf
   country: 🇰 HK
-  name: 14| HK_64
+  name: 14| HK_60
   password: asd123456
   port: 8388
-  server: 103.36.91.23
+  server: 103.149.182.191
   type: ss
 - cipher: aes-256-cfb
   country: 🇭🇰 HK
-  name: 14|🇰 HK_65
+  name: 14|🇰 HK_61
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.16.212
   type: ss
-- cipher: aes-128-gcm
-  name: 11|🇯🇵
-  password: shadowsocks
+- name: 25|[Trojan] 🇺🇸 US TROJAN-1808 | f...
+  password: FDIypSwe64a3DA7un2R8DFjYXZO3NS05gKZTTOC8SxO0Fy3cqYg3EaFDA3ABaEYKNx39D
   port: 443
-  server: 149.22.87.240
-  type: ss
-- alterId: 0
-  cipher: auto
-  country: 🇵 JP
-  h2-opts: {}
-  http-opts: {}
-  name: 14| JP_121
-  network: ws
-  port: 443
-  server: seoul03.zgjok.com
-  servername: seoul03.zgjok.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 72a0dac4-9689-4a57-b164-5c65bfa94772
-  ws-headers:
-    HOST: seoul03.zgjok.com
-  ws-path: /
+  server: kuame.missionsec.us
+  skip-cert-verify: false
+  sni: kuame.missionsec.us
+  type: trojan
 - alterId: 0
   cipher: auto
   country: 🇬 SG
   h2-opts: {}
   http-opts: {}
-  name: 14| SG_192
+  name: 14| SG_142
   network: ws
   port: 58607
   server: 68.183.178.131
@@ -86,17 +70,26 @@ proxies:
   ws-headers:
     HOST: www.12333.monster
   ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 26|德国 007
-  network: tcp
-  port: 28011
-  server: 62.146.235.193
-  skip-cert-verify: true
-  tfo: true
-  type: vmess
-  udp: true
-  uuid: cfc5a87f-3c13-4e25-b556-176cdd6b5c6a
+- name: 25|[Trojan] 未知 TROJAN-1480 | free...
+  password: 79314e99f0a473fe86efc7827942ad00
+  port: 1596
+  server: 160.16.150.76
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: 25|[Trojan] 未知 TROJAN-1721 | free...
+  password: 79314e99f0a473fe86efc7827942ad00
+  port: 3145
+  server: 160.16.144.208
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 25|[SS] 🇩🇪 DE SS-28 | free-nodes
+  password: JGv616hMWdjfuZ00jYfq7XkBHJZrOBrg
+  port: 443
+  server: 87.121.162.249
+  type: ss
 - alterId: 0
   cipher: auto
   name: 26|德国 011
@@ -122,24 +115,45 @@ proxies:
     headers:
       Host: pelang.org
     path: linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇷 FR
+  h2-opts: {}
+  http-opts: {}
+  name: 14| FR_46
+  network: none
+  port: 38141
+  server: 45.136.12.37
+  skip-cert-verify: true
+  type: vmess
+  uuid: fd291be6-b48d-43a1-da38-66c7f80e2f80
+  ws-path: /
 - country: 🇷FR
-  name: 14,25|[Trojan] 未知 TROJAN-1411 | free...
-  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
-  port: 443
-  server: uk-full.privateip.net
-  skip-cert-verify: false
-  type: trojan
-  udp: true
-- country: 🇫🇷FR
-  name: 14,25|[Trojan] 未知 TROJAN-1291 | free...
+  name: 14,25|[Trojan] 未知 TROJAN-425 | free-...
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
   skip-cert-verify: false
   type: trojan
   udp: true
+- country: 🇫🇷FR
+  name: 14,25|[Trojan] 未知 TROJAN-1436 | free...
+  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
+  port: 443
+  server: uk-full.privateip.net
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+- country: 🇷FR
+  name: 14|🇫🇷FR_50
+  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
+  port: 443
+  server: 198.244.190.189
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 19,20,25|[SS] 未知 SS-137 | free-nodes
+  name: 19,20,25|[SS] 未知 SS-109 | free-nodes
   password: SVt6ZiWzRI1Yxeig4xBZwiJOt6ceXwGa
   port: 443
   server: 95.111.222.113
@@ -173,12 +187,19 @@ proxies:
     headers:
       Host: pelang.org
     path: linkvws
+- cipher: aes-256-cfb
+  country: 🇷🇺 RU
+  name: 14,22,27|_MD_->🇺_RU_
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.153.197.5
+  type: ss
 - alterId: 0
   cipher: auto
   country: 🇺 RU
   h2-opts: {}
   http-opts: {}
-  name: 14|🇺 RU_188
+  name: 14|🇺 RU_139
   network: tcp
   port: 45245
   server: ye.fxlcn.com
@@ -195,55 +216,41 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 19,20,25|[SS] 未知 SS-99 | free-nodes
-  password: YQCSKoCF3QazW8YlvDBWA4
-  port: 56689
-  server: 109.71.246.210
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 25|[SS] 🇷🇺 RU SS-131 | free-nodes
+  name: 25|[SS] 🇷🇺 RU SS-102 | free-nodes
   password: qFAJdBEqsI71jaSML67nHoPBCGhX94uk
   port: 443
   server: 45.138.157.162
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
-  name: 14| GB_55
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.179
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 14|🇧 GB_56
+  name: 14|🇧 GB_52
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.47.253.227
   type: ss
 - cipher: aes-128-gcm
   country: 🇬🇧 GB
-  name: 14|🇧 GB_57
+  name: 14|🇬🇧 GB_53
   password: shadowsocks
   port: 443
   server: 141.98.101.178
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 14|🇧 GB_58
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.126.237.38
+  country: 🇧 GB
+  name: 14|🇧 GB_54
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.179
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧 GB
-  name: 14|🇬🇧 GB_59
+  name: 14|🇧 GB_55
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.47.255.22
   type: ss
 - country: 🇬🇧 GB
-  name: 14|🇧 GB_62
+  name: 14|🇧 GB_58
   password: dd6dcb10-4683-11f0-ae79-1239d0255272
   port: 443
   server: 51.38.65.155
@@ -261,20 +268,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 44537595-9ccc-4b83-8936-5f9ad3229019
-- alterId: 32
-  cipher: auto
-  name: 26|英属印度洋领地 001
-  network: ws
-  port: 443
-  server: vc.fly.dev
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
-  ws-opts:
-    headers:
-      Host: vc.fly.dev
-    path: /vc
 proxy-groups:
 - name: 节点选择
   type: select
@@ -287,31 +280,32 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 14| GB_55
-  - 14|🇧 GB_62
-  - 14|🇧 GB_56
-  - 26|英国 007
-  - 14|🇰 HK_65
-  - 14|🇧 GB_57
-  - 19,20,25|[SS] 未知 SS-99 | free-nodes
-  - 14| JP_121
-  - 14| HK_64
-  - 14|🇺 RU_188
-  - 19|俄罗斯(yudou6677.top 玉豆免费节点) 2
+  - 14,25|[Trojan] 未知 TROJAN-425 | free-...
+  - 25|[Trojan] 未知 TROJAN-1721 | free...
+  - 14| HK_60
   - 14|🇧 GB_58
-  - 14| SG_192
-  - 26|德国 007
-  - 26|德国 011
-  - 11|🇯🇵
-  - 25|[SS] 🇷🇺 RU SS-131 | free-nodes
-  - 26|英属印度洋领地 001
-  - 14|🇬🇧 GB_59
-  - 14,25|[Trojan] 未知 TROJAN-1411 | free...
-  - 19,20,25|[SS] 未知 SS-137 | free-nodes
+  - 25|[Trojan] 未知 TROJAN-1480 | free...
+  - 26|英国 007
+  - 14| SG_142
+  - 19|俄罗斯(yudou6677.top 玉豆免费节点) 2
+  - 14,25|[Trojan] 未知 TROJAN-1436 | free...
   - 26|法国 141
+  - 25|[SS] 🇷🇺 RU SS-102 | free-nodes
+  - 14|🇺 RU_139
   - 26|德国 051
-  - 14,25|[Trojan] 未知 TROJAN-1291 | free...
   - 26|法国 140
+  - 14|🇫🇷FR_50
+  - 26|德国 011
+  - 14,22,27|_MD_->🇺_RU_
+  - 14|🇧 GB_54
+  - 25|[SS] 🇩🇪 DE SS-28 | free-nodes
+  - 14| FR_46
+  - 14|🇬🇧 GB_53
+  - 25|[Trojan] 🇺🇸 US TROJAN-1808 | f...
+  - 14|🇧 GB_52
+  - 19,20,25|[SS] 未知 SS-109 | free-nodes
+  - 14|🇧 GB_55
+  - 14|🇰 HK_61
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
