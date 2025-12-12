@@ -32,135 +32,104 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- cipher: aes-256-cfb
-  country: 🇰 HK
-  name: 14|🇰 HK_63
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.223.16.212
-  type: ss
-- alterId: 2
+- alterId: 0
   cipher: auto
-  country: 🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇰 HK_64
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
+  name: 36,38|HK_speednode_0013
+  port: 39811
+  server: 156.245.232.15
+  skip-cert-verify: false
+  tls: false
   type: vmess
-  uuid: 7699767c-44ae-11ef-80c7-f23c91cfbbc9
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  ws-path: /
+  udp: true
+  uuid: 76ee6d1f-e608-4041-b263-b74186a8ca23
+- alterId: 0
+  cipher: auto
+  name: 36,38|HK_speednode_0015
+  port: 21246
+  server: 156.245.232.15
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9526b462-c45f-4940-83b9-a204462b0744
+- alterId: 0
+  cipher: auto
+  name: 36,38|HK_speednode_0016
+  port: 14914
+  server: 156.245.232.15
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d3dfab98-c7d2-45d7-9941-b3dc634696e4
+- alterId: 0
+  cipher: auto
+  name: 36,38|HK_speednode_0017
+  port: 17342
+  server: 156.245.232.15
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e8542c10-8d09-46e6-db55-da8954d36470
+- alterId: 0
+  cipher: auto
+  name: 36,38|HK_speednode_0018
+  port: 42640
+  server: 156.245.232.15
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 48a33a1b-a6fb-4d6a-94c5-c6808f1c4b1f
+- alterId: 0
+  cipher: auto
+  name: 36,38|HK_speednode_0019
+  port: 30490
+  server: 156.245.232.15
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 18620c20-b7a4-403e-c312-1c0199088100
+- cipher: aes-128-gcm
+  name: 11|🇯🇵
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.240
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 25|[SS] 🇯🇵 JP SS-112 | free-nodes
+  name: 25|[SS] 🇯🇵 JP SS-96 | free-nodes
   password: xgoOsyyBv2Yn4w0hSqjsNqf5IGbIETZ6
   port: 443
   server: 5.253.41.46
   type: ss
-- alterId: 0
-  cipher: auto
-  country: 🇬 SG
-  h2-opts: {}
-  http-opts: {}
-  name: 14| SG_169
-  network: ws
-  port: 58607
-  server: 68.183.178.131
-  servername: www.12333.monster
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: c11c32cb-27b3-4afa-c0f3-fb250aa4959e
-  ws-headers:
-    HOST: www.12333.monster
-  ws-path: /
 - cipher: chacha20-ietf-poly1305
-  name: 25|[SS] 🇸🇬 SG SS-36 | free-nodes
-  password: uA1rLP5m0mMOQ8FcxRXxgr
-  port: 26515
-  server: 209.74.82.227
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 25|[SS] 🇸🇬 SG SS-46 | free-nodes
-  password: 8Ij4seif85QQHfLmR0zYkQ
-  port: 48918
-  server: 209.74.82.196
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 25|[SS] 🇸🇬 SG SS-88 | free-nodes
+  name: 25|[SS] 🇸🇬 SG SS-74 | free-nodes
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 95.173.218.203
   type: ss
-- name: 25|[Trojan] 未知 TROJAN-1212 | free...
+- name: 25|[Trojan] 未知 TROJAN-2017 | free...
   password: 76d630f2af6619c4a5de0ef953df3c6a
   port: 507
   server: 160.16.233.76
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- alterId: 0
-  cipher: auto
-  country: 🇷 FR
-  h2-opts: {}
-  http-opts: {}
-  name: 14| FR_45
-  network: none
-  port: 38141
-  server: 45.136.12.37
-  skip-cert-verify: true
-  type: vmess
-  uuid: fd291be6-b48d-43a1-da38-66c7f80e2f80
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇫🇷 FR
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇷 FR_47
-  network: ws
-  port: 20521
-  server: 45.136.12.37
-  skip-cert-verify: true
-  type: vmess
-  uuid: 090d0bd9-f9c4-4c3b-8aae-ffa678765935
-  ws-path: /
-- country: 🇷FR
-  name: 14,25|[Trojan] 未知 TROJAN-1134 | free...
-  password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
-  port: 443
-  server: de-full.privateip.net
+- name: 25|[Trojan] 未知 TROJAN-1981 | free...
+  password: 76d630f2af6619c4a5de0ef953df3c6a
+  port: 3145
+  server: 160.16.153.13
   skip-cert-verify: false
+  sni: www.nintendogames.net
   type: trojan
-  udp: true
-- country: 🇷FR
-  name: 14|🇷FR_49
-  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
+- cipher: chacha20-ietf-poly1305
+  name: 25|[SS] 🇩🇪 DE SS-138 | free-nodes
+  password: JGv616hMWdjfuZ00jYfq7XkBHJZrOBrg
   port: 443
-  server: 198.244.190.189
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇫🇷FR
-  name: 14,25|[Trojan] 未知 TROJAN-1555 | free...
-  password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
-  port: 443
-  server: fr-full.privateip.net
-  skip-cert-verify: false
-  type: trojan
-  udp: true
-- country: 🇫🇷FR
-  name: 14,25|[Trojan] 未知 TROJAN-1700 | free...
-  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
-  port: 443
-  server: uk-full.privateip.net
-  skip-cert-verify: false
-  type: trojan
-  udp: true
+  server: 87.121.162.249
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 20|FR法国(mibei77.com 米贝节点分享)
   password: SVt6ZiWzRI1Yxeig4xBZwiJOt6ceXwGa
@@ -169,92 +138,14 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: 14| RU_163
-  password: 7kJQs2RYHhViTYWaf1RobB
-  port: 7749
-  server: 77.246.97.187
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇺 RU
-  name: 14,22,27|_MD_->🇺_RU_
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.153.197.5
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: 14|🇺 RU_165
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 45.159.250.190
-  type: ss
-- alterId: 0
-  cipher: auto
-  country: 🇺 RU
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺 RU_166
-  network: tcp
-  port: 45245
-  server: ye.fxlcn.com
-  servername: ye.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- cipher: chacha20-ietf-poly1305
   name: 20|RU俄罗斯(mibei77.com 米贝节点分享) 3
   password: YQCSKoCF3QazW8YlvDBWA4
   port: 56689
   server: 109.71.246.210
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 14| GB_52
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.47.255.22
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇧 GB
-  name: 14|🇧 GB_53
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 14,25|[SS] 未知 SS-120 | free-nodes
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.47.253.227
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 14|🇬🇧 GB_55
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.126.237.38
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 14|🇬🇧 GB_56
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.179
-  type: ss
-- country: 🇬🇧 GB
-  name: 14|🇧 GB_57
-  password: dd6dcb10-4683-11f0-ae79-1239d0255272
-  port: 443
-  server: 51.38.65.155
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - cipher: aes-256-gcm
-  name: 25|[SS] 🇬🇧 GB SS-13 | free-nodes
+  name: 25|[SS] 🇬🇧 GB SS-05 | free-nodes
   password: 8JCsPssfgS8tiRwiMlhARg==
   port: 12000
   server: 144.217.164.29
@@ -271,33 +162,21 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 14|🇰 HK_64
-  - 14|🇬🇧 GB_55
+  - 36,38|HK_speednode_0015
+  - 36,38|HK_speednode_0013
+  - 36,38|HK_speednode_0016
   - 20|FR法国(mibei77.com 米贝节点分享)
-  - 14| SG_169
-  - 14| RU_163
-  - 14|🇷FR_49
-  - 14,25|[Trojan] 未知 TROJAN-1555 | free...
-  - 14,25|[Trojan] 未知 TROJAN-1700 | free...
-  - 14|🇧 GB_53
-  - 25|[Trojan] 未知 TROJAN-1212 | free...
-  - 14|🇺 RU_165
-  - 14,25|[SS] 未知 SS-120 | free-nodes
-  - 25|[SS] 🇸🇬 SG SS-88 | free-nodes
-  - 14,25|[Trojan] 未知 TROJAN-1134 | free...
-  - 14|🇺 RU_166
-  - 14|🇧 GB_57
-  - 14| FR_45
-  - 25|[SS] 🇯🇵 JP SS-112 | free-nodes
-  - 14|🇷 FR_47
-  - 14,22,27|_MD_->🇺_RU_
-  - 25|[SS] 🇸🇬 SG SS-36 | free-nodes
+  - 25|[Trojan] 未知 TROJAN-1981 | free...
+  - 25|[Trojan] 未知 TROJAN-2017 | free...
+  - 25|[SS] 🇯🇵 JP SS-96 | free-nodes
+  - 36,38|HK_speednode_0017
+  - 25|[SS] 🇬🇧 GB SS-05 | free-nodes
+  - 36,38|HK_speednode_0018
+  - 36,38|HK_speednode_0019
+  - 25|[SS] 🇸🇬 SG SS-74 | free-nodes
+  - 11|🇯🇵
+  - 25|[SS] 🇩🇪 DE SS-138 | free-nodes
   - 20|RU俄罗斯(mibei77.com 米贝节点分享) 3
-  - 14|🇬🇧 GB_56
-  - 25|[SS] 🇸🇬 SG SS-46 | free-nodes
-  - 14|🇰 HK_63
-  - 14| GB_52
-  - 25|[SS] 🇬🇧 GB SS-13 | free-nodes
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
