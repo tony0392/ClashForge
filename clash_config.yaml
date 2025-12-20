@@ -31,7 +31,27 @@ dns:
     ipcidr:
     - 240.0.0.0/4
     - 0.0.0.0/32
-proxies: []
+proxies:
+- cipher: aes-128-gcm
+  name: 11|🇯🇵
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.240
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 36,38|DE_speednode_0006
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 38.60.250.107
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 20|FR法国(mibei77.com 米贝节点分享) 15
+  password: nqcIfYHlpMn3jzqkNDjKaG
+  port: 25572
+  server: 138.124.67.26
+  type: ss
+  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -43,7 +63,10 @@ proxy-groups:
 - name: 自动选择
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
-  proxies: &id001 []
+  proxies: &id001
+  - 36,38|DE_speednode_0006
+  - 11|🇯🇵
+  - 20|FR法国(mibei77.com 米贝节点分享) 15
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
