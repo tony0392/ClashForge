@@ -34,24 +34,31 @@ dns:
 proxies:
 - cipher: aes-256-cfb
   country: 🇰 HK
-  name: 14| HK_52
+  name: 14|🇰 HK_57
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.16.212
   type: ss
-- cipher: chacha20-ietf-poly1305
+- cipher: chacha20-ietf
   country: 🇰 HK
-  name: 14|🇰 HK_53
+  name: 14|🇰 HK_58
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇭🇰 HK
+  name: 14|🇰 HK_59
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 203.23.128.33
   type: ss
 - alterId: 0
   cipher: auto
-  country: 🇰 HK
+  country: 🇭🇰 HK
   h2-opts: {}
   http-opts: {}
-  name: 14|🇰 HK_55
+  name: 14|🇭🇰 HK_71
   network: none
   port: 13852
   server: 45.207.157.29
@@ -59,34 +66,6 @@ proxies:
   type: vmess
   uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
   ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇰 HK_56
-  network: none
-  port: 28985
-  server: 156.245.232.15
-  skip-cert-verify: true
-  type: vmess
-  uuid: cbe408ad-cc35-4e4e-efca-ac5c095bb99d
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /使用此节点需要先沐浴焚香然后给群主磕800个响头(ಡωಡ)
-  name: 36,38|HK_speednode_0007
-  network: http
-  port: 53947
-  server: 156.245.232.15
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 8cb243df-fa82-472c-be25-b00acd4fcd3f
 - cipher: aes-128-gcm
   name: 11|🇯🇵
   password: shadowsocks
@@ -98,7 +77,7 @@ proxies:
   country: 🇵 JP
   h2-opts: {}
   http-opts: {}
-  name: 14| JP_67
+  name: 14| JP_94
   network: ws
   port: 443
   server: seoul03.zgjok.com
@@ -111,52 +90,25 @@ proxies:
     HOST: seoul03.zgjok.com
   ws-path: /
 - cipher: aes-256-cfb
-  country: 🇰🇷 KR
-  name: 14|🇰🇷 KR_69
+  country: 🇷 KR
+  name: 14|🇷 KR_95
   password: qwerREWQ@@
   port: 4652
   server: 218.237.185.230
   type: ss
 - cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 22,36,38|KR_speednode_0018
+  country: 🇰🇷 KR
+  name: 14,39|218.237.185.230_Claude
   password: qwerREWQ@@
-  port: 3733
-  server: 27.255.82.135
-  tfo: true
+  port: 4652
+  server: p141.panda001.net
   type: ss
-  udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 22,36,38|KR_speednode_0016
-  password: qwerREWQ@@
-  port: 13979
-  server: 221.139.79.57
-  tfo: true
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 36,38|KR_speednode_0020
-  network: ws
-  port: 2096
-  server: dv4.789900.xyz
-  servername: dv4.789900.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 0c8f3e29-4ec9-4ba6-a6ef-4487873f5d05
-  ws-opts:
-    headers:
-      Host: dv4.789900.xyz
-    path: /0c8f3e29-4ec9-4ba6-a6ef-4487873f5d05-vm
 - alterId: 0
   cipher: auto
   country: 🇬 SG
   h2-opts: {}
   http-opts: {}
-  name: 14| SG_139
+  name: 14| SG_165
   network: none
   port: 43425
   server: 8.210.248.133
@@ -166,10 +118,23 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
+  country: 🇸🇬 SG
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇬 SG_166
+  network: none
+  port: 52752
+  server: 8.218.105.196
+  skip-cert-verify: true
+  type: vmess
+  uuid: 925bdbf5-72be-4437-bebf-441c61089f6b
+  ws-path: /
+- alterId: 0
+  cipher: auto
   country: 🇪 DE
   h2-opts: {}
   http-opts: {}
-  name: 14|🇪 DE_36
+  name: 14|🇪 DE_38
   network: none
   port: 18355
   server: 92.246.87.170
@@ -178,7 +143,7 @@ proxies:
   uuid: caf921c7-ac63-40bc-faa1-cda097fd7e42
   ws-path: /
 - country: 🇪DE
-  name: 14|🇪DE_37
+  name: 14|🇪DE_40
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
   server: 139.162.158.172
@@ -187,7 +152,15 @@ proxies:
   type: trojan
   udp: true
 - country: 🇷FR
-  name: 14|🇷FR_42
+  name: 14|🇷FR_44
+  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
+  port: 443
+  server: uk-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇷FR
+  name: 14|🇷FR_45
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
@@ -200,56 +173,51 @@ proxies:
   port: 11201
   server: 51.178.114.93
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: 14| RU_134
-  password: YQCSKoCF3QazW8YlvDBWA4
-  port: 56689
-  server: 109.71.246.210
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 28,39|194.246.114.101_Gemini
-  password: HaNqw9pIE4jcx98sg7UQgHeGNTM4R2pk
+- country: 🇺RU
+  name: 14|🇺RU_162
+  password: e299faed-cb72-4c62-bb2e-f0a218aed72a
   port: 443
-  server: 194.246.114.101
-  type: ss
+  server: hk-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
-  name: 14| GB_43
+  name: 14| GB_46
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.47.253.227
   type: ss
-- cipher: aes-128-gcm
-  country: 🇧 GB
-  name: 14|🇧 GB_44
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.178
-  type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 14,28|🇺🇸_US_美国_4
+  country: 🇧 GB
+  name: 14|🇧 GB_47
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.47.255.22
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 14|🇬🇧 GB_46
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.179
-  type: ss
-- cipher: chacha20-ietf-poly1305
   country: 🇬🇧 GB
-  name: 14|🇧 GB_47
+  name: 14|🇬🇧 GB_48
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.126.237.38
   type: ss
+- cipher: aes-128-gcm
+  country: 🇬🇧 GB
+  name: 14|🇬🇧 GB_49
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 14|🇧 GB_50
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.179
+  type: ss
 - country: 🇬🇧 GB
-  name: 14|🇬🇧 GB_48
+  name: 14|🇧 GB_52
   password: 255a0a50-3f10-11f0-b0d6-1239d0255272
   port: 443
   server: 51.38.65.155
@@ -257,7 +225,7 @@ proxies:
   type: trojan
   udp: true
 - country: 🇬🇧 GB
-  name: 14|🇬🇧 GB_49
+  name: 14|🇧 GB_53
   password: dd6dcb10-4683-11f0-ae79-1239d0255272
   port: 443
   server: 51.38.65.155
@@ -265,22 +233,13 @@ proxies:
   type: trojan
   udp: true
 - country: 🇧GB
-  name: 14|🇬🇧GB_50
+  name: 14|🇬🇧GB_54
   password: 30761083-5dcd-49d6-85b5-33756ef1f7ed
   port: 443
   server: uk2-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 18|英国 V2CROSS.COM
-  network: tcp
-  port: 180
-  server: 82.198.246.97
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 proxy-groups:
 - name: 节点选择
   type: select
@@ -293,33 +252,30 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 14| RU_134
-  - 22,36,38|KR_speednode_0018
-  - 14|🇰 HK_55
-  - 14| GB_43
-  - 28,39|194.246.114.101_Gemini
-  - 14|🇧 GB_47
-  - 14|🇬🇧GB_50
-  - 14,28|🇺🇸_US_美国_4
-  - 14|🇬🇧 GB_46
-  - 14|🇰 HK_56
-  - 14| HK_52
-  - 14|🇪DE_37
-  - 14|🇷FR_42
-  - 11|🇯🇵
-  - 14|🇬🇧 GB_49
-  - 14|🇬🇧 GB_48
-  - 14|🇰 HK_53
-  - 14|🇪 DE_36
+  - 14|🇰 HK_57
+  - 14|🇧 GB_50
   - 19|法国(yudou789.top 玉豆免费节点)_6
-  - 22,36,38|KR_speednode_0016
-  - 36,38|KR_speednode_0020
-  - 14| SG_139
-  - 36,38|HK_speednode_0007
-  - 14|🇧 GB_44
-  - 14| JP_67
-  - 14|🇰🇷 KR_69
-  - 18|英国 V2CROSS.COM
+  - 14,39|218.237.185.230_Claude
+  - 14|🇷 KR_95
+  - 14|🇰 HK_58
+  - 14| SG_165
+  - 14|🇺RU_162
+  - 14| JP_94
+  - 14|🇷FR_44
+  - 14|🇪DE_40
+  - 14|🇬🇧GB_54
+  - 11|🇯🇵
+  - 14|🇧 GB_52
+  - 14| GB_46
+  - 14|🇬🇧 GB_49
+  - 14|🇧 GB_53
+  - 14|🇪 DE_38
+  - 14|🇬🇧 GB_48
+  - 14|🇭🇰 HK_71
+  - 14|🇰 HK_59
+  - 14|🇷FR_45
+  - 14|🇬 SG_166
+  - 14|🇧 GB_47
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
