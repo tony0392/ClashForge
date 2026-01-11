@@ -32,6 +32,46 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
+- cipher: chacha20-ietf-poly1305
+  country: 🇰 HK
+  name: 14| HK_52
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇰 HK
+  name: 14|🇰 HK_53
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.16.212
+  type: ss
+- alterId: 2
+  cipher: auto
+  country: 🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇰 HK_55
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4b9ca118-7fab-11eb-bd3a-f23c9164ca5d
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇭🇰 HK_58
+  network: none
+  port: 13852
+  server: 45.207.157.29
+  skip-cert-verify: true
+  type: vmess
+  uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
+  ws-path: /
 - cipher: aes-128-gcm
   name: 11|🇯🇵
   password: shadowsocks
@@ -40,40 +80,113 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: 38|KR_speednode_0012
-  network: http
-  port: 80
-  server: 152.70.92.69
+  country: 🇬 SG
+  h2-opts: {}
+  http-opts: {}
+  name: 14| SG_151
+  network: none
+  port: 43425
+  server: 8.210.248.133
   skip-cert-verify: true
-  tls: false
   type: vmess
+  uuid: aa10afb0-f913-4343-9c69-bc797fcba2db
+  ws-path: /
+- alterId: 32
+  cipher: auto
+  name: 30|🇸🇬 SG新加坡(mibei77.com 米贝节点分享)
+  network: ws
+  port: '443'
+  server: vc.fly.dev
+  tls: true
+  type: vmess
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  ws-opts:
+    headers:
+      Host: vc.fly.dev
+    path: /vc
+- country: 🇪DE
+  name: 14|🇪DE_38
+  password: 665c944d-047d-4659-80d5-3eaac70241a9
+  port: 443
+  server: 139.162.158.172
+  skip-cert-verify: true
+  sni: de2-full.privateip.net
+  type: trojan
   udp: true
-  uuid: bb9c3993-a4b9-4dad-aeb9-ac86371ae68b
+- country: 🇷FR
+  name: 14|🇷FR_42
+  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
+  port: 443
+  server: uk-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇷FR
+  name: 14|🇷FR_43
+  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
+  port: 443
+  server: 198.244.190.189
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 19|法国(yudou789.top 玉豆免费节点)_6
   password: 5bbe7bf7a282ad8b
   port: 11201
   server: 51.178.114.93
   type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 22,36|RU_903c6_0016
-  password: 7ae4e68cf77f6089
-  port: 1012
-  server: 195.133.5.38
-  tfo: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 14| RU_148
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 45.159.250.190
   type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 27|_MD_->🇺_RU_
+- cipher: aes-128-gcm
+  country: 🇧 GB
+  name: 14| GB_44
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 14|🇧 GB_46
   password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.153.197.5
+  port: 990
+  server: 185.47.255.22
   type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 14|🇬🇧 GB_47
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.179
+  type: ss
+- country: 🇬🇧 GB
+  name: 14|🇧 GB_48
+  password: dd6dcb10-4683-11f0-ae79-1239d0255272
+  port: 443
+  server: 51.38.65.155
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇬🇧 GB
+  name: 14|🇧 GB_49
+  password: 255a0a50-3f10-11f0-b0d6-1239d0255272
+  port: 443
+  server: 51.38.65.155
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇧GB
+  name: 14|🇬🇧GB_50
+  password: 30761083-5dcd-49d6-85b5-33756ef1f7ed
+  port: 443
+  server: uk2-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -86,11 +199,24 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
+  - 14| SG_151
+  - 14|🇬🇧GB_50
   - 11|🇯🇵
-  - 22,36|RU_903c6_0016
-  - 27|_MD_->🇺_RU_
-  - 38|KR_speednode_0012
+  - 14|🇭🇰 HK_58
+  - 14| HK_52
+  - 14|🇷FR_42
+  - 14|🇰 HK_55
+  - 14| RU_148
+  - 30|🇸🇬 SG新加坡(mibei77.com 米贝节点分享)
+  - 14|🇪DE_38
+  - 14|🇷FR_43
+  - 14|🇧 GB_49
+  - 14|🇧 GB_48
+  - 14|🇧 GB_46
+  - 14| GB_44
+  - 14|🇰 HK_53
   - 19|法国(yudou789.top 玉豆免费节点)_6
+  - 14|🇬🇧 GB_47
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
