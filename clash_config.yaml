@@ -34,32 +34,6 @@ dns:
 proxies:
 - alterId: 2
   cipher: auto
-  name: 33|HK314｜家宽｜非常安全
-  network: ws
-  port: '80'
-  server: 8a441d34-t6r5s0-taj9mo-1tco3.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: e29de954-ea01-11ef-a271-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: 8a441d34-t6r5s0-taj9mo-1tco3.hkt.gotochinatown.net
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 33|HK315｜家宽｜非常安全
-  network: ws
-  port: '80'
-  server: 82efdbb6-t8pj40-t9eu8q-tlhh.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: bdf3e15e-c64c-11ea-82ef-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
   name: 33|HK316｜家宽｜非常安全
   network: ws
   port: '80'
@@ -70,58 +44,6 @@ proxies:
   ws-opts:
     headers:
       Host: 1c13c28a-t8nog0-thntyd-1f596.hkt.gotochinatown.net
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 33|HK318｜家宽｜非常安全
-  network: ws
-  port: '80'
-  server: 0bba3742-t8nog0-tlvq5w-1jcwu.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: f93486ce-cc84-11ed-9e98-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 33|HK319｜家宽｜非常安全
-  network: ws
-  port: '80'
-  server: 2712f088-t8nog0-tnqudu-1mim2.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: 6e3ee1de-381f-11ee-87f9-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 33|HK321｜家宽｜非常安全
-  network: ws
-  port: '80'
-  server: a2ec8dbd-t8pj40-tgl02u-1jr1u.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: 2c01eae6-0b6a-11ee-a058-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 33|HK323｜家宽｜非常安全
-  network: ws
-  port: '80'
-  server: 9ef7d9d8-t8pj40-tr9h64-1f1f1.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: 61c4be90-6235-11ec-a8bf-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
     path: /
 - alterId: 2
   cipher: auto
@@ -138,32 +60,6 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 33|HK326｜家宽｜非常安全
-  network: ws
-  port: '80'
-  server: e542f5ac-t8pj40-td95qh-1isea.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: d6abdbda-fe9d-11ec-bb74-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 33|HK328｜家宽｜非常安全
-  network: ws
-  port: '80'
-  server: e6c543b9-t8pj40-tan99f-1rdqg.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: 2b57ec48-0da4-11ef-8f35-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
   name: 33|HK329｜家宽｜非常安全
   network: ws
   port: '80'
@@ -175,19 +71,12 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- alterId: 2
-  cipher: auto
-  name: 33|HK331｜家宽｜非常安全
-  network: ws
-  port: '80'
-  server: 4dbbf66c-t70f40-tifnix-1ro8s.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: a18ef18e-293a-11ef-b76e-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: 4dbbf66c-t70f40-tifnix-1ro8s.hkt.gotochinatown.net
-    path: /
+- cipher: aes-128-gcm
+  name: 11|🇯🇵
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.240
+  type: ss
 - cipher: rc4-md5
   name: 36,38|SG_speednode_0009
   password: 14fFPrbezE3HDZzsMOr6
@@ -213,20 +102,12 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 33|HK323｜家宽｜非常安全
-  - 33|HK321｜家宽｜非常安全
-  - 33|HK325｜家宽｜非常安全
-  - 33|HK316｜家宽｜非常安全
-  - 33|HK319｜家宽｜非常安全
   - 33|HK329｜家宽｜非常安全
-  - 33|HK318｜家宽｜非常安全
+  - 33|HK325｜家宽｜非常安全
   - 36,38|SG_speednode_0009
-  - 33|HK331｜家宽｜非常安全
-  - 33|HK315｜家宽｜非常安全
-  - 33|HK314｜家宽｜非常安全
+  - 33|HK316｜家宽｜非常安全
+  - 11|🇯🇵
   - 19|法国(yudou789.top 玉豆免费节点)_6
-  - 33|HK326｜家宽｜非常安全
-  - 33|HK328｜家宽｜非常安全
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
