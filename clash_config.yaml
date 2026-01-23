@@ -30,19 +30,6 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- alterId: 2
-  name: '0,1,28|🇭🇰 HK²_23|2.8MB/s|0%|GPT⁺|YT|X... #2'
-  network: ws
-  port: 80
-  server: 010ece56-t6r5s0-thd0h1-1rz5s.hkt.gotochinatown.net
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 40e084d6-0316-11f0-90e2-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: 010ece56-t6r5s0-thd0h1-1rz5s.hkt.gotochinatown.net
-    path: /
 - alterId: 0
   cipher: auto
   name: 2|🇭🇰 香港NO.1
@@ -295,12 +282,12 @@ proxies:
   port: 443
   server: 44.244.21.125
   type: ss
-- cipher: aes-256-gcm
+- cipher: aes-256-cfb
   country: 🇰 HK
   name: 14| HK_51
-  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
-  port: 15099
-  server: ss.026.node-for-bigairport.win
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.16.212
   type: ss
 - alterId: 2
   cipher: auto
@@ -311,16 +298,19 @@ proxies:
   network: ws
   port: 80
   server: hkt.gotochinatown.net
+  servername: hkt.gotochinatown.net
   skip-cert-verify: true
   type: vmess
-  uuid: 73bfcc1c-5814-5f2a-b43a-3ef6af011db8
+  uuid: 25b2699a-e18e-11ec-8e69-f23c91cfbbc9
+  ws-headers:
+    HOST: hkt.gotochinatown.net
   ws-path: /
 - alterId: 0
   cipher: auto
   country: 🇰 HK
   h2-opts: {}
   http-opts: {}
-  name: 14|🇰 HK_55
+  name: 14|🇭🇰 HK_54
   network: none
   port: 13852
   server: 45.207.157.29
@@ -328,78 +318,110 @@ proxies:
   type: vmess
   uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
   ws-path: /
-- name: 19|香港_2
-  network: tcp
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: ' [By EbraSha] trojan-HK '
-  type: trojan
-  udp: true
-- name: 19|HKTROJAN-05|free-nodes
-  network: tcp
+- name: 18,33|HK81｜家宽｜非常安全
   password: BxceQaOe
   port: 443
   server: 58.152.53.219
   skip-cert-verify: true
-  sni: t.me/ripaojiedian
+  sni: t.me%252Fripaojiedian
   type: trojan
-  udp: true
-- name: 20|HK香港(mibei77.com 米贝节点分享)
-  password: 5a2c16f9
+- name: 19|香港_1
+  network: tcp
+  password: 4843e94d205f3893f588255a591abe94
   port: 443
-  server: 47.79.20.64
+  server: 58.152.18.124
   skip-cert-verify: true
+  sni: 58.152.18.124
   type: trojan
   udp: true
-- name: 20|HK香港(mibei77.com 米贝节点分享) 2
-  password: 5a2c16f9
-  port: 443
-  server: 8.212.27.131
-  skip-cert-verify: true
+- name: '19,22,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #24'
+  network: tcp
+  password: 808b5ae2-7b94-43e7-8632-c639c3f72415
+  port: 31103
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: false
+  sni: green2.cdntencentmusic.com
   type: trojan
   udp: true
-- name: 20|HK香港(mibei77.com 米贝节点分享) 3
-  password: 5a2c16f9
-  port: 36619
-  server: 118.141.64.192
+- name: 19,22|🟢🇭🇰_github.com/Ruk1ng001_276e7...
+  network: tcp
+  password: b8a8025b-275a-4304-a789-b0881b281b81
+  port: 31103
+  server: green2.cdntencentmusic.com
   skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
   type: trojan
   udp: true
-- name: 20|HK香港(mibei77.com 米贝节点分享) 4
-  password: 5a2c16f9
-  port: 443
-  server: 47.76.218.163
+- name: 19|香港_6
+  network: tcp
+  password: 401a44f1-eab0-432b-95e7-32709b1a1942
+  port: 31103
+  server: green2.cdntencentmusic.com
   skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
   type: trojan
   udp: true
-- name: 20|HK香港(mibei77.com 米贝节点分享) 5
-  password: 5a2c16f9
-  port: 8443
-  server: 152.32.215.105
-  skip-cert-verify: true
+- name: '19,22,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #6'
+  network: tcp
+  password: 57d69288-b782-4798-81d6-64b13777549a
+  port: 31102
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: false
+  sni: green2.cdntencentmusic.com
   type: trojan
   udp: true
-- name: 20|HK香港(mibei77.com 米贝节点分享) 6
-  password: 5a2c16f9
-  port: 443
-  server: 219.76.13.180
+- name: 19|香港_8
+  network: tcp
+  password: 9ab8fa39-7e45-43b1-8572-378fc62fe801
+  port: 31102
+  server: green2.cdntencentmusic.com
   skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
   type: trojan
   udp: true
-- name: 20|HK香港(mibei77.com 米贝节点分享) 7
-  password: 5a2c16f9
-  port: 443
-  server: 219.76.13.167
+- name: 19|香港_9
+  network: tcp
+  password: 0949b660-d349-4b5b-b3ce-3349058f7be8
+  port: 31102
+  server: green2.cdntencentmusic.com
   skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
   type: trojan
   udp: true
-- name: 20|HK香港(mibei77.com 米贝节点分享) 8
-  password: 5a2c16f9
-  port: 8443
-  server: 192.142.4.33
+- name: 19|香港_10
+  network: tcp
+  password: b3c721c4-3c1d-4a87-bdce-9d11f8c57b96
+  port: 31102
+  server: green2.cdntencentmusic.com
   skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- name: '19,22|🟢🇭🇰[📺🎭🎞️📦]_github.com/Ruk1ng00... #2'
+  network: tcp
+  password: 27c8cb66-d0c0-4a87-8ef6-177e12f70c80
+  port: 31102
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- name: 19,22|🟢🇭🇰_github.com/Ruk1ng001_880f6...
+  network: tcp
+  password: efe9d5fc-823d-43d5-baef-9bc1fb0e651d
+  port: 31102
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- name: '19,22,30|🇳🇱 NL荷兰(mibei77.com 米贝节点分享) #6'
+  network: tcp
+  password: 01c7c307-2ae3-4c9e-bfa2-d64b8a2f5e44
+  port: 31102
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: false
+  sni: green2.cdntencentmusic.com
   type: trojan
   udp: true
 - cipher: chacha20-ietf
@@ -474,13 +496,6 @@ proxies:
   port: 8388
   server: 103.149.183.12
   type: ss
-- name: 22,33|HK61｜家宽｜非常安全
-  password: 4843e94d205f3893f588255a591abe94
-  port: 443
-  server: 58.152.18.124
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
 - cipher: chacha20-ietf
   name: '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #4'
   obfs: plain
@@ -543,12 +558,12 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 22|🟢🇭🇰[🎬📺🎭]_github.com/Ruk1ng001_...
+  name: '22,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #39'
   network: tcp
   password: 43f279f5-ba7b-4cc0-8dea-adc0ff597d59
   port: 31102
   server: green2.cdntencentmusic.com
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: green2.cdntencentmusic.com
   type: trojan
   udp: true
@@ -641,23 +656,23 @@ proxies:
   sni: green2.cdntencentmusic.com
   type: trojan
   udp: true
-- name: '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #9'
+- name: '22,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #21'
   password: f82357f6-c9e4-4dac-bbf4-58f4cfe0bb06
   port: 31103
   server: green2.cdntencentmusic.com
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: green2.cdntencentmusic.com
   type: trojan
   udp: true
-- name: '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #10'
+- name: '22,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #10'
   password: d4e70158-aa1c-4c54-8e0a-63225ea9d9d2
   port: 31103
   server: green2.cdntencentmusic.com
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: green2.cdntencentmusic.com
   type: trojan
   udp: true
-- name: 22,33|HK65｜原生/疑似家宽｜非常安全
+- name: 22|🟢🇭🇰[🎬📺🎭🎞️]_github.com/Ruk1ng00...
   password: a21089f4-d7b7-40fe-80db-cf483ff8e6c6
   port: 31103
   server: green2.cdntencentmusic.com
@@ -723,11 +738,11 @@ proxies:
   sni: green2.cdntencentmusic.com
   type: trojan
   udp: true
-- name: 22|🟢🇭🇰_github.com/Ruk1ng001_48087...
+- name: '22,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #38'
   password: f37cb6e1-ad57-49c6-be62-d78da6c7751a
   port: 31102
   server: green2.cdntencentmusic.com
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: green2.cdntencentmusic.com
   type: trojan
   udp: true
@@ -789,7 +804,7 @@ proxies:
   sni: cdnfire.xiaomispeed.com
   type: trojan
   udp: true
-- name: 22,33|HK73｜原生/疑似家宽｜非常安全
+- name: '22|🟢🇭🇰[🎬📺🎭]_github.com/Ruk1ng001_... #1'
   password: a21089f4-d7b7-40fe-80db-cf483ff8e6c6
   port: 31102
   server: green2.cdntencentmusic.com
@@ -855,17 +870,19 @@ proxies:
   sni: green2.cdntencentmusic.com
   type: trojan
   udp: true
-- name: 22,33|HK79｜原生/疑似家宽｜非常安全
-  password: efe9d5fc-823d-43d5-baef-9bc1fb0e651d
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
 - client-fingerprint: chrome
   name: '22|🔴🇭🇰[🎬📺🎭📦]_github.com/Ruk1ng001... #2'
   network: tcp
   password: 01c7c307-2ae3-4c9e-bfa2-d64b8a2f5e44
+  port: 31101
+  server: green2.cdntencentmusic.com
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: '22|🔴🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #1'
+  network: tcp
+  password: f4e646fb-d984-444d-9fee-65068ce0a0d6
   port: 31101
   server: green2.cdntencentmusic.com
   sni: green2.cdntencentmusic.com
@@ -1011,12 +1028,12 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #21'
+  name: '22,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #12'
   network: tcp
   password: add5d59b-5196-4b3e-bf80-50f851ba51a5
   port: 31103
   server: green2.cdntencentmusic.com
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: green2.cdntencentmusic.com
   type: trojan
   udp: true
@@ -1178,13 +1195,6 @@ proxies:
   sni: cdnfire.xiaomispeed.com
   type: trojan
   udp: true
-- name: 22,33|HK62｜原生/疑似家宽｜非常安全
-  password: b8a8025b-275a-4304-a789-b0881b281b81
-  port: 31103
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
 - client-fingerprint: chrome
   name: '22|🟢🇭🇰[🎬📺🎭📦]_github.com/Ruk1ng001... #3'
   network: tcp
@@ -1314,13 +1324,6 @@ proxies:
   sni: green2.cdntencentmusic.com
   type: trojan
   udp: true
-- name: 22,33|HK71｜原生/疑似家宽｜非常安全
-  password: 01c7c307-2ae3-4c9e-bfa2-d64b8a2f5e44
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
 - client-fingerprint: chrome
   name: '22|🟢🇭🇰[📺🎭📦✈️]_github.com/Ruk1ng00... #2'
   network: tcp
@@ -1331,13 +1334,6 @@ proxies:
   sni: green2.cdntencentmusic.com
   type: trojan
   udp: true
-- name: 22,33|HK76｜原生/疑似家宽｜非常安全
-  password: 27c8cb66-d0c0-4a87-8ef6-177e12f70c80
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
 - client-fingerprint: chrome
   name: '22|🟢🇭🇰[🎬📺🎭📦]_github.com/Ruk1ng001... #4'
   network: tcp
@@ -1368,12 +1364,12 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 22|🟢🇭🇰[🎭]_github.com/Ruk1ng001_69...
+  name: '22,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #13'
   network: tcp
   password: 49d51e4a-7770-4a78-9165-b4fed003bfcb
   port: 31103
   server: green2.cdntencentmusic.com
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: green2.cdntencentmusic.com
   type: trojan
   udp: true
@@ -1386,15 +1382,19 @@ proxies:
   sni: green2.cdntencentmusic.com
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 30,33|SG15｜机房｜低风险
-  network: tcp
-  port: '30812'
-  server: v12.hdacd.com
+- alterId: 2
+  name: 28|🇭🇰 HK²_23|2.8MB/s|0%|GPT⁺|YT|X...
+  network: ws
+  port: 80
+  server: 010ece56-t6r5s0-thd0h1-1rz5s.hkt.gotochinatown.net
+  skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  uuid: 40e084d6-0316-11f0-90e2-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: 010ece56-t6r5s0-thd0h1-1rz5s.hkt.gotochinatown.net
+    path: /
 - alterId: 2
   cipher: auto
   name: 30,33|香港|@ripaojiedian
@@ -1405,31 +1405,21 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: 30,33|香港2|@ripaojiedian
-  network: tcp
-  port: '34659'
-  server: 47.242.192.233
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 8482671e-846f-45c7-aec4-531c79f775ec
-- name: 30,33|香港3|@ripaojiedian
+- name: '30,33,34|🇭🇰 香港3|@ripaojiedian #1'
   password: 869e9086806483ca4744a4cb0f3d6e16
   port: 443
   server: 58.152.18.124
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 30,33|香港4|@ripaojiedian
+- name: '30,33,34|🇭🇰 香港4|@ripaojiedian #1'
   password: BxceQaOe
   port: 3292
   server: 13.159.22.132
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 30,33|香港5|@ripaojiedian
+- name: '30,33,34|🇭🇰 香港5|@ripaojiedian #1'
   password: BxceQaOe
   port: 3042
   server: 16.162.252.215
@@ -1448,139 +1438,31 @@ proxies:
   server: 107.149.254.26
   skip-cert-verify: true
   type: trojan
-- name: 33|HK47｜原生/疑似家宽｜非常安全
-  password: 1f86e372-1ee6-47eb-8c33-72bfc310dee6
-  port: 31103
-  server: green2.cdntencentmusic.com
+- name: 33|HK107｜家宽｜非常安全
+  password: BxceQaOe
+  port: 443
+  server: 58.152.25.130
   skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
+  sni: t.me%2Fripaojiedian
   type: trojan
-- name: 33|HK48｜原生/疑似家宽｜非常安全
-  password: 1f86e372-1ee6-47eb-8c33-72bfc310dee6
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 33|HK64｜原生/疑似家宽｜非常安全
-  password: b3c721c4-3c1d-4a87-bdce-9d11f8c57b96
-  port: 31103
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 33|HK66｜原生/疑似家宽｜非常安全
-  password: 401a44f1-eab0-432b-95e7-32709b1a1942
-  port: 31103
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 33|HK67｜原生/疑似家宽｜非常安全
-  password: 08b31bc0-9abb-4c10-884d-334a42d1e118
-  port: 31103
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 33|HK68｜原生/疑似家宽｜非常安全
-  password: c2dd7c53-c617-4f9a-8bcc-37f771a811d1
-  port: 31103
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 33|HK69｜原生/疑似家宽｜非常安全
-  password: 715e7164-c698-4c04-9944-ad4b960fa51d
-  port: 31103
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 33|HK70｜原生/疑似家宽｜非常安全
-  password: 023bf5a1-e233-487d-b59e-a45b58009937
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 33|HK72｜原生/疑似家宽｜非常安全
-  password: 2f914df1-a8e2-45b5-bdcd-a7bb4aed663f
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 33|HK74｜原生/疑似家宽｜非常安全
-  password: 9ab8fa39-7e45-43b1-8572-378fc62fe801
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 33|HK75｜原生/疑似家宽｜非常安全
-  password: b3c721c4-3c1d-4a87-bdce-9d11f8c57b96
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 33|HK77｜原生/疑似家宽｜非常安全
-  password: 0949b660-d349-4b5b-b3ce-3349058f7be8
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 33|HK78｜原生/疑似家宽｜非常安全
-  password: c2dd7c53-c617-4f9a-8bcc-37f771a811d1
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 33|HK89｜原生/疑似家宽｜非常安全
-  password: 1f86e372-1ee6-47eb-8c33-72bfc310dee6
-  port: 31101
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 33|HK96｜原生/疑似家宽｜非常安全
-  password: bac3c766-edca-4082-a791-327509342122
-  port: 21101
-  server: 220.130.58.136
-  skip-cert-verify: true
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
-- name: 33|HK97｜原生/疑似家宽｜非常安全
-  password: bac3c766-edca-4082-a791-327509342122
-  port: 21102
-  server: 220.130.58.136
-  skip-cert-verify: true
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
-- name: 33|HK104｜原生/疑似家宽｜非常安全
-  password: 29042ca8-e873-461c-a933-ecfda6c5e907
-  port: 21101
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: true
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
-- name: 33|HK105｜原生/疑似家宽｜非常安全
-  password: 29042ca8-e873-461c-a933-ecfda6c5e907
-  port: 21103
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: true
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
-- name: 33|HK106｜原生/疑似家宽｜非常安全
-  password: 29042ca8-e873-461c-a933-ecfda6c5e907
-  port: 21102
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: true
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 33|HK168｜原生/疑似家宽｜非常安全
+  network: tcp
+  port: '47081'
+  server: oss-4.qqa678.com
+  tls: false
+  type: vmess
+  uuid: 7d3b2ea8-337b-4979-948f-bc1c1e72b6d5
+- alterId: 2
+  cipher: auto
+  name: '34|🇭🇰 香港|@ripaojiedian #2'
+  port: 30807
+  server: v10.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
   name: 2|🇯🇵 CM 隧道 日本 NO1
@@ -2093,65 +1975,6 @@ proxies:
   port: 443
   server: 54.199.83.184
   type: ss
-- cipher: aes-256-gcm
-  country: 🇵 JP
-  name: 14| JP_65
-  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
-  port: 10079
-  server: ss.027.node-for-bigairport.win
-  type: ss
-- alterId: 0
-  cipher: auto
-  country: 🇵 JP
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇵 JP_66
-  network: ws
-  port: 443
-  server: seoul03.zgjok.com
-  servername: seoul03.zgjok.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 72a0dac4-9689-4a57-b164-5c65bfa94772
-  ws-headers:
-    HOST: seoul03.zgjok.com
-  ws-path: /
-- name: 20|US美国(mibei77.com 米贝节点分享) 18
-  password: 5a2c16f9
-  port: 443
-  server: 168.138.46.67
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 20|JP日本(mibei77.com 米贝节点分享) 2
-  password: 5a2c16f9
-  port: 443
-  server: 47.79.43.222
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 20|JP日本(mibei77.com 米贝节点分享) 3
-  password: 5a2c16f9
-  port: 2053
-  server: 185.18.222.208
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 20|JP日本(mibei77.com 米贝节点分享) 4
-  password: 5a2c16f9
-  port: 44004
-  server: 45.11.1.118
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 20|JP日本(mibei77.com 米贝节点分享) 5
-  password: 5a2c16f9
-  port: 10243
-  server: 150.230.204.21
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - cipher: chacha20-ietf
   name: 22|🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001...
   obfs: plain
@@ -2208,72 +2031,35 @@ proxies:
   type: ssr
   udp: true
 - client-fingerprint: chrome
-  name: '22,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #3'
+  name: 22,30,33|JP2｜机房｜低风险
   password: 30077070-596e-48ea-9400-14c8ed07bd97
   port: 443
   server: tuntro003.instconn.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: login-staticjpc.jasmine-douyin.top
   type: trojan
   udp: true
-- name: 30,33|日本|@ripaojiedian
+- name: '30,33,34|🇯🇵 日本|@ripaojiedian #1'
   password: BxceQaOe
   port: 2053
   server: 54.238.172.125
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: 30,33|日本2|@ripaojiedian
+- name: '30,33,34|🇯🇵 日本2|@ripaojiedian #1'
   password: 869e9086806483ca4744a4cb0f3d6e16
   port: 2053
   server: 54.238.172.125
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '30,33,36,38|JP_speednode_0009 #1'
+- name: '30,33,34|🇯🇵 日本3|@ripaojiedian #1'
   password: 869e9086806483ca4744a4cb0f3d6e16
   port: 1933
   server: 160.16.89.176
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: '0,1,28|🇰🇷_KR_韩国 #2'
-  password: qwerREWQ@@
-  port: 43231
-  server: 221.150.109.89
-  type: ss
-- cipher: aes-256-cfb
-  name: '0,1,28|🇰🇷_KR_韩国_1 #2'
-  password: qwerREWQ@@
-  port: 28860
-  server: 168.126.234.233
-  type: ss
-- cipher: aes-256-cfb
-  name: '0,1,28|🇰🇷_KR_韩国_2 #2'
-  password: qwerREWQ@@
-  port: 39502
-  server: 218.38.103.150
-  type: ss
-- cipher: aes-256-cfb
-  name: '0,1,28|🇰🇷_KR_韩国_3 #2'
-  password: qwerREWQ@@
-  port: 61417
-  server: 121.170.203.147
-  type: ss
-- cipher: aes-256-cfb
-  name: '0,1,28|🇰🇷_KR_韩国_4 #2'
-  password: qwerREWQ@@
-  port: 19307
-  server: 211.201.169.70
-  type: ss
-- cipher: aes-256-cfb
-  name: '0,1,28|🇰🇷_KR_韩国_5 #2'
-  password: qwerREWQ@@
-  port: 4483
-  server: 218.234.149.9
-  type: ss
 - name: 2|🇰🇷 韩国-三网优化2-1C
   password: b262e991-a233-4dfd-87e2-9c5898ecd4c2
   port: 44732
@@ -2464,7 +2250,7 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   country: 🇷 KR
-  name: 14|🇷 KR_67
+  name: 14|🇷 KR_64
   password: qwerREWQ@@
   port: 4652
   server: 218.237.185.230
@@ -2477,7 +2263,7 @@ proxies:
   server: p141.panda001.net
   type: ss
 - country: 🇷 KR
-  name: 14|🇰🇷 KR_69
+  name: 14|🇰🇷 KR_66
   password: '!!str 0588'
   port: 50000
   server: 175.203.30.93
@@ -2485,124 +2271,57 @@ proxies:
   sni: 888.uskm.dpdns.org
   type: trojan
   udp: true
-- name: 20|KR韩国(mibei77.com 米贝节点分享)
-  password: 5a2c16f9
-  port: 446
-  server: 43.155.186.100
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 20|KR韩国(mibei77.com 米贝节点分享) 2
-  password: 5a2c16f9
-  port: 443
-  server: 167.88.172.224
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 20|KR韩国(mibei77.com 米贝节点分享) 3
-  password: 5a2c16f9
-  port: 17465
-  server: 138.2.95.33
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 20|KR韩国(mibei77.com 米贝节点分享) 4
-  password: 5a2c16f9
-  port: 8443
-  server: 51.79.158.58
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 20|KR韩国(mibei77.com 米贝节点分享) 5
-  password: 5a2c16f9
-  port: 12247
-  server: 61.85.1.77
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 20|KR韩国(mibei77.com 米贝节点分享) 6
-  password: 5a2c16f9
-  port: 443
-  server: 164.52.2.99
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 20|KR韩国(mibei77.com 米贝节点分享) 7
-  password: 5a2c16f9
-  port: 30029
-  server: 61.85.1.77
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 20|KR韩国(mibei77.com 米贝节点分享) 8
-  password: 5a2c16f9
-  port: 17001
-  server: 61.85.1.77
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 20|KR韩国(mibei77.com 米贝节点分享) 9
-  password: 5a2c16f9
-  port: 443
-  server: 168.138.189.91
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 20|KR韩国(mibei77.com 米贝节点分享) 10
-  password: 5a2c16f9
-  port: 53435
-  server: 129.150.36.188
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 20|KR韩国(mibei77.com 米贝节点分享) 11
-  password: 5a2c16f9
-  port: 53702
-  server: 168.138.170.211
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 20|KR韩国(mibei77.com 米贝节点分享) 12
-  password: 5a2c16f9
-  port: 12198
-  server: 158.180.69.78
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 20|KR韩国(mibei77.com 米贝节点分享) 13
-  password: 5a2c16f9
-  port: 443
-  server: 5.223.47.32
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 20|KR韩国(mibei77.com 米贝节点分享) 14
-  password: 554f139b-f31f-41c4-99f9-73d60647db26
-  port: 443
-  server: 45.89.107.118
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 20|KR韩国(mibei77.com 米贝节点分享) 15
-  password: 5a2c16f9
-  port: 2053
-  server: 31.192.238.71
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 20|KR韩国(mibei77.com 米贝节点分享) 16
-  password: 5a2c16f9
-  port: 443
-  server: 130.162.130.105
-  skip-cert-verify: true
-  type: trojan
-  udp: true
+- cipher: aes-256-cfb
+  name: 28|🇰🇷_KR_韩国
+  password: qwerREWQ@@
+  port: 43231
+  server: 221.150.109.89
+  type: ss
+- cipher: aes-256-cfb
+  name: 28|🇰🇷_KR_韩国_1
+  password: qwerREWQ@@
+  port: 28860
+  server: 168.126.234.233
+  type: ss
+- cipher: aes-256-cfb
+  name: 28|🇰🇷_KR_韩国_2
+  password: qwerREWQ@@
+  port: 39502
+  server: 218.38.103.150
+  type: ss
+- cipher: aes-256-cfb
+  name: 28|🇰🇷_KR_韩国_3
+  password: qwerREWQ@@
+  port: 61417
+  server: 121.170.203.147
+  type: ss
+- cipher: aes-256-cfb
+  name: 28|🇰🇷_KR_韩国_4
+  password: qwerREWQ@@
+  port: 19307
+  server: 211.201.169.70
+  type: ss
+- cipher: aes-256-cfb
+  name: 28|🇰🇷_KR_韩国_5
+  password: qwerREWQ@@
+  port: 4483
+  server: 218.234.149.9
+  type: ss
 - name: 31|韩国[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443
   server: pop.ff34894a-296c-446f-af39-20b90947f3a7.heima360.cc
   skip-cert-verify: false
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 33|KR8｜机房｜低风险
+  network: tcp
+  port: '80'
+  server: 152.70.92.69
+  tls: false
+  type: vmess
+  uuid: bb9c3993-a4b9-4dad-aeb9-ac86371ae68b
 - alterId: 0
   cipher: auto
   name: 2|🇸🇬 新加坡NO.1
@@ -2776,50 +2495,6 @@ proxies:
   port: 443
   server: 13.113.17.246
   type: ss
-- alterId: 0
-  cipher: auto
-  country: 🇬 SG
-  h2-opts: {}
-  http-opts: {}
-  name: 14| SG_134
-  network: none
-  port: 43425
-  server: 8.210.248.133
-  skip-cert-verify: true
-  type: vmess
-  uuid: aa10afb0-f913-4343-9c69-bc797fcba2db
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇸🇬 SG
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇬 SG_135
-  network: ws
-  port: 443
-  server: n1761214911.74qxv.top
-  servername: n1761214911.74qxv.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 372c1939-299d-4946-9633-5ffa971f8b67
-  ws-headers:
-    HOST: n1761214911.74qxv.top
-  ws-path: /
-- name: 20|SG新加坡(mibei77.com 米贝节点分享)
-  password: 5a2c16f9
-  port: 8443
-  server: 104.234.151.10
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 20|SG新加坡(mibei77.com 米贝节点分享) 2
-  password: 381f2e86233720eacda26d50e9aa26da
-  port: 443
-  server: 58.152.110.104
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - cipher: chacha20-ietf
   name: 22|🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001...
   obfs: plain
@@ -2908,22 +2583,21 @@ proxies:
   server: 27.150.132.73
   type: ssr
   udp: true
-- name: '30,33,36,38|JP_speednode_0010 #1'
+- name: '30,33,34|🇸🇬 新加坡|@ripaojiedian #1'
   password: 869e9086806483ca4744a4cb0f3d6e16
   port: 3076
   server: 160.16.89.176
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-  udp: true
-- name: 30,33|新加坡2|@ripaojiedian
+- name: '30,33,34|🇸🇬 新加坡2|@ripaojiedian #1'
   password: 869e9086806483ca4744a4cb0f3d6e16
   port: 544
   server: 160.16.106.99
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 30,33|新加坡3|@ripaojiedian
+- name: '30,33,34|🇸🇬 新加坡3|@ripaojiedian #1'
   password: BxceQaOe
   port: 2673
   server: 43.198.16.69
@@ -3071,6 +2745,22 @@ proxies:
     path: /nasnet/cdn
 - alterId: 0
   cipher: auto
+  name: 22|🔴🇩🇪[🎬🤖📺🎭]_github.com/Ruk1ng001...
+  network: ws
+  port: 8080
+  server: 172.67.204.84
+  skip-cert-verify: true
+  tfo: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: nasnet-511952424.mcitel.co
+    path: /nasnet/cdn
+- alterId: 0
+  cipher: auto
   name: 30|🇩🇪 VMESS-未知>德国-NF解锁印度地区非自制剧-Ch...
   network: ws
   port: '8080'
@@ -3082,23 +2772,75 @@ proxies:
     headers:
       Host: 547.rtxconfigz.shop
     path: /@Malinda6104
+- name: 33|DE1｜机房｜低风险
+  network: ws
+  password: 50e90b26-760a-4d7c-90f4-751bc92206d7
+  port: 2096
+  server: bestcdn1.868863.xyz
+  skip-cert-verify: true
+  sni: 17690660235579.206353.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 17690660236476.206353.xyz
+    path: '%2Fagrbniuh'
+- name: 33|DE2｜机房｜低风险
+  network: ws
+  password: 50e90b26-760a-4d7c-90f4-751bc92206d7
+  port: 2087
+  server: bestcdn2.868863.xyz
+  skip-cert-verify: true
+  sni: 17690660236802.206353.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 17690660238012.206353.xyz
+    path: '%2Fagrbniuh'
+- name: 33|DE3｜机房｜低风险
+  network: ws
+  password: 50e90b26-760a-4d7c-90f4-751bc92206d7
+  port: 2083
+  server: bestcdn3.868863.xyz
+  skip-cert-verify: true
+  sni: 17690660237730.206353.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 17690660235757.206353.xyz
+    path: '%2Fagrbniuh'
+- name: 33|DE4｜机房｜低风险
+  network: ws
+  password: 50e90b26-760a-4d7c-90f4-751bc92206d7
+  port: 8443
+  server: bestcdn4.868863.xyz
+  skip-cert-verify: true
+  sni: 17690660233001.206353.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 17690660232579.206353.xyz
+    path: '%2Fagrbniuh'
+- name: 33|DE5｜机房｜低风险
+  network: ws
+  password: 50e90b26-760a-4d7c-90f4-751bc92206d7
+  port: 2053
+  server: bestcdn5.868863.xyz
+  skip-cert-verify: true
+  sni: 17690660237689.206353.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 17690660232320.206353.xyz
+    path: '%2Fagrbniuh'
 - alterId: 2
   cipher: auto
-  name: 33|DE46｜机房｜低风险
+  name: 33|DE54｜机房｜低风险
   network: tcp
   port: '30833'
   server: v33.hdacd.com
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '33,36,38|DE_speednode_0002 #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.196.155.223
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 2|🇫🇷 法国1
@@ -3146,26 +2888,12 @@ proxies:
   type: vmess
   udp: true
   uuid: 5b5d5027-3aed-4c7b-9678-a44192ba2f0d
-- cipher: chacha20-ietf-poly1305
-  country: 🇷 FR
-  name: 14| FR_35
-  password: 5bbe7bf7a282ad8b
-  port: 11201
-  server: 51.178.114.93
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇷 FR
-  name: 14|🇫🇷 FR_36
-  password: caac660070728d6c
-  port: 11201
-  server: 54.37.78.252
-  type: ss
 - alterId: 0
   cipher: auto
   country: 🇷 FR
   h2-opts: {}
   http-opts: {}
-  name: 14|🇫🇷 FR_37
+  name: 14| FR_35
   network: ws
   port: 443
   server: 91.134.8.101
@@ -3175,7 +2903,7 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-path: /linkvws
 - country: 🇷FR
-  name: 14|🇷FR_38
+  name: 14|🇷FR_36
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
@@ -3183,7 +2911,7 @@ proxies:
   type: trojan
   udp: true
 - country: 🇷FR
-  name: 14|🇷FR_39
+  name: 14|🇷FR_37
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
@@ -3191,7 +2919,7 @@ proxies:
   type: trojan
   udp: true
 - country: 🇫🇷FR
-  name: 14|🇫🇷FR_40
+  name: 14|🇫🇷FR_38
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
@@ -3199,17 +2927,10 @@ proxies:
   type: trojan
   udp: true
 - country: 🇫🇷FR
-  name: 14|🇫🇷FR_41
+  name: 14|🇫🇷FR_39
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 20|FR法国(mibei77.com 米贝节点分享)
-  password: 5a2c16f9
-  port: 2096
-  server: 94.140.0.238
   skip-cert-verify: true
   type: trojan
   udp: true
@@ -3230,22 +2951,6 @@ proxies:
   server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   skip-cert-verify: false
   type: trojan
-- alterId: 2
-  cipher: auto
-  name: 33|FR3｜机房｜低风险
-  network: tcp
-  port: '30835'
-  server: v35.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '33,36,38|FR_speednode_0006 #1'
-  password: telegram-id-directvpn
-  port: 22223
-  server: 51.44.124.96
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 2|🇷🇺 莫斯科专线
@@ -3273,13 +2978,6 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
   name: 14| RU_131
-  password: 317f13c5c2ebdea3
-  port: 11203
-  server: 5.188.227.18
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇷🇺 RU
-  name: 14|🇺 RU_132
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 45.159.250.190
@@ -3291,20 +2989,14 @@ proxies:
   skip-cert-verify: true
   sni: ya.ru
   type: trojan
-- name: 19|俄羅斯_6
-  network: ws
-  password: trojan
-  port: 2087
-  server: 109.234.211.66
-  skip-cert-verify: true
-  sni: store.timimi.dpdns.org
+- name: '33,36,38|RU_speednode_0019 #1'
+  password: Pe_dQrCQ4QbnntuVrqHN3dsKhCBpqvxr
+  port: 443
+  server: fi2.nnvpn.io
+  skip-cert-verify: false
+  sni: fi2.nnvpn.io
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      host: store.timimi.dpdns.org
-    path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
-      TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
 - alterId: 0
   cipher: auto
   name: 2|🇬🇧 伦敦专线
@@ -3351,38 +3043,52 @@ proxies:
   uuid: 5b5d5027-3aed-4c7b-9678-a44192ba2f0d
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
-  name: 14| GB_42
+  name: 14| GB_40
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
-  server: 82.38.31.199
+  server: 82.38.31.179
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 14|🇧 GB_43
+  country: 🇧 GB
+  name: 14|🇧 GB_41
   password: ac81d5eb1ee96e1e
   port: 10010
   server: 46.250.253.50
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧 GB
-  name: 14|🇧 GB_44
+  name: 14|🇬🇧 GB_42
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
-  server: 82.38.31.179
+  server: 82.38.31.199
   type: ss
 - cipher: aes-128-gcm
-  country: 🇧 GB
-  name: 14|🇬🇧 GB_45
+  country: 🇬🇧 GB
+  name: 14|🇬🇧 GB_43
   password: shadowsocks
   port: 443
   server: 141.98.101.178
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 14|🇧 GB_44
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.214
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 14|🇬🇧 GB_45
+  password: 90e3f0733aa4fe2b
+  port: 29551
+  server: 212.56.42.207
   type: ss
 - alterId: 0
   cipher: auto
   country: 🇧 GB
   h2-opts: {}
   http-opts: {}
-  name: 14,18,30,33|DE74｜机房｜低风险
+  name: 14,30,33|DE35｜机房｜低风险
   network: tcp
   port: '180'
   server: 82.198.246.97
@@ -3415,15 +3121,32 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 2
+- alterId: 0
   cipher: auto
-  name: 33|GB14｜机房｜低风险
+  name: 20|GB英国(mibei77.com 米贝节点分享) 24
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: '30|🇬🇧 GB英国(mibei77.com 米贝节点分享) #2'
   network: tcp
-  port: '30836'
-  server: v36.hdacd.com
+  port: '30812'
+  server: v12.hdacd.com
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: '30|🇬🇧 GB英国(mibei77.com 米贝节点分享) #17'
+  password: trojan
+  port: 2087
+  server: 109.234.211.66
+  skip-cert-verify: false
+  sni: store.timimi.dpdns.org
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 2|🇸🇬 新加坡中转 02
   password: b103d104-bff0-4cee-b42a-85dad07e2036
@@ -7129,29 +6852,13 @@ proxies:
   type: vmess
   udp: true
   uuid: 5b5d5027-3aed-4c7b-9678-a44192ba2f0d
-- client-fingerprint: chrome
-  name: '18,22|🔴🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #1'
+- name: 19,22|⚪🏳️[🎬✨]_github.com/Ruk1ng001_c...
   network: tcp
-  password: f4e646fb-d984-444d-9fee-65068ce0a0d6
-  port: 31101
-  server: green2.cdntencentmusic.com
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- name: 18,22,33|HK63｜原生/疑似家宽｜非常安全
-  password: 808b5ae2-7b94-43e7-8632-c639c3f72415
-  port: 31103
-  server: green2.cdntencentmusic.com
+  password: 30077070-596e-48ea-9400-14c8ed07bd97
+  port: 40130
+  server: tuntro011.instconn.com
   skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 19|台灣
-  network: tcp
-  password: b7aa4e87-d990-4f2d-8880-73b206953efc
-  port: 31102
-  server: 220.130.58.136
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
+  sni: cntwbta.686911.xyz
   type: trojan
   udp: true
 - cipher: chacha20-ietf
@@ -7210,7 +6917,6 @@ proxy-groups:
   interval: 300
   name: 自动选择
   proxies:
-  - '0,1,28|🇭🇰 HK²_23|2.8MB/s|0%|GPT⁺|YT|X... #2'
   - 2|🇭🇰 香港NO.1
   - 2|🇭🇰 香港01
   - 2|🇭🇰 香港02
@@ -7235,17 +6941,19 @@ proxy-groups:
   - 11|🇭🇰 HK, Los Angeles
   - 14| HK_51
   - 14|🇰 HK_52
-  - 14|🇰 HK_55
-  - 19|香港_2
-  - 19|HKTROJAN-05|free-nodes
-  - 20|HK香港(mibei77.com 米贝节点分享)
-  - 20|HK香港(mibei77.com 米贝节点分享) 2
-  - 20|HK香港(mibei77.com 米贝节点分享) 3
-  - 20|HK香港(mibei77.com 米贝节点分享) 4
-  - 20|HK香港(mibei77.com 米贝节点分享) 5
-  - 20|HK香港(mibei77.com 米贝节点分享) 6
-  - 20|HK香港(mibei77.com 米贝节点分享) 7
-  - 20|HK香港(mibei77.com 米贝节点分享) 8
+  - 14|🇭🇰 HK_54
+  - 18,33|HK81｜家宽｜非常安全
+  - 19|香港_1
+  - '19,22,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #24'
+  - 19,22|🟢🇭🇰_github.com/Ruk1ng001_276e7...
+  - 19|香港_6
+  - '19,22,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #6'
+  - 19|香港_8
+  - 19|香港_9
+  - 19|香港_10
+  - '19,22|🟢🇭🇰[📺🎭🎞️📦]_github.com/Ruk1ng00... #2'
+  - 19,22|🟢🇭🇰_github.com/Ruk1ng001_880f6...
+  - '19,22,30|🇳🇱 NL荷兰(mibei77.com 米贝节点分享) #6'
   - 22|🔴🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001...
   - 22|🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001...
   - 22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001...
@@ -7253,14 +6961,13 @@ proxy-groups:
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #2'
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #3'
   - 22|🔴🇭🇰[🎬🎪]_github.com/Ruk1ng001_d...
-  - 22,33|HK61｜家宽｜非常安全
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #4'
   - 22|🟢🇭🇰[🧠📺🎭🎪]_github.com/Ruk1ng001...
   - 22|🔴🇭🇰[📺🎭🎪🔍]_github.com/Ruk1ng001...
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #5'
   - 22|🟢🇭🇰[📺🎭]_github.com/Ruk1ng001_4...
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #6'
-  - 22|🟢🇭🇰[🎬📺🎭]_github.com/Ruk1ng001_...
+  - '22,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #39'
   - 22|🟢🇭🇰[📺🎭🎪🎞️]_github.com/Ruk1ng00...
   - 22|🔴🇭🇰[🎬📺🎭🎞️]_github.com/Ruk1ng00...
   - 22|🔴🇭🇰[📺🎭🔍]_github.com/Ruk1ng001_...
@@ -7270,31 +6977,31 @@ proxy-groups:
   - 22|🟢🇭🇰[📺🎭🎞️📦]_github.com/Ruk1ng00...
   - 22|🟢🇭🇰[🎭🔍]_github.com/Ruk1ng001_2...
   - '22|🟢🇭🇰[🎬🧠📺🎭]_github.com/Ruk1ng001... #4'
-  - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #9'
-  - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #10'
-  - 22,33|HK65｜原生/疑似家宽｜非常安全
+  - '22,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #21'
+  - '22,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #10'
+  - 22|🟢🇭🇰[🎬📺🎭🎞️]_github.com/Ruk1ng00...
   - '22|🟢🇭🇰[🎬📺🎭🎞️]_github.com/Ruk1ng00... #1'
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #11'
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #12'
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #13'
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #14'
   - 22|🔴🇭🇰[📺🎭]_github.com/Ruk1ng001_3...
-  - 22|🟢🇭🇰_github.com/Ruk1ng001_48087...
+  - '22,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #38'
   - 22|🟢🇭🇰[📺]_github.com/Ruk1ng001_6c...
   - 22|🔴🇭🇰_github.com/Ruk1ng001_89638...
   - 22|🟢🇭🇰[📺🎭]_github.com/Ruk1ng001_e...
   - 22|🔴🇭🇰[🎬📺🎭📦]_github.com/Ruk1ng001...
   - '22|🔴🇭🇰[🎬📺🎭📦]_github.com/Ruk1ng001... #1'
   - 22|🟢🇭🇰[📺🎭]_github.com/Ruk1ng001_5...
-  - 22,33|HK73｜原生/疑似家宽｜非常安全
+  - '22|🟢🇭🇰[🎬📺🎭]_github.com/Ruk1ng001_... #1'
   - 22|🔴🇭🇰[🎬📺🎭]_github.com/Ruk1ng001_...
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #15'
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #16'
   - '22|🟢🇭🇰[🧠📺🎭🎪]_github.com/Ruk1ng001... #1'
   - 22|🔴🇭🇰[📺🎭🎞️📦]_github.com/Ruk1ng00...
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #17'
-  - 22,33|HK79｜原生/疑似家宽｜非常安全
   - '22|🔴🇭🇰[🎬📺🎭📦]_github.com/Ruk1ng001... #2'
+  - '22|🔴🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #1'
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #18'
   - '22|🟢🇭🇰[🎬🧠📺🎭]_github.com/Ruk1ng001... #5'
   - '22|🔴🇭🇰[🎬📺🎭]_github.com/Ruk1ng001_... #1'
@@ -7309,7 +7016,7 @@ proxy-groups:
   - 22|🔴🇭🇰[📺]_github.com/Ruk1ng001_bf...
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #20'
   - '22|🔴🇭🇰[📺🎭🎞️📦]_github.com/Ruk1ng00... #1'
-  - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #21'
+  - '22,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #12'
   - 22|🔴🇭🇰[📺🎭]_github.com/Ruk1ng001_c...
   - 22|🔴🇭🇰[📺🎭🎪📦]_github.com/Ruk1ng001...
   - '22|🟢🇭🇰[📺🎭🎞️📦]_github.com/Ruk1ng00... #1'
@@ -7327,7 +7034,6 @@ proxy-groups:
   - '22|🔴🇭🇰[🎬📺🎭📦]_github.com/Ruk1ng001... #4'
   - '22|🔴🇭🇰[🎬📺🎭📦]_github.com/Ruk1ng001... #5'
   - '22|🟢🇭🇰[📺🎭]_github.com/Ruk1ng001_5... #1'
-  - 22,33|HK62｜原生/疑似家宽｜非常安全
   - '22|🟢🇭🇰[🎬📺🎭📦]_github.com/Ruk1ng001... #3'
   - '22|🟢🇭🇰[📺🎭📦🔍]_github.com/Ruk1ng001... #4'
   - '22|🔴🇭🇰[📺🎭📦]_github.com/Ruk1ng001_... #1'
@@ -7341,41 +7047,22 @@ proxy-groups:
   - 22|🟢🇭🇰_github.com/Ruk1ng001_4f81f...
   - 22|🟢🇭🇰[🎬]_github.com/Ruk1ng001_00...
   - '22|🔴🇭🇰[📺🎭📦]_github.com/Ruk1ng001_... #2'
-  - 22,33|HK71｜原生/疑似家宽｜非常安全
   - '22|🟢🇭🇰[📺🎭📦✈️]_github.com/Ruk1ng00... #2'
-  - 22,33|HK76｜原生/疑似家宽｜非常安全
   - '22|🟢🇭🇰[🎬📺🎭📦]_github.com/Ruk1ng001... #4'
   - '22|🔴🇭🇰[📺🎭📦]_github.com/Ruk1ng001_... #3'
   - 22|🟢🇭🇰_github.com/Ruk1ng001_3fb9b...
-  - 22|🟢🇭🇰[🎭]_github.com/Ruk1ng001_69...
+  - '22,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #13'
   - 22|🔴🇭🇰_github.com/Ruk1ng001_198b2...
-  - 30,33|SG15｜机房｜低风险
+  - 28|🇭🇰 HK²_23|2.8MB/s|0%|GPT⁺|YT|X...
   - 30,33|香港|@ripaojiedian
-  - 30,33|香港2|@ripaojiedian
-  - 30,33|香港3|@ripaojiedian
-  - 30,33|香港4|@ripaojiedian
-  - 30,33|香港5|@ripaojiedian
+  - '30,33,34|🇭🇰 香港3|@ripaojiedian #1'
+  - '30,33,34|🇭🇰 香港4|@ripaojiedian #1'
+  - '30,33,34|🇭🇰 香港5|@ripaojiedian #1'
   - 31|香港[01]
   - 31|香港[06]
-  - 33|HK47｜原生/疑似家宽｜非常安全
-  - 33|HK48｜原生/疑似家宽｜非常安全
-  - 33|HK64｜原生/疑似家宽｜非常安全
-  - 33|HK66｜原生/疑似家宽｜非常安全
-  - 33|HK67｜原生/疑似家宽｜非常安全
-  - 33|HK68｜原生/疑似家宽｜非常安全
-  - 33|HK69｜原生/疑似家宽｜非常安全
-  - 33|HK70｜原生/疑似家宽｜非常安全
-  - 33|HK72｜原生/疑似家宽｜非常安全
-  - 33|HK74｜原生/疑似家宽｜非常安全
-  - 33|HK75｜原生/疑似家宽｜非常安全
-  - 33|HK77｜原生/疑似家宽｜非常安全
-  - 33|HK78｜原生/疑似家宽｜非常安全
-  - 33|HK89｜原生/疑似家宽｜非常安全
-  - 33|HK96｜原生/疑似家宽｜非常安全
-  - 33|HK97｜原生/疑似家宽｜非常安全
-  - 33|HK104｜原生/疑似家宽｜非常安全
-  - 33|HK105｜原生/疑似家宽｜非常安全
-  - 33|HK106｜原生/疑似家宽｜非常安全
+  - 33|HK107｜家宽｜非常安全
+  - 33|HK168｜原生/疑似家宽｜非常安全
+  - '34|🇭🇰 香港|@ripaojiedian #2'
   - 2|🇯🇵 CM 隧道 日本 NO1
   - 2|🇯🇵 日本01
   - 2|🇯🇵 日本02
@@ -7417,28 +7104,15 @@ proxy-groups:
   - 11|🇯🇵 JP, Osaka
   - 11|🇯🇵 JP, Tokyo 2
   - 11|🇯🇵 JP, Tokyo
-  - 14| JP_65
-  - 14|🇵 JP_66
-  - 20|US美国(mibei77.com 米贝节点分享) 18
-  - 20|JP日本(mibei77.com 米贝节点分享) 2
-  - 20|JP日本(mibei77.com 米贝节点分享) 3
-  - 20|JP日本(mibei77.com 米贝节点分享) 4
-  - 20|JP日本(mibei77.com 米贝节点分享) 5
   - 22|🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001...
   - '22|🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001... #1'
   - '22|🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001... #2'
   - '22|🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001... #3'
   - '22|🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001... #4'
-  - '22,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #3'
-  - 30,33|日本|@ripaojiedian
-  - 30,33|日本2|@ripaojiedian
-  - '30,33,36,38|JP_speednode_0009 #1'
-  - '0,1,28|🇰🇷_KR_韩国 #2'
-  - '0,1,28|🇰🇷_KR_韩国_1 #2'
-  - '0,1,28|🇰🇷_KR_韩国_2 #2'
-  - '0,1,28|🇰🇷_KR_韩国_3 #2'
-  - '0,1,28|🇰🇷_KR_韩国_4 #2'
-  - '0,1,28|🇰🇷_KR_韩国_5 #2'
+  - 22,30,33|JP2｜机房｜低风险
+  - '30,33,34|🇯🇵 日本|@ripaojiedian #1'
+  - '30,33,34|🇯🇵 日本2|@ripaojiedian #1'
+  - '30,33,34|🇯🇵 日本3|@ripaojiedian #1'
   - 2|🇰🇷 韩国-三网优化2-1C
   - 2|🇰🇷 IEPL专线 韩国 NO1
   - 2|🇰🇷 韩国-三网优化2-1B
@@ -7456,26 +7130,17 @@ proxy-groups:
   - 6|韩国 专线NO1
   - 6|韩国 专线NO2
   - 11|🇰🇷 KR, Incheon
-  - 14|🇷 KR_67
+  - 14|🇷 KR_64
   - 14,39|218.237.185.230_Claude
-  - 14|🇰🇷 KR_69
-  - 20|KR韩国(mibei77.com 米贝节点分享)
-  - 20|KR韩国(mibei77.com 米贝节点分享) 2
-  - 20|KR韩国(mibei77.com 米贝节点分享) 3
-  - 20|KR韩国(mibei77.com 米贝节点分享) 4
-  - 20|KR韩国(mibei77.com 米贝节点分享) 5
-  - 20|KR韩国(mibei77.com 米贝节点分享) 6
-  - 20|KR韩国(mibei77.com 米贝节点分享) 7
-  - 20|KR韩国(mibei77.com 米贝节点分享) 8
-  - 20|KR韩国(mibei77.com 米贝节点分享) 9
-  - 20|KR韩国(mibei77.com 米贝节点分享) 10
-  - 20|KR韩国(mibei77.com 米贝节点分享) 11
-  - 20|KR韩国(mibei77.com 米贝节点分享) 12
-  - 20|KR韩国(mibei77.com 米贝节点分享) 13
-  - 20|KR韩国(mibei77.com 米贝节点分享) 14
-  - 20|KR韩国(mibei77.com 米贝节点分享) 15
-  - 20|KR韩国(mibei77.com 米贝节点分享) 16
+  - 14|🇰🇷 KR_66
+  - 28|🇰🇷_KR_韩国
+  - 28|🇰🇷_KR_韩国_1
+  - 28|🇰🇷_KR_韩国_2
+  - 28|🇰🇷_KR_韩国_3
+  - 28|🇰🇷_KR_韩国_4
+  - 28|🇰🇷_KR_韩国_5
   - 31|韩国[01]
+  - 33|KR8｜机房｜低风险
   - 2|🇸🇬 新加坡NO.1
   - 2|🇸🇬 新加坡NO.2
   - 2|🇸🇬 IEPL专线 新加坡 NO1
@@ -7490,10 +7155,6 @@ proxy-groups:
   - 6|新加坡NO.1
   - 9|SG | 新加坡 LB-1A
   - 11|🇸🇬 SG, Singapore
-  - 14| SG_134
-  - 14|🇬 SG_135
-  - 20|SG新加坡(mibei77.com 米贝节点分享)
-  - 20|SG新加坡(mibei77.com 米贝节点分享) 2
   - 22|🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001...
   - '22|🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001... #1'
   - '22|🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001... #2'
@@ -7502,9 +7163,9 @@ proxy-groups:
   - '22|🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001... #5'
   - '22|🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001... #6'
   - 22|🔴🇸🇬_github.com/Ruk1ng001_932d6...
-  - '30,33,36,38|JP_speednode_0010 #1'
-  - 30,33|新加坡2|@ripaojiedian
-  - 30,33|新加坡3|@ripaojiedian
+  - '30,33,34|🇸🇬 新加坡|@ripaojiedian #1'
+  - '30,33,34|🇸🇬 新加坡2|@ripaojiedian #1'
+  - '30,33,34|🇸🇬 新加坡3|@ripaojiedian #1'
   - 31|新加坡[02]
   - 39|🇸🇬SG_1|2.4MB/s|GPT|YT-SG|NF|D+...
   - 2|🇩🇪 IEPL专线 德国 NO1
@@ -7516,45 +7177,48 @@ proxy-groups:
   - 14|🇪 DE_32
   - 14|🇪DE_33
   - 22|🔴🇩🇪[🎬📺🎪🎞️]_github.com/Ruk1ng00...
+  - 22|🔴🇩🇪[🎬🤖📺🎭]_github.com/Ruk1ng001...
   - 30|🇩🇪 VMESS-未知>德国-NF解锁印度地区非自制剧-Ch...
-  - 33|DE46｜机房｜低风险
-  - '33,36,38|DE_speednode_0002 #1'
+  - 33|DE1｜机房｜低风险
+  - 33|DE2｜机房｜低风险
+  - 33|DE3｜机房｜低风险
+  - 33|DE4｜机房｜低风险
+  - 33|DE5｜机房｜低风险
+  - 33|DE54｜机房｜低风险
   - 2|🇫🇷 法国1
   - 2|🇫🇷 CM 隧道 法国 NO1
   - 2|🇫🇷 法国2
   - 6|法国1
   - 6|法国2
   - 14| FR_35
-  - 14|🇫🇷 FR_36
-  - 14|🇫🇷 FR_37
-  - 14|🇷FR_38
-  - 14|🇷FR_39
-  - 14|🇫🇷FR_40
-  - 14|🇫🇷FR_41
-  - 20|FR法国(mibei77.com 米贝节点分享)
+  - 14|🇷FR_36
+  - 14|🇷FR_37
+  - 14|🇫🇷FR_38
+  - 14|🇫🇷FR_39
   - 22|🔴🇫🇷[🤖📺📦]_github.com/Ruk1ng001_...
   - 31|法国[01]
-  - 33|FR3｜机房｜低风险
-  - '33,36,38|FR_speednode_0006 #1'
   - 2|🇷🇺 莫斯科专线
   - 2|🇷🇺 IEPL专线 俄罗斯 NO1
   - 14| RU_131
-  - 14|🇺 RU_132
   - 18|俄罗斯+V2CROSS.COM
-  - 19|俄羅斯_6
+  - '33,36,38|RU_speednode_0019 #1'
   - 2|🇬🇧 伦敦专线
   - 2|🇬🇧 IEPL专线 英国 NO1
   - 6|英国2
   - 6|英国1
-  - 14| GB_42
-  - 14|🇧 GB_43
+  - 14| GB_40
+  - 14|🇧 GB_41
+  - 14|🇬🇧 GB_42
+  - 14|🇬🇧 GB_43
   - 14|🇧 GB_44
   - 14|🇬🇧 GB_45
-  - 14,18,30,33|DE74｜机房｜低风险
+  - 14,30,33|DE35｜机房｜低风险
   - 14|🇧 GB_47
   - 14|🇬🇧 GB_48
   - 14|🇬🇧GB_49
-  - 33|GB14｜机房｜低风险
+  - 20|GB英国(mibei77.com 米贝节点分享) 24
+  - '30|🇬🇧 GB英国(mibei77.com 米贝节点分享) #2'
+  - '30|🇬🇧 GB英国(mibei77.com 米贝节点分享) #17'
   - 2|🇸🇬 新加坡中转 02
   - 2|🇬🇧 英国中转 03
   - 2|🇭🇰 香港中转 02
@@ -8077,9 +7741,7 @@ proxy-groups:
   - 5|🇹🇼 No.742_TW_x1.00_AkileCloud_...
   - 6|台湾2
   - 6|台湾1
-  - '18,22|🔴🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #1'
-  - 18,22,33|HK63｜原生/疑似家宽｜非常安全
-  - 19|台灣
+  - 19,22|⚪🏳️[🎬✨]_github.com/Ruk1ng001_c...
   - 22|🔴🇹🇼[🤖📺🎭🎪]_github.com/Ruk1ng001...
   - 22|🔴🇹🇼[🎬🤖📺🎭]_github.com/Ruk1ng001...
   - '22|🔴🇹🇼[🎬🤖📺🎭]_github.com/Ruk1ng001... #1'
@@ -8091,7 +7753,6 @@ proxy-groups:
   interval: 300
   name: 故障转移
   proxies:
-  - '0,1,28|🇭🇰 HK²_23|2.8MB/s|0%|GPT⁺|YT|X... #2'
   - 2|🇭🇰 香港NO.1
   - 2|🇭🇰 香港01
   - 2|🇭🇰 香港02
@@ -8116,17 +7777,19 @@ proxy-groups:
   - 11|🇭🇰 HK, Los Angeles
   - 14| HK_51
   - 14|🇰 HK_52
-  - 14|🇰 HK_55
-  - 19|香港_2
-  - 19|HKTROJAN-05|free-nodes
-  - 20|HK香港(mibei77.com 米贝节点分享)
-  - 20|HK香港(mibei77.com 米贝节点分享) 2
-  - 20|HK香港(mibei77.com 米贝节点分享) 3
-  - 20|HK香港(mibei77.com 米贝节点分享) 4
-  - 20|HK香港(mibei77.com 米贝节点分享) 5
-  - 20|HK香港(mibei77.com 米贝节点分享) 6
-  - 20|HK香港(mibei77.com 米贝节点分享) 7
-  - 20|HK香港(mibei77.com 米贝节点分享) 8
+  - 14|🇭🇰 HK_54
+  - 18,33|HK81｜家宽｜非常安全
+  - 19|香港_1
+  - '19,22,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #24'
+  - 19,22|🟢🇭🇰_github.com/Ruk1ng001_276e7...
+  - 19|香港_6
+  - '19,22,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #6'
+  - 19|香港_8
+  - 19|香港_9
+  - 19|香港_10
+  - '19,22|🟢🇭🇰[📺🎭🎞️📦]_github.com/Ruk1ng00... #2'
+  - 19,22|🟢🇭🇰_github.com/Ruk1ng001_880f6...
+  - '19,22,30|🇳🇱 NL荷兰(mibei77.com 米贝节点分享) #6'
   - 22|🔴🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001...
   - 22|🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001...
   - 22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001...
@@ -8134,14 +7797,13 @@ proxy-groups:
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #2'
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #3'
   - 22|🔴🇭🇰[🎬🎪]_github.com/Ruk1ng001_d...
-  - 22,33|HK61｜家宽｜非常安全
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #4'
   - 22|🟢🇭🇰[🧠📺🎭🎪]_github.com/Ruk1ng001...
   - 22|🔴🇭🇰[📺🎭🎪🔍]_github.com/Ruk1ng001...
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #5'
   - 22|🟢🇭🇰[📺🎭]_github.com/Ruk1ng001_4...
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #6'
-  - 22|🟢🇭🇰[🎬📺🎭]_github.com/Ruk1ng001_...
+  - '22,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #39'
   - 22|🟢🇭🇰[📺🎭🎪🎞️]_github.com/Ruk1ng00...
   - 22|🔴🇭🇰[🎬📺🎭🎞️]_github.com/Ruk1ng00...
   - 22|🔴🇭🇰[📺🎭🔍]_github.com/Ruk1ng001_...
@@ -8151,31 +7813,31 @@ proxy-groups:
   - 22|🟢🇭🇰[📺🎭🎞️📦]_github.com/Ruk1ng00...
   - 22|🟢🇭🇰[🎭🔍]_github.com/Ruk1ng001_2...
   - '22|🟢🇭🇰[🎬🧠📺🎭]_github.com/Ruk1ng001... #4'
-  - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #9'
-  - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #10'
-  - 22,33|HK65｜原生/疑似家宽｜非常安全
+  - '22,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #21'
+  - '22,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #10'
+  - 22|🟢🇭🇰[🎬📺🎭🎞️]_github.com/Ruk1ng00...
   - '22|🟢🇭🇰[🎬📺🎭🎞️]_github.com/Ruk1ng00... #1'
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #11'
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #12'
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #13'
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #14'
   - 22|🔴🇭🇰[📺🎭]_github.com/Ruk1ng001_3...
-  - 22|🟢🇭🇰_github.com/Ruk1ng001_48087...
+  - '22,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #38'
   - 22|🟢🇭🇰[📺]_github.com/Ruk1ng001_6c...
   - 22|🔴🇭🇰_github.com/Ruk1ng001_89638...
   - 22|🟢🇭🇰[📺🎭]_github.com/Ruk1ng001_e...
   - 22|🔴🇭🇰[🎬📺🎭📦]_github.com/Ruk1ng001...
   - '22|🔴🇭🇰[🎬📺🎭📦]_github.com/Ruk1ng001... #1'
   - 22|🟢🇭🇰[📺🎭]_github.com/Ruk1ng001_5...
-  - 22,33|HK73｜原生/疑似家宽｜非常安全
+  - '22|🟢🇭🇰[🎬📺🎭]_github.com/Ruk1ng001_... #1'
   - 22|🔴🇭🇰[🎬📺🎭]_github.com/Ruk1ng001_...
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #15'
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #16'
   - '22|🟢🇭🇰[🧠📺🎭🎪]_github.com/Ruk1ng001... #1'
   - 22|🔴🇭🇰[📺🎭🎞️📦]_github.com/Ruk1ng00...
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #17'
-  - 22,33|HK79｜原生/疑似家宽｜非常安全
   - '22|🔴🇭🇰[🎬📺🎭📦]_github.com/Ruk1ng001... #2'
+  - '22|🔴🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #1'
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #18'
   - '22|🟢🇭🇰[🎬🧠📺🎭]_github.com/Ruk1ng001... #5'
   - '22|🔴🇭🇰[🎬📺🎭]_github.com/Ruk1ng001_... #1'
@@ -8190,7 +7852,7 @@ proxy-groups:
   - 22|🔴🇭🇰[📺]_github.com/Ruk1ng001_bf...
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #20'
   - '22|🔴🇭🇰[📺🎭🎞️📦]_github.com/Ruk1ng00... #1'
-  - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #21'
+  - '22,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #12'
   - 22|🔴🇭🇰[📺🎭]_github.com/Ruk1ng001_c...
   - 22|🔴🇭🇰[📺🎭🎪📦]_github.com/Ruk1ng001...
   - '22|🟢🇭🇰[📺🎭🎞️📦]_github.com/Ruk1ng00... #1'
@@ -8208,7 +7870,6 @@ proxy-groups:
   - '22|🔴🇭🇰[🎬📺🎭📦]_github.com/Ruk1ng001... #4'
   - '22|🔴🇭🇰[🎬📺🎭📦]_github.com/Ruk1ng001... #5'
   - '22|🟢🇭🇰[📺🎭]_github.com/Ruk1ng001_5... #1'
-  - 22,33|HK62｜原生/疑似家宽｜非常安全
   - '22|🟢🇭🇰[🎬📺🎭📦]_github.com/Ruk1ng001... #3'
   - '22|🟢🇭🇰[📺🎭📦🔍]_github.com/Ruk1ng001... #4'
   - '22|🔴🇭🇰[📺🎭📦]_github.com/Ruk1ng001_... #1'
@@ -8222,41 +7883,22 @@ proxy-groups:
   - 22|🟢🇭🇰_github.com/Ruk1ng001_4f81f...
   - 22|🟢🇭🇰[🎬]_github.com/Ruk1ng001_00...
   - '22|🔴🇭🇰[📺🎭📦]_github.com/Ruk1ng001_... #2'
-  - 22,33|HK71｜原生/疑似家宽｜非常安全
   - '22|🟢🇭🇰[📺🎭📦✈️]_github.com/Ruk1ng00... #2'
-  - 22,33|HK76｜原生/疑似家宽｜非常安全
   - '22|🟢🇭🇰[🎬📺🎭📦]_github.com/Ruk1ng001... #4'
   - '22|🔴🇭🇰[📺🎭📦]_github.com/Ruk1ng001_... #3'
   - 22|🟢🇭🇰_github.com/Ruk1ng001_3fb9b...
-  - 22|🟢🇭🇰[🎭]_github.com/Ruk1ng001_69...
+  - '22,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #13'
   - 22|🔴🇭🇰_github.com/Ruk1ng001_198b2...
-  - 30,33|SG15｜机房｜低风险
+  - 28|🇭🇰 HK²_23|2.8MB/s|0%|GPT⁺|YT|X...
   - 30,33|香港|@ripaojiedian
-  - 30,33|香港2|@ripaojiedian
-  - 30,33|香港3|@ripaojiedian
-  - 30,33|香港4|@ripaojiedian
-  - 30,33|香港5|@ripaojiedian
+  - '30,33,34|🇭🇰 香港3|@ripaojiedian #1'
+  - '30,33,34|🇭🇰 香港4|@ripaojiedian #1'
+  - '30,33,34|🇭🇰 香港5|@ripaojiedian #1'
   - 31|香港[01]
   - 31|香港[06]
-  - 33|HK47｜原生/疑似家宽｜非常安全
-  - 33|HK48｜原生/疑似家宽｜非常安全
-  - 33|HK64｜原生/疑似家宽｜非常安全
-  - 33|HK66｜原生/疑似家宽｜非常安全
-  - 33|HK67｜原生/疑似家宽｜非常安全
-  - 33|HK68｜原生/疑似家宽｜非常安全
-  - 33|HK69｜原生/疑似家宽｜非常安全
-  - 33|HK70｜原生/疑似家宽｜非常安全
-  - 33|HK72｜原生/疑似家宽｜非常安全
-  - 33|HK74｜原生/疑似家宽｜非常安全
-  - 33|HK75｜原生/疑似家宽｜非常安全
-  - 33|HK77｜原生/疑似家宽｜非常安全
-  - 33|HK78｜原生/疑似家宽｜非常安全
-  - 33|HK89｜原生/疑似家宽｜非常安全
-  - 33|HK96｜原生/疑似家宽｜非常安全
-  - 33|HK97｜原生/疑似家宽｜非常安全
-  - 33|HK104｜原生/疑似家宽｜非常安全
-  - 33|HK105｜原生/疑似家宽｜非常安全
-  - 33|HK106｜原生/疑似家宽｜非常安全
+  - 33|HK107｜家宽｜非常安全
+  - 33|HK168｜原生/疑似家宽｜非常安全
+  - '34|🇭🇰 香港|@ripaojiedian #2'
   - 2|🇯🇵 CM 隧道 日本 NO1
   - 2|🇯🇵 日本01
   - 2|🇯🇵 日本02
@@ -8298,28 +7940,15 @@ proxy-groups:
   - 11|🇯🇵 JP, Osaka
   - 11|🇯🇵 JP, Tokyo 2
   - 11|🇯🇵 JP, Tokyo
-  - 14| JP_65
-  - 14|🇵 JP_66
-  - 20|US美国(mibei77.com 米贝节点分享) 18
-  - 20|JP日本(mibei77.com 米贝节点分享) 2
-  - 20|JP日本(mibei77.com 米贝节点分享) 3
-  - 20|JP日本(mibei77.com 米贝节点分享) 4
-  - 20|JP日本(mibei77.com 米贝节点分享) 5
   - 22|🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001...
   - '22|🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001... #1'
   - '22|🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001... #2'
   - '22|🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001... #3'
   - '22|🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001... #4'
-  - '22,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #3'
-  - 30,33|日本|@ripaojiedian
-  - 30,33|日本2|@ripaojiedian
-  - '30,33,36,38|JP_speednode_0009 #1'
-  - '0,1,28|🇰🇷_KR_韩国 #2'
-  - '0,1,28|🇰🇷_KR_韩国_1 #2'
-  - '0,1,28|🇰🇷_KR_韩国_2 #2'
-  - '0,1,28|🇰🇷_KR_韩国_3 #2'
-  - '0,1,28|🇰🇷_KR_韩国_4 #2'
-  - '0,1,28|🇰🇷_KR_韩国_5 #2'
+  - 22,30,33|JP2｜机房｜低风险
+  - '30,33,34|🇯🇵 日本|@ripaojiedian #1'
+  - '30,33,34|🇯🇵 日本2|@ripaojiedian #1'
+  - '30,33,34|🇯🇵 日本3|@ripaojiedian #1'
   - 2|🇰🇷 韩国-三网优化2-1C
   - 2|🇰🇷 IEPL专线 韩国 NO1
   - 2|🇰🇷 韩国-三网优化2-1B
@@ -8337,26 +7966,17 @@ proxy-groups:
   - 6|韩国 专线NO1
   - 6|韩国 专线NO2
   - 11|🇰🇷 KR, Incheon
-  - 14|🇷 KR_67
+  - 14|🇷 KR_64
   - 14,39|218.237.185.230_Claude
-  - 14|🇰🇷 KR_69
-  - 20|KR韩国(mibei77.com 米贝节点分享)
-  - 20|KR韩国(mibei77.com 米贝节点分享) 2
-  - 20|KR韩国(mibei77.com 米贝节点分享) 3
-  - 20|KR韩国(mibei77.com 米贝节点分享) 4
-  - 20|KR韩国(mibei77.com 米贝节点分享) 5
-  - 20|KR韩国(mibei77.com 米贝节点分享) 6
-  - 20|KR韩国(mibei77.com 米贝节点分享) 7
-  - 20|KR韩国(mibei77.com 米贝节点分享) 8
-  - 20|KR韩国(mibei77.com 米贝节点分享) 9
-  - 20|KR韩国(mibei77.com 米贝节点分享) 10
-  - 20|KR韩国(mibei77.com 米贝节点分享) 11
-  - 20|KR韩国(mibei77.com 米贝节点分享) 12
-  - 20|KR韩国(mibei77.com 米贝节点分享) 13
-  - 20|KR韩国(mibei77.com 米贝节点分享) 14
-  - 20|KR韩国(mibei77.com 米贝节点分享) 15
-  - 20|KR韩国(mibei77.com 米贝节点分享) 16
+  - 14|🇰🇷 KR_66
+  - 28|🇰🇷_KR_韩国
+  - 28|🇰🇷_KR_韩国_1
+  - 28|🇰🇷_KR_韩国_2
+  - 28|🇰🇷_KR_韩国_3
+  - 28|🇰🇷_KR_韩国_4
+  - 28|🇰🇷_KR_韩国_5
   - 31|韩国[01]
+  - 33|KR8｜机房｜低风险
   - 2|🇸🇬 新加坡NO.1
   - 2|🇸🇬 新加坡NO.2
   - 2|🇸🇬 IEPL专线 新加坡 NO1
@@ -8371,10 +7991,6 @@ proxy-groups:
   - 6|新加坡NO.1
   - 9|SG | 新加坡 LB-1A
   - 11|🇸🇬 SG, Singapore
-  - 14| SG_134
-  - 14|🇬 SG_135
-  - 20|SG新加坡(mibei77.com 米贝节点分享)
-  - 20|SG新加坡(mibei77.com 米贝节点分享) 2
   - 22|🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001...
   - '22|🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001... #1'
   - '22|🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001... #2'
@@ -8383,9 +7999,9 @@ proxy-groups:
   - '22|🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001... #5'
   - '22|🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001... #6'
   - 22|🔴🇸🇬_github.com/Ruk1ng001_932d6...
-  - '30,33,36,38|JP_speednode_0010 #1'
-  - 30,33|新加坡2|@ripaojiedian
-  - 30,33|新加坡3|@ripaojiedian
+  - '30,33,34|🇸🇬 新加坡|@ripaojiedian #1'
+  - '30,33,34|🇸🇬 新加坡2|@ripaojiedian #1'
+  - '30,33,34|🇸🇬 新加坡3|@ripaojiedian #1'
   - 31|新加坡[02]
   - 39|🇸🇬SG_1|2.4MB/s|GPT|YT-SG|NF|D+...
   - 2|🇩🇪 IEPL专线 德国 NO1
@@ -8397,45 +8013,48 @@ proxy-groups:
   - 14|🇪 DE_32
   - 14|🇪DE_33
   - 22|🔴🇩🇪[🎬📺🎪🎞️]_github.com/Ruk1ng00...
+  - 22|🔴🇩🇪[🎬🤖📺🎭]_github.com/Ruk1ng001...
   - 30|🇩🇪 VMESS-未知>德国-NF解锁印度地区非自制剧-Ch...
-  - 33|DE46｜机房｜低风险
-  - '33,36,38|DE_speednode_0002 #1'
+  - 33|DE1｜机房｜低风险
+  - 33|DE2｜机房｜低风险
+  - 33|DE3｜机房｜低风险
+  - 33|DE4｜机房｜低风险
+  - 33|DE5｜机房｜低风险
+  - 33|DE54｜机房｜低风险
   - 2|🇫🇷 法国1
   - 2|🇫🇷 CM 隧道 法国 NO1
   - 2|🇫🇷 法国2
   - 6|法国1
   - 6|法国2
   - 14| FR_35
-  - 14|🇫🇷 FR_36
-  - 14|🇫🇷 FR_37
-  - 14|🇷FR_38
-  - 14|🇷FR_39
-  - 14|🇫🇷FR_40
-  - 14|🇫🇷FR_41
-  - 20|FR法国(mibei77.com 米贝节点分享)
+  - 14|🇷FR_36
+  - 14|🇷FR_37
+  - 14|🇫🇷FR_38
+  - 14|🇫🇷FR_39
   - 22|🔴🇫🇷[🤖📺📦]_github.com/Ruk1ng001_...
   - 31|法国[01]
-  - 33|FR3｜机房｜低风险
-  - '33,36,38|FR_speednode_0006 #1'
   - 2|🇷🇺 莫斯科专线
   - 2|🇷🇺 IEPL专线 俄罗斯 NO1
   - 14| RU_131
-  - 14|🇺 RU_132
   - 18|俄罗斯+V2CROSS.COM
-  - 19|俄羅斯_6
+  - '33,36,38|RU_speednode_0019 #1'
   - 2|🇬🇧 伦敦专线
   - 2|🇬🇧 IEPL专线 英国 NO1
   - 6|英国2
   - 6|英国1
-  - 14| GB_42
-  - 14|🇧 GB_43
+  - 14| GB_40
+  - 14|🇧 GB_41
+  - 14|🇬🇧 GB_42
+  - 14|🇬🇧 GB_43
   - 14|🇧 GB_44
   - 14|🇬🇧 GB_45
-  - 14,18,30,33|DE74｜机房｜低风险
+  - 14,30,33|DE35｜机房｜低风险
   - 14|🇧 GB_47
   - 14|🇬🇧 GB_48
   - 14|🇬🇧GB_49
-  - 33|GB14｜机房｜低风险
+  - 20|GB英国(mibei77.com 米贝节点分享) 24
+  - '30|🇬🇧 GB英国(mibei77.com 米贝节点分享) #2'
+  - '30|🇬🇧 GB英国(mibei77.com 米贝节点分享) #17'
   - 2|🇸🇬 新加坡中转 02
   - 2|🇬🇧 英国中转 03
   - 2|🇭🇰 香港中转 02
@@ -8958,9 +8577,7 @@ proxy-groups:
   - 5|🇹🇼 No.742_TW_x1.00_AkileCloud_...
   - 6|台湾2
   - 6|台湾1
-  - '18,22|🔴🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #1'
-  - 18,22,33|HK63｜原生/疑似家宽｜非常安全
-  - 19|台灣
+  - 19,22|⚪🏳️[🎬✨]_github.com/Ruk1ng001_c...
   - 22|🔴🇹🇼[🤖📺🎭🎪]_github.com/Ruk1ng001...
   - 22|🔴🇹🇼[🎬🤖📺🎭]_github.com/Ruk1ng001...
   - '22|🔴🇹🇼[🎬🤖📺🎭]_github.com/Ruk1ng001... #1'
@@ -8969,7 +8586,6 @@ proxy-groups:
   url: http://www.gstatic.com/generate_204
 - name: 手动选择
   proxies:
-  - '0,1,28|🇭🇰 HK²_23|2.8MB/s|0%|GPT⁺|YT|X... #2'
   - 2|🇭🇰 香港NO.1
   - 2|🇭🇰 香港01
   - 2|🇭🇰 香港02
@@ -8994,17 +8610,19 @@ proxy-groups:
   - 11|🇭🇰 HK, Los Angeles
   - 14| HK_51
   - 14|🇰 HK_52
-  - 14|🇰 HK_55
-  - 19|香港_2
-  - 19|HKTROJAN-05|free-nodes
-  - 20|HK香港(mibei77.com 米贝节点分享)
-  - 20|HK香港(mibei77.com 米贝节点分享) 2
-  - 20|HK香港(mibei77.com 米贝节点分享) 3
-  - 20|HK香港(mibei77.com 米贝节点分享) 4
-  - 20|HK香港(mibei77.com 米贝节点分享) 5
-  - 20|HK香港(mibei77.com 米贝节点分享) 6
-  - 20|HK香港(mibei77.com 米贝节点分享) 7
-  - 20|HK香港(mibei77.com 米贝节点分享) 8
+  - 14|🇭🇰 HK_54
+  - 18,33|HK81｜家宽｜非常安全
+  - 19|香港_1
+  - '19,22,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #24'
+  - 19,22|🟢🇭🇰_github.com/Ruk1ng001_276e7...
+  - 19|香港_6
+  - '19,22,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #6'
+  - 19|香港_8
+  - 19|香港_9
+  - 19|香港_10
+  - '19,22|🟢🇭🇰[📺🎭🎞️📦]_github.com/Ruk1ng00... #2'
+  - 19,22|🟢🇭🇰_github.com/Ruk1ng001_880f6...
+  - '19,22,30|🇳🇱 NL荷兰(mibei77.com 米贝节点分享) #6'
   - 22|🔴🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001...
   - 22|🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001...
   - 22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001...
@@ -9012,14 +8630,13 @@ proxy-groups:
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #2'
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #3'
   - 22|🔴🇭🇰[🎬🎪]_github.com/Ruk1ng001_d...
-  - 22,33|HK61｜家宽｜非常安全
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #4'
   - 22|🟢🇭🇰[🧠📺🎭🎪]_github.com/Ruk1ng001...
   - 22|🔴🇭🇰[📺🎭🎪🔍]_github.com/Ruk1ng001...
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #5'
   - 22|🟢🇭🇰[📺🎭]_github.com/Ruk1ng001_4...
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #6'
-  - 22|🟢🇭🇰[🎬📺🎭]_github.com/Ruk1ng001_...
+  - '22,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #39'
   - 22|🟢🇭🇰[📺🎭🎪🎞️]_github.com/Ruk1ng00...
   - 22|🔴🇭🇰[🎬📺🎭🎞️]_github.com/Ruk1ng00...
   - 22|🔴🇭🇰[📺🎭🔍]_github.com/Ruk1ng001_...
@@ -9029,31 +8646,31 @@ proxy-groups:
   - 22|🟢🇭🇰[📺🎭🎞️📦]_github.com/Ruk1ng00...
   - 22|🟢🇭🇰[🎭🔍]_github.com/Ruk1ng001_2...
   - '22|🟢🇭🇰[🎬🧠📺🎭]_github.com/Ruk1ng001... #4'
-  - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #9'
-  - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #10'
-  - 22,33|HK65｜原生/疑似家宽｜非常安全
+  - '22,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #21'
+  - '22,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #10'
+  - 22|🟢🇭🇰[🎬📺🎭🎞️]_github.com/Ruk1ng00...
   - '22|🟢🇭🇰[🎬📺🎭🎞️]_github.com/Ruk1ng00... #1'
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #11'
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #12'
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #13'
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #14'
   - 22|🔴🇭🇰[📺🎭]_github.com/Ruk1ng001_3...
-  - 22|🟢🇭🇰_github.com/Ruk1ng001_48087...
+  - '22,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #38'
   - 22|🟢🇭🇰[📺]_github.com/Ruk1ng001_6c...
   - 22|🔴🇭🇰_github.com/Ruk1ng001_89638...
   - 22|🟢🇭🇰[📺🎭]_github.com/Ruk1ng001_e...
   - 22|🔴🇭🇰[🎬📺🎭📦]_github.com/Ruk1ng001...
   - '22|🔴🇭🇰[🎬📺🎭📦]_github.com/Ruk1ng001... #1'
   - 22|🟢🇭🇰[📺🎭]_github.com/Ruk1ng001_5...
-  - 22,33|HK73｜原生/疑似家宽｜非常安全
+  - '22|🟢🇭🇰[🎬📺🎭]_github.com/Ruk1ng001_... #1'
   - 22|🔴🇭🇰[🎬📺🎭]_github.com/Ruk1ng001_...
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #15'
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #16'
   - '22|🟢🇭🇰[🧠📺🎭🎪]_github.com/Ruk1ng001... #1'
   - 22|🔴🇭🇰[📺🎭🎞️📦]_github.com/Ruk1ng00...
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #17'
-  - 22,33|HK79｜原生/疑似家宽｜非常安全
   - '22|🔴🇭🇰[🎬📺🎭📦]_github.com/Ruk1ng001... #2'
+  - '22|🔴🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #1'
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #18'
   - '22|🟢🇭🇰[🎬🧠📺🎭]_github.com/Ruk1ng001... #5'
   - '22|🔴🇭🇰[🎬📺🎭]_github.com/Ruk1ng001_... #1'
@@ -9068,7 +8685,7 @@ proxy-groups:
   - 22|🔴🇭🇰[📺]_github.com/Ruk1ng001_bf...
   - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #20'
   - '22|🔴🇭🇰[📺🎭🎞️📦]_github.com/Ruk1ng00... #1'
-  - '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #21'
+  - '22,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #12'
   - 22|🔴🇭🇰[📺🎭]_github.com/Ruk1ng001_c...
   - 22|🔴🇭🇰[📺🎭🎪📦]_github.com/Ruk1ng001...
   - '22|🟢🇭🇰[📺🎭🎞️📦]_github.com/Ruk1ng00... #1'
@@ -9086,7 +8703,6 @@ proxy-groups:
   - '22|🔴🇭🇰[🎬📺🎭📦]_github.com/Ruk1ng001... #4'
   - '22|🔴🇭🇰[🎬📺🎭📦]_github.com/Ruk1ng001... #5'
   - '22|🟢🇭🇰[📺🎭]_github.com/Ruk1ng001_5... #1'
-  - 22,33|HK62｜原生/疑似家宽｜非常安全
   - '22|🟢🇭🇰[🎬📺🎭📦]_github.com/Ruk1ng001... #3'
   - '22|🟢🇭🇰[📺🎭📦🔍]_github.com/Ruk1ng001... #4'
   - '22|🔴🇭🇰[📺🎭📦]_github.com/Ruk1ng001_... #1'
@@ -9100,41 +8716,22 @@ proxy-groups:
   - 22|🟢🇭🇰_github.com/Ruk1ng001_4f81f...
   - 22|🟢🇭🇰[🎬]_github.com/Ruk1ng001_00...
   - '22|🔴🇭🇰[📺🎭📦]_github.com/Ruk1ng001_... #2'
-  - 22,33|HK71｜原生/疑似家宽｜非常安全
   - '22|🟢🇭🇰[📺🎭📦✈️]_github.com/Ruk1ng00... #2'
-  - 22,33|HK76｜原生/疑似家宽｜非常安全
   - '22|🟢🇭🇰[🎬📺🎭📦]_github.com/Ruk1ng001... #4'
   - '22|🔴🇭🇰[📺🎭📦]_github.com/Ruk1ng001_... #3'
   - 22|🟢🇭🇰_github.com/Ruk1ng001_3fb9b...
-  - 22|🟢🇭🇰[🎭]_github.com/Ruk1ng001_69...
+  - '22,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #13'
   - 22|🔴🇭🇰_github.com/Ruk1ng001_198b2...
-  - 30,33|SG15｜机房｜低风险
+  - 28|🇭🇰 HK²_23|2.8MB/s|0%|GPT⁺|YT|X...
   - 30,33|香港|@ripaojiedian
-  - 30,33|香港2|@ripaojiedian
-  - 30,33|香港3|@ripaojiedian
-  - 30,33|香港4|@ripaojiedian
-  - 30,33|香港5|@ripaojiedian
+  - '30,33,34|🇭🇰 香港3|@ripaojiedian #1'
+  - '30,33,34|🇭🇰 香港4|@ripaojiedian #1'
+  - '30,33,34|🇭🇰 香港5|@ripaojiedian #1'
   - 31|香港[01]
   - 31|香港[06]
-  - 33|HK47｜原生/疑似家宽｜非常安全
-  - 33|HK48｜原生/疑似家宽｜非常安全
-  - 33|HK64｜原生/疑似家宽｜非常安全
-  - 33|HK66｜原生/疑似家宽｜非常安全
-  - 33|HK67｜原生/疑似家宽｜非常安全
-  - 33|HK68｜原生/疑似家宽｜非常安全
-  - 33|HK69｜原生/疑似家宽｜非常安全
-  - 33|HK70｜原生/疑似家宽｜非常安全
-  - 33|HK72｜原生/疑似家宽｜非常安全
-  - 33|HK74｜原生/疑似家宽｜非常安全
-  - 33|HK75｜原生/疑似家宽｜非常安全
-  - 33|HK77｜原生/疑似家宽｜非常安全
-  - 33|HK78｜原生/疑似家宽｜非常安全
-  - 33|HK89｜原生/疑似家宽｜非常安全
-  - 33|HK96｜原生/疑似家宽｜非常安全
-  - 33|HK97｜原生/疑似家宽｜非常安全
-  - 33|HK104｜原生/疑似家宽｜非常安全
-  - 33|HK105｜原生/疑似家宽｜非常安全
-  - 33|HK106｜原生/疑似家宽｜非常安全
+  - 33|HK107｜家宽｜非常安全
+  - 33|HK168｜原生/疑似家宽｜非常安全
+  - '34|🇭🇰 香港|@ripaojiedian #2'
   - 2|🇯🇵 CM 隧道 日本 NO1
   - 2|🇯🇵 日本01
   - 2|🇯🇵 日本02
@@ -9176,28 +8773,15 @@ proxy-groups:
   - 11|🇯🇵 JP, Osaka
   - 11|🇯🇵 JP, Tokyo 2
   - 11|🇯🇵 JP, Tokyo
-  - 14| JP_65
-  - 14|🇵 JP_66
-  - 20|US美国(mibei77.com 米贝节点分享) 18
-  - 20|JP日本(mibei77.com 米贝节点分享) 2
-  - 20|JP日本(mibei77.com 米贝节点分享) 3
-  - 20|JP日本(mibei77.com 米贝节点分享) 4
-  - 20|JP日本(mibei77.com 米贝节点分享) 5
   - 22|🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001...
   - '22|🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001... #1'
   - '22|🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001... #2'
   - '22|🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001... #3'
   - '22|🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001... #4'
-  - '22,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #3'
-  - 30,33|日本|@ripaojiedian
-  - 30,33|日本2|@ripaojiedian
-  - '30,33,36,38|JP_speednode_0009 #1'
-  - '0,1,28|🇰🇷_KR_韩国 #2'
-  - '0,1,28|🇰🇷_KR_韩国_1 #2'
-  - '0,1,28|🇰🇷_KR_韩国_2 #2'
-  - '0,1,28|🇰🇷_KR_韩国_3 #2'
-  - '0,1,28|🇰🇷_KR_韩国_4 #2'
-  - '0,1,28|🇰🇷_KR_韩国_5 #2'
+  - 22,30,33|JP2｜机房｜低风险
+  - '30,33,34|🇯🇵 日本|@ripaojiedian #1'
+  - '30,33,34|🇯🇵 日本2|@ripaojiedian #1'
+  - '30,33,34|🇯🇵 日本3|@ripaojiedian #1'
   - 2|🇰🇷 韩国-三网优化2-1C
   - 2|🇰🇷 IEPL专线 韩国 NO1
   - 2|🇰🇷 韩国-三网优化2-1B
@@ -9215,26 +8799,17 @@ proxy-groups:
   - 6|韩国 专线NO1
   - 6|韩国 专线NO2
   - 11|🇰🇷 KR, Incheon
-  - 14|🇷 KR_67
+  - 14|🇷 KR_64
   - 14,39|218.237.185.230_Claude
-  - 14|🇰🇷 KR_69
-  - 20|KR韩国(mibei77.com 米贝节点分享)
-  - 20|KR韩国(mibei77.com 米贝节点分享) 2
-  - 20|KR韩国(mibei77.com 米贝节点分享) 3
-  - 20|KR韩国(mibei77.com 米贝节点分享) 4
-  - 20|KR韩国(mibei77.com 米贝节点分享) 5
-  - 20|KR韩国(mibei77.com 米贝节点分享) 6
-  - 20|KR韩国(mibei77.com 米贝节点分享) 7
-  - 20|KR韩国(mibei77.com 米贝节点分享) 8
-  - 20|KR韩国(mibei77.com 米贝节点分享) 9
-  - 20|KR韩国(mibei77.com 米贝节点分享) 10
-  - 20|KR韩国(mibei77.com 米贝节点分享) 11
-  - 20|KR韩国(mibei77.com 米贝节点分享) 12
-  - 20|KR韩国(mibei77.com 米贝节点分享) 13
-  - 20|KR韩国(mibei77.com 米贝节点分享) 14
-  - 20|KR韩国(mibei77.com 米贝节点分享) 15
-  - 20|KR韩国(mibei77.com 米贝节点分享) 16
+  - 14|🇰🇷 KR_66
+  - 28|🇰🇷_KR_韩国
+  - 28|🇰🇷_KR_韩国_1
+  - 28|🇰🇷_KR_韩国_2
+  - 28|🇰🇷_KR_韩国_3
+  - 28|🇰🇷_KR_韩国_4
+  - 28|🇰🇷_KR_韩国_5
   - 31|韩国[01]
+  - 33|KR8｜机房｜低风险
   - 2|🇸🇬 新加坡NO.1
   - 2|🇸🇬 新加坡NO.2
   - 2|🇸🇬 IEPL专线 新加坡 NO1
@@ -9249,10 +8824,6 @@ proxy-groups:
   - 6|新加坡NO.1
   - 9|SG | 新加坡 LB-1A
   - 11|🇸🇬 SG, Singapore
-  - 14| SG_134
-  - 14|🇬 SG_135
-  - 20|SG新加坡(mibei77.com 米贝节点分享)
-  - 20|SG新加坡(mibei77.com 米贝节点分享) 2
   - 22|🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001...
   - '22|🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001... #1'
   - '22|🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001... #2'
@@ -9261,9 +8832,9 @@ proxy-groups:
   - '22|🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001... #5'
   - '22|🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001... #6'
   - 22|🔴🇸🇬_github.com/Ruk1ng001_932d6...
-  - '30,33,36,38|JP_speednode_0010 #1'
-  - 30,33|新加坡2|@ripaojiedian
-  - 30,33|新加坡3|@ripaojiedian
+  - '30,33,34|🇸🇬 新加坡|@ripaojiedian #1'
+  - '30,33,34|🇸🇬 新加坡2|@ripaojiedian #1'
+  - '30,33,34|🇸🇬 新加坡3|@ripaojiedian #1'
   - 31|新加坡[02]
   - 39|🇸🇬SG_1|2.4MB/s|GPT|YT-SG|NF|D+...
   - 2|🇩🇪 IEPL专线 德国 NO1
@@ -9275,45 +8846,48 @@ proxy-groups:
   - 14|🇪 DE_32
   - 14|🇪DE_33
   - 22|🔴🇩🇪[🎬📺🎪🎞️]_github.com/Ruk1ng00...
+  - 22|🔴🇩🇪[🎬🤖📺🎭]_github.com/Ruk1ng001...
   - 30|🇩🇪 VMESS-未知>德国-NF解锁印度地区非自制剧-Ch...
-  - 33|DE46｜机房｜低风险
-  - '33,36,38|DE_speednode_0002 #1'
+  - 33|DE1｜机房｜低风险
+  - 33|DE2｜机房｜低风险
+  - 33|DE3｜机房｜低风险
+  - 33|DE4｜机房｜低风险
+  - 33|DE5｜机房｜低风险
+  - 33|DE54｜机房｜低风险
   - 2|🇫🇷 法国1
   - 2|🇫🇷 CM 隧道 法国 NO1
   - 2|🇫🇷 法国2
   - 6|法国1
   - 6|法国2
   - 14| FR_35
-  - 14|🇫🇷 FR_36
-  - 14|🇫🇷 FR_37
-  - 14|🇷FR_38
-  - 14|🇷FR_39
-  - 14|🇫🇷FR_40
-  - 14|🇫🇷FR_41
-  - 20|FR法国(mibei77.com 米贝节点分享)
+  - 14|🇷FR_36
+  - 14|🇷FR_37
+  - 14|🇫🇷FR_38
+  - 14|🇫🇷FR_39
   - 22|🔴🇫🇷[🤖📺📦]_github.com/Ruk1ng001_...
   - 31|法国[01]
-  - 33|FR3｜机房｜低风险
-  - '33,36,38|FR_speednode_0006 #1'
   - 2|🇷🇺 莫斯科专线
   - 2|🇷🇺 IEPL专线 俄罗斯 NO1
   - 14| RU_131
-  - 14|🇺 RU_132
   - 18|俄罗斯+V2CROSS.COM
-  - 19|俄羅斯_6
+  - '33,36,38|RU_speednode_0019 #1'
   - 2|🇬🇧 伦敦专线
   - 2|🇬🇧 IEPL专线 英国 NO1
   - 6|英国2
   - 6|英国1
-  - 14| GB_42
-  - 14|🇧 GB_43
+  - 14| GB_40
+  - 14|🇧 GB_41
+  - 14|🇬🇧 GB_42
+  - 14|🇬🇧 GB_43
   - 14|🇧 GB_44
   - 14|🇬🇧 GB_45
-  - 14,18,30,33|DE74｜机房｜低风险
+  - 14,30,33|DE35｜机房｜低风险
   - 14|🇧 GB_47
   - 14|🇬🇧 GB_48
   - 14|🇬🇧GB_49
-  - 33|GB14｜机房｜低风险
+  - 20|GB英国(mibei77.com 米贝节点分享) 24
+  - '30|🇬🇧 GB英国(mibei77.com 米贝节点分享) #2'
+  - '30|🇬🇧 GB英国(mibei77.com 米贝节点分享) #17'
   - 2|🇸🇬 新加坡中转 02
   - 2|🇬🇧 英国中转 03
   - 2|🇭🇰 香港中转 02
@@ -9836,9 +9410,7 @@ proxy-groups:
   - 5|🇹🇼 No.742_TW_x1.00_AkileCloud_...
   - 6|台湾2
   - 6|台湾1
-  - '18,22|🔴🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #1'
-  - 18,22,33|HK63｜原生/疑似家宽｜非常安全
-  - 19|台灣
+  - 19,22|⚪🏳️[🎬✨]_github.com/Ruk1ng001_c...
   - 22|🔴🇹🇼[🤖📺🎭🎪]_github.com/Ruk1ng001...
   - 22|🔴🇹🇼[🎬🤖📺🎭]_github.com/Ruk1ng001...
   - '22|🔴🇹🇼[🎬🤖📺🎭]_github.com/Ruk1ng001... #1'
