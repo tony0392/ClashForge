@@ -32,12 +32,25 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
+- alterId: 2
+  cipher: auto
+  country: 🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14| HK_49
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  skip-cert-verify: true
+  type: vmess
+  uuid: 384d1b42-655f-11ed-a8bf-f23c91cfbbc9
+  ws-path: /
 - alterId: 0
   cipher: auto
   country: 🇰 HK
   h2-opts: {}
   http-opts: {}
-  name: 14| HK_47
+  name: 14|🇰 HK_51
   network: none
   port: 13852
   server: 45.207.157.29
@@ -45,28 +58,64 @@ proxies:
   type: vmess
   uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
   ws-path: /
+- alterId: 2
+  cipher: auto
+  name: 33|HK196｜家宽｜非常安全
+  network: ws
+  port: '80'
+  server: 65f41879-t70f40-t7n4ch-1rfon.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: aed1cc24-351d-11ef-ba52-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 33|HK197｜家宽｜非常安全
+  network: ws
+  port: '80'
+  server: hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: aed1cc24-351d-11ef-ba52-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: hkt.gotochinatown.net
+    path: /
 - cipher: aes-128-gcm
   name: 11|🇯🇵
   password: shadowsocks
   port: 443
   server: 149.22.87.240
   type: ss
-- name: 30,33,34,37|🇯🇵 日本2|@stairnode
-  password: 869e9086806483ca4744a4cb0f3d6e16
-  port: 4006
-  server: 160.16.130.21
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 30,33,34,37|🇯🇵 日本3|@stairnode
-  password: 869e9086806483ca4744a4cb0f3d6e16
-  port: 1933
-  server: 160.16.105.192
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
+- alterId: 0
+  cipher: auto
+  country: 🇵 JP
+  h2-opts: {}
+  http-opts: {}
+  name: 14| JP_61
+  network: ws
+  port: 443
+  server: seoul03.zgjok.com
+  servername: seoul03.zgjok.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 72a0dac4-9689-4a57-b164-5c65bfa94772
+  ws-headers:
+    HOST: seoul03.zgjok.com
+  ws-path: /
+- cipher: aes-256-cfb
+  country: 🇷 KR
+  name: 14|🇷 KR_62
+  password: qwerREWQ@@
+  port: 4652
+  server: 218.237.185.230
+  type: ss
 - country: 🇷 KR
-  name: 14|🇰🇷 KR_56
+  name: 14|🇰🇷 KR_64
   password: '!!str 0588'
   port: 50000
   server: 175.203.30.93
@@ -74,33 +123,25 @@ proxies:
   sni: 888.uskm.dpdns.org
   type: trojan
   udp: true
-- name: 30,33,34,37|🇸🇬 新加坡|@stairnode
-  password: 869e9086806483ca4744a4cb0f3d6e16
-  port: 544
-  server: 160.16.72.205
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 30,33,34,37|🇸🇬 新加坡2|@stairnode
-  password: 869e9086806483ca4744a4cb0f3d6e16
-  port: 3076
-  server: 160.16.124.17
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 36,38|SG_speednode_0070
-  password: 65e716e3d3ec1fc0
-  port: 24914
-  server: 84.247.147.61
-  type: ss
-  udp: true
+- alterId: 0
+  cipher: auto
+  country: 🇬 SG
+  h2-opts: {}
+  http-opts: {}
+  name: 14| SG_130
+  network: none
+  port: 43425
+  server: 8.210.248.133
+  skip-cert-verify: true
+  type: vmess
+  uuid: aa10afb0-f913-4343-9c69-bc797fcba2db
+  ws-path: /
 - alterId: 0
   cipher: auto
   country: 🇪 DE
   h2-opts: {}
   http-opts: {}
-  name: 14|🇪 DE_28
+  name: 14|🇪 DE_29
   network: none
   port: 18355
   server: 92.246.87.170
@@ -109,12 +150,20 @@ proxies:
   uuid: caf921c7-ac63-40bc-faa1-cda097fd7e42
   ws-path: /
 - country: 🇪DE
-  name: 14|🇪DE_31
+  name: 14|🇪DE_30
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
   server: 139.162.158.172
   skip-cert-verify: true
   sni: de2-full.privateip.net
+  type: trojan
+  udp: true
+- country: 🇷FR
+  name: 14|🇷FR_33
+  password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
+  port: 443
+  server: fr-full.privateip.net
+  skip-cert-verify: true
   type: trojan
   udp: true
 - country: 🇷FR
@@ -125,27 +174,19 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- country: 🇷FR
-  name: 14|🇷FR_35
-  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
+- country: 🇫🇷FR
+  name: 14|🇫🇷FR_35
+  password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
-  server: uk-full.privateip.net
+  server: de-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
 - country: 🇫🇷FR
   name: 14|🇫🇷FR_36
-  password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
+  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
-  server: fr-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇫🇷FR
-  name: 14|🇫🇷FR_37
-  password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
-  port: 443
-  server: de-full.privateip.net
+  server: uk-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
@@ -158,57 +199,79 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: 14| RU_109
+  name: 14| RU_129
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 45.159.250.190
   type: ss
 - cipher: aes-128-gcm
-  name: 36,38|RU_speednode_0045
-  password: tKko+YIAuuZ3d0hsPX2+D3NqepytG1Ha0VRLwBrf0Ak=
-  port: 8080
-  server: 5.129.219.21
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
   country: 🇧 GB
-  name: 14| GB_38
+  name: 14| GB_37
   password: shadowsocks
   port: 443
   server: 141.98.101.178
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 14|🇧 GB_38
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.199
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
   name: 14|🇧 GB_39
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
-  server: 82.38.31.214
+  server: 82.38.31.179
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧 GB
-  name: 14|🇬🇧 GB_41
+  name: 14|🇬🇧 GB_40
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
-  server: 82.38.31.179
+  server: 82.38.31.194
   type: ss
-- country: 🇬🇧 GB
-  name: 14|🇧 GB_43
-  password: 255a0a50-3f10-11f0-b0d6-1239d0255272
-  port: 443
-  server: 51.38.65.155
-  skip-cert-verify: true
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 14,36,38|GB_speednode_0019
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.208
+  type: ss
   udp: true
-- country: 🇬🇧 GB
-  name: 14|🇬🇧 GB_44
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 14|🇬🇧 GB_42
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.191
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 14|🇬🇧 GB_43
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.214
+  type: ss
+- country: 🇧 GB
+  name: 14|🇧 GB_45
   password: dd6dcb10-4683-11f0-ae79-1239d0255272
   port: 443
   server: 51.38.65.155
   skip-cert-verify: true
   type: trojan
   udp: true
+- country: 🇬🇧 GB
+  name: 14|🇧 GB_46
+  password: 255a0a50-3f10-11f0-b0d6-1239d0255272
+  port: 443
+  server: 51.38.65.155
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - country: 🇧GB
-  name: 14|🇬🇧GB_45
+  name: 14|🇬🇧GB_47
   password: 30761083-5dcd-49d6-85b5-33756ef1f7ed
   port: 443
   server: uk2-full.privateip.net
@@ -227,29 +290,33 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 14| HK_47
-  - 14|🇫🇷FR_37
   - 14|🇫🇷FR_36
-  - 14| GB_38
-  - 14|🇷FR_35
-  - 30,33,34,37|🇸🇬 新加坡|@stairnode
-  - 14|🇪DE_31
-  - 14|🇬🇧 GB_44
-  - 14|🇧 GB_43
-  - 14| RU_109
-  - 14|🇬🇧GB_45
-  - 30,33,34,37|🇯🇵 日本2|@stairnode
-  - 14|🇬🇧 GB_41
-  - 14|🇰🇷 KR_56
-  - 36,38|SG_speednode_0070
-  - 30,33,34,37|🇸🇬 新加坡2|@stairnode
-  - 36,38|FR_speednode_0016
-  - 36,38|RU_speednode_0045
+  - 14| JP_61
+  - 14,36,38|GB_speednode_0019
+  - 14|🇬🇧GB_47
+  - 33|HK196｜家宽｜非常安全
+  - 14|🇷FR_33
+  - 14| RU_129
+  - 33|HK197｜家宽｜非常安全
+  - 14|🇫🇷FR_35
+  - 14|🇰 HK_51
+  - 14|🇧 GB_45
   - 14|🇷FR_34
+  - 14|🇬🇧 GB_42
   - 14|🇧 GB_39
-  - 14|🇪 DE_28
-  - 30,33,34,37|🇯🇵 日本3|@stairnode
+  - 14| SG_130
+  - 14|🇪DE_30
+  - 14|🇪 DE_29
+  - 14|🇧 GB_46
+  - 14| GB_37
+  - 14|🇧 GB_38
+  - 14|🇰🇷 KR_64
+  - 14|🇬🇧 GB_40
+  - 14| HK_49
+  - 36,38|FR_speednode_0016
   - 11|🇯🇵
+  - 14|🇬🇧 GB_43
+  - 14|🇷 KR_62
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
