@@ -32,48 +32,63 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
+- alterId: 0
+  cipher: auto
+  country: 🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇰 HK_63
+  network: none
+  port: 13852
+  server: 45.207.157.29
+  skip-cert-verify: true
+  type: vmess
+  uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
+  ws-path: /
 - cipher: aes-128-gcm
   name: 11|🇯🇵
   password: shadowsocks
   port: 443
   server: 149.22.87.240
   type: ss
-- alterId: 0
-  cipher: auto
-  country: 🇵 JP
-  h2-opts: {}
-  http-opts: {}
-  name: 14| JP_72
-  network: ws
-  port: 443
-  server: seoul03.zgjok.com
-  servername: seoul03.zgjok.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 72a0dac4-9689-4a57-b164-5c65bfa94772
-  ws-headers:
-    HOST: seoul03.zgjok.com
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 18,33|VN10｜机房｜低风险
-  network: tcp
-  port: '58623'
-  server: 160.191.245.48
-  tls: false
-  type: vmess
-  uuid: 8d74803e-aa74-47ef-e3ae-23eeaa96f89d
+- cipher: aes-256-cfb
+  country: 🇷 KR
+  name: 14,39|218.237.185.230_Claude
+  password: qwerREWQ@@
+  port: 4652
+  server: p141.panda001.net
+  type: ss
 - country: 🇬SG
-  name: 14|SG_91
+  name: 14|SG_90
   password: d4bdfc72-7f0c-4ff0-aa4d-3530736f4088
   port: 443
   server: sg-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
+- country: 🇬SG
+  name: 14|🇬SG_91
+  password: c3d6d2e4-05a5-4a48-b91a-070b5e9fcdfb
+  port: 443
+  server: sg2-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  country: 🇪 DE
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇪 DE_34
+  network: none
+  port: 18355
+  server: 92.246.87.170
+  skip-cert-verify: true
+  type: vmess
+  uuid: caf921c7-ac63-40bc-faa1-cda097fd7e42
+  ws-path: /
 - country: 🇪DE
-  name: 14|🇪DE_32
+  name: 14|🇪DE_35
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
   server: 139.162.158.172
@@ -82,15 +97,7 @@ proxies:
   type: trojan
   udp: true
 - country: 🇷FR
-  name: 14|🇷FR_36
-  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
-  port: 443
-  server: 198.244.190.189
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇷FR
-  name: 14|🇷FR_37
+  name: 14|🇷FR_39
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
@@ -98,7 +105,7 @@ proxies:
   type: trojan
   udp: true
 - country: 🇫🇷FR
-  name: 14|🇫🇷FR_38
+  name: 14|🇷FR_40
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
@@ -106,7 +113,7 @@ proxies:
   type: trojan
   udp: true
 - country: 🇫🇷FR
-  name: 14|🇫🇷FR_39
+  name: 14|🇫🇷FR_41
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
@@ -115,105 +122,89 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: 14| RU_88
-  password: bSFMvNLHapp4ZrcGIXy9Vt
-  port: 43248
-  server: 5.181.2.73
+  name: 14|🇺 RU_88
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 45.159.250.190
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
-  name: 14| GB_40
+  name: 14|🇧 GB_43
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.218
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
-  name: 14|🇬🇧 GB_42
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.214
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 14|🇬🇧 GB_43
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.191
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
   name: 14|🇬🇧 GB_44
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.194
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 14|🇬🇧 GB_45
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.208
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 14|🇬🇧 GB_46
-  password: y3SowqUkrt1cbm487g74Ac
-  port: 443
-  server: 78.129.140.11
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 14|🇧 GB_47
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.82
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇬🇧 GB
-  name: 14|🇬🇧 GB_49
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 14|🇬🇧 GB_54
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 82.38.31.99
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧 GB
-  name: 14|🇬🇧 GB_55
+  name: 14|🇬🇧 GB_46
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.214
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 14|🇬🇧 GB_47
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.191
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 14|🇬🇧 GB_48
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.82
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 14|🇬🇧 GB_52
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.179
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 14|🇬🇧 GB_53
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.194
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇬🇧 GB
+  name: 14|🇬🇧 GB_54
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 14|🇧 GB_55
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.208
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 14|🇬🇧 GB_56
+  password: y3SowqUkrt1cbm487g74Ac
+  port: 443
+  server: 78.129.140.11
   type: ss
 - alterId: 0
   cipher: auto
   country: 🇧 GB
   h2-opts: {}
   http-opts: {}
-  name: 14,22,30,33|DE21｜机房｜高风险 (黑名单)
-  network: tcp
-  port: '180'
-  server: 82.198.246.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  ws-path: /
-  xudp: true
-- alterId: 0
-  cipher: auto
-  country: 🇧 GB
-  h2-opts: {}
-  http-opts: {}
-  name: 14,30|🇬🇧 英国 伦敦Virgin Media
+  name: 14|🇬🇧 GB_58
   network: none
-  port: '17310'
+  port: 17310
   server: 82.21.80.224
   skip-cert-verify: true
   tls: true
@@ -221,8 +212,8 @@ proxies:
   uuid: 656920dc-ed05-4f41-8c49-bdff41e383a9
   ws-path: /
 - country: 🇧 GB
-  name: 14|🇬🇧 GB_60
-  password: dd6dcb10-4683-11f0-ae79-1239d0255272
+  name: 14|🇧 GB_60
+  password: 255a0a50-3f10-11f0-b0d6-1239d0255272
   port: 443
   server: 51.38.65.155
   skip-cert-verify: true
@@ -230,7 +221,7 @@ proxies:
   udp: true
 - country: 🇬🇧 GB
   name: 14|🇬🇧 GB_61
-  password: 255a0a50-3f10-11f0-b0d6-1239d0255272
+  password: dd6dcb10-4683-11f0-ae79-1239d0255272
   port: 443
   server: 51.38.65.155
   skip-cert-verify: true
@@ -244,16 +235,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 20|GB英国(mibei77.com 米贝节点分享) 7
-  port: 180
-  server: 82.198.246.97
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 proxy-groups:
 - name: 节点选择
   type: select
@@ -266,32 +247,31 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 14|🇷FR_36
-  - 14|🇬🇧GB_62
-  - 14|🇬🇧 GB_43
-  - 14| GB_40
-  - 18,33|VN10｜机房｜低风险
-  - 14|🇧 GB_47
-  - 14|🇬🇧 GB_55
-  - 14|🇬🇧 GB_61
-  - 14,30|🇬🇧 英国 伦敦Virgin Media
-  - 14|🇬🇧 GB_42
   - 14|🇬🇧 GB_46
-  - 14| JP_72
-  - 14|🇬🇧 GB_44
-  - 14|SG_91
-  - 14|🇬🇧 GB_54
+  - 14|🇬🇧GB_62
   - 11|🇯🇵
-  - 14|🇪DE_32
-  - 14|🇬🇧 GB_49
-  - 20|GB英国(mibei77.com 米贝节点分享) 7
-  - 14|🇫🇷FR_39
-  - 14|🇬🇧 GB_45
-  - 14,22,30,33|DE21｜机房｜高风险 (黑名单)
-  - 14| RU_88
-  - 14|🇷FR_37
-  - 14|🇫🇷FR_38
-  - 14|🇬🇧 GB_60
+  - 14|🇬🇧 GB_56
+  - 14|🇷FR_40
+  - 14|🇧 GB_60
+  - 14|🇷FR_39
+  - 14|🇬🇧 GB_58
+  - 14|🇫🇷FR_41
+  - 14|🇬🇧 GB_61
+  - 14|🇰 HK_63
+  - 14|🇪DE_35
+  - 14|🇬SG_91
+  - 14|🇬🇧 GB_53
+  - 14|🇬🇧 GB_47
+  - 14|🇪 DE_34
+  - 14|🇬🇧 GB_54
+  - 14|🇬🇧 GB_52
+  - 14,39|218.237.185.230_Claude
+  - 14|🇧 GB_43
+  - 14|🇧 GB_55
+  - 14|SG_90
+  - 14|🇺 RU_88
+  - 14|🇬🇧 GB_44
+  - 14|🇬🇧 GB_48
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
