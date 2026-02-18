@@ -52,38 +52,6 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- client-fingerprint: chrome
-  name: 17|5-台湾-65ms
-  network: ws
-  password: 5a2c16f9
-  port: 8443
-  server: 103.137.63.227
-  skip-cert-verify: true
-  sni: 5c.hhhhh.eu.org
-  tfo: false
-  tls: true
-  type: trojan
-  udp: false
-  ws-opts:
-    headers:
-      host: 5c.hhhhh.eu.org
-    path: /103.137.63.227:8443
-- client-fingerprint: chrome
-  name: 17|6-台湾-212ms
-  network: ws
-  password: 5a2c16f9
-  port: 443
-  server: 223.165.4.57
-  skip-cert-verify: true
-  sni: 5c.hhhhh.eu.org
-  tfo: false
-  tls: true
-  type: trojan
-  udp: false
-  ws-opts:
-    headers:
-      host: 5c.hhhhh.eu.org
-    path: /223.165.4.57:443
 proxy-groups:
 - name: 节点选择
   type: select
@@ -96,11 +64,9 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 11|🇯🇵
-  - 17|6-台湾-212ms
-  - 17|5-台湾-65ms
   - 37|🇸🇬 新加坡|@stairnode
   - 30,33,34,37|🇸🇬 新加坡2|@stairnode
+  - 11|🇯🇵
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
