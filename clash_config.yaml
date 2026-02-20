@@ -40,7 +40,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 18,22,30,33|DE18｜机房｜高风险 (黑名单)
+  name: 18,22,30,33|DE37｜机房｜高风险 (黑名单)
   network: tcp
   port: '180'
   server: 82.198.246.97
@@ -72,9 +72,9 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
+  - 18,22,30,33|DE37｜机房｜高风险 (黑名单)
   - 20|GB英国(mibei77.com 米贝节点分享) 7
   - 11|🇯🇵
-  - 18,22,30,33|DE18｜机房｜高风险 (黑名单)
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
