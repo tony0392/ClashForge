@@ -38,13 +38,6 @@ proxies:
   port: 443
   server: 149.22.87.240
   type: ss
-- name: 30|🇯🇵 日本 东京Sakura樱花云数据中心
-  password: 64a59181551b5773e390bd717a7b7c06
-  port: 1281
-  server: 160.16.236.32
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
 - name: 33|FR19｜机房｜低风险
   network: ws
   password: humanity
@@ -55,6 +48,28 @@ proxies:
   type: trojan
   ws-opts:
     path: '%2Fassignment'
+- alterId: 0
+  cipher: auto
+  name: 18,22,33|DE51｜机房｜高风险 (黑名单)
+  network: tcp
+  port: '180'
+  server: 82.198.246.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: 20|GB英国(mibei77.com 米贝节点分享) 7
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 proxy-groups:
 - name: 节点选择
   type: select
@@ -67,9 +82,10 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 30|🇯🇵 日本 东京Sakura樱花云数据中心
   - 11|🇯🇵
+  - 18,22,33|DE51｜机房｜高风险 (黑名单)
   - 33|FR19｜机房｜低风险
+  - 20|GB英国(mibei77.com 米贝节点分享) 7
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
