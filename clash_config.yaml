@@ -34,376 +34,60 @@ dns:
 proxies:
 - alterId: 0
   cipher: auto
-  name: 39|JP_Chiyoda City_SAKURA Interne...
-  port: 32221
-  server: 153.121.73.175
-  type: vmess
-  uuid: b06054ae-f249-438e-998a-8e67bd8df653
-- alterId: 0
-  cipher: auto
-  name: 39|JP_Osaka_Oracle Corporation_Ge...
+  name: '33|B - 🇭🇰 HK 04 TG: @nodpai'
   network: ws
-  port: 25686
-  server: jp02.a0a.xyz
-  skip-cert-verify: false
-  tls: false
+  port: 443
+  server: n1761296878.4u9ma.icu
+  servername: n1761296878.4u9ma.icu
+  tls: true
   type: vmess
-  udp: true
-  uuid: 6733c357-ba11-4e9f-f00f-7d87f2776ff9
+  uuid: 78f61544-3393-4e6b-9c77-5deaa0c7471d
   ws-opts:
-    headers:
-      Host: jp02.a0a.xyz
-    path: /cctv13.m3u8
+    path: /
 - alterId: 0
   cipher: auto
-  name: 39|JP_Osaka_SAKURA Internet Inc._...
-  network: tcp
-  port: 49803
-  server: 153.121.73.175
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 36,38|HK_speednode_0065
+  network: http
+  port: 15079
+  server: 38.22.93.20
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: cd3dacbc-2b7b-4718-83ad-ab870f87e12e
-- cipher: aes-256-cfb
-  country: 🇷KR
-  name: 14|🇷KR_73
-  password: qwerREWQ@@
-  port: 6123
-  server: 211.178.105.134
-  type: ss
-- country: 🇷KR
-  name: 14|🇷KR_74
-  password: IL37892054
-  port: 443
-  server: select-marmoset.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇰🇷KR
-  name: 14|🇰🇷KR_75
-  password: ZY07256934
-  port: 443
-  server: glowing-deer.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇸SG
-  name: 14|SG_93
-  password: PWpjPo3tqhPN4yRZ
-  port: 20001
-  server: 8.209.74.72
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇺RU
-  name: 14|RU_86
-  password: Lp27rqyJq72bZsqX
-  port: 9045
-  server: 217.30.10.70
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺RU
-  name: 14|🇺RU_87
-  password: 9ca2803c16de72cd
-  port: 40412
-  server: 46.17.40.197
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇷🇺RU
-  name: 14|🇺RU_88
-  password: 9XwYyZsK8SNzQDtY
-  port: 9059
-  server: 217.30.10.70
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇷🇺RU
-  name: 14|🇷🇺RU_89
-  password: aLpQtfEZe445QyHk
-  port: 9098
-  server: 217.30.10.70
-  type: ss
-- country: 🇺RU
-  name: 14|🇷🇺RU_90
-  password: WF42809561
-  port: 443
-  server: nearby-muskrat.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 14| GB_11
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.205
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 14|🇧 GB_12
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.62
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 14|🇬🇧 GB_13
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.146
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 14|🇬🇧 GB_14
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.179
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 14|🇬🇧 GB_15
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.122
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 14,36,38|GB_speednode_0074
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.89
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 14|🇬🇧 GB_17
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.61
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 14|🇬🇧 GB_18
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.217
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 14|🇬🇧 GB_19
-  password: idMvoewrSyLLvEvP03k9zR
-  port: 46576
-  server: 138.68.153.223
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 14|🇬🇧 GB_20
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.69
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 14|🇬🇧 GB_21
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.210
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 14|🇬🇧 GB_22
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.202
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇧GB
-  name: 14|🇧GB_24
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.214
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
-  name: 14|🇬🇧GB_25
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 185.47.253.227
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
-  name: 14|🇧GB_26
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.103
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇧GB
-  name: 14|🇬🇧GB_27
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.148
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
-  name: 14|🇬🇧GB_28
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.124
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
-  name: 14|🇬🇧GB_29
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.66
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
-  name: 14|🇬🇧GB_31
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.176
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬GB
-  name: 14,35|🇬🇧GB_25_1@24
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.101
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
-  name: 14|🇬🇧GB_34
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.199
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
-  name: 14|🇬🇧GB_35
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.99
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
-  name: 14|🇬🇧GB_36
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.82
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇧GB
-  name: 14|🇬🇧GB_37
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.208
-  type: ss
-- country: 🇧GB
-  name: 14|🇬🇧GB_44
-  password: 3ac6a6ca99f74941b1eaf892818e2ddb
-  port: 443
-  server: 194.33.45.157
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇧GB
-  name: 14|🇧GB_45
-  password: IL37892054
-  port: 443
-  server: upright-rhino.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇬🇧GB
-  name: 14|🇧GB_46
-  password: 3ac6a6ca99f74941b1eaf892818e2ddb
-  port: 443
-  server: 85.237.207.189
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇬🇧GB
-  name: 14|🇬🇧GB_47
-  password: 3ac6a6ca99f74941b1eaf892818e2ddb
-  port: 443
-  server: 77.247.126.137
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇬🇧GB
-  name: 14|🇬🇧GB_48
-  password: WF42809561
-  port: 443
-  server: touching-pigeon.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 18|英国+伦敦Virgin+Media
-  password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-  port: 10369
-  server: 82.26.155.105
-  skip-cert-verify: true
-  sni: fra32.chasem2026sud.com
-  type: trojan
-- name: 18,37|🇬🇧 英国 伦敦Virgin Media 3
+  uuid: 66e12acd-4f93-4e35-e229-5f93e2f379e1
+- alterId: 0
+  cipher: auto
+  name: '30,33|B - 🇺🇸 US 05 TG: @nodpai'
+  network: tcp
+  port: 180
+  server: 82.198.246.214
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- name: 30|🇬🇧 英国 伦敦Virgin Media 2
   password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
   port: 10369
   server: 82.26.155.121
   skip-cert-verify: true
   sni: fra33.chasem2026sud.com
-  tfo: false
   type: trojan
-- name: 30,37|🇬🇧 英国 伦敦Virgin Media 4
+- name: 30|🇬🇧 英国 伦敦Virgin Media 3
   password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
   port: 10369
-  server: 82.26.155.237
+  server: 82.26.155.199
   skip-cert-verify: true
-  sni: fra5.chasem2026sud.com
-  tfo: false
+  sni: fra4.chasem2026sud.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 37|🇬🇧 英国 社会保险安全部 2
-  password: W74XFALLLuw6m5IA
-  port: 443
-  server: admin.c1.webramz.co
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 37|🇬🇧 英国 社会保险安全部 3
-  password: W74XFALLLuw6m5IA
-  port: 443
-  server: series-a2.samanehha.co
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇼 TW
-  name: 14| TW_95
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  port: 50099
-  server: 61.231.19.71
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇹🇼TW
-  name: 14|🇹🇼TW_97
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  port: 50099
-  server: nbmrcg0034686rw.cybervena.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇹🇼TW
-  name: 14|🇹🇼TW_100
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  port: 50099
-  server: r3mrcg001286ek2.cybervena.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇹🇼TW
-  name: 14,39|TW_New Taipei City_Chunghwa Te...
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  port: 50099
-  server: r3mrcg00129437x.cybervena.com
+  country: 🇬GB
+  name: 35|🇬🇧GB_25_1@24
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.101
   type: ss
 proxy-groups:
 - name: 节点选择
@@ -417,56 +101,12 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 14| TW_95
-  - 14|🇷🇺RU_90
-  - 14|🇺RU_88
-  - 14|🇷🇺RU_89
-  - 14|🇬🇧GB_36
-  - 14|SG_93
-  - 14|🇬🇧 GB_15
-  - 14|🇬🇧GB_34
-  - 14|🇬🇧GB_47
-  - 14|🇬🇧 GB_20
-  - 14|🇬🇧 GB_22
-  - 14|🇬🇧GB_28
-  - 14|🇺RU_87
-  - 14|🇬🇧 GB_19
-  - 14| GB_11
-  - 14|🇬🇧GB_27
-  - 14|🇬🇧 GB_17
-  - 14,36,38|GB_speednode_0074
-  - 14|🇧GB_26
-  - 14,39|TW_New Taipei City_Chunghwa Te...
-  - 39|JP_Osaka_SAKURA Internet Inc._...
-  - 14|🇬🇧GB_29
-  - 14|🇬🇧 GB_14
-  - 14|🇹🇼TW_100
-  - 39|JP_Chiyoda City_SAKURA Interne...
-  - 14|🇬🇧GB_25
-  - 14|🇬🇧GB_37
-  - 14|🇷KR_73
-  - 14|🇬🇧GB_31
-  - 14|🇰🇷KR_75
-  - 14|🇬🇧GB_35
-  - 14|RU_86
-  - 14|🇬🇧 GB_13
-  - 39|JP_Osaka_Oracle Corporation_Ge...
-  - 18,37|🇬🇧 英国 伦敦Virgin Media 3
-  - 14|🇷KR_74
-  - 37|🇬🇧 英国 社会保险安全部 3
-  - 14|🇬🇧GB_48
-  - 14,35|🇬🇧GB_25_1@24
-  - 18|英国+伦敦Virgin+Media
-  - 14|🇬🇧 GB_21
-  - 14|🇧 GB_12
-  - 37|🇬🇧 英国 社会保险安全部 2
-  - 14|🇹🇼TW_97
-  - 14|🇬🇧 GB_18
-  - 14|🇧GB_45
-  - 14|🇧GB_46
-  - 30,37|🇬🇧 英国 伦敦Virgin Media 4
-  - 14|🇧GB_24
-  - 14|🇬🇧GB_44
+  - 30|🇬🇧 英国 伦敦Virgin Media 3
+  - 36,38|HK_speednode_0065
+  - '33|B - 🇭🇰 HK 04 TG: @nodpai'
+  - 35|🇬🇧GB_25_1@24
+  - 30|🇬🇧 英国 伦敦Virgin Media 2
+  - '30,33|B - 🇺🇸 US 05 TG: @nodpai'
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
