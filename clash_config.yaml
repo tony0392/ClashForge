@@ -32,54 +32,38 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- alterId: 2
-  cipher: auto
-  name: 30,33|香港|@ripaojiedian
-  network: tcp
-  port: '30807'
-  server: v10.hdacd.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 2
-  cipher: auto
-  name: 34,35|v10.hdacd.com
-  port: 30807
-  server: v10.hdacd.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '33|A - 🇩🇪 DE 03 TG: @nodpai'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 2096
-  server: 172.64.152.23
-  skip-cert-verify: false
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /tr
 - alterId: 0
   cipher: auto
-  name: 30,33|美国4|@ripaojiedian
+  name: 22,30|🇰🇷 KR韩国(mibei77.com 米贝节点分享)
+  network: ws
+  port: '80'
+  server: kr02.a0a.xyz
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  ws-opts:
+    headers:
+      Host: kr02.a0a.xyz
+    path: /cctv13.m3u8
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: 18,30,33|美国5|@ripaojiedian
   network: tcp
   port: '180'
-  server: 82.198.246.250
+  server: 82.198.246.233
   servername: ''
   tls: false
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
-  name: '30,33|B - 🇺🇸 US 29 TG: @nodpai'
+  name: '18,30,33|B - 🇺🇸 US 40 TG: @nodpai'
   network: tcp
   port: 180
   server: 82.198.246.214
-  servername: ''
   tls: false
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
@@ -91,19 +75,17 @@ proxies:
   server: 82.38.31.101
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 37|🇬🇧 英国 社会保险安全部
-  password: W74XFALLLuw6m5IA
-  port: 443
-  server: 51.104.19.242
-  tfo: false
+  name: 22,36,38|TW_speednode_0013
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: 403880e.default.epicgames.com:164892
+    mode: tls
+    tls: false
+  port: 2377
+  server: 403880e.k4.gladns.com
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 37|🇬🇧 英国 伦敦Microsoft公司 2
-  password: W74XFALLLuw6m5IA
-  port: 443
-  server: series-a2.samanehha.co
-  tfo: false
-  type: ss
+  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -116,14 +98,11 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 30,33|香港|@ripaojiedian
+  - 22,30|🇰🇷 KR韩国(mibei77.com 米贝节点分享)
+  - 22,36,38|TW_speednode_0013
+  - '18,30,33|B - 🇺🇸 US 40 TG: @nodpai'
   - 35|🇬🇧GB_25_1@24
-  - '33|A - 🇩🇪 DE 03 TG: @nodpai'
-  - '30,33|B - 🇺🇸 US 29 TG: @nodpai'
-  - 37|🇬🇧 英国 伦敦Microsoft公司 2
-  - 37|🇬🇧 英国 社会保险安全部
-  - 34,35|v10.hdacd.com
-  - 30,33|美国4|@ripaojiedian
+  - 18,30,33|美国5|@ripaojiedian
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
