@@ -32,22 +32,13 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: 22,36,38|HK_speednode_0009
-  network: http
-  port: 56972
-  server: 154.37.223.19
+- name: 30|🇩🇪 德国 starcorenode.com
+  password: qDVh0NalwefxyZlHh3Ni2JSlhErcuC3Wiq
+  port: 443
+  server: 91.233.8.138
   skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ae225455-5e8c-491d-d931-c06ac56f4aee
+  sni: www.homelywebs.click
+  type: trojan
 - name: 22,28|🇺🇸_US_美国->_FR_国
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 45619
@@ -57,33 +48,16 @@ proxies:
   tls: false
   type: trojan
   udp: true
-- alterId: 0
+- alterId: 2
   cipher: auto
-  name: 18,22,30,39|US_Los Angeles_Datacamp Limite...
-  network: tcp
-  port: 180
-  server: 82.198.246.214
-  servername: ''
+  name: 27,35|v9.hdacd.com
+  port: 30809
+  server: v9.hdacd.com
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  xudp: true
-- cipher: chacha20-ietf-poly1305
-  name: 22,36,38|TW_speednode_0053
-  password: 7b56aeaa-8e2d-4bdf-b1d7-233ecca15f56
-  port: 50099
-  server: namrcg001640lrm.cybervena.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 22,36,38|TW_speednode_0054
-  password: a9a0d092-6f0e-4701-81ee-454643d6d506
-  port: 50099
-  server: namrcg001640lrm.cybervena.com
-  type: ss
-  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 proxy-groups:
 - name: 节点选择
   type: select
@@ -96,11 +70,9 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
+  - 27,35|v9.hdacd.com
   - 22,28|🇺🇸_US_美国->_FR_国
-  - 22,36,38|TW_speednode_0053
-  - 18,22,30,39|US_Los Angeles_Datacamp Limite...
-  - 22,36,38|HK_speednode_0009
-  - 22,36,38|TW_speednode_0054
+  - 30|🇩🇪 德国 starcorenode.com
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
