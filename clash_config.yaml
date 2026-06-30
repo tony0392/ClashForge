@@ -32,7 +32,42 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- name: 26|日本 019
+- cipher: aes-256-cfb
+  country: 🇰HK
+  name: 14|🇰HK_45
+  password: qwerREWQ@@
+  port: 41632
+  server: 112.213.102.188
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇰HK
+  name: 14|🇰HK_46
+  password: yKVMoB3AwiTEznpnoq2FYR
+  port: 28687
+  server: 193.47.60.186
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇵JP
+  h2-opts: {}
+  http-opts: {}
+  name: 14,26|日本 052
+  network: tcp
+  port: 22324
+  server: 172.104.80.66
+  skip-cert-verify: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  ws-path: /
+- country: 🇵JP
+  name: 14|🇵JP_58
+  password: IL37892054
+  port: 443
+  server: engaging-toucan.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 26|日本 022
   network: ws
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
   port: 443
@@ -45,7 +80,15 @@ proxies:
       Host: tjsp.hhxaf.cc.cd
     path: /
 - client-fingerprint: chrome
-  name: 26|日本 021
+  name: 26|日本 023
+  network: tcp
+  password: T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf
+  port: 443
+  server: 103.125.216.68
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 26|日本 024
   network: ws
   password: humanity
   port: 443
@@ -59,23 +102,17 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/62.0.3202.89 Safari/537.36
     path: /assignment
-- name: 26|日本 023
-  network: ws
-  password: Mitivpn
+- client-fingerprint: chrome
+  name: 26|日本 025
+  network: tcp
+  password: T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf
   port: 443
-  server: 151.101.110.219
-  skip-cert-verify: true
-  sni: ssl.fastly.com
-  tls: true
+  server: 103.125.216.18
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: 3-mitivpn.global.ssl.fastly.net
-    path: /de=mitivpn
 - alterId: 0
   cipher: auto
-  name: 26|日本 048
+  name: 26|日本 050
   network: tcp
   port: 8888
   server: 146.56.112.110
@@ -84,34 +121,36 @@ proxies:
   uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
 - alterId: 0
   cipher: auto
-  name: 26|日本 050
-  network: tcp
-  port: 22324
-  server: 172.104.80.66
-  skip-cert-verify: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- alterId: 0
-  cipher: auto
-  name: 26|日本 066
+  name: 26|日本 068
   network: tcp
   port: 49803
   server: 153.121.73.175
   skip-cert-verify: true
   type: vmess
   uuid: cd3dacbc-2b7b-4718-83ad-ab870f87e12e
-- cipher: aes-128-gcm
-  name: 39|JP_Tokyo_Datacamp Limited_Clau...
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.241
+- cipher: aes-256-cfb
+  country: 🇰🇷KR
+  name: 14|🇷KR_60
+  password: qwerREWQ@@
+  port: 4652
+  server: p141.panda001.net
   type: ss
-- cipher: aes-128-gcm
-  name: 39|JP_Tokyo_Datacamp Limited_Gemi...
-  password: shadowsocks
+- country: 🇷KR
+  name: 14|🇷KR_61
+  password: ZY07256934
   port: 443
-  server: 149.22.87.240
-  type: ss
+  server: glowing-deer.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇰🇷KR
+  name: 14|🇷KR_62
+  password: IL37892054
+  port: 443
+  server: select-marmoset.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - name: 26|韩国 003
   network: ws
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
@@ -157,6 +196,37 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: 41a7089a-040b-4538-8b8d-010902405bde
+- cipher: chacha20-ietf-poly1305
+  country: 🇬SG
+  name: 14|SG_70
+  password: PWpjPo3tqhPN4yRZ
+  port: 20001
+  server: 8.209.74.72
+  type: ss
+- country: 🇬SG
+  name: 14|🇬SG_71
+  password: d30ab83dbde4480082048fb315bedebd
+  port: 443
+  server: 5.180.78.22
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 26|德国 002
+  network: tcp
+  password: urhj8z8R8nBovrNsYzXhL35jLGC5ruguRh
+  port: 443
+  server: 92.119.35.85
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 26|德国 008
+  network: tcp
+  password: urhj8z8R8nBovrNsYzXhL35jLGC5ruguRh
+  port: 443
+  server: 92.119.35.87
+  type: trojan
+  udp: true
 - name: 26,36,38|AE_speednode_0001
   network: ws
   password: MITIVPN
@@ -170,6 +240,184 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Usa
+- country: 🇺RU
+  name: 14|RU_68
+  password: WF42809561
+  port: 443
+  server: nearby-muskrat.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇺RU
+  name: 14|🇺RU_69
+  password: '!!str 1234567890'
+  port: 443
+  server: 194.87.77.91
+  skip-cert-verify: true
+  sni: kfm-bn0.pages.dev
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 26|俄罗斯 076
+  network: tcp
+  port: 22324
+  server: 5.188.190.252
+  skip-cert-verify: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 14| GB_11
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.191
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 14|🇬🇧 GB_13
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.210
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 14|🇬🇧 GB_14
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.205
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 14|🇬🇧 GB_15
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.202
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_18
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.2
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_19
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.219
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧GB
+  name: 14|🇬🇧GB_20
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.208
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇬🇧GB
+  name: 14|🇧GB_22
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_23
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.181
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇬🇧GB
+  name: 14,39|GB_Stretford_M247 Europe SRL_C...
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.179
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_26
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.149
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_29
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.192
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_31
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.199
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇬🇧GB
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇧GB_35
+  network: tcp
+  port: 180
+  server: 82.198.246.233
+  skip-cert-verify: true
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  ws-path: /
+- country: 🇧GB
+  name: 14|🇬🇧GB_39
+  password: IL37892054
+  port: 443
+  server: upright-rhino.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇧GB
+  name: 14|🇧GB_40
+  password: 3ac6a6ca99f74941b1eaf892818e2ddb
+  port: 443
+  server: 194.33.45.157
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇬🇧GB
+  name: 14|🇧GB_41
+  password: 3ac6a6ca99f74941b1eaf892818e2ddb
+  port: 443
+  server: 77.247.126.137
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇬🇧GB
+  name: 14|🇬🇧GB_42
+  password: 3ac6a6ca99f74941b1eaf892818e2ddb
+  port: 443
+  server: 85.237.207.189
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇬🇧GB
+  name: 14|🇬🇧GB_43
+  password: t1k169n5zmvvwn96r9ft
+  port: 57452
+  server: 146.70.90.197
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇬🇧GB
+  name: 14|🇬🇧GB_44
+  password: WF42809561
+  port: 443
+  server: touching-pigeon.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - name: 26,36,38|GB_speednode_0005
   network: ws
   password: MITIVPN
@@ -184,26 +432,13 @@ proxies:
       Host: 95r.ir
     path: /MiTiVPN=De
 - client-fingerprint: chrome
-  name: 26|英国 004
-  network: ws
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  name: 26|英国 002
+  network: tcp
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
-  server: 213.35.127.18
-  sni: hhcm.hhxaf.cc.cd
+  server: 185.137.157.140
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: hhcm.hhxaf.cc.cd
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.77 Safari/537.36
-    path: /
-- cipher: aes-128-gcm
-  name: 39|GB_Stretford_M247 Europe SRL_C...
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.179
-  type: ss
 proxy-groups:
 - name: 节点选择
   type: select
@@ -216,22 +451,53 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 26,36,38|AE_speednode_0001
-  - 26|韩国 003
-  - 26|韩国 004
-  - 39|GB_Stretford_M247 Europe SRL_C...
-  - 26|日本 050
-  - 26|英国 004
-  - 39|JP_Tokyo_Datacamp Limited_Gemi...
-  - 26|日本 019
-  - 26|日本 021
-  - 39|JP_Tokyo_Datacamp Limited_Clau...
-  - 26|日本 048
-  - 26|日本 066
-  - 26|韩国 018
-  - 26,36,38|GB_speednode_0005
+  - 14|🇬🇧GB_20
   - 26|韩国 005
+  - 14|🇷KR_61
+  - 26|日本 025
+  - 14|🇬🇧GB_19
+  - 26|韩国 004
+  - 14|🇬🇧GB_39
+  - 14|🇬🇧GB_43
+  - 26|德国 008
+  - 26|日本 022
+  - 14|🇷KR_60
+  - 26|德国 002
+  - 14|🇬SG_71
+  - 14|🇬🇧 GB_14
+  - 26|英国 002
+  - 14|🇬🇧GB_26
+  - 14|🇬🇧GB_31
+  - 26|韩国 003
+  - 14|🇬🇧GB_44
+  - 14|🇺RU_69
+  - 14|🇰HK_45
+  - 14| GB_11
+  - 14|🇵JP_58
+  - 26|日本 068
+  - 14|🇷KR_62
+  - 26|俄罗斯 076
+  - 14|🇰HK_46
+  - 14|SG_70
+  - 26,36,38|AE_speednode_0001
+  - 14|RU_68
   - 26|日本 023
+  - 26|日本 050
+  - 14|🇬🇧 GB_13
+  - 26|日本 024
+  - 14,39|GB_Stretford_M247 Europe SRL_C...
+  - 14,26|日本 052
+  - 26|韩国 018
+  - 14|🇬🇧GB_29
+  - 14|🇧GB_35
+  - 14|🇬🇧GB_42
+  - 26,36,38|GB_speednode_0005
+  - 14|🇧GB_22
+  - 14|🇬🇧 GB_15
+  - 14|🇧GB_40
+  - 14|🇧GB_41
+  - 14|🇬🇧GB_18
+  - 14|🇬🇧GB_23
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
