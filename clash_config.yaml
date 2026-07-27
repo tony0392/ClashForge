@@ -41,53 +41,18 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- cipher: aes-256-cfb
-  country: 🇷KR
-  name: 14|🇷KR_71
-  password: qwerREWQ@@
-  port: 6123
-  server: 211.178.105.134
+- cipher: aes-128-gcm
+  name: 39|JP_Tokyo_Datacamp Limited_Clau...
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.241
   type: ss
-- country: 🇷KR
-  name: 14|🇰🇷KR_73
-  password: ZY07256934
+- cipher: aes-128-gcm
+  name: 39|JP_Tokyo_Datacamp Limited_Gemi...
+  password: shadowsocks
   port: 443
-  server: glowing-deer.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇷KR
-  name: 14|🇷KR_74
-  password: IL37892054
-  port: 443
-  server: select-marmoset.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇬SG
-  name: 14|SG_85
-  password: IQ68037294
-  port: 443
-  server: fun-salmon.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇬SG
-  name: 14|🇬SG_86
-  password: IQ68037294
-  port: 443
-  server: fair-reptile.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇬SG
-  name: 14|🇸🇬SG_87
-  password: XG59623478
-  port: 443
-  server: tough-shark.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
+  server: 149.22.87.240
+  type: ss
 - name: 20|SG(mibei77.com 米贝节点分享)
   password: IQ68037294
   port: 443
@@ -196,22 +161,6 @@ proxies:
   tls: false
   type: trojan
   udp: true
-- country: 🇪DE
-  name: 14|DE_11
-  password: CF68213490
-  port: 443
-  server: harmless-lab.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇩🇪DE
-  name: 14|🇩🇪DE_12
-  password: XG59623478
-  port: 443
-  server: enabling-asp.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - name: 20|DE德国(mibei77.com 米贝节点分享)_7
   password: IQ68037294
   port: 443
@@ -219,22 +168,6 @@ proxies:
   skip-cert-verify: true
   sni: enabling-gobbler.rooster465.autos
   tls: true
-  type: trojan
-  udp: true
-- country: 🇷FR
-  name: 14|FR_20
-  password: NQ26071394
-  port: 443
-  server: ready-kangaroo.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇷FR
-  name: 14|🇷FR_21
-  password: NQ26071394
-  port: 443
-  server: chief-cricket.rooster465.autos
-  skip-cert-verify: true
   type: trojan
   udp: true
 - name: 20|FR法国(mibei77.com 米贝节点分享)_10
@@ -246,189 +179,43 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- country: 🇷RU
-  name: 14|RU_83
-  password: IQ68037294
-  port: 443
-  server: square-anchovy.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇷RU
-  name: 14|🇷RU_84
-  password: '!!str 1234567890'
-  port: 443
-  server: 194.87.77.91
-  skip-cert-verify: true
-  sni: kfm-bn0.pages.dev
-  type: trojan
-  udp: true
-- name: 26|俄罗斯 001
+- alterId: 0
+  name: 26|法国 002
   network: tcp
-  password: JT80563429
+  password: NQ26071394
   port: 443
-  server: inspired-hound.rooster465.autos
-  skip-cert-verify: false
-  sni: inspired-hound.rooster465.autos
+  server: 35.181.65.111
+  skip-cert-verify: true
+  sni: ready-kangaroo.rooster465.autos
+  tls: true
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 14| GB_22
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.155
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 14|🇧 GB_23
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.210
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 14|🇬🇧 GB_25
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.202
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 14|🇬🇧 GB_26
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.189
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
-  name: 14|🇬🇧GB_30
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.49
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 26|英国 005
+  network: ws
+  port: 2086
+  server: 85.113.71.85
+  skip-cert-verify: true
+  type: vmess
+  uuid: ba58ca0c-0411-444e-80f7-e361ce49012d
+  ws-opts:
+    headers:
+      Host: www.bing.com
+    path: ba58ca0c-0411-444e-80f7-e361ce49012d-vm
 - cipher: aes-128-gcm
-  country: 🇬🇧GB
-  name: 14|🇬🇧GB_31
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
-  name: 14|🇧GB_32
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.34
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
-  name: 14|🇬🇧GB_34
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.10
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
-  name: 14|🇬🇧GB_35
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.149
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇬🇧GB
-  name: 14|🇬🇧GB_36
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.181
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
-  name: 14|🇬🇧GB_37
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.46
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
-  name: 14|🇬🇧GB_38
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.2
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇧GB
-  name: 14|🇬🇧GB_40
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.48
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
-  name: 14|🇬🇧GB_42
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.174
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
-  name: 14|🇬🇧GB_43
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 443
-  server: 82.38.31.57
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
-  name: 14|🇬🇧GB_47
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.176
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇬🇧GB
-  name: 14,39|GB_Stretford_M247 Europe SRL_C...
+  name: 39|GB_Stretford_M247 Europe SRL_C...
   password: shadowsocks
   port: 443
   server: 141.98.101.179
   type: ss
-- alterId: 0
-  cipher: auto
-  country: 🇬🇧GB
-  h2-opts: {}
-  http-opts: {}
-  name: 14,26,30|英國
-  network: tcp
-  port: 180
-  server: 82.198.246.37
-  servername: ''
+- cipher: chacha20-ietf-poly1305
+  name: 19|省台市丨yoyapai.com
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  port: 50099
+  server: r3mrcg001286ek2.cybervena.com
   skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  ws-path: /
-- country: 🇧GB
-  name: 14|🇬🇧GB_53
-  password: PD07395842
-  port: 443
-  server: pro-crane.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇬🇧GB
-  name: 14|🇧GB_54
-  password: WF42809561
-  port: 443
-  server: touching-pigeon.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇧GB
-  name: 14|🇬🇧GB_55
-  password: 3ac6a6ca99f74941b1eaf892818e2ddb
-  port: 443
-  server: 85.237.207.189
-  skip-cert-verify: true
-  type: trojan
+  type: ss
   udp: true
 proxy-groups:
 - name: 节点选择
@@ -442,55 +229,27 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 14|🇧GB_54
-  - 14|🇧GB_32
-  - 14|🇬SG_86
-  - 14|🇷RU_84
-  - 14|🇩🇪DE_12
-  - 14|🇬🇧GB_36
-  - 14|🇬🇧GB_34
-  - 14,39|GB_Stretford_M247 Europe SRL_C...
-  - 14|🇬🇧GB_30
-  - 14|🇬🇧GB_55
-  - 20|JP日本(mibei77.com 米贝节点分享)_3
-  - 14|🇬🇧GB_37
-  - 20|SG新加坡(mibei77.com 米贝节点分享)_5
-  - 14|DE_11
-  - 14|🇬🇧GB_40
-  - 14|🇬🇧GB_53
-  - 14|🇬🇧 GB_25
-  - 20|SG新加坡(mibei77.com 米贝节点分享)_3
-  - 14|🇷KR_74
-  - 14|🇬🇧 GB_26
-  - 14|🇷FR_21
-  - 14|🇬🇧GB_43
-  - 14| GB_22
-  - 20|FR法国(mibei77.com 米贝节点分享)_10
-  - 20|SG新加坡(mibei77.com 米贝节点分享)_2
-  - 14|🇬🇧GB_47
-  - 14|FR_20
-  - 14|🇬🇧GB_42
-  - 14|🇬🇧GB_35
-  - 14|🇷KR_71
-  - 20|SG新加坡(mibei77.com 米贝节点分享)_10
   - 20|SG新加坡(mibei77.com 米贝节点分享)_1
-  - 14|🇰🇷KR_73
-  - 14|SG_85
-  - 14|🇬🇧GB_38
-  - 14|🇬🇧GB_31
-  - 14|🇸🇬SG_87
-  - 20|DE德国(mibei77.com 米贝节点分享)_7
-  - 20|SG新加坡(mibei77.com 米贝节点分享)_9
-  - 26|俄罗斯 001
-  - 14|RU_83
-  - 14|🇧 GB_23
-  - 20|SG新加坡(mibei77.com 米贝节点分享)_7
+  - 26|英国 005
+  - 20|JP日本(mibei77.com 米贝节点分享)_3
+  - 19|省台市丨yoyapai.com
+  - 39|GB_Stretford_M247 Europe SRL_C...
+  - 20|SG新加坡(mibei77.com 米贝节点分享)_5
+  - 20|SG新加坡(mibei77.com 米贝节点分享)_2
+  - 20|SG新加坡(mibei77.com 米贝节点分享)_3
   - 20|SG新加坡(mibei77.com 米贝节点分享)_8
+  - 20|SG新加坡(mibei77.com 米贝节点分享)_4
+  - 26|法国 002
+  - 20|DE德国(mibei77.com 米贝节点分享)_7
+  - 20|SG新加坡(mibei77.com 米贝节点分享)_10
   - 20|SG新加坡(mibei77.com 米贝节点分享)_6
   - 28|🇬_SG_新加坡_1
+  - 39|JP_Tokyo_Datacamp Limited_Gemi...
   - 20|SG(mibei77.com 米贝节点分享)
-  - 20|SG新加坡(mibei77.com 米贝节点分享)_4
-  - 14,26,30|英國
+  - 20|SG新加坡(mibei77.com 米贝节点分享)_9
+  - 39|JP_Tokyo_Datacamp Limited_Clau...
+  - 20|FR法国(mibei77.com 米贝节点分享)_10
+  - 20|SG新加坡(mibei77.com 米贝节点分享)_7
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
