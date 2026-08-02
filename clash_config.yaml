@@ -32,56 +32,398 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- cipher: aes-128-gcm
-  name: 39|JP_Tokyo_Datacamp Limited_Clau...
-  password: shadowsocks
+- cipher: aes-256-gcm
+  country: 🇵JP
+  name: 14|JP_86
+  password: TEzjfAYq2IjtuoS
+  port: 6679
+  server: 141.164.45.187
+  type: ss
+- country: 🇵JP
+  name: 14|🇵JP_87
+  password: CF68213490
   port: 443
-  server: 149.22.87.241
-  type: ss
-- cipher: aes-128-gcm
-  name: 39|JP_Tokyo_Datacamp Limited_Gemi...
-  password: shadowsocks
+  server: rested-osprey.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇵JP
+  name: 14|🇯🇵JP_89
+  password: IL37892054
   port: 443
-  server: 149.22.87.240
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 38|DE_speednode_0008
-  password: OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=
-  port: 59924
-  server: 130.61.33.205
-  type: ss
+  server: engaging-toucan.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇵JP
+  name: 14|🇵JP_90
+  password: d050aca3-9df2-4461-90ec-92373c1d7636
+  port: 44184
+  server: v2jp.k1.ssnss.live
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇯🇵JP
+  name: 14|🇵JP_91
+  password: NQ26071394
+  port: 443
+  server: one-dove.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇵JP
+  name: 14|🇵JP_92
+  password: NQ26071394
+  port: 443
+  server: worthy-labrador.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇵JP
+  name: 14|🇯🇵JP_93
+  password: NQ26071394
+  port: 443
+  server: grateful-crawdad.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇵JP
+  name: 14|🇯🇵JP_94
+  password: NQ26071394
+  port: 443
+  server: innocent-mullet.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇵JP
+  name: 14|🇯🇵JP_95
+  password: NQ26071394
+  port: 443
+  server: elegant-marten.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇯🇵JP
+  name: 14|🇯🇵JP_96
+  password: NQ26071394
+  port: 443
+  server: sure-husky.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇵JP
+  name: 14|🇯🇵JP_98
+  password: NQ26071394
+  port: 443
+  server: legible-ram.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇯🇵JP
+  name: 14|🇯🇵JP_100
+  password: NQ26071394
+  port: 443
+  server: real-ewe.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇯🇵JP
+  name: 14|🇯🇵JP_102
+  password: NQ26071394
+  port: 443
+  server: fit-marten.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇵JP
+  name: 14|🇯🇵JP_104
+  password: NQ26071394
+  port: 443
+  server: flexible-gannet.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇵JP
+  name: 14|🇯🇵JP_106
+  password: NQ26071394
+  port: 443
+  server: grand-grub.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇯🇵JP
+  name: 14|🇯🇵JP_108
+  password: NQ26071394
+  port: 443
+  server: inviting-rabbit.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇯🇵JP
+  name: 14|🇯🇵JP_111
+  password: CF68213490
+  port: 443
+  server: adapting-giraffe.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇵JP
+  name: 14|🇯🇵JP_115
+  password: CF68213490
+  port: 443
+  server: alert-redfish.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: RU
+  name: 14|🇷RU_166
+  password: '!!str 1234567890'
+  port: 443
+  server: 194.87.77.91
+  skip-cert-verify: true
+  sni: kfm-bn0.pages.dev
+  type: trojan
+  udp: true
+- country: 🇺RU
+  name: 14|🇷RU_167
+  password: XG59623478
+  port: 443
+  server: classic-duckling.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇺RU
+  name: 14|🇺RU_168
+  password: WG39087154
+  port: 443
+  server: pet-albacore.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇺RU
+  name: 14|🇺RU_169
+  password: IQ68037294
+  port: 443
+  server: still-mastodon.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
   udp: true
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 027
+  name: 26|俄罗斯 004
   network: tcp
   port: 22324
   server: 5.188.190.252
   skip-cert-verify: true
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 14| GB_33
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.187
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 14|🇬🇧 GB_36
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.179
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 14|🇬🇧 GB_37
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.210
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 14|🇬🇧 GB_38
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.202
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 14|🇬🇧 GB_39
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.217
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 14|🇬🇧 GB_40
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.155
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_42
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.149
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧GB
+  name: 14|🇬🇧GB_43
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.10
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧GB
+  name: 14|🇬🇧GB_45
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.48
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_46
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.174
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_48
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.2
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_49
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.186
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_53
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.49
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧GB
+  name: 14|🇬🇧GB_54
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.218
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_55
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.34
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_57
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.216
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_58
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.219
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14,19|🇱_NL荷蘭丨yoyapai.com
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 443
+  server: 82.38.31.35
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  country: 🇬🇧GB
+  name: 14,39|GB_Stretford_M247 Europe SRL_C...
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.179
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_62
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.214
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_65
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.181
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_66
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 26|英国 024
+  country: 🇬🇧GB
+  h2-opts: {}
+  http-opts: {}
+  name: 14,26|英国 024
   network: tcp
   port: 180
   server: 82.198.246.233
   skip-cert-verify: true
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- cipher: aes-128-gcm
-  name: 39|GB_Stretford_M247 Europe SRL_C...
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.179
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 19|省台市丨yoyapai.com
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  port: 50099
-  server: r3mrcg001286ek2.cybervena.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇬🇧GB
+  h2-opts: {}
+  http-opts: {}
+  name: 14,26,30|英國
+  network: tcp
+  port: 180
+  server: 82.198.246.37
+  servername: ''
   skip-cert-verify: true
-  type: ss
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  ws-path: /
+- country: 🇧GB
+  name: 14|🇬🇧GB_71
+  password: IL37892054
+  port: 443
+  server: upright-rhino.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇧GB
+  name: 14|🇧GB_72
+  password: 3ac6a6ca99f74941b1eaf892818e2ddb
+  port: 443
+  server: 85.237.207.189
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇬🇧GB
+  name: 14|🇬🇧GB_73
+  password: 3ac6a6ca99f74941b1eaf892818e2ddb
+  port: 443
+  server: 194.33.45.157
+  skip-cert-verify: true
+  type: trojan
   udp: true
 proxy-groups:
 - name: 节点选择
@@ -95,13 +437,56 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 26|俄罗斯 027
-  - 38|DE_speednode_0008
-  - 39|GB_Stretford_M247 Europe SRL_C...
-  - 19|省台市丨yoyapai.com
-  - 39|JP_Tokyo_Datacamp Limited_Gemi...
-  - 39|JP_Tokyo_Datacamp Limited_Clau...
-  - 26|英国 024
+  - 14|🇯🇵JP_102
+  - 14|🇬🇧GB_71
+  - 14|🇯🇵JP_106
+  - 14|🇷RU_166
+  - 26|俄罗斯 004
+  - 14|🇬🇧 GB_39
+  - 14|🇬🇧GB_57
+  - 14|🇵JP_90
+  - 14|🇵JP_87
+  - 14|🇯🇵JP_98
+  - 14|🇯🇵JP_95
+  - 14|🇬🇧 GB_37
+  - 14|🇯🇵JP_115
+  - 14| GB_33
+  - 14|🇺RU_168
+  - 14|🇬🇧 GB_38
+  - 14|🇯🇵JP_111
+  - 14|🇷RU_167
+  - 14|🇬🇧GB_49
+  - 14|🇬🇧GB_62
+  - 14|🇬🇧 GB_36
+  - 14|🇧GB_72
+  - 14|🇬🇧GB_46
+  - 14|🇯🇵JP_104
+  - 14,26,30|英國
+  - 14|JP_86
+  - 14|🇬🇧GB_66
+  - 14|🇬🇧GB_54
+  - 14,19|🇱_NL荷蘭丨yoyapai.com
+  - 14|🇬🇧GB_65
+  - 14|🇬🇧 GB_40
+  - 14|🇬🇧GB_53
+  - 14|🇵JP_92
+  - 14|🇺RU_169
+  - 14|🇬🇧GB_43
+  - 14|🇵JP_91
+  - 14|🇬🇧GB_58
+  - 14|🇯🇵JP_94
+  - 14|🇯🇵JP_93
+  - 14|🇯🇵JP_96
+  - 14|🇯🇵JP_100
+  - 14|🇬🇧GB_55
+  - 14|🇯🇵JP_89
+  - 14,39|GB_Stretford_M247 Europe SRL_C...
+  - 14|🇯🇵JP_108
+  - 14|🇬🇧GB_42
+  - 14,26|英国 024
+  - 14|🇬🇧GB_48
+  - 14|🇬🇧GB_73
+  - 14|🇬🇧GB_45
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
