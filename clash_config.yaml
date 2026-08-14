@@ -32,116 +32,327 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- client-fingerprint: chrome
-  name: 26|日本 001
-  network: tcp
-  password: ND91608427
+- country: 🇵 JP
+  name: 14|🇵 JP_58
+  password: AE62539071
   port: 443
-  server: 13.231.232.184
-  skip-cert-verify: false
-  sni: better-molly.rooster465.autos
+  server: helpful-possum.rooster465.autos
+  skip-cert-verify: true
   type: trojan
   udp: true
-- name: 39|JP_Tokyo_Amazon.com, Inc._Clau...
-  password: ND91608427
+- country: 🇵 JP
+  name: 14|🇵 JP_59
+  password: AE62539071
   port: 443
-  server: definite-sturgeon.rooster465.autos
-  skip-cert-verify: false
-  sni: definite-sturgeon.rooster465.autos
+  server: clear-snail.rooster465.autos
+  skip-cert-verify: true
   type: trojan
+  udp: true
+- country: 🇯🇵 JP
+  name: 14|🇯🇵 JP_60
+  password: AE62539071
+  port: 443
+  server: social-mutt.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇵 JP
+  name: 14|🇯🇵 JP_61
+  password: 7d8e6db4-96cc-4710-afc0-619edde2d7a1
+  port: 55682
+  server: 160.16.110.77
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇯🇵JP
+  name: 14|🇯🇵JP_62
+  password: NQ26071394
+  port: 443
+  server: inviting-rabbit.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇯🇵JP
+  name: 14|🇵JP_63
+  password: NQ26071394
+  port: 443
+  server: better-molly.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇵JP
+  name: 14|🇯🇵JP_64
+  password: IL37892054
+  port: 443
+  server: engaging-toucan.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  country: 🇷KR
+  name: 14|🇷KR_65
+  password: qwerREWQ@@
+  port: 2078
+  server: 27.255.82.134
+  type: ss
+- country: 🇷KR
+  name: 14|🇷KR_66
+  password: ZY07256934
+  port: 443
+  server: glowing-deer.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇷🇺RU
+  name: 14|🇺RU_77
+  password: '!!str 1234567890'
+  port: 443
+  server: 194.87.77.91
+  skip-cert-verify: true
+  sni: kfm-bn0.pages.dev
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 14| GB_13
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.191
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 14|🇬🇧 GB_15
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.155
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 14|🇬🇧 GB_16
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.202
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 14|🇬🇧 GB_17
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.179
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 14|🇬🇧 GB_18
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.205
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 14|🇬🇧 GB_19
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.217
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇧GB_21
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.34
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_22
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.2
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧GB
+  name: 14,19|節點丨yoyapai.com_6
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.218
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_24
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.49
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_25
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 443
+  server: 82.38.31.36
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_26
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.174
+  type: ss
+- cipher: rc4-md5
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_27
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 146.70.61.37
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧GB
+  name: 14|🇧GB_28
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.10
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧GB
+  name: 14|🇬🇧GB_29
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.48
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_30
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.199
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_31
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.192
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_33
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 443
+  server: 82.38.31.15
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_35
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.46
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_36
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.208
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_37
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.176
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_38
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.216
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_39
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.219
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14,19|🇱_NL荷蘭丨yoyapai.com
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 443
+  server: 82.38.31.35
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_41
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 443
+  server: 82.38.31.57
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_42
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.16
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_43
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.149
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_44
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.214
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 27|🇩🇪_DE_德国
-  port: 38998
-  server: 178.83.45.29
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 48422300-458f-4dbb-b0f5-96f45450ab9f
-- client-fingerprint: chrome
-  name: 26|俄罗斯 001
+  country: 🇬🇧GB
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇬🇧GB_45
   network: tcp
-  password: ND91608427
-  port: 443
-  server: dynamic-grubworm.rooster465.autos
-  skip-cert-verify: false
-  sni: dynamic-grubworm.rooster465.autos
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 26|俄罗斯 002
-  network: tcp
-  password: ND91608427
-  port: 443
-  server: 91.199.84.120
-  skip-cert-verify: false
-  sni: dynamic-grubworm.rooster465.autos
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 26|俄罗斯 003
-  network: tcp
-  password: ND91608427
-  port: 443
-  server: relaxed-gull.rooster465.autos
-  skip-cert-verify: true
-  sni: relaxed-gull.rooster465.autos
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 19|英
-  port: 180
-  server: 82.198.246.37
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 19,28|🇺🇸_US_美国_1
   port: 180
   server: 82.198.246.250
   skip-cert-verify: true
-  tls: false
   type: vmess
-  udp: true
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- grpc-opts:
-    grpc-service-name: /50779/NQmry9z8yR
-  name: 26|英国 001
-  network: grpc
-  password: 32b2m2w7hsdd93z7
-  port: 443
-  server: 31.76.11.46.cdn-one.org
-  skip-cert-verify: false
-  sni: 31.76.11.46.cdn-one.org
-  tls: true
-  type: trojan
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: /50779/NQmry9z8yR
-  name: 26|英国 002
-  network: grpc
-  password: 581e14a5fcc14107b9326cc54f047891
-  port: 443
-  server: 31.76.11.46
-  skip-cert-verify: false
-  sni: 31.76.11.46.cdn-one.org
-  tls: true
-  type: trojan
-  udp: true
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: 26|英国 028
+  country: 🇬🇧GB
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇬🇧GB_47
   network: tcp
   port: 180
   server: 82.198.246.233
   skip-cert-verify: true
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  ws-path: /
+- country: 🇧GB
+  name: 14|🇬🇧GB_49
+  password: IL37892054
+  port: 443
+  server: upright-rhino.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇼TW
+  name: 14|TW_78
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  port: 50099
+  server: r3mrcg001286ek2.cybervena.com
+  type: ss
 proxy-groups:
 - name: 节点选择
   type: select
@@ -154,17 +365,48 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 39|JP_Tokyo_Amazon.com, Inc._Clau...
-  - 27|🇩🇪_DE_德国
-  - 26|英国 002
-  - 26|俄罗斯 001
-  - 26|俄罗斯 003
-  - 26|俄罗斯 002
-  - 19|英
-  - 26|英国 001
-  - 26|英国 028
-  - 26|日本 001
-  - 19,28|🇺🇸_US_美国_1
+  - 14|🇯🇵 JP_61
+  - 14|🇬🇧GB_36
+  - 14|🇬🇧 GB_17
+  - 14|🇬🇧 GB_15
+  - 14|🇬🇧GB_39
+  - 14|🇬🇧GB_35
+  - 14|🇬🇧GB_41
+  - 14|🇵JP_63
+  - 14|🇬🇧GB_33
+  - 14|🇬🇧GB_29
+  - 14|🇬🇧GB_42
+  - 14|TW_78
+  - 14|🇬🇧GB_26
+  - 14,19|節點丨yoyapai.com_6
+  - 14|🇯🇵 JP_60
+  - 14|🇬🇧 GB_16
+  - 14|🇬🇧GB_31
+  - 14|🇬🇧GB_47
+  - 14|🇬🇧 GB_19
+  - 14|🇬🇧GB_25
+  - 14|🇵 JP_59
+  - 14|🇬🇧GB_38
+  - 14|🇬🇧GB_44
+  - 14|🇵 JP_58
+  - 14|🇬🇧GB_27
+  - 14|🇧GB_21
+  - 14| GB_13
+  - 14|🇷KR_66
+  - 14|🇬🇧GB_24
+  - 14|🇺RU_77
+  - 14|🇯🇵JP_64
+  - 14|🇬🇧GB_22
+  - 14|🇬🇧GB_30
+  - 14|🇬🇧GB_43
+  - 14,19|🇱_NL荷蘭丨yoyapai.com
+  - 14|🇧GB_28
+  - 14|🇯🇵JP_62
+  - 14|🇷KR_65
+  - 14|🇬🇧 GB_18
+  - 14|🇬🇧GB_45
+  - 14|🇬🇧GB_49
+  - 14|🇬🇧GB_37
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
