@@ -41,13 +41,6 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
-- name: 39|JP_Tokyo_Amazon.com, Inc._Clau...
-  password: ND91608427
-  port: 443
-  server: definite-sturgeon.rooster465.autos
-  skip-cert-verify: false
-  sni: definite-sturgeon.rooster465.autos
-  type: trojan
 proxy-groups:
 - name: 节点选择
   type: select
@@ -60,7 +53,6 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 39|JP_Tokyo_Amazon.com, Inc._Clau...
   - 26|日本 006
   url: http://www.pinterest.com
   interval: 300
