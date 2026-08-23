@@ -32,15 +32,20 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 26|日本 006
-  network: tcp
-  port: 8888
-  server: 146.56.112.110
+- name: 30,33|香港5|@ripaojiedian
+  password: BxceQaOe
+  port: 1103
+  server: 18.163.79.248
   skip-cert-verify: true
-  type: vmess
-  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: 30|🇬🇧 GB英国(mibei77.com 米贝节点分享)
+  password: fg20mtCFHy
+  port: 5448
+  server: londhtc.southbyte.xyz
+  skip-cert-verify: false
+  sni: londhtc.southbyte.xyz
+  type: trojan
 proxy-groups:
 - name: 节点选择
   type: select
@@ -53,7 +58,8 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 26|日本 006
+  - 30|🇬🇧 GB英国(mibei77.com 米贝节点分享)
+  - 30,33|香港5|@ripaojiedian
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
