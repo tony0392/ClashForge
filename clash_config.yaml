@@ -45,26 +45,95 @@ proxies:
   udp: true
   ws-opts:
     path: /assignment
-- cipher: aes-256-cfb
-  name: 22,27|🇫🇷_FR_法国
-  password: 7eadc6dbe2ae
-  port: 65443
-  server: 95.170.13.47
+- name: 22|A🟢🇭🇰[🎬🧠📺🎭]_dokng.com_a1b6c46a
+  password: 302cf77d-6fb7-4ac8-ae61-88e286340d59
+  port: 52224
+  server: hk04.qianmoip.win
   skip-cert-verify: true
-  type: ss
-  udp: true
-- name: 22|C🟠🇫🇷[🎬🤖📺✨]_dokng.com_b82a343f
+  sni: taobao.com
+  type: trojan
+- name: 22|D🔴🇭🇰[🎬🧠📺🎭]_dokng.com_6598b91f
+  password: 302cf77d-6fb7-4ac8-ae61-88e286340d59
+  port: 50222
+  server: hk03.qianmoip.win
+  skip-cert-verify: true
+  sni: taobao.com
+  type: trojan
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 22|A🟢🇭🇰[🎬📺🎭🎪]_dokng.com_c970db79
   network: ws
-  password: humanity
-  port: 2053
-  server: 168.100.9.178
+  password: 0f3963f9-0530-434d-be2c-87e9b61143c8
+  port: 28443
+  server: 58.152.46.127
   skip-cert-verify: true
-  sni: www.calmlunch.com
+  sni: vpn-node.internal
   type: trojan
   ws-opts:
     headers:
-      Host: www.calmlunch.com
-    path: /assignment
+      Host: vpn-node.internal
+    path: /xVpnTrojanWsSvc7f3a
+- alterId: 0
+  cipher: auto
+  name: 26|韩国 003
+  network: tcp
+  port: 443
+  server: 140.238.2.250
+  skip-cert-verify: true
+  type: vmess
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+- alterId: 0
+  cipher: auto
+  name: 22|C🟠🇸🇬[🎬🤖📺🎭]_dokng.com_af7b1aad
+  network: none
+  port: 29521
+  server: 47.236.207.245
+  tls: false
+  type: vmess
+  uuid: f1bb29bf-a342-44d4-9ac5-5ca4566a216a
+- alterId: 0
+  cipher: auto
+  name: 26|新加坡 004
+  network: tcp
+  port: 8443
+  server: 13.250.114.194
+  skip-cert-verify: true
+  type: vmess
+  uuid: 9dcb8d73-cc0b-4fcc-a12d-d7affb56267c
+- cipher: aes-256-cfb
+  name: 22|C🟠🇬🇧[🎬🤖📺🎭]_dokng.com_54894c69
+  password: amazonskr05
+  port: 443
+  server: 35.179.104.254
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 26|英国 006
+  network: tcp
+  port: 180
+  server: 82.198.246.233
+  skip-cert-verify: true
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 26|英国 008
+  network: tcp
+  port: 180
+  server: 82.198.246.250
+  skip-cert-verify: true
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- cipher: aes-256-cfb
+  name: 27|🇬🇧_GB_英国
+  password: amazonskr05
+  port: 443
+  server: 18.133.240.229
+  skip-cert-verify: true
+  type: ss
+  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -77,9 +146,17 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 22|C🟠🇫🇷[🎬🤖📺✨]_dokng.com_b82a343f
-  - 22,27|🇫🇷_FR_法国
+  - 22|C🟠🇸🇬[🎬🤖📺🎭]_dokng.com_af7b1aad
+  - 26|韩国 003
+  - 22|C🟠🇬🇧[🎬🤖📺🎭]_dokng.com_54894c69
   - 20|GB国(mibei77.com 米贝节点分享)
+  - 22|A🟢🇭🇰[🎬📺🎭🎪]_dokng.com_c970db79
+  - 22|D🔴🇭🇰[🎬🧠📺🎭]_dokng.com_6598b91f
+  - 22|A🟢🇭🇰[🎬🧠📺🎭]_dokng.com_a1b6c46a
+  - 27|🇬🇧_GB_英国
+  - 26|新加坡 004
+  - 26|英国 008
+  - 26|英国 006
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
