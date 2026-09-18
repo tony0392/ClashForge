@@ -44,11 +44,28 @@ proxies:
   udp: true
   ws-opts:
     path: /assignment
+- country: 🇵JP
+  name: 14|JP_43
+  password: ND91608427
+  port: 443
+  server: 18.179.31.199
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 26|日本 002
+  network: tcp
+  port: 4433
+  server: 45.32.57.118
+  skip-cert-verify: true
+  type: vmess
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
 - cipher: aes-256-cfb
-  name: 22,27|🇩🇪_DE_德国_2
+  name: 27|🇩🇪_DE_德国
   password: amazonskr05
   port: 443
-  server: 3.75.89.244
+  server: 18.194.210.177
   skip-cert-verify: true
   type: ss
   udp: true
@@ -64,38 +81,244 @@ proxies:
   udp: true
   ws-opts:
     path: /assignment
-- cipher: aes-256-cfb
-  name: 22|C🟠🇫🇷hos[🎬🤖📺🎭]_dokng.com_9445ee...
-  password: amazonskr05
+- client-fingerprint: chrome
+  name: 22|D🔴🇫🇷hos[📺🎭🎪]_dokng.com_1935be7...
+  network: ws
+  password: humanity
   port: 443
-  server: 13.38.76.125
+  server: 88.198.82.150
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/50.0.2661.102 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 22|D🔴🇫🇷hos[🎬📺✨🎞️]_dokng.com_74307...
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.16.174.36
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/56.0.2924.87 Safari/537.36
+    path: /assignment
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_08
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.174
   type: ss
-- cipher: aes-256-cfb
-  name: 22|C🟠🇫🇷hos[🎬🤖🎪]_dokng.com_ace8f33...
-  password: amazonskr05
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_09
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.202
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧GB
+  name: 14|🇬🇧GB_10
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.10
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧GB
+  name: 14|🇬🇧GB_11
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.48
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧GB
+  name: 14|🇬🇧GB_12
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.218
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_13
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.46
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_15
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.214
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_16
+  password: shadowsocks
   port: 443
-  server: 13.39.233.161
+  server: 141.98.101.181
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇧GB_17
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.155
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_19
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.62
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_20
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.217
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_21
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.205
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_22
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.208
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_23
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.49
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_24
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.219
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_25
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.216
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_26
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.16
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_27
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.2
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_28
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.191
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_29
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.149
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_30
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.192
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_31
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.189
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_32
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.61
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_33
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.66
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_34
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.34
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 14|🇬🇧GB_35
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.82
   type: ss
 - alterId: 0
   cipher: auto
-  name: 26|英国 007
+  country: 🇬🇧GB
+  h2-opts: {}
+  http-opts: {}
+  name: 14,26|英国 011
   network: tcp
-  port: 110
-  server: 31.77.8.97
+  port: 180
+  server: 82.198.246.250
   skip-cert-verify: true
   type: vmess
-  uuid: e8758bf0-c234-4809-89f7-25fd868316d0
-- cipher: chacha20-ietf-poly1305
-  name: 22|A🟢🇹🇼res[🎬🤖📺🎭]_dokng.com_ecde7e...
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 817aa69.default.nintendo.com:112719
-    mode: tls
-  port: 2377
-  server: 60.249.39.170
-  type: ss
-  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇬🇧GB
+  h2-opts: {}
+  http-opts: {}
+  name: 14,26|英国 010
+  network: tcp
+  port: 180
+  server: 82.198.246.37
+  skip-cert-verify: true
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  ws-path: /
 proxy-groups:
 - name: 节点选择
   type: select
@@ -108,12 +331,40 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 22|C🟠🇫🇷hos[🎬🤖🎪]_dokng.com_ace8f33...
-  - 22,27|🇩🇪_DE_德国_2
-  - 22|C🟠🇫🇷hos[🎬🤖📺🎭]_dokng.com_9445ee...
+  - 14|🇬🇧GB_32
+  - 14|🇬🇧GB_09
+  - 14|JP_43
+  - 14|🇬🇧GB_20
+  - 26|日本 002
+  - 14|🇬🇧GB_19
+  - 14|🇬🇧GB_12
+  - 14|🇬🇧GB_16
+  - 14|🇬🇧GB_21
+  - 14|🇬🇧GB_13
+  - 14,26|英国 011
+  - 14|🇬🇧GB_24
+  - 14|🇬🇧GB_10
+  - 14|🇬🇧GB_15
+  - 14|🇬🇧GB_31
+  - 22|D🔴🇫🇷hos[📺🎭🎪]_dokng.com_1935be7...
   - 20|FR法国(mibei77.com 米贝节点分享)_15
-  - 22|A🟢🇹🇼res[🎬🤖📺🎭]_dokng.com_ecde7e...
-  - 26|英国 007
+  - 22|D🔴🇫🇷hos[🎬📺✨🎞️]_dokng.com_74307...
+  - 14,26|英国 010
+  - 14|🇬🇧GB_30
+  - 14|🇬🇧GB_22
+  - 14|🇬🇧GB_33
+  - 14|🇬🇧GB_34
+  - 27|🇩🇪_DE_德国
+  - 14|🇬🇧GB_25
+  - 14|🇬🇧GB_23
+  - 14|🇬🇧GB_27
+  - 14|🇬🇧GB_08
+  - 14|🇬🇧GB_26
+  - 14|🇬🇧GB_11
+  - 14|🇬🇧GB_35
+  - 14|🇧GB_17
+  - 14|🇬🇧GB_28
+  - 14|🇬🇧GB_29
   - 20|GB国(mibei77.com 米贝节点分享)
   url: http://www.pinterest.com
   interval: 300
