@@ -44,36 +44,6 @@ proxies:
   udp: true
   ws-opts:
     path: /assignment
-- cipher: chacha20-ietf
-  name: 22|C🟠🇭🇰hos[🎬🤖📺🎭]_dokng.com_e18678...
-  obfs: plain
-  obfs-param: ''
-  password: MAYING
-  port: 1320
-  protocol: auth_aes128_md5
-  protocol-param: 31296:U2T93o
-  server: 4vnx5kqwk8mxsr.cache872671.com
-  type: ssr
-- cipher: chacha20-ietf
-  name: 22|A🟢🇭🇰res[🎬🤖📺🎭]_dokng.com_3a3157...
-  obfs: plain
-  obfs-param: ''
-  password: MAYING
-  port: 1321
-  protocol: auth_aes128_md5
-  protocol-param: 31296:U2T93o
-  server: 78v9m3qxh6eedn.cache872671.com
-  type: ssr
-- cipher: chacha20-ietf
-  name: 22|A🟢🇭🇰res[🎬📺🎭🎪]_dokng.com_9d13ec...
-  obfs: plain
-  obfs-param: ''
-  password: MAYING
-  port: 1310
-  protocol: auth_aes128_md5
-  protocol-param: 31296:U2T93o
-  server: a83jb3sztjnqd4.cache872671.com
-  type: ssr
 - alterId: 0
   cipher: auto
   http-opts:
@@ -91,26 +61,23 @@ proxies:
   type: vmess
   udp: true
   uuid: f2c67cae-c09d-4739-947d-f5302d87a3c0
-- cipher: chacha20-ietf
-  name: 22|C🟠🇯🇵hos[🎬🤖📺🎭]_dokng.com_7092c4...
-  obfs: plain
-  obfs-param: ''
-  password: MAYING
-  port: 1399
-  protocol: auth_aes128_md5
-  protocol-param: 31296:U2T93o
-  server: f5hbtjrm.server927871.com
-  type: ssr
 - cipher: aes-256-cfb
-  name: 22|C🟠🇯🇵hos[🎬🤖📺🎭]_dokng.com_07ae27...
+  name: 22|C🟠🇯🇵hos[🤖📺🎭🎪]_dokng.com_07ae27...
   password: amazonskr05
   port: 443
   server: 18.181.165.254
   type: ss
   udp: true
+- cipher: aes-256-cfb
+  name: 22|C🟠🇯🇵hos[🎬🤖📺🎭]_dokng.com_6b0053...
+  password: amazonskr05
+  port: 443
+  server: 18.181.145.202
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 26|日本 026
+  name: 26|日本 029
   network: tcp
   port: 4433
   server: 45.32.57.118
@@ -129,9 +96,33 @@ proxies:
   udp: true
   ws-opts:
     path: /assignment
+- client-fingerprint: chrome
+  name: 22|D🔴🇫🇷hos[🤖📺🎭🎪]_dokng.com_13485e...
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.17.177.143
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/66.0.3359.139 Safari/537.36
+    path: /assignment
 - alterId: 0
   cipher: auto
-  name: 26|英国 014
+  name: 26|英国 016
+  network: tcp
+  port: 180
+  server: 82.198.246.233
+  skip-cert-verify: true
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 26|英国 017
   network: tcp
   port: 180
   server: 82.198.246.37
@@ -140,23 +131,13 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
-  name: 26|英国 015
+  name: 26|英国 018
   network: tcp
   port: 180
   server: 82.198.246.250
   skip-cert-verify: true
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- cipher: chacha20-ietf
-  name: 22|C🟠🇹🇼hos[🎬🤖📺🎭]_dokng.com_043850...
-  obfs: plain
-  obfs-param: ''
-  password: MAYING
-  port: 1372
-  protocol: auth_aes128_md5
-  protocol-param: 31296:U2T93o
-  server: pw3sdme5v2kj2c.node897828.com
-  type: ssr
 proxy-groups:
 - name: 节点选择
   type: select
@@ -169,18 +150,16 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 20|FR法国(mibei77.com 米贝节点分享)_15
-  - 26|日本 026
-  - 26|英国 015
-  - 26|英国 014
-  - 22|A🟢🇭🇰res[🎬🤖📺🎭]_dokng.com_3a3157...
-  - 22|A🟢🇭🇰res[🎬📺🎭🎪]_dokng.com_9d13ec...
-  - 22|C🟠🇭🇰hos[🎬🤖📺🎭]_dokng.com_e18678...
-  - 22|C🟠🇹🇼hos[🎬🤖📺🎭]_dokng.com_043850...
-  - 22|C🟠🇯🇵hos[🎬🤖📺🎭]_dokng.com_7092c4...
-  - 20|GB国(mibei77.com 米贝节点分享)
-  - 22|C🟠🇯🇵hos[🎬🤖📺🎭]_dokng.com_07ae27...
+  - 26|英国 016
+  - 26|英国 017
+  - 22|C🟠🇯🇵hos[🎬🤖📺🎭]_dokng.com_6b0053...
+  - 26|英国 018
+  - 22|D🔴🇫🇷hos[🤖📺🎭🎪]_dokng.com_13485e...
   - 28|_HK_
+  - 22|C🟠🇯🇵hos[🤖📺🎭🎪]_dokng.com_07ae27...
+  - 20|FR法国(mibei77.com 米贝节点分享)_15
+  - 26|日本 029
+  - 20|GB国(mibei77.com 米贝节点分享)
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
