@@ -32,25 +32,24 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- cipher: aes-256-cfb
-  name: 22|C🟠🇯🇵hos[🎬🤖📺🎭]_dokng.com_b7e2d5...
-  password: amazonskr05
-  port: 443
-  server: 54.95.40.17
-  type: ss
-- cipher: aes-256-cfb
-  name: 22|D🔴🇯🇵hos[🎬📺🎭🎪]_dokng.com_22176d...
-  password: amazonskr05
-  port: 443
-  server: 18.179.37.17
-  type: ss
-- cipher: aes-256-cfb
-  name: 22|C🟠🇯🇵hos[🎬🤖📺🎭]_dokng.com_562aef...
-  password: amazonskr05
-  port: 443
-  server: 13.115.71.198
-  type: ss
-  udp: true
+- alterId: 0
+  cipher: auto
+  name: 26|日本 001
+  network: tcp
+  port: 4433
+  server: 45.32.57.118
+  skip-cert-verify: true
+  type: vmess
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+- alterId: 0
+  cipher: auto
+  name: 26|法国 008
+  network: tcp
+  port: 22324
+  server: 45.80.215.8
+  skip-cert-verify: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
 proxy-groups:
 - name: 节点选择
   type: select
@@ -63,9 +62,8 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 22|C🟠🇯🇵hos[🎬🤖📺🎭]_dokng.com_b7e2d5...
-  - 22|D🔴🇯🇵hos[🎬📺🎭🎪]_dokng.com_22176d...
-  - 22|C🟠🇯🇵hos[🎬🤖📺🎭]_dokng.com_562aef...
+  - 26|法国 008
+  - 26|日本 001
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
