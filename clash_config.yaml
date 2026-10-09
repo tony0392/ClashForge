@@ -32,64 +32,56 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- name: 22|A🟢🇭🇰res[🎬📺🎭🎪]_dokng.com_82a087...
-  network: tcp
-  password: 28c4a59d-c2a0-4d6c-ba7d-db6a354990de
-  port: 24999
-  server: tjjnd.m2k699.com
-  skip-cert-verify: true
-  sni: www.itunes.com
-  type: trojan
-- cipher: aes-256-gcm
-  country: 🇵JP
-  name: 14|JP_42
-  password: TEzjfAYq2IjtuoS
-  port: 6679
-  server: 141.164.45.187
-  type: ss
-- country: 🇵JP
-  name: 14|🇵JP_43
-  password: ND91608427
-  port: 443
-  server: 18.179.31.199
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- alterId: 2
+- alpn:
+  - ''
+  alterId: 0
   cipher: auto
-  name: 22|A🟢🇯🇵res[📺🎭🎪]_dokng.com_f832aa7...
-  port: 11260
-  server: goldcnmltyljgfwgov.vip60.wogcnmnnagfwgov.com
+  http-opts:
+    headers:
+      Host:
+      - sjskendn.dingtalk.com
+    method: GET
+    path:
+    - /x
+  name: 27|🇭🇰 香港 | HKG 3
+  network: http
+  port: 800
+  server: 47.86.167.194
+  skip-cert-verify: true
+  tls: false
   type: vmess
   udp: true
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-- name: 22|A🟢🇰🇷res[🎬🤖📺🎭]_dokng.com_5aa595...
-  network: tcp
-  password: 28c4a59d-c2a0-4d6c-ba7d-db6a354990de
-  port: 24999
-  server: tjhg.m2k699.com
-  skip-cert-verify: true
-  sni: www.itunes.com
-  type: trojan
-- cipher: aes-256-gcm
-  name: 27|🇰🇷[www.v2nodes.com] ss-KR-1185...
-  password: e4FCWrgpkji3QY
-  port: 9101
-  server: 141.164.45.187
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬SG
-  name: 14|🇬SG_53
-  password: PWpjPo3tqhPN4yRZ
-  port: 20001
-  server: 8.209.74.72
-  type: ss
-- name: 22|C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_4462b2...
-  password: WvH8ooM9hom4KOOJHFJz1x5umE0aV4R0
+  uuid: f2c67cae-c09d-4739-947d-f5302d87a3c0
+- name: 27|🇭🇰 香港 | HKG 12
+  password: UX82473651
   port: 443
-  server: 43.156.36.253
+  server: full-ox.rooster465.autos
   skip-cert-verify: true
-  sni: tx-hy2
+  sni: full-ox.rooster465.autos
+  type: trojan
+  udp: true
+- name: 27|🇯🇵 日本 | JPN 6
+  password: UX82473651
+  port: 443
+  server: legible-ram.rooster465.autos
+  skip-cert-verify: true
+  sni: legible-ram.rooster465.autos
+  type: trojan
+  udp: true
+- name: 27|🇸🇬 新加坡 | SGP 2
+  password: UX82473651
+  port: 443
+  server: moral-basilisk.rooster465.autos
+  skip-cert-verify: true
+  sni: moral-basilisk.rooster465.autos
+  type: trojan
+  udp: true
+- name: 27|ProxyPool | 🇸🇬 新加坡 | SGP 3
+  password: UX82473651
+  port: 443
+  server: glorious-glider.rooster465.autos
+  skip-cert-verify: true
+  sni: glorious-glider.rooster465.autos
   type: trojan
   udp: true
 - alpn:
@@ -107,38 +99,12 @@ proxies:
       Host: mitivpn---deb--s---mitivpn-4.global.ssl.fastly.net
     path: /
 - cipher: aes-256-cfb
-  name: 22|C🟠🇩🇪hos[🎬🤖📺🎭]_dokng.com_04b04b...
+  name: 22|C🟠🇫🇷hos[🎬🤖📺🎪]_dokng.com_8d9eb9...
   password: amazonskr05
   port: 443
-  server: 3.77.34.196
+  server: 52.47.99.71
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: 22|C🟠🇩🇪hos[🎬🤖📺🎪]_dokng.com_d0da9a...
-  password: amazonskr05
-  port: 443
-  server: 3.79.59.187
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 22|C🟠🇫🇷hos[🎬🤖📺🎪]_dokng.com_957840...
-  password: amazonskr05
-  port: 443
-  server: 51.44.86.16
-  type: ss
-  udp: true
-- name: 22|C🟠🇫🇷hos[🎬🤖📺🎭]_dokng.com_b017b1...
-  network: ws
-  password: humanity
-  port: 443
-  server: 193.239.160.134
-  skip-cert-verify: true
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: /assignment
 - cipher: chacha20-ietf-poly1305
   name: 27|🇫🇷[www.v2nodes.com] ss-FR-1536...
   password: BqnqToih0PbU
@@ -146,184 +112,15 @@ proxies:
   server: 51.255.13.232
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇧GB
-  name: 14|🇧GB_08
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.208
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇧GB
-  name: 14|🇧GB_09
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.16
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇧GB
-  name: 14|🇬🇧GB_10
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.48
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
-  name: 14|🇬🇧GB_11
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.218
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
-  name: 14|🇬🇧GB_14
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.214
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇬🇧GB
-  name: 14|🇬🇧GB_15
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.181
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
-  name: 14|🇧GB_16
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.155
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
-  name: 14|🇬🇧GB_17
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.176
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
-  name: 14|🇬🇧GB_18
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.199
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇧GB
-  name: 14|🇬🇧GB_19
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.217
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
-  name: 14|🇬🇧GB_21
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.66
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
-  name: 14|🇬🇧GB_23
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.219
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
-  name: 14|🇬🇧GB_24
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.216
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇧GB
-  name: 14|🇬🇧GB_25
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.10
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
-  name: 14|🇬🇧GB_26
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.2
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
-  name: 14|🇬🇧GB_29
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.191
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
-  name: 14|🇬🇧GB_30
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.149
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
-  name: 14|🇬🇧GB_31
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.192
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
-  name: 14|🇬🇧GB_32
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.61
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
-  name: 14|🇬🇧GB_33
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.62
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
-  name: 14|🇬🇧GB_34
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.82
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
-  name: 14|🇬🇧GB_35
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.34
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
-  name: 14|🇬🇧GB_36
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.49
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
-  name: 14|🇬🇧GB_37
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.202
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
-  name: 14|🇬🇧GB_38
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.174
+  name: 27|🇷🇺[www.v2nodes.com] ss-RU-1163...
+  password: VVlAff77CnAU43Aoc5j15Y
+  port: 5112
+  server: 90.156.203.62
   type: ss
 - cipher: aes-256-gcm
   name: 27|🇬🇧[www.v2nodes.com] ss-GB-1292...
   password: g5h5jleTRSyO3Rk4
-  port: 80
+  port: 443
   server: 149.102.132.184
   type: ss
 - cipher: aes-256-gcm
@@ -331,6 +128,12 @@ proxies:
   password: LXchLsIwtCeUAUgu
   port: 80
   server: 149.102.149.207
+  type: ss
+- cipher: aes-256-gcm
+  name: 27|🇬🇧[www.v2nodes.com] ss-GB-1247...
+  password: RexnBgU7EV5ADxG
+  port: 7001
+  server: 94.156.250.148
   type: ss
 proxy-groups:
 - name: 节点选择
@@ -344,46 +147,17 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 14|🇬🇧GB_37
   - 27|🇬🇧[www.v2nodes.com] ss-GB-1292...
-  - 14|🇬🇧GB_23
-  - 14|🇬🇧GB_24
-  - 14|🇬🇧GB_38
-  - 14|🇬🇧GB_15
-  - 14|🇧GB_16
-  - 22|C🟠🇩🇪hos[🎬🤖📺🎪]_dokng.com_d0da9a...
-  - 14|🇬🇧GB_36
-  - 14|JP_42
-  - 14|🇵JP_43
-  - 14|🇬🇧GB_29
-  - 22|A🟢🇭🇰res[🎬📺🎭🎪]_dokng.com_82a087...
-  - 22|C🟠🇩🇪hos[🎬🤖📺🎭]_dokng.com_04b04b...
-  - 14|🇬🇧GB_10
-  - 14|🇬SG_53
-  - 14|🇬🇧GB_19
-  - 14|🇬🇧GB_34
-  - 14|🇬🇧GB_25
-  - 14|🇬🇧GB_30
-  - 22|A🟢🇰🇷res[🎬🤖📺🎭]_dokng.com_5aa595...
-  - 14|🇬🇧GB_17
-  - 14|🇬🇧GB_33
-  - 14|🇬🇧GB_26
+  - 27|🇯🇵 日本 | JPN 6
+  - 27|ProxyPool | 🇸🇬 新加坡 | SGP 3
   - 27|🇫🇷[www.v2nodes.com] ss-FR-1536...
-  - 14|🇬🇧GB_14
-  - 14|🇬🇧GB_32
-  - 22|C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_4462b2...
-  - 14|🇬🇧GB_31
-  - 22|A🟢🇯🇵res[📺🎭🎪]_dokng.com_f832aa7...
-  - 14|🇬🇧GB_35
-  - 14|🇬🇧GB_21
-  - 14|🇧GB_08
-  - 14|🇧GB_09
-  - 14|🇬🇧GB_18
+  - 27|🇭🇰 香港 | HKG 12
+  - 27|🇭🇰 香港 | HKG 3
   - 27|🇬🇧[www.v2nodes.com] ss-GB-1289...
-  - 27|🇰🇷[www.v2nodes.com] ss-KR-1185...
-  - 14|🇬🇧GB_11
-  - 22|C🟠🇫🇷hos[🎬🤖📺🎭]_dokng.com_b017b1...
-  - 22|C🟠🇫🇷hos[🎬🤖📺🎪]_dokng.com_957840...
+  - 27|🇷🇺[www.v2nodes.com] ss-RU-1163...
+  - 22|C🟠🇫🇷hos[🎬🤖📺🎪]_dokng.com_8d9eb9...
+  - 27|🇸🇬 新加坡 | SGP 2
+  - 27|🇬🇧[www.v2nodes.com] ss-GB-1247...
   - 20|US美国(mibei77.com 米贝节点分享)_16
   url: http://www.pinterest.com
   interval: 300
