@@ -2455,6 +2455,19 @@ if __name__ == '__main__':
         "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_RU.yml|links",
         "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/node_SE.yml|links",
         "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_GB.yml|links",
+        "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_HK.meta.yml|links",
+        "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_JP.meta.yml|links",
+        "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_KR.meta.yml|links",
+        "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_SG.meta.yml|links",
+        "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/node_CA.meta.yml|links",
+        "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/node_CH.meta.yml|links",
+        "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_DE.meta.yml|links",
+        "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_FR.meta.meta.yml|links",
+        "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_RU.meta.yml|links",
+        "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/node_SE.meta.yml|links",
+        "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_GB.meta.yml|links",
+        "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_GB.yml|links",
+        
         "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_redir.yml|links",
         "https://raw.githubusercontent.com/tony0392/NoMoreWalls/refs/heads/master/snippets/nodes_TW.yml|links"
 
