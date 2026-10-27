@@ -32,31 +32,22 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- name: 20,27|🇭🇰 香港 | HKG
-  password: 29086912-33e4-4e06-ba2b-60f1a195864f
-  port: 24999
-  server: tjflb.m2k699.com
-  skip-cert-verify: true
-  sni: www.itunes.com
-  type: trojan
-  udp: true
-- name: 20,27|🇭🇰 香港 | HKG 4
-  password: 29086912-33e4-4e06-ba2b-60f1a195864f
-  port: 24999
-  server: tjyn.m2k699.com
-  skip-cert-verify: true
-  sni: www.itunes.com
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 19|韩国 004
+- client-fingerprint: chrome
+  name: 15,20|🇯🇵[www.v2nodes.com] trojan-JP-...
   network: tcp
-  port: 443
-  server: 140.238.2.250
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  port: 8886
+  server: 45.32.52.173
   skip-cert-verify: true
-  type: vmess
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  sni: 45.32.52.173
+  type: trojan
+  udp: true
+- cipher: aes-256-gcm
+  name: 20|🇯🇵[www.v2nodes.com] ss-JP-1544...
+  password: 3eOFeNssde7PYYMv
+  port: 80
+  server: 84.247.155.196
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 15|C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_831534...
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
@@ -78,14 +69,6 @@ proxies:
   port: 2377
   server: 18.143.63.164
   type: ss
-  udp: true
-- name: 15|D🔴🇸🇬hos[🎬🤖📺🎭]_dokng.com_f29f73...
-  password: 29086912-33e4-4e06-ba2b-60f1a195864f
-  port: 24999
-  server: tjxjp.m2k699.com
-  skip-cert-verify: true
-  sni: www.itunes.com
-  type: trojan
   udp: true
 - name: 19|德国 003
   network: ws
@@ -111,24 +94,18 @@ proxies:
   port: 19999
   server: 185.176.206.9
   type: ss
+- cipher: aes-128-gcm
+  name: 20|🇬🇧[www.v2nodes.com] ss-GB-1451...
+  password: shadowsocks
+  port: 443
+  server: 158.173.24.73
+  type: ss
 - cipher: aes-256-gcm
   name: 20|🇬🇧[www.v2nodes.com] ss-GB-1247...
   password: RexnBgU7EV5ADxG
   port: 7001
   server: 94.156.250.148
   type: ss
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 14,15|A🟢🇭🇰res[🎬🤖📺🎭]_dokng.com_42aa23...
-  password: 0324fbc29561
-  port: 443
-  server: 56481.df6h451rh.xin
-  skip-cert-verify: true
-  sni: images.ctfassets.net
-  tls: true
-  type: anytls
-  udp: true
 - name: 15|D🔴🇭🇰hos[📺🎭🎪🎞️]_dokng.com_054bd...
   port: 10808
   server: 123.58.219.171
@@ -141,6 +118,65 @@ proxies:
   tls: true
   type: http
   username: 'null'
+- name: 15|D🔴🇭🇰hos[📺🎭️]_dokng.com_ff9ee1a...
+  port: 443
+  server: 43.155.62.157
+  type: http
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 20|🇭🇰[www.v2nodes.com] vless-HK-1...
+  port: 11907
+  server: 195.58.144.56
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
+- name: 15|D🔴🇯🇵hos[🤖🎭🎪🎞️]_dokng.com_9efa9...
+  password: None
+  port: 443
+  server: fan.571589.xyz
+  skip-cert-verify: false
+  tls: true
+  type: http
+  username: null
+- client-fingerprint: chrome
+  name: 20|🇯🇵[www.v2nodes.com] vless-JP-1...
+  network: ws
+  port: 443
+  server: 77.110.97.245
+  servername: ccc.010304.xyz
+  tls: true
+  type: vless
+  uuid: d342d11e-d224-4463-b982-532309285094
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /fp=chrome
+- name: 14|KR韩国(mibei77.com 米贝节点分享)_5
+  obfs: salamander
+  obfs-password: C0DD7bgChaltqnh/T2az6ijM
+  password: C0DD7bgChaltqnh/T2az6ijM
+  port: 20000
+  ports: 20000-30000
+  server: 130.162.134.218
+  skip-cert-verify: true
+  sni: rmgyvpn.rest
+  type: hysteria2
+  udp: true
+- name: 15|D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_6c43e4...
+  port: 443
+  server: 172.64.68.89
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 15|D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_aba567...
+  port: 443
+  server: 172.64.69.89
+  skip-cert-verify: true
+  tls: true
+  type: http
 - name: 15|C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_351f71...
   port: 443
   server: 156.146.56.97
@@ -172,6 +208,18 @@ proxies:
   port: 9090
   server: 167.99.74.174
   type: http
+- name: 15|D🔴🇸🇬hos[📺🎭🎪]_dokng.com_5dfd6d5...
+  password: None
+  port: 9090
+  server: 167.172.76.176
+  type: http
+  username: null
+- name: 15,29|104.248.151.93_Claude
+  password: None
+  port: 9090
+  server: 104.248.151.93
+  type: http
+  username: null
 - name: 15|C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_82281b...
   password: None
   port: 9443
@@ -186,6 +234,19 @@ proxies:
   tls: false
   type: vless
   uuid: c538c9dd-2e3f-488f-a8ca-ac5b7c0773f3
+- name: 20|🇸🇬[www.v2nodes.com] vless-SG-9...
+  network: ws
+  port: 443
+  server: 216.173.67.59
+  servername: ccc.010304.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d224-4463-b982-532309285094
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /fp=chrome
 - name: 15|C🟠🇩🇪hos[🎬🤖📺🎭]_dokng.com_622cad...
   password: None
   port: 443
@@ -331,18 +392,6 @@ proxies:
   tls: true
   type: http
   username: null
-- name: 19|德国 002
-  network: ws
-  port: 22573
-  server: uae.unixzone.us
-  servername: uae.unixzone.us
-  tls: false
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  ws-opts:
-    headers:
-      Host: uae.unixzone.us
-    path: /
 - client-fingerprint: chrome
   name: 24|🇩🇪_德国_449
   network: ws
@@ -354,12 +403,6 @@ proxies:
   uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
   ws-opts:
     path: '%2F'
-- name: 15|A🟢🇷🇺res[🤖📺🎭🎪]_dokng.com_d5a33f...
-  port: 9443
-  server: 192.159.101.174
-  skip-cert-verify: true
-  tls: true
-  type: http
 - name: 19,20|🇧🇾[www.v2nodes.com] vless-BY-1...
   network: ws
   port: 14430
@@ -371,56 +414,6 @@ proxies:
     headers:
       Host: 178.172.227.124
     path: /vless
-- name: 15|D🔴🇬🇧hos[🎬📺🎭🎪]_dokng.com_fed9fc...
-  password: None
-  port: 443
-  server: 37.120.233.50
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 15|D🔴🇬🇧hos[🎬🤖📺🎭]_dokng.com_490bf2...
-  password: None
-  port: 443
-  server: 185.164.138.156
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 15|C🟠🇬🇧hos[🤖📺🎭🎪]_dokng.com_f5da27...
-  port: 443
-  server: 185.164.138.156
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 15|C🟠🇬🇧hos[📺🎪✨✈️]_dokng.com_60e0e...
-  password: None
-  port: 9443
-  server: 84.17.50.129
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- client-fingerprint: chrome
-  name: 19,24|🇬🇧_英国_209
-  network: tcp
-  port: 8443
-  server: 51.38.71.147
-  servername: node-uk.connectsuite.org
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
-- name: 15,20,27|🇹🇼 🇨🇳 台湾 | TWN 2
-  password: 29086912-33e4-4e06-ba2b-60f1a195864f
-  port: 24999
-  server: tjtw.m2k699.com
-  skip-cert-verify: true
-  sni: www.itunes.com
-  type: trojan
-  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -433,56 +426,56 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 19,20|🇧🇾[www.v2nodes.com] vless-BY-1...
-  - 15|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_b3ff38...
-  - 19|德国 002
-  - 15|D🔴🇩🇪hos[🎬🤖📺🎪]_dokng.com_f9a627...
-  - 15,20,27|🇹🇼 🇨🇳 台湾 | TWN 2
-  - 24|🇩🇪_德国_449
-  - 15|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_e19d9a...
-  - 15|C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_831534...
-  - 15|D🔴🇸🇬hos[🎬🤖📺🎭]_dokng.com_f29f73...
-  - 19,24|🇬🇧_英国_209
-  - 15|C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_351f71...
-  - 15|C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_450a57...
-  - 19|韩国 004
-  - 15|C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_609c62...
-  - 15|C🟠🇬🇧hos[📺🎪✨✈️]_dokng.com_60e0e...
-  - 15|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_ec18e5...
-  - 15|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_4ab711...
-  - 15|C🟠🇩🇪hos[🎬🤖📺🎪]_dokng.com_cb6cfa...
-  - 20,27|🇭🇰 香港 | HKG 4
-  - 15|C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_82281b...
-  - 15,29|167.99.74.174_Claude
-  - 15|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_bd2828...
-  - 14,15|A🟢🇭🇰res[🎬🤖📺🎭]_dokng.com_42aa23...
-  - 20|🇸🇬[www.v2nodes.com] vless-SG-1...
-  - 15|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_dcd1a6...
+  - 15|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_868024...
+  - 15,20|🇯🇵[www.v2nodes.com] trojan-JP-...
   - 15|C🟠🇩🇪hos[🎬🤖📺🎭]_dokng.com_9a426d...
+  - 15|C🟠🇩🇪hos[🎬🤖📺🎭]_dokng.com_622cad...
+  - 20|🇩🇪[www.v2nodes.com] ss-DE-1602...
+  - 20|🇯🇵[www.v2nodes.com] ss-JP-1544...
+  - 14|KR韩国(mibei77.com 米贝节点分享)_5
+  - 19,20|🇧🇾[www.v2nodes.com] vless-BY-1...
+  - 15|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_dcd1a6...
+  - 15|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_e19d9a...
+  - 15|D🔴🇸🇬hos[📺🎭🎪]_dokng.com_5dfd6d5...
+  - 15|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_30ce5c...
+  - 15|C🟠🇩🇪hos[🎬🤖📺🎪]_dokng.com_cb6cfa...
+  - 15|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_bffcd7...
+  - 15|D🔴🇩🇪hos[🎬🤖📺🎪]_dokng.com_f9a627...
+  - 15|C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_831534...
+  - 15|A🟢🇩🇪res[🤖📺🎭🎪]_dokng.com_df2395...
+  - 20|🇬🇧[www.v2nodes.com] ss-GB-1602...
+  - 15|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_5ed031...
+  - 15|A🟢🇩🇪res[🎬🤖📺🎭]_dokng.com_33218f...
+  - 15|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_4ab711...
+  - 15|C🟠🇩🇪hos[🎬🤖📺🎭]_dokng.com_cb4b70...
+  - 15|C🟠🇩🇪hos[🎬🤖📺🎭]_dokng.com_3acae6...
+  - 20|🇬🇧[www.v2nodes.com] ss-GB-1247...
+  - 15|C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_450a57...
+  - 20|🇭🇰[www.v2nodes.com] vless-HK-1...
+  - 15|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_ec18e5...
+  - 20|🇸🇬[www.v2nodes.com] vless-SG-1...
+  - 15|D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_d21277...
+  - 20|🇬🇧[www.v2nodes.com] ss-GB-1451...
+  - 24|🇩🇪_德国_449
+  - 15|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_bd2828...
+  - 15|C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_351f71...
+  - 20|🇯🇵[www.v2nodes.com] vless-JP-1...
+  - 15|A🟢🇸🇬res[🎬🤖📺🎭]_dokng.com_348c8d...
   - 19|德国 003
   - 15|C🟠🇩🇪hos[🎬🤖📺🎭]_dokng.com_284f96...
-  - 20,27|🇭🇰 香港 | HKG
-  - 15|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_868024...
-  - 15|C🟠🇩🇪hos[🎬🤖📺🎭]_dokng.com_3acae6...
-  - 15|C🟠🇩🇪hos[🎬🤖📺🎭]_dokng.com_cb4b70...
-  - 15|A🟢🇸🇬res[🎬🤖📺🎭]_dokng.com_348c8d...
-  - 15|A🟢🇸🇬res[🎬🤖📺🎭]_dokng.com_8bd7e9...
-  - 15|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_30ce5c...
-  - 15|C🟠🇩🇪hos[🎬🤖📺🎭]_dokng.com_622cad...
-  - 15|D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_d21277...
-  - 15|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_5ed031...
-  - 20|🇩🇪[www.v2nodes.com] ss-DE-1602...
-  - 15|A🟢🇷🇺res[🤖📺🎭🎪]_dokng.com_d5a33f...
-  - 15|A🟢🇩🇪res[🤖📺🎭🎪]_dokng.com_df2395...
-  - 15|D🔴🇭🇰hos[📺🎭🎪🎞️]_dokng.com_054bd...
-  - 15|C🟠🇬🇧hos[🤖📺🎭🎪]_dokng.com_f5da27...
-  - 15|D🔴🇬🇧hos[🎬🤖📺🎭]_dokng.com_490bf2...
-  - 15|A🟢🇩🇪res[🎬🤖📺🎭]_dokng.com_33218f...
-  - 15|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_bffcd7...
   - 15|A🟢🇩🇪res[🎬🤖📺🎭]_dokng.com_b5bafa...
-  - 15|D🔴🇬🇧hos[🎬📺🎭🎪]_dokng.com_fed9fc...
-  - 20|🇬🇧[www.v2nodes.com] ss-GB-1602...
-  - 20|🇬🇧[www.v2nodes.com] ss-GB-1247...
+  - 15|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_b3ff38...
+  - 15|C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_609c62...
+  - 15|D🔴🇭🇰hos[📺🎭️]_dokng.com_ff9ee1a...
+  - 15|D🔴🇭🇰hos[📺🎭🎪🎞️]_dokng.com_054bd...
+  - 15|D🔴🇯🇵hos[🤖🎭🎪🎞️]_dokng.com_9efa9...
+  - 15|A🟢🇸🇬res[🎬🤖📺🎭]_dokng.com_8bd7e9...
+  - 15|C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_82281b...
+  - 20|🇸🇬[www.v2nodes.com] vless-SG-9...
+  - 15|D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_6c43e4...
+  - 15|D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_aba567...
+  - 15,29|167.99.74.174_Claude
+  - 15,29|104.248.151.93_Claude
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
