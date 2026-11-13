@@ -32,26 +32,17 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 19|日本 035
-  network: tcp
-  port: 8888
-  server: 146.56.112.110
-  type: vmess
-  udp: true
-  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
-- cipher: aes-256-gcm
-  name: 20|🇯🇵[www.v2nodes.com] ss-JP-1599...
-  password: BeaUf9c0AEWH40Pu
-  port: 8388
-  server: 154.36.158.197
-  type: ss
 - cipher: aes-256-gcm
   name: 20|🇯🇵[www.v2nodes.com] ss-JP-1544...
   password: 3eOFeNssde7PYYMv
-  port: 80
+  port: 443
   server: 84.247.155.196
+  type: ss
+- cipher: aes-128-gcm
+  name: 20|🇯🇵[www.v2nodes.com] ss-JP-9223...
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.241
   type: ss
 - name: 20|🇰🇷[www.v2nodes.com] trojan-KR-...
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
@@ -72,6 +63,13 @@ proxies:
   port: 19999
   server: 15.235.164.133
   type: ss
+- name: 20|🇸🇬[www.v2nodes.com] trojan-SG-...
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 15.235.184.127
+  skip-cert-verify: false
+  sni: exploredigitaljobplatformandfindonlinework.com
+  type: trojan
 - alterId: 0
   cipher: aes-128-gcm
   client-fingerprint: chrome
@@ -99,7 +97,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 19|法国 008
+  name: 19|法国 016
   network: tcp
   port: 1270
   server: 46.105.222.155
@@ -109,7 +107,7 @@ proxies:
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
 - alterId: 0
   cipher: auto
-  name: 19|法国 009
+  name: 19|法国 017
   network: tcp
   port: 1270
   server: 46.105.222.157
@@ -135,18 +133,11 @@ proxies:
   port: 18443
   server: 185.22.153.117
   type: ss
-- cipher: aes-128-gcm
-  name: 20|🇷🇺[www.v2nodes.com] ss-RU-1617...
-  password: 8722de56b6c0b3f6a4d01cf91c07e6aa
-  port: 13108
-  server: 38.60.223.125
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 20|🇬🇧[www.v2nodes.com] ss-GB-1621...
-  password: 8nrpt2il04ptci2j
-  port: 8080
-  server: 54.37.240.40
-  type: ss
+- name: 8|🇬🇧GB_58
+  password: LSS6HLnp7IeEEJUcox
+  port: 443
+  server: nl-1.tr202607.com
+  type: trojan
 - cipher: aes-256-gcm
   name: 20|🇬🇧[www.v2nodes.com] ss-GB-1615...
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -159,31 +150,29 @@ proxies:
   port: 19999
   server: 185.176.206.9
   type: ss
-- cipher: aes-128-gcm
-  name: 20|🇬🇧[www.v2nodes.com] ss-GB-1451...
-  password: shadowsocks
-  port: 443
-  server: 158.173.24.73
-  type: ss
-- cipher: aes-256-gcm
-  name: 20|🇬🇧[www.v2nodes.com] ss-GB-1247...
-  password: RexnBgU7EV5ADxG
-  port: 7001
-  server: 94.156.250.148
-  type: ss
-- name: 20|🇯🇵[www.v2nodes.com] vless-JP-1...
+- name: 20,27|🇯🇵 日本 | JPN 3
+  password: 9922ea3a-7314-4af5-a4cb-eb68a9b94fca
+  port: 2052
+  server: forwarded.frnhk.xyz
+  skip-cert-verify: true
+  sni: jp2.gosthk.site
+  type: anytls
+  udp: true
+- client-fingerprint: unsafe
+  name: 24|🇯🇵_日本 (6)
   network: ws
-  port: 443
-  server: 46.250.254.187
-  servername: fs.qicai99.com
+  port: 2053
+  server: 103.201.131.202
+  servername: jp3.yohototo.top
+  skip-cert-verify: true
   tls: true
   type: vless
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   ws-opts:
     headers:
-      Host: fs.qicai99.com
-    path: /fp=chrome
-- name: 15|KR - zhuhai.uk 02 [2f8956cc0b7...
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'
+- name: 15|KR - zhuhai.uk [2f8956cc0b7628...
   port: 443
   server: 152.69.230.221
   skip-cert-verify: true
@@ -198,12 +187,6 @@ proxies:
   uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
   ws-opts:
     path: /
-- name: 15|🇸🇬 SG-Singapore-h-4261392-jdjb...
-  port: 443
-  server: 154.26.139.24
-  skip-cert-verify: true
-  tls: true
-  type: http
 - client-fingerprint: ios
   flow: xtls-rprx-vision
   name: 6|🇩🇪DE德国丨yoyapai.com_12
@@ -218,53 +201,74 @@ proxies:
   type: vless
   udp: true
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- client-fingerprint: chrome
-  name: 13,14|DE德国(mibei77.com 米贝节点分享) (2)
+- name: 15|DE - zhuhai.uk 05 [862d0cc7e50...
+  password: 'null'
+  port: 9002
+  server: 158.173.154.4
+  skip-cert-verify: true
+  sni: 158.173.154.4
+  tls: true
+  type: http
+  username: 'null'
+- name: 19,24|🇩🇪_德国 (24)
+  network: tcp
+  port: 2474
+  server: 167.233.129.126
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 287db857-de04-4212-bd69-5d14083e340e
+- name: 20,24|🇩🇪_德国 (17)
+  network: tcp
+  port: 49313
+  server: 159.195.207.238
+  tls: false
+  type: vless
+  uuid: 855c7aaa-e7d6-463e-971e-d36032744428
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: mlkem768x25519plus.native.0rtt.Fy1WuRvH1VNIEda4AC61jAhcBFLzuYHcwbUO7mNjxwY
+  name: 20,27|🇩🇪 德国 | DEU 9
   network: xhttp
-  port: 443
-  server: dey.lnmarketplace.net
-  servername: dey.lnmarketplace.net
-  skip-cert-verify: false
-  sni: dey.lnmarketplace.net
+  port: 2087
+  server: www.hyby.ir
+  servername: www.hyby.ir
   tls: true
   type: vless
   udp: true
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  uuid: b6da1396-cfa7-421c-92b6-8bc947f0d308
   xhttp-opts:
-    host: dey.lnmarketplace.net
-    mode: stream-one
-    path: /kavir
-- client-fingerprint: chrome
-  name: 14|DE德国(mibei77.com 米贝节点分享) (5)
+    host: www.hyby.ir
+    mode: auto
+    path: /
+- name: 24|🇩🇪_德国 (46)
   network: ws
-  port: 443
-  server: 104.18.42.98
-  servername: jp3.yohototo.top
-  skip-cert-verify: false
-  sni: jp3.yohototo.top
+  port: 2083
+  server: 91.107.247.173
+  servername: sino.bestsellers1.site
+  skip-cert-verify: true
   tls: true
   type: vless
-  udp: true
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: 0386df1b-7abd-4676-f3c6-d65d691023b9
   ws-opts:
-    headers:
-      Host: jp3.yohototo.top
-    path: /tyxyws
-- client-fingerprint: firefox
-  name: 20|🇩🇪 德国 | DEU 10
+    path: '%2F'
+- name: 24|🇩🇪_德国 (47)
   network: ws
-  port: 443
-  server: 188.225.37.43
-  servername: torvani.cyou
+  port: 2083
+  server: sino.bestsellers1.site
+  servername: sino.bestsellers1.site
+  skip-cert-verify: true
   tls: true
   type: vless
-  udp: true
-  uuid: 4cabcd59-a405-4c00-96f5-03507e1e28fa
+  uuid: 0386df1b-7abd-4676-f3c6-d65d691023b9
   ws-opts:
-    headers:
-      Host: torvani.cyou
-    path: /api/boards/live
-- name: 19,20|🇧🇾[www.v2nodes.com] vless-BY-1...
+    path: '%2F'
+- name: 19|白俄罗斯 001
   network: ws
   port: 14430
   server: 178.172.227.228
@@ -276,32 +280,62 @@ proxies:
     headers:
       Host: 178.172.227.228
     path: /vless
-- client-fingerprint: firefox
-  name: 19,20,27|🇩🇪 德国 | DEU 3
-  network: xhttp
+- encryption: none
+  name: 19,20|🇧🇾[www.v2nodes.com] vless-BY-1...
+  network: ws
+  port: 14430
+  server: 95.128.71.79
+  tls: false
+  type: vless
+  uuid: 8cef7621-c6f0-486e-b51d-59c30c5b0b25
+  ws-opts:
+    headers:
+      Host: 95.128.71.79
+    path: /vless
+- client-fingerprint: chrome
+  name: 19,24|🇮🇷_伊朗
+  network: tcp
   port: 443
-  server: 193.160.208.240
-  servername: 193.160.208.240
+  server: base.hosamobenl.co.uk
+  servername: base.hosamobenl.co.uk
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
+- client-fingerprint: chrome
+  name: 19,24|🇮🇷_伊朗 (2)
+  network: tcp
+  port: 443
+  server: 87.248.149.50
+  servername: base.hosamobenl.co.uk
+  skip-cert-verify: true
+  tfo: false
   tls: true
   type: vless
   udp: true
-  uuid: 4777d90d-265b-4927-a0d1-63f36ed1421c
-  xhttp-opts:
-    mode: auto
-    path: /assets/twru01/
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: mobile.api.Event
-  name: 20|🇷🇺 俄罗斯 | RUS 2
-  network: grpc
-  port: 443
-  server: 5.42.111.231
-  servername: vps2.nemnogogo.com
-  tls: true
+  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
+- name: 19,24|🇩🇪_德国 (21)
+  network: tcp
+  port: 13060
+  server: 2.31.100.78
+  skip-cert-verify: false
+  tfo: false
+  tls: false
   type: vless
   udp: true
-  uuid: 95f85937-7b95-45c4-8d69-95da6a978569
+  uuid: 679d0fcc-4c72-4073-8f1d-311b69ef72b5
+- client-fingerprint: chrome
+  encryption: none
+  name: 20|🇬🇧[www.v2nodes.com] vless-GB-1...
+  network: ws
+  port: 50818
+  server: 34.39.80.57
+  servername: yingguo.rymaker.cn
+  tls: true
+  type: vless
+  uuid: 408c814e-f70a-4d16-b3b3-8182bb70211d
+  ws-opts:
+    path: /GunService
 proxy-groups:
 - name: 节点选择
   type: select
@@ -314,37 +348,40 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 6|🇩🇪DE德国丨yoyapai.com_12
-  - 20|🇩🇪 德国 | DEU 10
-  - 19|法国 008
-  - 20|🇰🇷[www.v2nodes.com] trojan-KR-...
-  - 19,20|🇧🇾[www.v2nodes.com] vless-BY-1...
   - 20|🇫🇷[www.v2nodes.com] ss-FR-1615...
-  - 20|🇸🇬[www.v2nodes.com] ss-SG-1615...
-  - 19,20,27|🇩🇪 德国 | DEU 3
-  - 20|🇷🇺 俄罗斯 | RUS 2
-  - 20|🇸🇬[www.v2nodes.com] ss-SG-1616...
-  - 14|DE德国(mibei77.com 米贝节点分享) (5)
-  - 19|日本 035
-  - 20|🇬🇧[www.v2nodes.com] ss-GB-1247...
-  - 15|🇸🇬 SG-Singapore-h-4261392-jdjb...
-  - 15|KR - zhuhai.uk 02 [2f8956cc0b7...
-  - 20|🇰🇷[www.v2nodes.com] vless-KR-1...
-  - 20|🇬🇧[www.v2nodes.com] ss-GB-1451...
-  - 20|🇫🇷[www.v2nodes.com] ss-FR-1616...
-  - 20|🇯🇵[www.v2nodes.com] ss-JP-1544...
-  - 19|法国 009
-  - 20|🇬🇧[www.v2nodes.com] ss-GB-1602...
-  - 20|🇷🇺[www.v2nodes.com] ss-RU-1620...
-  - 20|🇯🇵[www.v2nodes.com] ss-JP-1599...
   - 20|🇩🇪[www.v2nodes.com] ss-DE-1616...
-  - 20|🇷🇺[www.v2nodes.com] ss-RU-1617...
-  - 20|🇯🇵[www.v2nodes.com] vless-JP-1...
-  - 20|🇬🇧[www.v2nodes.com] ss-GB-1621...
-  - 13,14|DE德国(mibei77.com 米贝节点分享) (2)
-  - 19|德国 008
-  - 20|🇩🇪[www.v2nodes.com] ss-DE-1615...
   - 20|🇬🇧[www.v2nodes.com] ss-GB-1615...
+  - 20|🇬🇧[www.v2nodes.com] ss-GB-1602...
+  - 19|德国 008
+  - 20,24|🇩🇪_德国 (17)
+  - 19|法国 017
+  - 20|🇯🇵[www.v2nodes.com] ss-JP-9223...
+  - 19,24|🇩🇪_德国 (21)
+  - 20|🇩🇪[www.v2nodes.com] ss-DE-1615...
+  - 19|法国 016
+  - 24|🇩🇪_德国 (46)
+  - 20|🇫🇷[www.v2nodes.com] ss-FR-1616...
+  - 19,24|🇩🇪_德国 (24)
+  - 19,20|🇧🇾[www.v2nodes.com] vless-BY-1...
+  - 19|白俄罗斯 001
+  - 20|🇸🇬[www.v2nodes.com] ss-SG-1616...
+  - 24|🇩🇪_德国 (47)
+  - 20|🇯🇵[www.v2nodes.com] ss-JP-1544...
+  - 6|🇩🇪DE德国丨yoyapai.com_12
+  - 20|🇬🇧[www.v2nodes.com] vless-GB-1...
+  - 20,27|🇯🇵 日本 | JPN 3
+  - 15|DE - zhuhai.uk 05 [862d0cc7e50...
+  - 20|🇰🇷[www.v2nodes.com] vless-KR-1...
+  - 19,24|🇮🇷_伊朗 (2)
+  - 20|🇸🇬[www.v2nodes.com] ss-SG-1615...
+  - 20|🇸🇬[www.v2nodes.com] trojan-SG-...
+  - 20|🇷🇺[www.v2nodes.com] ss-RU-1620...
+  - 24|🇯🇵_日本 (6)
+  - 15|KR - zhuhai.uk [2f8956cc0b7628...
+  - 20|🇰🇷[www.v2nodes.com] trojan-KR-...
+  - 8|🇬🇧GB_58
+  - 20,27|🇩🇪 德国 | DEU 9
+  - 19,24|🇮🇷_伊朗
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
